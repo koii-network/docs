@@ -31,7 +31,14 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    ['@docusaurus/plugin-content-docs', { 
+        id: "concepts",
+        path: "concepts",
+        routeBasePath: "concepts/",
+        sidebarPath: require.resolve("./contentSidebars.js"),
+      }],
+  ],
   presets: [
     [
       'classic',
@@ -57,7 +64,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -71,10 +77,10 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'welcome',
+            label: '📖 Concepts',
+            to: '/concepts/koii-summary/welcome',
+            activeBasePath: 'concepts',
             position: 'left',
-            label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -88,11 +94,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Concept',
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/welcome',
+                to: '/concept/koii-summary/welcome',
               },
             ],
           },
