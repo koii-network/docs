@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 description: We built Koii to make a better world by connecting the people that live in it.
 ---
 
