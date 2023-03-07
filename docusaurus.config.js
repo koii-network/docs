@@ -90,11 +90,11 @@ const config = {
           },
            {
             label: '💻 Develop',
-            to: '/develop/support/community-forums',
+            to: '/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk',
             activeBasePath: 'develop',
             position: 'left',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -110,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/concept/koii-summary/welcome',
+                to: '/concepts/koii-summary/welcome',
               },
             ],
           },
@@ -136,7 +136,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/',
               },
               {
                 label: 'GitHub',

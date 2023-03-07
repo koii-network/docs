@@ -1,8 +1,9 @@
----
-description: We built Koii to make a better world by connecting the people that live in it.
----
+import Card, { Cards } from "@site/src/components/card";
+import Description from "@site/src/components/description";
 
 # 🎏 Welcome to the New Internet
+
+<Description text="We built Koii to make a better world by connecting the people that live in it." />
 
 Since Ethereum's debut in 2015, the idea of a "World Computer" has captured the imagination of millions around the world. The benefits of a trustless digital machine with inherent censorship resistance are, in many ways, the answer to the growing pains and civil unrest as our societies struggle to adapt to the realities of global communication via the internet.
 
@@ -12,4 +13,37 @@ The first step in this process was to build a format for anonymous and decentral
 
 Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
 
-<table data-card-size="large" data-view="cards" className="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>🔥 <strong>Impact</strong> </td><td>We've redesigned the web from the ground up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, <em>Koii pays you.</em><br/><em></em></td><td><a href="koii-summary/impact.md">Earn passive income with Koii</a></td><td><a href=".gitbook/assets/How Koii Benefits You.svg">How Koii Benefits You.svg</a></td><td><a href="koii-summary/impact.md">impact.md</a></td></tr><tr><td>🌊 <strong>Social Technology</strong></td><td>Include your community in the value stream by using community hardware, and providing transparent systems for attention tracking, content storage, value transfer, and indexing. <br/></td><td><a href="koii-summary/social-tech.md">Start building community-run apps</a></td><td><a href=".gitbook/assets/Social Technology(svg).svg">Social Technology(svg).svg</a></td><td><a href="koii-summary/social-tech.md">social-tech.md</a></td></tr><tr><td>🛠️ <strong>Tools</strong></td><td>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal compute power, and onboard your community.  <br/></td><td><a href="koii-summary/tools.md">Try out the Koii Tools</a></td><td><a href=".gitbook/assets/Tools.svg">Tools.svg</a></td><td><a href="koii-summary/tools.md">tools.md</a></td></tr><tr><td>💡 <strong>Philosophy of Decentralization</strong></td><td>For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far. <br/></td><td><a href="koii-summary/philosophy.md">Learn more about why Koii was built</a></td><td><a href=".gitbook/assets/Philosophy of decentralization.svg">Philosophy of decentralization.svg</a></td><td><a href="koii-summary/philosophy.md">philosophy.md</a></td></tr></tbody></table>
+<Cards>
+  <Card
+    title="<p>🔥 <strong>Impact</strong></p>"
+    description=" <p>We've redesigned the web from the ground up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, <em>Koii pays you.</em></p>"
+    link="impact"
+    linkText="Earn passive income with Koii"
+    svgName="impact"
+    cardPerRow="2"
+  />
+  <Card
+    title="<p>🌊 <strong>Social Technology</strong></p>"
+    description="<p>Include your community in the value stream by using community hardware, and providing transparent systems for attention tracking, content storage, value transfer, and indexing.</p>"
+    link="social-tech"
+    linkText="Start building community-run apps"
+    svgName="socialTech"
+    cardPerRow="2"
+  />
+  <Card
+    title="<p>🛠️ <strong>Tools</strong></p>"
+    description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal compute power, and onboard your community.</p>"
+    link="tools"
+    linkText="Try out the Koii Tools"
+    svgName="tools"
+    cardPerRow="2"
+  />
+  <Card
+    title="<p>💡 <strong>Philosophy of Decentralization</strong></p>"
+    description=" <p>For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.</p>"
+    link="philosophy"
+    linkText="Learn more about why Koii was built"
+    svgName="philosophy"
+    cardPerRow="2"
+  />
+</Cards>
