@@ -14,11 +14,19 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
-  content: [   
+  content: [  
+     {
+      type: 'category',
+      label: '⚙ Koii Software Toolkit (SDK)',
+      collapsed: true,
+      items: [
+        'koii-software-toolkit-sdk/what-is-the-koii-sdk',
+      ],
+    },
     {
       type: 'category',
       label: '❕ Support',
-      collapsed: false,
+      collapsed: true,
       items: [
         'support/community-forums',
         'support/contact-support',
