@@ -18,7 +18,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Koii Summary',
-      collapsed: false,
+      collapsed: true,
       items: [
         'koii-summary/welcome',
         'koii-summary/impact',
@@ -30,7 +30,7 @@ const sidebars = {
     {
       type: 'category',
       label: '👁 Earning Koii',
-      collapsed: false,
+      collapsed: true,
       items: [
         'earning-koii/network-economics',
         'earning-koii/compute-sharing-marketplace',
