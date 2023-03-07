@@ -89,9 +89,8 @@ const config = {
             activeBasePath: 'develop',
             position: 'left',
           },
-          {to: '/', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/koii-network',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,8 +103,21 @@ const config = {
             title: 'Concept',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Overview',
                 to: '/concepts/koii-summary/welcome',
+              },
+            ],
+          },
+          {
+            title: 'Developers',
+            items: [
+              {
+                label: 'SDK Documentation',
+                to: '/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk',
+              },
+              {
+                label: 'GitHub',
+                to: 'https://github.com/koii-network',
               },
             ],
           },
@@ -113,16 +125,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Peeranha',
+                href: 'https://peeranha.io/feed/6',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/koii',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://t.me/koiinetwork',
               },
             ],
           },
@@ -131,11 +143,15 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/',
+                to: 'https://blog.koii.network/',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Get In Touch',
+                href: 'mailto:hello@koii.network',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://www.koii.network/Privacy_Policy.pdf',
               },
             ],
           },
