@@ -38,6 +38,12 @@ const config = {
         routeBasePath: "concepts/",
         sidebarPath: require.resolve("./contentSidebars.js"),
       }],
+    ['@docusaurus/plugin-content-docs', { 
+        id: "develop",
+        path: "develop",
+        routeBasePath: "develop/",
+        sidebarPath: require.resolve("./developSidebars.js"),
+      }],
   ],
   presets: [
     [
@@ -80,6 +86,12 @@ const config = {
             label: '📖 Concepts',
             to: '/concepts/koii-summary/welcome',
             activeBasePath: 'concepts',
+            position: 'left',
+          },
+           {
+            label: '💻 Develop',
+            to: '/develop/support/community-forums',
+            activeBasePath: 'develop',
             position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},

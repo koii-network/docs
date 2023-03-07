@@ -27,6 +27,31 @@ const sidebars = {
         'koii-summary/philosophy',
       ],
     },
+    {
+      type: 'category',
+      label: '👁 Earning Koii',
+      collapsed: false,
+      items: [
+        'earning-koii/network-economics',
+        'earning-koii/compute-sharing-marketplace',
+        {
+          type: 'category',
+          label: 'Proof of Real Traffic (PoRT)',
+          link: {
+            type: 'doc',
+            id: 'earning-koii/proof-of-real-traffic',
+          },
+          collapsed: true,
+          items: [
+            'earning-koii/attention-mining',
+            'earning-koii/registering-content',
+            'earning-koii/sybil-attack-prevention',
+          ],
+        },
+        'earning-koii/grants-program',
+        'earning-koii/get-free-tokens',
+      ],
+    },
   ],
 };
 
