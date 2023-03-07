@@ -89,7 +89,7 @@ const config = {
             position: 'left',
           },
            {
-            label: '📖 Develop',
+            label: '💻 Develop',
             to: '/develop/support/community-forums',
             activeBasePath: 'develop',
             position: 'left',
