@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/concepts/koii-summary/welcome">
+            Understanding Koii
           </Link>
         </div>
       </div>
