@@ -63,6 +63,13 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+      '@docusaurus/preset-classic',
+      {
+        gtag: {
+          trackingID: 'G-1MTMLP9766',
+          anonymizeIP: true,
+        },
+      },
     ],
   ],
   themeConfig:
