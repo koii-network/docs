@@ -1,69 +1,36 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import {FeatureList, Column, Feature} from "@site/src/components/HomepageFeatures/featurelist"
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-};
-
-const FeatureList: FeatureItem[] = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({title, Svg, description}: FeatureItem) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
 
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+      <h1 className="text-center big-title" > Browse the Docs By Topic </h1>
+
+<FeatureList>
+  <Column title="Understanding Koii" size={4}>
+    <Feature url="/concepts/concepts/earning-koii/get-free-tokens" title="Koii Token" subtitle="Learn the Basics about Koii Token" />
+    <Feature url="/concepts/bconcepts/finnie" title="Finnie - Koii wallet" subtitle="Try Finnie as your wallet"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Run a Node" subtitle="Run a node to earn KOII"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Koii Task" subtitle="Learn about Koii Task"/>
+  </Column>
+  <Column title="Developer Documentation" size={4}>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="K2 - settlement layer" subtitle="Learn how to use K2"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Attention Mining" subtitle="Collect Proof of Real Traffic"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Build a Task" subtitle="Learn how to write Koii Task"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Gradual Consensus" subtitle="Learn and use gradual consensus"/>
+  </Column>
+  <Column title="Developer Tools" size={4}>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Koii CLI" subtitle="Learn and use Koii CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Task Node CLI" subtitle="Learn and use Task Node CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Create Task CLI" subtitle="Learn and use create-task CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="JS SDK" subtitle="Learn and use JS SDK"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Build Dapp" subtitle="Learn and use Koii-X"/>
+  </Column>
+</FeatureList>
       </div>
     </section>
   );
