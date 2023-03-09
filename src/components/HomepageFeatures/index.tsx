@@ -24,12 +24,11 @@ export default function HomepageFeatures(): JSX.Element {
     <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Gradual Consensus" subtitle="Learn and use gradual consensus"/>
   </Column>
   <Column title="Developer Tools" size={3}>
-    <Feature url="/sdk/js/introduction" title="Koii CLI" subtitle="Write contracts in JavaScript" />
-    <Feature url="/sdk/rust/introduction" title="Task Node CLI" subtitle="Write contracts in Rust" />
-    <Feature url="/tools/near-cli" title="NEAR CLI" subtitle="Use NEAR from the Terminal" />
-    <Feature url="/tools/near-api-js/quick-reference" title="NEAR API JS" subtitle="Interact with NEAR from JS"/>
-    <Feature url="/api/rpc/introduction" title="RPC API" subtitle="Interact with the NEAR RPC API"/>
-    <Feature url="/concepts/advanced/indexers" title="Indexing blockchain data" subtitle="Query usage information for a contract"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Koii CLI" subtitle="Learn and use Koii CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Task Node CLI" subtitle="Learn and use Task Node CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Create Task CLI" subtitle="Learn and use create-task CLI" />
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="JS SDK" subtitle="Learn and use JS SDK"/>
+    <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="Build Dapp" subtitle="Learn and use Koii-X"/>
   </Column>
   <Column title="Examples & Tutorials" size={3}>
     <Feature url="/develop/relevant-contracts/ft" title="Fungible Tokens" subtitle="Learn how to use and make FT"/>
