@@ -11,14 +11,11 @@ export default function HomepageFeatures(): JSX.Element {
       <h1 className="text-center big-title" > Browse the Docs By Topic </h1>
 
 <FeatureList>
-  <Column title="Understanding NEAR" size={3}>
-    <Feature url="/concepts/basics/protocol" title="What is NEAR?" subtitle="Learn the Basics about NEAR" />
-    <Feature url="/concepts/basics/accounts/account-id" title="Named Accounts" subtitle="NEAR uses human-readable accounts"/>
-    <Feature url="/concepts/basics/accounts/access-keys" title="Multiple Access Keys" subtitle="More keys means more security"/>
-    <Feature url="/concepts/basics/accounts/smartcontract" title="Smart Contracts" subtitle="Learn about our contract technology"/>
-    <Feature url="/concepts/basics/tokens" title="Token" subtitle="Learn about the NEAR token"/>
-    <Feature url="/concepts/basics/transactions/overview" title="Transactions" subtitle="Fast and Inexpensive"/>
-    <Feature url="/concepts/basics/validators" title="Validators" subtitle="Learn how the network stays safe"/>
+  <Column title="Understanding Koii" size={3}>
+    <Feature url="/concepts/concepts/earning-koii/get-free-tokens" title="Koii Token" subtitle="Learn the Basics about Koii Token" />
+    <Feature url="/concepts/bconcepts/finnie" title="Finnie - Koii wallet" subtitle="Try Finnie as your wallet"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Run a Node" subtitle="Run a node to earn KOII"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Koii Task" subtitle="Learn about Koii Task"/>
   </Column>
   <Column title="Developer Documentation" size={3}>
     <Feature url="/develop/quickstart-guide" title="Quickstart" subtitle="Spin-up your first dApp"/>
