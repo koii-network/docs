@@ -12,6 +12,7 @@
     text-align: center;
     color:  var(--link-content);
     gap: 16px;
+    margin-bottom: 16px;
 }
 
 .cardContainer:hover{
