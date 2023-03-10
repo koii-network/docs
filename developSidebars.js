@@ -17,6 +17,40 @@ const sidebars = {
   content: [  
      {
       type: 'category',
+      label: '🤑 Settlement Layer',
+      collapsed: true,
+      items: [
+        'settlement-layer/k2-tick-tock-fast-blocks',
+        {
+          type: 'category',
+          label: 'Native Contracts',
+          collapsed: true,
+          items: [
+            'settlement-layer/the-attention-game',
+            'settlement-layer/the-task-contract',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Running a K2 Node',
+          link: {
+            type: 'doc',
+            id: 'settlement-layer/running-a-k2-node',
+          },
+          collapsed: true,
+          items: [
+            'settlement-layer/system-requirements',
+            'settlement-layer/setup-process',           
+          ],
+        },
+        'settlement-layer/creating-tokens-on-k2',
+        'settlement-layer/block-explorer',
+        'settlement-layer/wallets',
+        'settlement-layer/rent',
+      ],
+    },
+    {
+      type: 'category',
       label: '⚙ Koii Software Toolkit (SDK)',
       collapsed: true,
       items: [
