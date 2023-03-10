@@ -27,11 +27,19 @@
     text-align: center;
     margin-bottom: 0px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .imageLink {
     width: 32px;
     height: 32px;
+}
+
+.descriptionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .textContainer {
