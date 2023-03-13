@@ -2,7 +2,7 @@ import Description from "@site/src/components/description";
 
 # Registering Content
 
-![banner](img/Registering_Content.png)
+![banner](../img/Registering_Content.png)
 
 <Description
   text="Koii can be earned on any content where Proofs of Real Traffic are submitted."
@@ -19,7 +19,7 @@ _Lazy_ - Larger Fee, Scales to the total attention the content has received so f
 
 :::info 
 
-Need some KOII? Check [here](/) to airdrop some KOII into your wallet.
+Need some KOII? Check [here](/develop/koii-software-toolkit-sdk/wallet-and-faucet) to airdrop some KOII into your wallet.
 
 :::
 
@@ -28,7 +28,7 @@ Need some KOII? Check [here](/) to airdrop some KOII into your wallet.
 
 The network is designed to track content from any source and can be configured to credit app developers by specifying an application key. If no application key is specified, the registrar of the content ID receives all rewards. &#x20;
 
-![banner](./img/registering_image.png)
+![banner](../img/registering_image.png)
 
 <Description
   text="Any piece of content can be registered for Attention Mining by constructing a URI like the one above, where the network key, application key, and content id contain valid data."
@@ -59,7 +59,7 @@ Notice: The node version should be 16.15.0 or higher.
 
 :::
 
-Then please prepared a Koii wallet and some KOII in your wallet, which the attention reward will be collected.  Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
+Then please prepared a Koii wallet and some KOII in your wallet, which the attention reward will be collected.  Check about the [Koii CLI tool](/develop/koii-software-toolkit-sdk/using-the-cli) to quickly generate one and airdrop some KOII.
 
 ## Example
 

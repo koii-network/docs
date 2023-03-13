@@ -39,7 +39,7 @@ const doSendToken = async () => {
 ```
 
 :::info
-To get values from your funding-config.ts use the [**`useFunding`**](/) hook.
+To get values from your funding-config.ts use the [**useFunding**](../template-library/crowdfunding-portal/customization#usefunding) hook.
 :::
 
 ### Sending KOII using Finnie
