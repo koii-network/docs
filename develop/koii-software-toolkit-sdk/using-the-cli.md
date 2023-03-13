@@ -83,4 +83,4 @@ Copy and save your wallet path so you can interact with any Koii stack locally.
 Your wallet path would be used in create a task and run desktop node.
 :::
 
-Congratulations! Now you have a Koii wallet, check [here](/) to airdrop some KOII in your wallet.
+Congratulations! Now you have a Koii wallet, check [here](./wallet-and-faucet) to airdrop some KOII in your wallet.

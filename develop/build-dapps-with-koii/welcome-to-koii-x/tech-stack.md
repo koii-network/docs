@@ -24,8 +24,8 @@ The K2 Layer utilizes a fork of a Solana Node to provide high-speed transactions
 
 Koii currently has two templates available, which both support KOII token mining via attention tracking right out of the box.
 
-* [**Crowdfunding Portal**](/)
-* [**Content Leaderboard App**](/)
+* [**Crowdfunding Portal**](../template-library/crowdfunding-portal/)
+* [**Content Leaderboard App**](../template-library/leaderboard-app/)
 
 ### Decentralized Storage
 
@@ -45,7 +45,7 @@ The Koii-X Templates have been designed to support a number of wallets out of th
 * [**ArConnect**](https://www.arconnect.io/) (Arweave)
 
 :::info
-Want to learn more about Finnie? Check out the documentation [**here**](broken-reference) 👈
+Want to learn more about Finnie? Check out the documentation [**here**](./tech-stack) 👈
 :::
 
 ### Payment Networks

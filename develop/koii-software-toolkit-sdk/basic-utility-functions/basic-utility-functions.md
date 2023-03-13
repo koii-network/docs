@@ -1,6 +1,6 @@
 # Basic Utility Functions
 
-:::danger
+:::caution
 These functions are based on Arweave.
 :::
 

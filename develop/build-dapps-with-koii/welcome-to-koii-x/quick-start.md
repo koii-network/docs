@@ -30,7 +30,7 @@ The terminal will show your environment version
 :::
 
 :::caution
-If you fail to install it or think you lack the necessary environment, you can check and install the requirements here. [environment.md](./environment "mention")
+If you fail to install it or think you lack the necessary environment, you can check and install the requirements here. [**environment**](./environment "mention")
 :::
 
 After the installation is done, head to the installed project, and inside it run `yarn start`.

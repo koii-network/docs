@@ -9,7 +9,7 @@ There are two ways to create new NFTs with Koii-X:
 
 1. Programmatically using our JavaScript Libraries
 2. Using the Drag and Drop Widget
-   * The [**Finnie Wallet**](/) employs Drag and Drop and users can create NFTs directly from Finnie
+   * The [**Finnie Wallet**](../integrating-wallets/finnie-wallet) employs Drag and Drop and users can create NFTs directly from Finnie
 
 ### Programmatically
 
