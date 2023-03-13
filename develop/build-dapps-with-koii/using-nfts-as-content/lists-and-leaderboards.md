@@ -134,7 +134,7 @@ export function useNsfw() {
 
 **Search**
 
-Search is currently implemented using clientside libraries which draw from the same core NFT list, and can be customized by editing the Search Component, [**shown here**](/).
+Search is currently implemented using clientside libraries which draw from the same core NFT list, and can be customized by editing the Search Component, [**shown here**](../template-library/leaderboard-app/customization/search).
 <br />
 
 **Thumbnails**

@@ -1,7 +1,7 @@
 # getKoiBalance
 
 :::danger
-This function is based on K1. Know more about K2 and generate a K2 Koii wallet [here](/)
+This function is based on K1. Know more about K2 and generate a K2 Koii wallet [here](/develop/settlement-layer/k2-tick-tock-fast-blocks)
 :::
 
 This function returns the KOII balance of a given address.

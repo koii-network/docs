@@ -16,18 +16,18 @@ Some topics included in this section:
 
 * Easy Deployment
 * Simple dApp templates
-* [**UI templates** ](/)
-* [**Wallet integration**](/)
+* [**UI templates** ](/develop/build-dapps-with-koii/template-library/ui-template-layout/)
+* [**Wallet integration**](/develop/build-dapps-with-koii/integrating-wallets/)
 * Quick integration of Attention Tracking
-* Use of [**Atomic NFTs**](/) to ensure permanent ownership and storage of media.&#x20;
+* Use of [**Atomic NFTs**](/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts) to ensure permanent ownership and storage of media.&#x20;
 
 This toolkit will help you take advantage of all that Koii has to offer:
 
-* [Earn KOII tokens whenever your content is viewed](../../../concepts/earning-koii/attention-mining)
-* [Store content as Atomic NFTs using decentralized storage networks](/)
-* [Easily integrate wallets from popular blockchains](/)
-* [Build a Crowdfunding Portal or Leaderboard Social Platform](/)
-* [Integrate Koii Tasks for Trustless Back-End Services ](/)
+* [Earn KOII tokens whenever your content is viewed](/concepts/earning-koii/proof-of-real-traffic/attention-mining)
+* [Store content as Atomic NFTs using decentralized storage networks](/develop/build-dapps-with-koii/using-nfts-as-content/)
+* [Easily integrate wallets from popular blockchains](/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet)
+* [Build a Crowdfunding Portal or Leaderboard Social Platform](/develop/build-dapps-with-koii/template-library/)
+* [Integrate Koii Tasks for Trustless Back-End Services ](/develop/microservices-and-tasks/what-are-tasks/)
 
 
 

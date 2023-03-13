@@ -31,7 +31,7 @@ We have developed a rich SDK in order to support the creation of Koii Tasks, Nod
 
 This is the KOII (K2) Javascript API built on the Koii. User can use this SDK to check status and fetch info from the K2 network.
 
-Check more usage [here](/)
+Check more usage [here](./koii-javascript-api)
 
 
 ### Koii CLI
@@ -42,10 +42,10 @@ Koii CLI provides several features, including but not only:
 * Airdrop testnet KOII
 * Run Koii test validator
 
-Check the tutorial and try it [here](/)
+Check the tutorial and try it [here](./using-the-cli)
 
 ### Create Task CLI
-Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/) and try it [here](/)
+Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](../microservices-and-tasks/task-development-guide/) and try it [here](./create-task-cli)
 
 ### Task Node CLI
 
@@ -56,10 +56,10 @@ The task node CLI is a helpful tool used by node operators for 4 different reaso
 * Stake tokens on a task
 * Show all tasks
 
-Learn more and build complete your task [here](/)
+Learn more and build complete your task [here](./what-is-the-koii-sdk)
 
 ### Looking for a quick start? 
 
-Head to our [Koii-X docs](/) to learn how you can deploy a dApp in under 10 minutes today.
+Head to our [Koii-X docs](../build-dapps-with-koii/welcome-to-koii-x/) to learn how you can deploy a dApp in under 10 minutes today.
 
-<ContentLink title="👋 Welcome to koii-X" link="/"/>
+<ContentLink title="👋 Welcome to koii-X" link="../build-dapps-with-koii/welcome-to-koii-x/"/>

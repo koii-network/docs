@@ -1,7 +1,7 @@
 # getKoiiState
 
 :::danger
-The states are based on Arweave and K1. Know more about K2 [here](/)
+The states are based on Arweave and K1. Know more about K2 [here](/develop/settlement-layer/k2-tick-tock-fast-blocks)
 :::
 
 This endpoint returns the state of Koii. Balances, stakes, Koii tasks and all the other information can be programmatically accessed through this endpoint.
