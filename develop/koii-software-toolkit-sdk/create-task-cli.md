@@ -1,5 +1,7 @@
 # Create Task CLI
 
+![Banner](./img/DEV%20koii%20task.png)
+
 We provide create-task-cli to help you easily create and deploy your task.
 
 ## Install Create-Task-CLI
