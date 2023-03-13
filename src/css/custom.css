@@ -34,3 +34,31 @@
 .koiiblue {
   color: #171753;
 }
+
+.sidebar-title {
+  margin-left: 0.75rem;
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+}
+
+.top-margin {
+  margin-top: 2rem;
+}
+
+.content-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {   
+   .content-container{
+      grid-template-columns: 1fr;
+    }
+
+}

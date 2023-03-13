@@ -13,8 +13,9 @@ type CardItem = {
 
 function Card ({title, description, link, linkText, svgName, cardPerRow="3"}:CardItem) {
     const image = cardImages[svgName]
+    const target = link.includes('https') ? '_blank' : ''
   return (
-    <a href={link} className={styles.card} style={{width: `calc((100% / ${cardPerRow}) - 20px)`}}>
+    <a href={link} className={styles.card} style={{width: `calc((100% / ${cardPerRow}) - 20px)`}} target={target}>
          {
           image && (
             <img src={image} className={styles.cardSvg} role="img" />
