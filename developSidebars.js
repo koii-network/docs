@@ -18,7 +18,7 @@ const sidebars = {
     {
       type: "html",
       value: "🤑 Settlement Layer",
-      className: "develop-sidebar-title",
+      className: "sidebar-title",
     },
     "settlement-layer/k2-tick-tock-fast-blocks",
     {
@@ -50,7 +50,7 @@ const sidebars = {
     {
       type: "html",
       value: "💪 Microservices & Tasks",
-      className: "develop-sidebar-title top-margin",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
@@ -186,7 +186,7 @@ const sidebars = {
     {
       type: "html",
       value: "⚙ Koii Software Toolkit (SDK)",
-      className: "develop-sidebar-title top-margin",
+      className: "sidebar-title top-margin",
     },
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
@@ -272,7 +272,7 @@ const sidebars = {
     {
       type: "html",
       value: "🐟 Finnie For Devs",
-      className: "develop-sidebar-title top-margin",
+      className: "sidebar-title top-margin",
     },
     "finnie-for-devs/welcome-to-finnie",
     "finnie-for-devs/connecting-finnie",
@@ -311,7 +311,7 @@ const sidebars = {
     {
       type: "html",
       value: "🧙 Build Dapps with Koii",
-      className: "develop-sidebar-title top-margin",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
@@ -434,7 +434,7 @@ const sidebars = {
     {
       type: "html",
       value: "❕ Support",
-      className: "develop-sidebar-title top-margin",
+      className: "sidebar-title top-margin",
     },
     "support/community-forums",
     "support/contact-support",
