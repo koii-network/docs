@@ -15,8 +15,9 @@ function ContentLinks({link, title, iconType, imageLink, description} : ContentL
   if (iconType) {
       Svg = contentImages[iconType];
   }
+  const target = link.includes('https') ? '_blank' : ''
   return (
-    <a href={link} className={styles.cardContainer}>
+    <a href={link} className={styles.cardContainer} target={target}>
         {
           Svg && (
             <Svg />

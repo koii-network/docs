@@ -37,13 +37,13 @@ const sidebars = {
       label: 'Proof of Real Traffic (PoRT)',
       link: {
         type: 'doc',
-        id: 'earning-koii/proof-of-real-traffic',
+        id: 'earning-koii/proof-of-real-traffic/proof-of-real-traffic',
       },
       collapsed: true,
       items: [
-        'earning-koii/attention-mining',
-        'earning-koii/registering-content',
-        'earning-koii/sybil-attack-prevention',
+        'earning-koii/proof-of-real-traffic/attention-mining',
+        'earning-koii/proof-of-real-traffic/registering-content',
+        'earning-koii/proof-of-real-traffic/sybil-attack-prevention',
       ],
     },
     'earning-koii/grants-program',
