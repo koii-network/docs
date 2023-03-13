@@ -16,42 +16,38 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [   
     {
-      type: 'category',
-      label: 'Koii Summary',
-      collapsed: true,
-      items: [
-        'koii-summary/welcome',
-        'koii-summary/impact',
-        'koii-summary/social-tech',
-        'koii-summary/tools',
-        'koii-summary/philosophy',
-      ],
+      type: "html",
+      value: "Koii Summary",
+      className: "sidebar-title",
     },
+    'koii-summary/welcome',
+    'koii-summary/impact',
+    'koii-summary/social-tech',
+    'koii-summary/tools',
+    'koii-summary/philosophy',
+    {
+      type: "html",
+      value: "👁 Earning Koii",
+      className: "sidebar-title top-margin",
+    },
+    'earning-koii/network-economics',
+    'earning-koii/compute-sharing-marketplace',
     {
       type: 'category',
-      label: '👁 Earning Koii',
+      label: 'Proof of Real Traffic (PoRT)',
+      link: {
+        type: 'doc',
+        id: 'earning-koii/proof-of-real-traffic',
+      },
       collapsed: true,
       items: [
-        'earning-koii/network-economics',
-        'earning-koii/compute-sharing-marketplace',
-        {
-          type: 'category',
-          label: 'Proof of Real Traffic (PoRT)',
-          link: {
-            type: 'doc',
-            id: 'earning-koii/proof-of-real-traffic',
-          },
-          collapsed: true,
-          items: [
-            'earning-koii/attention-mining',
-            'earning-koii/registering-content',
-            'earning-koii/sybil-attack-prevention',
-          ],
-        },
-        'earning-koii/grants-program',
-        'earning-koii/get-free-tokens',
+        'earning-koii/attention-mining',
+        'earning-koii/registering-content',
+        'earning-koii/sybil-attack-prevention',
       ],
     },
+    'earning-koii/grants-program',
+    'earning-koii/get-free-tokens',
   ],
 };
 
