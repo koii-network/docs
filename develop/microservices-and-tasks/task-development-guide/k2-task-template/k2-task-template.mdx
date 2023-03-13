@@ -16,7 +16,7 @@ For more information on how the Task Flow works, check out the [runtime environm
 ## What's in the template?
 - `index.js` — is the hub of your app, and ties together the other pieces. This will be the entrypoint when your task runs on Task Nodes.
 
-- `NamespaceWrappers.js` — contains the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/microservices-and-tasks/the-namespace-object) to learn more Namespace functions.
+- `NamespaceWrappers.js` — contains the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more Namespace functions.
 
 - `coreLogic.js` — is where you'll define your task, audit, and distribution logic, and controls the majority of task functionality. You can of course break out separate features into sub-files and import them into the core logic before web-packing.
 
