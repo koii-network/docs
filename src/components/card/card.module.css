@@ -17,7 +17,7 @@
 .cardContainer{
     display: flex;
     align-items: center; 
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
