@@ -89,7 +89,7 @@ const config = {
           },
            {
             label: '💻 Develop',
-            to: '/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk',
+            to: '/develop/settlement-layer/k2-tick-tock-fast-blocks',
             activeBasePath: 'develop',
             position: 'left',
           },
