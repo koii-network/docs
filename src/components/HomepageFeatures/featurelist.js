@@ -10,7 +10,7 @@ export function FeatureList({ children }) {
   </>
 }
 
-export function Column({ title, children, size = 4 }) {
+export function Column({ title, children, size}) {
   return <>
     <div class={`col col--${size}`}>
       <h3>{title}</h3>
