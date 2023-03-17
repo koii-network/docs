@@ -12,10 +12,10 @@ export default function HomepageFeatures(): JSX.Element {
 
 <FeatureList>
   <Column title="Understanding Koii" size={3}>
-    <Feature url="/concepts/concepts/earning-koii/get-free-tokens" title="Koii Token" subtitle="Learn the Basics about Koii Token" />
-    <Feature url="/concepts/bconcepts/finnie" title="Finnie - Koii wallet" subtitle="Try our multi-chain wallet"/>
-    <Feature url="/concepts/koii-summary/welcome" title="Run a Node" subtitle="Run to earn"/>
-    <Feature url="/concepts/koii-summary/welcome" title="Koii Task" subtitle="Koii Tasks"/>
+    <Feature url="concepts/earning-koii/network-economics" title="Koii Token" subtitle="Learn the Basics about Koii Token" />
+    <Feature url="develop/finnie-for-devs/welcome-to-finnie" title="Finnie - Koii wallet" subtitle="Try our multi-chain wallet"/>
+    <Feature url="develop/settlement-layer/running-a-k2-node/" title="Run a Node" subtitle="Run to earn"/>
+    <Feature url="develop/microservices-and-tasks/what-are-tasks/" title="Koii Task" subtitle="Koii Tasks"/>
     <Feature url="/concepts/koii-summary/welcome" title="Tokenomics" subtitle="Attention Mining"/>
     <Feature url="/concepts/koii-summary/welcome" title="Social Tech" subtitle="Get Involved"/>
     <Feature url="/concepts/koii-summary/welcome" title="Impact & Philosofy" subtitle="Get Involved"/>
