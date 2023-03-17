@@ -13,9 +13,12 @@ export default function HomepageFeatures(): JSX.Element {
 <FeatureList>
   <Column title="Understanding Koii" size={3}>
     <Feature url="/concepts/concepts/earning-koii/get-free-tokens" title="Koii Token" subtitle="Learn the Basics about Koii Token" />
-    <Feature url="/concepts/bconcepts/finnie" title="Finnie - Koii wallet" subtitle="Try Finnie as your wallet"/>
-    <Feature url="/concepts/koii-summary/welcome" title="Run a Node" subtitle="Run a node to earn KOII"/>
-    <Feature url="/concepts/koii-summary/welcome" title="Koii Task" subtitle="Learn about Koii Task"/>
+    <Feature url="/concepts/bconcepts/finnie" title="Finnie - Koii wallet" subtitle="Try our multi-chain wallet"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Run a Node" subtitle="Run to earn"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Koii Task" subtitle="Koii Tasks"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Tokenomics" subtitle="Attention Mining"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Social Tech" subtitle="Get Involved"/>
+    <Feature url="/concepts/koii-summary/welcome" title="Impact & Philosofy" subtitle="Get Involved"/>
   </Column>
   <Column title="Developer Documentation" size={3}>
     <Feature url="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk" title="K2 - settlement layer" subtitle="Learn how to use K2"/>
