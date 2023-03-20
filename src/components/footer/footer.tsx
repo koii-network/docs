@@ -17,7 +17,7 @@ export const Footer = () => {
       <div className="container mx-auto md:pt-12">
         <div className="max-w-[1060px] mx-auto">
           <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-[30px] pb-6">
-            <img src="/static/img/KoiiNetwork-logo_128.png" alt="Koii logo" />
+            <img src="/img/KoiiNetwork-logo_128.png" alt="Koii logo" />
 
             <h2>Don&apos;t Miss Out.</h2>
           </div>
