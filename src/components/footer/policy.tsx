@@ -1,3 +1,4 @@
+import React from "react";
 import { FooterLink } from "./footer-link";
 
 export const Policy = () => {
