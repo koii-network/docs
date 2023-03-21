@@ -5,6 +5,15 @@
  */
 
 /* You can override the default Infima variables here. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/static/fonts/sora/Sora-VariableFont_wght.ttf') format('truetype');
+}
+
 :root {
   --ifm-color-primary: #776cad;
   --ifm-color-primary-dark: #29784c;
@@ -15,7 +24,9 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: #f4f3fc;
-   --link-content: rgba(59,69,78,1.00);
+  --link-content: rgba(59,69,78,1.00);
+  --ifm-font-family-monospace: "Sora";
+  --ifm-font-family-base: "Sora";
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
