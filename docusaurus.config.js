@@ -113,68 +113,6 @@ const config = {
           },
         ],
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: 'Concept',
-      //       items: [
-      //         {
-      //           label: 'Overview',
-      //           to: '/concepts/koii-summary/welcome',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Developers',
-      //       items: [
-      //         {
-      //           label: 'SDK Documentation',
-      //           to: '/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk',
-      //         },
-      //         {
-      //           label: 'GitHub',
-      //           to: 'https://github.com/koii-network',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Peeranha',
-      //           href: 'https://peeranha.io/feed/6',
-      //         },
-      //         {
-      //           label: 'Discord',
-      //           href: 'https://discord.gg/koii',
-      //         },
-      //         {
-      //           label: 'Twitter',
-      //           href: 'https://t.me/koiinetwork',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'Blog',
-      //           to: 'https://blog.koii.network/',
-      //         },
-      //         {
-      //           label: 'Get In Touch',
-      //           href: 'mailto:hello@koii.network',
-      //         },
-      //         {
-      //           label: 'Privacy Policy',
-      //           href: 'https://www.koii.network/Privacy_Policy.pdf',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} Koi Labs Inc.`,
-      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
