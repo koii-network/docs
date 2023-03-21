@@ -111,11 +111,6 @@ const config = {
             activeBasePath: 'develop',
             position: 'left',
           },
-          {
-            href: 'https://github.com/koii-network',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       // footer: {
