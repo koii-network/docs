@@ -5,6 +5,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import {Footer} from '@site/src/components/footer'
+import { Button } from '../components/buttons';
+import { WhereToStart } from '../components/whereToStart';
 
 import styles from './index.module.css';
 
@@ -36,6 +38,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+       <WhereToStart />
         <Footer />
       </main>
     </Layout>
