@@ -10,36 +10,14 @@ export enum HubspotFormLinks {
   NEWSLETTER = "https://share.hsforms.com/1oqz977zNToCWmA-hbyTjXwc20dg",
 }
 
-export const companyLinks = [
-  { label: "About", url: "/about" },
-  { label: "Earn", url: "/earn" },
-  { label: "Blog", url: "https://blog.koii.network" },
-  // { label: "Jobs", url: HubspotFormLinks.JOBS },
-  { label: "Developers Docs", url: "https://docs.koii.network" },
-  { label: "Leaderboard", url: "https://koi.rocks/" },
-  // { label: "Support", url: HubspotFormLinks.SUPORT },
-  { label: "Press Kit", url: "/Koii-Network_External-Assets.zip" },
-  // { label: "FAQ", url: "https://koii.network/faq" },
-];
-
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: "/node" },
-  { label: "Get Finnie", url: "https://koii.me/finnie" },
-  { label: "Apply for a Grant", url: HubspotFormLinks.GRANT },
-  { label: "Become a Partner", url: HubspotFormLinks.PARTNERSHIP },
-  { label: "Join the Waitlist", url: HubspotFormLinks.INVESTOR },
+  { label: "Run a Node", url: "/develop/microservices-and-tasks/run-a-task-node"},
+  { label: "Get Finnie", url: "https://koii.me/finnie", target:"_blank" },
+  { label: "Founders Program", url: HubspotFormLinks.GRANT },
+  { label: "Download Desktop Node", url: HubspotFormLinks.PARTNERSHIP },
+  { label: "Apply for a Grant", url: HubspotFormLinks.INVESTOR },
   {
-    label: "Content Collectives",
+    label: "Get Founder Support",
     url: "https://blog.koii.network/Content-Collective",
   },
 ];
-
-export const getInTouchLinks = [
-  { label: "hello@koii.network", url: "mailto:hello@koii.network" },
-  { label: "press@koii.network", url: "mailto:press@koii.network" },
-];
-
-export const getDiscordDocsLinks = {
-  discord: "https://discord.gg/koii",
-  docs: "https://docs.koii.network/",
-}

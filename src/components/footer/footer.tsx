@@ -21,6 +21,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center md:justify-between xl:items-start xl:flex-row">
             <div className="md:gap-14 md:flex md:flex-row">
               <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
+              {/* <LinksSection title=" a" links={getInvolvedLinks} /> */}
             </div>
 
             <div className="md:hidden">
