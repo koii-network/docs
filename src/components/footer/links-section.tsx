@@ -10,7 +10,7 @@ type LinksSectionProps = {
 export const LinksSection = ({ title, links= [] }: LinksSectionProps) => {
   return (
     <div className="mb-[32px]">
-      <h3 className="mb-2 text-base font-semibold text-center uppercase md:text-left text-[#9BE7C4] ">
+      <h3 className="mb-2 text-base font-semibold uppercase md:text-left text-[#9BE7C4] ">
         {title}
       </h3>
       <ul className="mt-6 text-[16px] grid grid-rows-3 grid-flow-col gap-y-4 gap-x-20">

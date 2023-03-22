@@ -18,7 +18,7 @@ export const Footer = () => {
 
             <h2>Don&apos;t Miss Out.</h2>
           </div>
-          <div className="flex flex-col items-center md:justify-between xl:items-start xl:flex-row">
+          <div className="flex flex-col md:justify-between md:items-start xl:flex-row">
             <div className="md:gap-14 md:flex md:flex-row">
               <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
               {/* <LinksSection title=" a" links={getInvolvedLinks} /> */}
