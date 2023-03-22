@@ -1,13 +1,11 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { ExploreTopics } from "@site/src/components/exploreTopics";
 import { Hero } from "@site/src/components/homePageHero";
 import { Footer } from "@site/src/components/footer";
 import { WhereToStart } from "../components/whereToStart";
 import { Discord } from "../components/discord";
-
-import styles from "./index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -24,7 +22,7 @@ export default function Home(): JSX.Element {
     <Layout title={`${siteConfig.title}`} description="Description">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <ExploreTopics />
         <WhereToStart />
         <Discord />
         <Footer />
