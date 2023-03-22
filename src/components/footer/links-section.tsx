@@ -1,20 +1,21 @@
+import tailwindConfig from "@site/tailwind.config";
 import React from "react";
 import { FooterLink } from "./footer-link";
 
 type LinksSectionProps = {
   title: string;
-  links?: Array<{ label: string; url: string }>;
+  links?: Array<{ label: string; url: string, target?: string }>;
 };
 
-export const LinksSection = ({ title, links = [] }: LinksSectionProps) => {
+export const LinksSection = ({ title, links= [] }: LinksSectionProps) => {
   return (
     <div className="mb-[32px]">
-      <h3 className="mb-2 text-base font-semibold text-center underline uppercase md:text-left">
+      <h3 className="mb-2 text-base font-semibold uppercase md:text-left text-[#9BE7C4] ">
         {title}
       </h3>
-      <ul className="space-y-3">
-        {links.map(({ label, url }) => {
-          return <FooterLink title={label} url={url} key={label} />;
+      <ul className="mt-6 text-[16px] grid grid-rows-3 grid-flow-col gap-y-4 gap-x-20">
+        {links.map(({ label, url, target }) => {
+          return <FooterLink title={label} url={url} target={target} key={label} />;
         })}
       </ul>
     </div>

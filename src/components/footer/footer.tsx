@@ -1,10 +1,8 @@
 import React from "react";
 
-// import {
-//   companyLinks,
-//   getInTouchLinks,
-//   getInvolvedLinks,
-// } from "config/links-config";
+import {
+  getInvolvedLinks,
+} from "@site/src/config/links-config";
 import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 // import { Subscribe } from "@/components/subscribe/subscribe";
@@ -20,11 +18,10 @@ export const Footer = () => {
 
             <h2>Don&apos;t Miss Out.</h2>
           </div>
-          <div className="flex flex-col items-center md:justify-between xl:items-start xl:flex-row">
+          <div className="flex flex-col md:justify-between md:items-start xl:flex-row">
             <div className="md:gap-14 md:flex md:flex-row">
-              {/* <LinksSection title="COMPANY" links={companyLinks} />
               <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
-              <LinksSection title="GET IN TOUCH" links={getInTouchLinks} /> */}
+              {/* <LinksSection title=" a" links={getInvolvedLinks} /> */}
             </div>
 
             <div className="md:hidden">
