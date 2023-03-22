@@ -1,30 +1,29 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import {Footer} from '@site/src/components/footer'
-import { Button } from '../components/buttons';
-import { WhereToStart } from '../components/whereToStart';
+import React from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { Hero } from "@site/src/components/homePageHero";
+import { Footer } from "@site/src/components/footer";
+import { Button } from "../components/buttons";
+import { WhereToStart } from "../components/whereToStart";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-
+    <header className="flex justify-center">
+      <Hero />
     </header>
   );
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description">
+    <Layout title={`${siteConfig.title}`} description="Description">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
