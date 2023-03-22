@@ -1,7 +1,7 @@
 import React from "react";
-import { exploreTopics } from "./featurelist";
+import { exploreTopics } from "./exploreTopicsList";
 
-export default function HomepageFeatures(): JSX.Element {
+export const ExploreTopics = () => {
   return (
     <section className="px-10">
       <div className="container">
@@ -19,8 +19,8 @@ export default function HomepageFeatures(): JSX.Element {
                 <div className="flex items-center my-[20px]">
                   <img
                     className="mr-[30px]"
-                    width={40}
-                    height={40}
+                    width={50}
+                    height={50}
                     src={item.icon}
                     alt={item.title}
                   />
@@ -41,4 +41,4 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
     </section>
   );
-}
+};
