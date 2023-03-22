@@ -117,7 +117,7 @@ export const exploreTopics = [
     items: [
       {
         title: "Join our Founders Program",
-        link: "/",
+        link: "https://www.koii.network/founders",
         icon: "/img/explore-topics-icons/founders-program.svg",
       },
       {

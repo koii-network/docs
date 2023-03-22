@@ -17,13 +17,21 @@ export const ExploreTopics = () => {
               </p>
               {element.items.map((item) => (
                 <div className="flex items-center my-[20px]">
-                  <img
-                    className="mr-[30px]"
-                    width={50}
-                    height={50}
-                    src={item.icon}
-                    alt={item.title}
-                  />
+                  <a
+                    target={
+                      item.link.substring(0, 8) === "https://" && "_blank"
+                    }
+                    href={item.link}
+                  >
+                    {" "}
+                    <img
+                      className="mr-[30px]"
+                      width={50}
+                      height={50}
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </a>
                   <a
                     className="font-semibold text-koii-purple-2"
                     target={
