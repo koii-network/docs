@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "koii-blue-3": "#ECFFFE",
         "koii-purple-2": "#4D3D8D",
+        "koii-purple-3": "#353570",
         "koii-white": "#FCFCFC"
       }
     },
