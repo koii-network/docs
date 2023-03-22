@@ -13,9 +13,9 @@ export enum HubspotFormLinks {
 export const getInvolvedLinks = [
   { label: "Run a Node", url: "/develop/microservices-and-tasks/run-a-task-node"},
   { label: "Get Finnie", url: "https://koii.me/finnie", target:"_blank" },
-  { label: "Founders Program", url: HubspotFormLinks.GRANT },
-  { label: "Download Desktop Node", url: HubspotFormLinks.PARTNERSHIP },
-  { label: "Apply for a Grant", url: HubspotFormLinks.INVESTOR },
+  { label: "Founders Program", url: "/concepts/earning-koii/grants-program" },
+  { label: "Download Desktop Node", url: "/develop/microservices-and-tasks/run-a-task-node" },
+  { label: "Apply for a Grant", url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg"},
   {
     label: "Get Founder Support",
     url: "https://blog.koii.network/Content-Collective",
