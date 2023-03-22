@@ -8,6 +8,7 @@ import { Hero } from "@site/src/components/homePageHero";
 import { Footer } from "@site/src/components/footer";
 import { Button } from "../components/buttons";
 import { WhereToStart } from "../components/whereToStart";
+import { Discord } from "../components/discord";
 
 import styles from "./index.module.css";
 
@@ -28,6 +29,7 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
         <WhereToStart />
+        <Discord />
         <Footer />
       </main>
     </Layout>
