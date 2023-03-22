@@ -5,7 +5,7 @@ const Media = () => {
     <div>
       <img
         src="/img/hero.svg"
-        alt="Discord logo"
+        alt="Hero Media"
         className="w-full"
       />
     </div>
