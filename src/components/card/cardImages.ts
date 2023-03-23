@@ -4,6 +4,7 @@ export const cardImages = {
  tools: require(`@site/concepts/koii-summary/img/Tools.png`).default,
  philosophy: require(`@site/concepts/koii-summary/img/Philosophy of decentralization.png`).default,
  attention:  require(`@site/concepts/koii-summary/img/Mine attention on your app or website.png`).default,
+ attentionMining:  require(`@site/concepts/koii-summary/img/Attention mining.png`).default,
  node:  require(`@site/concepts/koii-summary/img/Compute Sharing Economy- Run a node.png`).default,
  grant:  require(`@site/concepts/koii-summary/img/grant.png`).default,
  tokenomics:  require(`@site/concepts/koii-summary/img/Staking and Voting.png`).default,
