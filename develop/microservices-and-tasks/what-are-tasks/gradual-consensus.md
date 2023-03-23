@@ -16,14 +16,15 @@ While the task standard supports a wide range of possible applications, the most
 One of the major limitations of stake-based games is the potential for an actor with a large amount of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii Tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
 
-![banner](../img/consensus_image_one.png)
-
-
 ## **How does it work?**
+
+![banner](../img/consensus_image_two.png)
 
 Gradual consensus is a multi-round game under which nodes first perform a task, and then vote on a reward distribution. It's important to understand that while the process takes two rounds to complete, each cycle operates independently once per round, such that there is always one cycle starting and completing within every round.
 
 There are three phases in a task’s round lifecycle:
+
+![banner](../img/ROUNDS_NoNote.png)
 
 ### 1. **Submission Phase**
    During this phase, the Task Node(s) submit data to K2 to request rewards for work they've done.
