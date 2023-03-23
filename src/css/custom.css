@@ -83,11 +83,11 @@
   color: #4D3D8D;
 }
 
-menu, ol, ul {
+/* menu,  ol,  ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 
 @media screen and (max-width: 767px) {   
