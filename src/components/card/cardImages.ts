@@ -8,7 +8,7 @@ export const cardImages = {
  node:  require(`@site/concepts/koii-summary/img/Compute Sharing Economy- Run a node.png`).default,
  grant:  require(`@site/concepts/koii-summary/img/grant.png`).default,
  tokenomics:  require(`@site/concepts/koii-summary/img/Staking and Voting.png`).default,
- taskTemplate:  require(`@site/concepts/koii-summary/img/Tasks Template.png`).default,
+ taskTemplate:  require(`@site/concepts/koii-summary/img/Tasks template.png`).default,
  twitter:  require(`@site/concepts/koii-summary/img/twitter.png`).default,
  tasks:  require(`@site/concepts/koii-summary/img/Deploying Tasks.png`).default,
  governanceVideo:  require(`@site/concepts/koii-summary/img/Screenshot from 2023-01-18 21-29-53.png`).default,
