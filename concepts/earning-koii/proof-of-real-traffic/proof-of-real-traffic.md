@@ -6,6 +6,8 @@
 # What is Proof of Real Traffic?
 Proof of Real Traffic is a cryptographic primitive including a signature from a specific consumer wallet. Each viewer creates a signature and then hashes over it to find a PoRT with a specific [difficulty factor](https://btc.com/stats/diff)   generating a PoW that uniquely represents the content and viewer.
 
+![PoRT](../img/PoRT.png)
+
 # How does it work?
 The attention task is running on Koii task node. After the user registers his content to the attention task, it will keep collecting the views received by your content. Currently supported content: NFT on Arwaeve, content on IPFS or your webpage. After collecting certain views, users can get their KOII.
 

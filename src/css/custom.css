@@ -27,6 +27,7 @@
   --link-content: rgba(59,69,78,1.00);
   --ifm-font-family-monospace: "Sora";
   --ifm-font-family-base: "Sora";
+  --ifm-text-color: #171753;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -40,6 +41,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --link-content: #ffffff;
+  --ifm-text-color: #FFFFFF;
 }
 
 .koiiblue {
@@ -68,6 +70,17 @@
 
 .text-center {
   text-align: center;
+}
+
+.header-text {
+  padding: 6px 16px;
+  color: #4D3D8D;
+}
+
+.header-text:hover {
+  border: 2px solid #5ED9D1;
+  border-radius: 4px;
+  color: #4D3D8D;
 }
 
 menu, ol, ul {

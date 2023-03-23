@@ -8,6 +8,8 @@ Koii is a decentralized protocol, meaning that anyone is free to fork the code a
 
 At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, which receives 90% of new tokens, and the K2 Settlement Layer nodes, which receive 10% of the new tokens.  For more information on [Attention Mining](./proof-of-real-traffic/attention-mining).
 
+![Token Generation](./img/Token%20Generation.png)
+
 ### Supply Reduction
 
 While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, continuous inflation benefits the network by onboarding new node operators who fulfill Tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
@@ -16,9 +18,13 @@ The Koii foundation is dedicated to providing developers with incentives to buil
 
 At steady state, the network is designed to lock up tokens in Staking and Bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
+![Supply Reduction](./img/Supply%20Reduction.png)
+
 
 ### Reputation Hardening
 
 In both Attention Mining and the Compute Marketplace, the reputation of wallets is tracked and used to calibrate system processes. In Attention Mining, Reputation is used to prevent spam, and reward high-value contributions by tracking who appreciates them most, while in the Compute Marketplace, the Reputation of a node enables it to perform more work with less stake, and earn more rewards, because it is less likely to behave badly.&#x20;
 
 As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.&#x20;
+
+![Reputation Hardening](./img/Reputation%20Hardening.png)
