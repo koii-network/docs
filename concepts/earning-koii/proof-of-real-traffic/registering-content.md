@@ -38,9 +38,6 @@ The network is designed to track content from any source and can be configured t
 
 The K2 release will support a wide range of network prefixes, including ETH, AR, SOL, HTTP://, MATIC, and more. In general, token symbols can be used to specify layer one blockchains, and web URLs can be specified using the HTTP prefix.
 
-
-**Note:** Currently only Arweave content formatted as Atomic NFTs is supported, but wider support for web URI, IPFS, EVM NFTs, and more will be released in early January 2023. [Contact us for early access.](https://koii.me/support)
-
 ## Recipients SDK Tool
 
 We provide an SDK tool to help you easily register your content. Follow the steps to install and use it:

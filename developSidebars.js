@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "🤑 Settlement Layer",
+      value: "🤑 K2 Settlement Layer",
       className: "sidebar-title",
     },
     "settlement-layer/k2-tick-tock-fast-blocks",

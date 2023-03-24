@@ -11,7 +11,7 @@ export const Discord = () => {
         />
         <div className="w-full flex flex-col items-center gap-9">
             <p className="text-2xl text-koii-purple-3 text-center -tracking-tight mb-0 font-semibold">Still have questions? Reach out in our Discord.</p>
-            <a href="https://www.discord.gg/koii" className="w-full max-w-[240px]">
+            <a href="https://www.discord.gg/koii" className="w-full max-w-[240px]" target="_blank">
                 <Button>
                     Join the Discord
                 </Button>
