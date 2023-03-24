@@ -27,6 +27,11 @@
   --link-content: rgba(59,69,78,1.00);
   --ifm-font-family-monospace: "Sora";
   --ifm-font-family-base: "Sora";
+  --ifm-heading-color: #171753;
+  --ifm-font-color-base: #171753;
+  --ifm-heading-font-weight: 600;
+  --ifm-menu-color:#171753 ;
+  --ifm-text-color: #171753;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -40,6 +45,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --link-content: #ffffff;
+  --ifm-text-color: #FFFFFF;
 }
 
 .koiiblue {
@@ -48,15 +54,26 @@
 
 .sidebar-title {
   margin-left: 0.75rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 16px;
   font-size: medium;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
+  color: #171753;
+  line-height: 24px;
 }
 
 .top-margin {
   margin-top: 2rem;
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
 }
 
 .content-container{
@@ -70,11 +87,22 @@
   text-align: center;
 }
 
-menu, ol, ul {
+.header-text {
+  padding: 6px 16px;
+  color: #4D3D8D;
+}
+
+.header-text:hover {
+  border: 2px solid #5ED9D1;
+  border-radius: 4px;
+  color: #4D3D8D;
+}
+
+/* menu,  ol,  ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 
 @media screen and (max-width: 767px) {   

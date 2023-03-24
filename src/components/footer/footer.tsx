@@ -16,7 +16,7 @@ export const Footer = () => {
           <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-[30px] pb-6">
             <img src="/img/finnie-koii-logo-white.svg" alt="Koii logo" />
 
-            <h2>Don&apos;t Miss Out.</h2>
+            <p className="text-[24px] mb-0">Don&apos;t Miss Out.</p>
           </div>
           <div className="flex flex-col md:justify-between md:items-start xl:flex-row">
             <div className="md:gap-14 md:flex md:flex-row">

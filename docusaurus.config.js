@@ -100,16 +100,18 @@ const config = {
         },
         items: [
           {
-            label: '📖 Concepts',
+            label: '📖 Learn',
             to: '/concepts/koii-summary/welcome',
             activeBasePath: 'concepts',
             position: 'left',
+            className: "header-text",
           },
            {
-            label: '💻 Develop',
+            label: '💻 Build',
             to: '/develop/settlement-layer/k2-tick-tock-fast-blocks',
             activeBasePath: 'develop',
             position: 'left',
+            className: "header-text",
           },
         ],
       },
