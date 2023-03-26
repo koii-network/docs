@@ -8,7 +8,7 @@ import { SocialMediaLinks } from "./social-media-links";
 // import { Subscribe } from "@/components/subscribe/subscribe";
 import { Policy } from "./policy";
 
-export const Footer = () => {
+export const KoiiFooter = () => {
   return (
     <footer className="relative bg-[#353570] app-footer pb-[100px] md:pb-[54px] text-white">
       <div className="container mx-auto md:pt-12">

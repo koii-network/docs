@@ -123,6 +123,7 @@ const config = {
           },
         ],
       },
+      footer: {},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
