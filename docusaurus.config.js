@@ -43,12 +43,24 @@ const config = {
         path: "concepts",
         routeBasePath: "concepts/",
         sidebarPath: require.resolve("./contentSidebars.js"),
+        editUrl:
+            'https://gitlab.com/koii-network/koii-docs/-/blob/main',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ['**/*.md', '**/*.mdx'],
       }],
     ['@docusaurus/plugin-content-docs', { 
         id: "develop",
         path: "develop",
         routeBasePath: "develop/",
         sidebarPath: require.resolve("./developSidebars.js"),
+        editUrl:
+            'https://gitlab.com/koii-network/koii-docs/-/blob/main',
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ['**/*.md', '**/*.mdx'],
       }],
       
   ],
