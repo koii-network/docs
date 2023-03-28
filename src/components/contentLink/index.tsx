@@ -1,44 +1,47 @@
-import React from 'react';
-import styles from './content.module.css';
-import {contentImages} from './contentImages';
+import React from "react";
+import styles from "./content.module.css";
+import { contentImages } from "./contentImages";
 
 type ContentLink = {
-  title?: string; 
-  link?: string; 
+  title?: string;
+  link?: string;
   iconType?: string;
   imageLink?: string;
-  description?:string;
+  description?: string;
+  bottomText?: string;
 };
 
-function ContentLinks({link, title, iconType, imageLink, description} : ContentLink) {
+function ContentLinks({
+  link,
+  title,
+  iconType,
+  imageLink,
+  description,
+  bottomText,
+}: ContentLink) {
   let Svg;
   if (iconType) {
-      Svg = contentImages[iconType];
+    Svg = contentImages[iconType];
   }
-  const target = link.includes('https') ? '_blank' : ''
+  const target = link.includes("https") ? "_blank" : "";
   return (
-    <a href={link} className={styles.cardContainer} target={target}>
-        {
-          Svg && (
-            <Svg />
-          )
-        }
-        {
-          imageLink && (
-            <img src={imageLink} alt="logo" className={styles.imageLink} />
-          )
-        }
-       <div className={styles.textContainer}>
-         <p className={styles.text}>{title}</p>
-        {
-          description && (
-            <div className={styles.descriptionContainer}>
-             {description}
-            </div>
-          )
-        }
-       </div>
-    </a>
+    <>
+      <a href={link} className={styles.cardContainer} target={target}>
+        {Svg && <Svg />}
+        {imageLink && (
+          <img src={imageLink} alt='logo' className={styles.imageLink} />
+        )}
+        <div className={styles.textContainer}>
+          <p className={styles.text}>{title}</p>
+          {description && (
+            <div className={styles.descriptionContainer}>{description}</div>
+          )}
+        </div>
+      </a>
+      {bottomText && (
+        <p className='mt-3 text-[#8899A8] w-full text-center'>{bottomText}</p>
+      )}
+    </>
   );
 }
 
