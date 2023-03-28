@@ -6,7 +6,7 @@ While tasks run on Task Nodes, the data behind them is deliberately spread acros
 
 ### Incentives and Proofs (via a Blockchain Layer)
 
-The core of the tasks architecture is the reward structure, which is contained in the [Settlement Layer](../../settlement-layer/k2-tick-tock-fast-blocks.mdx). The Settlement Layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
+The core of the tasks architecture is the reward structure, which is contained in the [Settlement Layer](../../settlement-layer/k2-tick-tock-fast-blocks.md). The Settlement Layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
 
 When a task executes, each Task Node [submits a proof once per round](gradual-consensus), which usually references an IPFS CID with more information to support the node's work.&#x20;
 
