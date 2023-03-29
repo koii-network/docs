@@ -10,8 +10,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Sora';
-  src: url('/static/fonts/sora/Sora-VariableFont_wght.ttf') format('truetype');
+  font-family: "Sora";
+  src: url("/static/fonts/sora/Sora-VariableFont_wght.ttf") format("truetype");
 }
 
 :root {
@@ -24,18 +24,18 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: #f4f3fc;
-  --link-content: rgba(59,69,78,1.00);
+  --link-content: rgba(59, 69, 78, 1);
   --ifm-font-family-monospace: "Sora";
   --ifm-font-family-base: "Sora";
   --ifm-heading-color: #171753;
   --ifm-font-color-base: #171753;
   --ifm-heading-font-weight: 600;
-  --ifm-menu-color:#171753 ;
+  --ifm-menu-color: #171753;
   --ifm-text-color: #171753;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -45,7 +45,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --link-content: #ffffff;
-  --ifm-text-color: #FFFFFF;
+  --ifm-text-color: #ffffff;
 }
 
 .koiiblue {
@@ -76,7 +76,7 @@
   letter-spacing: -0.01em;
 }
 
-.content-container{
+.content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 24px;
@@ -89,13 +89,17 @@
 
 .header-text {
   padding: 6px 16px;
-  color: #4D3D8D;
+  color: #4d3d8d;
 }
 
 .header-text:hover {
   outline: 2px solid #5ED9D1;
   border-radius: 4px;
-  color: #4D3D8D;
+  color: #4d3d8d;
+}
+
+main {
+  margin-left: 8rem;
 }
 
 /* menu,  ol,  ul {
@@ -104,10 +108,20 @@
   padding: 0;
 } */
 
+@media screen and (max-width: 1200px) {
+  main {
+    margin-left: 4rem;
+  }
+}
 
-@media screen and (max-width: 767px) {   
-   .content-container{
-      grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 992px) {
+  main {
+    margin-left: 0rem;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
 }
