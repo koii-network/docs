@@ -9,7 +9,7 @@ import { Discord } from "../components/discord";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className="flex justify-center">
+    <header className='flex justify-center'>
       <Hero />
     </header>
   );
@@ -18,13 +18,11 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description="Description">
+    <Layout title={`${siteConfig.title}`} description='Description'>
       <HomepageHeader />
-      <main>
-        <ExploreTopics />
-        <WhereToStart />
-        <Discord />
-      </main>
+      <ExploreTopics />
+      <WhereToStart />
+      <Discord />
     </Layout>
   );
 }
