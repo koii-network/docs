@@ -1,6 +1,6 @@
 # Setup Process
 
-To run the K2 node, first, you have to [install the Koii command-line tools](https://docs.koii.network/microservices-and-tasks/task-development-guide/task-development-flow/koii-cli).
+To run the K2 node, first, you have to [install the Koii command-line tools](../../microservices-and-tasks/task-development-guide/task-development-flow/koii-cli).
 
 ### Configure Koii CLI
 
@@ -26,10 +26,10 @@ You should see an output similar to this:
 
 ```
 Config File: /Users/<YOUR_HOME>/.config/koii/cli/config.yml
-RPC URL: http://localhost:8899 
+RPC URL: http://localhost:8899
 WebSocket URL: ws://localhost:8900/ (computed)
-Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json 
-Commitment: confirmed 
+Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json
+Commitment: confirmed
 ```
 
 ### Airdrop & Check Validator Balance
@@ -97,8 +97,3 @@ koii-validator \
   --limit-ledger-size \
   --log ~/koii-validator.log
 ```
-
-
-
-
-
