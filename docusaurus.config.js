@@ -106,11 +106,11 @@ const config = {
       // image: 'img/thumbnail.png',
       metadata: [
         { property: "og:url", content: "https://docs.koii.network/" },
-        {
-          property: "og:image",
-          content: "https://www.koii.network/static/thumbnail.png",
-        },
-        { property: "og:description", content: "Koii is Web3, for everyone." },
+        // {
+        //   property: "og:image",
+        //   content: "https://www.koii.network/static/thumbnail.png",
+        // },
+        // { property: "og:description", content: "Koii is Web3, for everyone." },
         { property: "twitter:card", content: "summary_large_image" },
         {
           property: "twitter:description",
