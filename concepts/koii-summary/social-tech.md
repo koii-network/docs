@@ -1,7 +1,7 @@
 ---
 title: 🌊 Social Tech
 description: Include your community in the value stream by using community hardware, and providing transparent systems for attention tracking, content storage, value transfer, and indexing.
-image: img/Social_Technology(svg).svg
+image: ./img/Social_Technology(svg).svg
 sidebar_label: 🌊 Social Tech
 ---
 
