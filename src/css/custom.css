@@ -93,7 +93,7 @@
 }
 
 .header-text:hover {
-  border: 2px solid #5ed9d1;
+  outline: 2px solid #5ED9D1;
   border-radius: 4px;
   color: #4d3d8d;
 }
