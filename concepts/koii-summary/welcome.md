@@ -1,7 +1,7 @@
 ---
 title: 🎏 Welcome to the New Internet
 description: We built Koii to make a better world by connecting the people that live in it.
-thumbnail: static/img/thumbnail.png
+image: static/img/thumbnail.png
 sidebar_label: 🎏 Welcome to the New Internet
 ---
 
