@@ -1,7 +1,7 @@
 ---
 title: 💡 Philosophy
 description: For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.
-image: img/Philosophy_of_decentralization.svg
+image: ./img/Philosophy_of_decentralization.svg
 sidebar_label: 💡 Philosophy
 ---
 
