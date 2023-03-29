@@ -111,15 +111,15 @@ const config = {
         //   content: "https://www.koii.network/static/thumbnail.png",
         // },
         // { property: "og:description", content: "Koii is Web3, for everyone." },
-        { property: "twitter:card", content: "summary_large_image" },
-        {
-          property: "twitter:description",
-          content: "Koii is Web3, for everyone.",
-        },
-        {
-          property: "twitter:image",
-          content: "https://www.koii.network/static/thumbnail.png",
-        },
+        // { property: "twitter:card", content: "summary_large_image" },
+        // {
+        //   property: "twitter:description",
+        //   content: "Koii is Web3, for everyone.",
+        // },
+        // {
+        //   property: "twitter:image",
+        //   content: "https://www.koii.network/static/thumbnail.png",
+        // },
       ],
       navbar: {
         title: "Koii Docs",
