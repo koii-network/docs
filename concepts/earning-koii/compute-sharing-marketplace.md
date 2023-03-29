@@ -1,13 +1,18 @@
+---
+title: Compute Sharing Marketplace
+description: Application layer nodes are one of the most-needed commodities in Web3.
+image: ./img/Running_task_nodes_(1).png
+sidebar_label: Compute Sharing Marketplace
+---
+
 import ContentLink from "@site/src/components/contentLink";
 import Description from "@site/src/components/description";
 
 # Compute Sharing Marketplace
 
-![banner](img/Running%20task%20nodes%20(1).png)
+![banner](<img/Running_task_nodes_(1).png>)
 
-<Description
-  text="Application layer nodes are one of the most-needed commodities in Web3."
-/>
+<Description text='Application layer nodes are one of the most-needed commodities in Web3.' />
 
 Once a content creator or app developer [mines KOII](./proof-of-real-traffic/attention-mining), they have the option of staking their new tokens as collateral against either a Task Node or a K2 Settlement Node. Task Nodes provide web app and microservice hosting and support an open and extensible consensus process known as [Gradual Consensus](/develop/microservices-and-tasks/what-are-tasks/gradual-consensus), while [Settlement Nodes](/develop/settlement-layer/k2-tick-tock-fast-blocks) provide fast payments using a storage-based Solana fork.&#x20;
 
@@ -15,7 +20,11 @@ Task Nodes perform [automated microservices](/develop/microservices-and-tasks/wh
 
 Want to make money while you sleep? Sign up below to join the public beta!
 
-<ContentLink title="Run a task Node" link="/develop/microservices-and-tasks/run-a-task-node" iconType="copy"/>
+<ContentLink
+  title='Run a task Node'
+  link='/develop/microservices-and-tasks/run-a-task-node'
+  iconType='copy'
+/>
 
 ## **How does it work?**
 
@@ -27,7 +36,11 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 #### Start writing your first task today!
 
-<ContentLink title="What are tasks?" link="/develop/microservices-and-tasks/run-a-task-node" iconType="copy"/>
+<ContentLink
+  title='What are tasks?'
+  link='/develop/microservices-and-tasks/run-a-task-node'
+  iconType='copy'
+/>
 
 ## **Get Involved**
 

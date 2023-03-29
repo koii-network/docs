@@ -1,3 +1,10 @@
+---
+title: Network Economics
+description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose.
+image: static/img/thumbnail.png
+sidebar_label: Network Economics
+---
+
 # Network Economics
 
 Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose. In our first implementation, the [settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/develop/finnie-for-devs/koii-network/transfer-koii) and [dispute resolution](/develop/microservices-and-tasks/what-are-tasks/what-are-audits) services to support the compute economy, while providing a historical ledger. Since the settlement layer is decentralized, there is no central ownership body, and following from the examples of Bitcoin, Ethereum, and Solana, a tokenized model was implemented to ensure bad actors can be appropriately penalized. Transaction fees paid in KOII tokens control how data is added to the network, preventing a bad actor from flooding the system with spam.&#x20;
@@ -6,7 +13,7 @@ Koii is a decentralized protocol, meaning that anyone is free to fork the code a
 
 ### Token Generation
 
-At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, which receives 90% of new tokens, and the K2 Settlement Layer nodes, which receive 10% of the new tokens.  For more information on [Attention Mining](./proof-of-real-traffic/attention-mining).
+At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, which receives 90% of new tokens, and the K2 Settlement Layer nodes, which receive 10% of the new tokens. For more information on [Attention Mining](./proof-of-real-traffic/attention-mining).
 
 ![Token Generation](./img/Token%20Generation.png)
 
@@ -19,7 +26,6 @@ The Koii foundation is dedicated to providing developers with incentives to buil
 At steady state, the network is designed to lock up tokens in Staking and Bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
 ![Supply Reduction](./img/Supply%20Reduction.png)
-
 
 ### Reputation Hardening
 
