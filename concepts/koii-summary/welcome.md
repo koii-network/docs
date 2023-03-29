@@ -1,7 +1,12 @@
+---
+title: 🎏 Welcome to the New Internet
+description: We built Koii to make a better world by connecting the people that live in it.
+thumbnail: static/img/thumbnail.png
+sidebar_label: 🎏 Welcome to the New Internet
+---
+
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
-
-# 🎏 Welcome to the New Internet
 
 <Description text="We built Koii to make a better world by connecting the people that live in it." />
 
