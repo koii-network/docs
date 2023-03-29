@@ -1,7 +1,7 @@
 ---
 title: 🔥 Impact
 description: We've redesigned the web from the group up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, Koii pays you.
-thumbnail: img/How_Koii_Benefits_You.svg
+image: img/How_Koii_Benefits_You.svg
 sidebar_label: 🔥 Impact
 ---
 
