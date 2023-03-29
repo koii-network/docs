@@ -104,23 +104,23 @@ const config = {
       },
       // Replace with your project's social card
       // image: 'img/thumbnail.png',
-      metadata: [
-        { property: "og:url", content: "https://docs.koii.network/" },
-        // {
-        //   property: "og:image",
-        //   content: "https://www.koii.network/static/thumbnail.png",
-        // },
-        // { property: "og:description", content: "Koii is Web3, for everyone." },
-        // { property: "twitter:card", content: "summary_large_image" },
-        // {
-        //   property: "twitter:description",
-        //   content: "Koii is Web3, for everyone.",
-        // },
-        // {
-        //   property: "twitter:image",
-        //   content: "https://www.koii.network/static/thumbnail.png",
-        // },
-      ],
+      // metadata: [
+      //   { property: "og:url", content: "https://docs.koii.network/" },
+      //   // {
+      //   //   property: "og:image",
+      //   //   content: "https://www.koii.network/static/thumbnail.png",
+      //   // },
+      //   // { property: "og:description", content: "Koii is Web3, for everyone." },
+      //   // { property: "twitter:card", content: "summary_large_image" },
+      //   // {
+      //   //   property: "twitter:description",
+      //   //   content: "Koii is Web3, for everyone.",
+      //   // },
+      //   // {
+      //   //   property: "twitter:image",
+      //   //   content: "https://www.koii.network/static/thumbnail.png",
+      //   // },
+      // ],
       navbar: {
         title: "Koii Docs",
         logo: {
