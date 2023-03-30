@@ -13,7 +13,7 @@ export const LinksSection = ({ title, links= [] }: LinksSectionProps) => {
       <h3 className="mb-2 text-base font-semibold uppercase md:text-left text-[#9BE7C4] ">
         {title}
       </h3>
-      <div className="mt-6 text-[16px] grid grid-rows-3 grid-flow-col gap-y-4 gap-x-20">
+      <div className="mt-6 text-[16px] grid grid-rows-3 md:grid-flow-col gap-y-4 gap-x-20">
         {links.map(({ label, url, target }) => {
           return <FooterLink title={label} url={url} target={target} key={label} />;
         })}
