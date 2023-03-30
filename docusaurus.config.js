@@ -109,20 +109,20 @@ const config = {
       //     property: "og:url",
       //     content: "https://koii-docs.vercel.app",
       //   },
-      //   // {
-      //   //   property: "og:image",
-      //   //   content: "https://www.koii.network/static/thumbnail.png",
-      //   // },
-      //   // { property: "og:description", content: "Koii is Web3, for everyone." },
-      //   // { property: "twitter:card", content: "summary_large_image" },
-      //   // {
-      //   //   property: "twitter:description",
-      //   //   content: "Koii is Web3, for everyone.",
-      //   // },
-      //   // {
-      //   //   property: "twitter:image",
-      //   //   content: "https://www.koii.network/static/thumbnail.png",
-      //   // },
+      //   {
+      //     property: "og:image",
+      //     content: "https://www.koii.network/static/thumbnail.png",
+      //   },
+      //   { property: "og:description", content: "Koii is Web3, for everyone." },
+      //   { property: "twitter:card", content: "summary_large_image" },
+      //   {
+      //     property: "twitter:description",
+      //     content: "Koii is Web3, for everyone.",
+      //   },
+      //   {
+      //     property: "twitter:image",
+      //     content: "https://www.koii.network/static/thumbnail.png",
+      //   },
       // ],
       navbar: {
         title: "Koii Docs",
