@@ -1,7 +1,7 @@
 ---
 title: 🚚 Template Library
 description: Get started fast with easy to use JavaScript templates.
-image: img/Template_Library.png
+image: img/thumbnail.png
 sidebar_label: 🚚 Template Library
 ---
 

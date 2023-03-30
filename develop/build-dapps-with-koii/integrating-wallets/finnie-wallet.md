@@ -1,7 +1,7 @@
 ---
 title: Finnie Wallet
 description: Integrate your dApp with Finnie wallet
-image: ./img/Finnie_Wallet_(1).png
+image: img/thumbnail.png
 sidebar_label: Finnie Wallet
 ---
 

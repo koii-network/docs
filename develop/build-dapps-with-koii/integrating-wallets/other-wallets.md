@@ -1,7 +1,7 @@
 ---
 title: Other Wallets
 description: More wallets integration.
-image: ./img/Other_Wallets_(1).png
+image: img/thumbnail.png
 sidebar_label: Other Wallets
 ---
 

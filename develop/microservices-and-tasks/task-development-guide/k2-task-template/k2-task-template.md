@@ -1,7 +1,7 @@
 ---
 title: K2 Task Template
 description: Tasks run following a periodic structure of 'rounds'
-image: ../../img/execute_task.png
+image: img/thumbnail.png
 sidebar_label: K2 Task Template
 ---
 
