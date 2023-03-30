@@ -1,3 +1,10 @@
+---
+title: Task Functions
+description: Task Functions.
+image: static/img/thumbnail.png
+sidebar_label: Task Functions
+---
+
 # Task Functions
 
 # task()
@@ -23,6 +30,7 @@ async function task() {
 ```
 
 # fetchSubmission()
+
 The `fetchSubmission` function retrieves a node's submission value(CID) from levelDB.
 
 ```javascript
@@ -59,11 +67,5 @@ async function submitTask(roundNumber) {
 ```
 
 After the off-chain work is completed and the results are submitted on-chain. The following window is for reviewing the submitted results.
- 
+
 In the following section, we will learn about audit functions.
-
-
-
-
-
-

@@ -1,3 +1,10 @@
+---
+title: Filesystem Access
+description: The File System Access API allows read, write and file management capabilities.
+image: static/img/thumbnail.png
+sidebar_label: Filesystem Access
+---
+
 import Description from "@site/src/components/description";
 
 # Filesystem Access
@@ -15,9 +22,9 @@ Most interaction with files and directories is accomplished with `fsPromises` me
 
 The `fs` method takes in three arguments:
 
-* `method` : The `fsPromise` method to call
-* `path`: The path for the express call
-* `...args`: Any remaining parameters for the FS call
+- `method` : The `fsPromise` method to call
+- `path`: The path for the express call
+- `...args`: Any remaining parameters for the FS call
 
 ```typescript
 async fs(method, path, ...args) {
@@ -34,26 +41,19 @@ await namespaceWrapper.fs("mkdir", `uploads`, {
 });
 
 // COPY FILE
-await namespaceWrapper.fs(
-  "copyFile",
-  `uploads/handler.js`,
-  `utils/handler.js`
-);
+await namespaceWrapper.fs("copyFile", `uploads/handler.js`, `utils/handler.js`);
 
 // CREATE NEW FILE
-await namespaceWrapper.fs(
-  "writeFile",
-  `uploads/handler.js`
-);
+await namespaceWrapper.fs("writeFile", `uploads/handler.js`);
 ```
 
 ### fsStaking Method
 
 The `fsStaking` method takes in three arguments:
 
-* `method` : The `fsPromise` method to call
-* `path`: The path for the express call
-* `...args`: Any remaining parameters for the FS call
+- `method` : The `fsPromise` method to call
+- `path`: The path for the express call
+- `...args`: Any remaining parameters for the FS call
 
 ```javascript
 async fsStaking(method, path, ...args) {
@@ -65,7 +65,7 @@ async fsStaking(method, path, ...args) {
 
 The `fsWriteStream` method takes in one argument:
 
-* `imagepath` : A `string` to the image path
+- `imagepath` : A `string` to the image path
 
 ```javascript
   async fsWriteStream(imagepath: string) {
@@ -81,7 +81,7 @@ The `fsWriteStream` method takes in one argument:
 
 The `fsReadStream` method takes in one argument:
 
-* `imagepath`: A `string` to the image path
+- `imagepath`: A `string` to the image path
 
 ```javascript
   async fsReadStream(imagepath: string) {

@@ -1,11 +1,18 @@
+---
+title: Setup
+description: The `setup` function is run once before all other functions to set up anything needed for other functions to work.
+image: static/img/thumbnail.png
+sidebar_label: Setup
+---
+
 # Setup
 
 The `setup` function is run once before all other functions to set up anything needed for other functions to work. It calls a built-in namespace function called `defaultTaskSetup`.&#x20;
 
 The `defaultTaskSetup` function does the following:
 
-* Establish connection to defined k2 cluster
-* Sets submitter account
+- Establish connection to defined k2 cluster
+- Sets submitter account
 
 The `setup` function:
 
@@ -22,20 +29,18 @@ async function setup() {
     } else if (m.functionCall == "auditPayload") {
       console.log("auditPayload called");
       coreLogic.auditTask(m.roundNumber);
-    }
-    else if(m.functionCall == "executeTask") {
+    } else if (m.functionCall == "executeTask") {
       console.log("executeTask called");
       coreLogic.task();
-    }
-    else if(m.functionCall == "generateAndSubmitDistributionList") {
+    } else if (m.functionCall == "generateAndSubmitDistributionList") {
       console.log("generateAndSubmitDistributionList called");
       coreLogic.generateAndSubmitDistributionList(m.roundNumber);
-    }
-    else if(m.functionCall == "distributionListAudit") {
+    } else if (m.functionCall == "distributionListAudit") {
       console.log("distributionListAudit called");
       coreLogic.auditDistribution(m.roundNumber);
     }
-  })};
+  });
+}
 ```
 
 Usually there's no need to modify this function, except you want to add extra `console.log` or change a function's name.

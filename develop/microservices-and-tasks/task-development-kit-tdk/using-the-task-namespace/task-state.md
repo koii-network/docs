@@ -1,6 +1,14 @@
+---
+title: Task State
+description: Task State
+image: static/img/thumbnail.png
+sidebar_label: Task State
+---
+
 # Task State
 
 ## getTaskState()
+
 A task's state can be retrieved using the `getTaskState` namespace helper function. It returns an object containing information about the task. <br />
 Task state sample:
 

@@ -1,8 +1,15 @@
+---
+title: Staking and Voting
+description: Building trustless trust requires simple rules for participation.
+image: ../img/Staking_and_Voting.png
+sidebar_label: Staking and Voting
+---
+
 import Description from "@site/src/components/description";
 
 # Staking and Voting
 
-![banner](../img/Staking%20and%20Voting.png)
+![banner](../img/Staking_and_Voting.png)
 
 <Description
   text="Building trustless trust requires simple rules for participation."

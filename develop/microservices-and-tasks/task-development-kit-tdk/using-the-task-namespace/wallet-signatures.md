@@ -1,3 +1,10 @@
+---
+title: Wallet Signatures
+description: There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii Tokens on K2.
+image: static/img/thumbnail.png
+sidebar_label: Wallet Signatures
+---
+
 # Wallet Signatures
 
 There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii Tokens on K2. The three wallet options are:
@@ -16,8 +23,7 @@ The distribution wallet is required if a node needs to submit a distribution lis
 
 ## How Can the Main Wallet Sign Transactions ?
 
-Yes! as you probably already guessed, the Namespace wrapper offers a method that injects the main system wallet as the first signer for making transaction fees payments. The `sendAndConfirmTransactionWrapper` method is in charge of this. 
-
+Yes! as you probably already guessed, the Namespace wrapper offers a method that injects the main system wallet as the first signer for making transaction fees payments. The `sendAndConfirmTransactionWrapper` method is in charge of this.
 
 ### Wallet Security
 
@@ -30,8 +36,8 @@ In these cases, the task operator can opt into allowing their wallet to be used 
 
 The `sendAndConfirmTransactionWrapper` takes in two parameters:
 
-* `transaction` : Endpoint path to append to `namespace`
-* `singers`: Other wallets signatures
+- `transaction` : Endpoint path to append to `namespace`
+- `singers`: Other wallets signatures
 
 ```javascript
   async sendAndConfirmTransactionWrapper(
@@ -55,13 +61,13 @@ The `sendAndConfirmTransactionWrapper` takes in two parameters:
 Example:
 
 ```javascript
-    const result = await sendAndConfirmTransactionWrapper(
-      this.connection,
-      new Transaction().add(instruction),
-      [
-        this.#mainSystemAccount,
-        this.submitterAccountKeyPair,
-        this.distributionAccountKeyPair,
-      ],
-    );
+const result = await sendAndConfirmTransactionWrapper(
+  this.connection,
+  new Transaction().add(instruction),
+  [
+    this.#mainSystemAccount,
+    this.submitterAccountKeyPair,
+    this.distributionAccountKeyPair,
+  ]
+);
 ```

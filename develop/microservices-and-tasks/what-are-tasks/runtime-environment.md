@@ -1,3 +1,10 @@
+---
+title: Runtime Environment
+description: Runtime Environment
+image: static/img/thumbnail.png
+sidebar_label: Runtime Environment
+---
+
 # Runtime Environment
 
 ## Where Do Tasks Live?

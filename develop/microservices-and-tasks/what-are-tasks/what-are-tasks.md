@@ -1,3 +1,10 @@
+---
+title: What are Tasks?
+description: Trustless systems are essential for a stable internet. We're working to make them bigger and better.
+image: ../img/What_are_Audits_.png
+sidebar_label: What are Tasks?
+---
+
 import Description from "@site/src/components/description";
 
 # What are Tasks?
@@ -10,6 +17,7 @@ import Description from "@site/src/components/description";
 Koii Tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows Task nodes to perform a range of easily customizable services and provides the foundation for a highly transparent and trustless internet without the scaling limitations of traditional blockchains.
 
 ![banner](../img/image.png)
+
 <p>Koii Tasks (currently in beta) provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
 
 ## Quick Links
@@ -24,9 +32,9 @@ There's a lot of material here, so if you're just getting started, you might wan
     d. [Where does task data live?](runtime-environment)<br/>
     e. [Managing collateral and voting](staking-and-voting)<br/>
     f. [Securing tasks with audits](what-are-audits)
-2. [Using Koii's Task Development Kit (a.k.a. TDK)](../task-development-guide/)
-3. [Building your first task (Task Development Guide)](../task-development-guide/)
-4. [Task Design Example ](../quote-of-the-day-example-task/google-doodle-task)
-5. [Run a Task Node](../run-a-task-node)
-6. [Using Reputation to reduce waste compute (a.k.a. CARP)](../using-reputation)
 
+2.  [Using Koii's Task Development Kit (a.k.a. TDK)](../task-development-guide/)
+3.  [Building your first task (Task Development Guide)](../task-development-guide/)
+4.  [Task Design Example ](../quote-of-the-day-example-task/google-doodle-task)
+5.  [Run a Task Node](../run-a-task-node)
+6.  [Using Reputation to reduce waste compute (a.k.a. CARP)](../using-reputation)

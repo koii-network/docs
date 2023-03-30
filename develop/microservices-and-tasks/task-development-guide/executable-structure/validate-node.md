@@ -1,15 +1,22 @@
+---
+title: Validate Node
+description: The validate node function is passed to a helper function called `validateAndVoteOnNodes` where it will be run for each node that has made a submission. The validate node function will return true if the node is valid.
+image: static/img/thumbnail.png
+sidebar_label: Validate Node
+---
+
 # Validate Node
 
 The validate node function is passed to a helper function called `validateAndVoteOnNodes` where it will be run for each node that has made a submission. The validate node function will return true if the node is valid. The validate node function will be given the following params to validate a node:
 
-* K2 Submission data
-* Node Service URL (if present)
+- K2 Submission data
+- Node Service URL (if present)
 
 ## Types of Audits
 
-* Checking signed and uploaded data on IPFS using a CID submitted to K2
-* Checking status of API endpoints on node
-* Checking proof stored on nodes provided API endpoint
+- Checking signed and uploaded data on IPFS using a CID submitted to K2
+- Checking status of API endpoints on node
+- Checking proof stored on nodes provided API endpoint
 
 ## Example
 
@@ -24,7 +31,7 @@ validateNode(node) {
     }).then(async (response) => {
       if (
       response.data &&
-      response.data == "EXAMPLE CORRECT DATA" 
+      response.data == "EXAMPLE CORRECT DATA"
       ) {
         return true;
       } else {
@@ -39,7 +46,7 @@ validateNode(node) {
 async function execute() {
   cronArray.push(
    cron.schedule(
-    '*/1 * * * *', 
+    '*/1 * * * *',
     () => { namespace.validateAndVoteOnNodes(validateNode) }
    ));
   return cronArray;
@@ -60,7 +67,7 @@ async validateAndVoteOnNodes(validate: (node: any) => boolean) {
     const stat_val = Object.keys(status)[0];
 
     const voteStatus = await this.redisGet('voteStatus');
-    
+
     if (!process.env.SERVICE_URL) console.warn('SERVICE_URL not set');
     const nodes = await getNodes(process.env.SERVICE_URL || '');
 
