@@ -5,7 +5,7 @@ description: We've redesigned the web from the group up to reward contributions 
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 
-🔥 Impact
+# 🔥 Impact
 
 ![banner](img/How_Koii_Benefits_You.svg)
 
