@@ -1,13 +1,20 @@
+---
+title: transfer (AR)
+description: Interact with the contract to transfer AR tokens from one wallet to another.
+image: static/img/thumbnail.png
+sidebar_label: transfer (AR)
+---
+
 # transfer (AR)
 
 Interact with the contract to transfer AR tokens from one wallet to another.
 
 ### Parameters
 
-* qty ```<number>``` - Amount of tokens to transfer
-* target ```<string>``` - Receiver's wallet address
-* token ```<string>``` - The token to be transferred (AR in this case)
-* (optional) reward: string Custom reward for smartweave transaction
+- qty `<number>` - Amount of tokens to transfer
+- target `<string>` - Receiver's wallet address
+- token `<string>` - The token to be transferred (AR in this case)
+- (optional) reward: string Custom reward for smartweave transaction
 
 :::info
 The same function can be used to [**transfer KOII tokens**](./transfer-koii) from one wallet to another, we just need to change the token type in the third parameter.
@@ -45,4 +52,4 @@ Your transaction is rxomYgpdTaRkmeSt_MHYqD5KBAGd9JSFYq8iOeM-is0
 
 ### Returns
 
-**Promise ```<string>```** - Transaction ID of the transfer transaction.
+**Promise `<string>`** - Transaction ID of the transfer transaction.
