@@ -1,9 +1,9 @@
----
+<!-- ---
 title: 🔥 Impact
 description: We've redesigned the web from the group up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, Koii pays you.
 # image: https://www.koii.network/static/thumbnail.png
 sidebar_label: 🔥 Impact
----
+--- -->
 
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
