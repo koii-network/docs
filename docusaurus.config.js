@@ -111,7 +111,7 @@ const config = {
         },
         // {
         //   property: "og:image",
-        //   content: "https://www.koii.network/static/thumbnail.png",
+        //   content: "https://koii-docs.vercel.app/static/thumbnail.png",
         // },
         // { property: "og:description", content: "Koii is Web3, for everyone." },
         // { property: "twitter:card", content: "summary_large_image" },
