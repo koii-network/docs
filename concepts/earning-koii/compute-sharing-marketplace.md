@@ -1,7 +1,7 @@
 ---
 title: Compute Sharing Marketplace
 description: Application layer nodes are one of the most-needed commodities in Web3.
-image: ./img/Running_task_nodes_(1).png
+image: img/thumbnail.png
 sidebar_label: Compute Sharing Marketplace
 ---
 

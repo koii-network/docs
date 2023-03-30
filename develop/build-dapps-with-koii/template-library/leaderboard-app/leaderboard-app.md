@@ -1,7 +1,7 @@
 ---
 title: 📃 Leaderboard App
 description: 90% of traffic on the web goes to leaderboard apps. What better way to mine
-image: ../../img/Leaderboard_App.png
+image: img/thumbnail.png
 sidebar_label: 📃 Leaderboard App
 ---
 

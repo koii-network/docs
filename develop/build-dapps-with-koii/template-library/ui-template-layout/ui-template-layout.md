@@ -1,7 +1,7 @@
 ---
 title: 💡 UI Template Layout
 description: Koii-X uses Chakra UI to build the layout. You can customize your own UI elements such as buttons, text, icons, or anything else.
-image: ../../img/Templates.png
+image: img/thumbnail.png
 sidebar_label: 💡 UI Template Layout
 ---
 

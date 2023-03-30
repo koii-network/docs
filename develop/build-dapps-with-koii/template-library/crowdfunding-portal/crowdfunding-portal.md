@@ -1,3 +1,10 @@
+---
+title: 💰 Crowdfunding Portal
+description: Create your own decentralized crowdfunding portal
+image: img/thumbnail.png
+sidebar_label: 💰 Crowdfunding Portal
+---
+
 import Description from "@site/src/components/description";
 
 # 💰 Crowdfunding Portal
@@ -15,4 +22,3 @@ Using Koii-X's simple dApp template to deploy a crowdfunding portal allows you t
 ### Demo
 
 Check out the demo [**here** ](https://crowdfunding-koii.vercel.app/)and how to [**Customize it**](https://github.com/koii-network/crowdfunding#fundraiser-customization).
-

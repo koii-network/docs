@@ -1,7 +1,7 @@
 ---
 title: 🛠 Tools
 description: Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal compute power, and onboard your community.
-image: ./img/Tools.svg
+image: img/thumbnail.png
 sidebar_label: 🛠 Tools
 ---
 

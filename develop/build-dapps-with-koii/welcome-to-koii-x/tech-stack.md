@@ -1,7 +1,7 @@
 ---
 title: ⌨ Tech Stack
 description: Koii combines decentralized rails and incentives with traditional tools
-image: img/Tech_Stack_(1).png
+image: img/thumbnail.png
 sidebar_label: ⌨ Tech Stack
 ---
 

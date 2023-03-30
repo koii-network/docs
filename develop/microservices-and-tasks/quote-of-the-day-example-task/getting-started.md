@@ -1,3 +1,9 @@
+---
+title: Getting Started
+description: First step is to clone the K2-template.
+image: img/thumbnail.png
+sidebar_label: Getting Started
+---
 
 # Getting Started
 

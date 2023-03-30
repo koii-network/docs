@@ -1,7 +1,7 @@
 ---
 title: Accepting Payments
 description: Configuring & Connecting Wallets and Managing Identities
-image: ./img/Accepting_Payments_(1).png
+image: img/thumbnail.png
 sidebar_label: Accepting Payments
 ---
 

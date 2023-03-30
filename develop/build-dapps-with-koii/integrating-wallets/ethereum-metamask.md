@@ -1,7 +1,7 @@
 ---
 title: Ethereum (Metamask)
 description: Integrate with MetaMask wallet
-image: ./img/Integrating_Metamask.png
+image: img/thumbnail.png
 sidebar_label: Ethereum (Metamask)
 ---
 

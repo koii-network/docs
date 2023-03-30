@@ -3,7 +3,7 @@ title: 🎨 Using NFTs as Content
 description:
   Koii-X was originally designed to support the needs of app developers building
   decentralized media products.
-image: img/Using_NFTs_as_Content.png
+image: img/thumbnail.png
 sidebar_label: 🎨 Using NFTs as Content
 ---
 

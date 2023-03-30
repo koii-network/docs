@@ -1,7 +1,7 @@
 ---
 title: Create Task CLI
 description: We provide create-task-cli to help you easily create and deploy your task.
-image: ./img/DEV_koii_task.png
+image: img/thumbnail.png
 sidebar_label: Create Task CLI
 ---
 

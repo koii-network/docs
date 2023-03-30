@@ -1,7 +1,7 @@
 ---
 title: Staking and Voting
 description: Building trustless trust requires simple rules for participation.
-image: img/Staking_and_Voting.png
+image: img/thumbnail.png
 sidebar_label: Staking and Voting
 ---
 

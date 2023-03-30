@@ -1,7 +1,7 @@
 ---
 title: 🛠 What is the Koii SDK?
 description: We're building one toolkit for all blockchains
-image: ./img/What_is_the_Koii_SDK_.png
+image: img/thumbnail.png
 sidebar_label: 🛠 What is the Koii SDK?
 ---
 

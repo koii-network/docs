@@ -1,7 +1,7 @@
 ---
 title: Lists and Leaderboards
 description: One thing to keep in mind when working with decentralized systems is that there's very minimal support for things like APIs and databases. Instead, we use a combination of on-chain data (via NFTs and GraphQL tags on Arweave) and Koii Tasks running on decentralized nodes.
-image: img/Lists_&_Leaderboards.png
+image: img/thumbnail.png
 sidebar_label: Lists and Leaderboards
 ---
 

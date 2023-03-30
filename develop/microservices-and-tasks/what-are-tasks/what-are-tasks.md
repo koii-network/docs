@@ -1,7 +1,7 @@
 ---
 title: What are Tasks?
 description: Trustless systems are essential for a stable internet. We're working to make them bigger and better.
-image: img/What_are_Audits_.png
+image: img/thumbnail.png
 sidebar_label: What are Tasks?
 ---
 
