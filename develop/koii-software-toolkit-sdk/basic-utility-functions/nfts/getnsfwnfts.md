@@ -1,12 +1,19 @@
+---
+title: getNsfwNfts
+description: Get the list of NFTs tagged as NSFW.
+image: static/img/thumbnail.png
+sidebar_label: getNsfwNfts
+---
+
 # getNsfwNfts
 
 Get the list of NFTs tagged as NSFW
 
 ### Parameters
 
-Returns Promise ```<unknown>```
+Returns Promise `<unknown>`
 
-* returns an array of NFTs tagged as NSFW
+- returns an array of NFTs tagged as NSFW
 
 ### Example Code
 
@@ -39,4 +46,3 @@ Initialized Koii Tools for true ownership and direct communication using version
   'IqRFLnO8yM0GLEFNN-HBF479s_88DD1b3vzIinlpKRs'
 ]
 ```
-

@@ -1,3 +1,10 @@
+---
+title: getKoiBalance
+description: This function is based on K1.
+image: static/img/thumbnail.png
+sidebar_label: getKoiBalance
+---
+
 # getKoiBalance
 
 :::danger
@@ -38,4 +45,4 @@ KOII balance of the given address is  7459.149283222933
 
 ### Returns
 
-**Promise ```<Number>```** - Koii balance of a given address as a number.
+**Promise `<Number>`** - Koii balance of a given address as a number.

@@ -1,10 +1,17 @@
+---
+title: getNftIdsByOwner
+description: This function returns an array of strings for a list of all the NFTs owned by a given address.
+image: static/img/thumbnail.png
+sidebar_label: getNftIdsByOwner
+---
+
 # getNftIdsByOwner
 
 This function returns an array of strings for a list of all the NFTs owned by a given address.
 
 ### Parameters
 
-**owner ```<string>```** - Wallet address of the owner for which the array of NFT IDs has to be returned.
+**owner `<string>`** - Wallet address of the owner for which the array of NFT IDs has to be returned.
 
 ### Example Code
 
@@ -16,9 +23,9 @@ In the below code example, change the `ownerAddress` to the address for which yo
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftIdsByOwner() {
-    const ownerAddress = "7b4ll1zwenRB8jzyESjFNcRls331buyNl231Pe0V9VI";
-    const nfts = await ktools.getNftIdsByOwner(ownerAddress);
-    console.log(nfts);
+  const ownerAddress = "7b4ll1zwenRB8jzyESjFNcRls331buyNl231Pe0V9VI";
+  const nfts = await ktools.getNftIdsByOwner(ownerAddress);
+  console.log(nfts);
 }
 
 testGetNftIdsByOwner();
@@ -44,4 +51,4 @@ In the above example, one of the NFT owned by the address `7b4ll1zwenRB8jzyESjFN
 
 ### Returns
 
-**Promise ```<string[]>```** - Array containing the NFTs with the address as owner address.
+**Promise `<string[]>`** - Array containing the NFTs with the address as owner address.

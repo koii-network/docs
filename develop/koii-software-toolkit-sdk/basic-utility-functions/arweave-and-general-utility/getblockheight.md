@@ -1,3 +1,10 @@
+---
+title: getBlockHeight
+description: This function returns the current block height of the Arweave blockchain.
+image: static/img/thumbnail.png
+sidebar_label: getBlockHeight
+---
+
 # getBlockHeight
 
 This function returns the current block height of the Arweave blockchain.
@@ -8,8 +15,8 @@ This function returns the current block height of the Arweave blockchain.
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetBlockHeight() {
-    const blockNumber= await ktools.getBlockHeight();
-    console.log(blockNumber);
+  const blockNumber = await ktools.getBlockHeight();
+  console.log(blockNumber);
 }
 
 testGetBlockHeight();

@@ -1,3 +1,10 @@
+---
+title: burnKoiAttention
+description: Content creators can earn attention rewards in KOII by registering content with Koii Network. Register once and get rewarded forever.
+image: static/img/thumbnail.png
+sidebar_label: burnKoiAttention
+---
+
 # burnKoiAttention
 
 Content creators can earn attention rewards in KOII by registering content with Koii Network. Register once and get rewarded forever.
@@ -6,8 +13,8 @@ This function enables content to earn attention rewards for anything that has al
 
 ### **Parameters**
 
-* **reward**: (Optional) ```<string>``` Custom reward for smartweave transaction
-* **nftTxId:** ```<string>``` ID of the NFT to be preregistered
+- **reward**: (Optional) `<string>` Custom reward for smartweave transaction
+- **nftTxId:** `<string>` ID of the NFT to be preregistered
 
 ### Example Code
 
@@ -17,15 +24,14 @@ const ktools = new knode.Node();
 const walletKeyLocation = "arweaveWallet.json";
 
 async function testburnKoiAttention() {
-    const jwk = await ktools.loadFile(walletKeyLocation);
-    await ktools.loadWallet(jwk);
-  
-    let txId = "rnc8IO7O7fd8Hovvvmq2YZ4y1CI-O0tdRavSGj_meYE";
-    var result = await ktools.burnKoiAttention(txId);
-  
-    console.log("transaction", result);
-}
+  const jwk = await ktools.loadFile(walletKeyLocation);
+  await ktools.loadWallet(jwk);
 
+  let txId = "rnc8IO7O7fd8Hovvvmq2YZ4y1CI-O0tdRavSGj_meYE";
+  var result = await ktools.burnKoiAttention(txId);
+
+  console.log("transaction", result);
+}
 
 testburnKoiAttention();
 ```
@@ -39,5 +45,4 @@ transaction ySdfS6tWYa0aCn6PNaXD7lmvFz3FHowwI6Tsiujg7tU
 
 ### Returns
 
-**Promise ```<string>``` -** Arweave transaction ID
-
+**Promise `<string>` -** Arweave transaction ID

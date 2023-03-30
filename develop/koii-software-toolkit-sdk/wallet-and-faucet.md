@@ -1,3 +1,10 @@
+---
+title: KOII Faucet
+description: There are two ways to airdrop some KOII into your wallets.
+image: static/img/thumbnail.png
+sidebar_label: KOII Faucet
+---
+
 import ContentLink from "@site/src/components/contentLink";
 
 # KOII Faucet
@@ -19,7 +26,7 @@ Run `koii balance` to view your balance. Subsequently, you can airdrop more Koii
 ```js title="commands you can use"
 koii airdrop 5 // fund your wallet with 5 test KOII
 koii balance // check balance
-koii airdrop <amount> <account> // to fund other wallets 
+koii airdrop <amount> <account> // to fund other wallets
 ```
 
 ### Running Faucet
@@ -32,4 +39,3 @@ Visit the Faucet below to start building your Koii Identity and get some free to
 
 <br />
 Now you have your wallet and some KOII in it. Enjoy the environment with Koii task and more features!
-

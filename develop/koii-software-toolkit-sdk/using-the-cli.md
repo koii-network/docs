@@ -1,3 +1,10 @@
+---
+title: Using the Koii CLI
+description: To interact with the K2 locally, you need to install the Koii CLI, create a Koii wallet, and airdrop some Koii tokens into your wallet.
+image: static/img/thumbnail.png
+sidebar_label: Using the Koii CLI
+---
+
 # Using the Koii CLI
 
 To interact with the K2 locally, you need to install the Koii CLI, create a Koii wallet, and airdrop some Koii tokens into your wallet.&#x20;
@@ -26,10 +33,10 @@ Run the command below to confirm that the CLI was successfully installed:
 koii --version
 ```
 
-
 :::info
 
 For Mac users, you might find if you open another terminal the koii cli would not work. Follow these steps to update PATH.
+
 - After installing koii cli, copy the PATH first
 - run command `vi ~/.zshrc`
 - Insert "export <_paste your path here>_"
@@ -51,7 +58,7 @@ The next step is to create a Koii file system wallet locally. To get the command
 koii address
 ```
 
-If you do not have a Koii wallet in `./.config/koii/id.json`  ,you should see an error prompt:
+If you do not have a Koii wallet in `./.config/koii/id.json` ,you should see an error prompt:
 
 ```
 Error: No default signer found, run "koii-keygen new -o /Users/<YOUR_HOME>/.config/koii/id.json" to create a new one

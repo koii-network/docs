@@ -1,3 +1,10 @@
+---
+title: loadWallet
+description: Every crypto wallet has a public address and a private key; your private key is used to access and make changes from the wallet. This function is used for programmatically loading the wallet by reading the private key stored locally.
+image: static/img/thumbnail.png
+sidebar_label: loadWallet
+---
+
 # loadWallet
 
 Every crypto wallet has a public address and a private key; your private key is used to access and make changes from the wallet. This function is used for programmatically loading the wallet by reading the private key stored locally.
@@ -24,11 +31,11 @@ const ktools = new knode.Node();
 const walletKeyLocation = "<Path to your local wallet file>";
 
 async function testLoadWallet() {
-    const jwk = await ktools.loadFile(walletKeyLocation);
-    await ktools.loadWallet(jwk);  
-    console.log("Loaded wallet with address", await ktools.getWalletAddress());
+  const jwk = await ktools.loadFile(walletKeyLocation);
+  await ktools.loadWallet(jwk);
+  console.log("Loaded wallet with address", await ktools.getWalletAddress());
 }
-  
+
 testLoadWallet();
 ```
 
@@ -41,4 +48,4 @@ Loaded wallet with address a0nRz4EBcQAcewqVEfecIxqU5JDP63cXUh08Ipwdvxk
 
 ### Returns
 
-**Promise ```<String>```** - Wallet Address&#x20;
+**Promise `<String>`** - Wallet Address&#x20;
