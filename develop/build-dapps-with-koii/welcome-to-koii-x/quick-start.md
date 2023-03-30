@@ -1,7 +1,7 @@
 ---
 title: ⚡ Quick Start
 description: Get up and running in minutes!
-image: ../img/Quick_Start.png
+image: img/Quick_Start.png
 sidebar_label: ⚡ Quick Start
 ---
 

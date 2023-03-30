@@ -1,7 +1,7 @@
 ---
 title: Box
 description: Box is the most abstract component on top of which all other Chakra UI components are built.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Box
 ---
 

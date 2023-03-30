@@ -1,7 +1,7 @@
 ---
 title: Nodes vs Servers
 description: Decentralization sounds good philosophically, but it's also just better design.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Nodes vs Servers
 ---
 

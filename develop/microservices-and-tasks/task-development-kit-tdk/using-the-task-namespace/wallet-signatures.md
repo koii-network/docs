@@ -1,7 +1,7 @@
 ---
 title: Wallet Signatures
 description: There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii Tokens on K2.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Wallet Signatures
 ---
 

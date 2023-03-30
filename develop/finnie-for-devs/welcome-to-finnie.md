@@ -1,7 +1,7 @@
 ---
 title: Welcome to Finnie
 description: Your one-stop shop for cross-chain user-engagement.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Welcome to Finnie
 ---
 

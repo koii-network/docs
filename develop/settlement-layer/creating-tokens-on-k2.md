@@ -1,7 +1,7 @@
 ---
 title: Creating Tokens on K2
 description: The Solana Program Library (SPL) is a collection of on-chain programs targeting the Sealevel parallel runtime.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Creating Tokens on K2
 ---
 

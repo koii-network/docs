@@ -1,7 +1,7 @@
 ---
 title: Create NFTs
 description: There are two ways to create new NFTs with Koii-X.
-image: ../img/Create_NFTs.png
+image: img/Create_NFTs.png
 sidebar_label: Create NFTs
 ---
 

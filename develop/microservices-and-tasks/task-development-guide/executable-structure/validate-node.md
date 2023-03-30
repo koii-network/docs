@@ -1,7 +1,7 @@
 ---
 title: Validate Node
 description: The validate node function is passed to a helper function called `validateAndVoteOnNodes` where it will be run for each node that has made a submission. The validate node function will return true if the node is valid.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Validate Node
 ---
 

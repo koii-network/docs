@@ -1,7 +1,7 @@
 ---
 title: getKoiiState
 description: The states are based on Arweave and K1.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getKoiBalance
 ---
 

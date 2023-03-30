@@ -1,7 +1,7 @@
 ---
 title: signPayload (Koii)
 description: This function signs a data payload which can then have its signature verified publicly.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: signPayload (Koii)
 ---
 

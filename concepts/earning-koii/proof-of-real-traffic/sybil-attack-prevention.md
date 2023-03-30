@@ -1,7 +1,7 @@
 ---
 title: Sybil Attack Prevention
 description: What happens if someone just fakes a bunch of attention?
-image: ../img/Registering_Content.png
+image: img/Registering_Content.png
 sidebar_label: Sybil Attack Prevention
 ---
 

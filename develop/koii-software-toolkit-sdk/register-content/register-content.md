@@ -1,7 +1,7 @@
 ---
 title: Register Content
 description: Registering content on Arweave to the attention contract is an essential step to earning Attention Rewards from your content.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Register Content
 ---
 

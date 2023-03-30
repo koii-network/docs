@@ -1,7 +1,7 @@
 ---
 title: Other EVM Chains
 description: The Majority of EVM functionality within Finnie is handled by the same methods as the Metamask standard
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Other EVM Chains
 ---
 

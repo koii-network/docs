@@ -1,7 +1,7 @@
 ---
 title: Services
 description: Shared services such as Axios, Koii PoRT & utility functions. You can find more useful functions in utils/index.ts
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Services
 ---
 

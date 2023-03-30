@@ -1,7 +1,7 @@
 ---
 title: Executable Structure
 description: A Koii task executable is a single JavaScript file that contains all of the functions for a Koii task to function properly.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Executable Structure
 ---
 

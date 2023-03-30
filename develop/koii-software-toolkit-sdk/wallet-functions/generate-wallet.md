@@ -1,7 +1,7 @@
 ---
 title: generateWallet
 description: This function creates a new Arweave wallet, but it does not return the private key of the generated wallet.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: generateWallet
 ---
 

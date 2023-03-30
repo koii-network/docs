@@ -1,7 +1,7 @@
 ---
 title: Storage via IPFS
 description: IPFS can be easily implemented as decentralized storage for a task. Using libraries such as web3.Storage
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Storage via IPFS
 ---
 

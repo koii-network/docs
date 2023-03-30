@@ -1,7 +1,7 @@
 ---
 title: Create Task
 description: We need a Koii account and network setup first. We provide the Koii CLI tool to easily set up K2 locally and generate a wallet; check here.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Create Task
 ---
 

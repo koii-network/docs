@@ -1,7 +1,7 @@
 ---
 title: getBlockHeight
 description: This function returns the current block height of the Arweave blockchain.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getBlockHeight
 ---
 

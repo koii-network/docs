@@ -1,7 +1,7 @@
 ---
 title: Run a Task Node
 description: The Desktop Task Node makes it easy to earn passive income from your computer while you're asleep. Setup takes 5 minutes or less, and you will receive income for every task your computer does while you're away.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Run a Task Node
 ---
 

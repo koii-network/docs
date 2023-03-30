@@ -1,7 +1,7 @@
 ---
 title: ⚙ Environment
 description: Before getting started with Koii-X, make sure that you have the proper environment configured on your machine. Read below to learn how you can install and verify the necessary components to begin easy deployment of our simple dApp templates.
-image: ../img/Environment.png
+image: img/Environment.png
 sidebar_label: ⚙ Environment
 ---
 

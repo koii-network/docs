@@ -1,7 +1,7 @@
 ---
 title: Pages
 description: Your app pages, e.g /home, /nft/:id & /artist/:id The pages are normally linked with react-router
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Pages
 ---
 

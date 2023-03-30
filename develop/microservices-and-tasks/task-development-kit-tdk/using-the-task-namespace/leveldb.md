@@ -1,7 +1,7 @@
 ---
 title: LevelDB
 description: LevelDB is a key-value storage library that provides an ordered mapping from string keys to string values.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: LevelDB
 ---
 

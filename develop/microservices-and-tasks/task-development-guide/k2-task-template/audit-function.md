@@ -1,7 +1,7 @@
 ---
 title: Audit Functions
 description: Audit functions are defined to validate a node's submission, vote on audits, and verify the distribution list submitted to K2.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Audit Functions
 ---
 

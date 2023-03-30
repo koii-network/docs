@@ -1,7 +1,7 @@
 ---
 title: ℹ Site Meta Data
 description: Customize your own site meta data.
-image: ../img/Site_Metadata.png
+image: img/Site_Metadata.png
 sidebar_label: ℹ Site Meta Data
 ---
 

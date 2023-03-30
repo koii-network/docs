@@ -1,7 +1,7 @@
 ---
 title: REST APIs
 description: Express is the most popular Node web framework, which also serves as an underlying library for other popular Node web frameworks.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: REST APIs
 ---
 

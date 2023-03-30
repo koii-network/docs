@@ -1,7 +1,7 @@
 ---
 title: Task State
 description: Task State
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Task State
 ---
 

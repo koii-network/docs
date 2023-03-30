@@ -1,7 +1,7 @@
 ---
 title: Configuration
 description: Depending on the types of tasks you are developing, you may require custom configuration of the docker container.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Configuration
 ---
 

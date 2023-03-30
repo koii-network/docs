@@ -1,7 +1,7 @@
 ---
 title: Runtime Flow
 description: Gradual Consensus - Act quickly, react faster, and reward slowly.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Runtime Flow
 ---
 

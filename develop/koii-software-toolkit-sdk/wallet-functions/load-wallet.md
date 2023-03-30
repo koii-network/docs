@@ -1,7 +1,7 @@
 ---
 title: loadWallet
 description: Every crypto wallet has a public address and a private key; your private key is used to access and make changes from the wallet. This function is used for programmatically loading the wallet by reading the private key stored locally.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: loadWallet
 ---
 

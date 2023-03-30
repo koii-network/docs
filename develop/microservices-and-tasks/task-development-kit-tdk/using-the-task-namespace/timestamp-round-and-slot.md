@@ -1,7 +1,7 @@
 ---
 title: Timestamp, Round and Slot
 description: Timestamp, Round and Slot
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Timestamp, Round and Slot
 ---
 

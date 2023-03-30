@@ -1,7 +1,7 @@
 ---
 title: Registering Content
 description: Koii can be earned on any content where Proofs of Real Traffic are submitted.
-image: ../img/Registering_Content.png
+image: img/Registering_Content.png
 sidebar_label: Registering Content
 ---
 

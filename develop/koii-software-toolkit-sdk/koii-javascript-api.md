@@ -1,7 +1,7 @@
 ---
 title: KOII (K2) JavaScript API
 description: This is the KOII (K2) Javascript API built on the KOII JSON RPC API.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: KOII (K2) JavaScript API
 ---
 

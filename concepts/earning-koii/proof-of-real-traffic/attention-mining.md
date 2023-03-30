@@ -1,7 +1,7 @@
 ---
 title: Attention Mining
 description: Collect Proofs of Real Traffic on your content to mine new KOII tokens each day!
-image: ../img/Earning_KOII.png
+image: img/Earning_KOII.png
 sidebar_label: Attention Mining
 ---
 

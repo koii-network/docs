@@ -1,7 +1,7 @@
 ---
 title: Components
 description: Your UI/UX folder. Place any shared components here, this folder contains every single re-usable component such as button color, card type, icons, and anything else.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Components
 ---
 

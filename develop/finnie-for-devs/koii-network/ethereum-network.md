@@ -1,7 +1,7 @@
 ---
 title: Transfers
 description: Transfers.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Transfers
 ---
 

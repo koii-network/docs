@@ -1,7 +1,7 @@
 ---
 title: getNftReward
 description: The KOII you earned are based on K1 network.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getNftReward
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Display NFTs
 description: NFTs can be displayed using the components collected on the /nft/<id> page of the leaderboard template.
-image: ../img/Display_NFTs.png
+image: img/Display_NFTs.png
 sidebar_label: Display NFTs
 ---
 

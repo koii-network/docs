@@ -1,7 +1,7 @@
 ---
 title: Connecting Finnie
 description: When Finnie wallet is initialized it will emit a custom browser event called `finnieWalletLoaded`.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Connecting Finnie
 ---
 

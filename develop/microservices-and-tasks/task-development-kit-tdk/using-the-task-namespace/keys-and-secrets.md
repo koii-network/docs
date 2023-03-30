@@ -1,7 +1,7 @@
 ---
 title: Keys and Secrets
 description: When a Task Node executes tasks, some keys and secrets are injected and made accessible to the task executable by using the `process.argv()` property.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Keys and Secrets
 ---
 

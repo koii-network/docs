@@ -1,7 +1,7 @@
 ---
 title: Wallets
 description: There are three solutions for holding KOII token, each targetted to a different use case.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Wallets
 ---
 

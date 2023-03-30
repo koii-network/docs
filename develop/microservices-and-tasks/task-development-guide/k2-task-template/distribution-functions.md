@@ -1,7 +1,7 @@
 ---
 title: Distribution Functions
 description: After the audit window is completed, a node is selected and tasked with the responsibility of generating and submitting a distribution list on-chain.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Distribution Functions
 ---
 

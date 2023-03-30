@@ -1,7 +1,7 @@
 ---
 title: Fetching NFT Data
 description: Learn how to fetch your NFT data.
-image: ../img/Fetching_NFT_Data.png
+image: img/Fetching_NFT_Data.png
 sidebar_label: Fetching NFT Data
 ---
 

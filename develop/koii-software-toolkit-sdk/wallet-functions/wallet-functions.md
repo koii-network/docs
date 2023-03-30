@@ -1,7 +1,7 @@
 ---
 title: Wallet Functions
 description: To complete transactions on the Koii Network you will need an Arweave key.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Wallet Functions
 ---
 

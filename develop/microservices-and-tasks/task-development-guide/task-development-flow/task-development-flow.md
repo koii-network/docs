@@ -1,7 +1,7 @@
 ---
 title: Task Development Flow
 description: Here are articles in this section.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Task Development Flow
 ---
 

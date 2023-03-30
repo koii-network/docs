@@ -1,7 +1,7 @@
 ---
 title: Get Free Tokens
 description: While Koii is still in testnet, there are lots of ways to get involved.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Get Free Tokens
 ---
 

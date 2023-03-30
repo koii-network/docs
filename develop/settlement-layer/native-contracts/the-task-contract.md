@@ -1,7 +1,7 @@
 ---
 title: The Task Contract
 description: The Task Contract maintains the Koii Compute Marketplace, and can be used to deploy, audit, and incentivize new Tasks for the network.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: The Task Contract
 ---
 
