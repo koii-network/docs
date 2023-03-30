@@ -1,3 +1,10 @@
+---
+title: getNftReward
+description: The KOII you earned are based on K1 network.
+image: static/img/thumbnail.png
+sidebar_label: getNftReward
+---
+
 # getNftReward
 
 :::danger
@@ -8,7 +15,7 @@ This function returns attention rewards earned from an NFT in KOII.
 
 ### Parameters
 
-**id ```<string>```** - The transaction ID to process for which you have to see the earned attention rewards.
+**id `<string>`** - The transaction ID to process for which you have to see the earned attention rewards.
 
 ### Example Code
 
@@ -20,10 +27,10 @@ In the below code example, change the `targetNft` to the NFT ID for which you wa
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftReward() {
-    const targetNft = "gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA";
-    const nftReward = await ktools.getNftReward(targetNft);
-    console.log("Attention rewards for the NFT", targetNft);
-    console.log(nftReward);
+  const targetNft = "gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA";
+  const nftReward = await ktools.getNftReward(targetNft);
+  console.log("Attention rewards for the NFT", targetNft);
+  console.log(nftReward);
 }
 testGetNftReward();
 ```
@@ -38,7 +45,7 @@ Attention rewards for the NFT gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA
 
 ### Returns
 
-**Promise ```<null | number>```** - Koii rewards earned from a given NFT
+**Promise `<null | number>`** - Koii rewards earned from a given NFT
 
 :::danger
 Koii rewards earned. If the transaction is not a valid Koii NFT, `null` will be returned.

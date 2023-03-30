@@ -1,10 +1,17 @@
+---
+title: getNftState
+description: This function returns all the details about a given NFT such as creator address, title, description, etc.
+image: static/img/thumbnail.png
+sidebar_label: getNftState
+---
+
 # getNftState
 
 This function returns all the details about a given NFT such as creator address, title, description, etc.
 
 ### Parameters
 
-**id ```<string>```** - The transaction ID that you would like to get  information for.
+**id `<string>`** - The transaction ID that you would like to get information for.
 
 ### Example Code
 
@@ -16,10 +23,10 @@ In the below code example, change the `targetNft` to the NFT ID for which you wa
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftState() {
-    const targetNft = "gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA";
-    const nftState= await ktools.getNftState(targetNft);
-    console.log("State of the NFT", targetNft);
-    console.log(nftState);
+  const targetNft = "gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA";
+  const nftState = await ktools.getNftState(targetNft);
+  console.log("State of the NFT", targetNft);
+  console.log(nftState);
 }
 
 testGetNftState();
@@ -53,4 +60,4 @@ State of the NFT gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA
 
 ### Returns
 
-**Promise ```<any>```** - All the information pertaining to a given NFT including the state of the NFT, views, and rewards.
+**Promise `<any>`** - All the information pertaining to a given NFT including the state of the NFT, views, and rewards.

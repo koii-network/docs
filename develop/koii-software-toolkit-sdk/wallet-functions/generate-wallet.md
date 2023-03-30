@@ -1,3 +1,10 @@
+---
+title: generateWallet
+description: This function creates a new Arweave wallet, but it does not return the private key of the generated wallet.
+image: static/img/thumbnail.png
+sidebar_label: generateWallet
+---
+
 # generateWallet
 
 :::danger
@@ -8,7 +15,7 @@ This function creates a new Arweave wallet, but it does not return the private k
 
 ### Parameters
 
-**use_mnemonic ```<boolean>``` -** Flag for enabling mnemonic phrase wallet generation
+**use_mnemonic `<boolean>` -** Flag for enabling mnemonic phrase wallet generation
 
 ### Example Code
 
@@ -39,7 +46,7 @@ This will return the contents of the JSON for your newly generated private key.
 
 ### Returns
 
-**Promise ```<Boolean Value>```** - True or False depending on the state of the function.
+**Promise `<Boolean Value>`** - True or False depending on the state of the function.
 
 ### Properties
 
@@ -48,9 +55,10 @@ This will return the contents of the JSON for your newly generated private key.
 **mnemonic** - generates a wallet with mnemonic words
 
 :::tip
-* The generated wallet can be accessed via **`ktools.wallet`** , Save this info into a file in .JSON format and that's the **Private Key** to the generated wallet.
-* The wallet can also be accessed via **`ktools.mnemonic`** , If you selected to generate a mnemonic wallet via parameters.
-:::
+
+- The generated wallet can be accessed via **`ktools.wallet`** , Save this info into a file in .JSON format and that's the **Private Key** to the generated wallet.
+- The wallet can also be accessed via **`ktools.mnemonic`** , If you selected to generate a mnemonic wallet via parameters.
+  :::
 
 :::info
 Optional: Arweave uses the JSON Web Key (JWK) format (RFC 7517) with 4096 length RSA-PSS keys. This JWK format allows for cryptographic keys to be represented as JSON object where each property represents a property of the underlying cryptographic key.
