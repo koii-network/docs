@@ -1,30 +1,32 @@
- import Description from "@site/src/components/description"
- 
+---
+title: ℹ Site Meta Data
+description: Customize your own site meta data.
+image: ../img/Site_Metadata.png
+sidebar_label: ℹ Site Meta Data
+---
 
- 
- # ℹ Site Meta Data
+import Description from "@site/src/components/description"
 
-![Banner](../img/Site%20Metadata.png)
+# ℹ Site Meta Data
 
- <Description
-  text="Customize your own site meta data"
-/>
+![Banner](../img/Site_Metadata.png)
+
+<Description text='Customize your own site meta data' />
 
 The first thing you'll want to do to set up your site is to customize the title and project information.
 
 Edit the [src/config.ts](https://github.com/koii-network/koii-X/blob/main/src/config.ts) file to change the basic details about your app. For example:
 
-
 ```jsx
 const config = {
   lang: "en", // language of your website
-  locale: "en_US", // locale of your website  
+  locale: "en_US", // locale of your website
   title: "Koii.X — Your Koii DApp", // title of your website
   description: "Create Koii DApp", // description of your website
   canonical: "http://koii-x.vercel.app/", // Your production website link
   twitterHandle: "@KoiiNetwork", // Twitter username
-  companyName: "Koii" // The name of your company (or yourself, for artists)
-}
+  companyName: "Koii", // The name of your company (or yourself, for artists)
+};
 ```
 
 :::info

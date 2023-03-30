@@ -1,11 +1,18 @@
+---
+title: Other Wallets
+description: More wallets integration.
+image: ./img/Other_Wallets_(1).png
+sidebar_label: Other Wallets
+---
+
 import Description from "@site/src/components/description";
 
 # Other Wallets
 
-![Banner](./img/Other%20Wallets%20(1).png)
+![Banner](<./img/Other_Wallets_(1).png>)
 
 <Description
-  text="More wallets integration"
+  text="More wallets integration."
 />
 
 :::info

@@ -1,3 +1,10 @@
+---
+title: Assets
+description: Place images, svgs, logos or any local file here
+image: static/img/thumbnail.png
+sidebar_label: Assets
+---
+
 import Description from "@site/src/components/description";
 
 # Assets
