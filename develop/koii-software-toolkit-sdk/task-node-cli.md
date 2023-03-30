@@ -1,7 +1,7 @@
 ---
 title: Task Node CLI
 description: The task node CLI is a helpful tool used by node operators for 4 different reasons.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Task Node CLI
 ---
 

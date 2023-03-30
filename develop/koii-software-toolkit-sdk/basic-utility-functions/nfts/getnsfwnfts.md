@@ -1,7 +1,7 @@
 ---
 title: getNsfwNfts
 description: Get the list of NFTs tagged as NSFW.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getNsfwNfts
 ---
 

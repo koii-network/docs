@@ -1,7 +1,7 @@
 ---
 title: The Attention Game
 description: To start mining Koii, there are two options.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: The Attention Game
 ---
 

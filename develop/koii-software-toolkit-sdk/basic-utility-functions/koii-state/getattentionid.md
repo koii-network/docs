@@ -1,7 +1,7 @@
 ---
 title: getAttentionId
 description: This function gets the attention contract ID running on the bundler.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getAttentionId
 ---
 

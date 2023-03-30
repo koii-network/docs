@@ -1,7 +1,7 @@
 ---
 title: Node Default API Endpoints
 description: Every node will have the following endpoints available by default at the defined service node address.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Node Default API Endpoints
 ---
 

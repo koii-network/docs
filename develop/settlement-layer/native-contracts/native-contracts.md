@@ -1,7 +1,7 @@
 ---
 title: Native Contracts
 description: Here are the articles in this section.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Native Contracts
 ---
 

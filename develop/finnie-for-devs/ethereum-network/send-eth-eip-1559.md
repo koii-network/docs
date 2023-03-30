@@ -1,7 +1,7 @@
 ---
 title: Send ETH (EIP-1559)
 description: Send type EIP1559 ETH
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Send ETH (EIP-1559)
 ---
 

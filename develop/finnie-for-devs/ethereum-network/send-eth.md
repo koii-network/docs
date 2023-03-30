@@ -1,7 +1,7 @@
 ---
 title: Send ETH
 description: Now, let's see how we can send some `eth` to the other account, using our Finnie wallet that we have already set in the previous chapter.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Send ETH
 ---
 

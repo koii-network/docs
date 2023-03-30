@@ -1,7 +1,7 @@
 ---
 title: Compile Task
 description: After you've created a task using the K2 task template as a guide, you'll need to compile it with Webpack into a single executable file.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Compile Task
 ---
 

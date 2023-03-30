@@ -1,7 +1,7 @@
 ---
 title: Using the Koii CLI
 description: To interact with the K2 locally, you need to install the Koii CLI, create a Koii wallet, and airdrop some Koii tokens into your wallet.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Using the Koii CLI
 ---
 

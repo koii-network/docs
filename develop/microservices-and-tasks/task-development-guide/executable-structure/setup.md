@@ -1,7 +1,7 @@
 ---
 title: Setup
 description: The `setup` function is run once before all other functions to set up anything needed for other functions to work.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Setup
 ---
 

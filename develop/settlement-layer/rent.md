@@ -1,7 +1,7 @@
 ---
 title: Rent
 description: Rent is the fee paid by Accounts and Programs to store their data on K2 because the blockchain cluster needs to actively maintain the data in order to process any upcoming transactions.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Rent
 ---
 

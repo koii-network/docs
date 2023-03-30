@@ -1,7 +1,7 @@
 ---
 title: Task Functions
 description: Task Functions.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Task Functions
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: transferNft
 description: This function transfers the NFT ownership to a target address.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: transferNft
 ---
 

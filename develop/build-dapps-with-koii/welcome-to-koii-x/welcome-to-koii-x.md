@@ -1,7 +1,7 @@
 ---
 title: 👋 Welcome to Koii-X
 description: Koii's Proprietary App Building Toolkit
-image: ../img/Welcome_to_Koii-X.png
+image: img/Welcome_to_Koii-X.png
 sidebar_label: 👋 Welcome to Koii-X
 ---
 

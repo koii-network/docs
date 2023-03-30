@@ -1,7 +1,7 @@
 ---
 title: K2 - Tick, Tock, Fast Blocks
 description: Fast transaction settlement and timestamps.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: K2 - Tick, Tock, Fast Blocks
 ---
 

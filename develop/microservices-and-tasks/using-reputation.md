@@ -1,7 +1,7 @@
 ---
 title: Using Reputation
 description: Koii may seem like a silly name for something so important, but it stands for Knowledgeable Open and Infinite Internet, and it's our first attempt at building a CARP.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Using Reputation
 ---
 

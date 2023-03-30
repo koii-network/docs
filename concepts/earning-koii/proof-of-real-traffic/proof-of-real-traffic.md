@@ -1,7 +1,7 @@
 ---
 title: Proof of Real Traffic (PoRT)
 description: Proof of Real Traffic is a cryptographic primitive including a signature from a specific consumer wallet.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Proof of Real Traffic (PoRT)
 ---
 

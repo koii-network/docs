@@ -1,7 +1,7 @@
 ---
 title: Contract Deployment
 description: How to deploy a new contract using ethers.js.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Contract Deployment
 ---
 

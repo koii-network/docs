@@ -1,7 +1,7 @@
 ---
 title: 🚀 Deploy
 description: Deploy both Your Koii-X (Leaderboard) and the Crowdfunding portal
-image: ../img/Build_&_Deploy.png
+image: img/Build_&_Deploy.png
 sidebar_label: 🚀 Deploy
 ---
 

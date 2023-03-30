@@ -1,7 +1,7 @@
 ---
 title: API Endpoints (Optional)
 description: You can define your own express API endpoints by extending the namespace express function.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: API Endpoints (Optional)
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Whitelist Task
 description: Contact the development team on the Koii Discord
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Whitelist Task
 ---
 

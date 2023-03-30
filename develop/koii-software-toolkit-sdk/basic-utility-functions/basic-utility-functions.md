@@ -1,7 +1,7 @@
 ---
 title: Basic Utility Functions
 description: These functions are based on Arweave.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Basic Utility Functions
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Using the Task Namespace
 description: Each Task will run inside of the "Task Namespace," which supports a number of built-in utilities.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Using the Task Namespace
 ---
 

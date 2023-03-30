@@ -1,7 +1,7 @@
 ---
 title: Customizing the Namespace
 description: In some cases, it may be necessary to customize the namespace object to add default flows, such as app middleware.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Customizing the Namespace
 ---
 

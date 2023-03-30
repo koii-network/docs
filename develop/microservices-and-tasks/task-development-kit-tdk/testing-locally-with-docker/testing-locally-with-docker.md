@@ -1,7 +1,7 @@
 ---
 title: Developing Locally with Docker
 description: We provide a Docker container that makes task development very seamless and straightforward. We chose to use Docker in order to provide all the required task development resources in a consistent and isolated environment.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Developing Locally with Docker
 ---
 

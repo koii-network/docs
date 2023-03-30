@@ -1,7 +1,7 @@
 ---
 title: Running a K2 Node
 description: This section describes how to run a Koii Node.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Running a K2 Node
 ---
 

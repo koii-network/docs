@@ -1,7 +1,7 @@
 ---
 title: Setup Process
 description: To run the K2 node, first, you have to install the Koii command-line tools
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Setup Process
 ---
 

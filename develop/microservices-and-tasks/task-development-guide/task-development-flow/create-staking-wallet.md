@@ -1,7 +1,7 @@
 ---
 title: Create Staking Wallet
 description: The staking CLI can be started by running the command `yarn stake` in the root directory of the task node.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Create Staking Wallet
 ---
 

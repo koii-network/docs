@@ -1,7 +1,7 @@
 ---
 title: Using Thumbnails
 description: Once you have uploaded an NFT, your thumbnail will be stored at https://koii.live/NFTid.png.
-image: ../img/Using_Thumbnails.png
+image: img/Using_Thumbnails.png
 sidebar_label: Using Thumbnails
 ---
 

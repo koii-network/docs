@@ -1,7 +1,7 @@
 ---
 title: Runtime Environment
 description: Runtime Environment
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Runtime Environment
 ---
 

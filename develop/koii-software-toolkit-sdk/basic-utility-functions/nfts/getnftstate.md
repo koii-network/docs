@@ -1,7 +1,7 @@
 ---
 title: getNftState
 description: This function returns all the details about a given NFT such as creator address, title, description, etc.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: getNftState
 ---
 

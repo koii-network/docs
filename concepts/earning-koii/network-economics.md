@@ -1,7 +1,7 @@
 ---
 title: Network Economics
 description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Network Economics
 ---
 

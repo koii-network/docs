@@ -1,7 +1,7 @@
 ---
 title: KOII Faucet
 description: There are two ways to airdrop some KOII into your wallets.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: KOII Faucet
 ---
 

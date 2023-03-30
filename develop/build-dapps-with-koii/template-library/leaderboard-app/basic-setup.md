@@ -1,7 +1,7 @@
 ---
 title: Basic Setup
 description: The most basic functions needed to create a leaderboard page.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Basic Setup
 ---
 

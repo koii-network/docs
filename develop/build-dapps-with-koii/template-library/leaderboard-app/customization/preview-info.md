@@ -1,7 +1,7 @@
 ---
 title: Preview / Info
 description: The best example to show what the leaderboard template looks like is the current Koii leaderboard
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Preview / Info
 ---
 

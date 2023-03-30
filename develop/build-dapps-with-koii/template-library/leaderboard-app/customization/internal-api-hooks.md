@@ -1,7 +1,7 @@
 ---
 title: Internal API Hooks
 description: Every single API call made can be found here, such as Koii SDK
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Internal API Hooks
 ---
 

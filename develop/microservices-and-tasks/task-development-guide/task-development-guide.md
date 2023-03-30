@@ -1,7 +1,7 @@
 ---
 title: Task Development Guide
 description: More details on task deployments coming soon!
-image: ../img/Task_Design_Guide.png
+image: img/Task_Design_Guide.png
 sidebar_label: Task Development Guide
 ---
 

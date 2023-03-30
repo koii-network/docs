@@ -1,7 +1,7 @@
 ---
 title: Key Components
 description: When a task is created, there are two key components that must be uploaded to the Koii Network to initiate the task.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Key Components
 ---
 

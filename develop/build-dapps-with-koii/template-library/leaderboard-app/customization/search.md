@@ -1,7 +1,7 @@
 ---
 title: Search
 description: Search
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Search
 ---
 

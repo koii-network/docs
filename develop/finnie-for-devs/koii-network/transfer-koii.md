@@ -1,7 +1,7 @@
 ---
 title: transfer (KOII)
 description: Interact with the contract to transfer KOII tokens from one wallet to another.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: transfer (KOII)
 ---
 

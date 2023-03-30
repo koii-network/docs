@@ -1,7 +1,7 @@
 ---
 title: Securing Tasks
 description: Staying safe with decentralized and anonymous microservice providers.
-image: ../img/What_are_Audits_.png
+image: img/What_are_Audits_.png
 sidebar_label: Securing Tasks
 ---
 

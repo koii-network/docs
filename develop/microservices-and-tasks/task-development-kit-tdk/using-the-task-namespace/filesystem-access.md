@@ -1,7 +1,7 @@
 ---
 title: Filesystem Access
 description: The File System Access API allows read, write and file management capabilities.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Filesystem Access
 ---
 

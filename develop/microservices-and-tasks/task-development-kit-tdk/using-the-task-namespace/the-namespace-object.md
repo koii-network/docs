@@ -1,7 +1,7 @@
 ---
 title: The Namespace Object
 description: Namespacing is the act of wrapping a set of entities, variables, functions, and objects under a single umbrella term.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: The Namespace Object
 ---
 

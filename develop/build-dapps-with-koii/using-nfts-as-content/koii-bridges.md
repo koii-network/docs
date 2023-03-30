@@ -1,7 +1,7 @@
 ---
 title: Koii Bridges
 description: A Koii Bridge allows you to migrate your NFTs to and from different blockchains. Currently, we only support Ethereum bridging, but other chains are in development. You can find more example functions at atomicnft.com.
-image: ../img/Koii_Bridges.png
+image: img/Koii_Bridges.png
 sidebar_label: Koii Bridges
 ---
 

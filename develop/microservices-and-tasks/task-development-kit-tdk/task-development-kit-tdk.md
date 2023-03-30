@@ -2,7 +2,7 @@
 
 title: Task Development Kit (TDK)
 description: The following sections detail the use of Koii's Task Development Kit, which provides key components that will make it much easier to get started.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: Task Development Kit (TDK)
 
 ---

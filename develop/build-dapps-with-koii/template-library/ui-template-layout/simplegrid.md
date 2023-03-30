@@ -1,7 +1,7 @@
 ---
 title: SimpleGrid
 description: SimpleGrid provides a friendly interface to create responsive grid layouts with ease.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: SimpleGrid
 ---
 

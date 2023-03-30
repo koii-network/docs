@@ -1,7 +1,7 @@
 ---
 title: burnKoiAttention
 description: Content creators can earn attention rewards in KOII by registering content with Koii Network. Register once and get rewarded forever.
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: burnKoiAttention
 ---
 

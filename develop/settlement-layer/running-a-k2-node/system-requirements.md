@@ -1,7 +1,7 @@
 ---
 title: System Requirements
 description: This section gives an overview on the minimum requirement to run a K2 Node
-image: static/img/thumbnail.png
+image: img/thumbnail.png
 sidebar_label: System Requirements
 ---
 
