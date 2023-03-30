@@ -1,3 +1,10 @@
+---
+title: Timestamp, Round and Slot
+description: Timestamp, Round and Slot
+image: static/img/thumbnail.png
+sidebar_label: Timestamp, Round and Slot
+---
+
 # Timestamp, Round and Slot
 
 ### What is timestamp and slot?
@@ -15,7 +22,6 @@ Timestamp used in REST API:
 3. Server receive the result. By verifying and comparing whether there is a timestamp, the server can know the specific time and time spent on task completion, and use it for the next audit process.
 
 :::
-
 
 ### What is round?
 
@@ -39,7 +45,10 @@ You can aslo use this function in audit or submit process and return the result,
 ```javascript
 async function auditTask(roundNumber) {
   console.log("auditTask called with round", roundNumber);
-  console.log(await namespaceWrapper.getSlot(), "current slot while calling auditTask");
+  console.log(
+    await namespaceWrapper.getSlot(),
+    "current slot while calling auditTask"
+  );
   await namespaceWrapper.validateAndVoteOnNodes(validateNode, roundNumber);
 }
 ```
@@ -47,6 +56,3 @@ async function auditTask(roundNumber) {
 ### What should be submit and audit?
 
 Not all tasks need to be audited through timestamp. But if your Koii Task involves REST API, we strongly recommend you to use timestamp to conduct a more accurate audit and confirm your API health status. In addition, if your Koii Task needs to be carried out at an accurate point in time, getSlot is also one of the options.
-
-
-

@@ -1,3 +1,10 @@
+---
+title: Audit Functions
+description: Audit functions are defined to validate a node's submission, vote on audits, and verify the distribution list submitted to K2.
+image: static/img/thumbnail.png
+sidebar_label: Audit Functions
+---
+
 import ContentLink from "@site/src/components/contentLink";
 
 # Audit Functions
@@ -5,9 +12,11 @@ import ContentLink from "@site/src/components/contentLink";
 Audit functions are defined to validate a node's submission, vote on audits, and verify the distribution list submitted to K2.
 
 ## Audit Node Submissions
+
 Each participating node's submission must be audited by other nodes, and this is handled by two functions:
 
 ### validateNode()
+
 This function contains the core logic of how a node's submission should be verified. It accepts a node's submission value as a parameter, validates it, and returns a boolean.
 
 For the sample task on the template, to validate a node's submission, the first character of its submission value (CID) is checked to see if it falls within the first 23 letters of the alphabet. If it does, the function returns `true`, validating the node's submission; if it does not, the node's submission is deemed invalid, and their stake is slashed
@@ -22,7 +31,7 @@ For the sample task on the template, to validate a node's submission, the first 
 async function validateNode(submissionValue) {
   console.log("Validating Submission Value", submissionValue);
   const cid = submissionValue; // Retrieve node's submission value
-  
+
   const char = cid.charAt(0);
   // If the first character of cid is in the first 23 letters of the alphabet, return true
   if (char.match(/[a-w]/i)) {
@@ -38,6 +47,7 @@ The validation of a node's submission is determined by your definition of a vali
 As a result, ensure that you write proper logic that verifies each submission value and filters out nodes with invalid submissions.
 
 ### auditTask()
+
 This function takes the `roundNumber` as a parameter and calls a helper function `validateAndVoteOnNodes` that takes the `validateNode` function and the `roundNumber` as parameters.
 
 ```javascript
@@ -67,6 +77,7 @@ The distribution list is audited by the other nodes after it has been submitted 
 Two functions are involved in the validation of the distribution list:
 
 ### validateDistribution()
+
 This function contains the core logic of how the distribution list should be verified. It takes the distribution list as a parameter, confirms its validity, and returns a boolean value.
 
 ```javascript
@@ -77,8 +88,8 @@ This function contains the core logic of how the distribution list should be ver
  * @returns {boolean} The validity of the distribution list
  */
 async function validateDistribution(distributionList) {
-console.log("Validating Distribution List", distributionList);
- 
+  console.log("Validating Distribution List", distributionList);
+
   let val = Math.random();
   if (val < 0.5) {
     console.log("sending true");
@@ -91,6 +102,7 @@ console.log("Validating Distribution List", distributionList);
 ```
 
 ### auditDistribution()
+
 This function takes the `roundNumber` as a parameter and calls a helper function `validateAndVoteOnDistributionList` which takes the `validateDistribution` function and the `roundNumber` as parameters.
 
 ```javascript
@@ -108,5 +120,4 @@ async function auditDistribution(roundNumber) {
 }
 ```
 
-When creating a task, the `auditTask` and `auditDistribution` functions typically don't require any modification. However, the `validateNode` and `validateDistribution` functions do because they contain the essential logic for how the submissions from nodes and the distribution list should be verified. 
-
+When creating a task, the `auditTask` and `auditDistribution` functions typically don't require any modification. However, the `validateNode` and `validateDistribution` functions do because they contain the essential logic for how the submissions from nodes and the distribution list should be verified.

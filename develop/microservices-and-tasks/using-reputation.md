@@ -1,3 +1,10 @@
+---
+title: Using Reputation
+description: Koii may seem like a silly name for something so important, but it stands for Knowledgeable Open and Infinite Internet, and it's our first attempt at building a CARP.
+image: static/img/thumbnail.png
+sidebar_label: Using Reputation
+---
+
 import Description from "@site/src/components/description";
 
 # Using Reputation
@@ -44,11 +51,8 @@ In Koii, we focus on building reputation first from content, and attention, beca
 
 Koii is a work in progress, so we welcome feedback, advice, and support.&#x20;
 
-
-
 ## Building a CARP
 
 Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.&#x20;
 
 Koii's native Decentralized IDs are expected to launch in the coming months, so stay tuned for more updates as we build more core reputation primatives for you to use in the [Task Namespace](task-development-kit-tdk/using-the-task-namespace/).
-

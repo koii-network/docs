@@ -1,3 +1,10 @@
+---
+title: Nodes vs Servers
+description: Decentralization sounds good philosophically, but it's also just better design.
+image: static/img/thumbnail.png
+sidebar_label: Nodes vs Servers
+---
+
 import Description from "@site/src/components/description";
 
 # Nodes vs Servers
@@ -15,10 +22,10 @@ Besides the [philosophical drive ](/concepts/koii-summary/philosophy)to include 
    Centralized ownership and control creates vulnerabilities by introducing unnecessary single points of failure.
 
 2. **Protecting Tokenized Assets**<br/>
-   Tokens or NFTs can be exploited if there is a master key, or an app server that manages the smart contracts. If a web3 project promises inflationary token rewards to support their hosting or network participation (such as Utility Tokens) then the issuance of new tokens cannot be controlled centrally or participants have no guarantee of fair treatment. 
+   Tokens or NFTs can be exploited if there is a master key, or an app server that manages the smart contracts. If a web3 project promises inflationary token rewards to support their hosting or network participation (such as Utility Tokens) then the issuance of new tokens cannot be controlled centrally or participants have no guarantee of fair treatment.
 
 3. **Cost Reduction**<br/>
-   Marketplace dynamics can ensure compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost. 
+   Marketplace dynamics can ensure compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
 
 4. **Access Privacy**<br/>
    Privacy is enhanced when there isn't just one core server IP address by allowing lots of devices to serve network requests and thereby hide the traffic from would-be snoopers.

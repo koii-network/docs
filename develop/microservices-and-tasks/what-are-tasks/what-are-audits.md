@@ -1,3 +1,10 @@
+---
+title: Securing Tasks
+description: Staying safe with decentralized and anonymous microservice providers.
+image: ../img/What_are_Audits_.png
+sidebar_label: Securing Tasks
+---
+
 import Description from "@site/src/components/description";
 
 # Securing Tasks
@@ -32,22 +39,20 @@ In addition to Task Nodes, which provide microservices and execute the task dire
 
 ### **The Audit Function**
 
-A Task is not complete without an Audit Function. This simple JavaScript executable may query  Nodes operating the specific Task Executable and test their responses via the built-in REST API, or verify on-chain transactions match an intended flow, such as in bridge vault controls. 
-
+A Task is not complete without an Audit Function. This simple JavaScript executable may query Nodes operating the specific Task Executable and test their responses via the built-in REST API, or verify on-chain transactions match an intended flow, such as in bridge vault controls.
 
 ### **Writing Good Audits**
 
-Typically, the main limitations of audits are repetition, frequency, and sample size, but luckily Koii's nodes provide lots of participants and implement an informal gradual consensus to provide flexibility in solving these issues. 
+Typically, the main limitations of audits are repetition, frequency, and sample size, but luckily Koii's nodes provide lots of participants and implement an informal gradual consensus to provide flexibility in solving these issues.
 <br />
 When designing a task, there are some key points to keep in mind:
 
-* Audits should always have deterministic outcomes
-* Ensure health checks exist for REST Endpoints
-* Penalties should be greater for clearly malicious behaviour than accidental downtime
-* Audit and task functionality can be separated into multiple tasks, if necessary
-* Staking requirements should not be overly large relative to bounties
-* Reputation over time and secondary tokens or NFTs can be used to permission task access
-
+- Audits should always have deterministic outcomes
+- Ensure health checks exist for REST Endpoints
+- Penalties should be greater for clearly malicious behaviour than accidental downtime
+- Audit and task functionality can be separated into multiple tasks, if necessary
+- Staking requirements should not be overly large relative to bounties
+- Reputation over time and secondary tokens or NFTs can be used to permission task access
 
 ### **Economics & Risks**
 
@@ -55,4 +60,4 @@ For many applications, especially community initiatives such as content collecti
 
 In these cases, it may not be necessary to require an overly significant stake in KOII, and task creators may opt to instead require NFT ownership or secondary conditions such as an address whitelist to permission task operation, and audits may be less necessary since trust exists based on historical contributions instead of financial risk. <br />
 
-**Note:**  Unfortunately, there is always the risk that a previously honest participant may have their personal devices compromised without their knowledge, so it is always a good practice to implement additional safeguards beyond simply restricting access.
+**Note:** Unfortunately, there is always the risk that a previously honest participant may have their personal devices compromised without their knowledge, so it is always a good practice to implement additional safeguards beyond simply restricting access.

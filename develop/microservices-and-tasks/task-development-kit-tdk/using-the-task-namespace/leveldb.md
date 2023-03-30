@@ -1,3 +1,10 @@
+---
+title: LevelDB
+description: LevelDB is a key-value storage library that provides an ordered mapping from string keys to string values.
+image: static/img/thumbnail.png
+sidebar_label: LevelDB
+---
+
 # LevelDB
 
 [LevelDB](https://github.com/google/leveldb) is a key-value storage library that provides an ordered mapping from string keys to string values. It provides `Put`, `Delete`, and `Get` methods to modify/query the database.
@@ -37,5 +44,5 @@ Example:
 ```javascript
 async function execute() {
   console.log("ROUND", await namespaceWrapper.storeGet("round"));
-  }
+}
 ```
