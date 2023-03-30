@@ -154,10 +154,10 @@ const config = {
         // Optional: see doc section below
         // contextualSearch: true,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      // prism: {
+      //   theme: darkCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
     }),
 };
 
