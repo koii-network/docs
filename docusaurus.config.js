@@ -103,16 +103,16 @@ const config = {
         respectPrefersColorScheme: false,
       },
       // Replace with your project's social card
-      // image: 'img/thumbnail.png',
+      image: "img/thumbnail.png",
       metadata: [
         {
           property: "og:url",
           content: "https://koii-docs.vercel.app",
         },
-        {
-          property: "og:image",
-          content: "https://www.koii.network/static/thumbnail.png",
-        },
+        // {
+        //   property: "og:image",
+        //   content: "https://www.koii.network/static/thumbnail.png",
+        // },
         // { property: "og:description", content: "Koii is Web3, for everyone." },
         // { property: "twitter:card", content: "summary_large_image" },
         // {
