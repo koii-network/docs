@@ -27,11 +27,13 @@
   --link-content: rgba(59, 69, 78, 1);
   --ifm-font-family-monospace: "Sora";
   --ifm-font-family-base: "Sora";
-  --ifm-heading-color: #171753;
-  --ifm-font-color-base: #171753;
+  --ifm-heading-color: #4D3D8D;
+  --ifm-font-color-base: #4A4A4A;
   --ifm-heading-font-weight: 600;
   --ifm-menu-color: #171753;
   --ifm-text-color: #171753;
+  --ifm-navbar-link-color: #353570;
+  --ifm-link-color:#4D3D8D;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -83,23 +85,44 @@
   width: 100%;
 }
 
+.breadcrumbs__link {
+  color: #4D3D8D;
+}
+
 .text-center {
   text-align: center;
 }
 
 .header-text {
   padding: 6px 16px;
-  color: #4d3d8d;
+  color: #353570;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .header-text:hover {
-  outline: 2px solid #5ED9D1;
+  outline: 2px solid #5ed9d1;
   border-radius: 4px;
-  color: #4d3d8d;
+  color: #353570;
 }
 
 main {
   margin-left: 8rem;
+}
+
+.navbar__brand > b {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar__logo {
+  margin-right: 1rem;
+}
+
+.navbar__logo > img {
+  width: 2rem;
 }
 
 /* menu,  ol,  ul {
@@ -118,6 +141,11 @@ main {
   main {
     margin-left: 0rem;
   }
+
+  .header-text {
+    margin-left: auto;
+  }
+  
 }
 
 @media screen and (max-width: 767px) {
