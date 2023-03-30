@@ -1,3 +1,10 @@
+---
+title: Setup Process
+description: To run the K2 node, first, you have to install the Koii command-line tools
+image: static/img/thumbnail.png
+sidebar_label: Setup Process
+---
+
 # Setup Process
 
 To run the K2 node, first, you have to [install the Koii command-line tools](../../microservices-and-tasks/task-development-guide/task-development-flow/koii-cli).
