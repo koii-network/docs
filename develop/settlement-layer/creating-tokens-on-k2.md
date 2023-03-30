@@ -1,10 +1,17 @@
+---
+title: Creating Tokens on K2
+description: The Solana Program Library (SPL) is a collection of on-chain programs targeting the Sealevel parallel runtime.
+image: static/img/thumbnail.png
+sidebar_label: Creating Tokens on K2
+---
+
 # Creating Tokens on K2
 
 The [Solana Program Library](https://spl.solana.com/) (SPL) is a collection of on-chain programs targeting the [Sealevel parallel runtime](https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192). One of the SPL programs is the [Solana Token Program](https://spl.solana.com/token) which defines a common implementation for Fungible and Non-Fungible tokens. Using the Solana Token Program simplifies token management.
 
 To interact with a Solana node inside a JavaScript application, use the [Solana-web3.js](https://github.com/solana-labs/solana-web3.js) library, which gives a convenient interface for the RPC methods. Full documentation of the library can be found [here](https://solana-labs.github.io/solana-web3.js/).
 
-Since K2 is a separate network from the core Solana system, it's necessary to use Koii's custom library, [Koii-Web3.js](https://www.npmjs.com/package/@\_koi/web3.js).
+Since K2 is a separate network from the core Solana system, it's necessary to use Koii's custom library, [Koii-Web3.js](https://www.npmjs.com/package/@_koi/web3.js).
 
 ## Installation
 
@@ -24,23 +31,20 @@ Fungible tokens are non-unique divisible tokens created on a blockchain. On Sola
 
 To create a token, instructions are sent to the Token Program, including assigning which keypair has the authority to mint tokens. This creates a new data account (the Mint acct). Each different SPL token has only one mint account associated with it. The program owner of the mint account is set to the Solana token program. Data stored in the account includes:
 
-* Mint account's address
-* The current number of tokens that have been minted
-* The mint authority (i.e the public key of the keypair that is allowed to mint tokens)
-* The number of decimals for the smallest denomination of the token. &#x20;
+- Mint account's address
+- The current number of tokens that have been minted
+- The mint authority (i.e the public key of the keypair that is allowed to mint tokens)
+- The number of decimals for the smallest denomination of the token. &#x20;
 
 ```javascript
-import { createMint } from '@solana/spl-token';
-import { clusterApiUrl, Connection, Keypair } from '@_koi/web3.js';
+import { createMint } from "@solana/spl-token";
+import { clusterApiUrl, Connection, Keypair } from "@_koi/web3.js";
 
 const payer = Keypair.generate();
 const mintAuthority = Keypair.generate();
 const freezeAuthority = Keypair.generate();
 
-const connection = new Connection(
-  clusterApiUrl('devnet'),
-  'confirmed'
-);
+const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
 
 const mint = await createMint(
   connection,
@@ -104,12 +108,6 @@ import { clusterApiUrl, Connection, Keypair } from "@_koi/web3.js";
     1
   );
 })();
-
 ```
 
 Learn more about creating NFTs on the SPL [documentation](https://spl.solana.com/token#example-create-a-non-fungible-token)
-
-
-
-
-

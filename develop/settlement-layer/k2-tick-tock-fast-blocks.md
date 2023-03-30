@@ -1,3 +1,10 @@
+---
+title: K2 - Tick, Tock, Fast Blocks
+description: Fast transaction settlement and timestamps.
+image: static/img/thumbnail.png
+sidebar_label: K2 - Tick, Tock, Fast Blocks
+---
+
 import Description from "@site/src/components/description";
 
 # K2 - Tick, Tock, Fast Blocks
