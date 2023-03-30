@@ -18,7 +18,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description='Description'>
+    <Layout title={`${siteConfig.title}`} description='Koii is Web3, for everyone.'>
       <HomepageHeader />
       <ExploreTopics />
       <WhereToStart />
