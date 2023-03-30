@@ -1,14 +1,19 @@
-import Description from "@site/src/components/description";
+---
+title: Ethereum (Metamask)
+description: Integrate with MetaMask wallet
+image: ./img/Integrating_Metamask.png
+sidebar_label: Ethereum (Metamask)
+---
 
+import Description from "@site/src/components/description";
 
 # Ethereum (Metamask)
 
-![Banner](./img/Integrating%20Metamask.png)
+![Banner](./img/Integrating_Metamask.png)
 
 <Description
   text="Integrate with MetaMask wallet"
 />
-
 
 To connect to MetaMask Wallet, import [**`connectToMetaMask`**](https://github.com/koii-network/crowdfunding/blob/master/src/api/wallet.ts)
 
@@ -20,15 +25,15 @@ Call it whenever you want to trigger a MetaMask connection.
 
 ```jsx
 const doConnectToMetaMask = async () => {
-    await connectToMetaMask()
-      .then(async res => {
-        const address = res?.ethAddress;
-        // your address is ready inside resEthAddress
-      })
-      .catch(err => {
-        // An error occurred while connecting to metamask
-      });
-  };
+  await connectToMetaMask()
+    .then(async (res) => {
+      const address = res?.ethAddress;
+      // your address is ready inside resEthAddress
+    })
+    .catch((err) => {
+      // An error occurred while connecting to metamask
+    });
+};
 ```
 
 Connect the function to a button.

@@ -1,3 +1,10 @@
+---
+title: Button & Button Group
+description: The button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+image: static/img/thumbnail.png
+sidebar_label: Button & Button Group
+---
+
 # Button & Button Group
 
 The button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
@@ -27,13 +34,11 @@ src/pages/nft/index.tsx line 97
   >
 ```
 
-
-
 Properties explained:
 
-* variant: button style
-* colorScheme: Hover color
-* href: url position
-* isExternal: Will this button open a new tab (If not desired, just delete this property)
+- variant: button style
+- colorScheme: Hover color
+- href: url position
+- isExternal: Will this button open a new tab (If not desired, just delete this property)
 
 Check for more useful properties here: [**https://chakra-ui.com/docs/form/button**](https://chakra-ui.com/docs/form/button)

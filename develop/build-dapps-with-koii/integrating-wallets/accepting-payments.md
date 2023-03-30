@@ -1,8 +1,15 @@
+---
+title: Accepting Payments
+description: Configuring & Connecting Wallets and Managing Identities
+image: ./img/Accepting_Payments_(1).png
+sidebar_label: Accepting Payments
+---
+
 import Description from "@site/src/components/description";
 
 # Accepting Payments
 
-![Banner](./img/Accepting%20Payments%20(1).png)
+![Banner](<./img/Accepting_Payments_(1).png>)
 
 <Description
   text="Configuring & Connecting Wallets and Managing Identities"

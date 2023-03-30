@@ -1,3 +1,10 @@
+---
+title: Services
+description: Shared services such as Axios, Koii PoRT & utility functions. You can find more useful functions in utils/index.ts
+image: static/img/thumbnail.png
+sidebar_label: Services
+---
+
 import Description from "@site/src/components/description";
 
 # Services
@@ -22,14 +29,13 @@ import Description from "@site/src/components/description";
 
 ### Axios
 
-The Axios service is responsible for creating the default `axios` config that's been used for every single API call. For example:  
-
+The Axios service is responsible for creating the default `axios` config that's been used for every single API call. For example:
 
 ```jsx
 import axios from "axios";
 const customAxios = axios.create({
   // The base URL of your api endpoint.
-  baseURL: process.env.REACT_APP_BUNDLER_API_URL
+  baseURL: process.env.REACT_APP_BUNDLER_API_URL,
 });
 
 // Global axios headers used in every single api call.
@@ -49,7 +55,7 @@ import { PoRT } from "@_koi/port";
 
 let port = new PoRT({
   trustedNodeAddress: process.env.REACT_APP_NODE_URL,
-  node: 5
+  node: 5,
 });
 
 export default port;

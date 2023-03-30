@@ -1,15 +1,19 @@
-
+---
+title: Lists and Leaderboards
+description: One thing to keep in mind when working with decentralized systems is that there's very minimal support for things like APIs and databases. Instead, we use a combination of on-chain data (via NFTs and GraphQL tags on Arweave) and Koii Tasks running on decentralized nodes.
+image: ../img/Lists_&_Leaderboards.png
+sidebar_label: Lists and Leaderboards
+---
 
 # Lists and Leaderboards
 
-![Banner](../img/Lists%20%26%20Leaderboards.png)
+![Banner](../img/Lists_&_Leaderboards.png)
 
 One thing to keep in mind when working with decentralized systems is that there's very minimal support for things like APIs and databases. Instead, we use a combination of on-chain data (via NFTs and GraphQL tags on Arweave) and Koii Tasks running on decentralized nodes.&#x20;
 
 When constructing a leaderboard or list of content (such as a collection of an Artist's NFTs, or a personalized newsfeed), it's usually necessary to either configure an index or hijack an existing one.
 
 Koii Tasks will go live in Q2 2022, at which point you'll be able to fully customize your system, but until then, the best course of action is likely to process the current Koii Leaderboard APIs clientside and construct your own newsfeed using filters.
-
 
 **View Filters**
 
@@ -23,7 +27,7 @@ Filters can be applied to any list component as shown:
 // Set up Time Filter components /src/components/TimeFilter
 function TimeFilter() {
   const [timeframe, setTimeframe] = useQueryParam<string>("t", withDefault(StringParam, "1w"));
-  
+
   const onTimeframeChange = (newValue: string) => {
     setTimeframe(newValue, "replaceIn");
   return (
@@ -184,7 +188,7 @@ const body = {
 
 📦src
  ┣ 📂api
- ┃ ┗ 📜upload.ts line:188-194    
+ ┃ ┗ 📜upload.ts line:188-194
 const generateCardWithData = async (body: any) => {
   return await axios.post(`https://api.koii.live/generateCardWithData`, body, {
     transformRequest: (data, headers: any) => {
@@ -195,6 +199,3 @@ const generateCardWithData = async (body: any) => {
   });
 };
 ```
-
-
-

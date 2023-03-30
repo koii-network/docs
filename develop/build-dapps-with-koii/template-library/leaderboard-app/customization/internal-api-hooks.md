@@ -1,5 +1,8 @@
 ---
+title: Internal API Hooks
 description: Every single API call made can be found here, such as Koii SDK
+image: static/img/thumbnail.png
+sidebar_label: Internal API Hooks
 ---
 
 import Description from "@site/src/components/description";
@@ -27,7 +30,7 @@ import Description from "@site/src/components/description";
 
 ### React-query Queries&#x20;
 
-Everything inside [**api/hooks**](https://github.com/koii-network/koii.X/tree/main/src/api/hooks) is a React-query [**hook**](https://react-query.tanstack.com/reference/useQuery#\_top)**.** Take a look at [**React-query**](https://react-query.tanstack.com/) documentation as it is a fundamental tool in Koii-X.
+Everything inside [**api/hooks**](https://github.com/koii-network/koii.X/tree/main/src/api/hooks) is a React-query [**hook**](https://react-query.tanstack.com/reference/useQuery#_top)**.** Take a look at [**React-query**](https://react-query.tanstack.com/) documentation as it is a fundamental tool in Koii-X.
 
 ### Example
 
@@ -54,7 +57,7 @@ const fetchNft = async (id: string) => {
 export function useNft({ id }: Props) {
   return useQuery(`nft-${id}`, () => fetchNft(id), {
     staleTime: 60 * 1000 * 60, // 1hr cache, since the nft details does not change.
-    refetchOnWindowFocus: undefined
+    refetchOnWindowFocus: undefined,
   });
 }
 ```
