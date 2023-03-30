@@ -107,12 +107,12 @@ const config = {
       metadata: [
         {
           property: "og:url",
-          content: "https://koii-docs-git-8-social-media-card-koif.vercel.app/",
+          content: "https://koii-docs.vercel.app",
         },
-        // {
-        //   property: "og:image",
-        //   content: "https://koii-docs.vercel.app/static/thumbnail.png",
-        // },
+        {
+          property: "og:image",
+          content: "https://koii-docs.vercel.app/static/thumbnail.png",
+        },
         // { property: "og:description", content: "Koii is Web3, for everyone." },
         // { property: "twitter:card", content: "summary_large_image" },
         // {
