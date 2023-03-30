@@ -32,6 +32,7 @@
   --ifm-heading-font-weight: 600;
   --ifm-menu-color: #171753;
   --ifm-text-color: #171753;
+  --ifm-link-color:#087980;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
