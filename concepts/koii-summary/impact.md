@@ -1,7 +1,7 @@
 ---
 title: 🔥 Impact
 description: We've redesigned the web from the group up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, Koii pays you.
-image: https://koii-docs.vercel.app/static/thumbnail.png
+# image: https://koii-docs.vercel.app/static/thumbnail.png
 sidebar_label: 🔥 Impact
 ---
 
