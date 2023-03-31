@@ -5,9 +5,17 @@ image: img/thumbnail.png
 sidebar_label: Setup Process
 ---
 
+import ContentLink from "@site/src/components/contentLink";
+
 # Setup Process
 
 To run the K2 node, first, you have to [install the Koii command-line tools](../../microservices-and-tasks/task-development-guide/task-development-flow/koii-cli).
+
+### Download the Latest Release
+
+K2 Releases are published on our github. Click the link below to get the latest version.
+
+<ContentLink title="GitHub - koii-network/k2-release" link="https://github.com/koii-network/k2-release" imageLink="https://github.com/fluidicon.png" />
 
 ### Configure Koii CLI
 
