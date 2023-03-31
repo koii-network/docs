@@ -1,3 +1,10 @@
+---
+title: Complete Executable Code
+description: Putting all of the pieces together, this is the full executable in coreLogic.js file.
+image: img/thumbnail.png
+sidebar_label: Complete Executable Code
+---
+
 # Complete Executable Code
 
 Putting all of the pieces together, this is the full executable in `coreLogic.js` file:
@@ -234,4 +241,5 @@ module.exports = {
   coreLogic,
 };
 ```
+
 Follow the instructions [here](/develop/microservices-and-tasks/task-development-guide/task-development-flow/create-task) to register this new task.

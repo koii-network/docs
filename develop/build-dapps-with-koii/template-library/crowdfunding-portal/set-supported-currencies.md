@@ -1,5 +1,8 @@
 ---
-description: The currency options for your crowdfunding portal
+title: Currencies & Wallets
+description: The currency options for your crowdfunding portal.
+image: img/thumbnail.png
+sidebar_label: Currencies & Wallets
 ---
 
 # Currencies & Wallets
@@ -15,7 +18,7 @@ export default config;
 ```
 
 {% hint style="warning" %}
-* Currently we only support Ethereum (ETH) and Arweave (AR). KOII and other currencies are coming soon.
-* If you change the payment type to ETH, make sure to change your fundAddress to an ETH address as well. &#x20;
-{% endhint %}
 
+- Currently we only support Ethereum (ETH) and Arweave (AR). KOII and other currencies are coming soon.
+- If you change the payment type to ETH, make sure to change your fundAddress to an ETH address as well. &#x20;
+  {% endhint %}

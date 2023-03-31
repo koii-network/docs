@@ -1,8 +1,15 @@
+---
+title: Other EVM Chains
+description: The Majority of EVM functionality within Finnie is handled by the same methods as the Metamask standard
+image: img/thumbnail.png
+sidebar_label: Other EVM Chains
+---
+
 # Other EVM Chains
 
 The Majority of EVM functionality within Finnie is handled by the same methods as the [Metamask standard](https://docs.metamask.io/guide/getting-started.html#basic-considerations), and provides the same injected methods. Some useful examples are below.
 
-### eth\_requestAccounts
+### eth_requestAccounts
 
 The `eth_requestAccounts` RPC method is the only way to obtain the necessary permissions required to use Finnie for signing transactions. This RPC call will return a promise, allowing you to `await` the result of connect approval. A popup will appear, allowing you to either accept or reject the request. You can also select a specific wallet address to connect to. If the request is approved, the returned promise will be resolved with an array of the connected addresses; otherwise, the returned promise will be rejected.
 
@@ -25,7 +32,7 @@ try {
 }
 ```
 
-### eth\_accounts
+### eth_accounts
 
 This RPC call retrieves all connected wallet addresses. It can also be used to check if the Finnie wallet is connected to the current page. An empty array will be returned if the page is not connected to the Finnie wallet. This RPC call does not require any permission.
 
@@ -45,7 +52,7 @@ const connectedAddresses = await window.ethereum.request({
 console.log(connectedAddresses) // ['example_address']
 ```
 
-### eth\_chainId
+### eth_chainId
 
 Get the current chain ID from the Finnie wallet.
 
@@ -65,7 +72,7 @@ const chainId = await window.ethereum.request({
 console.log(chainId) // 0x1
 ```
 
-### net\_version
+### net_version
 
 Get current network ID from the Finnie wallet.
 
@@ -85,7 +92,7 @@ const networkId = await window.ethereum.request({
 console.log(networkId) // 1
 ```
 
-### eth\_sendTransaction
+### eth_sendTransaction
 
 This RPC method signs and sends a transaction. The `transaction` is added as an argument within the `eth_sendTransaction` method. A popup will appear, allowing you to approve or reject the transaction, and the details of your transaction will be displayed. If the transaction is approved, the returned promise will be resolved with the transaction hash; otherwise, the returned promise will be rejected.
 
@@ -126,7 +133,7 @@ try {
 
 ```
 
-### eth\_sign
+### eth_sign
 
 This RPC call is used for signing messages. When calling this method, a hex string is passed as a parameter. A popup appears, allowing you to either sign the message or not. The returned promise will be resolved with a signature if the request is approved; if not, it will be rejected.
 

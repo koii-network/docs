@@ -1,3 +1,10 @@
+---
+title: Box
+description: Box is the most abstract component on top of which all other Chakra UI components are built.
+image: img/thumbnail.png
+sidebar_label: Box
+---
+
 # Box
 
 Box is the most abstract component on top of which all other Chakra UI components are built. It renders the `div` element by default.
@@ -29,9 +36,3 @@ You can also use HEX for color selector such as #171753 to choose your favorite 
 :::
 
 For more information and properties, check [**https://chakra-ui.com/docs/layout/box**](https://chakra-ui.com/docs/layout/box)
-
-
-
-
-
-

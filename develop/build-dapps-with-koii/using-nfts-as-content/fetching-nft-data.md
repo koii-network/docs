@@ -1,9 +1,15 @@
-import Description from "@site/src/components/description";
+---
+title: Fetching NFT Data
+description: Learn how to fetch your NFT data.
+image: img/thumbnail.png
+sidebar_label: Fetching NFT Data
+---
 
+import Description from "@site/src/components/description";
 
 # Fetching NFT Data
 
-![Banner](../img/Fetching%20NFT%20Data.png)
+![Banner](../img/Fetching_NFT_Data.png)
 
 <Description
   text="Learn how to fetch your NFT data"
@@ -24,22 +30,21 @@ Reading data from the source network directly means that we can often only read 
 Atomic NFTs are some of the easiest to read into an application, since Arweave has a number of supported REST APIs. The arweave.net gateway provides easy CORS-compatible services for pulling in contract data, but it will need to be reconstructed using the SmartWeave libraries client-side to get the latest state.
 
 ```javascript
-// Some code showing how to fetch an NFT via Smartweave's API 
+// Some code showing how to fetch an NFT via Smartweave's API
 import Arweave from "arweave";
 
 const arweave = new Arweave({
-    host: 'arweave.net',
-    port: 443,
-    protocol: 'https'
-  });
-  
-const id = "NFTid"
+  host: "arweave.net",
+  port: 443,
+  protocol: "https",
+});
+
+const id = "NFTid";
 getDatafromArweave(id);
 
-
 async function getDatafromArweave(id) {
-    let NFTdata = await arweave.transactions.get(id)
-    console.log(NFTdata)
+  let NFTdata = await arweave.transactions.get(id);
+  console.log(NFTdata);
 }
 ```
 
@@ -56,12 +61,12 @@ If you are using Atomic NFTs, there is often a lot of additional information suc
 import * as kweb from "@_koi/sdk/web";
 let ktools = new kweb.Web();
 
-const id = "NFTid"
+const id = "NFTid";
 getDatafromArweave(id);
 
 async function getDatafromArweave(id) {
-    let NFTdata = await ktools.getNftState(id);
-    console.log(NFTdata)
+  let NFTdata = await ktools.getNftState(id);
+  console.log(NFTdata);
 }
 ```
 

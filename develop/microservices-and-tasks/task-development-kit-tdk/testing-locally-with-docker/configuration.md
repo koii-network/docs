@@ -1,3 +1,10 @@
+---
+title: Configuration
+description: Depending on the types of tasks you are developing, you may require custom configuration of the docker container.
+image: img/thumbnail.png
+sidebar_label: Configuration
+---
+
 # Configuration
 
 Depending on the types of tasks you are developing, you may require custom configuration of the docker container. There will be an environment variable file which will allow you to pass any required custom variables to the docker task node.
@@ -18,7 +25,7 @@ NODE_MODE="service"
 SERVICE_URL="http://localhost:8080"
 # For CI/CD purpose to automate the staking wallet creation
 INITIAL_STAKING_WALLET_BALANCE=1
-# Intial balance for the distribution wallet which will be used to hold the distribution list. 
+# Intial balance for the distribution wallet which will be used to hold the distribution list.
 INITIAL_DISTRIBUTION_WALLET_BALANCE=1
 # Global timers which track the round time, submission window and audit window and call those functions
 GLOBAL_TIMERS="true"

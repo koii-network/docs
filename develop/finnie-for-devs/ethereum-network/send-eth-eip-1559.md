@@ -1,3 +1,10 @@
+---
+title: Send ETH (EIP-1559)
+description: Send type EIP1559 ETH
+image: img/thumbnail.png
+sidebar_label: Send ETH (EIP-1559)
+---
+
 import Description from "@site/src/components/description";
 
 # Send ETH (EIP-1559)
@@ -15,24 +22,24 @@ Example `EIP1559` transaction:
 ```typescript
 const transactionParameters = {
   from: accounts[0],
-  to: '0xb076413401172CBB73C082107514De3376E4FF6c',
-  value: '0x38D7EA4C68000',
-  gasLimit: '0x5208',
-  maxFeePerGas: '0x2540be400',
-  maxPriorityFeePerGas: '0x3b9aca00',
-}
+  to: "0xb076413401172CBB73C082107514De3376E4FF6c",
+  value: "0x38D7EA4C68000",
+  gasLimit: "0x5208",
+  maxFeePerGas: "0x2540be400",
+  maxPriorityFeePerGas: "0x3b9aca00",
+};
 
 const sendEthEIP1559 = async () => {
   try {
     const transactionHash = await window.ethereum.request({
-      method: 'eth_sendTransaction',
+      method: "eth_sendTransaction",
       params: [transactionParameters],
     });
-    console.log('Transaction Hash: ' + transactionHash)
+    console.log("Transaction Hash: " + transactionHash);
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
-}
+};
 ```
 
 If you would like to read a more detailed description of what `EIP-1559` transaction is, you can check out the official specification document:
@@ -41,6 +48,3 @@ If you would like to read a more detailed description of what `EIP-1559` transac
 What is EIP-1559 transaction?  
 [https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md)
 :::
-
-
-

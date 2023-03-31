@@ -1,6 +1,14 @@
+---
+title: Audit Distribution List
+description: The validateDistribution function contains the logic of how the distribution list should be audited to check validity.
+image: img/thumbnail.png
+sidebar_label: Audit Distribution List
+---
+
 # Audit Distribution List
 
 # validateDistribution()
+
 The `validateDistribution` function contains the logic of how the distribution list should be audited to check validity:
 
 ```javascript
@@ -12,11 +20,10 @@ async function validateDistribution(submissionValue) {
 
 # auditDistribution()
 
- The `auditDistribution` function takes the `roundNumber` as a parameter and calls the `validateAndVoteOnDistributionList` helper function which takes in the `validateDistribution`  function and `roundNumber` as parameters.
+The `auditDistribution` function takes the `roundNumber` as a parameter and calls the `validateAndVoteOnDistributionList` helper function which takes in the `validateDistribution` function and `roundNumber` as parameters.
 
 :::info
 
 No need to edit this function when creating a task
 
 :::
-

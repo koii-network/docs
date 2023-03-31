@@ -1,8 +1,13 @@
-
+---
+title: Display NFTs
+description: NFTs can be displayed using the components collected on the /nft/<id> page of the leaderboard template.
+image: img/thumbnail.png
+sidebar_label: Display NFTs
+---
 
 # Display NFTs
 
-![Banner](../img/Display%20NFTs.png)
+![Banner](../img/Display_NFTs.png)
 
 NFTs can be displayed using the components collected on the [**`/nft/<id>`**](https://github.com/koii-network/koii.X/blob/main/src/pages/nft/index.tsx) page of the leaderboard template.
 
@@ -28,14 +33,14 @@ The `nfts` here must be an array of objects with each NFT object following the f
 
 ```json
 const nfts = [
-    {    
+    {
         attention: // The attention(Views) that NFT has
         balances: // The number of NFTs owner have
         contentType: // The type of the NFT, such as image/png or video/mp4
         createdAt: // NFT create date
         description: // Description of NFT
         id: // Id of NFT
-        locked: [] 
+        locked: []
         next: // Next NFT
         owner: // The wallet address of the NFT's owner
         prev: // Previous NFT
@@ -59,14 +64,14 @@ Configuring new views and new forms of Atomic content requires a thorough unders
 There are several supported mime types for the Leaderboard Template:
 
 1. text/html ~ these will render as apps inside iframes (useful for dynamic content)
-2. image/\* ~ these will render as html ``<img>`` tags
+2. image/\* ~ these will render as html `<img>` tags
 3. video/\* ~ these will render as iframes containing videos&#x20;
 
 #### View Controls
 
 Each type of Atomic NFT has a different type of view:
 
-* Swap the content out
+- Swap the content out
 
 ```jsx
 
@@ -93,7 +98,7 @@ const getMediaType = (contentType: any) => {
  ┣ 📂common
  ┃ ┗ 📂NftMediaContainer
  ┃   ┗ 📜index.tsx line:10-38
- 
+
 const contentType = getMediaType(nft?.contentType);
 const arweaveUrl = `https://arweave.net/${nft?.id}`; // This url is the source of the NFT
 
@@ -139,7 +144,7 @@ const renderContainer = () => {
  // attention prop shows the attention(Views) that NFT has.
  // Same way as title and description.
  <Text>{nft?.attention} Views</Text>
- 
+
  // reward prop shows how much KOII NFT earned
  const formatDigitNumber = (val: any) => {
   if (typeof val !== "number") return 0;
@@ -147,7 +152,7 @@ const renderContainer = () => {
   else return 0;
 };
  <Text>{formatDigitNumber(nft?.reward)} Koii earned</Text>
- 
+
  // To view NFT in block, use nft.id tag
  <Button as={Link} href={`https://viewblock.io/arweave/tx/${nft?.id}`}>
 Explore block
@@ -170,8 +175,5 @@ const formatUnixTimestamp = (
 Registered:
 <span>{formatUnixTimestamp(nft?.createdAt || "1616944045")}</span>
 </Text>
-                 
+
 ```
-
-
-

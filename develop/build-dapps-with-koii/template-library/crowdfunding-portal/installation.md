@@ -1,5 +1,11 @@
-import Description from "@site/src/components/description";
+---
+title: Installation
+description: Follow these steps to create your Crowdfunding dApp in moments.
+image: img/thumbnail.png
+sidebar_label: Installation
+---
 
+import Description from "@site/src/components/description";
 
 # Installation
 

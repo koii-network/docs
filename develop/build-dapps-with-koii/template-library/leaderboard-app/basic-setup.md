@@ -1,3 +1,10 @@
+---
+title: Basic Setup
+description: The most basic functions needed to create a leaderboard page.
+image: img/thumbnail.png
+sidebar_label: Basic Setup
+---
+
 import Description from "@site/src/components/description";
 
 # Basic Setup
@@ -35,10 +42,10 @@ import { TopNftsContent } from "components/widgets";
 
 export function Leaderboard() {
   return (
-    <Box color="blue.500" bg="gray.50" rounded="sm" p="2">
+    <Box color='blue.500' bg='gray.50' rounded='sm' p='2'>
       {/* Header */}
-      <Flex align="center" justify="space-between" mb="4">
-        <Heading size="lg">Top content</Heading>
+      <Flex align='center' justify='space-between' mb='4'>
+        <Heading size='lg'>Top content</Heading>
         <Stack>
           {/* Filters */}
           <TimeFilter />
