@@ -1,3 +1,10 @@
+---
+title: Grants Program
+description: The Koii Foundation also gives grants to developers and anyone who wants to build new and more rewarding online experiences.
+image: img/thumbnail.png
+sidebar_label: Grants Program
+---
+
 import HubspotForm from 'react-hubspot-form';
 
 # Grants Program

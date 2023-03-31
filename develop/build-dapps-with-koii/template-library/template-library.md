@@ -1,9 +1,15 @@
-import Description from "@site/src/components/description";
+---
+title: 🚚 Template Library
+description: Get started fast with easy to use JavaScript templates.
+image: img/thumbnail.png
+sidebar_label: 🚚 Template Library
+---
 
+import Description from "@site/src/components/description";
 
 # 🚚 Template Library
 
-![Banner](../img/Template%20Library.png)
+![Banner](../img/Template_Library.png)
 
 <Description
   text="Get started fast with easy to use JavaScript templates"
@@ -31,9 +37,6 @@ npx create-koii-app
 
 All templates are optimized out of the box for deployment to a storage network. Most notably, this means that they are:
 
-* Built to single files - just run `yarn build` to output a single build file in `/pkg/index.html`
-* Optimized in-line JavaScript and CSS reduce risks of broken deployments if links die over time
-* Light by design - we have minimized the use of images and supporting libraries to keep these builds as small as possible to reduce your storage fees
-
-
-
+- Built to single files - just run `yarn build` to output a single build file in `/pkg/index.html`
+- Optimized in-line JavaScript and CSS reduce risks of broken deployments if links die over time
+- Light by design - we have minimized the use of images and supporting libraries to keep these builds as small as possible to reduce your storage fees

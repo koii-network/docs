@@ -93,13 +93,13 @@
 }
 
 .header-text:hover {
-  outline: 2px solid #5ED9D1;
+  outline: 2px solid #5ed9d1;
   border-radius: 4px;
   color: #4d3d8d;
 }
 
 main {
-  margin-left: 8rem;
+  padding-left: 8rem;
 }
 
 /* menu,  ol,  ul {
@@ -110,13 +110,13 @@ main {
 
 @media screen and (max-width: 1200px) {
   main {
-    margin-left: 4rem;
+    padding-left: 4rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   main {
-    margin-left: 0rem;
+    padding-left: 0rem;
   }
 }
 

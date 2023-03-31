@@ -1,11 +1,18 @@
+---
+title: Finnie Wallet
+description: Integrate your dApp with Finnie wallet
+image: img/thumbnail.png
+sidebar_label: Finnie Wallet
+---
+
 import Description from "@site/src/components/description";
 
 # Finnie Wallet
 
-![Banner](./img/Finnie%20Wallet%20(1).png)
+![Banner](<./img/Finnie_Wallet_(1).png>)
 
 <Description
-  text="Integrate with MetaMask wallet"
+  text="Integrate your dApp with Finnie wallet"
 />
 
 ### useFinnie
@@ -20,8 +27,16 @@ import { useFinnie } from "components/finnie";
 
 ```jsx
 const {
-    state: { connectFinnie, disconnectFinnie, walletAddress, walletBalance, isFinnieConnected, isLoading, isError }
-  } = useFinnie();
+  state: {
+    connectFinnie,
+    disconnectFinnie,
+    walletAddress,
+    walletBalance,
+    isFinnieConnected,
+    isLoading,
+    isError,
+  },
+} = useFinnie();
 ```
 
 `connectFinnie` a function to call to try to connect to Finnie. e.g:
@@ -50,12 +65,24 @@ import { useFinnie } from "components/finnie";
 
 function Component() {
   const {
-    state: { connectFinnie, isLoading, isError, walletAddress, isFinnieConnected }
+    state: {
+      connectFinnie,
+      isLoading,
+      isError,
+      walletAddress,
+      isFinnieConnected,
+    },
   } = useFinnie();
 
   return (
     <>
-      <button onClick={connectFinnie}>{isLoading ? "Connecting..." : isFinnieConnected ? "Connected ✓" : "Connect to finnie"}</button>
+      <button onClick={connectFinnie}>
+        {isLoading
+          ? "Connecting..."
+          : isFinnieConnected
+          ? "Connected ✓"
+          : "Connect to finnie"}
+      </button>
 
       {isFinnieConnected && (
         <p>

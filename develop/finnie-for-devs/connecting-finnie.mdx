@@ -1,3 +1,10 @@
+---
+title: Connecting Finnie
+description: When Finnie wallet is initialized it will emit a custom browser event called `finnieWalletLoaded`.
+image: img/thumbnail.png
+sidebar_label: Connecting Finnie
+---
+
 # Connecting Finnie
 
 ### Web3 Browser Detection&#x20;
@@ -12,11 +19,10 @@ window.addEventListener("finnieWalletLoaded", () => {
 });
 ```
 
-At this point, Finnie wallet will inject the `ethereum` provider object into the global `window` object.  You can verify this by running the code:
+At this point, Finnie wallet will inject the `ethereum` provider object into the global `window` object. You can verify this by running the code:
 
 ```jsx
-if (typeof window.ethereum !== 'undefined' && window.ethereum.isFinnie) {
-  console.log('Finnie is installed');
+if (typeof window.ethereum !== "undefined" && window.ethereum.isFinnie) {
+  console.log("Finnie is installed");
 }
 ```
-

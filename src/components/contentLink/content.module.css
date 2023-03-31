@@ -1,51 +1,50 @@
-.cardContainer{
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    width: 100%;
-    border-radius: 4px;
-    transition-duration: 0.15s;
-    transition-property: all;
-    border: 1px solid rgba(227,232,237,1.00);
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    color:  var(--link-content);
-    gap: 16px;
-    margin-bottom: 16px;
+.cardContainer {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  width: 100%;
+  border-radius: 4px;
+  transition-duration: 0.15s;
+  transition-property: all;
+  border: 1px solid rgba(227, 232, 237, 1);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: var(--link-content);
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
-.cardContainer:hover{
-    box-shadow: 0px 12px 13px rgb(0 0 0 / 2%);
-    transform: translateY(-2px);
-    text-decoration: none;
-    color: #776cad;
-    text-decoration: none;
-    border-color: #776cad;
+.cardContainer:hover {
+  box-shadow: 0px 12px 13px rgb(0 0 0 / 2%);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #776cad;
+  text-decoration: none;
+  border-color: #776cad;
 }
 
 .text {
-    text-align: center;
-    margin-bottom: 0px;
-    text-decoration: none;
-    font-weight: 500;
+  text-align: center;
+  margin-bottom: 0px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .imageLink {
-    width: 32px;
-    height: 32px;
+  height: 32px;
 }
 
 .descriptionContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .textContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

@@ -1,3 +1,10 @@
+---
+title: Runtime Flow
+description: Gradual Consensus - Act quickly, react faster, and reward slowly.
+image: img/thumbnail.png
+sidebar_label: Runtime Flow
+---
+
 import Description from "@site/src/components/description";
 import ContentLink from "@site/src/components/contentLink";
 

@@ -377,7 +377,6 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        "build-dapps-with-koii/template-library/site-meta-data",
         {
           type: "category",
           label: "💡 UI Template Layout",

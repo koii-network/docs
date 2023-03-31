@@ -1,3 +1,10 @@
+---
+title: signPayload (Koii)
+description: This function signs a data payload which can then have its signature verified publicly.
+image: img/thumbnail.png
+sidebar_label: signPayload (Koii)
+---
+
 # signPayload (Koii)
 
 This function signs a data payload which can then have its signature verified publicly.&#x20;
@@ -13,23 +20,23 @@ const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
 async function testSignPayload() {
-    const jwk = await ktools.loadFile("arweaveWallet.json");
-    await ktools.loadWallet(jwk);
+  const jwk = await ktools.loadFile("arweaveWallet.json");
+  await ktools.loadWallet(jwk);
 
-    let payload = {
-        vote: "FooBar",
-        senderAddress: "",
-    }
-    
-    const signedPayload = await ktools.signPayload(payload);
-    console.log(signedPayload);
-    const signature = signedPayload.signature;
-    const owner = signedPayload.owner;
-    //expect(typeof signature).toBe("string");
-    //expect(signature.trim()).not.toHaveLength(0);
-    
-    //expect(typeof owner).toBe("string");
-    //expect(owner.trim()).not.toHaveLength(0);
+  let payload = {
+    vote: "FooBar",
+    senderAddress: "",
+  };
+
+  const signedPayload = await ktools.signPayload(payload);
+  console.log(signedPayload);
+  const signature = signedPayload.signature;
+  const owner = signedPayload.owner;
+  //expect(typeof signature).toBe("string");
+  //expect(signature.trim()).not.toHaveLength(0);
+
+  //expect(typeof owner).toBe("string");
+  //expect(owner.trim()).not.toHaveLength(0);
 }
 
 testSignPayload();
@@ -49,4 +56,4 @@ Initialized Koii Tools for true ownership and direct communication using version
 
 ### Returns
 
-**Promise: null**  ```<BundlerPayload>``` - Signed payload with signature
+**Promise: null** `<BundlerPayload>` - Signed payload with signature

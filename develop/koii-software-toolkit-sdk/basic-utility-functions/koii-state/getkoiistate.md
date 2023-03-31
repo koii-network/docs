@@ -1,3 +1,10 @@
+---
+title: getKoiiState
+description: The states are based on Arweave and K1.
+image: img/thumbnail.png
+sidebar_label: getKoiBalance
+---
+
 # getKoiiState
 
 :::danger
@@ -13,8 +20,8 @@ const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
 async function testGetKoiiState() {
-    const koiiState = await ktools.getKoiiState();
-    console.log(koiiState);
+  const koiiState = await ktools.getKoiiState();
+  console.log(koiiState);
 }
 
 testGetKoiiState();
@@ -30,4 +37,4 @@ testGetKoiiState();
 
 ### Returns
 
-**Promise ```<any>``` -** Information about the current Koii State.
+**Promise `<any>` -** Information about the current Koii State.
