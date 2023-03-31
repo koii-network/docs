@@ -31,7 +31,7 @@ export const WhereToBegin = () => {
   ];
 
   return (
-    <div className="w-full px-4 lg:px-8 max-w-[1350px] mx-auto flex flex-col items-center text-koii-purple-3 font-semibold">
+    <div className="w-full px-4 lg:px-8 max-w-[1350px] mx-auto flex flex-col items-center text-koii-purple-2 font-semibold">
       <p className="text-3xl leading-10 mb-0">Not sure where to begin?</p>
       <p className="text-2xl mb-8 lg:mb-16"> Start here.</p>
       <div className="w-full flex flex-col gap-10 lg:grid lg:grid-cols-4 lg:gap-6">
