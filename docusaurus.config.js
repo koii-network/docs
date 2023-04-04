@@ -66,6 +66,38 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/concepts/earning-koii/attention-mining",
+            from: "/earning-koii/attention-mining",
+          },
+          {
+            to: "/develop/build-dapps-with-koii/welcome-to-koii-x",
+            from: "/build-dapps-with-koii/welcome-to-koii-x",
+          },
+          {
+            to: "/develop/build-dapps-with-koii/welcome-to-koii-x",
+            from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+          },
+        ],
+        createRedirects(existingPath) {
+          if (existingPath.includes("/build-dapps-with-koii")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/build-dapps-with-koii",
+                "/develop/build-dapps-with-koii"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },
+      },
+    ],
   ],
   presets: [
     [
