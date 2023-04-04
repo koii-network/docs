@@ -126,14 +126,14 @@ const config = {
             to: "/develop/settlement-layer/creating-tokens-on-k2",
             from: "/settlement-layer/creating-tokens-on-k2",
           },
-          {
-            to: "/",
-            from: "/#what-is-koii",
-          },
-          {
-            to: "/concepts/earning-koii/proof-of-real-traffic/",
-            from: "/#the-koii-token",
-          },
+          // {
+          //   to: "/",
+          //   from: "/#what-is-koii",
+          // },
+          // {
+          //   to: "/concepts/earning-koii/proof-of-real-traffic/",
+          //   from: "/#the-koii-token",
+          // },
           {
             to: "/develop/koii-software-toolkit-sdk/register-content/",
             from: "/earning-koii/registering-content",
