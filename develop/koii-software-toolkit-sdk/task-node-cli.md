@@ -36,7 +36,7 @@ To create a staking wallet, select the "Create a task staking wallet" option and
 
 ```javascript
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/giftea/.config/koii/id.json
+/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a task staking wallet
 create-task-staking-wallet
 Connection to cluster established: https://k2-testnet.koii.live
@@ -52,7 +52,7 @@ To create a distribution wallet, select the "Create a task distribution wallet" 
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/giftea/.config/koii/id.json
+/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a task distribution wallet
 create-task-distribution-wallet
 Connection to cluster established: https://k2-testnet.koii.live
@@ -68,7 +68,7 @@ To stake tokens on a task, select the "Stake tokens on a task", add the task ID 
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/giftea/.config/koii/id.json
+/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Stake tokens on a task
 stake-tokens
 Connection to cluster established: https://k2-testnet.koii.live
@@ -85,7 +85,7 @@ To view all tasks, select the "Show all tasks" option. You should see an array o
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/giftea/.config/koii/id.json
+/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Show all tasks
 show-all-tasks
 Connection to cluster established: https://k2-testnet.koii.live
