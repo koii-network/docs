@@ -71,17 +71,17 @@ const config = {
       {
         redirects: [
           {
-            to: "/concepts/earning-koii/attention-mining",
+            to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
             from: "/earning-koii/attention-mining",
           },
-          {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x",
-            from: "/build-dapps-with-koii/welcome-to-koii-x",
-          },
-          {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x",
-            from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-          },
+          // {
+          //   to: "/build-dapps-with-koii/welcome-to-koii-x",
+          //   from: "/build-dapps-with-koii/welcome-to-koii-x",
+          // },
+          // {
+          //   to: "/develop/build-dapps-with-koii/welcome-to-koii-x",
+          //   from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+          // },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
