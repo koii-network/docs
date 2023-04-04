@@ -27,7 +27,7 @@ To create a staking wallet, select the "Create a task staking wallet" option and
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/giftea/.config/koii/id.json
+/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a task staking wallet
 create-task-staking-wallet
 Connection to cluster established: https://k2-testnet.koii.live
