@@ -151,10 +151,6 @@ const config = {
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
-            from: "/earning-koii/attention-mining",
-          },
-          {
             to: "/concepts/earning-koii/network-economics",
             from: "/earning-koii/network-economics",
           },
