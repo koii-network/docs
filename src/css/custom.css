@@ -97,8 +97,6 @@
   color: #353570;
   font-weight: 700;
   margin-left: 0.5rem;
-  display: flex;
-  align-items: center;
 }
 
 .header-text:hover {
