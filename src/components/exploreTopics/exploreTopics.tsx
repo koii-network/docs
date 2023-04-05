@@ -3,8 +3,8 @@ import { exploreTopics } from "./exploreTopicsList";
 
 export const ExploreTopics = () => {
   return (
-    <section className=" x:px-10">
-      <div className="containe xl:max-w-[1300px] lg:max-w-[1024px] px-[2rem] lg:px-[2rem] mx-auto">
+    <section>
+      <div className=" xl:max-w-[1300px] lg:max-w-[1024px] px-[2rem] lg:px-[2rem] mx-auto">
         <p className="text-center text-koii-purple-2 m-0 font-semibold text-[40px] mb-[4rem]">
           {" "}
           Explore by Topic{" "}
