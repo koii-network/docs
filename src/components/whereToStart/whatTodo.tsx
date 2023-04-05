@@ -2,9 +2,9 @@ import React, {ReactNode} from "react";
 
 export const WhatToDo = () => {
   return (
-   <div className="w-full px-4 lg:px-8 max-w-[1096px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-24">
+   <div className="w-full px-4 md:px-8 max-w-[1096px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-24">
     <p className="text-koii-purple-2 font-semibold text-[40px] leading-[48px]">What do you want to do now?</p>
-    <div className="w-full flex flex-col lg:flex-row gap-6">
+    <div className="w-full flex flex-col md:flex-row gap-6">
       <a href="/concepts/koii-summary/welcome" className="w-full lg:max-w-[50%] lg:h-44">
         <img
           src="/img/new-web.svg"
