@@ -26,13 +26,13 @@
   --docusaurus-highlighted-code-line-bg: #f4f3fc;
   --link-content: rgba(59, 69, 78, 1);
   --ifm-font-family-base: "Sora";
-  --ifm-heading-color: #4D3D8D;
-  --ifm-font-color-base: #4A4A4A;
+  --ifm-heading-color: #4d3d8d;
+  --ifm-font-color-base: #4a4a4a;
   --ifm-heading-font-weight: 600;
   --ifm-menu-color: #171753;
   --ifm-text-color: #171753;
   --ifm-navbar-link-color: #353570;
-  --ifm-link-color:#4D3D8D;
+  --ifm-link-color: #4d3d8d;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -58,11 +58,10 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   font-size: 16px;
-  font-size: medium;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #171753;
+  color: #4D3D8D;
   line-height: 24px;
 }
 
@@ -75,6 +74,15 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.01em;
+  color: #4a4a4a;
+}
+
+.menu__link:hover {
+  color: var(--ifm-menu-color-active);
+}
+
+.menu__link--active {
+  color: var(--ifm-menu-color-active);
 }
 
 .content-container {
@@ -85,7 +93,7 @@
 }
 
 .breadcrumbs__link {
-  color: #4D3D8D;
+  color: #4d3d8d;
 }
 
 .text-center {
@@ -144,7 +152,6 @@ main {
   .header-text {
     margin-left: auto;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
