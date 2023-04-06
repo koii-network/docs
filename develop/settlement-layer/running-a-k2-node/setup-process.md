@@ -52,7 +52,7 @@ Commitment: confirmed
 Airdrop yourself some KOII to get started:
 
 ```
-koii airdrop 400
+koii airdrop 5
 ```
 
 To view your current balance:
