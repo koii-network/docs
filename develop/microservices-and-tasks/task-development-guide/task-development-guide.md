@@ -19,6 +19,8 @@ import Description from "@site/src/components/description";
 
 Our mission is to improve access to decentralized technology, which is why Koii Tasks are written and configured entirely in JavaScript (NodeJS 16, to be exact) and support the majority of popular [NPM Modules](https://npmjs.org). It can help to think of Task Executables as [Express.js](https://expressjs.com/) nodes for hire, each of which stake tokens and reputation to participate. Combined with[ Koii-X](../../build-dapps-with-koii/welcome-to-koii-x/), that means you can deploy an entire stack, decentralized, with just JavaScript, while taking advantage of all the existing Node.js modules.&#x20;
 
+![Task Development Guide](./img/Frame%201%20(1).svg)
+
 ## **Developing Tasks**
 
 When creating a new task, there are three main functions that define the task's logic, how results should be verified, and how rewards will be distributed. These are the functions:
