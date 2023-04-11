@@ -61,7 +61,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #4D3D8D;
+  color: #4d3d8d;
   line-height: 24px;
 }
 
@@ -128,6 +128,20 @@ main {
 
 .navbar__logo > img {
   width: 2rem;
+}
+
+.markdown h1:first-child {
+  font-size: 24px;
+}
+
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  font-size: 16px;
+}
+
+.markdown > h2, .markdown > h3 {
+  font-size: 24px;
 }
 
 /* menu,  ol,  ul {
