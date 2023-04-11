@@ -1,39 +1,46 @@
 import React from "react";
-import { getInvolvedLinks } from "@site/src/config/links-config";
+
+import {
+  getInvolvedLinks,
+} from "@site/src/config/links-config";
 import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
+// import { Subscribe } from "@/components/subscribe/subscribe";
 import { Policy } from "./policy";
 
 export const KoiiFooter = () => {
   return (
-    <footer className="bg-[#353570] py-[2rem] text-white">
-      <div className=" mx-[1.5rem] xl:mx-[6rem] bg-[rd] laptop-sm:pt-[0.5rem]">
-        <div className="md:flex justify-between">
-          <div className="laptop-sm:flex justify-between gap-6 xl:gap-20">
-            <div className="flex font-semibold mb-[1rem] laptop-sm:mb-0 ">
-              <img
-                src="/img/finnie-koii-logo-white.svg"
-                alt="Koii logo"
-                width={50}
-                height={50}
-              />
+    <footer className="relative bg-[#353570] app-footer pb-[100px] md:pb-[54px] text-white mt-[2rem]">
+      <div className="container mx-auto md:pt-12">
+        <div className="max-w-[1060px] mx-auto">
+          <div className="flex justify-center md:justify-start md:flex-start align-self items-center	font-semibold text-[30px] pb-6">
+            <img src="/img/finnie-koii-logo-white.svg" alt="Koii logo" />
 
-              <p className="text-[24px] flex items-center laptop-sm:block mb-0 laptop-sm:mt-[0.5rem]">
-                Don&apos;t Miss Out!
-              </p>
+            <p className="text-[24px] mb-0">Don&apos;t Miss Out.</p>
+          </div>
+          <div className="flex flex-col md:justify-between md:items-start xl:flex-row">
+            <div className="md:gap-14 md:flex md:flex-row">
+              <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
+              {/* <LinksSection title=" a" links={getInvolvedLinks} /> */}
             </div>
 
-            <div className=" md:flex md:flex-row">
-              {" "}
-              <LinksSection title="GET INVOLVED" links={getInvolvedLinks} />
+            <div className="md:hidden">
+              <SocialMediaLinks />
+            </div>
+
+            {/* <Subscribe /> */}
+          </div>
+
+          <div className="mt-4 mb-3 border border-solid border-white md:mb-7" />
+
+          <div className="flex flex-row justify-center md:last:justify-between">
+            <Policy />
+
+            <div className="hidden md:block">
+              <SocialMediaLinks />
             </div>
           </div>
-          <SocialMediaLinks />
         </div>
-
-        <div className=" border border-solid border-[#8989C7] my-[1rem]" />
-
-        <Policy />
       </div>
     </footer>
   );
