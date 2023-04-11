@@ -2,7 +2,7 @@ import React from "react";
 
 export const SocialMediaLinks = () => {
   return (
-    <div className="flex justify-evenly md:justify-between gap-2 md:mt-[0.5rem] laptop-sm:mt-0 laptop-sm:gap-4 laptop-sm:pt-[1rem] md:mb-0 my-6">
+    <div className="flex flex-row items-center self-center justify-between gap-8 px-6 pb-6 align-bottom">
       <a href="https://twitter.com/KoiiNetwork">
         <img
           src="/img/media/twitter.svg"
