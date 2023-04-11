@@ -16,8 +16,8 @@ export const getInvolvedLinks = [
   { label: "Founders Program", url: "/concepts/earning-koii/grants-program" },
   { label: "Download Desktop Node", url: "/develop/microservices-and-tasks/run-a-task-node" },
   { label: "Apply for a Grant", url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg"},
-  // {
-  //   label: "Get Founder Support",
-  //   url: "https://blog.koii.network/Content-Collective",
-  // },
+  {
+    label: "Get Founder Support",
+    url: "https://blog.koii.network/Content-Collective",
+  },
 ];
