@@ -43,6 +43,10 @@ Note — The next prompt depends on your answer to the prompt above.
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
 
+:::info
+Note — The name should not contain `.js`. For example, if you want to run `task-mytask.js`, you should enter `task-mytask` as the executable name.
+:::
+
 - [For IPFS and ARWEAVE] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
 
 - **Enter the round time in slots:** The preferred number of slots per round for the task. E.g: `1000`
