@@ -57,11 +57,11 @@
   margin-left: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  font-size: 16px;
+  font-size: 13px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #4D3D8D;
+  color: #4d3d8d;
   line-height: 24px;
 }
 
@@ -71,7 +71,7 @@
 
 .menu__link {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 11px;
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #4a4a4a;
@@ -128,6 +128,20 @@ main {
 
 .navbar__logo > img {
   width: 2rem;
+}
+
+.markdown h1:first-child {
+  font-size: 24px;
+}
+
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  font-size: 16px;
+}
+
+.markdown > h2, .markdown > h3 {
+  font-size: 24px;
 }
 
 /* menu,  ol,  ul {
