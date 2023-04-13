@@ -186,6 +186,10 @@ const config = {
             to: "/concepts/earning-koii/compute-sharing-marketplace",
             from: "/earning-koii/compute-sharing-marketplace",
           },
+           {
+            to: "/develop/finnie-for-devs/welcome-to-finnie",
+            from: "/finnie-wallet/welcome-to-finnie/content-collectives",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
