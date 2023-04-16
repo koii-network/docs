@@ -69,7 +69,28 @@ const config = {
     [
       "@docusaurus/plugin-client-redirects",
       {
-        
+        redirects: [
+          {
+            to: "/earning-koii/proof-of-real-traffic/attention-mining",
+            from: "/earning-koii/attention-mining",
+          },
+          {
+            to: "/earning-koii/compute-sharing-marketplace",
+            from: "/earning-koii/running-task-nodes",
+          },
+          {
+            to: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            from: "/microservices-and-tasks/gradual-consensus",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/register-content/",
+            from: "/earning-koii/registering-content",
+          },
+          {
+            to: "/develop/microservices-and-tasks/quote-of-the-day-example-task/google-doodle-task",
+            from: "/microservices-and-tasks/quote-of-the-day-example-task",
+          },
+        ],
         createRedirects(existingPath) {
           if (existingPath.includes("/develop")) {
             return [
