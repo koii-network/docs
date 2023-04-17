@@ -57,7 +57,7 @@
   margin-left: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -71,12 +71,10 @@
 
 .menu__link {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #4a4a4a;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
 }
 
 .menu__link:hover {
