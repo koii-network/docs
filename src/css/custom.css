@@ -57,7 +57,7 @@
   margin-left: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -71,10 +71,12 @@
 
 .menu__link {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #4a4a4a;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
 }
 
 .menu__link:hover {
@@ -142,6 +144,10 @@ main {
 
 .markdown > h2, .markdown > h3 {
   font-size: 24px;
+}
+
+.menu__list-item:not(:first-child) {
+  margin-top: 0;
 }
 
 /* menu,  ol,  ul {
