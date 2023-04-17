@@ -186,7 +186,7 @@ const config = {
             to: "/concepts/earning-koii/compute-sharing-marketplace",
             from: "/earning-koii/compute-sharing-marketplace",
           },
-           {
+          {
             to: "/develop/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
@@ -264,6 +264,11 @@ const config = {
       //     content: "https://www.koii.network/static/thumbnail.png",
       //   },
       // ],
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       navbar: {
         title: "Koii Docs",
         logo: {
