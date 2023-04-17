@@ -27,7 +27,7 @@ const sidebars = {
     'koii-summary/philosophy',
     {
       type: "html",
-      value: "👁 Earning Koii",
+      value: "Earning Koii",
       className: "sidebar-title top-margin",
     },
     'earning-koii/network-economics',
