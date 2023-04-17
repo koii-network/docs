@@ -60,7 +60,6 @@
   font-size: 16px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  text-transform: uppercase;
   color: #4d3d8d;
   line-height: 24px;
 }
@@ -146,6 +145,10 @@ main {
 
 .menu__list-item:not(:first-child) {
   margin-top: 0;
+}
+
+.menu__caret::before {
+  background:var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
 
 /* menu,  ol,  ul {
