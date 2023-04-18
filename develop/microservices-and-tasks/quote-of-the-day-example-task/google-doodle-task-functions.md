@@ -41,7 +41,7 @@ async function task() {
 
 Let's break down the logic above, we:
 
-- Launched a browser using Puppeteer, created anew page and visited [Google doodle](https://www.google.com/doodles)
+- Launched a browser using Puppeteer, created a new page and visited [Google doodle](https://www.google.com/doodles)
 - Parsed the HTML document with Cheerio
 - Extracted the link of the latest google doodle from the parsed HTML document
 - Converted the link to JSON and stored it on levelDB using the `storeSet` helper function
