@@ -71,8 +71,32 @@ const config = {
       {
         redirects: [
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
-            from: "/earning-koii/attention-mining",
+            to: "/concepts/koii-summary/welcome",
+            from: "/koii-summary/readme",
+          },
+          {
+            to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
+            from: "/settlement-layer/running-a-k2-node/setup-process",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
+            from: "/koii-software-toolkit-sdk/using-the-cli",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
+            from: "/koii-software-toolkit-sdk/using-the-cli",
+          },
+          {
+            to: "/develop/settlement-layer/running-a-k2-node/",
+            from: "/settlement-layer/running-a-k2-node",
+          },
+          {
+            to: "/concepts/koii-summary/tools",
+            from: "/koii-summary/tools",
+          },
+          {
+            to: "/concepts/koii-summary/impact",
+            from: "/koii-summary/impact",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
@@ -85,6 +109,10 @@ const config = {
           {
             to: "/develop/microservices-and-tasks/what-are-tasks/",
             from: "/microservices-and-tasks/what-are-tasks",
+          },
+          {
+            to: "/concepts/earning-koii/proof-of-real-traffic/",
+            from: "/earning-koii/proof-of-real-traffic-port",
           },
           {
             to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
