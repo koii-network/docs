@@ -2,7 +2,7 @@
 title: 🛠 What is the Koii SDK?
 description: We're building one toolkit for all blockchains
 image: img/thumbnail.png
-sidebar_label: 🛠 What is the Koii SDK?
+sidebar_label: What is the Koii SDK?
 ---
 
 import Description from "@site/src/components/description";
