@@ -19,13 +19,101 @@ Run the command below to install the create-task-cli:
 npm i @_koii/create-task-cli
 ```
 
-Running `npx @_koii/create-task-cli` in your terminal; it prompts for your wallet path. Use the path to your Koii account `id.json` that we mentioned as input.
+Running command `npx @_koii/create-task-cli@latest` under your task folder; it prompts for your wallet path and config-task.yml. Use the path to your Koii account `id.json` that we mentioned as input.
 
 :::info
+Run `koii config get` and you will get the information of your wallet path.
+
 Not yet have a Koii wallet? Check [here](using-the-cli) and generate one quickly. Remember to save your wallet path.
 :::
 
-After successful input for the wallet path, the following are the prompts for the creation of the task.
+Then select Create a new task to create a new task. There are two options to create a new task:
+- Using CLI
+- Using config YML
+
+We suggest using config file to create a task, which can easily edit in yout task folder and contain more info you might need.
+
+### Use config YML
+
+By chosing this to create a new task, you will be prompted to enter the path to your config-task.yml. The config-task.yml is a file that contains all the information you need to create a task. You can find a sample config-task.yml in your task folder.
+
+The config-task.yml should looks like this and contains the following information:
+
+```yaml
+#Provide the taskId if you are updating the task
+task_id: ''
+# Name and desciption of your task
+task_name: 'Your-task-name'
+task_description: 'This task is to test out the namespace function'
+
+# network value can be DEVELOPMENT , ARWEAVE or IPFS
+task_executable_network: 'DEVELOPMENT'
+
+# Provide your web3.storage key as it is needed for uploading your metadata
+secret_web3_storage_key: ''
+
+# Path to your executable webpack if the selected network is IPFS otherwise leave blank
+task_audit_program: ''
+
+# Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
+task_audit_program_id: 'main'
+
+# Total round time of your task : it must be given in slots and each slot is rougly equal to 4ms
+round_time: 600
+
+audit_window: 200
+submission_window: 200
+
+# Amounts in KOII
+
+minimum_stake_amount: 5
+
+# total_bounty_amount cannot be grater than bounty_amount_per_round
+# total bounty is not accepted in case of update task
+total_bounty_amount: 10
+
+bounty_amount_per_round: 1
+
+#Number of times allowed to re-submit the distribution  list in case the distribution list is audited
+allowed_failed_distributions: 3
+
+#Space in MBs
+space: 1
+
+# Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
+# To add more global variables and task variables, please refer the type,value,description format shown below
+
+author: 'Your name'
+description: 'task-description'
+repositoryUrl: 'Github/gitlab link'
+imageUrl: 'Enter you image URL'
+requirementsTags:
+  - type: GLOBAL_VARIABLE
+    value: 'WEB3.STORAGE SECRET KEY'
+    description: 'used to connect web3.storage'
+  - type: TASK_VARIABLE
+    value: 'SCAPING URL'
+    description: 'url from which you want to scrape'
+  - type: CPU
+    value: '4-core'
+  - type: RAM
+    value: '5 GB'
+  - type: STORAGE
+    value: 'test'
+  - type: NETWORK
+    value: 'test'
+  - type: ARCHITECTURE
+    value: 'AMD'
+  - type: OS
+    value: 'OSX'
+
+```
+
+Follow the instruction in the `config-task.yml` to fill in the information you need. After you finish the config file, run the create-task-cli again `npx @_koii/create-task-cli@latest`, choose using config YML. If there are erros, follow the suggestion to fix it. If no error appears, it will show how much KOII you need to pay for creating task. Hit `y` then it will return you task information with your task ID.
+
+### Use CLI
+
+By chosing this to create a new task, you will be prompted to enter the information you need to create a task. Follow the instruction below to fill in the information you need.
 
 - **Enter the name of the task:** Any Name .. Seriously your choice! E.g: `Blazing-Fast-Execution`
 
