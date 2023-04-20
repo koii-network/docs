@@ -56,11 +56,9 @@
 .sidebar-title {
   margin-left: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+  margin-bottom: 0.5rem;
   color: #4d3d8d;
   line-height: 24px;
 }
@@ -71,7 +69,7 @@
 
 .menu__link {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.01em;
   color: #4a4a4a;
@@ -142,6 +140,14 @@ main {
 
 .markdown > h2, .markdown > h3 {
   font-size: 24px;
+}
+
+.menu__list-item:not(:first-child) {
+  margin-top: 0;
+}
+
+.menu__caret::before {
+  background:var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
 
 /* menu,  ol,  ul {
