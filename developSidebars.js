@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "🤑 K2 Settlement Layer",
+      value: "K2 Settlement Layer",
       className: "sidebar-title",
     },
     "settlement-layer/k2-tick-tock-fast-blocks",
@@ -53,7 +53,7 @@ const sidebars = {
     "settlement-layer/rent",
     {
       type: "html",
-      value: "💪 Microservices & Tasks",
+      value: "Microservices & Tasks",
       className: "sidebar-title top-margin",
     },
     {
@@ -193,7 +193,7 @@ const sidebars = {
     "microservices-and-tasks/using-reputation",
     {
       type: "html",
-      value: "⚙ Koii Software Toolkit (SDK)",
+      value: "Koii Software Toolkit (SDK)",
       className: "sidebar-title top-margin",
     },
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
@@ -279,7 +279,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "🐟 Finnie For Devs",
+      value: "Finnie For Devs",
       className: "sidebar-title top-margin",
     },
     "finnie-for-devs/welcome-to-finnie",
@@ -318,12 +318,12 @@ const sidebars = {
     "finnie-for-devs/other-evm-chains",
     {
       type: "html",
-      value: "🧙 Build Dapps with Koii",
+      value: "Build Dapps with Koii",
       className: "sidebar-title top-margin",
     },
     {
       type: "category",
-      label: "👋 Welcome to Koii-X",
+      label: "Welcome to Koii-X",
       link: {
         type: "doc",
         id: "build-dapps-with-koii/welcome-to-koii-x/welcome-to-koii-x",
@@ -338,7 +338,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🎨 Using NFTs as Content",
+      label: "Using NFTs as Content",
       link: {
         type: "doc",
         id: "build-dapps-with-koii/using-nfts-as-content/using-nfts-as-content",
@@ -355,7 +355,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🤖 Integrating Wallets",
+      label: "Integrating Wallets",
       link: {
         type: "doc",
         id: "build-dapps-with-koii/integrating-wallets/integrating-wallets",
@@ -370,7 +370,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🚚 Template Library",
+      label: "Template Library",
       link: {
         type: "doc",
         id: "build-dapps-with-koii/template-library/template-library",
@@ -379,7 +379,7 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "💡 UI Template Layout",
+          label: "UI Template Layout",
           link: {
             type: "doc",
             id: "build-dapps-with-koii/template-library/ui-template-layout/ui-template-layout",
@@ -393,7 +393,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "📃 Leaderboard App",
+          label: "Leaderboard App",
           link: {
             type: "doc",
             id: "build-dapps-with-koii/template-library/leaderboard-app/leaderboard-app",
@@ -423,7 +423,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "💰 Crowdfunding Portal",
+          label: "Crowdfunding Portal",
           link: {
             type: "doc",
             id: "build-dapps-with-koii/template-library/crowdfunding-portal/crowdfunding-portal",
@@ -440,7 +440,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "❕ Support",
+      value: "Support",
       className: "sidebar-title top-margin",
     },
     "support/community-forums",
