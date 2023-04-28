@@ -183,8 +183,8 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/microservices-and-tasks/quote-of-the-day-example-task/google-doodle-task",
-            from: "/microservices-and-tasks/quote-of-the-day-example-task",
+            to: "/develop/microservices-and-tasks/google-doodle-task",
+            from: "/microservices-and-tasks/google-doodle-task",
           },
           {
             to: "/develop/koii-software-toolkit-sdk/create-task-cli",
@@ -195,8 +195,8 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/executable-structure",
           },
           {
-            to: "/develop/microservices-and-tasks/quote-of-the-day-example-task/submit-distribution-list",
-            from: "/microservices-and-tasks/quote-of-the-day-example-task/submit-distribution-list",
+            to: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
+            from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
           },
           {
             to: "/develop/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
