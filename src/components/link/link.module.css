@@ -1,0 +1,12 @@
+.link {
+ color: #4D3D8D;
+ font-size: 14px;
+ line-height: 24px;
+ text-align: center;
+ display: block;
+ font-weight: bold;
+}
+
+.img {
+    width: 16px;
+}
