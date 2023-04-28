@@ -183,7 +183,7 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-task",
+            to: "/develop/microservices-and-tasks/google-doodle-task",
             from: "/microservices-and-tasks/google-doodle-task",
           },
           {
