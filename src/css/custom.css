@@ -150,6 +150,11 @@ main {
   background:var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
 
+.theme-admonition-note {
+  background-color: #47474815;
+  border-color: #474748;
+}
+
 /* menu,  ol,  ul {
   list-style: none;
   margin: 0;
