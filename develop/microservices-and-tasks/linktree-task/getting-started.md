@@ -44,7 +44,7 @@ Head to folder `/task-template-linktree` and run `yarn install` to install all t
 
 - Add your [Web3.storage](https://web3.storage/) secret key as an environment variable `SECRET_WEB3_STORAGE_KEY` in the `.env-local` file. Visit [Web3.storage](https://web3.storage/) to create a secret key if you don’t already have one.
 
-- Create a folder `/config/koii` and copy your Koii wallet here as name id.json. You can also use following commad to create the folder and copy the wallet:
+- Create a folder `/config/koii` and copy your Koii wallet here as name id.json. You can also use following command to create the folder and copy the wallet:
 
 ```bash
 cp /home/<user>/.config/koii/id.json ./config/koii/id.json
