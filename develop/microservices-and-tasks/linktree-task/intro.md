@@ -19,7 +19,7 @@ An example of users Koii linktree profile is shown below:
 
 ![Linktree](../img/linktree.svg)
 
-Soma Li, our amazing developer, built this project, and the source code is available [here](https://github.com/somali0128/task-template-linktree).
+Soma Li, our amazing developer, built this project, and the source code is available [here](https://github.com/koii-network/linktree-app).
 
 The goal of this tutorial is to familiarize you with more advanced topics that will help you write your own Koii tasks.
 
