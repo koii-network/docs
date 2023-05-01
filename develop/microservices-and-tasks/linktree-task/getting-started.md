@@ -52,7 +52,7 @@ cp /home/<user>/.config/koii/id.json ./config/koii/id.json
 
 ## What Will You Learn in This Tutorial?
 
-This tutorial's goal is to familiarize you with more advanced concepts that are applied in the linktree task, such as database management and Api endpoints.  Writing your own Koii tasks will be made easier for you if you have a good understanding of these features.
+This tutorial's goal is to familiarize you with more advanced concepts that are applied in the linktree task, such as database management and Api endpoints. Writing your own Koii tasks will be made easier for you if you have a good understanding of these features.
 
 However, when it comes to more complex projects involving database management and the creation of API endpoints for user requests, several questions arise. let's talk about three crucial pieces of logic needed for this project to function properly:
 
