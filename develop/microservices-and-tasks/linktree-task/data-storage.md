@@ -6,7 +6,7 @@ sidebar_label: Data Storage - LevelDB
 
 ## Where Will the Linktree Data be Stored?
 
-Since the task will run on a vast network of nodes, every node in the network would store a copy of the entire database **locally**, including all the data associated with a specific Linktree. The database will also be shared across the network to keep the nodes **synchronized**, and calls to any one node can be routed to a node with the most recent copy of the requested data. 
+Since the task will run on a distributed network of nodes, each node will store a copy of the entire database **locally**, including all the data associated with a specific Linktree. The database will also be shared across the network to keep the nodes **synchronized**, and calls to any one node can be routed to a node with the most recent copy of the requested data. 
 
 This goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. 
 
