@@ -50,8 +50,11 @@ Head to folder `/task-template-linktree` and run `yarn install` to install all t
 cp /home/<user>/.config/koii/id.json ./config/koii/id.json
 ```
 
+## What will you learn in this tutorial?
 
-Now that the task template and dependencies are ready, let's talk about three crucial pieces of logic needed for this project to function properly:
+The purpose of this tutorial is to help you become familiar with more advanced ideas that are implemented in the linktree task. These concepts will help you write your own Koii tasks.
+
+However, when it comes to more complex projects involving database management and the creation of API endpoints for user requests, several questions arise. let's talk about three crucial pieces of logic needed for this project to function properly:
 
 | File                                                                                         | Description                                                                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
