@@ -4,14 +4,14 @@ image: img/thumbnail.png
 sidebar_label: REST API
 ---
 
-## **How to setup rest APIS**
+## How to setup rest APIs
 
 Rest API helps nodes between nodes have specific data requests. It also provides useful tools for frontend developers to collect and gather data. 
 
 To create your rest APIs. Check the routes module `./routes.js`, it contains the layout of what the API needs.
 
 
-### **Modules explained**
+### Modules explained
 
 
 
