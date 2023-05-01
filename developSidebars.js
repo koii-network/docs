@@ -199,7 +199,6 @@ const sidebars = {
       collapsed: true,
       items: [
         "microservices-and-tasks/linktree-task/getting-started",
-        "microservices-and-tasks/linktree-task/setup",
         "microservices-and-tasks/linktree-task/data-stored",
         "microservices-and-tasks/linktree-task/data-sharing",
         "microservices-and-tasks/linktree-task/rest-api",
