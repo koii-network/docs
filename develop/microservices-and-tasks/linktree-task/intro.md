@@ -7,13 +7,19 @@ sidebar_label: "Example Task: Linktree"
 
 # Example Task: Linktree
 
-This task is the second task in our series of explaining Koii tasks. The [Google Doodle task](/develop/microservices-and-tasks/google-doodle-task/) takes you through the process of turning a simple javascript program into a Koii task using the K2 Task Template. This tutorial will build on that and teach you how to use databases across many Koii nodes.
+This Koii task is the second task in our series of explaining Koii tasks. The [Google Doodle task](/develop/microservices-and-tasks/google-doodle-task/) takes you through the process of turning a simple JavaScript program into a Koii task using the [K2 Task Template](https://github.com/koii-network/task-template). This tutorial will build on that and teach you how to use databases across many Koii nodes.
 
-A LinkTree is a customized page that contains all the important links you want to share. The images below show a few examples of the Koii linktree. You can see the deployed version of the app <a href="https://linktree.koii.network" target="_blank">here</a>.
+A **LinkTree** is a customized profile page that contains all your important links. 
+
+The images below show a few examples of the Koii linktree:
 
 ![Linktree](../img/linktree.png)
 
-You can access the full project <a href="https://github.com/koii-network/linktree-app" target="_blank">here</a>
+:::info
+
+You can explore the deployed application [here](https://linktree.koii.network) and the [source code](https://github.com/koii-network/linktree-app).
+
+:::
 
 Once you have cloned the project, navigate to the task-template-linktree folder
 
