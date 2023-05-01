@@ -24,9 +24,13 @@ You can use the public address of our developer Soma Li ‘0x07c3e160270ed08f307
 The back-end code can be found in the ‘task-template-linktree’ folder
 
 
+The goal of this tutorial is to familiarize you with more advanced topics that will help you write your own Koii tasks.
+
+
 :::tip
 
 If you encounter any difficulties, fell free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii).
 
 :::
+
 
