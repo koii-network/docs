@@ -198,6 +198,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+<<<<<<< HEAD
         // "microservices-and-tasks/linktree-task/getting-started",
         // "microservices-and-tasks/linktree-task/setup",
         // "microservices-and-tasks/linktree-task/helper-functions",
@@ -205,6 +206,14 @@ const sidebars = {
         // "microservices-and-tasks/linktree-task/audit-submission-value",
         // "microservices-and-tasks/linktree-task/submit-distribution-list",
         // "microservices-and-tasks/linktree-task/audit-distribution-list",
+=======
+        "microservices-and-tasks/linktree-task/getting-started",
+        "microservices-and-tasks/linktree-task/setup",
+        "microservices-and-tasks/linktree-task/data-stored",
+        "microservices-and-tasks/linktree-task/data-sharing",
+        "microservices-and-tasks/linktree-task/rest-api",
+        "microservices-and-tasks/linktree-task/auth-list",
+>>>>>>> 9e36a3685c15fbfb822901f4cfec2ad3d5e96b21
       ],
     },
     "microservices-and-tasks/run-a-task-node",
