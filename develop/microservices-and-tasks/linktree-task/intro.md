@@ -15,13 +15,19 @@ A LinkTree is a customized page that contains all the important links you want t
 
 You can access the full project <a href="https://github.com/koii-network/linktree-app" target="_blank">here</a>
 
-Once you have cloned the repo, open the terminal and run ‘yarn’ followed by ‘yarn start’
+Once you have cloned the project, navigate to the task-template-linktree folder
 
-This will take you to the front-end page of the Koii linktree
+```bash
+cd task-template-linktree
+```
 
-You can use the public address of our developer Soma Li ‘0x07c3e160270ed08f307a49013f4b1ac37659e572’ to display his linktree as an example
+Navigate to the test folder
 
-The back-end code can be found in the ‘task-template-linktree’ folder
+```bash
+cd test
+```
+
+You will find some pre-written tests here. You can go through the tests for all the files explained in this tutorial. Once you have a better understanding of the files discussed in this tutorial, feel free to edit these tests to familiarize yourself better with their implementation. You will need a strong understanding of these concepts for writing your Koii tasks.
 
 
 The goal of this tutorial is to familiarize you with more advanced topics that will help you write your own Koii tasks.
