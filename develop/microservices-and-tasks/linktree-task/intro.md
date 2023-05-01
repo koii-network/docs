@@ -16,7 +16,7 @@ Below is an example a user's linktree of this project:
 
 ![Linktree](../img/linktree.png)
 
-Soma Li, our amazing developer, built this project, and the source code is available [here](https://github.com/somali0128/task-template-linktree).
+Soma Li, our amazing developer, built this project, and the source code is available [here](https://github.com/koii-network/linktree-app).
 
 :::tip
 
