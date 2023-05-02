@@ -12,31 +12,46 @@ sidebar_label: Task Functions
 The `task` function contains the core logic of the task and we will update the code sample on the template with the code block below:
 
 ```javascript
-async function task() {
-  const browser = await puppeteer.launch(); // launch browser
-  const page = await browser.newPage(); // new page
-  await page.goto("https://www.google.com/doodles"); // visit https://www.google.com/doodles'
+ async task() {
+    const browserFetcher = puppeteer.createBrowserFetcher({
+      product: "firefox",
+    });
+    const browserRevision = "114.0a1";
+    console.log("DOWNLOADING STARTED");
+    let revisionInfo = await browserFetcher.download(browserRevision);
+    console.log("DOWNLOADING FINISHED", revisionInfo);
+    const browser = await puppeteer.launch({
+      executablePath: revisionInfo.executablePath,
+      product: "firefox",
+      headless: "new", // other options can be included here
+    });
+    const page = await browser.newPage();
+    await page.goto("https://www.google.com/doodles");
+    let bodyHTML = await page.evaluate(
+      () => document.documentElement.outerHTML
+    );
+    const $ = cheerio.load(bodyHTML);
 
-  let bodyHTML = await page.evaluate(() => document.documentElement.outerHTML);
-  const $ = cheerio.load(bodyHTML); // parse HTML
+    let scrapedDoodle = $(".latest-doodle.on")
+      .find("div > div > a > img")
+      .attr("src");
+    if (scrapedDoodle.substring(0, 2) == "//") {
+      scrapedDoodle = scrapedDoodle.substring(2, scrapedDoodle.length);
+    }
+    //console.log({scrapedDoodle});
 
-  let scrapedDoodle = $(".latest-doodle.on")
-    .find("div > div > a > img")
-    .attr("src"); // get link for latest doodle using the HTML element
-  if (scrapedDoodle.substring(0, 2) == "//") {
-    scrapedDoodle = scrapedDoodle.substring(2, scrapedDoodle.length);
-  } // extract link
+    console.log("SUBMISSION VALUE", scrapedDoodle);
+    const stringfy = JSON.stringify(scrapedDoodle);
 
-  console.log("SUBMISSION VALUE", scrapedDoodle);
-  const stringfy = JSON.stringify(scrapedDoodle);
+    // store this work of fetching googleDoodle to levelDB
 
-  // store this work of fetching googleDoodle to levelDB
-  try {
-    await namespaceWrapper.storeSet("doodle", stringfy); // store on levelDB
-  } catch (err) {
-    console.log("error", err);
+    try {
+      await namespaceWrapper.storeSet("doodle", stringfy);
+    } catch (err) {
+      console.log("error", err);
+    }
+    browser.close();
   }
-}
 ```
 
 Let's break down the logic above, we:
