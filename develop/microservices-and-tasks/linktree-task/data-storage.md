@@ -6,11 +6,11 @@ sidebar_label: Data Storage - LevelDB
 
 ## Where Will the Linktree Data be Stored?
 
-Since the task will run on a distributed network of nodes, each node will store a copy of the entire database **locally**, including all the data associated with a specific Linktree. The database will also be shared across the network to keep the nodes **synchronized**, and calls to any one node can be routed to a node with the most recent copy of the requested data. 
+Since Koii tasks run on a distributed network of nodes, each node stores a copy of the entire database **locally**, including all the data associated with a specific Linktree.
+The goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. We
+need a module to manage the database.
 
-This goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. 
-
-In the linktree task, we developed a module called `db_model.js` to manage and interact with the data stored on the local database, which include:
+In the linktree task, this module is called `db_model.js`. It manages three different object types, which include:
 
 - **Linktree data** — We need to be able to store and retrieve the link tree data. This data includes the changes to the linktree, the public address along with the user signatures. 
 
@@ -18,7 +18,7 @@ In the linktree task, we developed a module called `db_model.js` to manage and i
 
 - **Authentication list** — We need to keep an authentication list to ensure only the nodes that have access to the task can update or retrieve data. This is essential for the security of our task.
 
-Each of these data needs to have its own setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our linktree task.
+Each of these needs to have its own setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our linktree task.
 
 For the linktree data we have the following functions:
 
@@ -98,9 +98,9 @@ const getAuthList = async (pubkey) => {
 };
 ```
 
-The function takes a public key as a parameter and returns the authorized list associated with that public key.
+The function takes a public key as a parameter and returns the user object associated with that public key. The user object contains information about the authenticated user,  and is retrieved from the database.
 
-You can modify this module and add your own functions to serve the needs of your own Koii task. For example, let’s assume you are trying to create a web scraper task that scrapes data from wikipedia. Instead of having `getLinktree` function, you can add a `getScrapedData` function. In most cases, you will be modifying the data functions. You will always need the functions for proofs and authentication lists.
+You can modify this module and add your own functions to serve the needs of your own Koii task. For example, let’s assume you are trying to create a web scraper task that scrapes data from wikipedia. Instead of having `getLinktree` function, you can add a `getScrapedData` function. In most cases, you will be modifying the data functions according to your task needs. 
 
-The `db_model.js` serves as our module to interact with the local database to store and retrieve the data we need. But what happens if a new user sends a request to create a new linktree and updates the data on one node? Since every node has a copy of the database, the new entry will create a discrepancy as it would only be updated on one of the nodes. 
+Our team is in the process of standardizing the ‘proof’ and ‘auth list’ methods in the db_model file as these would most likely be used in every task. This way you will not need to write extra code and can focus on only writing the data methods for your task. The important thing is to understand the significance of proofs and auth lists in tasks. 
 
