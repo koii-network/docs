@@ -80,11 +80,3 @@ if (localExistingLinktree.data.timestamp < linkTreePayload.data.timestamp) {
 }
 
 ```
-
-```javascript
-
-```
-
-```javascript
-
-```
