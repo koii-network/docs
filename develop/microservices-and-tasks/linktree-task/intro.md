@@ -13,7 +13,7 @@ A **LinkTree** is a customized profile page that contains all your important lin
 
 The images below show a few examples of the Koii linktree:
 
-![Linktree](../img/linktree.png)
+![Linktree](../img/linktree.svg)
 
 :::info
 

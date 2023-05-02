@@ -1,80 +1,46 @@
 ---
-title: REST API
+title: REST APIs
 image: img/thumbnail.png
-sidebar_label: REST API
+sidebar_label: REST APIs
 ---
 
-## How to setup rest APIs
 
-Rest API helps nodes between nodes have specific data requests. It also provides useful tools for frontend developers to collect and gather data. 
+Creating REST APIs is a crucial part of any Koii task. For the Linktree task, we have several APIs to handle incoming requests, process data, and return appropriate responses to the client. 
 
-To create your rest APIs. Check the routes module `./routes.js`, it contains the layout of what the API needs.
+These APIs are contained in the `router.js` module.
 
+Let’s look at the implementation of how to create an API:
 
-### Modules explained
+To create an API, we first need to create a route using [Express](https://www.npmjs.com/package/express) Router module. For example, to create a `GET` endpoint that returns specific linktree data by `publicKey`, we can use the following code:
 
-
-
-* Module db. It will call `db_model` to use leveldb store or get data from nodes database
-
-    Check [Data Stored - LevelDB](/develop/microservices-and-tasks/linktree-task/data-stored) to get more information.
-
-* Module fs. fs is a Nodejs module system that allows you to write or read the module to your nodes.
-
-    Check [here](https://nodejs.org/api/fs.html) to get more usage.
-
-* Module namespaceWrapper. This module has several useful functions called the Koii task node with a powerful tool to get the specific task status you might need. Check [here](/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace) to learn more about customize namespaceWrapper.
-
-
-### Create an endpoint
-
-To create your own endpoint, you can follow the explanation of the example code below.
-
-Example: 
-
-This is the GET endpoint that returns the specific linktree data by publicKey. The GET url is 
-
-```
-<nodeUrl>/task/<taskID>/linktree/get/<publicKey>
-```
-
- Nodes will use publicKey to call leveldb and return the linktree data. If publicKey not found, it will return “[ ]”
-
- ```javascript
-router.get('/linktree/get/:publicKey', async (req, res) => {
-   const { publicKey } = req.params;
-   let linktree = await db.getLinktree(publicKey);
-   linktree = linktree || '[]';
-   return res.status(200).send(linktree);
-   });
- ```
-
-### APIs you might need
-
-In your Koii task, providing more APIs helps each node easily get the useful information. Here is a list of the endpoints you might need:
-
-
-
-* GET: /logs. It should return the log of the node that helps you debug your code
-* GET: /taskState. It should return your task status, which contains the information such as nodes list, distribution list and stake list.
-
-:::tip
-you can use the code below to get the task state
 ```javascript
-await namespaceWrapper.getTaskState();
+router.get('/linktree/get/:publicKey', async (req, res) => {
+  const { publicKey } = req.params;
+  let linktree = await db.getLinktree(publicKey);
+  linktree = linktree || '[]';
+  return res.status(200).send(linktree);
+});
 ```
-:::
+In the above example, nodes will use `publicKey` to call levelDB and return the linktree data. If publicKey is not found, it will return an empty array. 
 
-* GET or POST:  /data, /data/list, /data/get/:data
+Similarly, the `router.post('/linktree')` route registers the linktree by writing it to a file and storing it in the database along with a proof that includes a public key and a signature.
 
-    For all types of information you might need or generated in your task, it should have the API for it. For example, in linktree task we have POST /linktree for processing data, GET linktree/list to return all of the linktree data and GET linktree/get/:publicKey to return specific linktree data. Same to proofs and authlist.
+Other APIs include `GET /logs`, which returns the log of the node to help debug the code, and `GET /taskState`, which returns the task status containing information such as nodes list, distribution list, and stake list.
+
+For all types of information you might need or generate in your task, it's essential to have an API for it. 
+
+## Testing APIs
+
+To test your APIs, run:
+
+```javascript
+yarn start
+```
+
+This will start a local server but won't run the task. For example, If you have a GET API called `/linktree/list`, your testing URL should be `localhost:10000/linktree/list`. You can create a testing module using Axios or use Postman to test your API.
+
+In the linktree task’s test folder, we have provided a module named `test_endpoint.js` that already has the Axios setup. You can use it to test your `GET` or `POST` endpoint.
 
 
-
-### Testing your API
-
-To test your API, run `yarn start` to start a local server. It won’t run the task. If you have the GET API called `/linktree/list`, your testing url should be `localhost:10000/linktree/list`. You can create a testing module using axios or use Postman to test your API.
-
-In the test folder, we provided a module named “test_endpoint.js” that already has the axios setup. You can use it to test your GET or POST endpoint.
 
 
