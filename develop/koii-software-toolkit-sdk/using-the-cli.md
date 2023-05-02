@@ -58,7 +58,7 @@ The next step is to create a Koii file system wallet locally. To get the command
 koii address
 ```
 
-If you do not have a Koii wallet in `./.config/koii/id.json` ,you should see an error prompt:
+If you do not have a Koii wallet in `./.config/koii/id.json` , you should see an error prompt:
 
 ```
 Error: No default signer found, run "koii-keygen new -o /Users/<YOUR_HOME>/.config/koii/id.json" to create a new one
@@ -66,12 +66,12 @@ Error: No default signer found, run "koii-keygen new -o /Users/<YOUR_HOME>/.conf
 
 Run the "koii-keygen" command you're prompted to run.&#x20;
 
-```
+```bash
 koii-keygen new -o /Users/<YOUR_HOME>/.config/koii/id.json
 ```
 
-:::info
-For different operating system. The path might have a little bit different. Remeber to update your path before running the command.
+:::tip
+For different operating system. The path might have a little bit different. Remember to update your path before running the command.
 :::
 
 This command will generate an identity keypair. You can add a BIP39 passphrase for extra security or click the ENTER button for an empty passphrase.
@@ -84,10 +84,35 @@ The identity public key can now be viewed by running:
 koii-keygen pubkey /Users/<YOUR_HOME>/.config/koii/id.json
 ```
 
-Copy and save your wallet path so you can interact with any Koii stack locally.
+### Koii CLI Config Tool
+The `koii config` command is used to update the Koii CLI configuration settings.
 
-:::info
-Your wallet path would be used in create a task and run desktop node.
-:::
+To print the file location of config, run:
+
+```
+koii config get
+```
+The output of the command should be similar to the following:
+```
+Config File: /Users/<YOUR_HOME>/.config/koii/cli/config.yml
+RPC URL: https://k2-testnet.koii.live 
+WebSocket URL: wss://k2-testnet.koii.live/ (computed)
+Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json 
+Commitment: confirmed 
+```
+
+The RPC URL can be toggled between testnet and mainnet by pointing the RPC URL to the corresponding node URL.
+
+The command below is an example on how to switch to testnet:
+
+```
+koii config set --url https://k2-testnet.koii.live
+```
+
+The wallet default URL can also be updated, the default URL lives in `/Users/<YOUR_HOME>/.config/koii/id.json `  and it can be updated with this config command:
+
+```
+koii config set --keypair <PATH_TO_KEYPAIR>
+```
 
 Congratulations! Now you have a Koii wallet, check [here](./wallet-and-faucet) to airdrop some KOII in your wallet.
