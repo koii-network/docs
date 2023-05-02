@@ -13,7 +13,7 @@ Koii is a decentralized protocol, meaning that anyone is free to fork the code a
 
 ### Token Generation
 
-At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, which receives 90% of new tokens, and the K2 Settlement Layer nodes, which receive 10% of the new tokens. For more information on [Attention Mining](./proof-of-real-traffic/attention-mining).
+At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, K2 Settlement Layer nodes, and Task nodes that run the attention game. Attention mining receives 80% of new tokens, K2 Settlement Layer nodes receive 10%, and Task nodes receive 10%. Get more information on [Attention Mining here](./proof-of-real-traffic/attention-mining).
 
 ![Token Generation](./img/Token%20Generation.svg)
 
