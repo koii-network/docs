@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Attention Mining
 
-![banner](../img/Earning_KOII.png)
+![banner](../img/Attention%20Mining.svg)
 
 <Description
   text="Collect Proofs of Real Traffic on your content to mine new KOII tokens each

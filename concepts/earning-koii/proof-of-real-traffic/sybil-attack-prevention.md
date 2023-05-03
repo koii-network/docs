@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Sybil Attack Prevention
 
-![banner](../img/Sybil_Attack_Prevention.png)
+![banner](../img/Sybil%20Attack%20Prevention.svg)
 
 <Description
   text="What happens if someone just fakes a bunch of attention?"
