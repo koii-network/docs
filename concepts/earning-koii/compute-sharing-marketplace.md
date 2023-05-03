@@ -10,7 +10,7 @@ import Description from "@site/src/components/description";
 
 # Compute Sharing Marketplace
 
-![banner](<img/Running_task_nodes_(1).png>)
+![banner](<img/Compute Sharing Marketplace.svg>)
 
 <Description text='Application layer nodes are one of the most-needed commodities in Web3.' />
 

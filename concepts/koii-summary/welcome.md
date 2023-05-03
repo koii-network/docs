@@ -8,6 +8,8 @@ sidebar_label: 🎏 Welcome to the New Internet
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 
+![banner](<./img/Welcome to Koii-X.svg>)
+
 <Description text="We built Koii to make a better world by connecting the people that live in it." />
 
 Since Ethereum's debut in 2015, the idea of a "World Computer" has captured the imagination of millions around the world. The benefits of a trustless digital machine with inherent censorship resistance are, in many ways, the answer to the growing pains and civil unrest as our societies struggle to adapt to the realities of global communication via the internet.
