@@ -29,7 +29,7 @@ At steady state, the network is designed to lock up tokens in Staking and Bounti
 
 ### Reputation Hardening
 
-The reputation of wallets is tracked and used to calibrate system processes in both **attention mining** and the **compute marketplace**. Reputation is used in attention mining to prevent spam and reward high-value contributions by tracking who appreciates them the most, whereas in the compute marketplace, a node's Reputation allows it to perform more work with less stake and earn more rewards because it is less likely to behave badly.
+Wallet reputation is tracked and used to calibrate rewards and penalties in both **attention mining** and the **compute marketplace**. In attention mining, reputation prevents spam and rewards high-value contributions by tracking who appreciates them the most. In the compute marketplace, a node's reputation allows it to perform more work with less stake and earn more rewards because it is less likely to behave badly.
 
 As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.&#x20;
 
