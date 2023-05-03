@@ -95,7 +95,7 @@ sudo su koii
 Using the keys created in the first portion of this guide, create a vote account
 
 ```bash
-koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json
+koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/withdrawer-keypair.json
 ```
 
 ## Step 4: Create a Stake Account
@@ -116,4 +116,4 @@ Delegate the stake to the validator using the staking account and validator's id
 koii delegate-stake ~/stake-account-keypair.json <VALIDATOR_VOTE_ACCOUNT_ADDRESS> --stake-authority ~/validator-keypair.json
 ```
 
-Replace <VALIDATOR_VOTE_ACCOUNT_ADDRESS> with the validator's vote account address, which can be found using the `koii-validator-info get` command.
+Replace <VALIDATOR_VOTE_ACCOUNT_ADDRESS> with the validator's vote account address, which can be found using the `koii validator-info get` command.
