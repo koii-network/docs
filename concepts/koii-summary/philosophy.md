@@ -8,7 +8,7 @@ sidebar_label: 💡 Philosophy
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 
-![img alt](img/Philosophy_of_decentralization.svg)
+![img alt](img/Philosophy.svg)
 
 <Description
   text="  For too long, power has been concentrated to just a small part of the world's

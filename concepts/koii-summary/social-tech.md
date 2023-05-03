@@ -8,7 +8,7 @@ sidebar_label: 🌊 Social Tech
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 
-![banner](<img/Social_Technology(svg).svg>)
+![banner](<img/Social tech.svg>)
 
 <Description
   text="Include your community in the value stream by using community hardware, and
