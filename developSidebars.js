@@ -44,7 +44,10 @@ const sidebars = {
       collapsed: true,
       items: [
         "settlement-layer/running-a-k2-node/system-requirements",
-        "settlement-layer/running-a-k2-node/setup-process",
+        "settlement-layer/running-a-k2-node/system-setup",
+        "settlement-layer/running-a-k2-node/validator-setup",
+        
+
       ],
     },
     "settlement-layer/creating-tokens-on-k2",
@@ -198,13 +201,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        "microservices-and-tasks/linktree-task/getting-started",
-        "microservices-and-tasks/linktree-task/setup",
-        "microservices-and-tasks/linktree-task/helper-functions",
-        "microservices-and-tasks/linktree-task/task-logic",
-        "microservices-and-tasks/linktree-task/audit-submission-value",
-        "microservices-and-tasks/linktree-task/submit-distribution-list",
-        "microservices-and-tasks/linktree-task/audit-distribution-list",
+        "microservices-and-tasks/linktree-task/data-storage",
+        "microservices-and-tasks/linktree-task/data-sharing",
+        "microservices-and-tasks/linktree-task/rest-api",
+        "microservices-and-tasks/linktree-task/auth-list",
       ],
     },
     "microservices-and-tasks/run-a-task-node",
