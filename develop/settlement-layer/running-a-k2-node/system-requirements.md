@@ -47,6 +47,6 @@ For RPC nodes:
 
 **4. Operating System**
 
-Ubuntu 20.04, Windows 10 or later, and macOS High Sierra or later.
+Currently we are only supporting Ubuntu 20.04 for our validators. We do provide binaries for other operating systems however the operation of these binaries is not guaranteed.
 
-With a proper machine, now we can set up the K2 node.
+Once a properly sized Ubuntu 20.04 system is available we can begin to configure the system for operation of a validator node.

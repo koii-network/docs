@@ -18,7 +18,7 @@ Proof of Real Traffic is a cryptographic primitive including a signature from a 
 
 # How does it work?
 
-The attention task is running on Koii task node. After the user registers his content to the attention task, it will keep collecting the views received by your content. Currently supported content: NFT on Arwaeve, content on IPFS or your webpage. After collecting certain views, users can get their KOII.
+The attention task is running on Koii task node. After the user registers his content to the attention task, it will keep collecting the views received by your content. Currently supported content: NFT on Arweave, content on IPFS or your webpage. After collecting certain views, users can get their KOII.
 
 # How can I use it?
 
