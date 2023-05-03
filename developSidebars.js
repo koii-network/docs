@@ -44,7 +44,10 @@ const sidebars = {
       collapsed: true,
       items: [
         "settlement-layer/running-a-k2-node/system-requirements",
-        "settlement-layer/running-a-k2-node/setup-process",
+        "settlement-layer/running-a-k2-node/system-setup",
+        "settlement-layer/running-a-k2-node/validator-setup",
+        
+
       ],
     },
     "settlement-layer/creating-tokens-on-k2",
