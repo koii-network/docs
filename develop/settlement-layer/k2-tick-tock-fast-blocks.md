@@ -9,6 +9,8 @@ import Description from "@site/src/components/description";
 
 # K2 - Tick, Tock, Fast Blocks
 
+![K2](./img/K2%20-%20Tick%2C%20Tock%2C%20Fast%20Blocks.svg)
+
 <Description
   text="Fast transaction settlement and timestamps."
 />

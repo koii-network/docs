@@ -9,6 +9,8 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Native Contracts
 
+![img](../img/Native%20Contracts.svg)
+
 Here are the articles in this section:
 
 <div className="content-container">
