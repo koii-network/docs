@@ -38,7 +38,7 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 <ContentLink
   title='What are tasks?'
-  link='/develop/microservices-and-tasks/run-a-task-node'
+  link='/develop/microservices-and-tasks/what-are-tasks/'
   iconType='copy'
 />
 
