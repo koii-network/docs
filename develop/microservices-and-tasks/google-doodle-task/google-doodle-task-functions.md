@@ -15,8 +15,8 @@ The `task` function contains the core logic of the task and we will update the c
  async task() {
     const browserFetcher = puppeteer.createBrowserFetcher({
       product: "firefox",
-    });
-    const browserRevision = "114.0a1";
+    }); // download headless version of Firefox
+    const browserRevision = "114.0a1"; // browser version
 
     let revisionInfo = await browserFetcher.download(browserRevision);
     const browser = await puppeteer.launch({
@@ -54,10 +54,12 @@ The `task` function contains the core logic of the task and we will update the c
 
 Let's break down the logic above, we:
 
-- Launched a browser using Puppeteer, created a new page and visited [Google doodle](https://www.google.com/doodles)
-- Parsed the HTML document with Cheerio
-- Extracted the link of the latest google doodle from the parsed HTML document
-- Converted the link to JSON and stored it on levelDB using the `storeSet` helper function
+- Used `puppeteer.createBrowserFetcher()` to download a browser instance, Firefox in our case.
+  - `browserRevision` is the browser version we want to download.
+- Launched the browser, created a new page and visited [Google doodle](https://www.google.com/doodles).
+- Parsed the HTML document with Cheerio.
+- Extracted the link of the latest google doodle from the parsed HTML document.
+- Converted the link to JSON and stored it on levelDB using the `storeSet()` from `namespaceWrapper`.
 
 # fetchSubmission()
 
