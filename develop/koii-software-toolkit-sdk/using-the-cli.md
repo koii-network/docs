@@ -15,19 +15,27 @@ File-system wallets are the **least secure** method of storing tokens. Storing l
 
 :::
 
-### Install Koii CLI
+## Install the Koii CLI Suite
 
-Run the command below to install the Koii command-line tools:
+### MacOS & Linux
+
+- Run the command below to install the Koii command-line tools:
 
 ```
 sh -c "$(curl -sSfL https://koi-node-releases.s3.us-east-2.amazonaws.com/koii-install-init.sh)"
 ```
 
-After installation is complete, you should see a prompt in the terminal: `Please update your PATH environment variable to include the koii programs` . Copy and run the command beneath this prompt to update your `PATH` environment.
+- Depending on your system, you may get this prompt:
 
-To confirm your `PATH` environment has been updated run `echo $PATH`
+```
+Please update your PATH environment variable to include the koii programs:
+```
 
-Run the command below to confirm that the CLI was successfully installed:
+- If you get the above message, copy and run the command beneath this prompt to update your `PATH` environment.
+
+- To confirm your `PATH` environment has been updated run `echo $PATH`
+
+- Run the command below to confirm that the CLI was successfully installed:
 
 ```
 koii --version
@@ -49,6 +57,25 @@ To run the test validator, use command:&#x20;
 ```
 koii-test-validator
 ```
+
+### Windows
+
+- Run the command below to install the Koii command-line tools:
+
+```
+curl https://github.com/koii-network/k2-release/releases/download/v0.0.1/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs
+```
+
+- Copy and paste the following command, then press "Enter" to install the latest version of Koii. If you see a security pop-up by your system, please select to allow the program to run.
+
+```
+C:\koii-install-tmp\koii-install-init.exe v0.0.1
+```
+
+- When the installer is finished, press "Enter".
+
+- Close the command prompt window and open a new one as a normal user.
+- Run `koii --version` to confirm that the CLI was successfully installed.
 
 ### Create a Koii Wallet
 
@@ -85,6 +112,7 @@ koii-keygen pubkey /Users/<YOUR_HOME>/.config/koii/id.json
 ```
 
 ### Koii CLI Config Tool
+
 The `koii config` command is used to update the Koii CLI configuration settings.
 
 To print the file location of config, run:
@@ -92,13 +120,15 @@ To print the file location of config, run:
 ```
 koii config get
 ```
+
 The output of the command should be similar to the following:
+
 ```
 Config File: /Users/<YOUR_HOME>/.config/koii/cli/config.yml
-RPC URL: https://k2-testnet.koii.live 
+RPC URL: https://k2-testnet.koii.live
 WebSocket URL: wss://k2-testnet.koii.live/ (computed)
-Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json 
-Commitment: confirmed 
+Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json
+Commitment: confirmed
 ```
 
 The RPC URL can be toggled between testnet and mainnet by pointing the RPC URL to the corresponding node URL.
@@ -109,7 +139,7 @@ The command below is an example on how to switch to testnet:
 koii config set --url https://k2-testnet.koii.live
 ```
 
-The wallet default URL can also be updated, the default URL lives in `/Users/<YOUR_HOME>/.config/koii/id.json `  and it can be updated with this config command:
+The wallet default URL can also be updated, the default URL lives in `/Users/<YOUR_HOME>/.config/koii/id.json ` and it can be updated with this config command:
 
 ```
 koii config set --keypair <PATH_TO_KEYPAIR>
