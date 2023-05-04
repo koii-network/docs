@@ -138,8 +138,14 @@ main {
   font-size: 16px;
 }
 
-.markdown > h2, .markdown > h3 {
+.markdown > h1{
   font-size: 24px;
+}
+.markdown > h2{
+  font-size: 22px;
+}
+.markdown > h3 {
+  font-size: 20px;
 }
 
 .menu__list-item:not(:first-child) {
