@@ -10,7 +10,7 @@ import Description from "@site/src/components/description";
 
 # 🔥 Impact
 
-![banner](img/How_Koii_Benefits_You.svg)
+![banner](img/Impact.svg)
 
 <Description
   text="We've redesigned the web from the group up to reward contributions fairly.

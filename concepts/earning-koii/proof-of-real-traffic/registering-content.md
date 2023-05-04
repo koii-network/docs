@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Registering Content
 
-![banner](../img/Registering_Content.png)
+![banner](../img/Registering%20Content.svg)
 
 <Description
   text="Koii can be earned on any content where Proofs of Real Traffic are submitted."
@@ -33,7 +33,7 @@ Need some KOII? Check [here](/develop/koii-software-toolkit-sdk/wallet-and-fauce
 
 The network is designed to track content from any source and can be configured to credit app developers by specifying an application key. If no application key is specified, the registrar of the content ID receives all rewards. &#x20;
 
-![banner](../img/registering_image.png)
+![banner](../img/Line%20Registering%20Content.svg)
 
 <Description
   text="Any piece of content can be registered for Attention Mining by constructing a URI like the one above, where the network key, application key, and content id contain valid data."
