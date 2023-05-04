@@ -7,6 +7,8 @@ sidebar_label: Creating Tokens on K2
 
 # Creating Tokens on K2
 
+![banner](img/Creating%20Tokens%20on%20K2.svg)
+
 The [Solana Program Library](https://spl.solana.com/) (SPL) is a collection of on-chain programs targeting the [Sealevel parallel runtime](https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192). One of the SPL programs is the [Solana Token Program](https://spl.solana.com/token) which defines a common implementation for Fungible and Non-Fungible tokens. Using the Solana Token Program simplifies token management.
 
 To interact with a Solana node inside a JavaScript application, use the [Solana-web3.js](https://github.com/solana-labs/solana-web3.js) library, which gives a convenient interface for the RPC methods. Full documentation of the library can be found [here](https://solana-labs.github.io/solana-web3.js/).

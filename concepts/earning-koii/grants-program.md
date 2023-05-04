@@ -8,6 +8,7 @@ sidebar_label: Grants Program
 import HubspotForm from 'react-hubspot-form';
 
 # Grants Program
+![banner](img/Grants%20Program.svg)
 
 The Koii Foundation also gives grants to developers and anyone who wants to build new and more rewarding online experiences.&#x20;
 

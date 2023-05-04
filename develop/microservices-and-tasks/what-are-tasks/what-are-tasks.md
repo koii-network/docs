@@ -9,6 +9,8 @@ import Description from "@site/src/components/description";
 
 # What are Tasks?
 
+![banner](../img/_What%20are%20tasks_.svg)
+
 <Description
   text="Trustless systems are essential for a stable internet. We're working to make
   them bigger and better."
