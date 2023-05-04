@@ -9,6 +9,8 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Wallets
 
+![banner](img/Wallets.svg)
+
 There are three solutions for holding KOII token, each targetted to a different use case:
 
 - [Finnie Wallet](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj) - this Chrome Extension wallet provides an easy to use tool for beginners, along with more advanced features for developers and crypto-aficionados

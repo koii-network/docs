@@ -39,13 +39,13 @@ For help designing your task, you might want to try using the Task Organizer, wh
 
 Note: In most cases, the actual management of (3) and (4) above depends on [tracking digital signatures](../task-development-kit-tdk/using-the-task-namespace/wallet-signatures) from participating nodes, community members, or outside oracle services. Reviewing these signatures is usually referred to as an ['audit'](../task-development-guide/k2-task-template/audit-function).
 
-![banner](../img/consensus_image_two.png)
+![banner](../img/Gradual%20Consensus.svg)
 
 Gradual consensus is a multi-round game under which nodes first perform a task, and then vote on a reward distribution. It's important to understand that while the process takes two rounds to complete, each cycle operates independently once per round, such that there is always one cycle starting and completing within every round.
 
 ## **The Task Lifecycle**
 
-![banner](../img/ROUNDS_NoNote.png)
+![banner](../img/Stacking%20Rounds.svg)
 
 ### 1. **Submission Phase**
 

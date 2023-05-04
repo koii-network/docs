@@ -8,7 +8,7 @@ sidebar_label: Running a K2 Node
 import Description from "@site/src/components/description";
 
 # Running a K2 Node
-
+![banner](../img/Running%20a%20K2%20Node.svg)
 <Description
   text="This section describes how to run a K2 Validator."
 />
