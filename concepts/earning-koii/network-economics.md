@@ -23,11 +23,13 @@ At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after 
 
 While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, continuous inflation benefits the network by onboarding new node operators who fulfill Tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
 
+![banner](img/Supply%20Reduction%402x.svg)
+
 The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and sophisticated, easy to use tooling. Each time that a new project launches on Koii, a Bounty must be locked to pay for hosting from Koii’s Compute Marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the Task, it must stake tokens as collateral, locking up further supply.&#x20;
 
 At steady state, the network is designed to lock up tokens in Staking and Bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
-![Supply Reduction](./img/Supply%20Reduction.svg)
+![Supply Reduction](./img/Supply%20Reduction%202%402x.svg)
 
 ### Reputation Hardening
 
@@ -35,4 +37,4 @@ Wallet reputation is tracked and used to calibrate rewards and penalties in both
 
 As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.&#x20;
 
-![Reputation Hardening](./img/Reputation%20Hardening.png)
+![Reputation Hardening](./img/Reputation%20Hardening%402x.svg)
