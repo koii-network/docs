@@ -23,15 +23,15 @@ koii-keygen new --outfile ~/vote-account-keypair.json
 ```
 The authorized-withdrawer keypair is to be used as the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
-This is a very important keypair since anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
+This is a very important keypair. Anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
 
-It doesn't have to be stored on your validator, and it shouldn't be stored anywhere where unauthorized people could access it.
+It doesn't have to be stored on your validator and it shouldn't be stored anywhere where an unauthorized person could access it.
 
 It's recommended that you use `systemctl` to manage the validator process. To set up the validator service you can complete the following steps.
 
 ## Step 1: Create a Systemctl Service File for the Validator
 
-Write a service configuration using the editor of your choice (nano, vim, etc). Do this as a system user with root permissions, not your validator user.
+Write a service configuration using the editor of your choice (nano, vim, etc.). Do this as a system user with root permissions, not your validator user.
 
 ```bash
 sudo nano /etc/systemd/system/koii-validator.service
@@ -100,7 +100,7 @@ koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/
 
 ## Step 4: Create a Stake Account
 
-Create the staking account using the validator's identity keypair and the authorized withdrawer keypair:
+Create the staking account using the validator's identity keypair and the authorized withdrawer keypair.
 
 ```bash
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/withdrawer-keypair.json
@@ -118,10 +118,10 @@ koii catchup ~/validator-keypair.json
 
 ## Step 6: Delegate Your Stake
 
-Delegate the stake to the validator using the staking account and validator's identity keypair:
+Delegate the stake to the validator using the staking account and validator's identity keypair.
 
 ```bash
 koii delegate-stake ~/stake-account-keypair.json <VALIDATOR_VOTE_ACCOUNT_ADDRESS> --stake-authority ~/validator-keypair.json
 ```
 
-Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address which can be found using the `koii validator-info get` command.
+Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address. That address can be found using the `koii validator-info get` command.
