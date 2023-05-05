@@ -13,7 +13,7 @@ import Description from "@site/src/components/description";
   text="This section provides a guide for how to configure your Ubuntu system"
 />
 
-Before continuing with this section you should ensure that your environment is up to date:
+Before continuing with this section you should ensure that your environment is up to date
 
 ```bash
 sudo apt update
