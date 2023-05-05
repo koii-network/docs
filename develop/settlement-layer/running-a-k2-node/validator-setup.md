@@ -78,13 +78,13 @@ Check the service status
 sudo systemctl status koii-validator.service
 ```
 
+## Step 3: Create a Vote Account
+
 :::caution
 
-You will need your validator keypair to be funded with Koii tokens and have the validator service running before continuing.
+You will need your validator keypair to be funded with KOII tokens and have the validator service running before continuing.
 
 :::
-
-## Step 3: Create a Vote Account
 
 For the remainder of the steps please elevate your user to your validator account.
 
@@ -113,7 +113,7 @@ Where <AMOUNT_TO_STAKE> is the number of tokens you want to stake with.
 Make sure your validator is caught up with the network.
 
 ```bash
-koii catchup ~/.validator-keypair.json
+koii catchup ~/validator-keypair.json
 ```
 
 ## Step 6: Delegate Your Stake
@@ -124,4 +124,4 @@ Delegate the stake to the validator using the staking account and validator's id
 koii delegate-stake ~/stake-account-keypair.json <VALIDATOR_VOTE_ACCOUNT_ADDRESS> --stake-authority ~/validator-keypair.json
 ```
 
-Replace <VALIDATOR_VOTE_ACCOUNT_ADDRESS> with the validator's vote account address, which can be found using the `koii validator-info get` command.
+Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address which can be found using the `koii validator-info get` command.

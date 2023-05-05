@@ -49,6 +49,6 @@ We host an install script that will install and configure the Koii validator sof
 sh -c "$(curl -sSfL https://koi-node-releases.s3.us-east-2.amazonaws.com/koii-install-init.sh)"
 ```
 
-This scipt will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created IS NOT your validator identity. If you have a private key which is funded for staking with a validator you can replace the one generated with this script. 
+This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created IS NOT your validator identity. If you have a private key which is funded for staking with a validator you can replace the one generated with this script. 
 
 If everything is configured correctly you can test it by running `koii balance` which will return the balance of the local key.
