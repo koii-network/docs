@@ -52,3 +52,11 @@ sh -c "$(curl -sSfL https://koi-node-releases.s3.us-east-2.amazonaws.com/koii-in
 This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created IS NOT your validator identity. If you have a private key which is funded for staking with a validator you can replace the one generated with this script. 
 
 If everything is configured correctly you can test it by running `koii balance` which will return the balance of the local key.
+
+## Step 3: Run the System Tuner
+
+This will configure certain aspects of your system to better support the validator.
+
+```bash
+koii-sys-tuner --user koii
+```
