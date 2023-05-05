@@ -20,7 +20,7 @@ File-system wallets are the **least secure** method of storing tokens. Storing l
 Run the command below to install the Koii command-line tools:
 
 ```
-sh -c "$(curl -sSfL https://koi-node-releases.s3.us-east-2.amazonaws.com/koii-install-init.sh)"
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
 ```
 
 After installation is complete, you should see a prompt in the terminal: `Please update your PATH environment variable to include the koii programs` . Copy and run the command beneath this prompt to update your `PATH` environment.
