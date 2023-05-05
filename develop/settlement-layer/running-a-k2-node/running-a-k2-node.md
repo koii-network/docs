@@ -23,7 +23,7 @@ At this time we only support Ubuntu 20.04 LTS. We offer macOS and Windows binari
 
 There is no minimum amount of KOII required to stake and participate in the voting process.
 
-To participate in the voting process you must configure your system, start a validator and configure your voting and stake accounts. This guide will show you how to do this.
+To participate in the voting process you must configure your system, start a validator, and configure your voting and stake accounts. This guide will show you how to do this.
 
 ## Quick Links
 
