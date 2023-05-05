@@ -7,6 +7,8 @@ sidebar_label: Rent
 
 # Rent
 
+![banner](img/Rent.svg)
+
 ## What is Rent?
 
 Rent is the fee paid by Accounts and Programs to store their data on K2 because the blockchain cluster needs to actively maintain the data in order to process any upcoming transactions. And because of this, all K2 Accounts and Programs must keep their LAMPORT balances high enough to qualify for rent exemption and to stay on the K2 blockchain.
