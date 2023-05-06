@@ -37,6 +37,6 @@ There's a lot of material here, so if you're just getting started, you might wan
 
 2.  [Using Koii's Task Development Kit (a.k.a. TDK)](../task-development-guide/)
 3.  [Building your first task (Task Development Guide)](../task-development-guide/)
-4.  [Task Design Example ](../google-doodle-task/google-doodle-task)
+4.  [Task Design Example ](../google-doodle-task)
 5.  [Run a Task Node](../run-a-task-node)
 6.  [Using Reputation to reduce waste compute (a.k.a. CARP)](../using-reputation)
