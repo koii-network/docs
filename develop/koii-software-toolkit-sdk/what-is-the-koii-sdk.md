@@ -10,7 +10,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # 🛠 What is the Koii SDK?
 
-![Banner](./img/What_is_the_Koii_SDK_.png)
+![Banner](./img/What%20is%20the%20Koii%20SDK_.svg)
 
 <Description
   text="We're building one toolkit for all blockchains"
