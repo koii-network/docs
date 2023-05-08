@@ -138,10 +138,10 @@ main {
   font-size: 16px;
 }
 
-.markdown > h1{
+.markdown > h1 {
   font-size: 24px;
 }
-.markdown > h2{
+.markdown > h2 {
   font-size: 22px;
 }
 .markdown > h3 {
@@ -153,12 +153,17 @@ main {
 }
 
 .menu__caret::before {
-  background:var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
 
 .theme-admonition-note {
   background-color: #47474815;
   border-color: #474748;
+}
+
+pre code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 /* menu,  ol,  ul {
