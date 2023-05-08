@@ -8,6 +8,7 @@ sidebar_label: Using Reputation
 import Description from "@site/src/components/description";
 
 # Using Reputation
+![banner](./img/Using%20Reputation.svg)
 
 <Description
   text="Koii may seem like a silly name for something so important, but it stands for

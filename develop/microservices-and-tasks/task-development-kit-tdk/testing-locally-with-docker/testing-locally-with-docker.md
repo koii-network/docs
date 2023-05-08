@@ -9,6 +9,8 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Developing Locally with Docker
 
+![banner](../../img/Developing%20Locally%20with%20Docker.svg)
+
 We provide a Docker container that makes task development very seamless and straightforward. We chose to use Docker in order to provide all the required task development resources in a consistent and isolated environment.
 
 The **requirements** for developing with the local stack are the following:
