@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Securing Tasks
 
-![banner](../img/What_are_Audits_.png)
+![banner](../img/Securing%20Tasks.svg)
 
 <Description
   text="Staying safe with decentralized and anonymous microservice providers."

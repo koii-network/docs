@@ -11,6 +11,8 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Task Development Kit (TDK)
 
+![banner](../img//Task%20Development%20Kit%20(TDK).svg)
+
 The following sections detail the use of Koii's Task Development Kit, which provides key components that will make it much easier to get started.
 
 ## The Task Namespace

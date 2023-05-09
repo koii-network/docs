@@ -6,6 +6,7 @@ sidebar_label: Runtime Environment
 ---
 
 # Runtime Environment
+![banner](../img/Runtime%20Environment.svg)
 
 ## Where Do Tasks Live?
 
