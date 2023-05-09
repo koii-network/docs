@@ -22,6 +22,8 @@ While the task standard supports a wide range of possible applications, the most
 
 One of the major limitations of stake-based games is the potential for an actor with a large amount of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii Tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
+![img](../img/Runtime%20Flow.svg)
+
 ## **How does it work?**
 
 The key to building community-based products is to regularly appraise contributions through a commonly agreed on set of rules. Under the Koii model, this system runs in [regularly timed rounds](#the-task-lifecycle), during which each participating device participates as much as it can, and rewards or penalties are regularly deployed to correct the course of the system towards a desired outcome.

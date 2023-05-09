@@ -9,6 +9,8 @@ import Description from "@site/src/components/description";
 
 # Key Components
 
+![banner](../img/Key%20components.svg)
+
 <Description
   text="When a task is created, there are two key components that must be uploaded to
   the Koii Network to initiate the task."
