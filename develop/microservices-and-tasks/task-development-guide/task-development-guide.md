@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Task Development Guide
 
-![banner](../img/Task_Design_Guide.png)
+![banner](../img/Task%20Development%20Guide.svg)
 
 <Description
   text="More details on task deployments coming soon!"
