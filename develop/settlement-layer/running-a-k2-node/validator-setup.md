@@ -21,7 +21,7 @@ koii-keygen new --outfile ~/stake-account-keypair.json
 koii-keygen new --outfile ~/vote-account-keypair.json
 
 ```
-The authorized-withdrawer keypair is to be used as the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
+The authorized-withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
 This is a very important keypair. Anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
 
