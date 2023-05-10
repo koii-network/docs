@@ -47,7 +47,7 @@ task_name: 'Your-task-name'
 task_description: 'This task is to test out the namespace function'
 
 # network value can be DEVELOPMENT , ARWEAVE or IPFS
-task_executable_network: 'DEVELOPMENT'
+task_executable_network: 'IPFS'
 
 # Provide your web3.storage key as it is needed for uploading your metadata
 secret_web3_storage_key: ''
@@ -88,11 +88,11 @@ description: 'task-description'
 repositoryUrl: 'Github/gitlab link'
 imageUrl: 'Enter you image URL'
 requirementsTags:
-  - type: GLOBAL_VARIABLE
-    value: 'WEB3.STORAGE SECRET KEY'
+  - type: TASK_VARIABLE
+    value: SECRET_WEB3_STORAGE_KEY
     description: 'used to connect web3.storage'
   - type: TASK_VARIABLE
-    value: 'SCAPING URL'
+    value: SCRAPING_URL
     description: 'url from which you want to scrape'
   - type: CPU
     value: '4-core'
@@ -108,6 +108,29 @@ requirementsTags:
     value: 'OSX'
 
 ```
+
+:::caution
+Please make sure all of your global environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
+
+For example:
+If you have something like:
+
+```javascript
+const username = process.env.TWITTER_USER_NAME;
+```
+
+Then in your `yml` file should have:
+
+```yaml
+- type: TASK_VARIABLE
+  value: TWITTER_USER_NAME
+  description: 'used to connect twitter'
+```
+
+Value name should be exact same to your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
+
+User will setup their `value` in desktop node's `Settings -> Task Settings`
+:::
 
 Follow the instruction in the `config-task.yml` to fill in the information you need. After you finish the config file, run the create-task-cli again `npx @_koii/create-task-cli@latest`, choose using config YML. If there are erros, follow the suggestion to fix it. If no error appears, it will show how much KOII you need to pay for creating task. Hit `y` then it will return you task information with your task ID.
 
