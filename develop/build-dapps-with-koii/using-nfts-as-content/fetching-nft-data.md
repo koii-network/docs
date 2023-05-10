@@ -17,8 +17,8 @@ import Description from "@site/src/components/description";
 
 Since most NFTs are stored on-chain, retrieving metadata can be a complex process. There are two main options for retrieving data.
 
-1. Directly from the Source Network
-2. From Koii Nodes
+1. Directly from the source network
+2. From Koii nodes
 3. Using Koii-X custom query hook
 
 ### Directly from the Source Network
@@ -54,7 +54,7 @@ Ethereum NFTs are coming soon to Koii-X Templates.&#x20;
 
 ### From the Koii Nodes via the Mainnet API
 
-If you are using Atomic NFTs, there is often a lot of additional information such as attention tracking counts, total KOII rewards, and bridging information. To fetch full NFT records, you can query the Koii Mainnet Gateway APIs as shown below:
+If you are using Atomic NFTs, there is often a lot of additional information such as attention tracking counts, total KOII rewards, and bridging information. To fetch full NFT records, you can query the Koii mainnet gateway APIs as shown below:
 
 ```javascript
 // Some code showing how to query mainnet.koii.live for the latest NFT states

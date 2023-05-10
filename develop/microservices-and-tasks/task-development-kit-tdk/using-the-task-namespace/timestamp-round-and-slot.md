@@ -40,7 +40,7 @@ async function getSlot() {
 }
 ```
 
-You can aslo use this function in audit or submit process and return the result, which would be the timestamp for your task:
+You can also use this function in audit or submit process and return the result, which would be the timestamp for your task:
 
 ```javascript
 async function auditTask(roundNumber) {
@@ -55,4 +55,4 @@ async function auditTask(roundNumber) {
 
 ### What should be submit and audit?
 
-Not all tasks need to be audited through timestamp. But if your Koii Task involves REST API, we strongly recommend you to use timestamp to conduct a more accurate audit and confirm your API health status. In addition, if your Koii Task needs to be carried out at an accurate point in time, getSlot is also one of the options.
+Not all tasks need to be audited through timestamp. But if your Koii task involves REST API, we strongly recommend you to use timestamp to conduct a more accurate audit and confirm your API health status. In addition, if your Koii task needs to be carried out at an accurate point in time, `getSlot` is also one of the options.
