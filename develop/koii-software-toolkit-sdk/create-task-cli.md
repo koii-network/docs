@@ -110,7 +110,7 @@ requirementsTags:
 ```
 
 :::caution
-Please make sure all of your task environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
+Please make sure all of your environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
 
 For example:
 If you have something like:
