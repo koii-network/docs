@@ -9,11 +9,11 @@ sidebar_label: Lists and Leaderboards
 
 ![Banner](../img/Lists_&_Leaderboards.png)
 
-One thing to keep in mind when working with decentralized systems is that there's very minimal support for things like APIs and databases. Instead, we use a combination of on-chain data (via NFTs and GraphQL tags on Arweave) and Koii Tasks running on decentralized nodes.&#x20;
+One thing to keep in mind when working with decentralized systems is that there's very minimal support for things like APIs and databases. Instead, we use a combination of on-chain data (via NFTs and GraphQL tags on Arweave) and Koii tasks running on decentralized nodes.&#x20;
 
 When constructing a leaderboard or list of content (such as a collection of an Artist's NFTs, or a personalized newsfeed), it's usually necessary to either configure an index or hijack an existing one.
 
-Koii Tasks will go live in Q2 2022, at which point you'll be able to fully customize your system, but until then, the best course of action is likely to process the current Koii Leaderboard APIs clientside and construct your own newsfeed using filters.
+Koii tasks will go live in Q2 2022, at which point you'll be able to fully customize your system, but until then, the best course of action is likely to process the current Koii leaderboard APIs clientside and construct your own newsfeed using filters.
 
 **View Filters**
 
@@ -81,7 +81,7 @@ export function useNfts({ timeframe = "1w" }: Props) {
 
 ```
 
-The default list component fetches the fully Koii NFT list, so configuring views can allow you to select any content you like without rebuilding the Tasks API. If this doesn't work for your use case, please [**contact our support team**](https://koii.me/support) and we can help you deploy an Indexing Task of your own!
+The default list component fetches the fully Koii NFT list, so configuring views can allow you to select any content you like without rebuilding the tasks API. If this doesn't work for your use case, please [**contact our support team**](https://koii.me/support) and we can help you deploy an indexing task of your own!
 
 **NSFW**
 
@@ -138,14 +138,14 @@ export function useNsfw() {
 
 **Search**
 
-Search is currently implemented using clientside libraries which draw from the same core NFT list, and can be customized by editing the Search Component, [**shown here**](../template-library/leaderboard-app/customization/search).
+Search is currently implemented using clientside libraries which draw from the same core NFT list, and can be customized by editing the search component, [**shown here**](../template-library/leaderboard-app/customization/search).
 <br />
 
 **Thumbnails**
 
 Since your app will live on decentralized storage, it can sometimes be difficult to generate thumbnail images on the fly for your NFT assets, and it can be even harder to set OpenGraph tags for sharing content.
 
-To streamline this process, Koii has provided a thumbnail generation API powered by Koii Tasks, to which you can POST new NFTs so that they will have nicely formatted previews when sharing on social media.&#x20;
+To streamline this process, Koii has provided a thumbnail generation API powered by Koii tasks, to which you can POST new NFTs so that they will have nicely formatted previews when sharing on social media.&#x20;
 
 ```tsx
 📦src
