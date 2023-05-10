@@ -33,7 +33,7 @@ Click one of the options below to get started as a part of the community.&#x20;
   />
   <Card
     title='<p><strong>Join the Compute Sharing Economy</strong></p>'
-    description="<p>If you've got hardware, we've got tasks. When you run a Koii Node, your personal devices can earn you passive income.</p>"
+    description="<p>If you've got hardware, we've got tasks. When you run a Koii node, your personal devices can earn you passive income.</p>"
     link='/develop/microservices-and-tasks/run-a-task-node'
     linkText='Run a Node'
     svgName='node'
