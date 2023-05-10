@@ -110,7 +110,7 @@ requirementsTags:
 ```
 
 :::caution
-Please make sure all of your global environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
+Please make sure all of your task environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
 
 For example:
 If you have something like:
@@ -129,7 +129,10 @@ Then in your `yml` file should have:
 
 Value name should be exact same to your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
-User will setup their `value` in desktop node's `Settings -> Task Settings`
+User will setup their key of the `value` in desktop node's `Settings -> Task Settings`
+
+![Code Sample](./img/setting_env_key.png)
+
 :::
 
 Follow the instruction in the `config-task.yml` to fill in the information you need. After you finish the config file, run the create-task-cli again `npx @_koii/create-task-cli@latest`, choose using config YML. If there are erros, follow the suggestion to fix it. If no error appears, it will show how much KOII you need to pay for creating task. Hit `y` then it will return you task information with your task ID.
