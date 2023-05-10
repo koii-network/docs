@@ -12,7 +12,7 @@ sidebar_label: Proof of Real Traffic (PoRT)
 
 # What is Proof of Real Traffic?
 
-Proof of Real Traffic is a cryptographic primitive including a signature from a specific consumer wallet. Each viewer creates a signature and then hashes over it to find a PoRT with a specific [difficulty factor](https://btc.com/stats/diff) generating a PoW that uniquely represents the content and viewer.
+Proof of Real Traffic (PoRT) is a cryptographic primitive including a signature from a specific consumer wallet. Each viewer creates a signature and then hashes over it to find a PoRT with a specific [difficulty factor](https://btc.com/stats/diff) generating a PoW that uniquely represents the content and viewer.
 
 ![PoRT](../img/PoRT.svg)
 
