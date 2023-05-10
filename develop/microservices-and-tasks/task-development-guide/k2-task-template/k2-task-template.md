@@ -7,13 +7,13 @@ sidebar_label: K2 Task Template
 
 # K2 Task Template
 
-Tasks run following a periodic structure of 'rounds':
+Tasks run following a periodic structure of "rounds":
 
 ![execute task](../../img/execute_task.png)
 
 Each round is set by a specific time period, and nodes participate by uploading data to IPFS, posting CIDs to the K2 settlement layer, and sending messages across REST APIs and WebSockets.
 
-For more information on how the Task Flow works, check out the [runtime environment](/develop/microservices-and-tasks/what-are-tasks/gradual-consensus) docs.
+For more information on how the task flow works, check out the [runtime environment](/develop/microservices-and-tasks/what-are-tasks/gradual-consensus) docs.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ For more information on how the Task Flow works, check out the [runtime environm
 
 ## What's in the template?
 
-- `index.js` — is the hub of your app, and ties together the other pieces. This will be the entrypoint when your task runs on Task Nodes.
+- `index.js` — is the hub of your app, and ties together the other pieces. This will be the entrypoint when your task runs on task nodes.
 
 - `NamespaceWrappers.js` — contains the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more Namespace functions.
 
@@ -47,17 +47,17 @@ There are two ways to run your task when doing development:
 
 Task nodes will trigger a set of predefined functions during operation.
 
-There are in total 9 functions in CoreLogic which the you can modify according to your needs:
+There are in total 9 functions in `CoreLogic` which the you can modify according to your needs:
 
 1. `task()` - The logic for what your task should do goes here. There is a window in round that is dedicated to do work. The code in task is executed in that window.
 2. `fetchSubmission()` - After completing the task , the results/work will be stored somewhere like on IPFS or local levelDB. This function is the place where you can write the logic to fetch that work. It is called in `submitTask()` function which does the actual submission on K2.
 3. `submitTask()` - It makes the call to namespace function of task-node using the wrapper.
 4. `generateDistributionList()` - You have full freedom to prepare your reward distributions as you like and the logic for that goes here. We have provided a sample logic that rewards 1 KOII to all the needs who did the correct submission for that round. This function is called in `submitDistributionList()`
-5. `submitDistributionList()` - makes call to the namesapce function of task-node to upload the list and on succesful upload does the transaction to update the state.
-6. `validateNode()` - this function is called to verify the submission value, so based on the value received from the task-state we can vote on the submission.
+5. `submitDistributionList()` - Makes call to the namespace function of task-node to upload the list and on succesful upload does the transaction to update the state.
+6. `validateNode()` - This function is called to verify the submission value, so based on the value received from the task-state we can vote on the submission.
 7. `validateDistribution()` - The logic to validate the distribution list goes here and the function will receive the distribution list submitted form task-state.
-8. `auditTask()` - makes call to namespace of task-node to raise an audit against the submission value if the validation fails.
-9. `auditDistribution()` - makes call to namespace of task-node to raise an audit against the distribution list if the validation fails.
+8. `auditTask()` - Makes call to namespace of task-node to raise an audit against the submission value if the validation fails.
+9. `auditDistribution()` - Makes call to namespace of task-node to raise an audit against the distribution list if the validation fails.
 
 # Testing and Deploying
 
@@ -65,7 +65,7 @@ Before you begin this process, be sure to check your code and write unit tests w
 
 ## Build
 
-Before deploying a task, you'll need to build it into a single file executable by running `yarn webpack`
+Before deploying a task, you'll need to build it into a single file executable by running `yarn webpack`.
 
 ## Deploy your bundle
 
@@ -89,15 +89,15 @@ Keypair Path: /home/<user>/.config/koii/id.json
 Commitment: confirmed
 ```
 
-The `Keypair Path` will be used to pay gas fees and fund your bounty wallet by inputting it into the task CLI.
+The `Keypair Path` will be used to pay gas fees and fund your bounty wallet by inputing it into the task CLI.
 
 If you need to create a Koii wallet you can follow the instructions [here](/develop/koii-software-toolkit-sdk/using-the-cli). Make sure to either copy your keypair path from the output, or use the method above to supply the task CLI with the proper wallet path.
 
 ### Deploy to K2
 
-To test the task with the [K2 Settlement Layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
+To test the task with the [K2 settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
 
-We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found in [the docs](/develop/koii-software-toolkit-sdk/create-task-cli/). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `yarn webpack`.
+We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/develop/koii-software-toolkit-sdk/create-task-cli/). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `yarn webpack`.
 
 ## Run a node locally
 
