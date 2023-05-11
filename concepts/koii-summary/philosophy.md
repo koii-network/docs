@@ -11,7 +11,7 @@ import Description from "@site/src/components/description";
 ![img alt](img/Philosophy.svg)
 
 <Description
-  text="  For too long, power has been concentrated to just a small part of the world's
+  text="For too long, power has been concentrated to just a small part of the world's
   population. The internet has the power to fix this, but not the way it's been
   built so far."
 />
@@ -23,7 +23,7 @@ import Description from "@site/src/components/description";
     title="<p><strong>Join the Discord</strong></p>"
     description=" <p>Koii's discord is where the community comes to discuss new ideas and recent updates.</p>"
     link="https://discord.gg/koii"
-    linkText="Sign in here"
+    linkText="Sign in Here"
     svgName="discord"
     cardPerRow="3"
   />
@@ -31,7 +31,7 @@ import Description from "@site/src/components/description";
     title="<p><strong>Read Community Posts</strong></p>"
     description="<p>The Peeranha forums provide a place for long term answers and lasting discussions.</p>"
     link="https://peeranha.io/feed/6"
-    linkText="Check it out"
+    linkText="Check it Out"
     svgName="peeranha"
     cardPerRow="3"
   />

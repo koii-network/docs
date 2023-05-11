@@ -21,7 +21,7 @@ In order to mine new KOII tokens, each piece of content must be registered by pa
 
 _Up Front -_ Small fee, fixed price, but must be paid in advance of any Proof of Real Traffic
 
-_Lazy_ - Larger Fee, Scales to the total attention the content has received so far
+_Lazy_ - Larger Fee, scales to the total attention the content has received so far
 
 :::info
 
@@ -36,7 +36,7 @@ The network is designed to track content from any source and can be configured t
 ![banner](../img/Line%20Registering%20Content.svg)
 
 <Description
-  text="Any piece of content can be registered for Attention Mining by constructing a URI like the one above, where the network key, application key, and content id contain valid data."
+  text="Any piece of content can be registered for attention mining by constructing a URI like the one above, where the network key, application key, and content id contain valid data."
 />
 
 **Supported Networks**
@@ -55,9 +55,9 @@ or
 
 `yarn add @_koii/k2-recipient-sdk`
 
-:::info
+:::note
 
-Notice: The node version should be 16.15.0 or higher.
+The node version should be `16.15.0` or higher.
 
 :::
 
@@ -102,9 +102,9 @@ Please provide a `metadata.json` file and put it at the root:
 }
 ```
 
-Then provide a image as the thumbnail of your conntent.
+Then provide a image as the thumbnail of your content.
 
-Prepare your Koii Wallet and check example for the code:
+Prepare your Koii wallet and check example for the code:
 
 ```jsx title="registerIPFS.js"
 const { registerIpfsNFT }  = require("@_koii/k2-recipient-sdk")

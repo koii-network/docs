@@ -53,15 +53,15 @@ const nfts = [
 
 ```
 
-If you need help [**Fetching NFT Data**](./fetching-nft-data), check out the previous section.
+If you need help [**fetching NFT data**](./fetching-nft-data), check out the previous section.
 
 ### Customization
 
-Configuring new views and new forms of Atomic content requires a thorough understanding of the tools at play. This section covers tips and instructions for quickly scaffolding new formats.
+Configuring new views and new forms of atomic content requires a thorough understanding of the tools at play. This section covers tips and instructions for quickly scaffolding new formats.
 
 #### File Types
 
-There are several supported mime types for the Leaderboard Template:
+There are several supported mime types for the leaderboard template:
 
 1. text/html ~ these will render as apps inside iframes (useful for dynamic content)
 2. image/\* ~ these will render as html `<img>` tags
@@ -69,7 +69,7 @@ There are several supported mime types for the Leaderboard Template:
 
 #### View Controls
 
-Each type of Atomic NFT has a different type of view:
+Each type of atomic NFT has a different type of view:
 
 - Swap the content out
 
