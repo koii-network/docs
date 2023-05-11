@@ -75,7 +75,7 @@ import Description from "@site/src/components/description";
     cardPerRow="3"
   />
   <Card
-    title="<p><strong>Why you need a Koii DID (Decentralized Identity)</strong></p>"
+    title="<p><strong>Why You Need a Koii DID (Decentralized Identity)</strong></p>"
     link="https://blog.koii.network/Why-you-Need-a-Koii-DID/"
     linkText="Learn more about DIDs"
     svgName="koiiDid"

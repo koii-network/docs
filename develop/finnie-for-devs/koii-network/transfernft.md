@@ -14,7 +14,7 @@ This function transfers the NFT ownership to a target address.
 - **nftId `<string>`** - NFT ID to transfer
 - **qty `<number>`** - Quantity of NFT balance to transfer
 - **target `<string>`** - Target address to transfer ownership to
-- _\[Optional]_ **`reward \<string>`** - Custom reward for smartweave transaction
+- _\[Optional]_ **reward ` <string>`** - Custom reward for smartweave transaction
 
 ### Example Code
 
