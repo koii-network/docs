@@ -13,31 +13,48 @@ We provide create-task-cli to help you easily create and deploy your task.
 
 ## Install Create-Task-CLI
 
-Run the command below to install the create-task-cli:
+- Run the command below to install the create-task-cli:
 
 ```bash
 npm i @_koii/create-task-cli
 ```
 
-Running command `npx @_koii/create-task-cli@latest` under your task folder; it prompts for your wallet path and config-task.yml. Use the path to your Koii account `id.json` that we mentioned as input.
+- Run `npx @_koii/create-task-cli@latest` in your terminal within the task directory; it prompts for your wallet path:
 
-:::info
-Run `koii config get` and you will get the information of your wallet path.
+```bash
+✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
+```
+:::tip
+Run `koii config get` to get the information of your wallet path.
 
-Not yet have a Koii wallet? Check [here](using-the-cli) and generate one quickly. Remember to save your wallet path.
+Don't have a Koii wallet yet? Check [here](using-the-cli) and generate one quickly. Remember to save your wallet path.
 :::
+- Next you will be prompted with seven options, select `Create a new task` to create a new task:
+```bash
+? Select operation › - Use arrow-keys. Return to submit.
+❯   Create a new task
+    update existing task
+    Activate task
+    Claim reward
+    Fund task with more KOII
+    Withdraw staked funds from task
+    upload assets to IPFS(metadata/local vars)
+```
+- There are two options to create a new task, the next prompt asks you to select how you want to create your task:
 
-Then select Create a new task to create a new task. There are two options to create a new task:
-- Using CLI
-- Using config YML
+```bash
+? Select operation › - Use arrow-keys. Return to submit.
+❯   using CLI
+    using config YML
+```
 
-We suggest using config file to create a task, which can easily edit in yout task folder and contain more info you might need.
+To create a task, we recommend using the `config-task.yml` file, which can be easily edited in your task folder and contains more information about your task. 
 
-### Use config YML
+### Using config YML
 
-By chosing this to create a new task, you will be prompted to enter the path to your config-task.yml. The config-task.yml is a file that contains all the information you need to create a task. You can find a sample config-task.yml in your task folder.
+The `config-task.yml` is the configuration file that contains the information needed to create a task. You can find a sample `config-task.yml` in the root directory of your task folder.
 
-The config-task.yml should looks like this and contains the following information:
+The `config-task.yml` should look like this:
 
 ```yaml
 #Provide the taskId if you are updating the task
@@ -108,6 +125,7 @@ requirementsTags:
     value: 'OSX'
 
 ```
+- Follow the instructions and fill in your task's information. 
 
 :::caution
 Please make sure all of your environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
@@ -135,30 +153,45 @@ User will setup their key of the `value` in desktop node's `Settings -> Task Set
 
 :::
 
-Follow the instruction in the `config-task.yml` to fill in the information you need. After you finish the config file, run the create-task-cli again `npx @_koii/create-task-cli@latest`, choose using config YML. If there are erros, follow the suggestion to fix it. If no error appears, it will show how much KOII you need to pay for creating task. Hit `y` then it will return you task information with your task ID.
+- After updating the config file, run `npx @_koii/create-task-cli@latest` again and choose "using config YML". 
+- If there is an error, follow the instructions to correct it. If it was successful, your terminal should display an output similar to this:
 
-### Use CLI
+```bash
+Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
-By chosing this to create a new task, you will be prompted to enter the information you need to create a task. Follow the instruction below to fill in the information you need.
+Your account will be subtract 16.96249776 KOII for creating the task, which includes the rent exemption and bounty amount fees ›
+```
+- Hit `y` to subtract the necessary amount of KOII for your task creation.
+- Finally, the details of your task, including the task ID, are returned.
+
+### Using the CLI
+
+When you use this method to create a new task, you will be prompted to enter the information needed to create your task. 
+
+Fill in the necessary information by following the instructions below:
 
 - **Enter the name of the task:** Any Name .. Seriously your choice! E.g: `Blazing-Fast-Execution`
 
-- **Enter a short description of your task:** A brief explanation of the task you're creating. Note: The description should not be longer than 64 characters.
-
-- **Enter the network to be used to upload your executable [IPFS / ARWEAVE / DEVELOPMENT]: ** Choose IPFS or ARWEAVE for storage of your executable file, or DEVELOPMENT if you haven’t developed your task yet.
-
-:::info
-Note — The next prompt depends on your answer to the prompt above.
+- **Enter a short description of your task:** A brief explanation of the task you're creating.
+:::caution
+The description should not be longer than 64 characters.
 :::
 
-- [For IPFS] **Enter the web3.storage API key:** If you choose to store your task executable on IPFS, you’ll be required to add your web3.storage API key, visit here to create a web3.storage account. After creating an account, create an API Token for your project, paste the API token on this prompt. e.g: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`
+- **Please select the type of network: ** Choose *IPFS* or *ARWEAVE* for storage of your executable file, or *DEVELOPMENT* if you want to test in development environment.
+:::note
+The next prompt depends on your answer to the prompt above.
+:::
 
-- [For Arweave] **Enter Arweave id of the deployed Koii task executable program:** If you choose your task executable on Arweave, you have to upload your executable on [Arweave](https://www.arweave.org/) and provide the ID to the uploaded file.
+- [For IPFS] **Enter the web3.storage API key:** Add a web3.storage API key to store your task executable on IPFS. E.g: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`
+:::tip
+Visit [Web3.storage](https://web3.storage/), create an account, create an API token for your project, copy your token and paste it on this prompt.
+:::
+
+- [For Arweave] **Enter Arweave id of the deployed Koii task executable program:** Upload your executable file to [Arweave](https://www.arweave.org/) and enter its ID into this prompt.
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
-
-:::info
-Note — The name should not contain `.js`. For example, if you want to run `task-mytask.js`, you should enter `task-mytask` as the executable name.
+:::caution
+The name should not contain `.js`. For example, if you want to run `task-mytask.js`, you should enter `task-mytask` as the executable name.
 :::
 
 - [For IPFS and ARWEAVE] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
@@ -168,22 +201,22 @@ Note — The name should not contain `.js`. For example, if you want to run `tas
 - **Enter the audit window in slots:** The number of slots to be allocated to the audit window. E.g: `500`
 
 - **Enter the submission window in slots:** The number of slots to be allocated to the submission window. E.g: `300`
-
-:::info
-Note — The number of slots in the audit window and submission must be lower than the number of slots per round.
+:::caution
+The number of slots in the audit window and submission must be lower than the number of slots per round.
 :::
 
-- **Enter the minimum staking amount in lamports:** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
+- **Enter the minimum staking amount for the task (in KOII):** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
 
 - **Enter the total bounty you want to allocate for the task (In KOII):** Any amount not more than what you have in your wallet though. E.g: `1000` (We suggest the amount could be run at least 4 epochs)
 
-- **Enter the bounty amount per round:** Total amount would be divided equally for each number until the bounty fund is exhausted. E.g: `10`
+- **Enter the bounty amount per round (In KOII):** Total amount would be divided equally for each node until the bounty fund is exhausted. E.g: `10`
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the metadata for your task on IPFS, add the CID here; otherwise, leave blank. Use your web3.storage account, click the **Upload Files** button, and then upload a JSON file containing the metadata for your task. Add the CID for the uploaded file to this prompt. Check out a [metadata example](/).
+- **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
 
-- **Enter CID for environment variables hosted on IPFS (Leave empty for None): **If your task requires environment variables to be run by node runners, upload a JSON file that contains those variables to IPFS using web3.storage. Add the uploaded file's CID to this prompt.
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. Use the "Upload Files" button on your web3.storage account to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. View a sample of metadata. Check out a [metadata example](/develop/microservices-and-tasks/what-are-tasks/key-components#metadata).
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
+- **Your account will be subtract `AMOUNT` KOII for creating the task, which includes the rent exemption and bounty amount fees › ** y/n
 
 After the final confirmation of `y`, your task would be created along with a `taskStateInfoKeypair.json` which is used to control the task state info.
 
@@ -194,12 +227,7 @@ Strong measures should be taken to protect this JSON file.
 The output of the command should be similar to the following.
 
 ```bash
-> task-contract@0.0.1 start
-> ts-node src/main.ts
-
-No wallet found
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a new task
 create-task
 CONFIG {
@@ -210,27 +238,29 @@ CONFIG {
   commitment: 'confirmed'
 }
 Connection to cluster established: https://k2-testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
-Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 329.992521 SOL to pay for fees
+Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
-✔ Enter the name of the task … testing-task-v1
-✔ Enter a short description of your task … A simple task with very minimal logic
-✔ Enter the network to be used to upload your executable [IPFS / ARWEAVE / DEVELOPMENT] … IPFS
+✔ Select operation › using CLI
+create-task-cli
+✔ Enter the name of the task … my-new-task
+✔ Enter a short description of your task … This is a simple task
+✔ Please select the type of network › IPFS
 ✔ Enter the web3.storage API key … eyOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTsIm5hbWUiOiJzYXZpbmdIaX
 ✔ Enter the path to your executable webpack … /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
-✔ Enter the round time in slots … 1000
-✔ Enter the audit window in slots … 300
+✔ Enter the round time in slots … 600
+✔ Enter the audit window in slots … 200
 ✔ Enter the submission window in slots … 200
-✔ Enter the minimum staking amount in lamports … 100
-✔ Enter the total bounty you want to allocate for the task (In KOII) … 100
-✔ Enter the bounty amount per round … 50
-✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). …
-✔ Enter CID for environment variables hosted on IPFS (Leave empty for None). …
-✔ Enter the space, you want to allocate for task account (in MBs) … 100
-✔ Your account will be subtract 100.00319376 KOII for creating the task, which includes the rent exemption and bounty amount fees … yes
+✔ Enter the minimum staking amount for the task (in KOII) … 5
+✔ Enter the total bounty you want to allocate for the task (In KOII) … 10
+✔ Enter the bounty amount per round (In KOII) … 1
+✔ Enter the number of distribution list submission retry in case it fails … 3
+✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). … 
+✔ Enter the space, you want to allocate for task account (in MBs) … 5
+✔ Your account will be subtract 16.96249776 KOII for creating the task, which includes the rent exemption and bounty amount fees … yes
 Calling Create Task
-Task Id: 9wPqk8BMxRUXGfRYXoFvT9FdhapLH7WbB8V6HCyJ6Rf2
-Stake Pot Account Pubkey: stakepotaccountUqTzV1ZMfXvcupUPSBWHwUykCTCW
+Task Id: 7Rp5xL2R4jYJqEHEridRJ5kgvJbXo7oGepqKjYJEz3L
+Stake Pot Account Pubkey: stakepotaccountTSbnExoJKCoQ3uPBwGtvcSEoGi2Z
 Note: Task Id is basically the public key of taskStateInfoKeypair.json
 Success
 ```
