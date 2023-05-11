@@ -13,13 +13,13 @@ import ContentLink from "@site/src/components/contentLink";
 
 There are two ways to create new NFTs with Koii-X:
 
-1. Programmatically using our JavaScript Libraries
-2. Using the Drag and Drop Widget
-   - The [**Finnie Wallet**](../integrating-wallets/finnie-wallet) employs Drag and Drop and users can create NFTs directly from Finnie
+1. Programmatically using our JavaScript libraries
+2. Using the drag and drop Widget
+   - The [**Finnie wallet**](../integrating-wallets/finnie-wallet) employs drag and drop and users can create NFTs directly from Finnie
 
 ### Programmatically
 
-To create an Atomic NFT yourself, write your content in JavaScript and head on over to [**atomicnft.com**](https://atomicnft.com) for help with deploying it.&#x20;
+To create an atomic NFT yourself, write your content in JavaScript and head on over to [**atomicnft.com**](https://atomicnft.com) for help with deploying it.&#x20;
 
 <ContentLink title="Deploy an Atomic NFT" description="koii network" link="https://atomicnft.com/en/Example-deployment-script" imageLink="https://atomicnft.com/assets/images/icons/Koii_Icon.png" />
 

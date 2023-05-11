@@ -23,7 +23,7 @@ import Description from "@site/src/components/description";
     title="<p><strong>Deploy Compute Tasks to the Network</strong></p>"
     description=" <p>You can run your app on Koii's existing network, or help your community so you can build a network of your own.</p>"
     link="/develop/microservices-and-tasks/task-development-guide/"
-    linkText="Deploy your first task"
+    linkText="Deploy Your First Task"
     svgName="tasks"
     cardPerRow="2"
   />
@@ -39,7 +39,7 @@ import Description from "@site/src/components/description";
     title="<p><strong>Apply for Ecosystem Support</strong></p>"
     description=" <p>Building a new project alone can be hard, but we're here to help.</p>"
     link="../earning-koii/grants-program"
-    linkText="Get in touch today"
+    linkText="Get in Touch Today"
     svgName="impact"
     cardPerRow="2"
   />
@@ -47,7 +47,7 @@ import Description from "@site/src/components/description";
     title="<p><strong>Check Koii Task Template</strong></p>"
     description=" <p>We provide a Koii task template to help you quckliy understand the layout of task</p>"
     link="/develop/microservices-and-tasks/task-development-guide/k2-task-template/"
-    linkText="Check it out"
+    linkText="Check it Out"
     svgName="taskTemplate"
     cardPerRow="2"
   />
@@ -91,7 +91,7 @@ import Description from "@site/src/components/description";
   />
   <Card
     title="<p><strong>Designing Reputation-Based Systems</strong></p>"
-    description="<p>The key to stable decentralization is having a strong network of committed participants. CARP Apps are built around reputation.</p>"
+    description="<p>The key to stable decentralization is having a strong network of committed participants. CARP apps are built around reputation.</p>"
     link="/develop/microservices-and-tasks/using-reputation"
     linkText="Learn More about CARP"
     cardPerRow="3"

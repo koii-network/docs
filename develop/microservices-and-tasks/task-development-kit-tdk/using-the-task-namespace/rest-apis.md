@@ -7,13 +7,13 @@ sidebar_label: REST APIs
 
 # REST APIs
 
-[Express](https://expressjs.com/) is the most popular Node web framework, which also serves as an underlying library for other popular Node web frameworks. It offers mechanisms for:
+[Express](https://expressjs.com/) is the most popular node web framework, which also serves as an underlying library for other popular node web frameworks. It offers mechanisms for:
 
 - Write handlers for requests using various HTTP verbs at different URL paths/routes.
 - Establish standard web application settings, such as the port to use for connection and the location of templates used for response rendering.
 - Add additional request processing "middleware" at any point within the request handling pipeline.
 
-The Namespace object provides an `app` method for the configuration of an Express app.
+The namespace object provides an `app` method for the configuration of an Express app.
 
 ```javascript
 if (namespace.app) {
@@ -24,7 +24,7 @@ if (namespace.app) {
 }
 ```
 
-The `namespace.express()` method represents the Namespace wrapper over express app methods. It takes in 3 arguments:
+The `namespace.express()` method represents the namespace wrapper over express app methods. It takes in 3 arguments:
 
 - `method` — This is the HTTP method: `post`, `get`, `put`, or `delete`.
 - `path` — This is the endpoint path appended to `namespace`.

@@ -7,11 +7,11 @@ sidebar_label: Wallet Signatures
 
 # Wallet Signatures
 
-There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii Tokens on K2. The three wallet options are:
+There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii tokens on K2. The three wallet options are:
 
 ### 1. Main KOII Wallet
 
-As suggested by the name, this is a node operator's main wallet; it is responsible for funding the other wallets with KOII tokens and its signature key is necessary to pay transaction fees in a Koii Task.
+As suggested by the name, this is a node operator's main wallet; it is responsible for funding the other wallets with KOII tokens and its signature key is necessary to pay transaction fees in a Koii task.
 
 ### 2. Staking Wallet&#x20;
 
@@ -23,7 +23,7 @@ The distribution wallet is required if a node needs to submit a distribution lis
 
 ## How Can the Main Wallet Sign Transactions ?
 
-Yes! as you probably already guessed, the Namespace wrapper offers a method that injects the main system wallet as the first signer for making transaction fees payments. The `sendAndConfirmTransactionWrapper` method is in charge of this.
+Yes! as you probably already guessed, the namespace wrapper offers a method that injects the main system wallet as the first signer for making transaction fees payments. The `sendAndConfirmTransactionWrapper` method is in charge of this.
 
 ### Wallet Security
 

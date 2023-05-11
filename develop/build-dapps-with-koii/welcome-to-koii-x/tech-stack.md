@@ -20,11 +20,11 @@ Here is a list of some of the tools that can be used together when implementing 
 
 ### Task Nodes
 
-The basic element of the Koii Network is the ability to deploy scalable microservices, called **Tasks**, which can run on as many nodes as necessary to support your project.&#x20;
+The basic element of the Koii Network is the ability to deploy scalable microservices, called **tasks**, which can run on as many nodes as necessary to support your project.&#x20;
 
 ### K2 Settlement Layer
 
-The K2 Layer utilizes a fork of a Solana Node to provide high-speed transactions and tracks voting between Task Nodes. Unlike Solana, K2 stores its blockchain history on decentralized file storage networks instead of locally, providing a somewhat larger capacity. K2 also has higher Rent costs for data uploads, favoring storage alternatives and generally an option for small payloads or ideally Boolean votes to reduce loads.&#x20;
+The K2 layer utilizes a fork of a Solana node to provide high-speed transactions and tracks voting between task nodes. Unlike Solana, K2 stores its blockchain history on decentralized file storage networks instead of locally, providing a somewhat larger capacity. K2 also has higher **[rent](/develop/settlement-layer/rent)** costs for data uploads, favoring storage alternatives and generally an option for small payloads or ideally Boolean votes to reduce loads.&#x20;
 
 ### Templates from Koii
 
@@ -40,11 +40,11 @@ By default, packages are optimized to use storage networks rather than tradition
 - Store files on peer-to-peer networks that span the globe
 - Protect art and free speech with censorship-resistant ledgers
 - Pay anonymously with cryptocurrency
-- Supported: [Arweave](../../koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/), [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/) (Coming Soon)
+- Supported: [Arweave](../../koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/), [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/) (_coming soon_)
 
 ### Wallet Integrations
 
-The Koii-X Templates have been designed to support a number of wallets out of the box.
+The Koii-X templates have been designed to support a number of wallets out of the box.
 
 - [**Finnie Wallet**](https://koii.network/getFinnie) (ECDSA, RSA \~ Ethereum, Arweave )
 - [**Metamask**](https://metamask.io/) (Ethereum, Polygon)

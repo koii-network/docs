@@ -13,7 +13,7 @@ The `namespaceWrapper` class provides some methods that utilize levelDB's `Put(k
 
 ## storeSet
 
-This is the Namespace wrapper call for levelDB `Put` method
+This is the namespace wrapper call for levelDB `Put` method
 
 ```typescript
 async storeSet(key, value): Promise<void> {
@@ -31,7 +31,7 @@ console.log("ROUND OF TASK SET TO", round_task);
 
 ## storeGet
 
-This is the Namespace wrapper call for levelDB `Get` method
+This is the namespace wrapper call for levelDB `Get` method
 
 ```typescript
 async storeGet(key): Promise<string> {

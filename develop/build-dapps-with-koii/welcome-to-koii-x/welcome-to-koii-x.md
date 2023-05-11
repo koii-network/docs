@@ -21,12 +21,12 @@ Building decentralized applications is hard, but we've built tools to make it ea
 
 Some topics included in this section:
 
-- Easy Deployment
+- Easy deployment
 - Simple dApp templates
 - [**UI templates** ](/develop/build-dapps-with-koii/template-library/ui-template-layout/)
 - [**Wallet integration**](/develop/build-dapps-with-koii/integrating-wallets/)
-- Quick integration of Attention Tracking
-- Use of [**Atomic NFTs**](/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts) to ensure permanent ownership and storage of media.&#x20;
+- Quick integration of attention tracking
+- Use of [**atomic NFTs**](/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts) to ensure permanent ownership and storage of media.&#x20;
 
 This toolkit will help you take advantage of all that Koii has to offer:
 
