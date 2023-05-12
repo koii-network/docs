@@ -39,7 +39,7 @@ For help designing your task, you might want to try using the task organizer, wh
 
 <ContentLink title="Task Outline" link="https://www.figma.com/community/file/1220194939977550205" imageLink="https://static.figma.com/uploads/1a667ef53b7c4837049399d0593ffca39e0bec9e" description="Figma" bottomText="Copy this whiteboard to start brainstorming how your task will work." />
 
-Note: In most cases, the actual management of (3) and (4) above depends on [tracking digital signatures](/gradual-consensus) from participating nodes, community members, or outside oracle services. Reviewing these signatures is usually referred to as an [_audit_](/).
+Note: In most cases, the actual management of (3) and (4) above depends on [tracking digital signatures](/) from participating nodes, community members, or outside oracle services. Reviewing these signatures is usually referred to as an [_audit_](/).
 
 ![banner](./img/Gradual%20Consensus.svg)
 

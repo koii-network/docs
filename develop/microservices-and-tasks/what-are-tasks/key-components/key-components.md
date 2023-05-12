@@ -20,7 +20,7 @@ import Description from "@site/src/components/description";
 
 Every task is compiled into a single JavaScript executable file that contains all of the functions required to run the task. We go into detail throughout the tutorial. Three functions are required to be defined:
 
-- **Task function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](./key-components)
+- **Task function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](/)
 - **Audit function** — This function audits other participating nodes. [Learn More](/)
 - **Distribution function** — This function creates the distribution list and submits it on-chain. [Learn More](./key-components)
 
