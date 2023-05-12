@@ -81,6 +81,20 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "quickstart",
+        path: "quickstart",
+        routeBasePath: "quickstart/",
+        sidebarPath: require.resolve("./quickstartSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -236,6 +250,10 @@ const config = {
             to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
+          {
+            to: "/",
+            from: "/quickstart/building-with-koii",
+          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
@@ -345,8 +363,8 @@ const config = {
           },
           {
             label: "</> Quickstart",
-            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
-            activeBasePath: "develop",
+            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
+            activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },
