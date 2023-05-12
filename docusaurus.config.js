@@ -135,7 +135,7 @@ const config = {
             from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/",
+            to: "/develop/koii-task-101/what-are-tasks/",
             from: "/microservices-and-tasks/what-are-tasks",
           },
           {
@@ -167,7 +167,7 @@ const config = {
             from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
             from: "/microservices-and-tasks/gradual-consensus",
           },
           {
@@ -195,7 +195,7 @@ const config = {
             from: "/earning-koii/registering-content",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
             from: "/microservices-and-tasks/what-are-tasks/gradual-consensus",
           },
           {
@@ -211,7 +211,7 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/microservices-and-tasks/google-doodle-task",
+            to: "/develop/task-tutorials/google-doodle-task",
             from: "/microservices-and-tasks/google-doodle-task",
           },
           {
@@ -219,23 +219,23 @@ const config = {
             from: "/koii-software-toolkit-sdk/create-task-cli",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/executable-structure/",
+            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
             from: "/microservices-and-tasks/task-development-guide/executable-structure",
           },
           {
-            to: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
+            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
             from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
+            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
             from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/key-components",
+            to: "/develop/koii-task-101/what-are-tasks/key-components",
             from: "/microservices-and-tasks/what-are-tasks/key-components",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
+            to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
@@ -247,7 +247,7 @@ const config = {
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
           {
