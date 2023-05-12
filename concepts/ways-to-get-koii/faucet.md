@@ -15,7 +15,7 @@ There are two ways to airdrop some KOII into your wallets:
 
 ### Using Koii-CLI to run Airdrop
 
-You need to install [Koii CLI](/faucet) and prepare a wallet to do airdrop. After creating a wallet, you can fund your wallet with some Koii tokens.
+You need to install [Koii CLI](/) and prepare a wallet to do airdrop. After creating a wallet, you can fund your wallet with some Koii tokens.
 
 If you are building a task, make sure you are on the devnet and not testnet as there is a limit of the total koii you can airdrop on the testnet.
 

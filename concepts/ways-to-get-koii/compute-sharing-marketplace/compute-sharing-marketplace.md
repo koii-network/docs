@@ -14,7 +14,7 @@ import Description from "@site/src/components/description";
 
 <Description text='Application layer nodes are one of the most-needed commodities in Web3.' />
 
-Once a content creator or app developer [mines KOII](./proof-of-real-traffic/attention-mining), they have the option of staking their new tokens as collateral against either a task node or a K2 settlement node. Task nodes provide web app and microservice hosting and support an open and extensible consensus process known as [Gradual Consensus](/develop/microservices-and-tasks/what-are-tasks/gradual-consensus), while [Settlement Nodes](/develop/settlement-layer/k2-tick-tock-fast-blocks) provide fast payments using a storage-based Solana fork.&#x20;
+Once a content creator or app developer [mines KOII](/), they have the option of staking their new tokens as collateral against either a task node or a K2 settlement node. Task nodes provide web app and microservice hosting and support an open and extensible consensus process known as [Gradual Consensus](/develop/microservices-and-tasks/what-are-tasks/gradual-consensus), while [Settlement Nodes](/develop/settlement-layer/k2-tick-tock-fast-blocks) provide fast payments using a storage-based Solana fork.&#x20;
 
 Task nodes perform [automated microservices](/develop/microservices-and-tasks/what-are-tasks) for the network and receive bounty tokens for their work. As the task nodes work through their tasks, they post various signed payloads to storage layers or their personal API, and each node checks the work of the others before writing votes into the K2 layer and trigger the distribution of the bounty.&#x20;
 
