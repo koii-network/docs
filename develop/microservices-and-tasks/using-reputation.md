@@ -16,9 +16,9 @@ import Description from "@site/src/components/description";
   building a CARP."
 />
 
-Since the origins of the decentralized web, there has been an ongoing battle between trust and accountability, and the need to provide services and tools to billions of people, at a minimum cost. Many services have attempted to create global machines, that hope to encompass all possible scenarios in a singular data model, but this has so far been inadequate, and we've been waiting a long time for the supposed 'web3' to come to fruition.&#x20;
+Since the origins of the decentralized web, there has been an ongoing battle between trust and accountability, and the need to provide services and tools to billions of people, at a minimum cost. Many services have attempted to create global machines, that hope to encompass all possible scenarios in a singular data model, but this has so far been inadequate, and we've been waiting a long time for the supposed "web3" to come to fruition.&#x20;
 
-A **Compute, Attribution, and Reputation Protocol**, or CARP, blends together the benefits of a 'collateralized' (a.k.a. "Proof of Stake") model with the benefits of trust that are common in the current internet. When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gate keeping and monopolies that will soon control most of the information our species has created. Typically, these exist because of the reputation of the hosting provider, and the technology that these providers are able to build to entrench their relationship with customers. With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their own hosting to the network.&#x20;
+A **Compute, Attribution, and Reputation Protocol**, or CARP, blends together the benefits of a "collateralized" (a.k.a. "Proof of Stake") model with the benefits of trust that are common in the current internet. When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gate keeping and monopolies that will soon control most of the information our species has created. Typically, these exist because of the reputation of the hosting provider, and the technology that these providers are able to build to entrench their relationship with customers. With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their own hosting to the network.&#x20;
 
 ## Definition of CARP
 
@@ -56,4 +56,4 @@ Koii is a work in progress, so we welcome feedback, advice, and support.&#x20;
 
 Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.&#x20;
 
-Koii's native Decentralized IDs are expected to launch in the coming months, so stay tuned for more updates as we build more core reputation primatives for you to use in the [Task Namespace](task-development-kit-tdk/using-the-task-namespace/).
+Koii's native Decentralized IDs are expected to launch in the coming months, so stay tuned for more updates as we build more core reputation primatives for you to use in the [task namespace](task-development-kit-tdk/using-the-task-namespace/).

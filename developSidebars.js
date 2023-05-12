@@ -97,7 +97,7 @@ const sidebars = {
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/rest-apis",
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
+            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
             "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
