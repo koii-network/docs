@@ -1,0 +1,13 @@
+.card {
+  border-color: #4d3d8d26;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    border 0.2s ease-in-out, margin-top 0.2s ease-in-out, margin-bottom 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 15px 2px #4d3d8d23;
+  border: 1px solid #4d3d8d23;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

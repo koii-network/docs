@@ -355,19 +355,20 @@ const config = {
             className: "header-text",
           },
           {
-            label: "💻 Run a Node",
-            to: "/run-a-node/introduction/types-of-nodes",
-            activeBasePath: "run-a-node",
-            position: "left",
-            className: "header-text",
-          },
-          {
             label: "</> Quickstart",
             to: "/quickstart/finnie-for-devs/welcome-to-finnie",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },
+          {
+            label: "💻 Run a Node",
+            to: "/run-a-node/introduction/types-of-nodes",
+            activeBasePath: "run-a-node",
+            position: "left",
+            className: "header-text",
+          },
+
         ],
       },
       footer: {},
