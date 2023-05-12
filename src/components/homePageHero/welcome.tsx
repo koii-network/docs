@@ -2,7 +2,7 @@ import React from "react";
 
 const WelcomeComponent = () => {
   return (
-    <div className="mt-16 mb-10 mx-auto xl:max-w-[1300px] lg:max-w-[1024px] w-100 px-[2rem] xl:p-0">
+    <div className="mt-16 mb-10 mx-auto xl:max-w-[1300px] lg:max-w-[1024px] w-100 px-[2rem]">
       <p className="text-koii-purple-2 font-semibold text-[40px] leading-[48px]">
         Welcome to the new internet!
       </p>
