@@ -243,7 +243,7 @@ const config = {
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/finnie-for-devs/welcome-to-finnie",
+            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
