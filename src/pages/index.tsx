@@ -11,7 +11,7 @@ import HomeCard from "../components/homeCardSection";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className='flex justify-center'>
+    <header>
       <Hero />
     </header>
   );
