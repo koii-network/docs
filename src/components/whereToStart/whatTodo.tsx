@@ -8,7 +8,7 @@ export const WhatToDo = () => {
       </p>
       <div className='w-full flex flex-col md:flex-row gap-6'>
         <a
-          href='/concepts/koii-summary/welcome'
+          href='/concepts/introduction/welcome'
           className='w-full lg:max-w-[50%] lg:h-44 hover:drop-shadow-lg transition-all duration-300'
         >
           <img src='/img/new-web.svg' alt='Discord logo' className='w-full' />

@@ -4,12 +4,12 @@ export const exploreTopics = [
     items: [
       {
         title: "Impact & Philosophy",
-        link: "/concepts/koii-summary/impact",
+        link: "/concepts/introduction/impact",
         icon: "/img/explore-topics-icons/impact-philosophy.svg",
       },
       {
         title: "Social Tech",
-        link: "/concepts/koii-summary/social-tech",
+        link: "/concepts/introduction/social-tech",
         icon: "/img/explore-topics-icons/social-tech.svg",
       },
       {

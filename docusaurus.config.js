@@ -99,8 +99,8 @@ const config = {
       {
         redirects: [
           {
-            to: "/concepts/koii-summary/welcome",
-            from: "/koii-summary/readme",
+            to: "/concepts/introduction/welcome",
+            from: "/introduction/readme",
           },
           {
             to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
@@ -119,12 +119,12 @@ const config = {
             from: "/settlement-layer/running-a-k2-node",
           },
           {
-            to: "/concepts/koii-summary/tools",
-            from: "/koii-summary/tools",
+            to: "/concepts/introduction/tools",
+            from: "/introduction/tools",
           },
           {
-            to: "/concepts/koii-summary/impact",
-            from: "/koii-summary/impact",
+            to: "/concepts/introduction/impact",
+            from: "/introduction/impact",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
@@ -147,8 +147,8 @@ const config = {
             from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
           },
           {
-            to: "/concepts/koii-summary/tools",
-            from: "/koii-summary/tools",
+            to: "/concepts/introduction/tools",
+            from: "/introduction/tools",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
@@ -171,8 +171,8 @@ const config = {
             from: "/microservices-and-tasks/gradual-consensus",
           },
           {
-            to: "/concepts/koii-summary/philosophy",
-            from: "/koii-summary/philosophy",
+            to: "/concepts/introduction/philosophy",
+            from: "/introduction/philosophy",
           },
           {
             to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
@@ -253,7 +253,7 @@ const config = {
           {
             to: "/",
             from: "/quickstart/building-with-koii",
-          }
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
@@ -342,7 +342,7 @@ const config = {
         items: [
           {
             label: "📖 Learn",
-            to: "/concepts/koii-summary/welcome",
+            to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
