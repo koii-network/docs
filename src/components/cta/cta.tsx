@@ -12,7 +12,7 @@ export const Cta = () => {
           }}
         >
           <img
-            src={"/img/What_is_the_Koii_SDK_.svg"}
+            src={"/img/build-the-impossible.svg"}
             className='w-full'
             role='img'
           />
@@ -33,11 +33,7 @@ export const Cta = () => {
             textDecoration: "no-underline",
           }}
         >
-          <img
-            src={"/img/Running_a_K2_Node.svg"}
-            className='w-full'
-            role='img'
-          />
+          <img src={"/img/run-a-task-node.svg"} className='w-full' role='img' />
           <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-lg text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold mb-2.5'>
               Run a Node
