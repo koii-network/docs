@@ -9,6 +9,8 @@ import Description from "@site/src/components/description";
 
 # Welcome to Finnie
 
+![Banner](./img/Welcome%20to%20finnie.svg)
+
 <Description
   text="Your one-stop shop for cross-chain user-engagement."
 />
