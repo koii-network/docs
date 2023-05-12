@@ -7,9 +7,20 @@ sidebar_label: Create Task CLI
 
 # Create Task CLI
 
-![Banner](./img/DEV_koii_task.png)
+![Banner](./img/Create%20Task%20CLI.svg)
 
-We provide create-task-cli to help you easily create and deploy your task.
+We provide `create-task-cli` tool for task creators to easily:
+- Create a new task
+- Update existing task
+- Activate task
+- Claim reward
+- Fund task with more KOII
+- Withdraw staked funds from task
+- Upload assets to IPFS
+
+
+![Image](./img/DEV%20koii%20task%20for%20docs.svg)
+
 
 ## Install Create-Task-CLI
 
