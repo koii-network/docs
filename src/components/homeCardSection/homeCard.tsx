@@ -23,9 +23,9 @@ const HomeCard = ({ title, link }: CardItem) => {
 
 const HomeCards = ({ title, description, items }: Cards) => {
   return (
-    <div className={"my-10"}>
+    <div>
       <p className="font-semibold text-[40px] text-koii-purple-2">{title}</p>
-      <p className="text-base   ">{description}</p>
+      <p className="text-base">{description}</p>
 
       <div className={"grid grid-cols-2 lg:grid-cols-4 gap-6"}>
         {items.map((item, indx) => (

@@ -2,11 +2,11 @@ import React from "react";
 
 const WelcomeComponent = () => {
   return (
-    <div className='md:w-full flex justify-center flex-col text-center'>
-      <p className='text-koii-purple-2 font-semibold laptop-sm:text-[34px] lg:text-[40px] text-[40px] leading-[48px]'>
+    <div className="mt-20 mb-10 mx-auto xl:max-w-[1300px] lg:max-w-[1024px] w-100">
+      <p className="text-koii-purple-2 font-semibold laptop-sm:text-[34px] lg:text-[50px] text-[40px] leading-[48px]">
         Welcome to the new internet!
       </p>
-      <p className='text-graphite  laptop-sm:text-[20px] lg:text-[24px] text-[24px] leading-[34px]'>
+      <p className="text-graphite text-lg leading-[34px]">
         We built Koii to make the internet better for everyone. How will you
         push the web forward?
       </p>
