@@ -5,7 +5,7 @@ export const Cta = () => {
     <div className='w-full px-4 md:px-8 max-w-[1350px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-24'>
       <div className='w-full flex flex-col md:flex-row gap-6'>
         <a
-          href='/concepts/koii-summary/welcome'
+          href='/concepts/introduction/welcome'
           className='w-full lg:max-w-[50%] bg-white no-underline shadow-lg hover:drop-shadow-lg transition-all duration-300 cursor-pointer'
           style={{
             textDecoration: "no-underline",
@@ -27,7 +27,7 @@ export const Cta = () => {
           </button>
         </a>
         <a
-          href='/concepts/koii-summary/welcome'
+          href='/concepts/introduction/welcome'
           className='w-full lg:max-w-[50%] bg-white no-underline shadow-lg hover:drop-shadow-lg transition-all duration-300 cursor-pointer'
           style={{
             textDecoration: "no-underline",

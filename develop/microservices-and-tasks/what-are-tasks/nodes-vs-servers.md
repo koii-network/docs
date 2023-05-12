@@ -18,7 +18,7 @@ import Description from "@site/src/components/description";
 
 ## Why Deploy to Lots of Computers?
 
-Besides the [philosophical drive ](/concepts/koii-summary/philosophy)to include more people in the wealth creation of the web, there are a number of reasons that new web startups might want to consider decentralization in their roadmap.&#x20;
+Besides the [philosophical drive ](/concepts/introduction/philosophy)to include more people in the wealth creation of the web, there are a number of reasons that new web startups might want to consider decentralization in their roadmap.&#x20;
 
 1. **Increased Security**<br/>
    Centralized ownership and control creates vulnerabilities by introducing unnecessary single points of failure.
