@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import styles from "./cta.module.css";
 
 export const Cta = () => {
   return (
@@ -6,17 +7,17 @@ export const Cta = () => {
       <div className='w-full flex flex-col md:flex-row gap-6'>
         <a
           href='/concepts/introduction/welcome'
-          className='w-full lg:max-w-[50%] bg-white no-underline shadow-lg hover:drop-shadow-lg transition-all duration-300 cursor-pointer'
+          className={'w-full lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]' + " " + styles.card}
           style={{
             textDecoration: "no-underline",
           }}
         >
           <img
             src={"/img/build-the-impossible.svg"}
-            className='w-full'
+            className='w-full rounded-t-[10px]'
             role='img'
           />
-          <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
+          <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline no-underline cursor-pointer border-none'>
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0'>
               Build on Koii Nodes
             </p>
@@ -25,12 +26,12 @@ export const Cta = () => {
         </a>
         <a
           href='/concepts/introduction/welcome'
-          className='w-full lg:max-w-[50%] bg-white no-underline shadow-lg hover:drop-shadow-lg transition-all duration-300 cursor-pointer'
+          className={'w-full lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]' + " " + styles.card}
           style={{
             textDecoration: "no-underline",
           }}
         >
-          <img src={"/img/run-a-task-node.svg"} className='w-full' role='img' />
+          <img src={"/img/run-a-task-node.svg"} className='w-full rounded-t-[10px]' role='img' />
           <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 '>
               Run a Node

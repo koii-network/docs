@@ -23,7 +23,7 @@ const HomeCard = ({ title, link }: CardItem) => {
 
 const HomeCards = ({ title, description, items }: Cards) => {
   return (
-    <div className="mb-10">
+    <div className="lg:mb-10">
       <p className="font-semibold text-[40px] text-koii-purple-2 m-0 mb-4">{title}</p>
       <p className="text-base mb-6">{description}</p>
 
