@@ -23,8 +23,8 @@ const HomeCard = ({ title, link }: CardItem) => {
 
 const HomeCards = ({ title, description, items }: Cards) => {
   return (
-    <div className="mb-6">
-      <p className="font-semibold text-[40px] text-koii-purple-2 m-0">{title}</p>
+    <div className="mb-10">
+      <p className="font-semibold text-[40px] text-koii-purple-2 m-0 mb-4">{title}</p>
       <p className="text-base mb-6">{description}</p>
 
       <div className={"grid grid-cols-2 lg:grid-cols-4 gap-6"}>
