@@ -35,28 +35,8 @@ const sidebars = {
       ],
     },
     {
-      type: "category",
-      label: "Running a K2 Node",
-      link: {
-        type: "doc",
-        id: "settlement-layer/running-a-k2-node/running-a-k2-node",
-      },
-      collapsed: true,
-      items: [
-        "settlement-layer/running-a-k2-node/system-requirements",
-        "settlement-layer/running-a-k2-node/system-setup",
-        "settlement-layer/running-a-k2-node/validator-setup",
-        
-
-      ],
-    },
-    "settlement-layer/creating-tokens-on-k2",
-    "settlement-layer/block-explorer",
-    "settlement-layer/wallets",
-    "settlement-layer/rent",
-    {
       type: "html",
-      value: "Microservices & Tasks",
+      value: "Koii Tasks 101",
       className: "sidebar-title top-margin",
     },
     {
@@ -71,10 +51,33 @@ const sidebars = {
         "microservices-and-tasks/what-are-tasks/nodes-vs-servers",
         "microservices-and-tasks/what-are-tasks/gradual-consensus",
         "microservices-and-tasks/what-are-tasks/runtime-environment",
-        "microservices-and-tasks/what-are-tasks/key-components",
-        "microservices-and-tasks/what-are-tasks/staking-and-voting",
-        "microservices-and-tasks/what-are-tasks/what-are-audits",
+        {
+          type: "category",
+          label: "Key Components",
+          link: {
+            type: "doc",
+            id: "microservices-and-tasks/what-are-tasks/key-components/key-components",
+          },
+          collapsed: true,
+          items: [
+            "microservices-and-tasks/what-are-tasks/key-components/database-sharding",
+            "microservices-and-tasks/what-are-tasks/key-components/node-to-node-sync",
+          ],
+        },
       ],
+    },
+    {
+      type: "html",
+      value: "Designing Tasks",
+      className: "sidebar-title top-margin",
+    },
+    "designing-tasks/staking-and-voting",
+    "designing-tasks/securing-task",
+    "designing-tasks/using-reputation",
+    {
+      type: "html",
+      value: "Write a Koii Task",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
@@ -176,6 +179,11 @@ const sidebars = {
       ],
     },
     {
+      type: "html",
+      value: "Task Tutorials",
+      className: "sidebar-title top-margin",
+    },
+    {
       type: "category",
       label: "Example Task: Google Doodle",
       link: {
@@ -207,97 +215,25 @@ const sidebars = {
         "microservices-and-tasks/linktree-task/auth-list",
       ],
     },
-    "microservices-and-tasks/run-a-task-node",
-    "microservices-and-tasks/using-reputation",
-    {
-      type: "html",
-      value: "Koii Software Toolkit (SDK)",
-      className: "sidebar-title top-margin",
-    },
-    "koii-software-toolkit-sdk/what-is-the-koii-sdk",
-    "koii-software-toolkit-sdk/koii-javascript-api",
-    "koii-software-toolkit-sdk/using-the-cli",
-    "koii-software-toolkit-sdk/task-node-cli",
-    "koii-software-toolkit-sdk/create-task-cli",
-    "koii-software-toolkit-sdk/wallet-and-faucet",
     {
       type: "category",
-      label: "Wallet Functions",
+      label: "Example Task: Todo",
       link: {
         type: "doc",
-        id: "koii-software-toolkit-sdk/wallet-functions/wallet-functions",
+        id: "microservices-and-tasks/to-do/to-do",
       },
       collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/wallet-functions/load-wallet",
-        "koii-software-toolkit-sdk/wallet-functions/generate-wallet",
-      ],
+      items: [],
     },
     {
       type: "category",
-      label: "Register Content",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/register-content/register-content",
-      },
+      label: "Example Task: Scrappers",
       collapsed: true,
-      items: ["koii-software-toolkit-sdk/register-content/burn-koii-attention"],
-    },
-    {
-      type: "category",
-      label: "Basic Utility Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
-      },
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Koii State",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
-          ],
-        },
-        {
-          type: "category",
-          label: "NFTs",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/nfts/nfts",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
-          ],
-        },
-        {
-          type: "category",
-          label: "Arweave And General Utility",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/arweave-and-general-utility",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
-          ],
-        },
-      ],
+      items: ["microservices-and-tasks/scrapers/twitter"],
     },
     {
       type: "html",
-      value: "Build Dapps with Koii",
+      value: "Use Koii-X dApp Templates",
       className: "sidebar-title top-margin",
     },
     {
@@ -419,11 +355,23 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "Support",
+      value: "Attention Mining",
       className: "sidebar-title top-margin",
     },
-    "support/community-forums",
-    "support/contact-support",
+    {
+      type: "category",
+      label: "Proof Of Real Traffic(PoRT)",
+      link: {
+        type: "doc",
+        id: "attention-mining/proof-of-real-traffic/proof-of-real-traffic",
+      },
+      collapsed: true,
+      items: [
+        "attention-mining/proof-of-real-traffic/attention-mining",
+        "attention-mining/proof-of-real-traffic/attention-mining",
+        "attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+      ],
+    },
   ],
 };
 

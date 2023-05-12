@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Key Components
 
-![banner](../img/Key%20components.svg)
+![banner](../../img/Key%20components.svg)
 
 <Description
   text="When a task is created, there are two key components that must be uploaded to
@@ -21,7 +21,7 @@ import Description from "@site/src/components/description";
 Every task is compiled into a single JavaScript executable file that contains all of the functions required to run the task. We go into detail throughout the tutorial. Three functions are required to be defined:
 
 - **Task function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](./key-components)
-- **Audit function** — This function audits other participating nodes. [Learn More](../task-development-guide/executable-structure/validate-node)
+- **Audit function** — This function audits other participating nodes. [Learn More](/)
 - **Distribution function** — This function creates the distribution list and submits it on-chain. [Learn More](./key-components)
 
 ## Metadata
@@ -52,7 +52,7 @@ There are two types of task metadata:
 
 1. Data that is stored on an IPFS metadata file - which is done on task creation
 
-   - Task manager — K2 wallet address of [task creator](../../koii-software-toolkit-sdk/using-the-cli.md#create-a-koii-wallet).
+   - Task manager — K2 wallet address of [task creator](/).
    - Task description — An optional field for adding a detailed description of the task.
    - Task name — Name of the task.
 

@@ -26,12 +26,11 @@ const sidebars = {
     {
       type: "html",
       value: "The $KOII Token",
-      className: "sidebar-title",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
       label: "Tokenomics",
-      className: "top-margin",
       link: {
         type: "doc",
         id: "the-koii-token/network-economics",
