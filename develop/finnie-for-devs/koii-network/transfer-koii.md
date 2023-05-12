@@ -14,7 +14,7 @@ Interact with the contract to transfer KOII tokens from one wallet to another.
 - qty `<number>` - Amount of tokens to transfer
 - target `<string>` - Receiver's wallet address
 - token `<string>` - The token to be transferred (KOII in this case)
-- (optional) reward: string Custom reward for smartweave transaction
+- _[Optional]_ reward `<string>` - Custom reward for smartweave transaction
 
 :::info
 The same function can be used to [**transfer AR tokens**](./transfer-ar) from one wallet to another, we just need to change the token type in the third parameter.

@@ -15,7 +15,7 @@ To start mining Koii, there are two options:
 
 ### **1. Use the Finnie Wallet to Upload Content**
 
-The Finnie Wallet is Koii's native Browser Extension, and supports drag and drop NFT minting, which can be used to turn any file on your computer into a revenue-generating asset that mines KOII tokens every time it's viewed.
+The Finnie wallet is Koii's native browser extension, and supports drag and drop NFT minting, which can be used to turn any file on your computer into a revenue-generating asset that mines KOII tokens every time it's viewed.
 
 Just drag, drop, and share to start tracking views and earning KOII.
 

@@ -16,7 +16,7 @@ import Description from "@site/src/components/description";
 
 This API allows interaction with files on a user's local device or on a user-accessible network file system. The core functionality of this API includes reading files, writing or saving files, and accessing the directory structure.
 
-Most interaction with files and directories is accomplished with `fsPromises` methods from the Namespace wrapper class. The available `fsPromises` methods on the Namespace wrapper class include: `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream`.
+Most interaction with files and directories is accomplished with `fsPromises` methods from the namespace wrapper class. The available `fsPromises` methods on the namespace wrapper class include: `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream`.
 
 ### fs Method
 

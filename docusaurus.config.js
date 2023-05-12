@@ -218,6 +218,10 @@ const config = {
             to: "/develop/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
+          {
+            to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
+            from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {

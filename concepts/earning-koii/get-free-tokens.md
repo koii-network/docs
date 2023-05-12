@@ -11,11 +11,11 @@ import ContentLink from "@site/src/components/contentLink";
 
 ![PoRT](./img/Get%20Free%20Tokens.svg)
 
-While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii Compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.&#x20;
+While Koii is still in testnet, there are lots of ways to get involved, and the Koii foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.&#x20;
 
 ### Testnet Airdops
 
-If you're a developer hoping to build on Koii, you can use the CLI to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
+If you're a developer hoping to build on Koii, you can use the [CLI](/develop/koii-software-toolkit-sdk/using-the-cli) to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
 
 **Note:** These tokens will not be transferred to mainnet after launch, but are great for trying things out!
 
@@ -27,9 +27,9 @@ If you're a developer hoping to build on Koii, you can use the CLI to airdrop to
 
 ### The Faucet
 
-The Koii Foundation distributes free tokens when new users join. Each new user can earn tokens for connecting social media accounts, a phone number, or an email to their Koii ID.
+The Koii foundation distributes free tokens when new users join. Each new user can earn tokens for connecting social media accounts, a phone number, or an email to their Koii ID.
 
-Visit the Faucet below to start building your Koii Identity and get some free tokens.
+Visit the faucet below to start building your Koii identity and get some free tokens.
 
 <ContentLink
   title='Faucet | Koii Network'
@@ -39,12 +39,10 @@ Visit the Faucet below to start building your Koii Identity and get some free to
 
 ### Community Quests
 
-The community team needs help spreading the word. Join the Koii Discord to complete quests, and get rewarded for your work. You can also become an Ambassador and help grow the program!
+The community team needs help spreading the word. Join the Koii discord to complete quests, and get rewarded for your work. You can also become an **ambassador** and help grow the program!
 
 <ContentLink
   title='How You can help with Koii'
   link='https://blog.koii.network/How-YOU-can-help-Koii/'
   description='Koii'
 />
-
-###
