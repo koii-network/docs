@@ -10,7 +10,7 @@ import HubspotForm from 'react-hubspot-form';
 # Grants Program
 ![banner](img/Grants%20Program.svg)
 
-The Koii Foundation also gives grants to developers and anyone who wants to build new and more rewarding online experiences.&#x20;
+The Koii foundation also gives grants to developers and anyone who wants to build new and more rewarding online experiences.&#x20;
 
 Grants are given for helping build core technology, proofs of concept for novel applications of the technology, or other initiatives that make the network grow faster or stronger.
 

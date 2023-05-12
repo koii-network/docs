@@ -6,6 +6,7 @@ import { Hero } from "@site/src/components/homePageHero";
 import { WhereToStart } from "../components/whereToStart";
 import { Discord } from "../components/discord";
 import { Cta } from "../components/cta";
+import HomeCard from "../components/homeCardSection";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -25,6 +26,7 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <Cta />
+      <HomeCard />
       <ExploreTopics />
       <WhereToStart />
       <Discord />

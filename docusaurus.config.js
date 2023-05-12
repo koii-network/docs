@@ -67,6 +67,20 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "run-a-node",
+        path: "run-a-node",
+        routeBasePath: "run-a-node/",
+        sidebarPath: require.resolve("./runANodeSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -218,6 +232,10 @@ const config = {
             to: "/develop/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
+          {
+            to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
+            from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
@@ -312,7 +330,21 @@ const config = {
             className: "header-text",
           },
           {
-            label: "💻 Build",
+            label: "🏗️ Build on Koii",
+            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "💻 Run a Node",
+            to: "/run-a-node/introduction/types-of-nodes",
+            activeBasePath: "run-a-node",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "</> Quickstart",
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
             activeBasePath: "develop",
             position: "left",

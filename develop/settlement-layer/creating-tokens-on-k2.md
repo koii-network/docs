@@ -9,7 +9,7 @@ sidebar_label: Creating Tokens on K2
 
 ![banner](img/Creating%20Tokens%20on%20K2.svg)
 
-The [Solana Program Library](https://spl.solana.com/) (SPL) is a collection of on-chain programs targeting the [Sealevel parallel runtime](https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192). One of the SPL programs is the [Solana Token Program](https://spl.solana.com/token) which defines a common implementation for Fungible and Non-Fungible tokens. Using the Solana Token Program simplifies token management.
+The [Solana Program Library](https://spl.solana.com/) (SPL) is a collection of on-chain programs targeting the [Sealevel parallel runtime](https://medium.com/solana-labs/sealevel-parallel-processing-thousands-of-smart-contracts-d814b378192). One of the SPL programs is the [Solana Token Program](https://spl.solana.com/token) which defines a common implementation for **Fungible** and **Non-Fungible** tokens. Using the Solana Token Program simplifies token management.
 
 To interact with a Solana node inside a JavaScript application, use the [Solana-web3.js](https://github.com/solana-labs/solana-web3.js) library, which gives a convenient interface for the RPC methods. Full documentation of the library can be found [here](https://solana-labs.github.io/solana-web3.js/).
 
@@ -29,9 +29,9 @@ yarn add @solana/spl-token @_koi/web3.js
 
 ## Token Contract
 
-Fungible tokens are non-unique divisible tokens created on a blockchain. On Solana, fungible tokens are referred to as _**SPL-tokens**_. If you intend to build a token on K2 either for governance, staking, or as a reward system for node operators, the Solana Token Program can be used to create and manage SPL tokens.
+Fungible tokens are non-unique divisible tokens created on a blockchain. On Solana, fungible tokens are referred to as _**SPL-tokens**_. If you intend to build a token on K2 either for governance, staking, or as a reward system for node operators, the Solana token program can be used to create and manage SPL tokens.
 
-To create a token, instructions are sent to the Token Program, including assigning which keypair has the authority to mint tokens. This creates a new data account (the Mint acct). Each different SPL token has only one mint account associated with it. The program owner of the mint account is set to the Solana token program. Data stored in the account includes:
+To create a token, instructions are sent to the token program, including assigning which keypair has the authority to mint tokens. This creates a new data account (the Mint acct). Each different SPL token has only one mint account associated with it. The program owner of the mint account is set to the Solana token program. Data stored in the account includes:
 
 - Mint account's address
 - The current number of tokens that have been minted

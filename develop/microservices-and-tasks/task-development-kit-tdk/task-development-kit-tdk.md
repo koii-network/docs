@@ -11,13 +11,13 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Task Development Kit (TDK)
 
-![banner](../img//Task%20Development%20Kit%20(TDK).svg)
+![banner](../img/Task%20Development%20Kit%20(TDK).svg)
 
-The following sections detail the use of Koii's Task Development Kit, which provides key components that will make it much easier to get started.
+The following sections detail the use of Koii's task development Kit, which provides key components that will make it much easier to get started.
 
 ## The Task Namespace
 
-When the [Executable](../what-are-tasks/key-components) runs inside of a Task Node, it will have access to a number of supported built-in functions for interacting with blockchains, preparing proofs, and generating cryptographic signatures.&#x20;
+When the [**executable**](../what-are-tasks/key-components) runs inside of a task node, it will have access to a number of supported built-in functions for interacting with blockchains, preparing proofs, and generating cryptographic signatures.&#x20;
 
 <ContentLink title="Using the Task Namespace" link="./using-the-task-namespace" iconType="copy"/>
 

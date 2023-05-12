@@ -15,19 +15,19 @@ Koii is a decentralized protocol, meaning that anyone is free to fork the code a
 
 ### Token Generation
 
-At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, K2 Settlement Layer nodes, and Task nodes that run the attention game. Attention mining receives 80% of new tokens, K2 Settlement Layer nodes receive 10%, and Task nodes receive 10%. Get more information on [Attention Mining here](./proof-of-real-traffic/attention-mining).
+At mainnet launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of 3.65% will be issued annually, every 12 hours, at a rate of 0.01% per day, or 0.005% per 12 hour window. The newly generated tokens are split between attention mining, K2 settlement layer nodes, and task nodes that run the attention game. Attention mining receives 80% of new tokens, K2 settlement layer nodes receive 10%, and task nodes receive 10%. Get more information on [Attention mining here](./proof-of-real-traffic/attention-mining).
 
 ![Token Generation](./img/Token%20Generation.svg)
 
 ### Supply Reduction
 
-While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, continuous inflation benefits the network by onboarding new node operators who fulfill Tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
+While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, continuous inflation benefits the network by onboarding new node operators who fulfill tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
 
 ![banner](img/Supply%20Reduction%402x.svg)
 
-The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and sophisticated, easy to use tooling. Each time that a new project launches on Koii, a Bounty must be locked to pay for hosting from Koii’s Compute Marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the Task, it must stake tokens as collateral, locking up further supply.&#x20;
+The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and sophisticated, easy to use tooling. Each time that a new project launches on Koii, a *bounty* must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
 
-At steady state, the network is designed to lock up tokens in Staking and Bounties, exceeding those released by the inflation, which should reduce the available supply over time.
+At steady state, the network is designed to lock up tokens in staking and bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
 ![Supply Reduction](./img/Supply%20Reduction%202%402x.svg)
 
