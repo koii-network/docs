@@ -7,7 +7,7 @@ sidebar_label: Keys and Secrets
 
 # Keys and Secrets
 
-When a Task Node executes tasks, some keys and secrets are injected and made accessible to the task executable by using the `process.argv()` property. These keys and secrets are command-line arguments that have been passed into the NodeJS [Child process](https://nodejs.org/api/child_process.html).
+When a task node executes tasks, some keys and secrets are injected and made accessible to the task executable by using the `process.argv()` property. These keys and secrets are command-line arguments that have been passed into the NodeJS [child process](https://nodejs.org/api/child_process.html).
 
 These keys and secrets include:
 
@@ -37,7 +37,7 @@ The `fork()` method accepts the following three arguments:
 fork("file.js", ["argument"], options);
 ```
 
-The second argument passed to the `fork()` method will be accepted by the child process as command-line arguments, which you can retrieve in a Koii Task using the `process.argv()` property:
+The second argument passed to the `fork()` method will be accepted by the child process as command-line arguments, which you can retrieve in a Koii task using the `process.argv()` property:
 
 ```javascript
 const TASK_NAME = process.argv[2];

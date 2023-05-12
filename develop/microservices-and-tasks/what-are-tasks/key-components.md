@@ -28,7 +28,7 @@ Every task is compiled into a single JavaScript executable file that contains al
 
 The task metadata is structured data that contains information about a Koii task. Node operators can easily learn more details about a specific task by looking at its metadata.&#x20;
 
-Task Metadata Sample:
+Task metadata sample:
 
 ```javascript
 {
@@ -50,10 +50,10 @@ Task Metadata Sample:
 
 There are two types of task metadata:
 
-1. Data that is stored in an IPFS Metadata file - which is done on task creation
+1. Data that is stored on an IPFS metadata file - which is done on task creation
 
-   - Task Manager — K2 wallet address of [task creator](../../koii-software-toolkit-sdk/using-the-cli.md#create-a-koii-wallet).
+   - Task manager — K2 wallet address of [task creator](../../koii-software-toolkit-sdk/using-the-cli.md#create-a-koii-wallet).
    - Task description — An optional field for adding a detailed description of the task.
-   - Task Name — Name of the task.
+   - Task name — Name of the task.
 
 2. Data that are stored on K2 - updated over time and reflect the latest state of the task

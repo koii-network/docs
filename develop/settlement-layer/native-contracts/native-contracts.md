@@ -15,5 +15,5 @@ Here are the articles in this section:
 
 <div className="content-container">
 <ContentLink title="The Attention Game" link="./the-attention-game"/>
-<ContentLink title="The task Contract" link="./the-task-contract"/>
+<ContentLink title="The Task Contract" link="./the-task-contract"/>
 </div>
