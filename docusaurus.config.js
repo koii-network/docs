@@ -243,7 +243,7 @@ const config = {
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/finnie-for-devs/welcome-to-finnie",
+            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
@@ -251,7 +251,7 @@ const config = {
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
           {
-            to: "/",
+            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
             from: "/quickstart/building-with-koii",
           },
         ],
