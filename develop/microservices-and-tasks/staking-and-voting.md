@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Staking and Voting
 
-![banner](../img/Staking%20and%20Voting.svg)
+![banner](./img/Staking%20and%20Voting.svg)
 
 <Description
   text="Building trustless trust requires simple rules for participation."

@@ -85,6 +85,7 @@ const sidebars = {
     "community/open-source-contributions",
     "community/community-forums",
     "community/contact-us",
+    "glossary",
   ],
 };
 
