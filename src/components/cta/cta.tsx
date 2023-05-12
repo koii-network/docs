@@ -35,7 +35,7 @@ export const Cta = () => {
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold mb-2.5'>
               Run a Node
             </p>
-            <p>Rent your device to earn $Koii</p>
+            <p>Rent your device to earn $KOII</p>
           </button>
         </a>
       </div>
