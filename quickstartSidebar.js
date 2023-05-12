@@ -70,6 +70,48 @@ const sidebars = {
       collapsed: true,
       items: [],
     },
+    {
+      type: "html",
+      value: "Command Line Tool",
+      className: "sidebar-title top-margin",
+    },
+    {
+      type: "category",
+      label: "Koii Command Line Tool",
+      link: {
+        type: "generated-index",
+        description:
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stake using the Koii command-line tools.Here are the articles in this section:",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/koii-cli/install-cli",
+        "command-line-tool/koii-cli/create-wallet",
+        "command-line-tool/koii-cli/connect-cluster",
+        "command-line-tool/koii-cli/send-and-receive-tokens",
+      ],
+    },
+    "command-line-tool/task-node-cli",
+    "command-line-tool/create-task-cli",
+    "command-line-tool/cli-reference",
+
+    {
+      type: "html",
+      value: "Join the Pirate Ship",
+      className: "sidebar-title top-margin",
+    },
+    "pirate-ship/founder-support-program",
+    "pirate-ship/ambassador-program",
+    "pirate-ship/contact-us",
+
+    {
+      type: "html",
+      value: "Get a Grant",
+      className: "sidebar-title top-margin",
+    },
+    "get-a-grant/build-an-app",
+    "get-a-grant/integrate-existing-product",
+    "get-a-grant/koii-to-the-world",
   ],
 };
 
