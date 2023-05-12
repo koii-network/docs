@@ -1,0 +1,16 @@
+.homeCardLink {
+  text-decoration: none !important;
+}
+
+.homeCard {
+  border: 1px solid #4d3d8d5e;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+
+.homeCard:hover {
+  box-shadow: 1px 1px 5px 1px #4d3d8d3d;
+  border: 1px solid #4d3d8d23;
+}
