@@ -5,6 +5,7 @@ import { ExploreTopics } from "@site/src/components/exploreTopics";
 import { Hero } from "@site/src/components/homePageHero";
 import { WhereToStart } from "../components/whereToStart";
 import { Discord } from "../components/discord";
+import { Cta } from "../components/cta";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,8 +19,12 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description='Koii is Web3, for everyone.'>
+    <Layout
+      title={`${siteConfig.title}`}
+      description='Koii is Web3, for everyone.'
+    >
       <HomepageHeader />
+      <Cta />
       <ExploreTopics />
       <WhereToStart />
       <Discord />
