@@ -8,6 +8,7 @@ sidebar_label: KOII Faucet
 import ContentLink from "@site/src/components/contentLink";
 
 # KOII Faucet
+![Banner](./img/Koii%20Faucet.svg)
 
 There are two ways to airdrop some KOII into your wallets:
 

@@ -11,9 +11,9 @@ sidebar_label: Koii Bridges
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-A Koii Bridge allows you to migrate your NFTs to and from different blockchains. Currently, we only support Ethereum bridging, but other chains are in development. You can find more example functions at [**atomicnft.com**](https://atomicnft.com/).&#x20;
+A **Koii bridge** allows you to migrate your NFTs to and from different blockchains. Currently, we only support Ethereum bridging, but other chains are in development. You can find more example functions at [**atomicnft.com**](https://atomicnft.com/).&#x20;
 
-**Disclaimer:** Currently the bridge is running in Beta only, and is not fully decentralized. Although it has not had any issues so far, we recommend using it with caution. Stay tuned for more information on Validator Rings as we move towards a fully decentralized version.
+**Disclaimer:** Currently the bridge is running in Beta only, and is not fully decentralized. Although it has not had any issues so far, we recommend using it with caution. Stay tuned for more information on **Validator Rings** as we move towards a fully decentralized version.
 
 ### Description <a href="#description" id="description"></a>
 

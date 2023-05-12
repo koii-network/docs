@@ -7,6 +7,8 @@ sidebar_label: Register Content
 
 # Register Content
 
+![Banner](../img/Register%20Content.svg)
+
 Registering content on Arweave to the attention contract is an essential step to earning Attention Rewards from your content.&#x20;
 
 :::info

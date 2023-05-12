@@ -10,13 +10,13 @@ sidebar_label: Runtime Environment
 
 ## Where Do Tasks Live?
 
-While tasks run on Task Nodes, the data behind them is deliberately spread across multiple systems to ensure cost optimization and maximum performance.&#x20;
+While tasks run on task nodes, the data behind them is deliberately spread across multiple systems to ensure cost optimization and maximum performance.&#x20;
 
 ### Incentives and Proofs (via a Blockchain Layer)
 
-The core of the tasks architecture is the reward structure, which is contained in the [Settlement Layer](../../settlement-layer/k2-tick-tock-fast-blocks.md). The Settlement Layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
+The core of the tasks architecture is the reward structure, which is contained in the [settlement layer](../../settlement-layer/k2-tick-tock-fast-blocks.md). The settlement layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
 
-When a task executes, each Task Node [submits a proof once per round](gradual-consensus), which usually references an IPFS CID with more information to support the node's work.&#x20;
+When a task executes, each task node [submits a proof once per round](gradual-consensus), which usually references an IPFS CID with more information to support the node's work.&#x20;
 
 ### Supporting Information (via Decentralized Storage)
 
@@ -34,6 +34,6 @@ This layer can be thought of like RAM, and is only needed to support task operat
 
 ## Where Do Tasks Run?&#x20;
 
-Koii Tasks run on **Koii Task Nodes,** which are computers or other devices such as smart phones managed by node operators. Node operators will follow the instructions set by task owners and run the Koii task (a JavaScript script) on their devices to get KOII tokens as rewards.&#x20;
+Koii tasks run on **Koii task nodes,** which are computers or other devices such as smart phones managed by node operators. Node operators will follow the instructions set by task owners and run the Koii task (a JavaScript script) on their devices to get KOII tokens as rewards.&#x20;
 
 Koii provides both a command-line and GUI interface for managing tasks. You may want to jump to the [Run a Task Node](../run-a-task-node) section for more information about these tools.

@@ -27,7 +27,7 @@ We use docker compose to make stack management and environment variable as easy 
 
 # K2 Testnet wallet with at least 20 KOII
 
-The initial deploy of your task to the K2 testnet will include small gass fees and a bounty pool. In addition to the initial deploy of your task you will also require KOII to create a staking wallet and distribution wallet when running the task node for the first time. You can airdrop yourself enough over a period of time, or you can use our [KOII Faucet](/develop/koii-software-toolkit-sdk/wallet-and-faucet)
+The initial deploy of your task to the K2 testnet will include small gas fees and a bounty pool. In addition to the initial deploy of your task you will also require KOII to create a staking wallet and distribution wallet when running the task node for the first time. You can airdrop yourself enough over a period of time, or you can use our [KOII Faucet](/develop/koii-software-toolkit-sdk/wallet-and-faucet)
 
 <ContentLink title="Using the Koii CLI" link="/develop/koii-software-toolkit-sdk/using-the-cli" iconType="copy"/>
 
@@ -39,7 +39,7 @@ Installation for the above may differ depending on your operating system. Once y
 
 :::
 
-The docker stack provided is an integration of [Redis](https://redis.io/) and our task-node in one environment. You can easily update the envionrment variables that your task may require and the mounts are all configured in the stack YAML.
+The Docker stack provided is an integration of [Redis](https://redis.io/) and our task-node in one environment. You can easily update the envionrment variables that your task may require and the mounts are all configured in the stack YAML.
 
 # Clone the task template
 
@@ -49,7 +49,7 @@ Clone the [task-template](https://github.com/koii-network/task-template) reposit
 yarn install
 ```
 
-The `.env-local` file contains a list of environment variables and their descriptions which are used in the docker stack. Some of these variables should not be changed unless you have experience running a task-node.
+The `.env-local` file contains a list of environment variables and their descriptions which are used in the Docker stack. Some of these variables should not be changed unless you have experience running a task-node.
 
 # Develop your task
 
@@ -66,14 +66,14 @@ yarn webpack
 The task template comes bundled with our `create-task-cli` and can be run with the following command:
 
 ```
-npx create-task-cli
+npx @_koii/create-task-cli@latest
 ```
 
-This CLI will walk you through the process of deploying your task with a series of prompts. More information and examples can be found on our create-task page. Once you are finished you will be supplied with a task ID that you will need for the next step.
+This CLI will walk you through the process of deploying your task with a series of prompts. More information and examples can be found on our [create-task page](/develop/koii-software-toolkit-sdk/create-task-cli). Once you are finished you will be supplied with a task ID that you will need for the next step.
 
-:::info
+:::note
 
-One important thing to note is when you're presented with the choice of `ARWEAVE`, `IPFS`, or `DEVELOPMENT` you can select `DEVELOPMENT` and enter main in the following prompt. This will tell the task node to look for a `main.js` file in the dist folder. You can create this locally by running `yarn webpack`.
+One important thing to note is when you're presented with the choice of `ARWEAVE`, `IPFS`, or `DEVELOPMENT` you can select `DEVELOPMENT` and enter "main" in the following prompt. This will tell the task node to look for a `main.js` file in the dist folder. You can create this locally by running `yarn webpack`.
 
 :::
 

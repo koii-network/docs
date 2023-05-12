@@ -18,7 +18,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 As any industry matures, standardization and simplification become essential ingredients for promoting long-term growth. While many decentralized networks are still in their early stages, our mission at Koii is to empower developers by giving you as many options as possible when developing new applications.&#x20;
 
-Supported Networks:
+Supported networks:
 
 - Ethereum
 - Arweave
@@ -28,7 +28,7 @@ Supported Networks:
 - NEAR (Coming Soon)
 
 <br />
-We have developed a rich SDK in order to support the creation of Koii Tasks, Nodes, and Koii-X templates. This section includes key references and full API docs to support these initiatives.
+We have developed a rich SDK in order to support the creation of Koii tasks, nodes, and Koii-X templates. This section includes key references and full API docs to support these initiatives.
 
 ### Web3 SDK
 
