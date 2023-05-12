@@ -16,11 +16,11 @@ import Description from "@site/src/components/description";
   them bigger and better."
 />
 
-Koii Tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows Task nodes to perform a range of easily customizable services and provides the foundation for a highly transparent and trustless internet without the scaling limitations of traditional blockchains.
+Koii tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows task nodes to perform a range of easily customizable services and provides the foundation for a highly transparent and trustless internet without the scaling limitations of traditional blockchains.
 
-![banner](../img/What%20are%20tasks%20(1).svg)
+![banner](../img/What%20are%20tasks%20(1).png)
 
-<p>Koii Tasks (currently in beta) provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
+<p>Koii tasks (currently in beta) provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
 
 ## Quick Links
 
