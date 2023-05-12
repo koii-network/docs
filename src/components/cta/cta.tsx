@@ -18,7 +18,7 @@ export const Cta = () => {
           />
           <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-lg text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold'>
-              Build an app using Koii
+              Build on Koii Nodes
             </p>
             <p>Build a DApp using Koii Tasks</p>
           </button>
