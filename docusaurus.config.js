@@ -69,10 +69,10 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "run-a-node",
-        path: "run-a-node",
-        routeBasePath: "run-a-node/",
-        sidebarPath: require.resolve("./runANodeSidebar.js"),
+        id: "quickstart",
+        path: "quickstart",
+        routeBasePath: "quickstart/",
+        sidebarPath: require.resolve("./quickstartSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -83,10 +83,10 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "quickstart",
-        path: "quickstart",
-        routeBasePath: "quickstart/",
-        sidebarPath: require.resolve("./quickstartSidebar.js"),
+        id: "run-a-node",
+        path: "run-a-node",
+        routeBasePath: "run-a-node/",
+        sidebarPath: require.resolve("./runANodeSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,

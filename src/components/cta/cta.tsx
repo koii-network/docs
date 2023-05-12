@@ -20,10 +20,7 @@ export const Cta = () => {
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold'>
               Build an app using Koii
             </p>
-            <p>
-              Get a sync of all your data between different nodes, to have the
-              latest updated data
-            </p>
+            <p>Build a DApp using Koii Tasks</p>
           </button>
         </a>
         <a
@@ -38,7 +35,7 @@ export const Cta = () => {
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold mb-2.5'>
               Run a Node
             </p>
-            <p>Break your DB into pieces and store across multiple devices</p>
+            <p>Rent your device to earn $Koii</p>
           </button>
         </a>
       </div>
