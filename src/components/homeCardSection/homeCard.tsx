@@ -8,7 +8,7 @@ const HomeCard = ({ title, link }: CardItem) => {
       className={
         styles.homeCard +
         " " +
-        "flex items-center justify-center p-[1rem] sm:p-[2rem] lg:px-[3rem] lg:py-[4rem]"
+        "flex items-center justify-center p-[1rem] sm:p-[2rem] lg:p-[3rem]"
       }
     >
       <a href={link} className={styles.homeCardLink}>
@@ -27,7 +27,7 @@ const HomeCards = ({ title, description, items }: Cards) => {
       <p className="font-semibold text-[40px] text-koii-purple-2">{title}</p>
       <p className="text-base   ">{description}</p>
 
-      <div className={"grid grid-cols-2 lg:grid-cols-4 gap-4"}>
+      <div className={"grid grid-cols-2 lg:grid-cols-4 gap-6"}>
         {items.map((item, indx) => (
           <HomeCard title={item.title} link={item.link} key={indx} />
         ))}
