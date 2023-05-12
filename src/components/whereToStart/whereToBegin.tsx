@@ -6,7 +6,7 @@ export const WhereToBegin = () => {
     {
       name: "What is Koii?",
       image: "/img/what-is-koii.svg",
-      link: "/concepts/koii-summary/welcome",
+      link: "/concepts/introduction/welcome",
     },
     {
       name: "Earn with Koii",
