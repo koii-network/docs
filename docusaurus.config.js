@@ -250,10 +250,6 @@ const config = {
             to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
-          {
-            to: "/",
-            from: "/quickstart/building-with-koii",
-          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/build-dapps-with-koii")) {
