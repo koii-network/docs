@@ -98,14 +98,14 @@ import Description from "@site/src/components/description";
   <Card
     title="<p><strong>CARP</strong></p>"
     description=" <p>Koii is a reputation-based community. We believe in accountability, trust, and most of all, fairness for every community member.</p>"
-    link="/develop/microservices-and-tasks/using-reputation"
+    link="/develop/designing-tasks/using-reputation"
     svgName="carp"
     cardPerRow="2"
   />
   <Card
     title="<p><strong>Gradual Consensus</strong></p>"
     description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with &#x3B;slow and steady&#x3B; verification of information over time.</p>"
-    link="/develop/microservices-and-tasks/what-are-tasks/gradual-consensus"
+    link="/develop/koii-task-101/what-are-tasks/gradual-consensus"
     svgName="consensus"
     cardPerRow="2"
   />

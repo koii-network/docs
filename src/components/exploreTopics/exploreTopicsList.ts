@@ -55,12 +55,12 @@ export const exploreTopics = [
       },
       {
         title: "Task Nodes",
-        link: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
+        link: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
         icon: "/img/explore-topics-icons/task-nodes.svg",
       },
       {
         title: "Koii Tasks",
-        link: "/develop/microservices-and-tasks/what-are-tasks/",
+        link: "/develop/koii-task-101/what-are-tasks/",
         icon: "/img/explore-topics-icons/koii-tasks.svg",
       },
       {
@@ -86,14 +86,14 @@ export const exploreTopics = [
       },
       {
         title: "Task Node CLI",
-        link: "/develop/koii-software-toolkit-sdk/task-node-cli",
+        link: "/quickstart/command-line-tool/task-node-cli",
         icon: "/img/explore-topics-icons/task-node-cli.svg",
       },
-      {
-        title: "Task Development Kit",
-        link: "/develop/microservices-and-tasks/task-development-kit-tdk/",
-        icon: "/img/explore-topics-icons/task-dev-kit.svg",
-      },
+      // {
+      //   title: "Task Development Kit",
+      //   link: "/develop/microservices-and-tasks/task-development-kit-tdk/",
+      //   icon: "/img/explore-topics-icons/task-dev-kit.svg",
+      // },
       {
         title: "JavaScript SDK & API",
         link: "/develop/koii-software-toolkit-sdk/koii-javascript-api",
