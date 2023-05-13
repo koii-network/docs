@@ -22,7 +22,7 @@ import Description from "@site/src/components/description";
   <Card
     title="<p><strong>Deploy Compute Tasks to the Network</strong></p>"
     description=" <p>You can run your app on Koii's existing network, or help your community so you can build a network of your own.</p>"
-    link="/develop/microservices-and-tasks/task-development-guide/"
+    link="/develop/write-a-koii-task/task-development-guide/"
     linkText="Deploy Your First Task"
     svgName="tasks"
     cardPerRow="2"
@@ -46,7 +46,7 @@ import Description from "@site/src/components/description";
   <Card
     title="<p><strong>Check Koii Task Template</strong></p>"
     description=" <p>We provide a Koii task template to help you quckliy understand the layout of task</p>"
-    link="/develop/microservices-and-tasks/task-development-guide/k2-task-template/"
+    link="/develop/write-a-koii-task/task-development-guide/k2-task-template/"
     linkText="Check it Out"
     svgName="taskTemplate"
     cardPerRow="2"
@@ -85,14 +85,14 @@ import Description from "@site/src/components/description";
   <Card
     title="<p><strong>Using Community Hardware to Run Apps</strong></p>"
     description=" <p>The compute sharing marketplace allows anyone to deploy tasks to a network of their community members. Don't have your own community yet? No stress - the Koii community would love to host your app.</p>"
-    link="/develop/microservices-and-tasks/task-development-guide/"
+    link="/develop/write-a-koii-task/task-development-guide/"
     linkText="Deploy your First Task"
     cardPerRow="3"
   />
   <Card
     title="<p><strong>Designing Reputation-Based Systems</strong></p>"
     description="<p>The key to stable decentralization is having a strong network of committed participants. CARP apps are built around reputation.</p>"
-    link="/develop/microservices-and-tasks/using-reputation"
+    link="/develop/designing-tasks/using-reputation"
     linkText="Learn More about CARP"
     cardPerRow="3"
   />
