@@ -61,7 +61,7 @@ The node version should be `16.15.0` or higher.
 
 :::
 
-Then please prepared a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/develop/koii-software-toolkit-sdk/using-the-cli) to quickly generate one and airdrop some KOII.
+Then please prepared a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/quickstart/category/koii-command-line-tool) to quickly generate one and airdrop some KOII.
 
 ## Example
 

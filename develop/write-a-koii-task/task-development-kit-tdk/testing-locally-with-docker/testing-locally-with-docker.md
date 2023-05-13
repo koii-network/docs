@@ -29,7 +29,7 @@ We use docker compose to make stack management and environment variable as easy 
 
 The initial deploy of your task to the K2 testnet will include small gas fees and a bounty pool. In addition to the initial deploy of your task you will also require KOII to create a staking wallet and distribution wallet when running the task node for the first time. You can airdrop yourself enough over a period of time, or you can use our [KOII Faucet](/develop/koii-software-toolkit-sdk/wallet-and-faucet)
 
-<ContentLink title="Using the Koii CLI" link="/develop/koii-software-toolkit-sdk/using-the-cli" iconType="copy"/>
+<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/>
 
 <br/>
 
@@ -69,7 +69,7 @@ The task template comes bundled with our `create-task-cli` and can be run with t
 npx @_koii/create-task-cli@latest
 ```
 
-This CLI will walk you through the process of deploying your task with a series of prompts. More information and examples can be found on our [create-task page](/develop/koii-software-toolkit-sdk/create-task-cli). Once you are finished you will be supplied with a task ID that you will need for the next step.
+This CLI will walk you through the process of deploying your task with a series of prompts. More information and examples can be found on our [create-task page](/quickstart/command-line-tool/create-task-cli). Once you are finished you will be supplied with a task ID that you will need for the next step.
 
 :::note
 

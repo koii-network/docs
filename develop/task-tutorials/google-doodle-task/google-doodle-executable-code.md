@@ -242,4 +242,4 @@ module.exports = {
 };
 ```
 
-Follow the instructions [here](/develop/microservices-and-tasks/task-development-guide/task-development-flow/create-task) to register this new task.
+Follow the instructions [here](/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task) to register this new task.

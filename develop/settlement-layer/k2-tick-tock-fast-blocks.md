@@ -17,9 +17,9 @@ import Description from "@site/src/components/description";
 
 K2 is the current settlement layer within Koii and provides the functionality of a message hub to other systems in the network. Thanks to the incredible work of the Solana Labs team, K2 is able to use [Proof of History](https://tokens-economy.gitbook.io/consensus/chain-based-proof-of-capacity-space/proof-of-history) to achieve 0.2-second transaction times and thousands of transactions per second.&#x20;
 
-The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all [compute task](../microservices-and-tasks/what-are-tasks/) metadata.
+The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all [compute task](/develop/koii-task-101/what-are-tasks/) metadata.
 
-**Heads up!** To use K2, you'll need to install the [Koii CLI](/develop/koii-software-toolkit-sdk/using-the-cli) or try the [Koii SDK](../koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
+**Heads up!** To use K2, you'll need to install the [Koii CLI](/quickstart/category/koii-command-line-tool) or try the [Koii SDK](../koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
 
 ## Native Programs
 
@@ -27,7 +27,7 @@ The settlement layer holds the KOII tokens, as well as an immutable ledger of tr
 
 ### The Task Contract
 
-[Koii task nodes](../koii-software-toolkit-sdk/task-node-cli) use the settlement layer to submit proofs and request rewards for compute work. All task related activities are managed by the built-in task contract, which is managed by the Koii foundation. Some of the operations the task contract supports are:
+[Koii task nodes](/quickstart/command-line-tool/task-node-cli) use the settlement layer to submit proofs and request rewards for compute work. All task related activities are managed by the built-in task contract, which is managed by the Koii foundation. Some of the operations the task contract supports are:
 
 1. Pull a timestamp proof&#x20;
 2. Submit proofs to claim task rewards
@@ -38,4 +38,4 @@ The settlement layer holds the KOII tokens, as well as an immutable ledger of tr
 
 ### The Attention Game
 
-In order to ensure that Koii is owned by the community, and not only those with the means to provide compute, 90% of all newly generated tokens are created by the [**attention contract**](/concepts/earning-koii/proof-of-real-traffic/attention-mining). Each day, Koii nodes collect Proofs of Real Traffic and submit batches of them into decentralized storage. Every [_epoch_](https://docs.solana.com/terminology#epoch) (roughly every 12 hours), a pool of new tokens is created and distributed to anyone who received attention on their content. Node operators can also earn new tokens by running a K2 node, or by running the attention task on a task node, and helping to verify Proofs of Real Traffic or lock them into the settlement layer.
+In order to ensure that Koii is owned by the community, and not only those with the means to provide compute, 90% of all newly generated tokens are created by the [**attention contract**](/develop/attention-mining/proof-of-real-traffic/attention-mining). Each day, Koii nodes collect Proofs of Real Traffic and submit batches of them into decentralized storage. Every [_epoch_](https://docs.solana.com/terminology#epoch) (roughly every 12 hours), a pool of new tokens is created and distributed to anyone who received attention on their content. Node operators can also earn new tokens by running a K2 node, or by running the attention task on a task node, and helping to verify Proofs of Real Traffic or lock them into the settlement layer.

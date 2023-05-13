@@ -86,7 +86,7 @@ async function generateDistributionList(round) {
 When writing this function for your task, you can use logic to determine how many KOII tokens to award to each node based on priority. You can award more KOII tokens to the node that worked the hardest to complete the task or to the node that staked the most KOII tokens.
 
 :::info
-Click [here](/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/task-state) to find out the full task data retrieved from `getTaskState()`
+Click [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state) to find out the full task data retrieved from `getTaskState()`
 :::
 
 # submitDistributionList()
