@@ -4,3 +4,5 @@ description: Application layer nodes are one of the most-needed commodities in W
 image: img/thumbnail.png
 sidebar_label: Types of Nodes
 ---
+
+There are two types of Koii nodes, The K2 nodes and the Task nodes.
