@@ -11,10 +11,10 @@ export enum HubspotFormLinks {
 }
 
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: "/develop/microservices-and-tasks/run-a-task-node"},
+  { label: "Run a Node", url: "/run-a-node/introduction/task-nodes"},
   { label: "Get Finnie", url: "https://koii.me/finnie", target:"_blank" },
   { label: "Founders Program", url: "/concepts/earning-koii/grants-program" },
-  { label: "Download Desktop Node", url: "/develop/microservices-and-tasks/run-a-task-node" },
+  { label: "Download Desktop Node", url: "/run-a-node/introduction/task-nodes" },
   { label: "Apply for a Grant", url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg"},
   // {
   //   label: "Get Founder Support",

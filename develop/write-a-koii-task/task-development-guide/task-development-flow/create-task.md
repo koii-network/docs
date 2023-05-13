@@ -13,7 +13,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 We need a Koii account and network setup first. We provide the Koii CLI tool to easily set up K2 locally and generate a wallet; check here.&#x20;
 
-<ContentLink title="Using the Koii CLI" link="/develop/koii-software-toolkit-sdk/using-the-cli" iconType="copy"/>
+<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/>
 
 <br/>
 Now that we have our account and the network setup, let's move on to actually creating a task and registering it with the network.
@@ -49,7 +49,7 @@ Note — The number of slots in the audit window and submission must be lower th
 - **Enter the minimum staking amount in lamports:** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
 - **Enter the total bounty you want to allocate for the task (In KOII)**: Any amount not more than what you have in your wallet though. E.g: `1000` (We suggest the amount could be run at least 4 epochs)
 - **Enter the bounty amount per round**: Total amount would be divided equally for each number until the bounty fund is exhausted. E.g: `10`
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the metadata for your task on IPFS, add the CID here; otherwise, leave blank. Use your web3.storage account, click the **Upload Files** button, and then upload a JSON file containing the metadata for your task. Add the CID for the uploaded file to this prompt. Check out a [metadata example](../../what-are-tasks/key-components#metadata).
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the metadata for your task on IPFS, add the CID here; otherwise, leave blank. Use your web3.storage account, click the **Upload Files** button, and then upload a JSON file containing the metadata for your task. Add the CID for the uploaded file to this prompt. Check out a [metadata example](/develop/koii-task-101/what-are-tasks/key-components/#metadata).
 - **Enter CID for environment variables hosted on IPFS (Leave empty for None):** If your task requires environment variables to be run by node runners, upload a JSON file that contains those variables to IPFS using web3.storage. Add the uploaded file's CID to this prompt.
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 

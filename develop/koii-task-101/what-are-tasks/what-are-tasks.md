@@ -26,17 +26,10 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
-1.  Tasks Overview
+- [Why use decentralized nodes when servers seem to work?](/develop/koii-task-101/what-are-tasks/nodes-vs-servers)<br/>
+- [How do tasks run across many nodes?](/develop/koii-task-101/what-are-tasks/gradual-consensus)<br/>
+- [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
+- [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/)<br/>
+  - [Database Sharding](/develop/koii-task-101/what-are-tasks/key-components/database-sharding)<br/>
+  - [Node to Node Sync](Node to Node Sync)
 
-    a. [Why use decentralized nodes when servers seem to work?](nodes-vs-servers)<br/>
-    b. [How do tasks run across many nodes?](gradual-consensus)<br/>
-    c. [What does it take to build a task?](key-components)<br/>
-    d. [Where does task data live?](runtime-environment)<br/>
-    e. [Managing collateral and voting](staking-and-voting)<br/>
-    f. [Securing tasks with audits](what-are-audits)
-
-2.  [Using Koii's Task Development Kit (a.k.a. TDK)](../task-development-guide/)
-3.  [Building your first task (Task Development Guide)](../task-development-guide/)
-4.  [Task Design Example ](../google-doodle-task)
-5.  [Run a Task Node](../run-a-task-node)
-6.  [Using Reputation to reduce waste compute (a.k.a. CARP)](../using-reputation)

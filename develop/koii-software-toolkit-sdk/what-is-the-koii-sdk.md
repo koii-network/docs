@@ -48,7 +48,7 @@ Check the tutorial and try it [here](./using-the-cli)
 
 ### Create Task CLI
 
-Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](../microservices-and-tasks/task-development-guide/) and try it [here](./create-task-cli)
+Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here](/quickstart/command-line-tool/create-task-cli)
 
 ### Task Node CLI
 
@@ -59,7 +59,6 @@ The task node CLI is a helpful tool used by node operators for 4 different reaso
 - Stake tokens on a task
 - Show all tasks
 
-Learn more and build complete your task [here](./what-is-the-koii-sdk)
 
 ### Looking for a quick start?
 
