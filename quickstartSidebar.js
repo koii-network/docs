@@ -171,18 +171,9 @@ const sidebars = {
       value: "Join the Pirate Ship",
       className: "sidebar-title top-margin",
     },
-    "pirate-ship/founder-support-program",
+    
     "pirate-ship/ambassador-program",
-    "pirate-ship/contact-us",
-
-    {
-      type: "html",
-      value: "Get a Grant",
-      className: "sidebar-title top-margin",
-    },
-    "get-a-grant/build-an-app",
-    "get-a-grant/integrate-existing-product",
-    "get-a-grant/koii-to-the-world",
+   
   ],
 };
 
