@@ -29,7 +29,7 @@ export const cardDetails: Cards[] = [
       { title: "The Task Template", link: "/develop/write-a-koii-task/task-development-guide/k2-task-template/" },
       { title: "Google Doodle", link: "/develop/task-tutorials/google-doodle-task/" },
       { title: "Koii Linktree", link: "/develop/task-tutorials/linktree-task/intro" },
-      { title: "Web Crawlers", link: "/develop/task-tutorials/linktree-task/intro" },
+      { title: "Web Crawlers", link: "/develop/task-tutorials/scrapers/twitter" },
     ],
   },
 
@@ -38,7 +38,7 @@ export const cardDetails: Cards[] = [
     description: "Koii is complicated - Get the basics.",
     items: [
       { title: "Tokenomics", link: "/concepts/the-koii-token/network-economics" },
-      { title: "Gradual Consensus", link: "/develop/koii-task-101/what-are-tasks/gradual-consensus" },
+      { title: "Gradual Consensus", link: "/concepts/gradual-consensus/" },
       { title: "Community", link: "/concepts/community/community-forums" },
       { title: "Glossary", link: "/concepts/glossary" },
     ],
