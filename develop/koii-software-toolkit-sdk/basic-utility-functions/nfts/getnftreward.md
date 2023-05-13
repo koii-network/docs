@@ -8,7 +8,7 @@ sidebar_label: getNftReward
 # getNftReward
 
 :::danger
-The KOII you earned are based on K1 network. Check the [task node](../../../microservices-and-tasks/what-are-tasks/) to earn more KOII on K2 .
+The KOII you earned are based on K1 network. Check the [task node](/run-a-node/introduction/task-nodes) to earn more KOII on K2 .
 :::
 
 This function returns attention rewards earned from an NFT in KOII.
