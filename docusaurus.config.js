@@ -107,7 +107,7 @@ const config = {
             from: "/settlement-layer/running-a-k2-node/setup-process",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
+            to: "/quickstart/command-line-tool/koii-cli/install-cli",
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
           {
@@ -117,10 +117,6 @@ const config = {
           {
             to: "/concepts/introduction/tools",
             from: "/introduction/tools",
-          },
-          {
-            to: "/concepts/introduction/impact",
-            from: "/introduction/impact",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
