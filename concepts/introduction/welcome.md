@@ -21,22 +21,7 @@ The first step in this process was to build a format for anonymous and decentral
 Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
 
 <Cards>
-  <Card
-    title="<p>🔥 <strong>Impact</strong></p>"
-    description=" <p>We've redesigned the web from the ground up to reward contributions fairly. Whether you're a creator, developer, a fan, or just want to connect with family and friends, <em>Koii pays you.</em></p>"
-    link="impact"
-    linkText="Earn passive income with Koii"
-    svgName="impact"
-    cardPerRow="2"
-  />
-  <Card
-    title="<p>🌊 <strong>Social Technology</strong></p>"
-    description="<p>Include your community in the value stream by using community hardware, and providing transparent systems for attention tracking, content storage, value transfer, and indexing.</p>"
-    link="social-tech"
-    linkText="Start building community-run apps"
-    svgName="socialTech"
-    cardPerRow="2"
-  />
+
   <Card
     title="<p>🛠️ <strong>Tools</strong></p>"
     description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal compute power, and onboard your community.</p>"
