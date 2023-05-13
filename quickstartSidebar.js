@@ -93,7 +93,7 @@ const sidebars = {
     },
     "command-line-tool/task-node-cli",
     "command-line-tool/create-task-cli",
-    "command-line-tool/cli-reference",
+   
 
     {
       type: "html",
