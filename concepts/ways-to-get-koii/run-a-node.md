@@ -5,4 +5,4 @@ image: img/thumbnail.png
 sidebar_label: Run a node
 ---
 
-Koii has a network of over 50,000 nodes, each of them earning passive income. To earn $KOII by running a node visit [**run a node**](/run-a-node/introduction/types-of-nodes)
+You can join the Koii ecosystem by running a Koii node and earn passive income. To earn $KOII by running a node visit [**run a node**](/run-a-node/introduction/types-of-nodes)
