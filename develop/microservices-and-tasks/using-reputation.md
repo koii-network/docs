@@ -56,4 +56,4 @@ Koii is a work in progress, so we welcome feedback, advice, and support.&#x20;
 
 Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.&#x20;
 
-Koii's native Decentralized IDs are expected to launch in the coming months, so stay tuned for more updates as we build more core reputation primatives for you to use in the [task namespace](task-development-kit-tdk/using-the-task-namespace/).
+Koii's native Decentralized IDs are expected to launch in the coming months, so stay tuned for more updates as we build more core reputation primatives for you to use in the [task namespace](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/).

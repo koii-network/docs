@@ -9,7 +9,7 @@ sidebar_label: "Example Task: Linktree"
 
 ![banner](../img/Example%20Task_%20Linktree.svg)
 
-This Koii task is the second task in our series of explaining Koii tasks. The [Google Doodle task](/develop/microservices-and-tasks/google-doodle-task/) takes you through the process of turning a simple JavaScript program into a Koii task using the [K2 Task Template](https://github.com/koii-network/task-template). This tutorial will build on that and teach you how to use databases across many Koii nodes.
+This Koii task is the second task in our series of explaining Koii tasks. The [Google Doodle task](/develop/task-tutorials/google-doodle-task/) takes you through the process of turning a simple JavaScript program into a Koii task using the [K2 Task Template](https://github.com/koii-network/task-template). This tutorial will build on that and teach you how to use databases across many Koii nodes.
 
 A **LinkTree** is a customized profile page that contains all your important links.
 
@@ -51,7 +51,7 @@ However, when it comes to more complex projects involving database management an
 
 | File                                                                                         | Description                                                                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [db_model.js](https://github.com/somali0128/task-template-linktree/blob/main/db_model.js)    | A **local database** is required to store and manage data such as Linktree information, proofs, and the authentication list on a [node](/develop/microservices-and-tasks/run-a-task-node) operator's local device. This is important because it reduces the need for frequent API calls to a remote database. |
+| [db_model.js](https://github.com/somali0128/task-template-linktree/blob/main/db_model.js)    | A **local database** is required to store and manage data such as Linktree information, proofs, and the authentication list on a [node](/run-a-node/introduction/task-nodes) operator's local device. This is important because it reduces the need for frequent API calls to a remote database. |
 | [routes.js](https://github.com/somali0128/task-template-linktree/blob/main/routes.js)        | **API endpoints** will be required for the project to handle incoming requests, process data, and return appropriate responses to the client.                                                                                                                                                                 |
 | [db_sharing.js](https://github.com/somali0128/task-template-linktree/blob/main/dbSharing.js) | Since each Koii node has its own local database, when one node’s data is updated, it must also be updated on other nodes to ensure consistency. The `db_sharing.js` will contain a single function called `share()` that works to keep the network synchronized.                                              |
 

@@ -224,7 +224,7 @@ The number of slots in the audit window and submission must be lower than the nu
 
 - **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. Use the "Upload Files" button on your web3.storage account to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. View a sample of metadata. Check out a [metadata example](/develop/microservices-and-tasks/what-are-tasks/key-components#metadata).
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. Use the "Upload Files" button on your web3.storage account to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. View a sample of metadata. Check out a [metadata example](/develop/koii-task-101/what-are-tasks/key-components/#metadata).
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 - **Your account will be subtract `AMOUNT` KOII for creating the task, which includes the rent exemption and bounty amount fees › ** y/n

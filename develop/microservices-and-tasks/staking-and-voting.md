@@ -15,7 +15,7 @@ import Description from "@site/src/components/description";
   text="Building trustless trust requires simple rules for participation."
 />
 
-While each task can configure its own penalty and voting calculations, we recommend something like the following example, as this is the primary case under which [Gradual Consensus ](gradual-consensus)has been tested.
+While each task can configure its own penalty and voting calculations, we recommend something like the following example, as this is the primary case under which [Gradual Consensus ](/develop/koii-task-101/what-are-tasks/gradual-consensus)has been tested.
 
 ## **Staking**&#x20;
 

@@ -87,8 +87,8 @@ const sidebars = {
       items: [
         "command-line-tool/koii-cli/install-cli",
         "command-line-tool/koii-cli/create-wallet",
-        "command-line-tool/koii-cli/connect-cluster",
         "command-line-tool/koii-cli/send-and-receive-tokens",
+        "command-line-tool/koii-cli/connect-cluster",
       ],
     },
     "command-line-tool/task-node-cli",
