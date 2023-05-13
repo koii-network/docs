@@ -4,3 +4,5 @@ description: The discord is a great place to meet community members, and can als
 image: img/thumbnail.png
 sidebar_label: Glossary
 ---
+
+Coming soon
