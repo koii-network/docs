@@ -33,22 +33,25 @@ const sidebars = {
           'introduction/k2-nodes',
         ],
       },
-      'introduction/tokenomics-rewards',
+      
       {
         type: "html",
         value: "Task Nodes",
         className: "sidebar-title top-margin",
       },
+      
+      'task-nodes/how-to-run-a-desktop-node',
       'task-nodes/rewards',
       'task-nodes/choosing-tasks',
-      'task-nodes/how-to-run-a-desktop-node',
+      
       {
         type: "html",
         value: "K2 Nodes",
         className: "sidebar-title top-margin",
       },
-      'k2-nodes/rewards',
       'k2-nodes/how-to-run-a-k2-node',
+      'k2-nodes/rewards'
+      ,
     ],
   };
   
