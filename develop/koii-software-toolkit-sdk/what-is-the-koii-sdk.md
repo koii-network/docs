@@ -44,7 +44,7 @@ Koii CLI provides several features, including but not only:
 - Airdrop testnet KOII
 - Run Koii test validator
 
-Check the tutorial and try it [here](./using-the-cli)
+Check the tutorial and try it [here](/quickstart/command-line-tool/koii-cli/install-cli)
 
 ### Create Task CLI
 
