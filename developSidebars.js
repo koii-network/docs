@@ -62,6 +62,8 @@ const sidebars = {
           items: [
             "koii-task-101/what-are-tasks/key-components/database-sharding",
             "koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+            "koii-task-101/what-are-tasks/key-components/rest-api",
+            "koii-task-101/what-are-tasks/key-components/auth-and-security",
           ],
         },
       ],
