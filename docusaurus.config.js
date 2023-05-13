@@ -111,10 +111,6 @@ const config = {
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
-            from: "/koii-software-toolkit-sdk/using-the-cli",
-          },
-          {
             to: "/develop/settlement-layer/running-a-k2-node/",
             from: "/settlement-layer/running-a-k2-node",
           },
@@ -145,10 +141,6 @@ const config = {
           {
             to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
             from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
-          },
-          {
-            to: "/concepts/introduction/tools",
-            from: "/introduction/tools",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
