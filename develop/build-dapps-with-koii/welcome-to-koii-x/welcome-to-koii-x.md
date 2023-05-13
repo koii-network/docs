@@ -34,6 +34,6 @@ This toolkit will help you take advantage of all that Koii has to offer:
 - [Store content as Atomic NFTs using decentralized storage networks](/develop/build-dapps-with-koii/using-nfts-as-content/)
 - [Easily integrate wallets from popular blockchains](/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet)
 - [Build a Crowdfunding Portal or Leaderboard Social Platform](/develop/build-dapps-with-koii/template-library/)
-- [Integrate Koii Tasks for Trustless Back-End Services ](/develop/microservices-and-tasks/what-are-tasks/)
+- [Integrate Koii Tasks for Trustless Back-End Services ](/develop/koii-task-101/what-are-tasks/)
 
 To get started with Koii-X follow our [**quick start guide**](./quick-start) 👇
