@@ -1,12 +1,12 @@
 /**
  * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
+ * - create an ordered group of docs
+ * - render a sidebar for each doc of that group
+ * - provide next/previous navigation
+ *
+ * The sidebars can be generated from the filesystem, or explicitly defined here.
+ *
+ * Create as many sidebars as you want.
  */
 
 // @ts-check
@@ -57,8 +57,9 @@ const sidebars = {
         type: "doc",
         id: "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
       },
-      collapsed: true,
-      items: ["ways-to-get-koii/compute-sharing-marketplace/task"],
+      items: [
+        "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
+      ],
     },
     "ways-to-get-koii/attention-mining",
     "ways-to-get-koii/grants-program",
@@ -69,7 +70,7 @@ const sidebars = {
       className: "sidebar-title top-margin",
     },
     "gradual-consensus/gradual-consensus",
-    "gradual-consensus/runtime-environment",
+    "gradual-consensus/task-lifecycle",
     {
       type: "html",
       value: "The Koii Wallet - Finnie",
