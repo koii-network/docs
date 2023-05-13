@@ -16,7 +16,7 @@ export const WhereToBegin = () => {
     // {
     //   name: "Use cases of Koii",
     //   image: "/img/koii-use-case.svg",
-    //   link: "/develop/microservices-and-tasks/what-are-tasks/",
+    //   link: "/develop/koii-task-101/what-are-tasks//",
     // },
     {
       name: "Developer Toolkit",

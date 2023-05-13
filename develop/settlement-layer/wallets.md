@@ -37,14 +37,14 @@ Finnie is designed to act as a browsing companion for the decentralized web:
 
 In order to rent your personal devices to the network and participate in the **compute marketplace**, you'll often need to hold KOII and other tokens in a staking wallet, which can be confiscated when if your node is caught trying to submit bad data.&#x20;
 
-**Note:** Your collateral will never be confiscated for honest work [(see the audits section for more information)](/develop/microservices-and-tasks/what-are-tasks/what-are-audits)
+**Note:** Your collateral will never be confiscated for honest work [(see the audits section for more information)](/develop/designing-tasks/securing-task)
 
 The desktop node hasn't been released to the public yet, but you can join the beta by clicking the form below.
 
-<ContentLink title="Run a Task Node" link="/develop/microservices-and-tasks/run-a-task-node" iconType="copy"/>
+<ContentLink title="Run a Task Node" link="/run-a-node/introduction/task-nodes" iconType="copy"/>
 
 ## Native Wallet File
 
 Native file-system wallets are used by developers building applications, or during testing. For information about using file-system wallets as a developer, check the CLI docs.
 
-<ContentLink title="Using the Koii CLI" link="/develop/koii-software-toolkit-sdk/using-the-cli" iconType="copy"/>
+<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/>
