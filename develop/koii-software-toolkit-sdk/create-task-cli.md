@@ -38,7 +38,7 @@ npm i @_koii/create-task-cli
 :::tip
 Run `koii config get` to get the information of your wallet path.
 
-Don't have a Koii wallet yet? Check [here](using-the-cli) and generate one quickly. Remember to save your wallet path.
+Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly. Remember to save your wallet path.
 :::
 - Next you will be prompted with seven options, select `Create a new task` to create a new task:
 ```bash
