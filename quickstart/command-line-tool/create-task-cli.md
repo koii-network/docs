@@ -7,7 +7,7 @@ sidebar_label: Create Task CLI
 
 # Create Task CLI
 
-![Banner](./img/Create%20Task%20CLI.svg)
+![Banner](../img/Create%20Task%20CLI.svg)
 
 We provide `create-task-cli` tool for task creators to easily:
 - Create a new task
@@ -19,7 +19,7 @@ We provide `create-task-cli` tool for task creators to easily:
 - Upload assets to IPFS
 
 
-![Image](./img/DEV%20koii%20task%20for%20docs.svg)
+![Image](../img/DEV%20koii%20task%20for%20docs.svg)
 
 
 ## Install Create-Task-CLI
@@ -38,7 +38,7 @@ npm i @_koii/create-task-cli
 :::tip
 Run `koii config get` to get the information of your wallet path.
 
-Don't have a Koii wallet yet? Check [here](using-the-cli) and generate one quickly. Remember to save your wallet path.
+Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly. Remember to save your wallet path.
 :::
 - Next you will be prompted with seven options, select `Create a new task` to create a new task:
 ```bash
@@ -48,7 +48,7 @@ Don't have a Koii wallet yet? Check [here](using-the-cli) and generate one quick
     Activate task
     Claim reward
     Fund task with more KOII
-    Withdraw staked funds from task
+  Withdraw staked funds from task
     upload assets to IPFS(metadata/local vars)
 ```
 - There are two options to create a new task, the next prompt asks you to select how you want to create your task:
@@ -160,7 +160,7 @@ Value name should be exact same to your environment variable name. The vital thi
 
 User will setup their key of the `value` in desktop node's `Settings -> Task Settings`
 
-![Code Sample](./img/setting_env_key.png)
+![Code Sample](../img/setting_env_key.png)
 
 :::
 
