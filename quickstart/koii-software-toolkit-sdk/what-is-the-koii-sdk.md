@@ -48,7 +48,7 @@ Check the tutorial and try it [here](./using-the-cli)
 
 ### Create Task CLI
 
-Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](../microservices-and-tasks/task-development-guide/) and try it [here](./create-task-cli)
+Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here](./create-task-cli)
 
 ### Task Node CLI
 
@@ -63,6 +63,6 @@ Learn more and build complete your task [here](./what-is-the-koii-sdk)
 
 ### Looking for a quick start?
 
-Head to our [Koii-X docs](../build-dapps-with-koii/welcome-to-koii-x/) to learn how you can deploy a dApp in under 10 minutes today.
+Head to our [Koii-X docs](/develop/build-dapps-with-koii/welcome-to-koii-x/) to learn how you can deploy a dApp in under 10 minutes today.
 
-<ContentLink title="👋 Welcome to koii-X" link="../build-dapps-with-koii/welcome-to-koii-x/"/>
+<ContentLink title="👋 Welcome to koii-X" link="/develop/build-dapps-with-koii/welcome-to-koii-x/"/>
