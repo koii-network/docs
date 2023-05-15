@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: Rewards
 ---
 
+![Banner](./img/Rent.svg)
+
 When a Koii task is registered, the task registrant determines the amount of tokens that will be allocated to the bounty pool. Additionally, all task nodes participating in the task are required to stake a specific amount of tokens, as set by the task registrant.
 
 Both the tokens in the bounty pool and the staking pool are locked during the task. After each epoch, nodes receive rewards based on their behavior. The distribution of these rewards is defined by the task creator through a distribution list.

@@ -13,6 +13,7 @@ import Description from "@site/src/components/description";
   text="This section describes how to run a K2 Validator."
 />
 
+![Banner](./img/Running%20a%20K2%20Node.svg)
 :::info
 
 At this time we only support Ubuntu 20.04 LTS. We offer macOS and Windows binaries however we do not have official guides on how to set up your validator environment on those operating systems.
@@ -31,4 +32,3 @@ To participate in the voting process you must configure your system, start a val
 2. [System Setup](./system-setup)
 3. [Validator Setup](./validator-setup)
 4. [K2 Releases](https://github.com/koii-network/k2-release)
-
