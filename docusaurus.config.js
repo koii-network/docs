@@ -343,7 +343,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "</> Quickstart",
+            label: "💻 Quickstart",
             to: "/quickstart/finnie-for-devs/welcome-to-finnie",
             activeBasePath: "quickstart",
             position: "left",

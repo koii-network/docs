@@ -2,16 +2,7 @@ export const exploreTopics = [
   {
     title: "Understanding Koii",
     items: [
-      {
-        title: "Impact & Philosophy",
-        link: "/concepts/introduction/impact",
-        icon: "/img/explore-topics-icons/impact-philosophy.svg",
-      },
-      {
-        title: "Social Tech",
-        link: "/concepts/introduction/social-tech",
-        icon: "/img/explore-topics-icons/social-tech.svg",
-      },
+
       {
         title: "Grants Program",
         link: "/concepts/earning-koii/grants-program",
@@ -68,11 +59,7 @@ export const exploreTopics = [
         link: "/develop/koii-software-toolkit-sdk/wallet-and-faucet",
         icon: "/img/explore-topics-icons/koii-faucet.svg",
       },
-      {
-        title: "Welcome to Koii-X",
-        link: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
-        icon: "/img/explore-topics-icons/koiix.svg",
-      },
+     
     ],
   },
 
@@ -106,7 +93,7 @@ export const exploreTopics = [
       },
       {
         title: "Finnie for Devs",
-        link: "/develop/finnie-for-devs/welcome-to-finnie",
+        link: "/quickstart/finnie-for-devs/welcome-to-finnie",
         icon: "/img/explore-topics-icons/finnie-dev.svg",
       },
     ],
