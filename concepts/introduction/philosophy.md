@@ -70,7 +70,7 @@ import Description from "@site/src/components/description";
     cardPerRow="3"
   />
   <Card
-    title="<p>User Governance of Social Media Platforms></p>"
+    title="<p>User Governance of Social Media Platforms</p>"
     link="https://www.youtube.com/watch?v=dc_vaBvUMHE&ab_channel=KoiiNetwork"
     linkText="Watch Video"
     svgName="userGovernanceVideo"
@@ -104,7 +104,7 @@ import Description from "@site/src/components/description";
   />
   <Card
     title="<p><strong>Gradual Consensus</strong></p>"
-    description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with &#x3B;slow and steady&#x3B; verification of information over time.</p>"
+    description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with slow and steady verification of information over time.</p>"
     link="/develop/koii-task-101/what-are-tasks/gradual-consensus"
     svgName="consensus"
     cardPerRow="2"
