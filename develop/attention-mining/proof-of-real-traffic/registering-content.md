@@ -12,7 +12,7 @@ import Description from "@site/src/components/description";
 ![banner](../img/Registering%20Content.svg)
 
 <Description
-  text="Koii can be earned on any content where Proofs of Real Traffic are submitted."
+  text="$KOII can be earned on any content where Proofs of Real Traffic are submitted."
 />
 
 In order to mine new KOII tokens, each piece of content must be registered by paying a small fee in KOII. The fee can either be paid upfront, which costs less, or it can be paid after KOII has already been earned, in which case the fee will scale to the total earned.
@@ -61,7 +61,7 @@ The node version should be `16.15.0` or higher.
 
 :::
 
-Then please prepared a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
+Then get a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
 
 ## Example
 
@@ -104,7 +104,7 @@ Please provide a `metadata.json` file and put it at the root:
 
 Then provide a image as the thumbnail of your content.
 
-Prepare your Koii wallet and check example for the code:
+Prepare your Koii wallet and check the samplee code:
 
 ```jsx title="registerIPFS.js"
 const { registerIpfsNFT }  = require("@_koii/k2-recipient-sdk")

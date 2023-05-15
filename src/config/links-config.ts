@@ -1,7 +1,7 @@
 export enum HubspotFormLinks {
   PARTNERSHIP = "https://share.hsforms.com/1_HHcmivaTDaI9O1gX3DZngc20dg",
   INVESTOR = "https://share.hsforms.com/14iIe1UZZTUqF-dPNONXc0Qc20dg",
-  GRANT = "https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg",
+  GRANT = "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg",
   NODE_PREREGISTER = "https://share.hsforms.com/1kLtk8rfURZ-HY2xnKRTfCgc20dg",
   FINNIE_MOBIE_PREREGISTER = "https://share.hsforms.com/1isxRWrY7TIWU6bqJNSWzEwc20dg",
   JOBS = "/career",
@@ -11,11 +11,17 @@ export enum HubspotFormLinks {
 }
 
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: "/run-a-node/introduction/task-nodes"},
-  { label: "Get Finnie", url: "https://koii.me/finnie", target:"_blank" },
+  { label: "Run a Node", url: "/run-a-node/introduction/task-nodes" },
+  { label: "Get Finnie", url: "https://koii.me/finnie", target: "_blank" },
   { label: "Founders Program", url: "/concepts/earning-koii/grants-program" },
-  { label: "Download Desktop Node", url: "/run-a-node/introduction/task-nodes" },
-  { label: "Apply for a Grant", url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg"},
+  {
+    label: "Download Desktop Node",
+    url: "/run-a-node/introduction/task-nodes",
+  },
+  {
+    label: "Apply for a Grant",
+    url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg",
+  },
   // {
   //   label: "Get Founder Support",
   //   url: "https://blog.koii.network/Content-Collective",
