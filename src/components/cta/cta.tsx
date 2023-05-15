@@ -13,7 +13,7 @@ export const Cta = () => {
           }}
         >
           <img
-            src={"/img/build-the-impossible.svg"}
+            src={"/img/COLOR- Built the impossible.svg"}
             className='w-full rounded-t-[10px]'
             role='img'
           />
@@ -31,7 +31,7 @@ export const Cta = () => {
             textDecoration: "no-underline",
           }}
         >
-          <img src={"/img/run-a-task-node.svg"} className='w-full rounded-t-[10px]' role='img' />
+          <img src={"/img/COLOR- Run a Task Node.svg"} className='w-full rounded-t-[10px]' role='img' />
           <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
             <p className='no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 '>
               Run a Node
