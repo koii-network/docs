@@ -24,17 +24,17 @@ export const cardDetails: Cards[] = [
       {
         title: "Database Sharding",
         link: "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
-        image: 'img/DATABASE SHARDING.svg'
+        image: "img/DATABASE SHARDING.svg",
       },
       {
         title: "Node to Node Sync",
         link: "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
-        image: 'img/NODE TO NODE SYNC.svg'
+        image: "img/NODE TO NODE SYNC.svg",
       },
       {
         title: "Rest API",
         link: "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
-        image: 'img/REST API.svg'
+        image: "img/REST API.svg",
       },
     ],
   },
@@ -46,22 +46,22 @@ export const cardDetails: Cards[] = [
       {
         title: "The Task Template",
         link: "/develop/write-a-koii-task/task-development-guide/k2-task-template/",
-        image: 'img/TEH TASK TEMPLATE.svg'
+        image: "img/TEH TASK TEMPLATE.svg",
       },
       {
         title: "Google Doodle",
         link: "/develop/task-tutorials/google-doodle-task/",
-        image: 'img/GOOGLE DOODLE (1).svg'
+        image: "img/GOOGLE DOODLE (1).svg",
       },
       {
         title: "Koii Linktree",
         link: "/develop/task-tutorials/linktree-task/intro",
-        image: 'img/KOII LINKTREE.svg'
+        image: "img/KOII LINKTREE.svg",
       },
       {
         title: "Web Crawlers",
         link: "/develop/task-tutorials/linktree-task/intro",
-        image: 'img/WEB CRAWLERS.svg'
+        image: "img/WEB CRAWLERS.svg",
       },
     ],
   },
@@ -70,10 +70,26 @@ export const cardDetails: Cards[] = [
     title: "Learn",
     description: "Koii is complicated - Get the basics.",
     items: [
-      { title: "Tokenomics", link: "/concepts/the-koii-token/network-economics" },
-      { title: "Gradual Consensus", link: "/concepts/gradual-consensus/" },
-      { title: "Community", link: "/concepts/community/community-forums" },
-      { title: "Glossary", link: "/concepts/glossary" },
+      {
+        title: "Tokenomics",
+        link: "/concepts/the-koii-token/network-economics",
+        image: "img/TEKONOMICS.svg",
+      },
+      {
+        title: "Gradual Consensus",
+        link: "/concepts/gradual-consensus/",
+        image: "img/GRADUAL CONSENSUS (1).svg",
+      },
+      {
+        title: "Community",
+        link: "/concepts/community/community-forums",
+        image: "img/COMMUNITY.svg",
+      },
+      {
+        title: "Glossary",
+        link: "/concepts/glossary",
+        image: "img/GLOSARRY.svg",
+      },
     ],
   },
 ];
