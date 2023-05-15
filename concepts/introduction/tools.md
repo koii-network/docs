@@ -30,7 +30,7 @@ import Description from "@site/src/components/description";
   <Card
     title="<p><strong>Start Running a Koii Node</strong></p>"
     description="<p>Rent a personal device to the network, and start earning passive income with your existing hardware.</p>"
-    link="/run-a-node/introduction/task-nodes"
+    link="/run-a-node/introduction/types-of-nodes"
     linkText="Start Earning KOII"
     svgName="node"
     cardPerRow="3"
