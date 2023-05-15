@@ -86,9 +86,6 @@ const sidebars = {
     },
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
-    "koii-software-toolkit-sdk/using-the-cli",
-    "koii-software-toolkit-sdk/task-node-cli",
-    "koii-software-toolkit-sdk/create-task-cli",
     "koii-software-toolkit-sdk/wallet-and-faucet",
     {
       type: "category",
