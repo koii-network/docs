@@ -1,8 +1,8 @@
 ---
-title: Choosing tasks
+title: Choosing Tasks
 description: Application layer nodes are one of the most-needed commodities in Web3.
 image: img/thumbnail.png
-sidebar_label: Choosing tasks
+sidebar_label: Choosing Tasks
 ---
 
 You made it, you’re almost halfway through earning your first $KOII by running tasks on your device. 
