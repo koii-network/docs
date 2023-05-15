@@ -70,14 +70,8 @@ export const cardDetails: Cards[] = [
     title: "Learn",
     description: "Koii is complicated - Get the basics.",
     items: [
-      {
-        title: "Tokenomics",
-        link: "/concepts/the-koii-token/network-economics",
-      },
-      {
-        title: "Gradual Consensus",
-        link: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-      },
+      { title: "Tokenomics", link: "/concepts/the-koii-token/network-economics" },
+      { title: "Gradual Consensus", link: "/concepts/gradual-consensus/" },
       { title: "Community", link: "/concepts/community/community-forums" },
       { title: "Glossary", link: "/concepts/glossary" },
     ],

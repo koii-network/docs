@@ -54,22 +54,7 @@ const sidebars = {
       ],
     },
     "finnie-for-devs/other-evm-chains",
-    {
-      type: "html",
-      value: "Faucet",
-      className: "sidebar-title top-margin",
-    },
-    "faucet",
-    {
-      type: "category",
-      label: "Building With Koii",
-      link: {
-        type: "doc",
-        id: "building-with-koii",
-      },
-      collapsed: true,
-      items: [],
-    },
+
     {
       type: "html",
       value: "Command Line Tool",
@@ -93,25 +78,102 @@ const sidebars = {
     },
     "command-line-tool/task-node-cli",
     "command-line-tool/create-task-cli",
-    "command-line-tool/cli-reference",
+   
+    {
+      type: "html",
+      value: "Koii Software Toolkit (SDK)",
+      className: "sidebar-title top-margin",
+    },
+    "koii-software-toolkit-sdk/what-is-the-koii-sdk",
+    "koii-software-toolkit-sdk/koii-javascript-api",
+    "koii-software-toolkit-sdk/using-the-cli",
+    "koii-software-toolkit-sdk/task-node-cli",
+    "koii-software-toolkit-sdk/create-task-cli",
+    "koii-software-toolkit-sdk/wallet-and-faucet",
+    {
+      type: "category",
+      label: "Wallet Functions",
+      link: {
+        type: "doc",
+        id: "koii-software-toolkit-sdk/wallet-functions/wallet-functions",
+      },
+      collapsed: true,
+      items: [
+        "koii-software-toolkit-sdk/wallet-functions/load-wallet",
+        "koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+      ],
+    },
+    {
+      type: "category",
+      label: "Register Content",
+      link: {
+        type: "doc",
+        id: "koii-software-toolkit-sdk/register-content/register-content",
+      },
+      collapsed: true,
+      items: ["koii-software-toolkit-sdk/register-content/burn-koii-attention"],
+    },
+    {
+      type: "category",
+      label: "Basic Utility Functions",
+      link: {
+        type: "doc",
+        id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
+      },
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Koii State",
+          link: {
+            type: "doc",
+            id: "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
+          },
+          collapsed: true,
+          items: [
+            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
+            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
+            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
+          ],
+        },
+        {
+          type: "category",
+          label: "NFTs",
+          link: {
+            type: "doc",
+            id: "koii-software-toolkit-sdk/basic-utility-functions/nfts/nfts",
+          },
+          collapsed: true,
+          items: [
+            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
+            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
+            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
+            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
+          ],
+        },
+        {
+          type: "category",
+          label: "Arweave And General Utility",
+          link: {
+            type: "doc",
+            id: "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/arweave-and-general-utility",
+          },
+          collapsed: true,
+          items: [
+            "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
+          ],
+        },
+      ],
+    },
 
     {
       type: "html",
       value: "Join the Pirate Ship",
       className: "sidebar-title top-margin",
     },
-    "pirate-ship/founder-support-program",
+    
     "pirate-ship/ambassador-program",
-    "pirate-ship/contact-us",
-
-    {
-      type: "html",
-      value: "Get a Grant",
-      className: "sidebar-title top-margin",
-    },
-    "get-a-grant/build-an-app",
-    "get-a-grant/integrate-existing-product",
-    "get-a-grant/koii-to-the-world",
+   
   ],
 };
 
