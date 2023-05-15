@@ -2,15 +2,16 @@
   text-decoration: none !important;
 }
 
-.homeCard {
-  border: 1px solid #4d3d8d5e;
+.image {
   border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    border 0.3s ease-in-out;
+  border: 1px solid #4d3d8d5e;
 }
 
-.homeCard:hover {
-  box-shadow: 1px 1px 5px 1px #4d3d8d3d;
+.image:hover {
+  box-shadow: 4px 4px 15px 2px #4d3d8d27;
   border: 1px solid #4d3d8d23;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in,
+    border 0.3s ease-in, margin-top 0.3s ease-in, margin-bottom 0.3s ease-in;
 }
