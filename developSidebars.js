@@ -370,7 +370,7 @@ const sidebars = {
       collapsed: true,
       items: [
         "attention-mining/proof-of-real-traffic/attention-mining",
-        "attention-mining/proof-of-real-traffic/attention-mining",
+        "attention-mining/proof-of-real-traffic/registering-content",
         "attention-mining/proof-of-real-traffic/sybil-attack-prevention",
       ],
     },

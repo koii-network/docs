@@ -30,9 +30,9 @@ Want to make money while you sleep? Sign up below to join the public beta!
 
 When you run a task node on a personal device or hosted server, you can select from a list of known tasks that suit your device type, and then begin staking your KOII tokens in order to fulfill the task responsibilities. Each task contains an **executable**, an **audit function**, and a **rewards model**, which can be audited by any user in advance of participation.
 
-Once staked, your node must remain online to fulfill task executions according to the rules of the *audit function* and will operate in the background on your devices to provide microservices to Koii-X apps and developers.
+Once staked, your node must remain online to fulfill task executions according to the rules of the _audit function_ and will operate in the background on your devices to provide microservices to Koii-X apps and developers.
 
-If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg) to cover hardware and hosting.&#x20;
+If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover hardware and hosting.&#x20;
 
 #### Start writing your first task today!
 

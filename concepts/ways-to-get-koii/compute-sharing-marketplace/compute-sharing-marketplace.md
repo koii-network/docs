@@ -32,7 +32,7 @@ When you run a task node on a personal device or hosted server, you can select f
 
 Once staked, your node must remain online to fulfill task executions according to the rules of the _audit function_ and will operate in the background on your devices to provide microservices to Koii-X apps and developers.
 
-If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg) to cover hardware and hosting.&#x20;
+If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover hardware and hosting.&#x20;
 
 #### Start writing your first task today!
 
