@@ -211,6 +211,10 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/executable-structure",
           },
           {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/",
+            from: "/microservices-and-tasks/task-development-guide",
+          },
+          {
             to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
             from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
           },
@@ -356,7 +360,6 @@ const config = {
             position: "left",
             className: "header-text",
           },
-
         ],
       },
       footer: {},
