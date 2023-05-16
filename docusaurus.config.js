@@ -263,8 +263,24 @@ const config = {
             from: "/develop/category/koii-network",
           },
           {
-            to:"/quickstart/category/ethereum-network",
-            from:"/develop/category/ethereum-network"
+            to: "/quickstart/category/ethereum-network",
+            from: "/develop/category/ethereum-network",
+          },
+          {
+            to: "/concepts/the-koii-token/network-economics",
+            from: "/concepts/earning-koii/network-economics",
+          },
+          {
+            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            from: "/concepts/earning-koii/compute-sharing-marketplace"
+          },
+          {
+            to: "/concepts/ways-to-get-koii/grants-program",
+            from: "/concepts/earning-koii/grants-program"
+          },
+          {
+            to: "/concepts/ways-to-get-koii/get-free-tokens",
+            from: "/concepts/earning-koii/get-free-tokens"
           },
         ],
         createRedirects(existingPath) {
@@ -294,6 +310,16 @@ const config = {
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
                 "/develop/koii-software-toolkit-sdk"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (existingPath.includes("/develop/attention-mining/proof-of-real-traffic/")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/attention-mining/proof-of-real-traffic/",
+                "/concepts/earning-koii/proof-of-real-traffic/"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
