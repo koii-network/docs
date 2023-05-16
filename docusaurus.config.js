@@ -131,11 +131,14 @@ const config = {
             from: "/microservices-and-tasks/what-are-tasks",
           },
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/",
-            from: "/earning-koii/proof-of-real-traffic-port",
+            to: "/develop/attention-mining/proof-of-real-traffic/",
+            from: [
+              "/earning-koii/proof-of-real-traffic-port",
+              "/earning-koii/proof-of-real-traffic/",
+            ],
           },
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
+            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
             from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
           },
           {
@@ -147,7 +150,7 @@ const config = {
             from: "/build-dapps-with-koii/template-library",
           },
           {
-            to: "/concepts/earning-koii/compute-sharing-marketplace",
+            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/earning-koii/running-task-nodes",
           },
           {
@@ -170,14 +173,6 @@ const config = {
             to: "/develop/settlement-layer/creating-tokens-on-k2",
             from: "/settlement-layer/creating-tokens-on-k2",
           },
-          // {
-          //   to: "/",
-          //   from: "/#what-is-koii",
-          // },
-          // {
-          //   to: "/concepts/earning-koii/proof-of-real-traffic/",
-          //   from: "/#the-koii-token",
-          // },
           {
             to: "/quickstart/koii-software-toolkit-sdk/register-content/",
             from: "/earning-koii/registering-content",
@@ -195,7 +190,7 @@ const config = {
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
-            to: "/concepts/earning-koii/network-economics",
+            to: "/concepts/the-koii-token/network-economics",
             from: "/earning-koii/network-economics",
           },
           {
@@ -234,7 +229,7 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
-            to: "/concepts/earning-koii/compute-sharing-marketplace",
+            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
@@ -267,6 +262,20 @@ const config = {
             from: "/develop/category/ethereum-network",
           },
           {
+            to: "/concepts/ways-to-get-koii/grants-program",
+            from: [
+              "/earning-koii/grants-program",
+              "/concepts/earning-koii/grants-program",
+            ],
+          },
+          {
+            to: "/concepts/ways-to-get-koii/get-free-tokens",
+            from: [
+              "/earning-koii/get-free-tokens",
+              "/concepts/earning-koii/get-free-tokens",
+            ],
+          },
+          {
             to: "/concepts/the-koii-token/network-economics",
             from: "/concepts/earning-koii/network-economics",
           },
@@ -275,12 +284,21 @@ const config = {
             from: "/concepts/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/concepts/ways-to-get-koii/grants-program",
-            from: "/concepts/earning-koii/grants-program",
+            to: "/develop/attention-mining/proof-of-real-traffic/",
+            from: "/concepts/earning-koii/proof-of-real-traffic/",
+          },
+
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
+            from: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
           },
           {
-            to: "/concepts/ways-to-get-koii/get-free-tokens",
-            from: "/concepts/earning-koii/get-free-tokens",
+            to: "/develop/attention-mining/proof-of-real-traffic/registering-content",
+            from: "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+          },
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+            from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
           },
           {
             to: "/develop/settlement-layer/running-a-k2-node/",
@@ -329,20 +347,6 @@ const config = {
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
                 "/develop/koii-software-toolkit-sdk"
-              ),
-              // existingPath.replace("/community", "/docs/support"),
-            ];
-          }
-          if (
-            existingPath.includes(
-              "/develop/attention-mining/proof-of-real-traffic/"
-            )
-          ) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            return [
-              existingPath.replace(
-                "/develop/attention-mining/proof-of-real-traffic/",
-                "/concepts/earning-koii/proof-of-real-traffic/"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
