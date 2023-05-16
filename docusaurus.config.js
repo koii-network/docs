@@ -248,7 +248,7 @@ const config = {
           },
         ],
         createRedirects(existingPath) {
-          if (existingPath.includes("/build-dapps-with-koii")) {
+          if (existingPath.includes("/concepts/introduction")) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
