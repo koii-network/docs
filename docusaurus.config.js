@@ -123,7 +123,7 @@ const config = {
             from: "/build-dapps-with-koii/welcome-to-koii-x",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            to: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
             from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
           },
           {
@@ -179,7 +179,7 @@ const config = {
           //   from: "/#the-koii-token",
           // },
           {
-            to: "/develop/koii-software-toolkit-sdk/register-content/",
+            to: "/quickstart/koii-software-toolkit-sdk/register-content/",
             from: "/earning-koii/registering-content",
           },
           {
@@ -203,7 +203,7 @@ const config = {
             from: "/microservices-and-tasks/google-doodle-task",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/create-task-cli",
+            to: "/quickstart/command-line-tool/create-task-cli",
             from: "/koii-software-toolkit-sdk/create-task-cli",
           },
           {
