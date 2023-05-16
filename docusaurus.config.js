@@ -326,15 +326,23 @@ const config = {
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
-            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers"
+            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus"
+            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
-            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment"
+            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
+          },
+          {
+            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            from: "/develop/microservices-and-tasks/run-a-task-node",
+          },
+          {
+            to: "/develop/designing-tasks/using-reputation",
+            from: "/develop/microservices-and-tasks/using-reputation",
           },
         ],
         createRedirects(existingPath) {
