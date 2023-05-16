@@ -5,6 +5,9 @@
 .image {
   border-radius: 10px;
   border: 1px solid #4d3d8d5e;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+  border 0.3s ease-in-out, margin-top 0.3s ease-in-out,
+  margin-bottom 0.3s ease-in-out;
 }
 
 .image:hover {
@@ -12,6 +15,4 @@
   border: 1px solid #4d3d8d23;
   margin-top: -10px;
   margin-bottom: 10px;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in,
-    border 0.3s ease-in, margin-top 0.3s ease-in, margin-bottom 0.3s ease-in;
 }
