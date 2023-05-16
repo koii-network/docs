@@ -257,8 +257,8 @@ const config = {
               ),
               // existingPath.replace("/community", "/docs/support"),
               existingPath.replace(
-                "/quickstart/finnie-for-devs/",
-                "/develop/finnie-for-devs/",
+                "/quickstart/finnie-for-devs",
+                "/develop/finnie-for-devs",
               ),
             ];
           }
