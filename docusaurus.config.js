@@ -364,6 +364,28 @@ const config = {
             ];
           }
           if (
+            existingPath.includes("/develop/task-tutorials/google-doodle-task/")
+          ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/task-tutorials/google-doodle-task/",
+                "/develop/microservices-and-tasks/google-doodle-task/"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (existingPath.includes("/develop/task-tutorials/linktree-task/")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/task-tutorials/linktree-task/",
+                "/develop/microservices-and-tasks/linktree-task/"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (
             existingPath.includes(
               "/develop/write-a-koii-task/task-development-kit-tdk/"
             )
