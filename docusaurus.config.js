@@ -252,8 +252,8 @@ const config = {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
-                "/build-dapps-with-koii",
-                "/develop/build-dapps-with-koii"
+                "/concepts/introduction",
+                "concepts/koii-summary"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
