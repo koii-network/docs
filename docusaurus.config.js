@@ -253,7 +253,7 @@ const config = {
             return [
               existingPath.replace(
                 "/concepts/introduction",
-                "concepts/koii-summary"
+                "/concepts/koii-summary"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
