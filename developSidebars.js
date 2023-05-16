@@ -56,7 +56,7 @@ const sidebars = {
           label: "Key Components",
           link: {
             type: "doc",
-            id: "koii-task-101/what-are-tasks/key-components/key-components",
+            id: "koii-task-101/what-are-tasks/key-components/intro",
           },
           collapsed: true,
           items: [
