@@ -385,6 +385,14 @@ const config = {
             to: "/develop/task-tutorials/linktree-task/auth-list",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
+          {
+            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            from: "/develop/microservices-and-tasks/run-a-task-node",
+          },
+          {
+            to: "/develop/designing-tasks/using-reputation",
+            from: "/develop/microservices-and-tasks/using-reputation",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -427,7 +435,7 @@ const config = {
             return [
               existingPath.replace(
                 "/develop/write-a-koii-task/task-development-guide/",
-                "/develop/microservices-and-tasks/task-development-kit-tdk/"
+                "/develop/microservices-and-tasks/task-development-guide/"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
