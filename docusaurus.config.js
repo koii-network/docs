@@ -268,6 +268,16 @@ const config = {
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
+          if (existingPath.includes("/quickstart/koii-software-toolkit-sdk")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/quickstart/koii-software-toolkit-sdk",
+                "/develop/koii-software-toolkit-sdk",
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
           return undefined; // Return a falsy value: no redirect created
         },
       },
