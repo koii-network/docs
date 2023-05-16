@@ -278,6 +278,13 @@ const config = {
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
+          // if (existingPath.includes("/concepts/community")) {
+          //   // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+          //   return [
+          //     existingPath.replace("/concepts/community", "/develop/support/"),
+          //     // existingPath.replace("/community", "/docs/support"),
+          //   ];
+          // }
           if (existingPath.includes("/quickstart/finnie-for-devs")) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
