@@ -360,7 +360,7 @@ const config = {
             ];
           }
           if (
-            existingPath.includes("/microservices-and-tasks/what-are-tasks")
+            existingPath.includes("/koii-task-101/what-are-tasks")
           ) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
