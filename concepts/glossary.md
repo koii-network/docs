@@ -1,4 +1,3 @@
-
 ---
 title: Glossary
 description: The discord is a great place to meet community members, and can also be useful for discussing development issues with other ecosystem partners.
@@ -79,16 +78,16 @@ An online KOII token dispenser designed for people to get a small amount of free
 
 ## KOII Task
 - <h3 style={{marginTop: '0px'}}> Task Template </h3>
-
 A framework that allows a developer to create tasks easily and quickly
 
 - ### Create a Task
-
 Creating a task usually happens when developers use “Create-task-CLI” to package their task code to task node and upload the task configuration information to IPFS
 
 - ### Deploy a Task
-
 The allow-list process for other people to run that task from their personal devices
+
+
+<br/>
 
 # General Computing Terms
 <h2 style={{marginTop: '0px'}}> An Application Programming Interface (API) </h2>
