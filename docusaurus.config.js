@@ -301,6 +301,14 @@ const config = {
             from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
           },
           {
+            from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
+            to: "/develop/designing-tasks/staking-and-voting",
+          },
+          {
+            from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
+            to: "/develop/designing-tasks/securing-task",
+          },
+          {
             to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
             from: "/develop/settlement-layer/running-a-k2-node/",
           },
