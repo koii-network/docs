@@ -320,6 +320,26 @@ const config = {
             to: "/run-a-node/k2-nodes/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
+          {
+            from: "/develop/microservices-and-tasks/what-are-tasks/",
+            to: "/develop/koii-task-101/what-are-tasks/",
+          },
+          {
+            to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
+            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers"
+          },
+          {
+            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus"
+          },
+          {
+            to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
+            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment"
+          },
+          {
+            to: "/develop/koii-task-101/what-are-tasks/key-components/",
+            from: "/develop/microservices-and-tasks/what-are-tasks/key-components"
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
