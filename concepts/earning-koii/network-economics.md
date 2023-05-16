@@ -9,9 +9,9 @@ sidebar_label: Network Economics
 
 ![banner](img/NETWORK%20ECONOMICS.svg)
 
-Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose. In our first implementation, the [settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/develop/finnie-for-devs/koii-network/transfer-koii) and [dispute resolution](/develop/microservices-and-tasks/what-are-tasks/what-are-audits) services to support the compute economy, while providing a historical ledger. Since the settlement layer is decentralized, there is no central ownership body, and following from the examples of Bitcoin, Ethereum, and Solana, a tokenized model was implemented to ensure bad actors can be appropriately penalized. Transaction fees paid in KOII tokens control how data is added to the network, preventing a bad actor from flooding the system with spam.&#x20;
+Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose. In our first implementation, the [settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/) and [dispute resolution](/develop/designing-tasks/securing-task) services to support the compute economy, while providing a historical ledger. Since the settlement layer is decentralized, there is no central ownership body, and following from the examples of Bitcoin, Ethereum, and Solana, a tokenized model was implemented to ensure bad actors can be appropriately penalized. Transaction fees paid in KOII tokens control how data is added to the network, preventing a bad actor from flooding the system with spam.&#x20;
 
-**Note:** The token does not confer governance rights, nor does it provide any ownership of the system, Koii Labs, or the Koii Foundation. Ownership of tokens does permit a community member to run either a [K2 node](/develop/settlement-layer/running-a-k2-node) or a [task node](/develop/microservices-and-tasks/run-a-task-node), and provide services to the network.
+**Note:** The token does not confer governance rights, nor does it provide any ownership of the system, Koii Labs, or the Koii Foundation. Ownership of tokens does permit a community member to run either a [K2 node](/develop/settlement-layer/running-a-k2-node) or a [task node](/run-a-node/introduction/task-nodes), and provide services to the network.
 
 ### Token Generation
 
@@ -25,7 +25,7 @@ While early cryptocurrencies aimed to provide hard caps, like the Bitcoin networ
 
 ![banner](img/Supply%20Reduction%402x.svg)
 
-The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and sophisticated, easy to use tooling. Each time that a new project launches on Koii, a *bounty* must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
+The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and sophisticated, easy to use tooling. Each time that a new project launches on Koii, a _bounty_ must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
 
 At steady state, the network is designed to lock up tokens in staking and bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
