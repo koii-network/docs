@@ -393,6 +393,14 @@ const config = {
             to: "/develop/designing-tasks/using-reputation",
             from: "/develop/microservices-and-tasks/using-reputation",
           },
+          {
+            to: "/concepts/introduction/welcome",
+            from: "/concepts/koii-summary/impact",
+          },
+          {
+            to: "/concepts/introduction/welcome",
+            from: "/concepts/koii-summary/social-tech",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
