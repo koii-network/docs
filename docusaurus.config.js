@@ -193,10 +193,10 @@ const config = {
             to: "/concepts/the-koii-token/network-economics",
             from: "/earning-koii/network-economics",
           },
-          {
-            to: "/develop/task-tutorials/google-doodle-task",
-            from: "/microservices-and-tasks/google-doodle-task",
-          },
+          // {
+          //   to: "/develop/task-tutorials/google-doodle-task/",
+          //   from: "/microservices-and-tasks/google-doodle-task",
+          // },
           {
             to: "/quickstart/command-line-tool/create-task-cli",
             from: [
