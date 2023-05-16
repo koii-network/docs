@@ -1,0 +1,18 @@
+.homeCardLink {
+  text-decoration: none !important;
+}
+
+.image {
+  border-radius: 10px;
+  border: 1px solid #4d3d8d5e;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+  border 0.3s ease-in-out, margin-top 0.3s ease-in-out,
+  margin-bottom 0.3s ease-in-out;
+}
+
+.image:hover {
+  box-shadow: 4px 4px 15px 2px #4d3d8d27;
+  border: 1px solid #4d3d8d23;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

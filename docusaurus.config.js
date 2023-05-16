@@ -67,23 +67,47 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "quickstart",
+        path: "quickstart",
+        routeBasePath: "quickstart/",
+        sidebarPath: require.resolve("./quickstartSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "run-a-node",
+        path: "run-a-node",
+        routeBasePath: "run-a-node/",
+        sidebarPath: require.resolve("./runANodeSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
           {
-            to: "/concepts/koii-summary/welcome",
-            from: "/koii-summary/readme",
+            to: "/concepts/introduction/welcome",
+            from: "/introduction/readme",
           },
           {
             to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
             from: "/settlement-layer/running-a-k2-node/setup-process",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
-            from: "/koii-software-toolkit-sdk/using-the-cli",
-          },
-          {
-            to: "/develop/koii-software-toolkit-sdk/using-the-cli",
+            to: "/quickstart/command-line-tool/koii-cli/install-cli",
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
           {
@@ -91,12 +115,8 @@ const config = {
             from: "/settlement-layer/running-a-k2-node",
           },
           {
-            to: "/concepts/koii-summary/tools",
-            from: "/koii-summary/tools",
-          },
-          {
-            to: "/concepts/koii-summary/impact",
-            from: "/koii-summary/impact",
+            to: "/concepts/introduction/tools",
+            from: "/introduction/tools",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
@@ -107,7 +127,7 @@ const config = {
             from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/",
+            to: "/develop/koii-task-101/what-are-tasks/",
             from: "/microservices-and-tasks/what-are-tasks",
           },
           {
@@ -117,10 +137,6 @@ const config = {
           {
             to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
             from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
-          },
-          {
-            to: "/concepts/koii-summary/tools",
-            from: "/koii-summary/tools",
           },
           {
             to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
@@ -139,12 +155,12 @@ const config = {
             from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
             from: "/microservices-and-tasks/gradual-consensus",
           },
           {
-            to: "/concepts/koii-summary/philosophy",
-            from: "/koii-summary/philosophy",
+            to: "/concepts/introduction/philosophy",
+            from: "/introduction/philosophy",
           },
           {
             to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
@@ -167,7 +183,7 @@ const config = {
             from: "/earning-koii/registering-content",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
             from: "/microservices-and-tasks/what-are-tasks/gradual-consensus",
           },
           {
@@ -183,7 +199,7 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/microservices-and-tasks/google-doodle-task",
+            to: "/develop/task-tutorials/google-doodle-task",
             from: "/microservices-and-tasks/google-doodle-task",
           },
           {
@@ -191,23 +207,27 @@ const config = {
             from: "/koii-software-toolkit-sdk/create-task-cli",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/executable-structure/",
+            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
             from: "/microservices-and-tasks/task-development-guide/executable-structure",
           },
           {
-            to: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/",
+            from: "/microservices-and-tasks/task-development-guide",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
             from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
+            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
             from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
           },
           {
-            to: "/develop/microservices-and-tasks/what-are-tasks/key-components",
+            to: "/develop/koii-task-101/what-are-tasks/key-components",
             from: "/microservices-and-tasks/what-are-tasks/key-components",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
+            to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
@@ -215,12 +235,16 @@ const config = {
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/finnie-for-devs/welcome-to-finnie",
+            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
-            to: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
+          },
+          {
+            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            from: "/quickstart/building-with-koii",
           },
         ],
         createRedirects(existingPath) {
@@ -310,15 +334,29 @@ const config = {
         items: [
           {
             label: "📖 Learn",
-            to: "/concepts/koii-summary/welcome",
+            to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
           },
           {
-            label: "💻 Build",
+            label: "🏗️ Build on Koii",
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
             activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "💻 Quickstart",
+            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
+            activeBasePath: "quickstart",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "💻 Run a Node",
+            to: "/run-a-node/introduction/types-of-nodes",
+            activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
           },

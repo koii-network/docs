@@ -35,28 +35,8 @@ const sidebars = {
       ],
     },
     {
-      type: "category",
-      label: "Running a K2 Node",
-      link: {
-        type: "doc",
-        id: "settlement-layer/running-a-k2-node/running-a-k2-node",
-      },
-      collapsed: true,
-      items: [
-        "settlement-layer/running-a-k2-node/system-requirements",
-        "settlement-layer/running-a-k2-node/system-setup",
-        "settlement-layer/running-a-k2-node/validator-setup",
-        
-
-      ],
-    },
-    "settlement-layer/creating-tokens-on-k2",
-    "settlement-layer/block-explorer",
-    "settlement-layer/wallets",
-    "settlement-layer/rent",
-    {
       type: "html",
-      value: "Microservices & Tasks",
+      value: "Koii Tasks 101",
       className: "sidebar-title top-margin",
     },
     {
@@ -64,24 +44,49 @@ const sidebars = {
       label: "What are Tasks?",
       link: {
         type: "doc",
-        id: "microservices-and-tasks/what-are-tasks/what-are-tasks",
+        id: "koii-task-101/what-are-tasks/what-are-tasks",
       },
       collapsed: true,
       items: [
-        "microservices-and-tasks/what-are-tasks/nodes-vs-servers",
-        "microservices-and-tasks/what-are-tasks/gradual-consensus",
-        "microservices-and-tasks/what-are-tasks/runtime-environment",
-        "microservices-and-tasks/what-are-tasks/key-components",
-        "microservices-and-tasks/what-are-tasks/staking-and-voting",
-        "microservices-and-tasks/what-are-tasks/what-are-audits",
+        "koii-task-101/what-are-tasks/nodes-vs-servers",
+        "koii-task-101/what-are-tasks/gradual-consensus",
+        "koii-task-101/what-are-tasks/runtime-environment",
+        {
+          type: "category",
+          label: "Key Components",
+          link: {
+            type: "doc",
+            id: "koii-task-101/what-are-tasks/key-components/key-components",
+          },
+          collapsed: true,
+          items: [
+            "koii-task-101/what-are-tasks/key-components/database-sharding",
+            "koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+            "koii-task-101/what-are-tasks/key-components/rest-api",
+            "koii-task-101/what-are-tasks/key-components/auth-and-security",
+          ],
+        },
       ],
+    },
+    {
+      type: "html",
+      value: "Designing Tasks",
+      className: "sidebar-title top-margin",
+    },
+    "designing-tasks/staking-and-voting",
+    "designing-tasks/securing-task",
+    "designing-tasks/using-reputation",
+    {
+      type: "html",
+      value: "Write a Koii Task",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
       label: "Task Development Kit (TDK)",
       link: {
         type: "doc",
-        id: "microservices-and-tasks/task-development-kit-tdk/task-development-kit-tdk",
+        id: "write-a-koii-task/task-development-kit-tdk/task-development-kit-tdk",
       },
       collapsed: true,
       items: [
@@ -90,20 +95,20 @@ const sidebars = {
           label: "Using the Task Namespace",
           link: {
             type: "doc",
-            id: "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/using-the-task-namespace",
+            id: "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/using-the-task-namespace",
           },
           collapsed: true,
           items: [
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/rest-apis",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/nedb",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/task-state",
-            "microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
+            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
           ],
         },
         {
@@ -111,12 +116,12 @@ const sidebars = {
           label: "Developing Locally with Docker",
           link: {
             type: "doc",
-            id: "microservices-and-tasks/task-development-kit-tdk/testing-locally-with-docker/testing-locally-with-docker",
+            id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-with-docker",
           },
           collapsed: true,
           items: [
-            "microservices-and-tasks/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
-            "microservices-and-tasks/task-development-kit-tdk/testing-locally-with-docker/configuration",
+            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
+            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
           ],
         },
       ],
@@ -126,7 +131,7 @@ const sidebars = {
       label: "Task Development Guide",
       link: {
         type: "doc",
-        id: "microservices-and-tasks/task-development-guide/task-development-guide",
+        id: "write-a-koii-task/task-development-guide/task-development-guide",
       },
       collapsed: true,
       items: [
@@ -135,13 +140,13 @@ const sidebars = {
           label: "Executable Structure",
           link: {
             type: "doc",
-            id: "microservices-and-tasks/task-development-guide/executable-structure/executable-structure",
+            id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
           },
           collapsed: true,
           items: [
-            "microservices-and-tasks/task-development-guide/executable-structure/setup",
-            "microservices-and-tasks/task-development-guide/executable-structure/validate-node",
-            "microservices-and-tasks/task-development-guide/executable-structure/api-endpoints-optional",
+            "write-a-koii-task/task-development-guide/executable-structure/setup",
+            "write-a-koii-task/task-development-guide/executable-structure/validate-node",
+            "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
           ],
         },
         {
@@ -149,13 +154,13 @@ const sidebars = {
           label: "K2 Task Template",
           link: {
             type: "doc",
-            id: "microservices-and-tasks/task-development-guide/k2-task-template/k2-task-template",
+            id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
           },
           collapsed: true,
           items: [
-            "microservices-and-tasks/task-development-guide/k2-task-template/task-function",
-            "microservices-and-tasks/task-development-guide/k2-task-template/audit-function",
-            "microservices-and-tasks/task-development-guide/k2-task-template/distribution-functions",
+            "write-a-koii-task/task-development-guide/k2-task-template/task-function",
+            "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+            "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
           ],
         },
         {
@@ -164,32 +169,37 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "microservices-and-tasks/task-development-guide/task-development-flow/task-development-flow",
+            id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
           },
           items: [
-            "microservices-and-tasks/task-development-guide/task-development-flow/compile-task",
-            "microservices-and-tasks/task-development-guide/task-development-flow/create-task",
-            "microservices-and-tasks/task-development-guide/task-development-flow/whitelist-task",
-            "microservices-and-tasks/task-development-guide/task-development-flow/create-staking-wallet",
+            "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+            "write-a-koii-task/task-development-guide/task-development-flow/create-task",
+            "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+            "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
           ],
         },
       ],
+    },
+    {
+      type: "html",
+      value: "Task Tutorials",
+      className: "sidebar-title top-margin",
     },
     {
       type: "category",
       label: "Example Task: Google Doodle",
       link: {
         type: "doc",
-        id: "microservices-and-tasks/google-doodle-task/google-doodle-task",
+        id: "task-tutorials/google-doodle-task/google-doodle-task",
       },
       collapsed: true,
       items: [
-        "microservices-and-tasks/google-doodle-task/getting-started",
-        "microservices-and-tasks/google-doodle-task/google-doodle-task-functions",
-        "microservices-and-tasks/google-doodle-task/audit-submission-value",
-        "microservices-and-tasks/google-doodle-task/submit-distribution-list",
-        "microservices-and-tasks/google-doodle-task/audit-distribution-list",
-        "microservices-and-tasks/google-doodle-task/google-doodle-executable-code",
+        "task-tutorials/google-doodle-task/getting-started",
+        "task-tutorials/google-doodle-task/google-doodle-task-functions",
+        "task-tutorials/google-doodle-task/audit-submission-value",
+        "task-tutorials/google-doodle-task/submit-distribution-list",
+        "task-tutorials/google-doodle-task/audit-distribution-list",
+        "task-tutorials/google-doodle-task/google-doodle-executable-code",
       ],
     },
     {
@@ -197,146 +207,35 @@ const sidebars = {
       label: "Example Task: Linktree",
       link: {
         type: "doc",
-        id: "microservices-and-tasks/linktree-task/intro",
+        id: "task-tutorials/linktree-task/intro",
       },
       collapsed: true,
       items: [
-        "microservices-and-tasks/linktree-task/data-storage",
-        "microservices-and-tasks/linktree-task/data-sharing",
-        "microservices-and-tasks/linktree-task/rest-api",
-        "microservices-and-tasks/linktree-task/auth-list",
-      ],
-    },
-    "microservices-and-tasks/run-a-task-node",
-    "microservices-and-tasks/using-reputation",
-    {
-      type: "html",
-      value: "Koii Software Toolkit (SDK)",
-      className: "sidebar-title top-margin",
-    },
-    "koii-software-toolkit-sdk/what-is-the-koii-sdk",
-    "koii-software-toolkit-sdk/koii-javascript-api",
-    "koii-software-toolkit-sdk/using-the-cli",
-    "koii-software-toolkit-sdk/task-node-cli",
-    "koii-software-toolkit-sdk/create-task-cli",
-    "koii-software-toolkit-sdk/wallet-and-faucet",
-    {
-      type: "category",
-      label: "Wallet Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/wallet-functions/wallet-functions",
-      },
-      collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/wallet-functions/load-wallet",
-        "koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+        "task-tutorials/linktree-task/data-storage",
+        "task-tutorials/linktree-task/data-sharing",
+        "task-tutorials/linktree-task/rest-api",
+        "task-tutorials/linktree-task/auth-list",
       ],
     },
     {
       type: "category",
-      label: "Register Content",
+      label: "Example Task: Todo",
       link: {
         type: "doc",
-        id: "koii-software-toolkit-sdk/register-content/register-content",
+        id: "task-tutorials/to-do/to-do",
       },
       collapsed: true,
-      items: ["koii-software-toolkit-sdk/register-content/burn-koii-attention"],
+      items: [],
     },
     {
       type: "category",
-      label: "Basic Utility Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
-      },
+      label: "Example Task: Scrappers",
       collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Koii State",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
-          ],
-        },
-        {
-          type: "category",
-          label: "NFTs",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/nfts/nfts",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
-          ],
-        },
-        {
-          type: "category",
-          label: "Arweave And General Utility",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/arweave-and-general-utility",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
-          ],
-        },
-      ],
+      items: ["task-tutorials/scrapers/twitter"],
     },
     {
       type: "html",
-      value: "Finnie For Devs",
-      className: "sidebar-title top-margin",
-    },
-    "finnie-for-devs/welcome-to-finnie",
-    "finnie-for-devs/connecting-finnie",
-    {
-      type: "category",
-      label: "Koii Network",
-      link: {
-        type: "generated-index",
-        description: "Here are the articles in this section",
-      },
-      collapsed: true,
-      items: [
-        "finnie-for-devs/koii-network/transfer-koii",
-        "finnie-for-devs/koii-network/signpayload-koii",
-        "finnie-for-devs/koii-network/transfer-ar",
-        "finnie-for-devs/koii-network/transfernft",
-      ],
-    },
-    {
-      type: "category",
-      label: "Ethereum Network",
-      link: {
-        type: "generated-index",
-        description:
-          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
-      },
-      collapsed: true,
-      items: [
-        "finnie-for-devs/ethereum-network/send-eth",
-        "finnie-for-devs/ethereum-network/send-eth-eip-1559",
-        "finnie-for-devs/ethereum-network/contract-deployment",
-        "finnie-for-devs/ethereum-network/mint-nft",
-      ],
-    },
-    "finnie-for-devs/other-evm-chains",
-    {
-      type: "html",
-      value: "Build Dapps with Koii",
+      value: "Use Koii-X dApp Templates",
       className: "sidebar-title top-margin",
     },
     {
@@ -458,11 +357,23 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "Support",
+      value: "Attention Mining",
       className: "sidebar-title top-margin",
     },
-    "support/community-forums",
-    "support/contact-support",
+    {
+      type: "category",
+      label: "Proof Of Real Traffic(PoRT)",
+      link: {
+        type: "doc",
+        id: "attention-mining/proof-of-real-traffic/proof-of-real-traffic",
+      },
+      collapsed: true,
+      items: [
+        "attention-mining/proof-of-real-traffic/attention-mining",
+        "attention-mining/proof-of-real-traffic/registering-content",
+        "attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+      ],
+    },
   ],
 };
 
