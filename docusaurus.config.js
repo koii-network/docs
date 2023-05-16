@@ -301,16 +301,16 @@ const config = {
             from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
           },
           {
-            to: "/develop/settlement-layer/running-a-k2-node/",
-            from: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            from: "/develop/settlement-layer/running-a-k2-node/",
           },
           {
-            to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
-            from: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            from: "/develop/settlement-layer/running-a-k2-node/system-requirements",
           },
           {
-            to: "/develop/settlement-layer/running-a-k2-node/setup-process",
-            from: "/run-a-node/k2-nodes/system-setup",
+            to: "/run-a-node/k2-nodes/system-setup",
+            from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
         ],
         createRedirects(existingPath) {
