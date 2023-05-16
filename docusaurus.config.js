@@ -256,10 +256,16 @@ const config = {
                 "/concepts/koii-summary"
               ),
               // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (existingPath.includes("/quickstart/finnie-for-devs")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
               existingPath.replace(
                 "/quickstart/finnie-for-devs",
                 "/develop/finnie-for-devs",
               ),
+              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           return undefined; // Return a falsy value: no redirect created
