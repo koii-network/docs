@@ -336,10 +336,6 @@ const config = {
             to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
             from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment"
           },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/key-components/",
-            from: "/develop/microservices-and-tasks/what-are-tasks/key-components"
-          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
