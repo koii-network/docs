@@ -313,7 +313,7 @@ const config = {
             from: "/develop/settlement-layer/running-a-k2-node/",
           },
           {
-            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            to: "/run-a-node/k2-nodes/system-requirements",
             from: "/develop/settlement-layer/running-a-k2-node/system-requirements",
           },
           {
@@ -352,6 +352,34 @@ const config = {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace("/concepts/community", "/develop/support/"),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (
+            existingPath.includes(
+              "/develop/write-a-koii-task/task-development-kit-tdk/"
+            )
+          ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/write-a-koii-task/task-development-kit-tdk/",
+                "/develop/microservices-and-tasks/task-development-kit-tdk/"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (
+            existingPath.includes(
+              "/develop/write-a-koii-task/task-development-guide/"
+            )
+          ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/write-a-koii-task/task-development-guide/",
+                "/develop/microservices-and-tasks/task-development-kit-tdk/"
+              ),
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
