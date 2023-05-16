@@ -258,6 +258,14 @@ const config = {
             to: "/quickstart/command-line-tool/task-node-cli",
             from: "/develop/koii-software-toolkit-sdk/task-node-cli",
           },
+          {
+            to: "/quickstart/category/koii-network",
+            from: "/develop/category/koii-network",
+          },
+          {
+            to:"/quickstart/category/ethereum-network",
+            from:"/develop/category/ethereum-network"
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
