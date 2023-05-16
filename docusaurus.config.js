@@ -300,6 +300,14 @@ const config = {
             to: "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
             from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
           },
+          {
+            from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
+            to: "/develop/designing-tasks/staking-and-voting",
+          },
+          {
+            from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
+            to: "/develop/designing-tasks/securing-task",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -335,6 +343,18 @@ const config = {
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
                 "/develop/koii-software-toolkit-sdk"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (
+            existingPath.includes("/microservices-and-tasks/what-are-tasks")
+          ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/koii-task-101/what-are-tasks",
+                "/microservices-and-tasks/what-are-tasks"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
