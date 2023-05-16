@@ -25,7 +25,7 @@ Just drag, drop, and share to start tracking views and earning KOII.
 
 If you have existing content online, such as a blog, website, or app, you can use the developer kit to track attention on your content and mine KOII for every view.
 
-<ContentLink title="Restering Content" link="/concepts/earning-koii/proof-of-real-traffic/registering-content" iconType="copy"/>
+<ContentLink title="Registering Content" link="/concepts/earning-koii/proof-of-real-traffic/registering-content" iconType="copy"/>
 
 ## Source Code
 

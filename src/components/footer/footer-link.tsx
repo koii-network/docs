@@ -8,6 +8,6 @@ type FooterLinkProps = {
 
 export const FooterLink = ({ title, url, target }: FooterLinkProps) => (
   <div className="text-[12px] md:text-[14px]">
-      <a className="text-white" href={url} target={target}>{title}</a>
+      <a className="text-white hover:text-[#9be7c4] hover:no-underline" href={url} target={target}>{title}</a>
   </div>
 );

@@ -11,7 +11,7 @@ Our mission at Koii is to produce better decentralized applications, and make it
 
 The first step in this process was to build a format for anonymous and decentralized trust in product operations, so we designed an open standard called [Gradual Consensus](docs/welcome), and implemented a prototype called Tasks.
 
-Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/1ATBOuLeqSCa-WCEBU8Ky0Ac20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
+Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
 
 <Cards>
   <Card

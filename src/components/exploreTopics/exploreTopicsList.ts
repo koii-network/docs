@@ -2,16 +2,7 @@ export const exploreTopics = [
   {
     title: "Understanding Koii",
     items: [
-      {
-        title: "Impact & Philosophy",
-        link: "/concepts/koii-summary/impact",
-        icon: "/img/explore-topics-icons/impact-philosophy.svg",
-      },
-      {
-        title: "Social Tech",
-        link: "/concepts/koii-summary/social-tech",
-        icon: "/img/explore-topics-icons/social-tech.svg",
-      },
+
       {
         title: "Grants Program",
         link: "/concepts/earning-koii/grants-program",
@@ -55,12 +46,12 @@ export const exploreTopics = [
       },
       {
         title: "Task Nodes",
-        link: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
+        link: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
         icon: "/img/explore-topics-icons/task-nodes.svg",
       },
       {
         title: "Koii Tasks",
-        link: "/develop/microservices-and-tasks/what-are-tasks/",
+        link: "/develop/koii-task-101/what-are-tasks/",
         icon: "/img/explore-topics-icons/koii-tasks.svg",
       },
       {
@@ -68,11 +59,7 @@ export const exploreTopics = [
         link: "/develop/koii-software-toolkit-sdk/wallet-and-faucet",
         icon: "/img/explore-topics-icons/koii-faucet.svg",
       },
-      {
-        title: "Welcome to Koii-X",
-        link: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
-        icon: "/img/explore-topics-icons/koiix.svg",
-      },
+     
     ],
   },
 
@@ -86,14 +73,14 @@ export const exploreTopics = [
       },
       {
         title: "Task Node CLI",
-        link: "/develop/koii-software-toolkit-sdk/task-node-cli",
+        link: "/quickstart/command-line-tool/task-node-cli",
         icon: "/img/explore-topics-icons/task-node-cli.svg",
       },
-      {
-        title: "Task Development Kit",
-        link: "/develop/microservices-and-tasks/task-development-kit-tdk/",
-        icon: "/img/explore-topics-icons/task-dev-kit.svg",
-      },
+      // {
+      //   title: "Task Development Kit",
+      //   link: "/develop/microservices-and-tasks/task-development-kit-tdk/",
+      //   icon: "/img/explore-topics-icons/task-dev-kit.svg",
+      // },
       {
         title: "JavaScript SDK & API",
         link: "/develop/koii-software-toolkit-sdk/koii-javascript-api",
@@ -106,7 +93,7 @@ export const exploreTopics = [
       },
       {
         title: "Finnie for Devs",
-        link: "/develop/finnie-for-devs/welcome-to-finnie",
+        link: "/quickstart/finnie-for-devs/welcome-to-finnie",
         icon: "/img/explore-topics-icons/finnie-dev.svg",
       },
     ],
