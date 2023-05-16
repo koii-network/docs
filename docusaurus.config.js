@@ -362,7 +362,7 @@ const config = {
             return [
               existingPath.replace(
                 "/develop/write-a-koii-task/task-development-guide/",
-                "/develop/microservices-and-tasks/task-development-kit-tdk/"
+                "/develop/microservices-and-tasks/task-development-guide/"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
