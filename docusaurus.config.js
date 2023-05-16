@@ -204,7 +204,10 @@ const config = {
           },
           {
             to: "/quickstart/command-line-tool/create-task-cli",
-            from: "/koii-software-toolkit-sdk/create-task-cli",
+            from: [
+              "/koii-software-toolkit-sdk/create-task-cli",
+              "/develop/koii-software-toolkit-sdk/create-task-cli",
+            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
