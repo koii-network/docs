@@ -132,7 +132,10 @@ const config = {
           },
           {
             to: "/develop/attention-mining/proof-of-real-traffic/",
-            from: ["/earning-koii/proof-of-real-traffic-port", "/earning-koii/proof-of-real-traffic/"],
+            from: [
+              "/earning-koii/proof-of-real-traffic-port",
+              "/earning-koii/proof-of-real-traffic/",
+            ],
           },
           {
             to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
@@ -226,8 +229,8 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
-            to:  "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
-            from: '/earning-koii/compute-sharing-marketplace',
+            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            from: "/earning-koii/compute-sharing-marketplace",
           },
           {
             to: "/quickstart/finnie-for-devs/welcome-to-finnie",
@@ -260,11 +263,36 @@ const config = {
           },
           {
             to: "/concepts/ways-to-get-koii/grants-program",
-            from: "/earning-koii/grants-program"
+            from: "/earning-koii/grants-program",
           },
           {
             to: "/concepts/ways-to-get-koii/get-free-tokens",
-            from: "/earning-koii/get-free-tokens"
+            from: "/earning-koii/get-free-tokens",
+          },
+          {
+            to: "/concepts/the-koii-token/network-economics",
+            from: "/concepts/earning-koii/network-economics",
+          },
+          {
+            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            from: "/concepts/earning-koii/compute-sharing-marketplace",
+          },
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/",
+            from: "/concepts/earning-koii/proof-of-real-traffic/",
+          },
+
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
+            from: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
+          },
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/registering-content",
+            from: "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+          },
+          {
+            to: "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+            from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
           },
         ],
         createRedirects(existingPath) {
@@ -301,16 +329,6 @@ const config = {
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
                 "/develop/koii-software-toolkit-sdk"
-              ),
-              // existingPath.replace("/community", "/docs/support"),
-            ];
-          }
-          if (existingPath.includes("/develop/attention-mining")) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            return [
-              existingPath.replace(
-                "/develop/attention-mining",
-                "/concepts/earning-koii/proof-of-real-traffic"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
