@@ -102,18 +102,18 @@ const config = {
             to: "/concepts/introduction/welcome",
             from: "/introduction/readme",
           },
-          {
-            to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
-            from: "/settlement-layer/running-a-k2-node/setup-process",
-          },
+          // {
+          //   to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
+          //   from: "/settlement-layer/running-a-k2-node/setup-process",
+          // },
           {
             to: "/quickstart/command-line-tool/koii-cli/install-cli",
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
-          {
-            to: "/develop/settlement-layer/running-a-k2-node/",
-            from: "/settlement-layer/running-a-k2-node",
-          },
+          // {
+          //   to: "/develop/settlement-layer/running-a-k2-node/",
+          //   from: "/settlement-layer/running-a-k2-node",
+          // },
           {
             to: "/concepts/introduction/tools",
             from: "/introduction/tools",
@@ -221,10 +221,6 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
           },
           {
-            to: "/develop/koii-task-101/what-are-tasks/key-components",
-            from: "/microservices-and-tasks/what-are-tasks/key-components",
-          },
-          {
             to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
@@ -310,11 +306,17 @@ const config = {
           },
           {
             to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
-            from: "/develop/settlement-layer/running-a-k2-node/",
+            from: [
+              "/develop/settlement-layer/running-a-k2-node/",
+              "/settlement-layer/running-a-k2-node",
+            ],
           },
           {
             to: "/run-a-node/k2-nodes/system-requirements",
-            from: "/develop/settlement-layer/running-a-k2-node/system-requirements",
+            from: [
+              "/develop/settlement-layer/running-a-k2-node/system-requirements",
+              "/settlement-layer/running-a-k2-node/setup-process",
+            ],
           },
           {
             to: "/run-a-node/k2-nodes/system-setup",
@@ -385,6 +387,14 @@ const config = {
             to: "/develop/task-tutorials/linktree-task/auth-list",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
+          // {
+          //   to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+          //   from: "/develop/microservices-and-tasks/run-a-task-node",
+          // },
+          // {
+          //   to: "/develop/designing-tasks/using-reputation",
+          //   from: "/develop/microservices-and-tasks/using-reputation",
+          // },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
@@ -400,6 +410,10 @@ const config = {
           {
             to: "/concepts/introduction/welcome",
             from: "/concepts/koii-summary/social-tech",
+          },
+          {
+            to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
+            from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
           },
         ],
         createRedirects(existingPath) {
