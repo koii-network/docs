@@ -263,11 +263,17 @@ const config = {
           },
           {
             to: "/concepts/ways-to-get-koii/grants-program",
-            from: "/earning-koii/grants-program",
+            from: [
+              "/earning-koii/grants-program",
+              "/concepts/earning-koii/grants-program",
+            ],
           },
           {
             to: "/concepts/ways-to-get-koii/get-free-tokens",
-            from: "/earning-koii/get-free-tokens",
+            from: [
+              "/earning-koii/get-free-tokens",
+              "/concepts/earning-koii/get-free-tokens",
+            ],
           },
           {
             to: "/concepts/the-koii-token/network-economics",
