@@ -123,7 +123,7 @@ const config = {
             from: "/build-dapps-with-koii/welcome-to-koii-x",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            to: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
             from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
           },
           {
@@ -179,7 +179,7 @@ const config = {
           //   from: "/#the-koii-token",
           // },
           {
-            to: "/develop/koii-software-toolkit-sdk/register-content/",
+            to: "/quickstart/koii-software-toolkit-sdk/register-content/",
             from: "/earning-koii/registering-content",
           },
           {
@@ -203,8 +203,11 @@ const config = {
             from: "/microservices-and-tasks/google-doodle-task",
           },
           {
-            to: "/develop/koii-software-toolkit-sdk/create-task-cli",
-            from: "/koii-software-toolkit-sdk/create-task-cli",
+            to: "/quickstart/command-line-tool/create-task-cli",
+            from: [
+              "/koii-software-toolkit-sdk/create-task-cli",
+              "/develop/koii-software-toolkit-sdk/create-task-cli",
+            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
@@ -246,6 +249,39 @@ const config = {
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
             from: "/quickstart/building-with-koii",
           },
+          {
+            to: "/quickstart/category/koii-command-line-tool",
+            from: "/develop/koii-software-toolkit-sdk/using-the-cli",
+          },
+
+          {
+            to: "/quickstart/command-line-tool/task-node-cli",
+            from: "/develop/koii-software-toolkit-sdk/task-node-cli",
+          },
+          {
+            to: "/quickstart/category/koii-network",
+            from: "/develop/category/koii-network",
+          },
+          {
+            to: "/quickstart/category/ethereum-network",
+            from: "/develop/category/ethereum-network",
+          },
+          {
+            to: "/concepts/the-koii-token/network-economics",
+            from: "/concepts/earning-koii/network-economics",
+          },
+          {
+            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            from: "/concepts/earning-koii/compute-sharing-marketplace",
+          },
+          {
+            to: "/concepts/ways-to-get-koii/grants-program",
+            from: "/concepts/earning-koii/grants-program",
+          },
+          {
+            to: "/concepts/ways-to-get-koii/get-free-tokens",
+            from: "/concepts/earning-koii/get-free-tokens",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -262,6 +298,40 @@ const config = {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace("/concepts/community", "/develop/support/"),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (existingPath.includes("/quickstart/finnie-for-devs")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/quickstart/finnie-for-devs",
+                "/develop/finnie-for-devs"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (existingPath.includes("/quickstart/koii-software-toolkit-sdk")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/quickstart/koii-software-toolkit-sdk",
+                "/develop/koii-software-toolkit-sdk"
+              ),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
+          if (
+            existingPath.includes(
+              "/develop/attention-mining/proof-of-real-traffic/"
+            )
+          ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace(
+                "/develop/attention-mining/proof-of-real-traffic/",
+                "/concepts/earning-koii/proof-of-real-traffic/"
+              ),
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
