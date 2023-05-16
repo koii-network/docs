@@ -131,8 +131,8 @@ const config = {
             from: "/microservices-and-tasks/what-are-tasks",
           },
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/",
-            from: "/earning-koii/proof-of-real-traffic-port",
+            to: "/develop/attention-mining/proof-of-real-traffic/",
+            from: ["/earning-koii/proof-of-real-traffic-port", "/earning-koii/proof-of-real-traffic/"],
           },
           {
             to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
@@ -147,7 +147,7 @@ const config = {
             from: "/build-dapps-with-koii/template-library",
           },
           {
-            to: "/concepts/earning-koii/compute-sharing-marketplace",
+            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/earning-koii/running-task-nodes",
           },
           {
@@ -170,14 +170,6 @@ const config = {
             to: "/develop/settlement-layer/creating-tokens-on-k2",
             from: "/settlement-layer/creating-tokens-on-k2",
           },
-          // {
-          //   to: "/",
-          //   from: "/#what-is-koii",
-          // },
-          // {
-          //   to: "/concepts/earning-koii/proof-of-real-traffic/",
-          //   from: "/#the-koii-token",
-          // },
           {
             to: "/quickstart/koii-software-toolkit-sdk/register-content/",
             from: "/earning-koii/registering-content",
@@ -195,7 +187,7 @@ const config = {
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
-            to: "/concepts/earning-koii/network-economics",
+            to: "/concepts/the-koii-token/network-economics",
             from: "/earning-koii/network-economics",
           },
           {
@@ -234,8 +226,8 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
-            to: "/concepts/earning-koii/compute-sharing-marketplace",
-            from: "/earning-koii/compute-sharing-marketplace",
+            to:  "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            from: '/earning-koii/compute-sharing-marketplace',
           },
           {
             to: "/quickstart/finnie-for-devs/welcome-to-finnie",
@@ -267,20 +259,12 @@ const config = {
             from: "/develop/category/ethereum-network",
           },
           {
-            to: "/concepts/the-koii-token/network-economics",
-            from: "/concepts/earning-koii/network-economics",
-          },
-          {
-            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
-            from: "/concepts/earning-koii/compute-sharing-marketplace"
-          },
-          {
             to: "/concepts/ways-to-get-koii/grants-program",
-            from: "/concepts/earning-koii/grants-program"
+            from: "/earning-koii/grants-program"
           },
           {
             to: "/concepts/ways-to-get-koii/get-free-tokens",
-            from: "/concepts/earning-koii/get-free-tokens"
+            from: "/earning-koii/get-free-tokens"
           },
         ],
         createRedirects(existingPath) {
@@ -314,12 +298,12 @@ const config = {
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
-          if (existingPath.includes("/develop/attention-mining/proof-of-real-traffic/")) {
+          if (existingPath.includes("/develop/attention-mining")) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
-                "/develop/attention-mining/proof-of-real-traffic/",
-                "/concepts/earning-koii/proof-of-real-traffic/"
+                "/develop/attention-mining",
+                "/concepts/earning-koii/proof-of-real-traffic"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
