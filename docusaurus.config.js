@@ -246,6 +246,15 @@ const config = {
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
             from: "/quickstart/building-with-koii",
           },
+          {
+            to: "/quickstart/category/koii-command-line-tool",
+            from: "/develop/koii-software-toolkit-sdk/using-the-cli",
+          },
+
+          {
+            to: "/quickstart/command-line-tool/task-node-cli",
+            from: "/develop/koii-software-toolkit-sdk/task-node-cli",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -263,7 +272,7 @@ const config = {
             return [
               existingPath.replace(
                 "/quickstart/finnie-for-devs",
-                "/develop/finnie-for-devs",
+                "/develop/finnie-for-devs"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
@@ -273,7 +282,7 @@ const config = {
             return [
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
-                "/develop/koii-software-toolkit-sdk",
+                "/develop/koii-software-toolkit-sdk"
               ),
               // existingPath.replace("/community", "/docs/support"),
             ];
