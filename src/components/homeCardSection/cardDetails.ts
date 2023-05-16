@@ -60,7 +60,7 @@ export const cardDetails: Cards[] = [
       },
       {
         title: "Web Crawlers",
-        link: "/develop/task-tutorials/linktree-task/intro",
+        link: "/develop/task-tutorials/scrapers/twitter",
         image: "img/WEB CRAWLERS.svg",
       },
     ],
