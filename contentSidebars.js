@@ -50,17 +50,7 @@ const sidebars = {
     },
     "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/faucet",
-    {
-      type: "category",
-      label: "Compute Sharing MarketPlace",
-      link: {
-        type: "doc",
-        id: "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
-      },
-      items: [
-        "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
-      ],
-    },
+    "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
     "ways-to-get-koii/attention-mining",
     "ways-to-get-koii/grants-program",
     "ways-to-get-koii/get-free-tokens",
