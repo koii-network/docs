@@ -326,15 +326,64 @@ const config = {
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
-            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers"
+            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus"
+            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
-            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment"
+            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
+          },
+          {
+            from: "/develop/microservices-and-tasks/google-doodle-task/",
+            to: "/develop/task-tutorials/google-doodle-task/",
+          },
+
+          {
+            to: "/develop/task-tutorials/google-doodle-task/getting-started",
+            from: "/develop/microservices-and-tasks/google-doodle-task/getting-started",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
+            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-task-functions",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
+            from: "/develop/microservices-and-tasks/google-doodle-task/audit-submission-value",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
+            from: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
+            from: "/develop/microservices-and-tasks/google-doodle-task/audit-distribution-list",
+          },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
+            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-executable-code",
+          },
+          {
+            to: "/develop/task-tutorials/linktree-task/intro",
+            from: "/develop/microservices-and-tasks/linktree-task/intro",
+          },
+          {
+            to: "/develop/task-tutorials/linktree-task/data-storage",
+            from: "/develop/microservices-and-tasks/linktree-task/data-storage",
+          },
+          {
+            to: "/develop/task-tutorials/linktree-task/data-sharing",
+            from: "/develop/microservices-and-tasks/linktree-task/data-sharing",
+          },
+          {
+            to: "/develop/task-tutorials/linktree-task/rest-api",
+            from: "/develop/microservices-and-tasks/linktree-task/rest-api",
+          },
+          {
+            to: "/develop/task-tutorials/linktree-task/auth-list",
+            from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
         ],
         createRedirects(existingPath) {
