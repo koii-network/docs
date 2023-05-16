@@ -359,18 +359,6 @@ const config = {
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
-          if (
-            existingPath.includes("/koii-task-101/what-are-tasks")
-          ) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-            return [
-              existingPath.replace(
-                "/koii-task-101/what-are-tasks",
-                "/microservices-and-tasks/what-are-tasks"
-              ),
-              // existingPath.replace("/community", "/docs/support"),
-            ];
-          }
           return undefined; // Return a falsy value: no redirect created
         },
       },
