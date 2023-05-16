@@ -256,6 +256,10 @@ const config = {
                 "/concepts/koii-summary"
               ),
               // existingPath.replace("/community", "/docs/support"),
+              existingPath.replace(
+                "/quickstart/finnie-for-devs/",
+                "/develop/finnie-for-devs/",
+              ),
             ];
           }
           return undefined; // Return a falsy value: no redirect created
