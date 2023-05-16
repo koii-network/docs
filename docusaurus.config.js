@@ -221,10 +221,6 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
           },
           {
-            to: "/develop/koii-task-101/what-are-tasks/key-components",
-            from: "/microservices-and-tasks/what-are-tasks/key-components",
-          },
-          {
             to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
@@ -393,6 +389,10 @@ const config = {
             to: "/develop/designing-tasks/using-reputation",
             from: "/develop/microservices-and-tasks/using-reputation",
           },
+          {
+            to: '/develop/koii-task-101/what-are-tasks/key-components/intro',
+            from: '/develop/microservices-and-tasks/what-are-tasks/key-components'
+          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
