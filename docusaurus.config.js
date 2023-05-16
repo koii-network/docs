@@ -308,6 +308,18 @@ const config = {
             from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
             to: "/develop/designing-tasks/securing-task",
           },
+          {
+            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            from: "/develop/settlement-layer/running-a-k2-node/",
+          },
+          {
+            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            from: "/develop/settlement-layer/running-a-k2-node/system-requirements",
+          },
+          {
+            to: "/run-a-node/k2-nodes/system-setup",
+            from: "/develop/settlement-layer/running-a-k2-node/setup-process",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -320,13 +332,13 @@ const config = {
               // existingPath.replace("/community", "/docs/support"),
             ];
           }
-          // if (existingPath.includes("/concepts/community")) {
-          //   // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-          //   return [
-          //     existingPath.replace("/concepts/community", "/develop/support/"),
-          //     // existingPath.replace("/community", "/docs/support"),
-          //   ];
-          // }
+          if (existingPath.includes("/concepts/community")) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace("/concepts/community", "/develop/support/"),
+              // existingPath.replace("/community", "/docs/support"),
+            ];
+          }
           if (existingPath.includes("/quickstart/finnie-for-devs")) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
