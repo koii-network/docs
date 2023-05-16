@@ -396,20 +396,16 @@ const config = {
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
                 "/concepts/introduction",
                 "/concepts/koii-summary"
               ),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           if (existingPath.includes("/concepts/community")) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace("/concepts/community", "/develop/support/"),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           if (
@@ -417,13 +413,11 @@ const config = {
               "/develop/write-a-koii-task/task-development-kit-tdk/"
             )
           ) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
                 "/develop/write-a-koii-task/task-development-kit-tdk/",
                 "/develop/microservices-and-tasks/task-development-kit-tdk/"
               ),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           if (
@@ -431,33 +425,27 @@ const config = {
               "/develop/write-a-koii-task/task-development-guide/"
             )
           ) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
                 "/develop/write-a-koii-task/task-development-guide/",
                 "/develop/microservices-and-tasks/task-development-guide/"
               ),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           if (existingPath.includes("/quickstart/finnie-for-devs")) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
                 "/quickstart/finnie-for-devs",
                 "/develop/finnie-for-devs"
               ),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           if (existingPath.includes("/quickstart/koii-software-toolkit-sdk")) {
-            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace(
                 "/quickstart/koii-software-toolkit-sdk",
                 "/develop/koii-software-toolkit-sdk"
               ),
-              // existingPath.replace("/community", "/docs/support"),
             ];
           }
           return undefined; // Return a falsy value: no redirect created
