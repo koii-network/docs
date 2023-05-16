@@ -431,7 +431,7 @@ const config = {
           }
           if (existingPath.includes("/concepts/community")) {
             return [
-              existingPath.replace("/concepts/community", "/develop/support/"),
+              existingPath.replace("/concepts/community", "/develop/support"),
             ];
           }
           if (
