@@ -135,7 +135,7 @@ const config = {
             from: ["/earning-koii/proof-of-real-traffic-port", "/earning-koii/proof-of-real-traffic/"],
           },
           {
-            to: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
+            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
             from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
           },
           {
