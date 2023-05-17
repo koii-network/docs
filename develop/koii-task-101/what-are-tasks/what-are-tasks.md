@@ -29,7 +29,7 @@ There's a lot of material here, so if you're just getting started, you might wan
 - [Why use decentralized nodes when servers seem to work?](/develop/koii-task-101/what-are-tasks/nodes-vs-servers)<br/>
 - [How do tasks run across many nodes?](/develop/koii-task-101/what-are-tasks/gradual-consensus)<br/>
 - [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
-- [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/)<br/>
+- [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/intro)<br/>
   - [Database Sharding](/develop/koii-task-101/what-are-tasks/key-components/database-sharding)<br/>
   - [Node to Node Sync](Node to Node Sync)
 
