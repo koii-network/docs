@@ -44,11 +44,11 @@ Koii CLI provides several features, including but not only:
 - Airdrop testnet KOII
 - Run Koii test validator
 
-Check the tutorial and try it [here](./using-the-cli)
+Check the tutorial and try it [here](/quickstart/category/koii-command-line-tool)
 
 ### Create Task CLI
 
-Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here](./create-task-cli)
+Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here](/quickstart/command-line-tool/create-task-cli)
 
 ### Task Node CLI
 

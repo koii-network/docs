@@ -8,7 +8,7 @@ sidebar_label: generateWallet
 # generateWallet
 
 :::danger
-This function will generate an Arweave wallet, not a Koii wallet. To generate a Koii wallet please check [Koii CLI](../using-the-cli).
+This function will generate an Arweave wallet, not a Koii wallet. To generate a Koii wallet please check [Koii CLI](/quickstart/category/koii-command-line-tool).
 :::
 
 This function creates a new Arweave wallet, but it does not return the private key of the generated wallet. Instead, it stores the info under the `wallet` property and returns a boolean value of `True` or `False`.
