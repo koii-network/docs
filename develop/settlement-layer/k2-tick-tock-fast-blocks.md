@@ -19,7 +19,7 @@ K2 is the current settlement layer within Koii and provides the functionality of
 
 The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all [compute task](/develop/koii-task-101/what-are-tasks/) metadata.
 
-**Heads up!** To use K2, you'll need to install the [Koii CLI](/quickstart/category/koii-command-line-tool) or try the [Koii SDK](../koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
+**Heads up!** To use K2, you'll need to install the [Koii CLI](/quickstart/category/koii-command-line-tool) or try the [Koii SDK](/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
 
 ## Native Programs
 
