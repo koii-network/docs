@@ -1,7 +1,7 @@
 {
   "index_name": "dev_koii",
-  "start_urls": ["https://koii-docs.vercel.app/"],
-  "sitemap_urls": ["https://koii-docs.vercel.app/sitemap.xml"],
+  "start_urls": ["https://docs.koii.network/"],
+  "sitemap_urls": ["https://docs.koii.network/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
