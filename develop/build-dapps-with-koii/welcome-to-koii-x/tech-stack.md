@@ -40,7 +40,7 @@ By default, packages are optimized to use storage networks rather than tradition
 - Store files on peer-to-peer networks that span the globe
 - Protect art and free speech with censorship-resistant ledgers
 - Pay anonymously with cryptocurrency
-- Supported: [Arweave](../../koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/), [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/) (_coming soon_)
+- Supported: [Arweave](https://www.arweave.org/), [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/) (_coming soon_)
 
 ### Wallet Integrations
 

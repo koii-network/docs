@@ -415,10 +415,6 @@ const config = {
             to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
             from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
           },
-          {
-            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
-            from: "/develop/settlement-layer/running-a-k2-node/",
-          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
