@@ -17,7 +17,7 @@ The following sections detail the use of Koii's task development Kit, which prov
 
 ## The Task Namespace
 
-When the [**executable**](/develop/koii-task-101/what-are-tasks/key-components/) runs inside of a task node, it will have access to a number of supported built-in functions for interacting with blockchains, preparing proofs, and generating cryptographic signatures.&#x20;
+When the [**executable**](/develop/koii-task-101/what-are-tasks/key-components/intro) runs inside of a task node, it will have access to a number of supported built-in functions for interacting with blockchains, preparing proofs, and generating cryptographic signatures.&#x20;
 
 <ContentLink title="Using the Task Namespace" link="/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/" iconType="copy"/>
 
