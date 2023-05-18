@@ -1,11 +1,11 @@
 ---
-title: Wallets
+title: A1
 description: There are three solutions for holding KOII token, each targetted to a different use case.
 image: img/thumbnail.png
-sidebar_label: Wallets
+sidebar_label: A1
 ---
 
-import ContentLink from "@site/src/components/contentLink";
+<!-- import ContentLink from "@site/src/components/contentLink";
 
 # Wallets
 
@@ -47,4 +47,4 @@ The desktop node hasn't been released to the public yet, but you can join the be
 
 Native file-system wallets are used by developers building applications, or during testing. For information about using file-system wallets as a developer, check the CLI docs.
 
-<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/>
+<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/> -->

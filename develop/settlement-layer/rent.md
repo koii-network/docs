@@ -1,11 +1,11 @@
 ---
-title: Rent
+title: A1
 description: Rent is the fee paid by Accounts and Programs to store their data on K2 because the blockchain cluster needs to actively maintain the data in order to process any upcoming transactions.
 image: img/thumbnail.png
-sidebar_label: Rent
+sidebar_label: A1
 ---
 
-# Rent
+<!-- # Rent
 
 ![banner](img/Rent.svg)
 
@@ -66,4 +66,4 @@ Rent per epoch: 0.000072069 KOII
 Rent-exempt minimum: 0.10529088 KOII
 ```
 
-Note: K2 is a fork of Solana and the feature of rent comes from Solana. Learn more about rent in Solana [here](https://docs.solana.com/developing/intro/rent).
+Note: K2 is a fork of Solana and the feature of rent comes from Solana. Learn more about rent in Solana [here](https://docs.solana.com/developing/intro/rent). -->
