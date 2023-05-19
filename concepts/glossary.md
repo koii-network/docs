@@ -25,6 +25,24 @@ These are nodes that perform audits on tasks to ensure there is no malicious int
 
 A piece of executable code that is run on the network
 
+## Slot
+The time span over which each leader (a validator that appends entries to the ledger) accepts transactions and generates a [block](/concepts/glossary#block).
+
+Slots are are ordered sequentially and collectively make a logical clock.
+
+## Epoch
+The period of time, i.e. the number of [slots](/concepts/glossary#slot), during which a leader schedule is valid.
+
+## Rent
+
+Accounts and programs pay a fee (rent) to store data on the blockchain.
+
+When an account does not have enough money to pay the rent, it may be garbage collected.
+
+## Rent Exemption
+
+Accounts that have more than two years of [rent](/concepts/glossary#rent) payments in them are considered "**rent exempt**" and will not be charged rent collection.
+
 <br />
 
 # The Koii Stack
@@ -173,6 +191,9 @@ Usually a string of numbers that serves as the address for a blockchain wallet, 
 
 As opposed to a public key, a private key is the confidential code you use to access your wallet where your cryptocurrencies are stored. NEVER share your private key with anyone.
 
+## Keypair
+A [public key](/concepts/glossary#wallet-address-aka-public-key) and corresponding [private key](/concepts/glossary#private-key) for accessing an account.
+
 ## Web3
 
 The next iteration of the web where there is no centralized authority, and restored ownership of data and information to users. Also known as the ‘read-write-trust web,’ Web 3 is the replacement of ‘read-write’ (Web2) and its predecessor “read only” (Web1).
@@ -240,7 +261,7 @@ All other cryptocurrency coins other than Bitcoin
 Any kind of currency not backed by a real asset such as silver or gold, but is backed and issued by a centralized government
 
 
-Exchange
+## Exchange
 Platforms where you can buy and sell cryptocurrencies
 
 ## Testnet aka “Test Network”
