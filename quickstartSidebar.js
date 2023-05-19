@@ -78,7 +78,7 @@ const sidebars = {
     },
     "command-line-tool/task-node-cli",
     "command-line-tool/create-task-cli",
-   
+    "command-line-tool/cli-usage-reference",
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -168,9 +168,8 @@ const sidebars = {
       value: "Join the Pirate Ship",
       className: "sidebar-title top-margin",
     },
-    
+
     "pirate-ship/ambassador-program",
-   
   ],
 };
 
