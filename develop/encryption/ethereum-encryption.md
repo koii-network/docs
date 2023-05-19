@@ -17,7 +17,9 @@ Ethereum keys are generated using asymmetric encryption algorithms, specifically
 
 ## New Ethereum Keypair
 
-Generate a new ethereum-identity with privateKey and publicKey.
+Generate a new ethereum-identity with a private key and public key.
+
+We'd be using the [eth-crypto library](https://www.npmjs.com/package/eth-crypto#decryptwithprivatekey).
 
 ```js
 const EthCrypto = require("eth-crypto");
