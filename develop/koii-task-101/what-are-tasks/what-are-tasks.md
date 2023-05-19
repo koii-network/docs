@@ -31,5 +31,5 @@ There's a lot of material here, so if you're just getting started, you might wan
 - [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
 - [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/intro)<br/>
   - [Database Sharding](/develop/koii-task-101/what-are-tasks/key-components/database-sharding)<br/>
-  - [Node to Node Sync](Node to Node Sync)
+  - [Node to Node Sync](/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync)
 
