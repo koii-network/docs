@@ -235,6 +235,14 @@ const sidebars = {
     },
     {
       type: "html",
+      value: "Encryption",
+      className: "sidebar-title top-margin",
+    },
+    "encryption/intro",
+    "encryption/solana-encryption",
+    'encryption/ethereum-encryption',
+    {
+      type: "html",
       value: "Use Koii-X dApp Templates",
       className: "sidebar-title top-margin",
     },
