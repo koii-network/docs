@@ -553,7 +553,7 @@ const config = {
           },
           {
             label: "🏗️ Build on Koii",
-            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            to: "/develop/koii-task-101/what-are-tasks/",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
