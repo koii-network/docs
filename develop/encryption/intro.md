@@ -18,6 +18,6 @@ These platforms, in addition to their primary functions, provide robust security
 In this section, we will learn how to encrypt and decrypt messages using Solana and Ethereum keys. 
 
 :::info
-Check out [GitHub](https://github.com/saimiqbal7/encryption) for the complete prjoect.
+Check out [GitHub](https://github.com/saimiqbal7/encryption) for the complete project.
 
 :::
