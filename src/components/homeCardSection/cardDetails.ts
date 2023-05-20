@@ -78,7 +78,7 @@ export const cardDetails: Cards[] = [
       {
         title: "Gradual Consensus",
         link: "/concepts/gradual-consensus/",
-        image: "img/GRADUAL CONSENSUS (1).svg",
+        image: "img/GRADUAL CONSENSUS (2).svg",
       },
       {
         title: "Community",
