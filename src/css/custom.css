@@ -49,6 +49,10 @@
   --ifm-text-color: #ffffff;
 }
 
+* {
+  font-family: "Sora";
+}
+
 .koiiblue {
   color: #171753;
 }
