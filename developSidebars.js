@@ -231,7 +231,7 @@ const sidebars = {
       type: "category",
       label: "Example Task: Scrappers",
       collapsed: true,
-      items: ["task-tutorials/scrapers/twitter"],
+      items: ["task-tutorials/scrappers/twitter"],
     },
     {
       type: "html",
