@@ -2,7 +2,7 @@
 title: Welcome to Koii’s Desktop Node!
 description: Application layer nodes are one of the most-needed commodities in Web3.
 image: img/thumbnail.png
-sidebar_label: How to Run a Task Node
+sidebar_label: How to Run a Desktop Node
 ---
 
 ![banner](./img/Run%20a%20Task%20Node.svg)
@@ -26,7 +26,7 @@ The installation process varies depending on your operating system:
 
 - [Windows](#windows-download)
 - [Mac](#mac-download)
-- [Linux](#)
+- [Linux](#linux-download)
 
 ### Windows Download
 If you have Windows, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-win.exe).
