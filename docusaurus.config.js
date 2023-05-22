@@ -560,7 +560,7 @@ const config = {
           },
           {
             label: "💻 Quickstart",
-            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
+            to: "/quickstart/hello-world/intro",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
