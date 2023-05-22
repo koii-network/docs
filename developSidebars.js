@@ -229,9 +229,9 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Example Task: Scrappers",
+      label: "Example Task: Scrapers",
       collapsed: true,
-      items: ["task-tutorials/scrappers/twitter"],
+      items: ["task-tutorials/scrapers/twitter"],
     },
     {
       type: "html",
