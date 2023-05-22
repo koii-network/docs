@@ -1,6 +1,6 @@
 ---
 title: "Example Task: Google Doodle"
-description: Google Doodle task is a simple Koii task for retrieving and validating a scrapped doodle. It is a simple Koii task and an excellent way to get started writing Koii tasks.
+description: Google Doodle task is a simple Koii task for retrieving and validating a scraped doodle. It is a simple Koii task and an excellent way to get started writing Koii tasks.
 image: img/thumbnail.png
 sidebar_label: "Example Task: Google Doodle"
 ---
@@ -9,7 +9,7 @@ sidebar_label: "Example Task: Google Doodle"
 
 ![banner](../img/Example%20Task_%20Google%20Doodle.svg)
 
-**Google Doodle** task is a simple Koii task for retrieving and validating a scrapped doodle. It is a simple Koii task and an excellent way to get started writing Koii tasks.
+**Google Doodle** task is a simple Koii task for retrieving and validating a scraped doodle. It is a simple Koii task and an excellent way to get started writing Koii tasks.
 
 Let's first understand the logic behind the task before moving on to the coding aspect.
 
