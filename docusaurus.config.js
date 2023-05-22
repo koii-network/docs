@@ -417,7 +417,7 @@ const config = {
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/",
-            from: "/tasks",
+            from: ["/tasks", "/task"],
           },
         ],
         createRedirects(existingPath) {
