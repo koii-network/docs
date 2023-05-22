@@ -14,11 +14,11 @@ We are excited to have you as part of our community and our beta test for poweri
 
 # What exactly is a Koii node?
 
-A Koii node is a very small computer program—about the same size as your favorite music player—that allows you to run compute jobs called “tasks” for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times.
+A Koii node is a very small computer program—about the same size as your favorite music player—that allows you to run compute jobs called **[tasks](/develop/koii-task-101/what-are-tasks)** for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times.
 
 A task can be anything from hosting a website to cataloging information from the internet, or processing lots of data. The possibilities are endless.
 
-Let’s get started.
+Let’s get started! 
 
 
 # How do I run a node?
@@ -45,7 +45,7 @@ You can find out your chip information by going to the Apple icon in the top lef
 
 If you have an M1 chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-arm64.dmg). If you have an Intel chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-x64.dmg).
 
-Once the file has fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anway.”
+Once the file has fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anyway.”
 
 A small finder window will pop up. Drag the Koii Node icon on top of the Applications folder icon. Then you can double click the Koii Node icon to open it.
 
@@ -55,11 +55,13 @@ A small finder window will pop up. Drag the Koii Node icon on top of the Applica
 ### Linux Download
 There are many different Linux configurations, so we won’t get into the specifics here about how to download the node itself. 
 
-One important thing to note: If you want your node to update automatically, you must use [AppImage](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-linux-x86_64.AppImage).
+:::note
+If you want your node to update automatically, you must use [AppImage](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-linux-x86_64.AppImage).
+:::
 
 
-# Time to Node
-A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a 6-digit PIN.
+## <a style={{fontSize: '32px'}}>Time to Node</a>
+A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
 ![Time to Node](./img/1.%20welcome.png)
 
@@ -83,7 +85,9 @@ Now it’s time to fund your account with a few tokens so you can participate in
 
 If you want to back up your account now, you can (and we recommend it). But you can always do this later. Account backups use a 12-word secret phrase, just like an Ethereum wallet or a Koii key on Finnie. 
 
+:::caution
 **Remember**, secret phrases should always be written using a pen on paper and stored in a safe place. They should **never** be stored on an internet connected device like in a notes app, email, or photo. Anyone with access to this secret phrase has full control of your assets.
+:::
 
 # Get those tokens!
 If you’ve been part of the Koii community for a while, you might already have some KOII. If you do, click “copy” at the bottom of the pop up. That will copy your node’s account address so you can send a few tokens from Finnie.
@@ -119,7 +123,8 @@ As mentioned above, the reason to stake on a Task is to make sure everyone plays
 1. Execute
 2. Audit
 3. Reward Distribution
-You can learn more about how this works [in the documentation here](https://docs.koii.network/develop/microservices-and-tasks/what-are-tasks/gradual-consensus).
+
+You can learn more about how this works [in the documentation here](/develop/koii-task-101/what-are-tasks/gradual-consensus).
 
 
 ![Confirm Task](./img/5.%20confirm.png)
