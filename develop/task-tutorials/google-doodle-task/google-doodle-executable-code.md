@@ -45,11 +45,11 @@ class CoreLogic {
 
   async fetchSubmission() {
     try {
-      const scrappedDoodle = JSON.parse(
+      const scrapedDoodle = JSON.parse(
         await namespaceWrapper.storeGet("doodle")
       );
-      console.log("Received Doodle", scrappedDoodle);
-      return scrappedDoodle;
+      console.log("Received Doodle", scrapedDoodle);
+      return scrapedDoodle;
     } catch (err) {
       console.log("Error", err);
       return err;
