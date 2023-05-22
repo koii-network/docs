@@ -68,11 +68,9 @@ The `fetchSubmission` function with fetch and return the value from levelDB usin
 ```javascript
 async function fetchSubmission() {
   try {
-    const scrappedDoodle = JSON.parse(
-      await namespaceWrapper.storeGet("doodle")
-    ); // retrieve value
-    console.log("Received Doodle", scrappedDoodle);
-    return scrappedDoodle;
+    const scrapedDoodle = JSON.parse(await namespaceWrapper.storeGet("doodle")); // retrieve value
+    console.log("Received Doodle", scrapedDoodle);
+    return scrapedDoodle;
   } catch (err) {
     console.log("Error", err);
     return err;
