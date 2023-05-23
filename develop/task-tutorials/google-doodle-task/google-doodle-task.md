@@ -21,6 +21,6 @@ To validate a node's submission, the most recent Google doodle is retrieved and 
 
 :::info
 
-If you encounter any difficulties, fell free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii).
 
 :::

@@ -227,7 +227,7 @@ The number of slots in the audit window and submission must be lower than the nu
 - **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. Use the "Upload Files" button on your web3.storage account to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. 
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
-- **Your account will be subtract `AMOUNT` KOII for creating the task, which includes the rent exemption and bounty amount fees › ** y/n
+- **Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) › ** y/n
 
 After the final confirmation of `y`, your task would be created along with a `taskStateInfoKeypair.json` which is used to control the task state info.
 
@@ -268,7 +268,7 @@ FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 ✔ Enter the number of distribution list submission retry in case it fails … 3
 ✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). … 
 ✔ Enter the space, you want to allocate for task account (in MBs) … 5
-✔ Your account will be subtract 16.96249776 KOII for creating the task, which includes the rent exemption and bounty amount fees … yes
+✔ Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) … yes
 Calling Create Task
 Task Id: 7Rp5xL2R4jYJqEHEridRJ5kgvJbXo7oGepqKjYJEz3L
 Stake Pot Account Pubkey: stakepotaccountTSbnExoJKCoQ3uPBwGtvcSEoGi2Z
