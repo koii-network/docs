@@ -7,7 +7,7 @@ sidebar_label: Getting Started
 
 # Getting Started
 
-First step is to clone the [K2-template](https://github.com/koii-network/task-template).
+First step is to clone the [Task-template](https://github.com/koii-network/task-template).
 
 :::info
 
