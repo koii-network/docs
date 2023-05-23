@@ -52,7 +52,7 @@ There are in total 9 functions in `CoreLogic` which the you can modify according
 1. `task()` - The logic for what your task should do goes here. There is a window in round that is dedicated to do work. The code in task is executed in that window.
 2. `fetchSubmission()` - After completing the task , the results/work will be stored somewhere like on IPFS or local levelDB. This function is the place where you can write the logic to fetch that work. It is called in `submitTask()` function which does the actual submission on K2.
 3. `submitTask()` - It makes the call to namespace function of task-node using the wrapper.
-4. `generateDistributionList()` - You have full freedom to prepare your reward distributions as you like and the logic for that goes here. We have provided a sample logic that rewards 1 KOII to all the needs who did the correct submission for that round. This function is called in `submitDistributionList()`
+4. `generateDistributionList()` - You have full freedom to prepare your reward distributions as you like and the logic for that goes here. We have provided a sample logic that rewards 1 KOII to all the nodes who did the correct submission for that round. This function is called in `submitDistributionList()`
 5. `submitDistributionList()` - Makes call to the namespace function of task-node to upload the list and on succesful upload does the transaction to update the state.
 6. `validateNode()` - This function is called to verify the submission value, so based on the value received from the task-state we can vote on the submission.
 7. `validateDistribution()` - The logic to validate the distribution list goes here and the function will receive the distribution list submitted form task-state.
