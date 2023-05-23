@@ -48,7 +48,19 @@ Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cl
 ```bash
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
-Your account will be subtract 16.96249776 KOII for creating the task, which includes the rent exemption and bounty amount fees ›
+Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
 ```
 - Hit `y` to subtract the necessary amount of KOII for your task creation.
 - Finally, the details of your task, including the task ID, are returned.
+
+```bash
+Calling Create Task
+Task Id: 4b4A15VaMqFtzgtSHxJsJ8UxVaUSQ4vRVEfnqMcFxUPh
+Stake Pot Account Pubkey: stakepotaccount6G1XJXA1AZBKbwdhhbTSDi3AGLs7
+Note: Task Id is basically the public key of taskStateInfoKeypair.json
+Success
+```
+**Congratulations!** you've created your first Koii task. See the links below to learn and build more Koii tasks:
+
+- [Google doodle](/develop/task-tutorials/google-doodle-task/)
+- [Linktree Task](/develop/task-tutorials/linktree-task/intro)

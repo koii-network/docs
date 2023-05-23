@@ -59,8 +59,3 @@ If you encounter any difficulties, feel free to contact us at [Koii support](htt
 
 :::
 
-# More Tasks!
-See the links below to learn and build more Koii tasks:
-
-- [Google doodle](/develop/task-tutorials/google-doodle-task/)
-- [Linktree Task](/develop/task-tutorials/linktree-task/intro)
