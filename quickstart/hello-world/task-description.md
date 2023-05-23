@@ -9,6 +9,10 @@ After creating a Koii Task, it is highly recommended that you include a detailed
 
 The configuration file `config-task.yml` contains information about your task. A sample `config-task.yml` file can be found in the root directory of your task folder.
 
+:::info
+The `secret_web3_storage_key` variable requires you to have a [Web3.storage account](https://web3.storage/); create an account and provide your API secret key into it.
+:::
+
 Follow the instructions in the file and fill in your task's information:
 
 ```yml
@@ -22,7 +26,7 @@ task_description: 'This is a simple task that returns "Hello, World!"'
 task_executable_network: 'DEVELOPMENT'
 
 # Provide your web3.storage key as it is needed for uploading your metadata
-secret_web3_storage_key: ''
+secret_web3_storage_key: 'eyJhbGciOiJIU1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTUiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODMyOTU4MTQ0MjcsIm5hbWUiOiJrb2lpLXRvZG8ifQ.Pp2ziiA4h5QcSVLLwA7am4vAQdUor6ad3qe2M3_0N8k'
 
 # Path to your executable webpack if the selected network is IPFS otherwise leave blank
 task_audit_program: ''
