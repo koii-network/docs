@@ -49,7 +49,7 @@
   --ifm-text-color: #ffffff;
 }
 
-* {
+button {
   font-family: "Sora";
 }
 
@@ -68,7 +68,7 @@
 }
 
 .top-margin {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .menu__link {
