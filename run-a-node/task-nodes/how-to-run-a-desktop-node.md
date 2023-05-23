@@ -45,9 +45,9 @@ You can find out your chip information by going to the Apple icon in the top lef
 
 If you have an M1 chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-arm64.dmg). If you have an Intel chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-x64.dmg).
 
-Once the file has fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anyway.”
+Once the file has been fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anyway.”
 
-A small finder window will pop up. Drag the Koii Node icon on top of the Applications folder icon. Then you can double click the Koii Node icon to open it.
+A small finder window will pop up. Drag the Koii Node icon on top of the Applications folder icon. Then you can double-click the Koii Node icon to open it.
 
 ![drag and drop](./img/drag%20and%20drop.png)
 
@@ -75,7 +75,7 @@ Name your account. This name can always be changed later in settings, so don’t
 
 Click “Create a New Account”
 
-If you’ve already been through this flow and want to use an account or Koii Key you already have, you can import it here instead using your secret phrase.
+If you’ve already been through this flow and want to use an account or Koii Key you already have, you can import it here instead of using your secret phrase.
 
 ![Secret phrase](./img/2.%20Create%20New%20account.png)
 
@@ -89,7 +89,7 @@ If you want to back up your account now, you can (and we recommend it). But you 
 
 # Get those tokens!
 
-If you’ve been part of the Koii community for a while, you might already have some KOII. If you do, click “copy” at the bottom of the pop up. That will copy your node’s account address so you can send a few tokens from Finnie.
+If you’ve been part of the Koii community for a while, you might already have some KOII. If you do, click “copy” at the bottom of the pop-up. That will copy your node’s account address so you can send a few tokens from Finnie.
 
 Right now, three tokens will be enough to run your first task and cover any transaction fees.
 
@@ -142,6 +142,6 @@ Some tasks will require configuring _task settings_, which includes things like 
 
 We will get more into task settings in another tutorial coming soon.
 
-You are all set running your first task. Invite your friends to run a node so they can be part of the revolution - and referral codes are coming soon so you can earn some tokens when they do!
+You are all set running your first task. Invite your friends to run a node so they can be part of the revolution - and referral codes are coming soon, so you can earn some tokens when they do!
 
 Jump in the [Koii Discord](https://discord.gg/koii) if you have any questions and [learn more about writing your own tasks](https://docs.koii.network/develop/microservices-and-tasks/what-are-tasks/) using the power of thousands of computers worldwide!
