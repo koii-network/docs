@@ -25,7 +25,7 @@ async task() {
 ```
 
 ## `fetchSubmission()`
-The `fetchSubmission` method with fetch and return the value from NeDB using the `namespaceWrapper.storeGet()` method.
+The `fetchSubmission` method will fetch and return the submission value from NeDB using the `namespaceWrapper.storeGet()` method.
 
 Update `fetchSubmission()` with the code block below:
 ```js
@@ -89,7 +89,7 @@ In the sample code:
 - The task's data is retrieved using the `getTaskState` helper function
 - All submissions are fetched from the task's data
 - The `submissions_audit_trigger` is also retrieved from the task's data; this object contains information about the audited submissions
-- An empty distribution list is returned if `submissions` is null. Otherwise, the keys and values of `submissions` are grouped separately, and in a loop, it calculates the audits on each submission and the number of votes on the audit, and then generates a distribution list based on that.
+- An empty distribution list is returned if `submissions` is null. Otherwise, the keys and values of `submissions` are grouped separately, and in a loop, it calculates the audits on each submission and the number of votes on the audit and then generates a distribution list based on that.
 
 ## `validateDistribution()`
 
