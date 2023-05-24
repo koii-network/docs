@@ -25,7 +25,7 @@ _Lazy_ - Larger Fee, scales to the total attention the content has received so f
 
 :::info
 
-Need some KOII? Check [here](/) to airdrop some KOII into your wallet.
+Need some KOII? Check <a href="https://faucet.koii.network/" target="_blank">here </a> to airdrop some KOII into your wallet.
 
 :::
 
@@ -54,12 +54,6 @@ First, create a new Node.js project and install `@_koii/k2-recipient-sdk`
 or
 
 `yarn add @_koii/k2-recipient-sdk`
-
-:::note
-
-The node version should be `16.15.0` or higher.
-
-:::
 
 Then get a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
 
