@@ -43,7 +43,7 @@ Note: In most cases, the actual management of (3) and (4) above depends on [trac
 
 ![banner](../img/Gradual%20Consensus.svg)
 
-Gradual consensus is a multi-round game under which nodes first perform a task, and then vote on a reward distribution. It's important to understand that while the process takes two rounds to complete, each cycle operates independently once per round, such that there is always one cycle starting and completing within every round.
+Gradual consensus is a multi-round game under which nodes first perform a task, and then vote on a reward distribution. It's important to understand that while the process takes three rounds to complete, each cycle operates independently once per round, such that there is always one cycle starting and completing within every round.
 
 ## **The Task Lifecycle**
 
