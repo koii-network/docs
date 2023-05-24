@@ -25,7 +25,7 @@ _Lazy_ - Larger Fee, scales to the total attention the content has received so f
 
 :::info
 
-Need some KOII? Check [here](/) to airdrop some KOII into your wallet.
+Need some KOII? Check <a href="https://faucet.koii.network/" target="_blank">here </a> to airdrop some KOII into your wallet.
 
 :::
 
@@ -55,19 +55,13 @@ or
 
 `yarn add @_koii/k2-recipient-sdk`
 
-:::note
-
-The node version should be `16.15.0` or higher.
-
-:::
-
 Then get a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
 
 ## Example
 
 #### For Arweave NFT:
 
-Put your Arweave wallet at the root first, then:
+Put your Arweave wallet at the root of your project first, then:
 
 ```jsx title="registerArweave.js"
 const { registerArweaveNFT } = require("@_koii/k2-recipient-sdk");
@@ -104,24 +98,21 @@ Please provide a `metadata.json` file and put it at the root:
 
 Then provide a image as the thumbnail of your content.
 
-Prepare your Koii wallet and check the samplee code:
+Prepare your Koii wallet and check the sample code:
 
 ```jsx title="registerIPFS.js"
 const { registerIpfsNFT }  = require("@_koii/k2-recipient-sdk")
-// dotenv.config();
 async function main() {
   //  IPFS recipient Signing
   //-----------------------------
+  const wallet = jsonfile.readFileSync("ar-wallet.json");
   let recipientsDataIPFS = await registerIpfsNFT(
     {
-      privateKey: new Uint8Array([
-        16, 179, 201, 59, 157, 142, 252, 32, 11, 119, 232, 101, 245, 5, 225,
-        ...
-      ]), // Copy & Paste your Koii wallet json file content here
+      privateKey: new Uint8Array(wallet), // Or Copy & Paste your Koii wallet json file content here
       image: "./scene-9.png", // Your content image here
       metadata: "./metadata.json", //Your metadata.json
     },
-    "eyJhbGciOiJI..." // IPFS token
+    "eyJhbGciOiJI..." // Web3.storage API token
   );
 }
 
