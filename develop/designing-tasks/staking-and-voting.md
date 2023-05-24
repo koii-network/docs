@@ -15,8 +15,6 @@ import Description from "@site/src/components/description";
   text="Building trustless trust requires simple rules for participation."
 />
 
-While each task can configure its own penalty and voting calculations, we recommend something like the following example, as this is the primary case under which [Gradual Consensus ](/)has been tested.
-
 ## **Staking**&#x20;
 
 Tokens are staked on a per-task basis, which ensures that there is always sufficient collateral to secure the underlying bounty and ensure stable and predictable outcomes in case of an audit. While the default structure for tasks is to use KOII tokens as stakes, it is also possible to configure a Task to lock up and collateralize anything from an NFT to a K2 token, or even an asset on another blockchain if a sufficiently secure vault contract can be deployed.
