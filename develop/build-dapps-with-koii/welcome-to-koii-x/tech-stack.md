@@ -24,7 +24,7 @@ The basic element of the Koii Network is the ability to deploy scalable microser
 
 ### K2 Settlement Layer
 
-The K2 layer utilizes a fork of a Solana node to provide high-speed transactions and tracks voting between task nodes. Unlike Solana, K2 stores its blockchain history on decentralized file storage networks instead of locally, providing a somewhat larger capacity. K2 also has higher **[rent](/develop/settlement-layer/rent)** costs for data uploads, favoring storage alternatives and generally an option for small payloads or ideally Boolean votes to reduce loads.&#x20;
+The K2 layer utilizes a fork of a Solana node to provide high-speed transactions and tracks voting between task nodes. Unlike Solana, K2 stores its blockchain history on decentralized file storage networks instead of locally, providing a somewhat larger capacity. K2 also has higher rent costs for data uploads, favoring storage alternatives and generally an option for small payloads or ideally Boolean votes to reduce loads.&#x20;
 
 ### Templates from Koii
 
