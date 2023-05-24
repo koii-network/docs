@@ -101,24 +101,24 @@ portAPI.propagatePoRT("<Your content CID>"); // Your content CID
 
 #### SDK Documentation
 
-#### **`PropagatePoRT()`**
+#### **`propagatePoRT()`**
 
 This function is the core of this SDK. It attempts to send **Proofs of Real Traffic** to the KOII network for a given transaction Id. First, it tries Finnie wallet and if permissions are available to SignPoRTs it will sign PoRTs else it will generate a new wallet and store it in your browser and sign PoRTs with them.
 
-**`Arguments`**
+**Arguments**
 
 This function accepts the following arguments **`trxId`**<br/>
 **Type**: `String`<br />
 **Required**: `true`<br />
 **description**: This must be a valid IPFS/Arweave CID for which you want to send proof
 
-#### **`ClearFinnieRejection()`**
+#### **`clearFinnieRejection()`**
 
 On `connectWallet()` when Finnie is rejected it saves the rejection status in `localStorage` and next time you call connect if the `rejectedStatus` is `true` it will not connect to Finnie instead fall back to **anonymous** PoRT submission. So to reset the rejection status use this function.
 
 **Support**
 
-Check on our GitHub to learn more about this SDK. If you need anything help or find any issue, please create a new GitHub issue with your code, error and screenshot. We will get in touch with it quickly.
+Check on our GitHub <a href="(https://github.com/koii-network/k2-port-sdk" target="_blank">here </a>to learn more about this SDK. If you need anything help or find any issue, please create a new GitHub issue with your code, error and screenshot. We will get in touch with it quickly.
 
 **Why Attention?**
 
