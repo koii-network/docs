@@ -10,7 +10,7 @@ export const Cta2 = () => {
           href="/quickstart/hello-world/intro"
         >
           <img
-            src={"/img/Group 3231.svg"}
+            src={"/img/Dev guide (1).svg"}
             className="w-full"
             role="img"
           />
@@ -20,7 +20,7 @@ export const Cta2 = () => {
           href="/run-a-node/task-nodes/how-to-run-a-desktop-node"
         >
           <img
-            src={"/img/Group 3230.svg"}
+            src={"/img/Node Tutorial.svg"}
             className="w-full"
             role="img"
           />
