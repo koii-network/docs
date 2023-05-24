@@ -22,5 +22,5 @@ The `getAuthList` and `setAuthList` functions in `db_model.js` are used to retri
 
 A `db_model` module is required to interact with the local database of a node. 
 A `dbSharing` module is required to make sure all the nodes have the same version of the data.
-You can create your own REST APIS to interact with servers. 
+You can create your own REST APIs to interact with servers. 
 
