@@ -13,5 +13,5 @@ Each task will run inside of the **task namespace**, which supports a number of 
 - [Filesystem Storage](filesystem-access)
 - [Using Wallets from the Node Operator](wallet-signatures)
 - [Using Keys and Secrets from the Node Operator](keys-and-secrets)
-- [LevelDB](/)
+- [NeDB](nedb)
 - [Using Storage via IPFS](storage-via-ipfs)
