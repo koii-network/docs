@@ -16,9 +16,9 @@ The `secret_web3_storage_key` variable requires you to have a [Web3.storage acco
 Follow the instructions in the file and fill in your task's information:
 
 ```yml
-#Provide the taskId if you are updating the task
+# Provide the taskId if you are updating the task
 task_id: ''
-# Name and desciption of your task
+# Name and description of your task
 task_name: 'hello-world'
 task_description: 'This is a simple task that returns "Hello, World!"'
 
