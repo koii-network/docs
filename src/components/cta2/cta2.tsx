@@ -17,8 +17,7 @@ export const Cta2 = () => {
         </a>
         <a
           className={"w-full lg:max-w-[50%] cursor-pointer" + " " + styles.card}
-          href="https://www.koii.network/node"
-          target="_blank"
+          href="/run-a-node/task-nodes/how-to-run-a-desktop-node"
         >
           <img
             src={"/img/Group 3230.svg"}
