@@ -118,7 +118,7 @@ On `connectWallet()` when Finnie is rejected it saves the rejection status in `l
 
 **Support**
 
-Check on our GitHub <a href="(https://github.com/koii-network/k2-port-sdk" target="_blank">here </a>to learn more about this SDK. If you need anything help or find any issue, please create a new GitHub issue with your code, error and screenshot. We will get in touch with it quickly.
+Check on our GitHub [here](https://github.com/koii-network/k2-port-sdk) to learn more about this SDK. If you need anything help or find any issue, please create a new GitHub issue with your code, error and screenshot. We will get in touch with it quickly.
 
 **Why Attention?**
 
