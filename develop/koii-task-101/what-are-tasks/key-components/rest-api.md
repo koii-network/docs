@@ -1,8 +1,8 @@
 ---
-title: Rest APIs
+title: REST APIs
 description: When a task is created, there are two key components that must be uploaded to the Koii Network to initiate the task.
 image: img/thumbnail.png
-sidebar_label: Rest APIs
+sidebar_label: REST APIs
 ---
 
 Developing REST APIs is a fundamental aspect of any Koii task. These APIs are designed to handle incoming requests, perform data processing operations, and provide appropriate responses to the client.
