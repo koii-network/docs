@@ -102,18 +102,10 @@ const config = {
             to: "/concepts/introduction/welcome",
             from: "/introduction/readme",
           },
-          // {
-          //   to: "/develop/settlement-layer/running-a-k2-node/system-requirements",
-          //   from: "/settlement-layer/running-a-k2-node/setup-process",
-          // },
           {
             to: "/quickstart/command-line-tool/koii-cli/install-cli",
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
-          // {
-          //   to: "/develop/settlement-layer/running-a-k2-node/",
-          //   from: "/settlement-layer/running-a-k2-node",
-          // },
           {
             to: "/concepts/introduction/tools",
             from: "/introduction/tools",
@@ -168,10 +160,6 @@ const config = {
           {
             to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
             from: "/build-dapps-with-koii/using-nfts-as-content",
-          },
-          {
-            to: "/develop/settlement-layer/creating-tokens-on-k2",
-            from: "/settlement-layer/creating-tokens-on-k2",
           },
           {
             to: "/quickstart/koii-software-toolkit-sdk/register-content/",
@@ -387,14 +375,6 @@ const config = {
             to: "/develop/task-tutorials/linktree-task/auth-list",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
-          // {
-          //   to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
-          //   from: "/develop/microservices-and-tasks/run-a-task-node",
-          // },
-          // {
-          //   to: "/develop/designing-tasks/using-reputation",
-          //   from: "/develop/microservices-and-tasks/using-reputation",
-          // },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
