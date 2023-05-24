@@ -11,7 +11,7 @@ The `create-task-cli` is used to register a new task on K2.
 Before proceeding, download the Koii CLI [here](/quickstart/command-line-tool/koii-cli/install-cli), create a [Koii wallet](/quickstart/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/quickstart/command-line-tool/koii-cli/send-and-receive-tokens).
 :::
 
-After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create register your task on K2:
+After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
 
 - Run `npx @_koii/create-task-cli@latest` in your terminal within the task directory; it prompts for your wallet path:
 
@@ -25,7 +25,7 @@ Run `koii config get` to get the information of your wallet path.
 Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly. Remember to save your wallet path.
 :::
 
-- Next you will be prompted with seven options, select `Create a new task` to create a new task:
+- Next, you will be prompted with seven options, select `Create a new task` to create a new task:
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
@@ -60,7 +60,7 @@ Stake Pot Account Pubkey: stakepotaccount6G1XJXA1AZBKbwdhhbTSDi3AGLs7
 Note: Task Id is basically the public key of taskStateInfoKeypair.json
 Success
 ```
-**Congratulations!** you've created your first Koii task. See the links below to learn and build more Koii tasks:
+**Congratulations!** You've created your first Koii task. See the links below to learn and build more Koii tasks:
 
 - [Google doodle](/develop/task-tutorials/google-doodle-task/)
 - [Linktree Task](/develop/task-tutorials/linktree-task/intro)
