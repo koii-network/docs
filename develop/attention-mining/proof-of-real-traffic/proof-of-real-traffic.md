@@ -22,8 +22,8 @@ The attention task is runs on the network of Koii nodes. After a user registers 
 
 # How can I use it?
 
-We provide two powerful SDK tools to help users build and collect KOII, `@_koii/k2-port` and `@_koii/recipients.`
+We provide two powerful SDK tools to help users build and collect KOII, `@_koii/k2-port` and `@_koii/k2-recipient-sdk`.
 
-The `@_koiii/k2-port` SDK is used for collecting views for your NFT or website. Check [here](./registering-content) and learn how to use it.
+The `@_koii/k2-port` SDK is used for collecting views for your NFT or website. Check [here](./registering-content) and learn how to use it.
 
 The `@_koii/k2-recipient-sdk` SDK is used to register your content to the Attention task and collect KOII. Check and learn how to use it.
