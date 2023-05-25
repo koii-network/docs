@@ -45,7 +45,7 @@ The goal of this tutorial is to familiarize you with more advanced topics that w
 
 ## What Will You Learn in This Tutorial?
 
-This tutorial's goal is to familiarize you with more advanced concepts that are applied in the linktree task, such as database management and Api endpoints. Writing your own Koii tasks will be made easier for you if you have a good understanding of these features.
+This tutorial's goal is to familiarize you with more advanced concepts that are applied in the linktree task, such as database management and API endpoints. Writing your own Koii tasks will be made easier for you if you have a good understanding of these features.
 
 However, when it comes to more complex projects involving database management and the creation of API endpoints for user requests, several questions arise. let's talk about three crucial pieces of logic needed for this project to function properly:
 
@@ -53,10 +53,10 @@ However, when it comes to more complex projects involving database management an
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [db_model.js](https://github.com/somali0128/task-template-linktree/blob/main/db_model.js)    | A **local database** is required to store and manage data such as Linktree information, proofs, and the authentication list on a [node](/run-a-node/introduction/task-nodes) operator's local device. This is important because it reduces the need for frequent API calls to a remote database. |
 | [routes.js](https://github.com/somali0128/task-template-linktree/blob/main/routes.js)        | **API endpoints** will be required for the project to handle incoming requests, process data, and return appropriate responses to the client.                                                                                                                                                                 |
-| [db_sharing.js](https://github.com/somali0128/task-template-linktree/blob/main/dbSharing.js) | Since each Koii node has its own local database, when one node’s data is updated, it must also be updated on other nodes to ensure consistency. The `db_sharing.js` will contain a single function called `share()` that works to keep the network synchronized.                                              |
+| [db_sharing.js](https://github.com/somali0128/task-template-linktree/blob/main/dbSharing.js) | Since each Koii node has its local database, when one node’s data is updated, it must also be updated on other nodes to ensure consistency. The `db_sharing.js` will contain a single function called `share()` that works to keep the network synchronized.                                              |
 
 :::tip
 
-If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).
 
 :::

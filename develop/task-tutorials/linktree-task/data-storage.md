@@ -1,7 +1,7 @@
 ---
-title: Data Storage - LevelDB
+title: Data Storage - NeDB
 image: img/thumbnail.png
-sidebar_label: Data Storage - LevelDB
+sidebar_label: Data Storage - NeDB
 ---
 
 ## Where Will the Linktree Data be Stored?
@@ -18,9 +18,9 @@ In the linktree task, this module is called `db_model.js`. It manages three diff
 
 - **Authentication list** — We need to keep an authentication list to ensure only the nodes that have access to the task can update or retrieve data. This is essential for the security of our task.
 
-Each of these needs to have its own setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our linktree task.
+Each of these needs to have its setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our linktree task.
 
-For the linktree data we have the following functions:
+For the linktree data, we have the following functions:
 
 - `getLinktree()`
 - `setLinktree()`
@@ -98,9 +98,9 @@ const getAuthList = async (pubkey) => {
 };
 ```
 
-The function takes a public key as a parameter and returns the user object associated with that public key. The user object contains information about the authenticated user,  and is retrieved from the database.
+The function takes a public key as a parameter and returns the user object associated with that public key. The user object contains information about the authenticated user and is retrieved from the database.
 
-You can modify this module and add your own functions to serve the needs of your own Koii task. For example, let’s assume you are trying to create a web scraper task that scrapes data from wikipedia. Instead of having `getLinktree` function, you can add a `getScrapedData` function. In most cases, you will be modifying the data functions according to your task needs. 
+You can modify this module and add your functions to serve the needs of your own Koii task. For example, let’s assume you are trying to create a web scraper task that scrapes data from Wikipedia. Instead of having `getLinktree` function, you can add a `getScrapedData` function. In most cases, you will be modifying the data functions according to your task needs. 
 
 Our team is in the process of standardizing the ‘proof’ and ‘auth list’ methods in the db_model file as these would most likely be used in every task. This way you will not need to write extra code and can focus on only writing the data methods for your task. The important thing is to understand the significance of proofs and auth lists in tasks. 
 
