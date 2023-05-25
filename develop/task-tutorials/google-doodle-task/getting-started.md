@@ -1,17 +1,17 @@
 ---
 title: Getting Started
-description: First step is to clone the K2-template.
+description: First step is to clone the Task-template.
 image: img/thumbnail.png
 sidebar_label: Getting Started
 ---
 
 # Getting Started
 
-First step is to clone the [Task-template](https://github.com/koii-network/task-template).
+The first step is to clone the [Task-template](https://github.com/koii-network/task-template).
 
 :::info
 
-Make sure you have [node](https://nodejs.org/en/), npm and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed before going forward.
+Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed before going forward.
 
 :::
 
