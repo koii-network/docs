@@ -32,12 +32,12 @@ class CoreLogic {
     }
 
     console.log("SUBMISSION VALUE", scrapedDoodle);
-    const stringfy = JSON.stringify(scrapedDoodle);
+    const stringify = JSON.stringify(scrapedDoodle);
 
-    // store this work of fetching googleDoodle to levelDB
+    // store this work of fetching google doodle to NeDB
 
     try {
-      await namespaceWrapper.storeSet("doodle", stringfy);
+      await namespaceWrapper.storeSet("doodle", stringify);
     } catch (err) {
       console.log("error", err);
     }
@@ -134,7 +134,7 @@ class CoreLogic {
     const submissions_audit_trigger =
       taskAccountDataJSON.submissions_audit_trigger[round];
     if (submissions == null) {
-      console.log("No submisssions found in N-2 round");
+      console.log("No submissions found in N-2 round");
       return distributionList;
     } else {
       const keys = Object.keys(submissions);

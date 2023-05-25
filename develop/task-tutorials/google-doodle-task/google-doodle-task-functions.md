@@ -15,7 +15,7 @@ The `task` function contains the core logic of the task and we will update the c
  async task() {
     const browserFetcher = puppeteer.createBrowserFetcher({
       product: "firefox",
-    }); // download headless version of Firefox
+    }); // download a headless version of Firefox
     const browserRevision = "114.0a1"; // browser version
 
     let revisionInfo = await browserFetcher.download(browserRevision);
@@ -35,16 +35,16 @@ The `task` function contains the core logic of the task and we will update the c
 
     let scrapedDoodle = $(".latest-doodle.on")
       .find("div > div > a > img")
-      .attr("src");  // get link for latest doodle using the HTML element
+      .attr("src");  // get the link for the latest doodle using the HTML element
     if (scrapedDoodle.substring(0, 2) == "//") {
       scrapedDoodle = scrapedDoodle.substring(2, scrapedDoodle.length);
     }  // extract link
 
-    const stringfy = JSON.stringify(scrapedDoodle);
+    const stringify = JSON.stringify(scrapedDoodle);
 
-    // store this work of fetching googleDoodle to levelDB
+    // store the doodle on NeDB
     try {
-      await namespaceWrapper.storeSet("doodle", stringfy); // store on levelDB
+      await namespaceWrapper.storeSet("doodle", stringify); // store on NeDB
     } catch (err) {
       console.log("error", err);
     }
@@ -56,14 +56,14 @@ Let's break down the logic above, we:
 
 - Used `puppeteer.createBrowserFetcher()` to download a browser instance, Firefox in our case.
   - `browserRevision` is the browser version we want to download.
-- Launched the browser, created a new page and visited [Google doodle](https://www.google.com/doodles).
+- Launched the browser, created a new page, and visited [Google Doodle](https://www.google.com/doodles).
 - Parsed the HTML document with Cheerio.
-- Extracted the link of the latest google doodle from the parsed HTML document.
-- Converted the link to JSON and stored it on levelDB using the `storeSet()` from `namespaceWrapper`.
+- Extracted the link of the latest Google Doodle from the parsed HTML document.
+- Converted the link to JSON and stored it on NeDB using the `storeSet()` from `namespaceWrapper`.
 
 # fetchSubmission()
 
-The `fetchSubmission` function with fetch and return the value from levelDB using the `storeGet` helper function.
+The `fetchSubmission` function fetches and returns the value from NeDB using the `storeGet` helper function.
 
 ```javascript
 async function fetchSubmission() {
@@ -80,13 +80,13 @@ async function fetchSubmission() {
 
 # submitTask()
 
-The `submitTask` function calls the `fetchSubmission()` to retrieve the value from levelDB and submits it to K2 using the `checkSubmissionAndUpdateRound` helper function.
+The `submitTask` function calls the `fetchSubmission()` to retrieve the value from NeDB and submits it to K2 using the `checkSubmissionAndUpdateRound` helper function.
 
 ```javascript
 async function submitTask(roundNumber) {
   console.log("submitTask called with round", roundNumber);
   try {
-    const value = await fetchSubmission(); // retrieve value from levelDB
+    const value = await fetchSubmission(); // retrieve value from NeDB
     console.log("value", value);
     await namespaceWrapper.checkSubmissionAndUpdateRound(value, roundNumber); // submit to K2
     console.log("after the submission call");
