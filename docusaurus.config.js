@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Koii Docs",
   tagline: "Koii is Web3, for everyone.",
-  favicon: "/img/Docs 32x326.svg",
+  favicon: "/img/Docs 32x326.ico",
 
   // Set the production url of your site here
   url: "https://docs.koii.network/",
