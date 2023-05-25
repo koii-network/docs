@@ -3,7 +3,7 @@ import styles from "./cta.module.css";
 
 export const Cta = () => {
   return (
-    <div className='w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-12'>
+    <div className='w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8'>
       <div className='w-full flex flex-col md:flex-row gap-6'>
         <a
           href='/develop/koii-task-101/what-are-tasks/'
