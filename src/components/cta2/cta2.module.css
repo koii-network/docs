@@ -1,0 +1,9 @@
+.card {
+  transition: transform 0.3s ease-in, margin-top 0.3s ease-in,
+    margin-bottom 0.3s ease-in;
+}
+
+.card:hover {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
