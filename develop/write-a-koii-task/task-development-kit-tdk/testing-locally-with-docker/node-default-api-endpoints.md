@@ -9,7 +9,13 @@ sidebar_label: Node Default API Endpoints
 
 Every node will have the following endpoints available by default at the defined service node address:
 
-- "/" Heartbeat
-- "/node" Lists all registered nodes
-- "/register-node" Endpoint to register new nodes
-- "/get-all-running-tasks" Lists all tasks running on given node
+```js
+ app.get('/', heartbeat);
+ app.get('/nodes/:taskId', nodes);
+ app.post('/register-node/:taskId', registerNode);
+ app.get('/get-all-running-tasks', getAllRunningTasks);
+```
+
+:::note
+`registerNode` is used by node discovery to automatically register your node to other nodes and vice versa.
+:::
