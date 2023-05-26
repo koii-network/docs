@@ -23,7 +23,7 @@ router.get('/linktree/get/:publicKey', async (req, res) => {
 ```
 In the above example, nodes will use `publicKey` to call levelDB and return the linktree data. If publicKey is not found, it will return an empty array. 
 
-Similarly, the `router.post('/linktree')` route registers the linktree by writing it to a file and storing it in the database along with a proof that includes a public key and a signature.
+Similarly, the `router.post('/linktree')` route registers the linktree by writing it to a file and storing it in the database along with proof that includes a public key and a signature.
 
 Other APIs include `GET /logs`, which returns the log of the node to help debug the code, and `GET /taskState`, which returns the task status containing information such as nodes list, distribution list, and stake list.
 

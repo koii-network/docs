@@ -13,7 +13,7 @@ The `validateDistribution` function contains the logic of how the distribution l
 
 ```javascript
 async function validateDistribution(submissionValue) {
-  console.log("Validating Disribution List", submissionValue);
+  console.log("Validating Distribution List", submissionValue);
   return true;
 }
 ```

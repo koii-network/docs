@@ -1,13 +1,13 @@
 ---
 title: Submit Distribution List
-description: After the nodes have done their off-chain duty and validated each others submissions, the next stage is the distribution stage; where a node is selected to generate and submit a distribution list on-chain.
+description: After the nodes have done their off-chain duty and validated each other's submissions, the next stage is the distribution stage; where a node is selected to generate and submit a distribution list on-chain.
 image: img/thumbnail.png
 sidebar_label: Submit Distribution List
 ---
 
 # Submit Distribution List
 
-After the nodes have done their off-chain duty and validated each others submissions, the next stage is the distribution stage; where a node is selected to generate and submit a distribution list on-chain.
+After the nodes have done their off-chain duty and validated each other's submissions, the next stage is the distribution stage; where a node is selected to generate and submit a distribution list on-chain.
 
 # generateDistributionList()
 
@@ -28,7 +28,7 @@ async function generateDistributionList(round) {
   const submissions_audit_trigger =
     taskAccountDataJSON.submissions_audit_trigger[round];
   if (submissions == null) {
-    console.log("No submisssions found in N-2 round");
+    console.log("No submissions found in N-2 round");
     return distributionList;
   } else {
     const keys = Object.keys(submissions);
@@ -67,7 +67,7 @@ In the code block above:
 - The task's data is retrieved using the `getTaskState` helper function
 - All valid submissions are fetched from the task's data
 - The `submissions_audit_trigger` is also retrieved from the task's data; this object contains information about the audited submissions
-- If `submissions` is null, an empty distribution list is returned. Else, the keys and values of the `submissions` are grouped separately and in a loop, it calculates the audits on each submission and how many votes on the audit, and based on that it makes a decision.
+- If `submissions` is null, an empty distribution list is returned. Else, the keys and values of the `submissions` are grouped separately, and in a loop, it calculates the audits on each submission and how many votes on the audit, and based on that it makes a decision.
 
 # submitDistributionList()
 
