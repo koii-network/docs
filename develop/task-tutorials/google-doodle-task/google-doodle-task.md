@@ -15,12 +15,12 @@ Let's first understand the logic behind the task before moving on to the coding 
 
 # Google Doodle Task Logic
 
-The latest google doodle is scraped from [Google/doodles](https://www.google.com/doodles) and submitted to K2.
+The latest Google doodle is scraped from [Google/doodles](https://www.google.com/doodles) and submitted to K2.
 
-To validate a node's submission, the most recent Google doodle is retrieved and compared to what was submitted to K2. If it does, the node's submission is valid; otherwise, it is invalid.
+To validate a node's submission, the most recent Google Doodle is retrieved and compared to what was submitted to K2. If it does, the node's submission is valid; otherwise, it is invalid.
 
 :::info
 
-If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).
 
 :::
