@@ -10,36 +10,26 @@ Koii supports a file system wallet that can be used to interface directly with t
 >
 >_Source_ [_Solana_](https://docs.solana.com/wallet-guide/cli#file-system-wallet)
 
-To get the command for creating a wallet, run:
+To generate a file system wallet keypair, use Koii's command-line tool `koii-keygen`. Run the following command:
+```bash
+mkdir ~/my-koii-wallet
+koii-keygen new --outfile ~/my-koii-wallet/my-keypair.json
+```
 
+:::danger
+This file contains your **unencrypted keypair**, protect this file as it grants access to all tokens sent to its public key. Do not distribute the file; share only the public key to maintain security.
+:::
+
+The public key of the keypair file is your wallet address. To display your public key, run:
 ```
 koii address
 ```
-
-If you do not have a Koii wallet in `./.config/koii/id.json` , you should see an error prompt:
-
+It will return a string of characters like:
 ```
-Error: No default signer found, run "koii-keygen new -o /Users/<YOUR_HOME>/.config/koii/id.json" to create a new one
+2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBq
 ```
-
-Run the `koii-keygen` command you're prompted to run.&#x20;
-
-```bash
-koii-keygen new -o /Users/<YOUR_HOME>/.config/koii/id.json
-```
-
-:::tip
-The path may differ slightly between operating systems.  Remember to update your path before running the command.
+:::info
+This is the public key for the keypair found in /my-koii-wallet/my-keypair.json.
 :::
 
-This command will generate an identity keypair. You can add a BIP39 passphrase for extra security or click the "ENTER" button for an empty passphrase.
-
-Want to learn more about the BIP39 passphrase? Visit [here](https://www.blockplate.com/blogs/blockplate/what-is-a-bip39-passphrase).
-
-The identity public key can now be viewed by running:
-
-```
-koii-keygen pubkey /Users/<YOUR_HOME>/.config/koii/id.json
-```
-
-Congratulations! Now you have a Koii wallet, next, let's airdrop some KOII in your wallet.
+Congratulations! You now have a Koii wallet, next, let's airdrop some KOII in your wallet.
