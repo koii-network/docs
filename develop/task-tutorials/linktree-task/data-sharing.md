@@ -12,8 +12,8 @@ For the linktree task, we will create a `dbSharing.js` module that serves as the
 
 ## Here is a high-level overview of how the module works
 
-- It retrieves a list of nodes in the network by making a request to a task’s URL.
-- For each node in the list, it retrieves a list of linktrees associated with the node by making a request to the node's URL.
+- It retrieves a list of nodes in the network by requesting a task’s URL.
+- For each node in the list, it retrieves a list of linktrees associated with the node by requesting the node's URL.
 - For each linktree retrieved from a node, it verifies the signature associated with the data 
 - If the signature is verified, it checks if a local copy of the linktree already exists in the database.
 - If a local copy exists and the remote copy is newer, it updates the local copy with the remote data. If a local copy does not exist, it creates a new entry in the database with the remote data.
@@ -66,7 +66,7 @@ for (let i = 0; i < payload.length; i++) {
 
 ```
 
-Step 5: Update local copy with new data if needed
+Step 5: Update the local copy with new data if needed
 ```javascript
 let localExistingLinktree = allLinktrees.find((e) => {
     e.uuid == linkTreePayload.data.uuid;
