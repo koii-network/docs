@@ -7,7 +7,7 @@ sidebar_label: Connect to a Cluster
 
 The `koii config` command is used to update the Koii CLI configuration settings.
 
-To print the file location of config, run:
+To print the file location of the config, run:
 
 ```
 koii config get
@@ -25,7 +25,7 @@ Commitment: confirmed
 
 The RPC URL can be toggled between testnet and mainnet by pointing the RPC URL to the corresponding node URL.
 
-The command below is an example on how to switch to testnet:
+The command below is an example of how to switch to testnet:
 
 ```
 koii config set --url https://k2-testnet.koii.live
