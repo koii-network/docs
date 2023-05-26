@@ -7,12 +7,12 @@ sidebar_label: Task Node CLI
 
 # Task Node CLI
 
-The task node CLI is a helpful tool used by node operators for 4 different reasons:
+Operations that can be done in the Task Node CLI include:
 
-- Create a task staking wallet
-- Create a distribution wallet
-- Stake tokens on a task
-- Show all tasks
+- Creating a task staking wallet
+- Creating a distribution wallet
+- Staking tokens on a task
+- Getting a list of all tasks
 
 The staking CLI can be started by running the command `yarn stake` in the root directory of the task node. The steps are:
 
@@ -20,7 +20,7 @@ The staking CLI can be started by running the command `yarn stake` in the root d
 - Run `yarn build`
 - Run `yarn stake` in your terminal
 - Enter the path to your wallet
-- Next you will be prompted with four options&#x20;
+- Next, you will be prompted with four options
 
 ```
 ? Select operation › - Use arrow-keys. Return to submit.
@@ -64,7 +64,7 @@ Success
 
 ## Stake Tokens
 
-To stake tokens on a task, select the "Stake tokens on a task", add the task ID of the task you want to stake on and enter the amount you want to stake.
+To stake tokens on a task, select the "Stake tokens on a task", add the task ID of the task you want to stake on, and enter the amount you want to stake.
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
