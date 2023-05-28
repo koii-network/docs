@@ -43,7 +43,7 @@ You can find out your chip information by going to the Apple icon in the top lef
 
 ![Find my chip](./img/Find%20my%20chip.png)
 
-If you have an M1 chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-arm64.dmg). If you have an Intel chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-x64.dmg).
+If you have an M1 or M2 chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-arm64.dmg). If you have an Intel chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-x64.dmg).
 
 Once the file has been fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anyway.”
 
