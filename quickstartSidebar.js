@@ -75,7 +75,7 @@ const sidebars = {
       link: {
         type: "generated-index",
         description:
-          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stake using the Koii command-line tools.Here are the articles in this section:",
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
       },
       collapsed: true,
       items: [
