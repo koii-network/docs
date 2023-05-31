@@ -22,7 +22,7 @@ sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/ma
 - Depending on your system, you may get this prompt:
 
 ```
-Please update your PATH environment variable to include the koii programs:
+Please update your PATH environment variable to include the Koii programs:
 ```
 
 - If you get the above message, copy and run the command beneath this prompt to update your `PATH` environment.
@@ -46,7 +46,7 @@ For Mac users, you might find if you open another terminal the Koii CLI would no
 
 :::
 
-To run the test validator, use command:&#x20;
+To run the test validator, use the command:
 
 ```
 koii-test-validator
@@ -60,7 +60,7 @@ koii-test-validator
 curl https://github.com/koii-network/k2-release/releases/download/v0.0.1/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs
 ```
 
-- Copy and paste the following command, then click "Enter" to install the latest version of Koii. If you see a security pop-up by your system, please select to allow the program to run.
+- Copy and paste the following command, then click "Enter" to install the latest version of the Koii CLI. If you see a security pop-up in your system, please select to allow the program to run.
 
 ```
 C:\koii-install-tmp\koii-install-init.exe v0.0.1
