@@ -11,11 +11,11 @@ sidebar_label: Create Task CLI
 
 We provide `create-task-cli` tool for task creators to easily:
 - Create a new task
-- Update existing task
-- Activate task
+- Update an existing task
+- Activate a task
 - Claim reward
-- Fund task with more KOII
-- Withdraw staked funds from task
+- Fund a task with more KOII
+- Withdraw staked funds from a task
 - Upload assets to IPFS
 
 
@@ -24,23 +24,23 @@ We provide `create-task-cli` tool for task creators to easily:
 
 ## Install Create-Task-CLI
 
-- Run the command below to install the create-task-cli:
+- Run the command below in your terminal within the task directory to install and run the create-task-cli:
 
 ```bash
-npm i @_koii/create-task-cli
+npx @_koii/create-task-cli@latest
 ```
 
-- Run `npx @_koii/create-task-cli@latest` in your terminal within the task directory; it prompts for your wallet path:
+- It prompts for your wallet path:
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 ```
 :::tip
-Run `koii config get` to get the information of your wallet path.
+Run `koii config get` in another terminal, the “**Keypair Path**” is your wallet path.
 
-Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly. Remember to save your wallet path.
+Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly.
 :::
-- Next you will be prompted with seven options, select `Create a new task` to create a new task:
+- Next, you will be prompted with seven options, select `Create a new task` to create a new task:
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
@@ -48,7 +48,7 @@ Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cl
     Activate task
     Claim reward
     Fund task with more KOII
-  Withdraw staked funds from task
+    Withdraw staked funds from task
     upload assets to IPFS(metadata/local vars)
 ```
 - There are two options to create a new task, the next prompt asks you to select how you want to create your task:
@@ -68,14 +68,14 @@ The `config-task.yml` is the configuration file that contains the information ne
 The `config-task.yml` should look like this:
 
 ```yaml
-#Provide the taskId if you are updating the task
+# Provide the taskId if you are updating the task
 task_id: ''
-# Name and desciption of your task
+# Name and description of your task
 task_name: 'Your-task-name'
 task_description: 'This task is to test out the namespace function'
 
-# network value can be DEVELOPMENT , ARWEAVE or IPFS
-task_executable_network: 'IPFS'
+# Network value can be DEVELOPMENT, ARWEAVE or IPFS
+task_executable_network: 'DEVELOPMENT'
 
 # Provide your web3.storage key as it is needed for uploading your metadata
 secret_web3_storage_key: ''
@@ -86,7 +86,7 @@ task_audit_program: ''
 # Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
 task_audit_program_id: 'main'
 
-# Total round time of your task : it must be given in slots and each slot is rougly equal to 4ms
+# Total round time of your task: it must be given in slots and each slot is roughly equal to 4ms
 round_time: 600
 
 audit_window: 200
@@ -96,32 +96,32 @@ submission_window: 200
 
 minimum_stake_amount: 5
 
-# total_bounty_amount cannot be grater than bounty_amount_per_round
-# total bounty is not accepted in case of update task
+# Total_bounty_amount cannot be greater than bounty_amount_per_round
+# Total bounty is not accepted in case of updating a task
 total_bounty_amount: 10
 
 bounty_amount_per_round: 1
 
-#Number of times allowed to re-submit the distribution  list in case the distribution list is audited
+# Number of times allowed to re-submit the distribution list in case the distribution list is audited
 allowed_failed_distributions: 3
 
 #Space in MBs
 space: 1
 
 # Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
-# To add more global variables and task variables, please refer the type,value,description format shown below
+# To add more global variables and task variables, please refer to the type, value, and description format shown below
 
 author: 'Your name'
 description: 'task-description'
-repositoryUrl: 'Github/gitlab link'
+repositoryUrl: 'Github/Gitlab link'
 imageUrl: 'Enter you image URL'
 requirementsTags:
   - type: TASK_VARIABLE
     value: SECRET_WEB3_STORAGE_KEY
     description: 'used to connect web3.storage'
   - type: TASK_VARIABLE
-    value: SCRAPING_URL
-    description: 'url from which you want to scrape'
+    value: 'SCRAPING_URL'
+    description: 'URL from which you want to scrape'
   - type: CPU
     value: '4-core'
   - type: RAM
@@ -134,7 +134,6 @@ requirementsTags:
     value: 'AMD'
   - type: OS
     value: 'OSX'
-
 ```
 - Follow the instructions and fill in your task's information. 
 
@@ -156,9 +155,9 @@ Then in your `yml` file should have:
   description: 'used to connect twitter'
 ```
 
-Value name should be exact same to your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
+The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
-User will setup their key of the `value` in desktop node's `Settings -> Task Settings`
+User will setup their key of the `value` in the desktop node's `Settings -> Task Settings`
 
 ![Code Sample](../img/setting_env_key.png)
 
@@ -170,10 +169,10 @@ User will setup their key of the `value` in desktop node's `Settings -> Task Set
 ```bash
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
-Your account will be subtract 16.96249776 KOII for creating the task, which includes the rent exemption and bounty amount fees ›
+Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
 ```
-- Hit `y` to subtract the necessary amount of KOII for your task creation.
-- Finally, the details of your task, including the task ID, are returned.
+- Hit `y` to deduct the necessary amount of KOII for your task creation.
+- Finally, the details of your task, including the "Task Id" and "Stake Pot Account Pubkey" are returned.
 
 ### Using the CLI
 
@@ -195,7 +194,7 @@ The next prompt depends on your answer to the prompt above.
 
 - [For IPFS] **Enter the web3.storage API key:** Add a web3.storage API key to store your task executable on IPFS. E.g: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`
 :::tip
-Visit [Web3.storage](https://web3.storage/), create an account, create an API token for your project, copy your token and paste it on this prompt.
+Visit [Web3.storage](https://web3.storage/), create an account, create an API token for your project, copy your token, and paste it on this prompt.
 :::
 
 - [For Arweave] **Enter Arweave id of the deployed Koii task executable program:** Upload your executable file to [Arweave](https://www.arweave.org/) and enter its ID into this prompt.
