@@ -1,5 +1,5 @@
 ---
-title:  Hello World Quickstart Guide
+title:  "Hello, World!" Quickstart Guide
 description: Write and deploy your first Koii task
 image: img/thumbnail.png
 sidebar_label:  Getting Started
