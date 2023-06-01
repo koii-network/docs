@@ -42,6 +42,7 @@ const sidebars = {
       items: [
         "finnie-for-devs/koii-network/transfer-koii",
         "finnie-for-devs/koii-network/signpayload-koii",
+        "finnie-for-devs/koii-network/Events",
         "finnie-for-devs/koii-network/transfer-ar",
         "finnie-for-devs/koii-network/transfernft",
       ],

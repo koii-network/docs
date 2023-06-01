@@ -7,22 +7,20 @@ sidebar_label: Connecting Finnie
 
 # Connecting Finnie
 
-### Web3 Browser Detection&#x20;
+### connect
 
-When Finnie wallet is initialized it will emit a custom browser event called `finnieWalletLoaded()`.  
-You can listen for that event and set a flag in your app which would indicate that Finnie is ready to use. The example code could look like this:
+The `connect` method is the only way to obtain the necessary permissions required to use Finnie for signing transactions. This function will return a promise, allowing you to await the result of connect approval. A popup will appear, allowing you to either accept or reject the request. You can also select a specific wallet address to connect to. If the request is approved, the returned promise will be resolved with the PublicKey of the connected wallet; otherwise, the returned promise will be rejected.
 
 ```jsx
-let isFinnieInjected = false;
-window.addEventListener("finnieWalletLoaded", () => {
-  isFinnieInjected = true;
-});
+window.solana.connect(): Promise<PublicKey>
 ```
 
-At this point, Finnie wallet will inject the `ethereum` provider object into the global `window` object. You can verify this by running the code:
 
 ```jsx
-if (typeof window.ethereum !== "undefined" && window.ethereum.isFinnie) {
-  console.log("Finnie is installed");
+try {
+    const connectedPublickey = await window.solana.connect()
+} catch (error) {
+    // request rejected
+    console.error(error) // { code: 4001, message: 'User rejected the request.' }
 }
 ```
