@@ -73,7 +73,7 @@ const sidebars = {
       value: "Community",
       className: "sidebar-title top-margin",
     },
-    "community/open-source-contributions",
+    // "community/open-source-contributions",
     "community/community-forums",
     "community/contact-us",
     "glossary",
