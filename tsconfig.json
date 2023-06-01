@@ -4,5 +4,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react"
-  }
+  },
+  "include": [
+    "src/components/cta/gtag.d.ts",
+  ]
 }
