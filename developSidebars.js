@@ -217,22 +217,22 @@ const sidebars = {
         "task-tutorials/linktree-task/auth-list",
       ],
     },
-    {
-      type: "category",
-      label: "Example Task: Todo",
-      link: {
-        type: "doc",
-        id: "task-tutorials/to-do/to-do",
-      },
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Example Task: Scrapers",
-      collapsed: true,
-      items: ["task-tutorials/scrapers/twitter"],
-    },
+    // {
+    //   type: "category",
+    //   label: "Example Task: Todo",
+    //   link: {
+    //     type: "doc",
+    //     id: "task-tutorials/to-do/to-do",
+    //   },
+    //   collapsed: true,
+    //   items: [],
+    // },
+    // {
+    //   type: "category",
+    //   label: "Example Task: Scrapers",
+    //   collapsed: true,
+    //   items: ["task-tutorials/scrapers/twitter"],
+    // },
     {
       type: "html",
       value: "Encryption",

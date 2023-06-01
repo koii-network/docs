@@ -2,6 +2,9 @@ import React, { ReactNode } from "react";
 import styles from "./cta.module.css";
 
 export const Cta = () => {
+  const handleClick = () => {
+    window.gtag('event', 'click_run_node')
+  }
   return (
     <div className='w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8'>
       <div className='w-full flex flex-col md:flex-row gap-6'>
@@ -30,6 +33,7 @@ export const Cta = () => {
           style={{
             textDecoration: "no-underline",
           }}
+          onClick={handleClick}
         >
           <img src={"/img/COLOR- Run a Task Node.svg"} className='w-full rounded-t-[10px]' role='img' />
           <button className='p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer'>
