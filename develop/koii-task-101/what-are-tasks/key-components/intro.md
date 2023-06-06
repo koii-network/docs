@@ -26,7 +26,8 @@ Every task is compiled into a single JavaScript executable file that contains al
 
 ## Metadata
 
-The task metadata is structured data that contains information about a Koii task. Node operators can easily learn more details about a specific task by looking at its metadata.&#x20;
+
+Task metadata is essential structured data that provides valuable information about a Koii task. By examining the metadata, node operators can gain a comprehensive understanding of a specific task. It is highly recommended to include key details such as the minimum computer specifications and reward structure within the metadata. This inclusion allows node operators to have a clear understanding of how rewards will be distributed, minimizing any potential confusion or uncertainty when executing your task. &#x20;
 
 Task metadata sample:
 
@@ -44,6 +45,11 @@ Task metadata sample:
     memory: '8',
     os: [ 'Linux', 'Windows', 'MacOS' ],
     network: '20'
+  },
+  rewardStructure: {
+    minimum_stake_amount: '5',
+    total_bounty_amount: '10',
+    bounty_amount_per_round: '1',
   }
 }
 ```
