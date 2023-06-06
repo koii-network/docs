@@ -461,9 +461,12 @@ const config = {
   ],
   presets: [
     [
-      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
+        googleTagManager: {
+          containerId: "GTM-T3JDJWD",
+        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
@@ -479,11 +482,7 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        gtag: {
-          trackingID: "G-1MTMLP9766",
-          anonymizeIP: true,
-        },
-      }),
+      },
     ],
   ],
   themeConfig:
