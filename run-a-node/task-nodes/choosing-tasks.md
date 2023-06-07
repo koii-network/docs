@@ -5,6 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Choosing Tasks
 ---
 
+ ![banner](./img/Run%20a%20Task%20Node.svg)
 You made it, you’re almost halfway through earning your first $KOII by running tasks on your device. 
 
 Once the **Desktop Node** application is ready and you’ve successfully imported your wallet. 
