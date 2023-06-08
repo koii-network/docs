@@ -6,89 +6,116 @@ export type CardItem = {
 
 export type Cards = {
   title?: string;
-  description?: string;
+  // description?: string;
   items?: CardItem[];
 };
 
 export const cardDetails: Cards[] = [
   {
     title: "Build Concepts",
-    description:
-      "Learn how to harness the power of thousands of Koii Nodes to supercharge your DApp",
+    // description:
+    //   "Learn how to harness the power of thousands of Koii Nodes to supercharge your DApp",
     items: [
       {
         title: "Auth & Security",
         link: "/develop/koii-task-101/what-are-tasks/key-components/auth-and-security",
-        image: "/img/AUTH & SECURITY.svg",
+        image: "/img/Auth Security.svg",
       },
       {
         title: "Database Sharding",
         link: "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
-        image: "img/DATABASE SHARDING.svg",
+        image: "/img/Datasharding.svg",
       },
       {
         title: "Node to Node Sync",
         link: "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
-        image: "img/NODE TO NODE SYNC.svg",
+        image: "/img/Node2nodesync.svg",
       },
       {
         title: "Rest API",
         link: "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
-        image: "img/REST API.svg",
+        image: "/img/Rest APIs.svg",
       },
     ],
   },
 
   {
     title: "Tutorials",
-    description: "Learn by a journey through our prebuilt Koii Tasks",
+    // description: "Learn by a journey through our prebuilt Koii Tasks",
     items: [
       {
         title: "The Task Template",
         link: "/develop/write-a-koii-task/task-development-guide/k2-task-template/",
-        image: "img/TEH TASK TEMPLATE.svg",
+        image: "/img/Task template.svg",
       },
       {
         title: "Google Doodle",
         link: "/develop/task-tutorials/google-doodle-task/",
-        image: "img/GOOGLE DOODLE (1).svg",
+        image: "/img/Google doodle.svg",
       },
       {
         title: "Koii Linktree",
         link: "/develop/task-tutorials/linktree-task/intro",
-        image: "img/KOII LINKTREE.svg",
+        image: "/img/Koii Linktree (1).svg",
       },
       {
         title: "Web Crawlers",
         link: "/develop/task-tutorials/scrapers/twitter",
-        image: "img/WEB CRAWLERS.svg",
+        image: "/img/Web crawlers (1).svg",
       },
     ],
   },
 
   {
     title: "Learn",
-    description: "Koii is complicated - Get the basics.",
+    // description: "Koii is complicated - Get the basics.",
     items: [
       {
         title: "Tokenomics",
         link: "/concepts/the-koii-token/network-economics",
-        image: "img/TEKONOMICS.svg",
+        image: "/img/Tokenomics.svg",
       },
       {
         title: "Gradual Consensus",
         link: "/concepts/gradual-consensus/",
-        image: "img/GRADUAL CONSENSUS (2).svg",
+        image: "/img/Gradual Consensus (3).svg",
       },
       {
         title: "Community",
         link: "/concepts/community/community-forums",
-        image: "img/COMMUNITY.svg",
+        image: "/img/Community (2).svg",
       },
       {
         title: "Glossary",
         link: "/concepts/glossary",
-        image: "img/GLOSARRY.svg",
+        image: "/img/Glossary.svg",
+      },
+    ],
+  },
+
+  {
+    title: "Software",
+    // description: "Koii is complicated - Get the basics.",
+    items: [
+      {
+        title: "Koii SDK",
+        link: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+        image: "/img/Koii SDK.svg",
+      },
+      {
+        title: "K2",
+        link: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+        image: "/img/K2.svg",
+      },
+      {
+        title: "Attention Mining",
+        link: "/develop/attention-mining/proof-of-real-traffic/",
+        image: "/img/Attention Mining.svg",
+      },
+      {
+        title: "Finnie",
+        link: "/quickstart/finnie-for-devs/welcome-to-finnie",
+        image: "/img/Finnie.svg",
       },
     ],
   },
