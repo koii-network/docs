@@ -15,6 +15,7 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
+    "build-on-koii",
     {
       type: "html",
       value: "K2 Settlement Layer",
