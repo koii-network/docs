@@ -536,7 +536,7 @@ const config = {
           },
           {
             label: "🏗️ Build on Koii",
-            to: "/develop/koii-task-101/what-are-tasks/",
+            to: "/develop/build-on-koii",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
