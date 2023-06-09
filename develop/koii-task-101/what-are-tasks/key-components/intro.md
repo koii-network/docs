@@ -46,11 +46,17 @@ Task metadata sample:
     os: [ 'Linux', 'Windows', 'MacOS' ],
     network: '20'
   },
-  rewardStructure: {
-    minimum_stake_amount: '5',
-    total_bounty_amount: '10',
-    bounty_amount_per_round: '1',
-  }
+  bountyStructure: {
+    "minimum stake amount": '5',
+    "total bounty amount" : '10000000',
+    "bounty amount per round": '10',
+  },
+  distributionStructure: {
+    "distribution per round": '0.15',
+    "distribution mechanism": "every node gets fixed amount of reward every round",
+    "stake dependence": "rewards do not depend on stake",
+    "time dependence": "longer staking does not mean more reward"
+ }  
 }
 ```
 
