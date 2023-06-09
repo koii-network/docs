@@ -10,7 +10,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Runtime Flow
 
-![banner](<../img/Gradual%20Consensus%20(1).png>)
+![banner](../img/Runtime%20Flow.svg)
 
 <Description
   text="Gradual Consensus - Act quickly, react faster, and reward slowly."
@@ -22,7 +22,6 @@ While the task standard supports a wide range of possible applications, the most
 
 One of the major limitations of stake-based games is the potential for an actor with a large amount of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
-![img](../img/Runtime%20Flow.svg)
 
 ## **How does it work?**
 
