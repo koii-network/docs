@@ -494,7 +494,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       // Replace with your project's social card
-      image: "img/HOME GENERAL THUMNBNAIL.png",
+      image: "img/thumbnail.png",
       // metadata: [
       //   {
       //     property: "og:url",
