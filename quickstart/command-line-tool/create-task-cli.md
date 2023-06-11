@@ -155,11 +155,26 @@ Then in your `yml` file should have:
   description: 'used to connect twitter'
 ```
 
+Make sure to set your environment variable `type` as `TASK_VARIABLE`.
+
 The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
 User will setup their key of the `value` in the desktop node's `Settings -> Task Settings`
 
 ![Code Sample](../img/setting_env_key.png)
+
+So, if you have more than one environment variable, your `requirementsTags` section should look like this:
+
+```yml
+requirementsTags:
+  - type: TASK_VARIABLE
+    value: SECRET_WEB3_STORAGE_KEY
+    description: 'used to connect web3.storage'
+  - type: TASK_VARIABLE
+    value: TWITTER_USER_NAME
+    description: 'used to connect twitter'
+```
+With each environment variable having their `type` set as `TASK_VARIABLE`, a unique `value` and a short `description`.
 
 :::
 
