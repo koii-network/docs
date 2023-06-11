@@ -117,7 +117,7 @@ repositoryUrl: 'Github/Gitlab link'
 imageUrl: 'Enter you image URL'
 requirementsTags:
   - type: TASK_VARIABLE
-    value: SECRET_WEB3_STORAGE_KEY
+    value: 'SECRET_WEB3_STORAGE_KEY'
     description: 'used to connect web3.storage'
   - type: TASK_VARIABLE
     value: 'SCRAPING_URL'
@@ -151,7 +151,7 @@ Then in your `yml` file should have:
 
 ```yaml
 - type: TASK_VARIABLE
-  value: TWITTER_USER_NAME
+  value: 'TWITTER_USER_NAME'
   description: 'used to connect twitter'
 ```
 
@@ -168,10 +168,10 @@ So, if you have more than one environment variable, your `requirementsTags` sect
 ```yml
 requirementsTags:
   - type: TASK_VARIABLE
-    value: SECRET_WEB3_STORAGE_KEY
+    value: 'SECRET_WEB3_STORAGE_KEY'
     description: 'used to connect web3.storage'
   - type: TASK_VARIABLE
-    value: TWITTER_USER_NAME
+    value: 'TWITTER_USER_NAME'
     description: 'used to connect twitter'
 ```
 With each environment variable having their `type` set as `TASK_VARIABLE`, a unique `value` and a short `description`.
