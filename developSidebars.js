@@ -226,7 +226,7 @@ const sidebars = {
     },
     "encryption/intro",
     "encryption/solana-encryption",
-    'encryption/ethereum-encryption',
+    "encryption/ethereum-encryption",
     {
       type: "html",
       value: "Use Koii-X dApp Templates",
