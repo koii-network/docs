@@ -6,6 +6,7 @@ sidebar_label: How to Run a Desktop Node
 ---
 
 import DesktopNodeButton from "@site/src/components/buttons/desktop-node-button";
+import { DownloadLinks } from "@site/src/lib/DesktopNodeDownload";
 
 <DesktopNodeButton />
 
@@ -13,7 +14,9 @@ Koii is a community of people and computers collaborating to build a brighter, m
 
 We are excited to have you as part of our community and our beta test for powering the next generation of the internet.
 
-<h2 id='what-exactly-is-a-koii-node' style={{fontSize: '32px'}}>What exactly is a Koii node?</h2>
+<h2 id="what-exactly-is-a-koii-node" style={{ fontSize: "32px" }}>
+  What exactly is a Koii node?
+</h2>
 
 A Koii node is a very small computer program—about the same size as your favorite music player—that allows you to run compute jobs called **[tasks](/develop/koii-task-101/what-are-tasks)** for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times.
 
@@ -21,7 +24,9 @@ A task can be anything from hosting a website to cataloging information from the
 
 Let’s get started!
 
-<h2 id='how-do-i-run-a-node' style={{fontSize: '32px'}}>How do I run a node?</h2>
+<h2 id="how-do-i-run-a-node" style={{ fontSize: "32px" }}>
+  How do I run a node?
+</h2>
 
 The installation process varies depending on your operating system:
 
@@ -31,7 +36,7 @@ The installation process varies depending on your operating system:
 
 ### Windows Download
 
-If you have Windows, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-win.exe).
+If you have Windows, <DownloadLinks os="Windows" />.
 
 Some Windows computers have different settings, so you may see different warning messages after you download the file like “The publisher could not be verified. Are you sure you want to run this software?”
 
@@ -45,7 +50,7 @@ You can find out your chip information by going to the Apple icon in the top lef
 
 ![Find my chip](./img/Find%20my%20chip.png)
 
-If you have an M1 or M2 chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-arm64.dmg). If you have an Intel chip, [get this download](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-mac-x64.dmg).
+If you have an M1 or M2 chip, <DownloadLinks os="MacArm" />. If you have an Intel chip, <DownloadLinks os="MacIntel" />.
 
 Once the file has been fully downloaded, open it. Your computer will warn you that you downloaded this file from the internet. If you trust us, click “Open Anyway.”
 
@@ -58,10 +63,12 @@ A small finder window will pop up. Drag the Koii Node icon on top of the Applica
 There are many different Linux configurations, so we won’t get into the specifics here about how to download the node itself.
 
 :::note
-If you want your node to update automatically, you must use [AppImage](https://github.com/koii-network/desktop-node/releases/download/v0.2.2/koii-desktop-node-0.2.2-linux-x86_64.AppImage).
+If you want your node to update automatically, you must use AppImage, <DownloadLinks os="LinuxUniversal" />
 :::
 
-<h2 id='time-to-node' style={{fontSize: '32px'}}>Time to Node</h2>
+<h2 id="time-to-node" style={{ fontSize: "32px" }}>
+  Time to Node
+</h2>
 
 A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
@@ -89,7 +96,9 @@ If you want to back up your account now, you can (and we recommend it). But you 
 **Remember**, secret phrases should always be written using a pen on paper and stored in a safe place. They should **never** be stored on an internet connected device like in a notes app, email, or photo. Anyone with access to this secret phrase has full control of your assets.
 :::
 
-<h2 id='get-those-tokens' style={{fontSize: '32px'}}>Get those tokens!</h2>
+<h2 id="get-those-tokens" style={{ fontSize: "32px" }}>
+  Get those tokens!
+</h2>
 
 If you’ve been part of the Koii community for a while, you might already have some KOII. If you do, click “copy” at the bottom of the pop-up. That will copy your node’s account address so you can send a few tokens from Finnie.
 
@@ -106,7 +115,9 @@ After verifying each method, head back to the Node window. Click the refresh but
 
 ![Fund Refresh](./img/3.%20Fund%20refresh.png)
 
-<h2 id='become-a-pirate' style={{fontSize: '32px'}}>Run your first task, become a pirate</h2>
+<h2 id="become-a-pirate" style={{ fontSize: "32px" }}>
+  Run your first task, become a pirate
+</h2>
 
 After a few seconds, your node will show you the first task to run. In order to run a task, you must stake some tokens. Each task will have a minimum stake set by the creator.
 
