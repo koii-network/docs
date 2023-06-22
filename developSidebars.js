@@ -17,25 +17,6 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "K2 Settlement Layer",
-      className: "sidebar-title",
-    },
-    "settlement-layer/k2-tick-tock-fast-blocks",
-    {
-      type: "category",
-      label: "Native Contracts",
-      link: {
-        type: "doc",
-        id: "settlement-layer/native-contracts/native-contracts",
-      },
-      collapsed: true,
-      items: [
-        "settlement-layer/native-contracts/the-attention-game",
-        "settlement-layer/native-contracts/the-task-contract",
-      ],
-    },
-    {
-      type: "html",
       value: "Koii Tasks 101",
       className: "sidebar-title top-margin",
     },
@@ -220,12 +201,32 @@ const sidebars = {
 
     {
       type: "html",
+      value: "K2 Settlement Layer",
+      className: "sidebar-title",
+    },
+    "settlement-layer/k2-tick-tock-fast-blocks",
+    {
+      type: "category",
+      label: "Native Contracts",
+      link: {
+        type: "doc",
+        id: "settlement-layer/native-contracts/native-contracts",
+      },
+      collapsed: true,
+      items: [
+        "settlement-layer/native-contracts/the-attention-game",
+        "settlement-layer/native-contracts/the-task-contract",
+      ],
+    },
+
+    {
+      type: "html",
       value: "Encryption",
       className: "sidebar-title top-margin",
     },
     "encryption/intro",
     "encryption/solana-encryption",
-    'encryption/ethereum-encryption',
+    "encryption/ethereum-encryption",
     {
       type: "html",
       value: "Use Koii-X dApp Templates",
