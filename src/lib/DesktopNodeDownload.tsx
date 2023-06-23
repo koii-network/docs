@@ -2,22 +2,22 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 interface DownloadLinks {
-  Windows: string | null;
-  MacArm: string | null;
-  MacIntel: string | null;
-  LinuxDebian: string | null;
-  LinuxArch: string | null;
-  LinuxUniversal: string | null;
+  Windows: string;
+  MacArm: string;
+  MacIntel: string;
+  LinuxDebian: string;
+  LinuxArch: string;
+  LinuxUniversal: string;
 }
 
 const DownloadLinks = ({ os }: { os: keyof DownloadLinks }) => {
   const [downloadLink, setDownloadLink] = useState<DownloadLinks>({
-    Windows: null,
-    MacArm: null,
-    MacIntel: null,
-    LinuxDebian: null,
-    LinuxArch: null,
-    LinuxUniversal: null,
+    Windows: "",
+    MacArm: "",
+    MacIntel: "",
+    LinuxDebian: "",
+    LinuxArch: "",
+    LinuxUniversal: "",
   });
 
   useEffect(() => {
@@ -29,17 +29,19 @@ const DownloadLinks = ({ os }: { os: keyof DownloadLinks }) => {
     fetchLinks();
   }, []);
 
-  return (downloadLink[os] && downloadLink[os] !== null) ? <a href={downloadLink[os] as string}>get this download</a> : null;
+  return downloadLink[os] ? (
+    <a href={downloadLink[os]}>get this download</a>
+  ) : null;
 };
 
 async function getLatestRelease() {
   let downloadLinks = {
-    Windows: null,
-    MacArm: null,
-    MacIntel: null,
-    LinuxDebian: null,
-    LinuxArch: null,
-    LinuxUniversal: null,
+    Windows: "",
+    MacArm: "",
+    MacIntel: "",
+    LinuxDebian: "",
+    LinuxArch: "",
+    LinuxUniversal: "",
   };
 
   try {
@@ -48,47 +50,42 @@ async function getLatestRelease() {
     );
 
     if (response.data.assets.length > 0) {
-      if (
-        response.data.assets[0] &&
-        response.data.assets[0].browser_download_url.includes(".deb")
-      ) {
-        downloadLinks.LinuxDebian =
-          response.data.assets[0].browser_download_url;
-        if (
-          response.data.assets[2] &&
-          response.data.assets[2].browser_download_url.includes(".AppImage")
-        ) {
-          downloadLinks.LinuxUniversal =
-            response.data.assets[2].browser_download_url;
+      let assetTypes = {
+        ".deb": "LinuxDebian",
+        ".AppImage": "LinuxUniversal",
+        ".rpm": "LinuxArch",
+        "arm64.dmg": "MacArm",
+        "mac-x64.dmg": "MacIntel",
+        "win-x64": "Windows",
+      };
+
+      response.data.assets.forEach((asset) => {
+        let url = asset?.browser_download_url;
+        if (url) {
+          for (let extension in assetTypes) {
+            if (url.includes(extension) && !url.includes(".blockmap")) {
+              downloadLinks[assetTypes[extension]] = url;
+              break;
+            }
+          }
         }
-        if (
-          response.data.assets[3] &&
-          response.data.assets[3].browser_download_url.includes(".rpm")
-        ) {
-          downloadLinks.LinuxArch =
-            response.data.assets[3].browser_download_url;
-        }
-        if (
-          response.data.assets[4] &&
-          response.data.assets[4].browser_download_url.includes("arm64.dmg")
-        ) {
-          downloadLinks.MacArm = response.data.assets[4].browser_download_url;
-        }
-        if (
-          response.data.assets[8] &&
-          response.data.assets[8].browser_download_url.includes("x64.dmg")
-        ) {
-          downloadLinks.MacIntel = response.data.assets[8].browser_download_url;
-        }
-        if (
-          response.data.assets[12] &&
-          response.data.assets[12].browser_download_url.includes("win")
-        ) {
-          downloadLinks.Windows = response.data.assets[12].browser_download_url;
-        }
-      }
+      });
     } else {
-      console.log("No assets found in the latest release.");
+      console.log("No assets found in the latest release. Using backup links.");
+      downloadLinks = {
+        Windows:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-win.exe",
+        MacArm:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-mac-arm64.dmg",
+        MacIntel:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-mac-x64.dmg",
+        LinuxDebian:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-linux-amd64.deb",
+        LinuxArch:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-linux-x86_64.rpm",
+        LinuxUniversal:
+          "https://github.com/koii-network/desktop-node/releases/download/v0.2.14/koii-desktop-node-0.2.14-linux-x86_64.AppImage",
+      };
     }
   } catch (error) {
     console.error(error);
