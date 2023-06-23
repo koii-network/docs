@@ -226,7 +226,14 @@ const config = {
           },
           {
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
-            from: "/quickstart/building-with-koii",
+            from: [
+              "/quickstart/building-with-koii",
+              "/settlement-layer",
+              "/settlementlayer",
+              "/settlement",
+              "/k2",
+              "/blockchain",
+            ],
           },
           {
             to: "/quickstart/category/koii-command-line-tool",
