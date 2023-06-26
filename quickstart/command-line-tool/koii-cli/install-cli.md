@@ -57,11 +57,14 @@ koii-test-validator
 - Run the command below to install the Koii command-line tools:
 
 ```
-curl https://github.com/koii-network/k2-release/releases/download/v0.0.1/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs
+curl https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs
 ```
 
 - Copy and paste the following command, then click "Enter" to install the latest version of the Koii CLI. If you see a security pop-up in your system, please select to allow the program to run.
 
+After the program has been downloaded, locate the program on your device and grant it full permission.
+
+Next, run the command below as an administrator:
 ```
 C:\koii-install-tmp\koii-install-init.exe v0.0.1
 ```
