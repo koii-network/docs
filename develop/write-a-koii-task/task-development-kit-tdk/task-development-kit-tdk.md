@@ -23,6 +23,6 @@ When the [**executable**](/develop/koii-task-101/what-are-tasks/key-components/i
 
 ## Local Testing Environment
 
-It can be quite complicated to design game theory and incentive models, so we've built a simulation environment to help speed things up. The local testing kit features easy to use docker containers to help run lots of nodes, so that you can see what happens when they misbehave.
+It can be quite complicated to design game theory and incentive models, so we provide a testing suite. This function utilizes `Jest` to perform one round of task testing your complete code. For more details, please check:
 
-<ContentLink title="Developing Locally with Docker" link="/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/" iconType="copy"/>
+<ContentLink title="Testing Locally Using Jest" link="/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/" iconType="copy"/>
