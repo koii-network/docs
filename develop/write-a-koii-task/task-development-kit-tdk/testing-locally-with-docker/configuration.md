@@ -1,64 +1,45 @@
 ---
-title: Configuration
-description: Depending on the types of tasks you are developing, you may require custom configuration of the docker container.
+title: Testing Configuration
+description: Depending on the types of tasks you are developing, you may require custom configuration of your jest testing file.
 image: img/thumbnail.png
-sidebar_label: Configuration
+sidebar_label: Testing Configuration
 ---
 
-# Configuration
+# Testing Configuration
 
-Depending on the types of tasks you are developing, you may require custom configuration of the docker container. There will be an environment variable file which will allow you to pass any required custom variables to the docker task node.
+Depending on the types of tasks you are developing, you may require custom configuration of your jest testing file. There will be an `main.test.js` file which will allow you to custom variables to the jest testing file.
 
-**Environment Variables Explanation:**
+## Long run task
 
-All environment variables are are located in `.env-local`:
+If you have a long run task such as web scraping or machine learning, you may need to increase the timeout of the jest testing. You can update it to the following code to the `main.test.js` file, line 11 to 14:
 
-```bash
-######################################################
-################## DO NOT EDIT BELOW #################
-######################################################
-# Location of main wallet
-WALLET_LOCATION="/app/config/id.json"
-# Node Mode
-NODE_MODE="service"
-# The nodes address
-SERVICE_URL="http://localhost:8080"
-# For CI/CD purpose to automate the staking wallet creation
-INITIAL_STAKING_WALLET_BALANCE=1
-# Intial balance for the distribution wallet which will be used to hold the distribution list.
-INITIAL_DISTRIBUTION_WALLET_BALANCE=1
-# Global timers which track the round time, submission window and audit window and call those functions
-GLOBAL_TIMERS="true"
-# environment
-ENVIRONMENT="development"
-# HAVE_STATIC_IP is flag to indicate you can run tasks that host APIs
-# HAVE_STATIC_IP=true
-# To be used when developing your tasks locally and don't want them to be whitelisted by koii team yet
-RUN_NON_WHITELISTED_TASKS=true
-# Connection info for redis
-REDIS_IP="redis"
-REDIS_PORT=6379
-REDIS_PASSWORD=""
-# The address of the main trusted node
-# TRUSTED_SERVICE_URL="https://k2-tasknet.koii.live"
-# Location of K2 node
-K2_NODE_URL="https://k2-testnet.koii.live"
-######################################################
-################ DO NOT EDIT ABOVE ###################
-######################################################
-
-# Tasks to run and their stakes. This is the varaible you can add your Task ID to after
-# registering with the crete-task-cli. This variable supports a comma separated list:
-# TASKS="id1,id2,id3"
-# TASK_STAKES="1,1,1"
-TASKS=""
-TASK_STAKES=1
-
-# User can enter as many environment variables as they like below. These can be task
-# specific variables that are needed for the task to perform it's job. Some examples:
-# Secrets must follow this convention for task to be able to use it (SECRET_<secret name>)
-SECRET_WEB3_STORAGE_KEY=""
-TWITTER_CONSUMER_KEY=""
-TWITTER_CONSUMER_SECRET=""
-TWITTER_BEARER_TOKEN=""
+```javascript
+it("should performs the core logic task", async () => {
+  const result = await coreLogic.task();
+  expect(result).not.toContain("ERROR IN EXECUTING TASK");
+}, 2000000); // 2000000 is the timeout in milliseconds
 ```
+
+The test will wait for at most 2000000 milliseconds (2000 seconds) before it fails.
+
+## Submission rules
+
+If you have a submission rule that requires a specific format or round of the submission, you can update the `main.test.js` file, line 21 to 45:
+
+```javascript
+const round = 1; // the round of the submission
+...
+Joi.object({
+            submission_value: Joi.string().required(), // the submission value format rules
+            slot: Joi.number().integer().required(),
+            round: Joi.number().integer().required(),
+          }),
+```
+
+:::tip
+Please note after you deploy the task, the `round` variable is the round of the submission, not the round of the task. The round of the task is the round of the submission plus one.
+:::
+
+:::danger
+Please node after you deploy the task, make sure `submission_value` is the cid which is the string format of the ipfs hash.
+:::
