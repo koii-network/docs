@@ -66,7 +66,7 @@ After the program has been downloaded, locate the program on your device and gra
 
 Next, run the command below as an administrator:
 ```
-C:\koii-install-tmp\koii-install-init.exe v0.0.1
+C:\koii-install-tmp\koii-install-init.exe v1.15.0
 ```
 
 - When the installer is finished, click "Enter".
@@ -75,5 +75,5 @@ C:\koii-install-tmp\koii-install-init.exe v0.0.1
 - Run `koii --version` to confirm that the CLI was successfully installed.
 
 ```
-koii-cli 1.10.0
+koii-cli 1.15.0
 ```
