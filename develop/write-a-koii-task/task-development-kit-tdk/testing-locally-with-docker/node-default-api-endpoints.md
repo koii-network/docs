@@ -15,6 +15,16 @@ Every node will have the following endpoints available by default at the defined
  app.post('/register-node/:taskId', registerNode);
  app.get('/get-all-running-tasks', getAllRunningTasks);
 ```
+To only test your endpoint locally, you can use the following command:
+
+```bash
+npm run start
+```
+or
+
+```bash
+yarn start
+```
 
 :::note
 `registerNode` is used by node discovery to automatically register your node to other nodes and vice versa.
