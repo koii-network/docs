@@ -13,67 +13,100 @@ import Description from "@site/src/components/description";
 
 # MacOS & Linux
 
-- Run the command below in your terminal to install the Koii command-line tools:
+1. Open your terminal and execute the following command:
 
-```
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
-```
+  ```
+  sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
+  ```
 
-- Depending on your system, you may get this prompt:
+   This command will download and install the necessary Koii tools.
 
-```
-Please update your PATH environment variable to include the Koii programs:
-```
+2. Depending on your operating system, you may receive the following prompt:
 
-- If you get the above message, copy and run the command beneath this prompt to update your `PATH` environment.
+  ```
+  Please update your PATH environment variable to include the koii programs:
+  ```
 
-- To confirm your `PATH` environment has been updated run `echo $PATH`
+   If you encounter this message, proceed to the next step. Otherwise, move on to step 4.
 
-- Run the command below to confirm that the CLI was successfully installed:
+3. Copy and run the command provided below the prompt. This command will update your `PATH` environment variable to include the Koii programs.
 
-```
-koii --version
-```
+4. To confirm that your `PATH` environment variable has been successfully updated, run the following command:
 
-:::info
+   ```
+   echo $PATH
+   ```
 
-For Mac users, you might find if you open another terminal the Koii CLI would not work. Follow these steps to update PATH.
 
-- After installing Koii CLI, copy the PATH first
-- run command `vi ~/.zshrc`
-- Insert "export <_paste your path here>_"
-- Save and close exit it, and you are good to go!
+5. To confirm that the Koii CLI was successfully installed, run the following command:
 
-:::
+  ```
+  koii --version
+  ```
 
-To run the test validator, use the command:
+   - You should see the version information similar to this:
+     ```
+     koii-cli 1.15.0
+     ```
 
-```
-koii-test-validator
-```
+### **Additional Steps for Mac Users**
+
+Mac users may encounter issues with the Koii CLI not working in a new terminal session. To resolve this, follow these steps:
+
+1. After installing the Koii CLI, copy the `PATH` value.
+
+2. In your terminal, run the command `vi ~/.zshrc`.
+
+3. This will open the `~/.zshrc` file in the vi text editor. Insert the following line, replacing `<_paste your path here>_` with the copied `PATH` value:
+
+   ```
+   export <_paste your path here>_
+   ```
+
+   This line will add the Koii CLI path to your shell configuration.
+
+4. Save and exit the editor. You can do this by pressing the Esc key, typing `:wq`, and then pressing Enter.
+
+5. Now, the Koii CLI should work correctly in any new terminal session.
+
+Feel free to [reach out](https://discord.gg/koii) if you have any further questions or need assistance.
 
 # Windows
 
-- Run the command below to install the Koii command-line tools:
+1. Open a Command Prompt (cmd.exe) as an Administrator:
+   - In the Windows search bar, type "Command Prompt."
+   - When the Command Prompt app appears, right-click on it and select "Open as Administrator."
+   - If a pop-up window asks, "Do you want to allow this app to make changes to your device?," click "Yes."
 
-```
-curl https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs
-```
+2. Download the Koii installer into a temporary directory:
+   - Copy and paste the following command into the Command Prompt, then press Enter:
+     ```
+     cmd /c "curl https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
+     ```
 
-- Copy and paste the following command, then click "Enter" to install the latest version of the Koii CLI. If you see a security pop-up in your system, please select to allow the program to run.
+     :::note
+        - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe).
+        - Your browser may display a warning about the file being potentially harmful. Please accept to keep the file.
+        - After downloading, copy and paste the downloaded file to the location `C:\koii-install-tmp\` and rename it to "koii-install-init.exe."
+     :::
+    
 
-After the program has been downloaded, locate the program on your device and grant it full permission.
+3. Install the latest version of the Koii CLI:
+   - Copy and paste the following command into the Command Prompt, then press Enter.
+   ```
+   C:\koii-install-tmp\koii-install-init.exe v1.15.0
+   ```
+   - If your system displays a security pop-up, select "Allow" to run the program.
 
-Next, run the command below as an administrator:
-```
-C:\koii-install-tmp\koii-install-init.exe v1.15.0
-```
+4. Wait for the installer to complete, and then press Enter.
 
-- When the installer is finished, click "Enter".
+5. Close the Command Prompt window and open a new one as a normal user.
 
-- Close the command prompt window and open a new one as a normal user.
-- Run `koii --version` to confirm that the CLI was successfully installed.
-
-```
-koii-cli 1.15.0
-```
+6. To confirm that the Koii CLI was successfully installed, run the following command:
+   ```
+   koii --version
+   ```
+   - You should see the version information similar to this:
+     ```
+     koii-cli 1.15.0
+     ```
