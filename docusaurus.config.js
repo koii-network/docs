@@ -406,6 +406,10 @@ const config = {
             to: "/develop/koii-task-101/what-are-tasks/",
             from: ["/tasks", "/task"],
           },
+          {
+            to: "/concepts/koii-wallet-finnie/using-finnie",
+            from: "/concepts/koii-wallet-finnie/connecting-finnie",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
