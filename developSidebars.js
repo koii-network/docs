@@ -199,6 +199,44 @@ const sidebars = {
         "task-tutorials/linktree-task/auth-list",
       ],
     },
+    {
+      type: "html",
+      value: "Finnie For Devs",
+      className: "sidebar-title top-margin",
+    },
+    "finnie-for-devs/welcome-to-finnie",
+    {
+      type: "category",
+      label: "K2 integration hooks",
+      link: {
+        type: "generated-index",
+        description: "Here are the articles in this section",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/K2-integration-hooks/properties",
+        "finnie-for-devs/K2-integration-hooks/methods",
+        "finnie-for-devs/K2-integration-hooks/events",
+      ],
+    },
+    {
+      type: "category",
+      label: "Ethereum Network",
+      link: {
+        type: "generated-index",
+        description:
+          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/ethereum-network/send-eth",
+        "finnie-for-devs/ethereum-network/send-eth-eip-1559",
+        "finnie-for-devs/ethereum-network/contract-deployment",
+        "finnie-for-devs/ethereum-network/mint-nft",
+      ],
+    },
+    "finnie-for-devs/other-evm-chains",
+
 
     {
       type: "html",

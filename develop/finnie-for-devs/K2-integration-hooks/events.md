@@ -7,10 +7,10 @@ sidebar_label: Events
 
 ## accountChanged
 
-Finnie will emit accountChanged when the user switches to an another Solana account. This is how you can listen to the events on your app
+Finnie will emit accountChanged when the user switches to an another account. This is how you can listen to the events on your app
 
 ```javascript
-window.solana.on('accountChanged', (publicKey: PublicKey) => {
+window.k2.on('accountChanged', (publicKey: PublicKey) => {
     if (publicKey) {
         // switched account is already connected
         const address = publicKey.toString()
