@@ -36,7 +36,7 @@ console.log(window.k2.isConnected) // false
 
 ## signAndSendTransaction
 
-Finnie can sign and send a transaction using the `signAndSendTransaction` method. The class `Transaction`, imported from the `@solana/web3.js` package, initiates a transaction. You can find more information about creating and sending transactions <a href="https://docs.solana.com/developing/clients/javascript-api#creating-and-sending-transactions" target="_blank">here</a>. This transaction is added as an argument to the `signAndSendTransaction` method. It will resolve the returned promise with the signature if the transaction is signed and sent successfully, allowing you to inspect the transaction with an explorer such as Solscan. If not, it will reject the returned promise.
+Finnie can sign and send a transaction using the `signAndSendTransaction` method. The class `Transaction`, imported from the `@_koi/web3.js` package, initiates a transaction. You can find more information about creating and sending transactions <a href="https://docs.solana.com/developing/clients/javascript-api#creating-and-sending-transactions" target="_blank">here</a>. This transaction is added as an argument to the `signAndSendTransaction` method. It will resolve the returned promise with the signature if the transaction is signed and sent successfully, allowing you to inspect the transaction with <a href="https://explorer.koii.live/" target="_blank">K2 explorer</a>. If not, it will reject the returned promise.
 
 ```javascript
 type Signature = String
