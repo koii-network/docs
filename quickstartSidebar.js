@@ -24,46 +24,6 @@ const sidebars = {
     "hello-world/task-tutorial",
     "hello-world/task-description",
     "hello-world/deploy",
-    {
-      type: "html",
-      value: "Finnie For Devs",
-      className: "sidebar-title top-margin",
-    },
-    "finnie-for-devs/welcome-to-finnie",
-    "finnie-for-devs/connecting-finnie",
-    {
-      type: "category",
-      label: "Koii Network",
-      link: {
-        type: "generated-index",
-        description: "Here are the articles in this section",
-      },
-      collapsed: true,
-      items: [
-        "finnie-for-devs/koii-network/transfer-koii",
-        "finnie-for-devs/koii-network/signpayload-koii",
-        "finnie-for-devs/koii-network/Events",
-        "finnie-for-devs/koii-network/transfer-ar",
-        "finnie-for-devs/koii-network/transfernft",
-      ],
-    },
-    {
-      type: "category",
-      label: "Ethereum Network",
-      link: {
-        type: "generated-index",
-        description:
-          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
-      },
-      collapsed: true,
-      items: [
-        "finnie-for-devs/ethereum-network/send-eth",
-        "finnie-for-devs/ethereum-network/send-eth-eip-1559",
-        "finnie-for-devs/ethereum-network/contract-deployment",
-        "finnie-for-devs/ethereum-network/mint-nft",
-      ],
-    },
-    "finnie-for-devs/other-evm-chains",
 
     {
       type: "html",
