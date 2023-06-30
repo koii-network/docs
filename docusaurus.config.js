@@ -217,7 +217,7 @@ const config = {
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
+            to: "/develop/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
@@ -245,12 +245,12 @@ const config = {
             from: "/develop/koii-software-toolkit-sdk/task-node-cli",
           },
           {
-            to: "/quickstart/category/koii-network",
-            from: "/develop/category/koii-network",
+            to: "/develop/category/k2-integration-hooks",
+            from: "/quickstart/category/koii-network",
           },
           {
-            to: "/quickstart/category/ethereum-network",
-            from: "/develop/category/ethereum-network",
+            to: "/develop/category/ethereum-network",
+            from: "/quickstart/category/ethereum-network",
           },
           {
             to: "/concepts/ways-to-get-koii/grants-program",
@@ -449,7 +449,7 @@ const config = {
               ),
             ];
           }
-          if (existingPath.includes("/quickstart/finnie-for-devs")) {
+          if (existingPath.includes("/develop/finnie-for-devs")) {
             return [
               existingPath.replace(
                 "/quickstart/finnie-for-devs",
