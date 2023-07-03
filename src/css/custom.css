@@ -49,6 +49,11 @@
   --ifm-text-color: #ffffff;
 }
 
+img.hoverAnimation:hover {
+  padding: 0.1em;
+  box-shadow: #3f3fd70a 1.5px 1px 1.5px 1px;
+}
+
 button {
   font-family: "Sora";
 }

@@ -7,7 +7,7 @@ export const Cta2 = () => {
       <div className="w-full flex flex-col md:flex-row gap-6">
         <a
           className={"w-full lg:max-w-[50%] cursor-pointer" + " " + styles.card}
-          href="/quickstart/hello-world/intro"
+          href="/develop/koii-task-101/what-are-tasks/"
         >
           <img
             src={"/img/Dev guide (1).svg"}
