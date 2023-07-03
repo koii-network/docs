@@ -10,16 +10,15 @@ const HomeCard = ({ title, link, image }: CardItem) => {
   );
 };
 
-const HomeCards = ({ title, description, items }: Cards) => {
+const HomeCards = ({ title, items }: Cards) => {
   return (
     <div className="lg:mb-10">
-      <p className="font-semibold text-[40px] text-koii-purple-2 m-0 mb-4">
+      <p className="font-semibold text-3xl md:text-[32px] text-[#171753] m-0 mb-4">
         {title}
       </p>
-      <p className="text-base mb-6">{description}</p>
 
-      <div className={"grid grid-cols-2 lg:grid-cols-4 gap-6"}>
-        {items.map((item, indx) => (
+      <div className={"grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10 mt-8"}>
+        {items?.map((item, indx) => (
           <HomeCard
             title={item.title}
             link={item.link}
