@@ -26,7 +26,7 @@ task_description: 'This is a simple task that returns "Hello, World!"'
 task_executable_network: 'DEVELOPMENT'
 
 # Provide your web3.storage key as it is needed for uploading your metadata
-secret_web3_storage_key: 'eyJhbGciOiJIU1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTUiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODMyOTU4MTQ0MjcsIm5hbWUiOiJrb2lpLXRvZG8ifQ.Pp2ziiA4h5QcSVLLwA7am4vAQdUor6ad3qe2M3_0N8k'
+secret_web3_storage_key: ''
 
 # Path to your executable webpack if the selected network is IPFS otherwise leave blank
 task_audit_program: ''
