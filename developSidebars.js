@@ -18,25 +18,6 @@ const sidebars = {
     "build-on-koii",
     {
       type: "html",
-      value: "K2 Settlement Layer",
-      className: "sidebar-title",
-    },
-    "settlement-layer/k2-tick-tock-fast-blocks",
-    {
-      type: "category",
-      label: "Native Contracts",
-      link: {
-        type: "doc",
-        id: "settlement-layer/native-contracts/native-contracts",
-      },
-      collapsed: true,
-      items: [
-        "settlement-layer/native-contracts/the-attention-game",
-        "settlement-layer/native-contracts/the-task-contract",
-      ],
-    },
-    {
-      type: "html",
       value: "Koii Tasks 101",
       className: "sidebar-title top-margin",
     },
@@ -114,15 +95,16 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Developing Locally with Docker",
+          label: "Testing Locally Using Jest",
           link: {
             type: "doc",
-            id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-with-docker",
+            id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
           },
           collapsed: true,
           items: [
             "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
             "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
+            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
           ],
         },
       ],
@@ -216,6 +198,64 @@ const sidebars = {
         "task-tutorials/linktree-task/data-sharing",
         "task-tutorials/linktree-task/rest-api",
         "task-tutorials/linktree-task/auth-list",
+      ],
+    },
+    {
+      type: "html",
+      value: "Finnie For Devs",
+      className: "sidebar-title top-margin",
+    },
+    "finnie-for-devs/welcome-to-finnie",
+    {
+      type: "category",
+      label: "K2 integration hooks",
+      link: {
+        type: "generated-index",
+        description: "Here are the articles in this section",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/K2-integration-hooks/properties",
+        "finnie-for-devs/K2-integration-hooks/methods",
+        "finnie-for-devs/K2-integration-hooks/events",
+      ],
+    },
+    {
+      type: "category",
+      label: "Ethereum Network",
+      link: {
+        type: "generated-index",
+        description:
+          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/ethereum-network/send-eth",
+        "finnie-for-devs/ethereum-network/send-eth-eip-1559",
+        "finnie-for-devs/ethereum-network/contract-deployment",
+        "finnie-for-devs/ethereum-network/mint-nft",
+      ],
+    },
+    "finnie-for-devs/other-evm-chains",
+
+
+    {
+      type: "html",
+      value: "K2 Settlement Layer",
+      className: "sidebar-title",
+    },
+    "settlement-layer/k2-tick-tock-fast-blocks",
+    {
+      type: "category",
+      label: "Native Contracts",
+      link: {
+        type: "doc",
+        id: "settlement-layer/native-contracts/native-contracts",
+      },
+      collapsed: true,
+      items: [
+        "settlement-layer/native-contracts/the-attention-game",
+        "settlement-layer/native-contracts/the-task-contract",
       ],
     },
 
