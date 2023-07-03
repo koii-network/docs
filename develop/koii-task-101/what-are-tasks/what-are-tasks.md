@@ -1,6 +1,6 @@
 ---
 title: What are Tasks?
-description: Trustless systems are essential for a stable internet. We're working to make them bigger and better.
+description: Smart contracts were the first step, but now it's time for p2p computing.
 image: img/thumbnail.png
 sidebar_label: What are Tasks?
 ---
@@ -12,11 +12,18 @@ import Description from "@site/src/components/description";
 ![banner](../img/_What%20are%20tasks_%20(1).svg)
 
 <Description
-  text="Trustless systems are essential for a stable internet. We're working to make
-  them bigger and better."
+  text="Building truly decentralized systems requires a complicated mix of incentive engineering and cryptographic- Gradual Consensus in Koii Tasks standardize this structure to provide a single community cloud toolkit for all purposes."
 />
 
-Koii tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows task nodes to perform a range of easily customizable services and provides the foundation for a highly transparent and trustless internet without the scaling limitations of traditional blockchains.
+Whether you're building a database, newsfeed, federated learning network, or a storage and caching service, you'll need the same three components.
+
+      The Decentralized Cookbook:
+
+      1. Incentives
+      2. Fraud Prevention
+      3. Synchronization
+
+Koii tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows task nodes to perform a range of easily customizable services, providing a flexible and efficient foundation for a wide range of applications. 
 
 ![banner](../img/What%20are%20tasks%20(1).png)
 
@@ -26,6 +33,7 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
+- [Hello World Example](/quickstart/hello-world/intro)
 - [Why use decentralized nodes when servers seem to work?](/develop/koii-task-101/what-are-tasks/nodes-vs-servers)<br/>
 - [How do tasks run across many nodes?](/develop/koii-task-101/what-are-tasks/gradual-consensus)<br/>
 - [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
