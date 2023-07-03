@@ -21,6 +21,7 @@ const sidebars = {
       className: "sidebar-title",
     },
     "hello-world/intro",
+    "hello-world/dive-into-the-code",
     "hello-world/task-tutorial",
     "hello-world/task-description",
     "hello-world/deploy",

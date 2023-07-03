@@ -539,6 +539,13 @@ const config = {
         },
         items: [
           {
+            label: "🚀 Quickstart",
+            to: "/quickstart/hello-world/intro",
+            activeBasePath: "quickstart",
+            position: "left",
+            className: "header-text",
+          },
+          {
             label: "📖 Learn",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
@@ -549,13 +556,6 @@ const config = {
             label: "🏗️ Build on Koii",
             to: "/develop/koii-task-101/what-are-tasks/",
             activeBasePath: "develop",
-            position: "left",
-            className: "header-text",
-          },
-          {
-            label: "💻 Quickstart",
-            to: "/quickstart/hello-world/intro",
-            activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },
