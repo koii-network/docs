@@ -217,7 +217,7 @@ const config = {
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/quickstart/finnie-for-devs/welcome-to-finnie",
+            to: "/develop/finnie-for-devs/welcome-to-finnie",
             from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
@@ -226,7 +226,14 @@ const config = {
           },
           {
             to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
-            from: "/quickstart/building-with-koii",
+            from: [
+              "/quickstart/building-with-koii",
+              "/settlement-layer",
+              "/settlementlayer",
+              "/settlement",
+              "/k2",
+              "/blockchain",
+            ],
           },
           {
             to: "/quickstart/category/koii-command-line-tool",
@@ -238,12 +245,12 @@ const config = {
             from: "/develop/koii-software-toolkit-sdk/task-node-cli",
           },
           {
-            to: "/quickstart/category/koii-network",
-            from: "/develop/category/koii-network",
+            to: "/develop/category/k2-integration-hooks",
+            from: "/quickstart/category/koii-network",
           },
           {
-            to: "/quickstart/category/ethereum-network",
-            from: "/develop/category/ethereum-network",
+            to: "/develop/category/ethereum-network",
+            from: "/quickstart/category/ethereum-network",
           },
           {
             to: "/concepts/ways-to-get-koii/grants-program",
@@ -399,6 +406,10 @@ const config = {
             to: "/develop/koii-task-101/what-are-tasks/",
             from: ["/tasks", "/task"],
           },
+          {
+            to: "/concepts/koii-wallet-finnie/using-finnie",
+            from: "/concepts/koii-wallet-finnie/connecting-finnie",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -438,7 +449,7 @@ const config = {
               ),
             ];
           }
-          if (existingPath.includes("/quickstart/finnie-for-devs")) {
+          if (existingPath.includes("/develop/finnie-for-devs")) {
             return [
               existingPath.replace(
                 "/quickstart/finnie-for-devs",
@@ -528,6 +539,13 @@ const config = {
         },
         items: [
           {
+            label: "🚀 Quickstart",
+            to: "/quickstart/hello-world/intro",
+            activeBasePath: "quickstart",
+            position: "left",
+            className: "header-text",
+          },
+          {
             label: "📖 Learn",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
@@ -538,13 +556,6 @@ const config = {
             label: "🏗️ Build on Koii",
             to: "/develop/build-on-koii",
             activeBasePath: "develop",
-            position: "left",
-            className: "header-text",
-          },
-          {
-            label: "💻 Quickstart",
-            to: "/quickstart/hello-world/intro",
-            activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },

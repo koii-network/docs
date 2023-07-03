@@ -93,7 +93,7 @@ export const exploreTopics = [
       },
       {
         title: "Finnie for Devs",
-        link: "/quickstart/finnie-for-devs/welcome-to-finnie",
+        link: "/develop/finnie-for-devs/welcome-to-finnie",
         icon: "/img/explore-topics-icons/finnie-dev.svg",
       },
     ],

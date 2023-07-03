@@ -67,7 +67,7 @@ const sidebars = {
       className: "sidebar-title top-margin",
     },
     "koii-wallet-finnie/welcome-to-finnie",
-    "koii-wallet-finnie/connecting-finnie",
+    "koii-wallet-finnie/using-finnie",
     {
       type: "html",
       value: "Community",
