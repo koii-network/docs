@@ -12,12 +12,13 @@ The `connect` method is the only way to obtain the necessary permissions require
 ```javascript
 window.k2.connect(): Promise<PublicKey>
 ```
+
 ```javascript
 try {
-    const connectedPublickey = await window.k2.connect()
+  const connectedPublickey = await window.k2.connect();
 } catch (error) {
-    // request rejected
-    console.error(error) // { code: 4001, message: 'User rejected the request.' }
+  // request rejected
+  console.error(error); // { code: 4001, message: 'User rejected the request.' }
 }
 ```
 
@@ -28,29 +29,37 @@ The `disconnect` method removes all default address permissions for the current 
 ```javascript
 window.k2.disconnect(): Promise<void>
 ```
+
 ```javascript
-await window.k2.disconnect()
-console.log(window.k2.publicKey) // null
-console.log(window.k2.isConnected) // false
+await window.k2.disconnect();
+console.log(window.k2.publicKey); // null
+console.log(window.k2.isConnected); // false
 ```
 
 ## signAndSendTransaction
 
-Finnie can sign and send a transaction using the `signAndSendTransaction` method. The class `Transaction`, imported from the `@_koi/web3.js` package, initiates a transaction. You can find more information about creating and sending transactions <a href="https://docs.solana.com/developing/clients/javascript-api#creating-and-sending-transactions" target="_blank">here</a>. This transaction is added as an argument to the `signAndSendTransaction` method. It will resolve the returned promise with the signature if the transaction is signed and sent successfully, allowing you to inspect the transaction with <a href="https://explorer.koii.live/" target="_blank">K2 explorer</a>. If not, it will reject the returned promise.
+To sign and send a transaction with Finnie, you can use the `signAndSendTransaction()` method. First, create a transaction using the `Transaction` object imported from the `@_koi/web3.js` package.
+
+Once you have a transaction ready, you can sign it using a keypair and send it to the network by calling the `signAndSendTransaction()` method. If the transaction is successfully signed and sent, the method will resolve the returned promise with the signature. This allows you to inspect the transaction using <a href="https://explorer.koii.live/" target="_blank">K2 explorer</a>.  However, if there are any issues during the signing or sending process, the promise will be rejected.
 
 ```javascript
+import { Transaction, Keypair } from '@_koi/web3.js'
+
 type Signature = String
 
-window.k2.signAndSendTransaction(transaction: Transaction): Promise<Signature>
+window.k2.signAndSendTransaction(transaction: Transaction, signers: Keypair[]): Promise<Signature>
 ```
-```javascript
-const transaction = new Transaction()
 
+```javascript
+const transaction = new Transaction();
+const signer = await window.k2.publicKey;
 try {
-    const signature = await window.k2.signAndSendTransaction(transaction)
+  const signature = await window.k2.signAndSendTransaction(transaction, [
+    signer,
+  ]);
 } catch (error) {
-    // request rejected or no permisisons
-    console.error(error) // { code: 4001, message: 'User rejected the request' }
+  // request rejected or no permisisons
+  console.error(error); // { code: 4001, message: 'User rejected the request' }
 }
 ```
 
@@ -66,12 +75,13 @@ interface SignMessageResult {
 
 window.k2.signMessage(message: String): Promise<SignMessageResult>
 ```
+
 ```javascript
-const message = 'example message'
+const message = "example message";
 
 try {
-    const result = await window.k2.signMessage(message)
+  const result = await window.k2.signMessage(message);
 } catch (error) {
-    // rejected request or no permissions
+  // rejected request or no permissions
 }
 ```
