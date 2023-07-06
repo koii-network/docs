@@ -52,7 +52,7 @@ window.k2.signAndSendTransaction(transaction: Transaction, signers: Keypair[]): 
 
 ```javascript
 const transaction = new Transaction();
-const signer = await window.k2.publicKey;
+const signer = Keypair.generate();
 try {
   const signature = await window.k2.signAndSendTransaction(transaction, [
     signer,
