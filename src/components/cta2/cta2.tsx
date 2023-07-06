@@ -10,7 +10,7 @@ export const Cta2 = () => {
       <div className="w-full flex flex-col md:flex-row gap-6">
         <a
           className={
-            "w-full lg:max-w-[50%] bg-[transparent] no-underline cursor-pointer h-full" +
+            "w-full lg:max-w-[50%] bg-[transparent] no-underline hover:no-underline cursor-pointer h-full" +
             " " +
             styles.card
           }
@@ -27,11 +27,16 @@ export const Cta2 = () => {
               className={"w-full rounded-t-[10px]"}
               role="img"
             />
-            <img
-              src={"img/Group 6.svg"}
-              className={styles.img2}
-              role="img"
-            />
+            <img src={"img/Group 6.svg"} className={styles.img2} role="img" />
+            <h2
+              className={
+                "no-underline hover:no-underline text-[#171753] lg:text-3xl text-lg" +
+                " " +
+                styles.ctaText1
+              }
+            >
+              Distributed Computing
+            </h2>
           </div>
           <button
             className={
@@ -53,7 +58,7 @@ export const Cta2 = () => {
         </a>
         <a
           className={
-            "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer h-full" +
+            "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer h-full mt-8 md:mt-8 md:mt-0" +
             " " +
             styles.card
           }
@@ -71,6 +76,15 @@ export const Cta2 = () => {
               role="img"
             />
             <img src={"img/Group 7.svg"} className={styles.img3} role="img" />
+            <h2
+              className={
+                "no-underline hover:no-underline text-[#171753]" +
+                " " +
+                styles.ctaText2
+              }
+            >
+              What are Koii Nodes?
+            </h2>
           </div>
           <button
             className={
