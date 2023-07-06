@@ -58,7 +58,7 @@ export const Cta2 = () => {
         </a>
         <a
           className={
-            "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer h-full mt-8 md:mt-8 md:mt-0" +
+            "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer h-full mt-8 md:mt-0" +
             " " +
             styles.card
           }
