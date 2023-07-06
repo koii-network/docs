@@ -6,8 +6,8 @@ sidebar_label: Dive into the Code
 ---
 If you skipped it before, clone the repo and dive in:
 ```bash
-$ git clone https://github.com/koii-network/task-template.git hello-world
-$ cd hello-world
+ git clone https://github.com/koii-network/task-template.git hello-world
+ cd hello-world
 ```
 
 Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed before going forward.
@@ -39,6 +39,7 @@ There are in total 9 methods in `CoreLogic` which you can modify according to yo
 Now that's out of the way, let's move forward to writing the task.
 
 :::info
+The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
 
 If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).
 
