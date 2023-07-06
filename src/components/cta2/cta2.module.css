@@ -1,9 +1,42 @@
 .card {
-  transition: transform 0.3s ease-in, margin-top 0.3s ease-in,
-    margin-bottom 0.3s ease-in;
+  padding: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 9px;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in,
+    border 0.3s ease-in, margin-top 0.3s ease-in, margin-bottom 0.3s ease-in;
+}
+
+.cardButton {
+  border: 1px solid #D6D6D6;
+  margin-top: -10px;
+  border-top: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.img {
+  position: relative;
 }
 
 .card:hover {
+  box-shadow: 4px 4px 15px 2px #4d3d8d13;
   margin-top: -10px;
   margin-bottom: 10px;
+}
+
+.img2 {
+  position: absolute;
+  width: 23%;
+  top: -30px;
+  left: 22px;
+}
+
+.img3 {
+  position: absolute;
+  width: 23%;
+  top: -30px;
+  right: 22px;
 }
