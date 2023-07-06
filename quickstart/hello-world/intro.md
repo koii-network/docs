@@ -39,8 +39,8 @@ We recommend starting with a template:
 
 Clone the repo and dive in:
 ```bash
-$ git clone https://github.com/koii-network/task-template.git hello-world
-$ cd hello-world
+ git clone https://github.com/koii-network/task-template.git hello-world
+ cd hello-world
 ```
 
 ## How do tasks stay secure?
