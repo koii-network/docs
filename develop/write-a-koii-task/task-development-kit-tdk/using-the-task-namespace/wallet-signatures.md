@@ -55,7 +55,7 @@ const transferTransaction = transaction.add(
 // Sign and send transaction to K2
 const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
   transferTransaction,
-  [] // mainSystemAccountPubkey will be injected here
+  [] // // mainSystemAccount will be injected here
 );
 ```
 
@@ -68,10 +68,10 @@ const uploadAccount = new Keypair();
 
   const createTransaction = new Transaction().add(
     SystemProgram.createAccount({
-      fromPubkey: mainSystemAccountPubkey, // The account that will transfer lamports to the created account
+      fromPubkey: mainSystemAccountPubkey, // Sender account
       newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
       lamports: 1000000, // Amount to be transfered
-      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Public key of the program to assign as the owner of the created account
+      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Publickey of the program to assign as the owner of the created account
       space: 5242880, // Amount of space in bytes to allocate to the created account
     })
   );
@@ -79,7 +79,7 @@ const uploadAccount = new Keypair();
   // Sign and send transaction to K2
   const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
     createTransaction,
-    [uploadAccount]
+    [uploadAccount] // mainSystemAccount will be injected as the first parameter here
   );
 ```
 
