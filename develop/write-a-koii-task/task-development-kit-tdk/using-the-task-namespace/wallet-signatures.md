@@ -25,35 +25,62 @@ There are two methods provided by the `namespaceWrapper` for signing transaction
 
 ### 1. sendAndConfirmTransactionWrapper()
 
+Transactions are groups of instructions that are accompanied by signatures. To interact with programs on the K2 network, it is necessary to create, **sign**, and send transactions to the network.
+
 This method signs and sends a transaction to K2. It accepts two parameters:
 
 - **`transaction`**: _Transaction_ — The transaction to be signed.
 - **`signers`**: _Keypair[]_ — Array of wallets involved in the transaction.
 
-Example:
+Example of signing a transfer transaction:
 
 ```js
 import { namespaceWrapper } from "./namespaceWrapper";
 import { Keypair, Transaction, SystemProgram, PublicKey } from "@_koi/web3.js";
 
+const fromKeypair = Keypair.generate();
+const toKeypair = Keypair.generate();
+const transaction = new Transaction();
+
+// Create a transaction
+// A transfer transaction sends KOII from one account to another
+const transferTransaction = transaction.add(
+  SystemProgram.transfer({
+    fromPubkey: fromKeypair.publicKey, // Sender account
+    toPubkey: toKeypair.publicKey, // Recipient account
+    lamports: 100000000, // Amount to send (0.1 KOII)
+  })
+);
+
+// Sign and send transaction to K2
+const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
+  transferTransaction,
+  [] // mainSystemAccountPubkey will be injected here
+);
+```
+
+Another form of transaction is the `createAccount` transaction, this transaction generates a transaction instruction that creates a new account.
+
+Example of signing a createAccount transaction:
+
+```js
 const uploadAccount = new Keypair();
 
-const signTransaction = async () => {
   const createTransaction = new Transaction().add(
     SystemProgram.createAccount({
-      fromPubkey: mainSystemAccountPubkey,,
-      newAccountPubkey: uploadAccount.publicKey,
-      lamports: 1000000,
-      space: 5242880,
-      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"),
+      fromPubkey: mainSystemAccountPubkey, // The account that will transfer lamports to the created account
+      newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
+      lamports: 1000000, // Amount to be transfered
+      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Public key of the program to assign as the owner of the created account
+      space: 5242880, // Amount of space in bytes to allocate to the created account
     })
   );
 
+  // Sign and send transaction to K2
   const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
     createTransaction,
     [uploadAccount]
   );
-};
 ```
 
 ### 2. payloadSigning()
@@ -65,5 +92,6 @@ Example:
 ```js
 const message = "Hello World!";
 
+// Sign payload
 const signature = await namespaceWrapper.payloadSigning(message);
 ```
