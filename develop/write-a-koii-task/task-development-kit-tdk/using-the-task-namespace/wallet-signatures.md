@@ -17,7 +17,7 @@ This documentation provides an overview of utilizing node operators' wallets to 
 
 **2. Staking Wallet**: Specifically designed for staking on Koii tasks. Node operators create a staking wallet and fund it with tokens from their main wallet. Tokens held in the staking wallet can be used for staking on Koii tasks.
 
-**3. Distribution Wallet**: Required when a node needs to submit a distribution list to K2. Nodes create and fund the distribution wallet using their main wallet to benefit from rent exemption.
+**3. Distribution Wallet**: Required when a node needs to submit a distribution list to K2. Nodes create and fund the distribution wallet using their main wallet.
 
 # How to Sign Transactions with the Main Wallet?
 
@@ -59,9 +59,9 @@ const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
 );
 ```
 
-Another form of transaction is the `createAccount` transaction, this transaction generates a transaction instruction that creates a new account.
+Another example of transaction is the `createAccount` transaction which generates a transaction instruction that creates a new account.
 
-Example of signing a createAccount transaction:
+Example of signing a `createAccount` transaction:
 
 ```js
 const uploadAccount = new Keypair();
@@ -94,4 +94,10 @@ const message = "Hello World!";
 
 // Sign payload
 const signature = await namespaceWrapper.payloadSigning(message);
+```
+
+The signature can be verified using the `verifySignature()` method:
+
+```js
+const hash = await namespaceWrapper.verifySignature(signature, publicKey);
 ```
