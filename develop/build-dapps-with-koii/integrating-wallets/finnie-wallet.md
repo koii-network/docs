@@ -173,7 +173,7 @@ In the above code block:
 
 In this tutorial, we demonstrated how to integrate the Finnie wallet in a React application, we built a website were users can connect and disconnect their Finnie wallet and also send 0.1 KOII to another account.
 
-You can find the source code to this project [here](https://github.com/koii-network/finnie-test-dapp).
+You can find the source code of the project [here](https://github.com/koii-network/finnie-test-dapp).
 
 :::info
 
