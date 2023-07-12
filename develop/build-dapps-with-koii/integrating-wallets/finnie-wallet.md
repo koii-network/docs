@@ -12,122 +12,171 @@ import Description from "@site/src/components/description";
 ![Banner](<./img/Finnie_Wallet_(1).png>)
 
 <Description
-  text="Integrate your dApp with Finnie wallet. Let's build a send koii dapp in reactjs"
+  text="Learn how to Integrate the Finnie Wallet in your dApp"
 />
 
-### useFinnie
+# Overview
 
-Let's build a custom **`useFinnie`** hook, as it's recommended to follow this approach, it's your choice to have your own implementation
+[Finnie](/develop/finnie-for-devs/welcome-to-finnie) is a browser extension that serves as a cryptocurrency wallet connecting to the K2 blockchain. It is a cross-chain wallet supporting K2, Ethereum, and Arweave networks. Users can also mine Koii's native token (KOII) by tracking attention on their content.
 
-```jsx
-const useFinnie = () => {
-  const [finnieLoaded, setFinnieLoaded] = useState(false)
+In our dApp, we will have a simple React user interface with a button asking the user to connect their Finnie wallet. If they don't have Finnie installed, they'd be prompted to install Finnie.
 
-  useEffect(() => {
-    window.addEventListener('finnieWalletLoaded', () => {
-      setFinnieLoaded(true)
+# Prerequisites
+- Basic knowledge of [React.js](https://react.dev/)
+- Download the [Finnie](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj) browser extension
+- [Node](https://nodejs.org/en/), NPM, or [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+
+# Getting Started
+We have prepared a starter branch for this project, copy and run the command below to clone the starter branch:
+
+```
+git clone --branch starter https://github.com/koii-network/finnie-test-dapp.git
+```
+
+## Custom Finnie Hook
+
+Finnie injects a global K2 API into websites users visit at `window.k2`, allowing the websites to read and request user's blockchain data.
+
+Navigate to `/src/hooks/useFinnie.js` and create a custom Finnie hook `useFinnie()` by following these steps:
+
+1. The `window?.k2.connect()` method will connect a website to Finnie, if Finnie is present as a browser extension.
+
+  Update the `connect` function with the code below:
+
+```jsx title="/src/hooks/useFinnie.js"
+// Connect to Finnie
+const connect = async () => {
+  if (window?.k2) {
+    if (window.k2.isConnected) {
+      const publicKey = window?.k2?.publicKey;
+      return publicKey.toString();
+    } else {
+      return await window?.k2
+        .connect()
+        .then((pubKey) => {
+          return pubKey.toString();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }
+  return Promise.reject(
+    "Finnie is detected but K2 features are missing - is your Finnie up to date? "
+  );
+};
+```
+
+2. The `window?.k2.disconnect()` method will disconnect a website from Finnie.
+
+  Update the `disconnect` function with the code below:
+
+```jsx title="/src/hooks/useFinnie.js"
+// Disconnect from Finnie
+const disconnect = async () => {
+  if (finnieLoaded) {
+    window.k2.disconnect();
+  }
+};
+```
+
+3. `window.k2.publicKey` will return the public key of a connected Finnie account and `window.k2.signAndSendTransaction()` will sign and send a transaction.
+
+  Update the `getPublicKey` and `signAndSendTransaction` functions:
+
+```jsx title="/src/hooks/useFinnie.js"
+// Fetch user's public address
+const getPublicKey = () => {
+  if (window.k2.isConnected) return window.k2.publicKey;
+  return null;
+};
+
+// Sign and send a transaction
+const signAndSendTransaction = (transaction) => {
+  return window.k2.signAndSendTransaction(transaction);
+};
+```
+
+## Connect Wallet Logic
+
+Write the logic for a user to connect their wallet and send **0.1 KOII** to an address:
+
+1. Open `/src/ConnectWallet.js` and update the `handleConnect()` and `handleDisconnect()` functions:
+
+```jsx title="/src/ConnectWallet.js"
+const handleConnect = async () => {
+  try {
+    const publicKey = await connect();
+    if (publicKey) setConnected(true);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+const handleDisconnect = async () => {
+  await disconnect();
+  setConnected(false);
+};
+```
+
+In the above code, the `handleConnect()` function calls `connect()` from the `useFinnie()` hook, if the user approves the connect request, it will resolve the returned Promise with the PublicKey of the connected wallet. Also, the `connected` state will be used to disable/enable `Disconnect` and `Send` button.
+
+`handleDisconnect()` will simply disconnect the current page from Finnie.
+
+2. Update the `handleSend()` function:
+
+```jsx title="/src/ConnectWallet.js"
+const handleSend = async () => {
+  const connection = new Connection(clusterApiUrl("devnet")); // Connect to devnet
+  const blockHash = (await connection.getRecentBlockhash()).blockHash; // Get block hash
+  const feePayer = getPublicKey(); // Get user's public key
+
+  const transaction = new Transaction(); // Initialize transaction
+  transaction.recentBlockhash = blockHash; // Set block hash
+  transaction.feePayer = feePayer; // Set user as fee payer
+
+  const recipient = "example_address"; // please replace this value with your recipient's address
+
+  transaction.add(
+    SystemProgram.transfer({
+      fromPubkey: getPublicKey(),
+      toPubkey: new PublicKey(recipient),
+      lamports: 100000000, // 0.1 KOII
     })
-  }, [])
+  );
 
-  const connect: Promise<PublicKey> = async () => {
-    if (finnieLoaded) {
-      return window.k2.connect()
-    }
-  }
-
-  const disconnect: Promise<void> = async () => {
-    if (finnieLoaded) {
-      window.k2.disconnect()
-    }
-  }
-
-  const getPublicKey: PublicKey = () => {
-    if (window.k2.isConnected) return window.k2.publicKey
-    return null
-  }
-
-  const signAndSendTransaction: Promise<String> = (transaction: Transaction) => {
-    return window.k2.signAndSendTransaction(transaction)
-  }
-
-  return { finnieLoaded, connect, disconnect, getPublickey, signAndSendTransaction }
-}
-
-```
-First we declare `finnieLoaded` state; as Finnie needs time to process code injection, it will not appear that apis included on app init which is required an eventListener callback to set `finnieLoaded` to true when Finnie loaded.
-What should we use `finnieLoaded` for? Let's say we have a connect button, we can use `finnieLoaded` value for it's `disabled` attribute
-
-```jsx
-<button disabled={finnieLoaded}>Connect</button>
+  const signature = await signAndSendTransaction(transaction); // Sign transaction and get signature
+};
 ```
 
-Now let's create a simple UI with a `Connect` button to connect to Finnie and a `Send` button to send 0.1 KOII to an address
+In the above code block:
 
-```jsx
-import { 
-  Transaction, 
-  Connection, 
-  clusterApiUrl, 
-  SystemProgram,
-  PublicKey
-} from '@_koi/web3.js' // you need to install @_koi/web3.js package
-import { useFinnie } from "./useFinnie";
+  - A new connection to the cluster was created using the `clusterApiUrl()` method from the  **'@_koi/web3.js'** library. The argument 'devnet' indicates that it is connecting to a development network.
 
-const SendKoiiApp = () => {
-  const [connected, setConnected] = useState(false)
+  - The recent block hash is retrieved from the network using `connection.getRecentBlockhash()`.
 
-  const { finnieLoaded, connect, disconnect, getPublicKey, signAndSendTransaction } = useFinnie()
+  - The `getPublicKey()` function is called to retrieve the public key of the fee payer. The `feePayer` variable is assigned this value.
 
-  const handleConnect = async () => {
-    try {
-      const publicKey = await connect()
-      if (publicKey) setConnected(true)
-    } catch (err) {
-      // user reject the request
-    }
-  }
+  - A new `Transaction` object is created to build the `transaction` that will be sent to the network.
 
-  const handleDisconnect = async () => {
-    await disconnect()
-    setConnected(false)
-  }
+  - The `recentBlockhash` property of the `transaction` is set to the block hash obtained in step 2.
 
-  const handleSend = async () => {
-    const connection = new Connection(clusterApiUrl('devnet')) // currently we have devnet as only up and running network
-    const blockHash = (await connection.getRecentBlockhash()).blockHash
-    const feePayer = getPublicKey()
+  - The `feePayer` property of the `transaction` is set to the public key of the fee payer obtained in step 3.
 
-    const transaction = new Transaction()
-    transaction.recentBlockhash = blockhash
-    transaction.feePayer = feePayer
+  - The `recipient` variable is assigned the value 'example_address', which represents the address of the recipient of the transaction.
 
-    const recipient = 'example_address' // please replace this value with your recipient's address
+  - The `transaction.add()` method is called to add an instruction to the `transaction`. In this case, it is a `SystemProgram.transfer()` instruction, which transfers a certain amount of KOII (lamports) from the `fromPubkey` (fee payer) to the `toPubkey` (recipient). The lamport value used here is 100,000,000, which represents **0.1 KOII**.
 
-    transaction.add(
-      SystemProgram.transfer({
-        fromPubkey: getPublicKey(),
-        toPubkey: new PublicKey(recipient),
-        lamports: 100000000 // 0.1 KOII
-      })
-    )
+  - Finally, the `signAndSendTransaction()` function is called to sign and send the transaction to the network. The returned value, signature, represents the unique identifier of the transaction on the network.
 
-    const signature = await signAndSendTransaction(transaction)
-  }
+# Conclusion
 
-  return (
-    <div>
-      <button disabled={finnieLoaded} onClick={handleConnect}>Connect</button>
-      <button disabled={!connected} onClick={handleDisconnect}>Disconnect</button>
-      <button disabled={!connected} onClick={handleSend}>Send</button>
-    </div>
-  )
-}
-```
+In this tutorial, we demonstrated how to integrate the Finnie wallet in a React application, we built a website were users can connect and disconnect their Finnie wallet and also send 0.1 KOII to another account.
 
-In this simple send koii application, we have a `Connect` button that will call `window.k2.connect()` method, if the user approves the connect request, it will resolve the returned Promise with the PublicKey of the connected wallet. We also declare the `connected` state which will be used to disable/enable `Disconnect` and `Send` button.
+You can find the source code to this project [here](https://github.com/koii-network/finnie-test-dapp).
 
-After connecting to Finnie has succeeded, we enable the `Send` and `Disconnect` button.
+:::info
 
-`Disconnect` will simply call `window.k2.disconnect()`, which will disconnect the current page from Finnie.
+If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).
 
-`Send` will create a transaction to send 0.1 Koii from your connected wallet to a recipient wallet address. Then, this transaction will be signed and sent using `window.k2.signAndSendTransaction()`.
+:::
