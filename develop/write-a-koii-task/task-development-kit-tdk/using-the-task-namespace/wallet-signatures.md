@@ -7,67 +7,97 @@ sidebar_label: Wallet Signatures
 
 # Wallet Signatures
 
-There are three different wallet options that are available to node operators of Koii who want to be able to sign transactions, store, stake, send and receive Koii tokens on K2. The three wallet options are:
+In certain scenarios, tasks may require access to a Koii node's wallet for writing records to a blockchain or directly to K2 as part of managing [Gradual Consensus](/develop/koii-task-101/what-are-tasks/gradual-consensus) flows. Examples include tasks like bridging, minting NFTs, and on-chain asset management.
 
-### 1. Main KOII Wallet
+To enable this functionality, node operators can choose to allow their wallets to be used by tasks, offering a greater reward. However, tasks of this nature must first undergo a [whitelisting process](/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task), ensuring proper code auditing before being promoted to the community.
 
-As suggested by the name, this is a node operator's main wallet; it is responsible for funding the other wallets with KOII tokens and its signature key is necessary to pay transaction fees in a Koii task.
+This documentation provides an overview of utilizing node operators' wallets to sign transactions. There are three wallet types available:
 
-### 2. Staking Wallet&#x20;
+**1. Main KOII Wallet**: The primary wallet for node operators responsible for funding other wallets with KOII tokens. Its signature key is necessary for paying transaction fees in Koii tasks.
 
-The primary purpose of this wallet is to stake on Koii tasks. Node operators who wish to run a particular task have to create a staking wallet and fund the staking wallet with their main wallet; tokens in the staking wallet can in turn be used to stake on a Koii task.
+**2. Staking Wallet**: Specifically designed for staking on Koii tasks. Node operators create a staking wallet and fund it with tokens from their main wallet. Tokens held in the staking wallet can be used for staking on Koii tasks.
 
-### 3. Distribution Wallet&#x20;
+**3. Distribution Wallet**: Required when a node needs to submit a distribution list to K2. Nodes create and fund the distribution wallet using their main wallet.
 
-The distribution wallet is required if a node needs to submit a distribution list to K2. The node creates and funds the distribution wallet from the main wallet so there can be a rent exemption.
+# How to Sign Transactions with the Main Wallet?
 
-## How Can the Main Wallet Sign Transactions ?
+There are two methods provided by the `namespaceWrapper` for signing transactions:
 
-Yes! as you probably already guessed, the namespace wrapper offers a method that injects the main system wallet as the first signer for making transaction fees payments. The `sendAndConfirmTransactionWrapper` method is in charge of this.
+### 1. sendAndConfirmTransactionWrapper()
 
-### Wallet Security
+Transactions are groups of instructions that are accompanied by signatures. To interact with programs on the K2 network, it is necessary to create, **sign**, and send transactions to the network.
 
-This might seem a bit odd - why would a Koii node allow a task to use it's wallet? <br />
-Well, in many cases, a task will need to write records to a blockchain, or to K2 directly (all tasks do this to manage [Gradual Consensus](/develop/koii-task-101/what-are-tasks/gradual-consensus) flows). Some examples might include bridging, minting NFTs, or other on-chain asset management.&#x20;
+This method signs and sends a transaction to K2. It accepts two parameters:
 
-In these cases, the task operator can opt into allowing their wallet to be used by a task directly, in exchange for a greater reward. Most tasks of this nature must follow the [whitelisting process](/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task), ensuring that the code is properly audited before a task is promoted to the community.
+- **`transaction`**: _Transaction_ — The transaction to be signed.
+- **`signers`**: _Keypair[]_ — Array of wallets involved in the transaction.
 
-### sendAndConfirmTransactionWrapper Method
+Example of signing a transfer transaction:
 
-The `sendAndConfirmTransactionWrapper` takes in two parameters:
+```js
+import { namespaceWrapper } from "./namespaceWrapper";
+import { Keypair, Transaction, SystemProgram, PublicKey } from "@_koi/web3.js";
 
-- `transaction` : Endpoint path to append to `namespace`
-- `singers`: Other wallets signatures
+const fromKeypair = Keypair.generate();
+const toKeypair = Keypair.generate();
+const transaction = new Transaction();
 
-```javascript
-  async sendAndConfirmTransactionWrapper(
-    transaction: any,
-    signers: any[],
-  ): Promise<string> {
-    signers = signers.map((e) =>
-      Keypair.fromSecretKey(
-        Uint8Array.from(Object.values(e._keypair.secretKey)),
-      ),
-    );
-    const response = await sendAndConfirmTransaction(
-      this.connection,
-      Transaction.from(transaction.data),
-      [this.#mainSystemAccount, ...signers],
-    );
-    return response;
-  }
+// Create a transaction
+// A transfer transaction sends KOII from one account to another
+const transferTransaction = transaction.add(
+  SystemProgram.transfer({
+    fromPubkey: fromKeypair.publicKey, // Sender account
+    toPubkey: toKeypair.publicKey, // Recipient account
+    lamports: 100000000, // Amount to send (0.1 KOII)
+  })
+);
+
+// Sign and send transaction to K2
+const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
+  transferTransaction,
+  [] // // mainSystemAccount will be injected here
+);
 ```
+
+Another example of transaction is the `createAccount` transaction which generates a transaction instruction that creates a new account.
+
+Example of signing a `createAccount` transaction:
+
+```js
+const uploadAccount = new Keypair();
+
+  const createTransaction = new Transaction().add(
+    SystemProgram.createAccount({
+      fromPubkey: mainSystemAccountPubkey, // Sender account
+      newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
+      lamports: 1000000, // Amount to be transfered
+      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Publickey of the program to assign as the owner of the created account
+      space: 5242880, // Amount of space in bytes to allocate to the created account
+    })
+  );
+
+  // Sign and send transaction to K2
+  const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
+    createTransaction,
+    [uploadAccount] // mainSystemAccount will be injected as the first parameter here
+  );
+```
+
+### 2. payloadSigning()
+
+This method signs a payload and returns a signature. It does not involve any interaction with K2.
 
 Example:
 
-```javascript
-const result = await sendAndConfirmTransactionWrapper(
-  this.connection,
-  new Transaction().add(instruction),
-  [
-    this.#mainSystemAccount,
-    this.submitterAccountKeyPair,
-    this.distributionAccountKeyPair,
-  ]
-);
+```js
+const message = "Hello World!";
+
+// Sign payload
+const signature = await namespaceWrapper.payloadSigning(message);
+```
+
+The signature can be verified using the `verifySignature()` method:
+
+```js
+const hash = await namespaceWrapper.verifySignature(signature, publicKey);
 ```
