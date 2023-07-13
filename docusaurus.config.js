@@ -273,14 +273,6 @@ const config = {
             from: "/develop/koii-software-toolkit-sdk/task-node-cli",
           },
           {
-            to: "/develop/category/k2-integration-hooks",
-            from: "/quickstart/category/koii-network",
-          },
-          {
-            to: "/develop/category/ethereum-network",
-            from: "/quickstart/category/ethereum-network",
-          },
-          {
             to: "/concepts/ways-to-get-koii/grants-program",
             from: [
               "/earning-koii/grants-program",
