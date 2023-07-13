@@ -314,8 +314,8 @@ const sidebars = {
       collapsed: true,
       items: [
         "build-dapps-with-koii/integrating-wallets/accepting-payments",
-        "build-dapps-with-koii/integrating-wallets/ethereum-metamask",
         "build-dapps-with-koii/integrating-wallets/finnie-wallet",
+        "build-dapps-with-koii/integrating-wallets/ethereum-metamask",
         "build-dapps-with-koii/integrating-wallets/other-wallets",
       ],
     },
