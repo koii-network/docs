@@ -17,43 +17,68 @@ const sidebars = {
   content: [
     {
       type: "html",
+      value: "Get Started",
+      className: "sidebar-title",
+    },
+    "basics/community-cloud",
+    "basics/mission",
+    "basics/advantages",
+    "basics/tasks",
+
+    {
+      type: "html",
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
+    "intermediate/distributed-social-networks",
+
     {
       type: "html",
-      value: "Distributed Social Networks",
+      value: "Finnie Wallet",
       className: "sidebar-title",
     },
+
+    "intermediate/welcome-to-finnie",
+
     {
       type: "html",
-      value: "Gradual Consensus",
+      value: "Deployment and Scalabilty",
       className: "sidebar-title",
     },
-    "gradual-consensus/gradual-consensus",
-    "gradual-consensus/task-lifecycle",
+
+    "intermediate/dev-and-scal",
+
     {
       type: "html",
-      value: "Easy Deployment and Scalability",
+      value: "Better Data",
       className: "sidebar-title",
     },
+
+    "intermediate/get-better-data",
+
     {
       type: "html",
-      value: "Get Better Data",
+      value: "Attention Mining",
       className: "sidebar-title",
     },
-    {
-      type: "html",
-      value: "Finnie",
-      className: "sidebar-title",
-    },
-    "koii-wallet-finnie/welcome-to-finnie",
-    "koii-wallet-finnie/using-finnie",
+
+    "intermediate/attention-as-a-commodity",
+
     {
       type: "html",
       value: "Federated Learning",
       className: "sidebar-title",
     },
+
+    "advanced/federated-learning",
+
+    {
+      type: "html",
+      value: "Gradual Concensus",
+      className: "sidebar-title",
+    },
+    "advanced/runtime-flow",
+    "advanced/task-lifecycle",
   ],
 };
 
