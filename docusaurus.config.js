@@ -567,7 +567,7 @@ const config = {
           },
           {
             label: "Run a Node",
-            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            to: "/run-a-node/introduction/types-of-nodes",
             activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
