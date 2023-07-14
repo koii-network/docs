@@ -1,8 +1,8 @@
 ---
-title: Welcome to Finnie
+title: Finnie Wallet
 description: Your one-stop shop for cross-chain user-engagement.
 image: img/thumbnail.png
-sidebar_label: Welcome to Finnie
+sidebar_label: Finnie Wallet
 ---
 
 import Description from "@site/src/components/description";
