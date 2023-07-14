@@ -127,7 +127,7 @@ const config = {
       {
         redirects: [
           {
-            to: "/concepts/introduction/welcome",
+            to: "/koii/introduction/welcome",
             from: "/introduction/readme",
           },
           {
@@ -135,7 +135,7 @@ const config = {
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
           {
-            to: "/concepts/introduction/tools",
+            to: "/koii/introduction/tools",
             from: "/introduction/tools",
           },
           {
@@ -182,7 +182,7 @@ const config = {
             from: "/microservices-and-tasks/gradual-consensus",
           },
           {
-            to: "/concepts/introduction/philosophy",
+            to: "/koii/introduction/philosophy",
             from: "/introduction/philosophy",
           },
           {
@@ -411,11 +411,11 @@ const config = {
             from: "/develop/microservices-and-tasks/using-reputation",
           },
           {
-            to: "/concepts/introduction/welcome",
+            to: "/koii/introduction/welcome",
             from: "/concepts/koii-summary/impact",
           },
           {
-            to: "/concepts/introduction/welcome",
+            to: "/koii/introduction/welcome",
             from: "/concepts/koii-summary/social-tech",
           },
           {
@@ -560,14 +560,14 @@ const config = {
         items: [
           {
             label: "$KOII",
-            to: "/koii/the-koii-token/network-economics",
+            to: "/koii/introduction/welcome",
             activeBasePath: "koii",
             position: "left",
             className: "header-text",
           },
           {
             label: "Run a Node",
-            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            to: "/run-a-node/introduction/types-of-nodes",
             activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
