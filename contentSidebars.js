@@ -34,6 +34,13 @@ const sidebars = {
 
     {
       type: "html",
+      value: "Distributed Cloud",
+      className: "sidebar-title",
+    },
+    "intermediate/distributed-social-networks",
+
+    {
+      type: "html",
       value: "Finnie Wallet",
       className: "sidebar-title",
     },
