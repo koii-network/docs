@@ -21,47 +21,33 @@ const sidebars = {
       className: "sidebar-title",
     },
     {
+      type: "category",
+      label: "Types of Nodes",
+      link: {
+        type: "doc",
+        id: "introduction/types-of-nodes",
+      },
+      collapsed: true,
+      items: ["introduction/task-nodes", "introduction/k2-nodes"],
+    },
+    {
       type: "html",
       value: "Desktop node",
       className: "sidebar-title",
     },
     "task-nodes/how-to-run-a-desktop-node",
+    "task-nodes/rewards",
+    "task-nodes/choosing-tasks",
     {
       type: "html",
       value: "K2",
       className: "sidebar-title",
     },
-    // {
-    //   type: "category",
-    //   label: "Types of Nodes",
-    //   link: {
-    //     type: "doc",
-    //     id: "introduction/types-of-nodes",
-    //   },
-    //   collapsed: true,
-    //   items: ["introduction/task-nodes", "introduction/k2-nodes"],
-    // },
-
-    // {
-    //   type: "html",
-    //   value: "Task Nodes",
-    //   className: "sidebar-title top-margin",
-    // },
-
-    // "task-nodes/how-to-run-a-desktop-node",
-    // "task-nodes/rewards",
-    // "task-nodes/choosing-tasks",
-
-    // {
-    //   type: "html",
-    //   value: "K2 Nodes",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "k2-nodes/how-to-run-a-k2-node",
-    // "k2-nodes/system-requirements",
-    // "k2-nodes/system-setup",
-    // "k2-nodes/validator-setup",
-    // "k2-nodes/rewards",
+    "k2-nodes/how-to-run-a-k2-node",
+    "k2-nodes/system-requirements",
+    "k2-nodes/system-setup",
+    "k2-nodes/validator-setup",
+    "k2-nodes/rewards",
   ],
 };
 
