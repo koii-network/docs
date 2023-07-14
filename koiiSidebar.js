@@ -20,6 +20,10 @@ const sidebars = {
       value: "What is Koii?",
       className: "sidebar-title",
     },
+    "introduction/welcome",
+    "introduction/tools",
+    "introduction/philosophy",
+
     {
       type: "html",
       value: "The $KOII Token",
@@ -29,12 +33,12 @@ const sidebars = {
     "the-koii-token/tokenomics/token-generation",
     "the-koii-token/tokenomics/supply-reduction",
     "the-koii-token/tokenomics/reputation-hardening",
-    "the-koii-token/tokenomics/how-the-network-creates-value",
     {
       type: "html",
       value: "Token Value",
       className: "sidebar-title top-margin",
     },
+    "the-koii-token/tokenomics/how-the-network-creates-value",
     {
       type: "html",
       value: "Ways to Get Koii",
