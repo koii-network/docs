@@ -574,7 +574,7 @@ const config = {
           },
           {
             label: "Key Concepts",
-            to: "/concepts/gradual-consensus/",
+            to: "/concepts/basics/community-cloud",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",

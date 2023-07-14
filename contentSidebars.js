@@ -30,11 +30,13 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "intermediate/distributed-social-networks",
+    "basics/distributedCloud",
+    "basics/reduceCosts",
+    "basics/communityDevices",
 
     {
       type: "html",
-      value: "Distributed Cloud",
+      value: "Distributed Social Networks",
       className: "sidebar-title",
     },
     "intermediate/distributed-social-networks",
