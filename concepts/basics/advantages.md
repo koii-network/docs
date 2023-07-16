@@ -11,7 +11,7 @@ sidebar_label: Benefits
   text="Community Cloud."
 />
 
-![Banner](./img/NodesvsServers.svg)
+![Banner](./img/nodesvsservers.svg)
 
 Whether you're designing building an Artificial Intelligence, a simple full stack application, or revolutionary social media app hosted by its users, Koii's community cloud can provide cost and security benefits. It allows you to build autonomous applications that wouldn't be possible via classical server architectures.
 
