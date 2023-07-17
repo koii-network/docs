@@ -22,18 +22,15 @@ const sidebars = {
     },
     "getstarted/globalcomputer",
     "getstarted/koiinetwork",
-    "getstarted/overview",
 
     {
       type: "html",
       value: "Decentralised Cloud",
       className: "sidebar-title",
     },
-    "distributedcloud/introduction",
     "distributedcloud/communitypoweredhosting",
     "distributedcloud/reducedcomputingcosts",
     "distributedcloud/betterdata",
-    "distributedcloud/developmentandscalability",
 
     {
       type: "html",
@@ -45,12 +42,6 @@ const sidebars = {
     "web3/registeringcontent",
     "web3/attentionmining",
     "web3/sybilattackprevention",
-    {
-      type: "html",
-      value: "Identity and Authentication",
-      className: "sidebar-title",
-    },
-    "authentication/introduction",
 
     {
       type: "html",
@@ -64,7 +55,6 @@ const sidebars = {
       value: "Gradual Concensus",
       className: "sidebar-title",
     },
-    "gradualconcensus/introduction",
     "gradualconcensus/runtimeflow",
     "gradualconcensus/tasklifecycle",
 
