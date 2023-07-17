@@ -35,6 +35,11 @@ const sidebars = {
       value: "Linktree",
       className: "sidebar-title",
     },
+    "linktree/intro",
+    "linktree/data-storage",
+    "linktree/data-sharing",
+    "linktree/rest-apis",
+    "linktree/user-authentication",
     {
       type: "html",
       value: "DID's Task",
