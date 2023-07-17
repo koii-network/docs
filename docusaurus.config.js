@@ -574,7 +574,7 @@ const config = {
           },
           {
             label: "Key Concepts",
-            to: "/concepts/basics/community-cloud",
+            to: "/concepts/getstarted/globalcomputer",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
