@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: Identity and Authentication
 description: Gradual Consensus - Act quickly, react faster, and reward slowly.
 image: img/thumbnail.png
-sidebar_label: Introduction
+sidebar_label: Identity and Authentication
 ---
 
 # Introduction
