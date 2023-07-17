@@ -38,9 +38,9 @@ const sidebars = {
       className: "sidebar-title",
     },
     "web3/introduction",
-    "web3/proofofrealtraffic",
     "web3/registeringcontent",
     "web3/attentionmining",
+    "web3/proofofrealtraffic",
     "web3/sybilattackprevention",
 
     {
