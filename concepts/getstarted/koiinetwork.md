@@ -17,4 +17,4 @@ Koii is designed to return that power back to the people. We are the network, af
 
 <Description text="Your personal computer could be paying your rent, and it could help us build a more fair and open web." />
 
-Ethereum and other payments networks have paved the way for decentralized commerce, but many of the tools were missing, and decentralized systems require complex game theory to engineer security. Koii is designed from the ground up to make it easy to build fast, scalable, and private systems, hosted across our community cloud.
+Ethereum and other payment networks have paved the way for decentralized commerce, but many of the tools were missing, and decentralized systems require complex game theory to engineer security. Koii is designed from the ground up to make it easy to build fast, scalable, and private systems, hosted across our community cloud.
