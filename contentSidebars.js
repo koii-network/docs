@@ -20,74 +20,60 @@ const sidebars = {
       value: "Get Started",
       className: "sidebar-title",
     },
-    "basics/community-cloud",
-    "basics/mission",
-    "basics/advantages",
-    "basics/tasks",
+    "getstarted/globalcomputer",
+    "getstarted/koiinetwork",
+    "getstarted/overview",
 
     {
       type: "html",
-      value: "Distributed Cloud",
+      value: "Decentralised Cloud",
       className: "sidebar-title",
     },
-    "basics/distributedCloud",
-    "basics/reduceCosts",
-    "basics/communityDevices",
+    "distributedcloud/introduction",
+    "distributedcloud/communitypoweredhosting",
+    "distributedcloud/reducedcomputingcosts",
+    "distributedcloud/betterdata",
+    "distributedcloud/developmentandscalability",
 
     {
       type: "html",
-      value: "Distributed Social Networks",
+      value: "Web 3 and Social",
       className: "sidebar-title",
     },
-    "intermediate/distributed-social-networks",
+    "web3/introduction",
+    "web3/proofofrealtraffic",
+    "web3/registeringcontent",
+    "web3/attentionmining",
+    "web3/sybilattackprevention",
+    {
+      type: "html",
+      value: "Identity and Authentication",
+      className: "sidebar-title",
+    },
+    "authentication/introduction",
 
     {
       type: "html",
       value: "Finnie Wallet",
       className: "sidebar-title",
     },
-
-    "intermediate/welcome-to-finnie",
-
-    {
-      type: "html",
-      value: "Deployment and Scalabilty",
-      className: "sidebar-title",
-    },
-
-    "intermediate/dev-and-scal",
-
-    {
-      type: "html",
-      value: "Better Data",
-      className: "sidebar-title",
-    },
-
-    "intermediate/get-better-data",
-
-    {
-      type: "html",
-      value: "Attention Mining",
-      className: "sidebar-title",
-    },
-
-    "intermediate/attention-as-a-commodity",
-
-    {
-      type: "html",
-      value: "Federated Learning",
-      className: "sidebar-title",
-    },
-
-    "advanced/federated-learning",
+    "finniewallet/introduction",
 
     {
       type: "html",
       value: "Gradual Concensus",
       className: "sidebar-title",
     },
-    "advanced/runtime-flow",
-    "advanced/task-lifecycle",
+    "gradualconcensus/introduction",
+    "gradualconcensus/runtimeflow",
+    "gradualconcensus/tasklifecycle",
+
+    {
+      type: "html",
+      value: "Crowd AI ",
+      className: "sidebar-title",
+    },
+    "crowdai/introduction",
   ],
 };
 
