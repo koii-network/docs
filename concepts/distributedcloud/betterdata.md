@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: Better Data
 ---
 
+# Bypass Paywalls
+
 # Koii’s Global Network: Your Gateway to Data-Driven Success
 
 Koii’s Global Network, powered by thousands of real people worldwide, is your comprehensive resource for critical data access, enabling you to train better AI models, unlock otherwise inaccessible data, maintain your competitive edge, and verify the authenticity of people, projects, and processes.
