@@ -33,10 +33,10 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Set Up Your Task",
+      value: "Write your Koii Task",
       className: "sidebar-title top-margin",
     },
-    "setup/task-template",
+    "write/write",
   
   
 
