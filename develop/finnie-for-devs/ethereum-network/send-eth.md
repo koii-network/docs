@@ -7,7 +7,7 @@ sidebar_label: Send ETH
 
 # Send ETH
 
-Now, let's see how we can send some `eth` to the other account, using our Finnie wallet that we have already set in the [previous chapter.](../connecting-finnie) First, you can list all the available accounts as below
+Now, let's see how we can send some `eth` to the other account, using our Finnie wallet that we have already set in the previous chapter. First, you can list all the available accounts as below
 
 ```jsx
 const accounts = await window.ethereum.request({
