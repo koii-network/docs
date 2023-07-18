@@ -127,7 +127,7 @@ const config = {
       {
         redirects: [
           {
-            to: "/koii/introduction/welcome",
+            to: "/concepts/introduction/welcome",
             from: "/introduction/readme",
           },
           {
@@ -135,7 +135,7 @@ const config = {
             from: "/koii-software-toolkit-sdk/using-the-cli",
           },
           {
-            to: "/koii/introduction/tools",
+            to: "/concepts/introduction/tools",
             from: "/introduction/tools",
           },
           {
@@ -182,7 +182,7 @@ const config = {
             from: "/microservices-and-tasks/gradual-consensus",
           },
           {
-            to: "/koii/introduction/philosophy",
+            to: "/concepts/introduction/philosophy",
             from: "/introduction/philosophy",
           },
           {
@@ -206,7 +206,7 @@ const config = {
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
-            to: "/concepts/the-koii-token/network-economics",
+            to: "/koii/the-koii-token/network-economics",
             from: "/earning-koii/network-economics",
           },
           {
@@ -241,7 +241,7 @@ const config = {
             from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
           },
           {
-            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
@@ -273,25 +273,25 @@ const config = {
             from: "/develop/koii-software-toolkit-sdk/task-node-cli",
           },
           {
-            to: "/concepts/ways-to-get-koii/grants-program",
+            to: "/koii/ways-to-get-koii/grants-program",
             from: [
               "/earning-koii/grants-program",
               "/concepts/earning-koii/grants-program",
             ],
           },
           {
-            to: "/concepts/ways-to-get-koii/get-free-tokens",
+            to: "/koii/ways-to-get-koii/get-free-tokens",
             from: [
               "/earning-koii/get-free-tokens",
               "/concepts/earning-koii/get-free-tokens",
             ],
           },
           {
-            to: "/concepts/the-koii-token/network-economics",
+            to: "/koii/the-koii-token/network-economics",
             from: "/concepts/earning-koii/network-economics",
           },
           {
-            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/concepts/earning-koii/compute-sharing-marketplace",
           },
           {
@@ -411,12 +411,8 @@ const config = {
             from: "/develop/microservices-and-tasks/using-reputation",
           },
           {
-            to: "/koii/introduction/welcome",
-            from: "/concepts/koii-summary/impact",
-          },
-          {
-            to: "/koii/introduction/welcome",
-            from: "/concepts/koii-summary/social-tech",
+            to: "/concepts/introduction/welcome",
+            from: ["/concepts/koii-summary/impact", "/concepts/koii-summary/social-tech"],
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
@@ -426,10 +422,10 @@ const config = {
             to: "/develop/koii-task-101/what-are-tasks/",
             from: ["/tasks", "/task"],
           },
-          {
-            to: "/concepts/koii-wallet-finnie/using-finnie",
-            from: "/concepts/koii-wallet-finnie/connecting-finnie",
-          },
+          // {
+          //   to: "/koii/koii-wallet-finnie/using-finnie",
+          //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
+          // },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
@@ -559,35 +555,35 @@ const config = {
         },
         items: [
           {
-            label: "$KOII",
-            to: "/koii/introduction/welcome",
+            label: "🪙 $KOII",
+            to: "/koii/the-koii-token/network-economics",
             activeBasePath: "koii",
             position: "left",
             className: "header-text",
           },
           {
-            label: "Run a Node",
+            label: "🖥️ Run a Node",
             to: "/run-a-node/introduction/types-of-nodes",
             activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
           },
           {
-            label: "Key Concepts",
-            to: "/concepts/getstarted/globalcomputer",
+            label: "💡 Key Concepts",
+            to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
           },
           {
-            label: "Build and Deploy",
+            label: "🏗️ Build and Deploy",
             to: "/develop/write-a-koii-task/task-development-kit-tdk/",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
           },
           {
-            label: "Tutorials",
+            label: "📖 Tutorials",
             to: "/tutorials/hello-world/intro",
             activeBasePath: "quickstart",
             position: "left",
