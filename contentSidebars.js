@@ -17,11 +17,19 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Get Started",
+      value: "What is Koii?",
       className: "sidebar-title",
     },
-    "getstarted/globalcomputer",
-    "getstarted/koiinetwork",
+    "introduction/welcome",
+    "introduction/tools",
+    "introduction/philosophy",
+    // {
+    //   type: "html",
+    //   value: "Get Started",
+    //   className: "sidebar-title",
+    // },
+    // "getstarted/globalcomputer",
+    // "getstarted/koiinetwork",
 
     {
       type: "html",
