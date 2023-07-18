@@ -24,6 +24,8 @@ const sidebars = {
     },
     "introduction/intro",
     "introduction/hello-world",
+    "introduction/planning",
+    "introduction/setup",
   
 
 
