@@ -15,21 +15,36 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
+
+
     {
       type: "html",
-      value: "Plan your task",
+      value: "Introduction",
       className: "sidebar-title top-margin",
     },
+    "introduction/intro",
+    "introduction/hello-world",
+  
+
+
+
+
     {
       type: "html",
-      value: "Setting Up",
+      value: "Set Up Your Task",
       className: "sidebar-title top-margin",
     },
+    "setup/task-template",
+  
+  
+
+
     {
       type: "html",
       value: "Write a Koii Task",
       className: "sidebar-title top-margin",
     },
+
     {
       type: "category",
       label: "Task Development Kit (TDK)",
@@ -81,206 +96,7 @@ const sidebars = {
       value: "Deployment",
       className: "sidebar-title top-margin",
     },
-    // "build-on-koii",
-    // {
-    //   type: "html",
-    //   value: "Koii Tasks 101",
-    //   className: "sidebar-title top-margin",
-    // },
-    // {
-    //   type: "category",
-    //   label: "What are Tasks?",
-    //   link: {
-    //     type: "doc",
-    //     id: "koii-task-101/what-are-tasks/what-are-tasks",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "koii-task-101/what-are-tasks/nodes-vs-servers",
-    //     "koii-task-101/what-are-tasks/gradual-consensus",
-    //     "koii-task-101/what-are-tasks/runtime-environment",
-    //     {
-    //       type: "category",
-    //       label: "Key Components",
-    //       link: {
-    //         type: "doc",
-    //         id: "koii-task-101/what-are-tasks/key-components/intro",
-    //       },
-    //       collapsed: true,
-    //       items: [
-    //         "koii-task-101/what-are-tasks/key-components/database-sharding",
-    //         "koii-task-101/what-are-tasks/key-components/node-to-node-sync",
-    //         "koii-task-101/what-are-tasks/key-components/rest-api",
-    //         "koii-task-101/what-are-tasks/key-components/auth-and-security",
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   type: "html",
-    //   value: "Designing Tasks",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "designing-tasks/staking-and-voting",
-    // "designing-tasks/securing-task",
-    // "designing-tasks/using-reputation",
-    // {
-    //   type: "category",
-    //   label: "Task Development Guide",
-    //   link: {
-    //     type: "doc",
-    //     id: "write-a-koii-task/task-development-guide/task-development-guide",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     {
-    //       type: "category",
-    //       label: "Executable Structure",
-    //       link: {
-    //         type: "doc",
-    //         id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
-    //       },
-    //       collapsed: true,
-    //       items: [
-    //         "write-a-koii-task/task-development-guide/executable-structure/setup",
-    //         "write-a-koii-task/task-development-guide/executable-structure/validate-node",
-    //         "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
-    //       ],
-    //     },
-    //     {
-    //       type: "category",
-    //       label: "K2 Task Template",
-    //       link: {
-    //         type: "doc",
-    //         id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
-    //       },
-    //       collapsed: true,
-    //       items: [
-    //         "write-a-koii-task/task-development-guide/k2-task-template/task-function",
-    //         "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
-    //         "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
-    //       ],
-    //     },
-    //     {
-    //       type: "category",
-    //       label: "Task Development Flow",
-    //       collapsed: true,
-    //       link: {
-    //         type: "doc",
-    //         id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
-    //       },
-    //       items: [
-    //         "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
-    //         "write-a-koii-task/task-development-guide/task-development-flow/create-task",
-    //         "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
-    //         "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   type: "html",
-    //   value: "Task Tutorials",
-    //   className: "sidebar-title top-margin",
-    // },
-    // {
-    //   type: "category",
-    //   label: "Example Task: Google Doodle",
-    //   link: {
-    //     type: "doc",
-    //     id: "task-tutorials/google-doodle-task/google-doodle-task",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "task-tutorials/google-doodle-task/getting-started",
-    //     "task-tutorials/google-doodle-task/google-doodle-task-functions",
-    //     "task-tutorials/google-doodle-task/audit-submission-value",
-    //     "task-tutorials/google-doodle-task/submit-distribution-list",
-    //     "task-tutorials/google-doodle-task/audit-distribution-list",
-    //     "task-tutorials/google-doodle-task/google-doodle-executable-code",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "Example Task: Linktree",
-    //   link: {
-    //     type: "doc",
-    //     id: "task-tutorials/linktree-task/intro",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "task-tutorials/linktree-task/data-storage",
-    //     "task-tutorials/linktree-task/data-sharing",
-    //     "task-tutorials/linktree-task/rest-api",
-    //     "task-tutorials/linktree-task/auth-list",
-    //   ],
-    // },
-    // {
-    //   type: "html",
-    //   value: "Finnie For Devs",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "finnie-for-devs/welcome-to-finnie",
-    // {
-    //   type: "category",
-    //   label: "K2 integration hooks",
-    //   link: {
-    //     type: "generated-index",
-    //     description: "Here are the articles in this section",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "finnie-for-devs/K2-integration-hooks/properties",
-    //     "finnie-for-devs/K2-integration-hooks/methods",
-    //     "finnie-for-devs/K2-integration-hooks/events",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "Ethereum Network",
-    //   link: {
-    //     type: "generated-index",
-    //     description:
-    //       "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "finnie-for-devs/ethereum-network/send-eth",
-    //     "finnie-for-devs/ethereum-network/send-eth-eip-1559",
-    //     "finnie-for-devs/ethereum-network/contract-deployment",
-    //     "finnie-for-devs/ethereum-network/mint-nft",
-    //   ],
-    // },
-    // "finnie-for-devs/other-evm-chains",
-
-    // {
-    //   type: "html",
-    //   value: "K2 Settlement Layer",
-    //   className: "sidebar-title",
-    // },
-    // "settlement-layer/k2-tick-tock-fast-blocks",
-    // {
-    //   type: "category",
-    //   label: "Native Contracts",
-    //   link: {
-    //     type: "doc",
-    //     id: "settlement-layer/native-contracts/native-contracts",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "settlement-layer/native-contracts/the-attention-game",
-    //     "settlement-layer/native-contracts/the-task-contract",
-    //   ],
-    // },
-
-    // {
-    //   type: "html",
-    //   value: "Encryption",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "encryption/intro",
-    // "encryption/solana-encryption",
-    // "encryption/ethereum-encryption",
+   
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -486,6 +302,207 @@ const sidebars = {
         "build-dapps-with-koii/template-library/deploy",
       ],
     },
+
+     // "build-on-koii",
+    // {
+    //   type: "html",
+    //   value: "Koii Tasks 101",
+    //   className: "sidebar-title top-margin",
+    // },
+    // {
+    //   type: "category",
+    //   label: "What are Tasks?",
+    //   link: {
+    //     type: "doc",
+    //     id: "koii-task-101/what-are-tasks/what-are-tasks",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "koii-task-101/what-are-tasks/nodes-vs-servers",
+    //     "koii-task-101/what-are-tasks/gradual-consensus",
+    //     "koii-task-101/what-are-tasks/runtime-environment",
+    //     {
+    //       type: "category",
+    //       label: "Key Components",
+    //       link: {
+    //         type: "doc",
+    //         id: "koii-task-101/what-are-tasks/key-components/intro",
+    //       },
+    //       collapsed: true,
+    //       items: [
+    //         "koii-task-101/what-are-tasks/key-components/database-sharding",
+    //         "koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+    //         "koii-task-101/what-are-tasks/key-components/rest-api",
+    //         "koii-task-101/what-are-tasks/key-components/auth-and-security",
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: "html",
+    //   value: "Designing Tasks",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "designing-tasks/staking-and-voting",
+    // "designing-tasks/securing-task",
+    // "designing-tasks/using-reputation",
+    // {
+    //   type: "category",
+    //   label: "Task Development Guide",
+    //   link: {
+    //     type: "doc",
+    //     id: "write-a-koii-task/task-development-guide/task-development-guide",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     {
+    //       type: "category",
+    //       label: "Executable Structure",
+    //       link: {
+    //         type: "doc",
+    //         id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
+    //       },
+    //       collapsed: true,
+    //       items: [
+    //         "write-a-koii-task/task-development-guide/executable-structure/setup",
+    //         "write-a-koii-task/task-development-guide/executable-structure/validate-node",
+    //         "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
+    //       ],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "K2 Task Template",
+    //       link: {
+    //         type: "doc",
+    //         id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
+    //       },
+    //       collapsed: true,
+    //       items: [
+    //         "write-a-koii-task/task-development-guide/k2-task-template/task-function",
+    //         "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+    //         "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
+    //       ],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "Task Development Flow",
+    //       collapsed: true,
+    //       link: {
+    //         type: "doc",
+    //         id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
+    //       },
+    //       items: [
+    //         "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+    //         "write-a-koii-task/task-development-guide/task-development-flow/create-task",
+    //         "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+    //         "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: "html",
+    //   value: "Task Tutorials",
+    //   className: "sidebar-title top-margin",
+    // },
+    // {
+    //   type: "category",
+    //   label: "Example Task: Google Doodle",
+    //   link: {
+    //     type: "doc",
+    //     id: "task-tutorials/google-doodle-task/google-doodle-task",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "task-tutorials/google-doodle-task/getting-started",
+    //     "task-tutorials/google-doodle-task/google-doodle-task-functions",
+    //     "task-tutorials/google-doodle-task/audit-submission-value",
+    //     "task-tutorials/google-doodle-task/submit-distribution-list",
+    //     "task-tutorials/google-doodle-task/audit-distribution-list",
+    //     "task-tutorials/google-doodle-task/google-doodle-executable-code",
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "Example Task: Linktree",
+    //   link: {
+    //     type: "doc",
+    //     id: "task-tutorials/linktree-task/intro",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "task-tutorials/linktree-task/data-storage",
+    //     "task-tutorials/linktree-task/data-sharing",
+    //     "task-tutorials/linktree-task/rest-api",
+    //     "task-tutorials/linktree-task/auth-list",
+    //   ],
+    // },
+    // {
+    //   type: "html",
+    //   value: "Finnie For Devs",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "finnie-for-devs/welcome-to-finnie",
+    // {
+    //   type: "category",
+    //   label: "K2 integration hooks",
+    //   link: {
+    //     type: "generated-index",
+    //     description: "Here are the articles in this section",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "finnie-for-devs/K2-integration-hooks/properties",
+    //     "finnie-for-devs/K2-integration-hooks/methods",
+    //     "finnie-for-devs/K2-integration-hooks/events",
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "Ethereum Network",
+    //   link: {
+    //     type: "generated-index",
+    //     description:
+    //       "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "finnie-for-devs/ethereum-network/send-eth",
+    //     "finnie-for-devs/ethereum-network/send-eth-eip-1559",
+    //     "finnie-for-devs/ethereum-network/contract-deployment",
+    //     "finnie-for-devs/ethereum-network/mint-nft",
+    //   ],
+    // },
+    // "finnie-for-devs/other-evm-chains",
+
+    // {
+    //   type: "html",
+    //   value: "K2 Settlement Layer",
+    //   className: "sidebar-title",
+    // },
+    // "settlement-layer/k2-tick-tock-fast-blocks",
+    // {
+    //   type: "category",
+    //   label: "Native Contracts",
+    //   link: {
+    //     type: "doc",
+    //     id: "settlement-layer/native-contracts/native-contracts",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "settlement-layer/native-contracts/the-attention-game",
+    //     "settlement-layer/native-contracts/the-task-contract",
+    //   ],
+    // },
+
+    // {
+    //   type: "html",
+    //   value: "Encryption",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "encryption/intro",
+    // "encryption/solana-encryption",
+    // "encryption/ethereum-encryption",
     // {
     //   type: "html",
     //   value: "Attention Mining",
@@ -505,6 +522,7 @@ const sidebars = {
     //     "attention-mining/proof-of-real-traffic/sybil-attack-prevention",
     //   ],
     // },
+
   ],
 };
 
