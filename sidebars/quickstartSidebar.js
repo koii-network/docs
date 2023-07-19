@@ -28,23 +28,25 @@ const sidebars = {
       type: "category",
       label: "Dive Into Code",
       items: [
+        // "hello-world/understand-the-template",
         "hello-world/task",
         "hello-world/audit",
         "hello-world/distribution",
       ],
     },
-    "hello-world/getrequest",
-    "hello-world/deployment",
+
     {
       type: "html",
       value: "Level 2",
       className: "sidebar-title",
     },
+    "hello-world/getrequest",
     {
       type: "html",
       value: "Level 3",
       className: "sidebar-title",
     },
+    "hello-world/deployment",
   ],
 };
 
