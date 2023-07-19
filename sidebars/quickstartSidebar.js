@@ -32,6 +32,7 @@ const sidebars = {
         "hello-world/task",
         "hello-world/audit",
         "hello-world/distribution",
+        "hello-world/localTest",
       ],
     },
 

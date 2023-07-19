@@ -36,7 +36,7 @@ We accomplish all these by utilizing ** KOII nodes.**
 
 Nodes are **people**, not computers. They are volunteers, **incentivized by KOII tokens** that run your application on their own machines.
 
-You can interact with them in your code, by using the [Koii SDK](/develop/koii-sdk/overview/). Here is an example metadata object for a task:
+You can interact with them in your code, by using the [Koii SDK](/develop/koii-sdk/overview/).
 
 ```
 Node : {
