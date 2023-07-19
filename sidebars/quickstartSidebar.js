@@ -26,7 +26,7 @@ const sidebars = {
     "hello-world/tasks102",
     {
       type: "category",
-      label: "Dive Into Code",
+      label: "Dive Into The Code",
       items: [
         // "hello-world/understand-the-template",
         "hello-world/task",
