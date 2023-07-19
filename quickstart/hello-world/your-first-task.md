@@ -7,15 +7,13 @@ sidebar_label: What will we build?
 
 ## What will we build?
 
-We will start with a fairly simple task, utilizing KOII's global network to serve us a "GET" Endpoints. This task will be a simple demonstration of how to write a task, and how to interact with the KOII network.
-
-In the end of this tutorial, you will have a task that can be run on the KOII network, and a simple web application that interacts with it.
+We will start with a fairly simple task, utilizing Koii's global network to serve us a **GET** Endpoint. This guide will be a simple demonstration of how to write and deploy a task.
 
 You will learn:
 
-1. How to write an application that utilizes Web3
-2. How to deploy it
-3. How to interact with it
+1. How to write a Koii Task.
+2. How to deploy a Koii Task.
+3. How to test a Koii Task.
 
 ## Possible Usecases
 

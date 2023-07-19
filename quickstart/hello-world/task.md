@@ -1,8 +1,8 @@
 ---
-title: Task
+title: The Task
 description: Task
 image: img/thumbnail.png
-sidebar_label: Task
+sidebar_label: The Task
 ---
 
 In order to create our initial task, we will make modifications to the methods within coreLogic.js. Join us as we delve into each method to gain a deeper understanding of their functionalities and implementation details.
@@ -13,7 +13,7 @@ When creating a task using the Task Template, there's usually no need to edit th
 
 :::
 
-In this section we will be writing our logic for the task and make a submission to k2 by writing the following methods in corelogic.js: `task()`, `fetchSubmission()` and `submitTask()`
+In this section we will be writing our logic for the task and make a submission to K2 by writing the following methods in corelogic.js: `task()`, `fetchSubmission()` and `submitTask()`
 
 ## `task()`
 
@@ -57,7 +57,7 @@ async fetchSubmission() {
 
 In this method, a `namespace` function is invoked to submit the task's results/work to K2. Accordingly, the `submitTask()` method utilizes `fetchSubmission()` to retrieve the submission value from NeDB. Subsequently, it sends this value, along with the current roundNumber, to K2 as the task's submission.
 
-We can achieve that using the below code in the `submitTask()` method:
+We can achieve this using the below code in the `submitTask()` method:
 
 ```js
 async submitTask(roundNumber) {
