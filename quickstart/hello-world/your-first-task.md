@@ -19,4 +19,4 @@ You will learn:
 
 ## Possible Usecases
 
-Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are some nodes running your task, the data that you have decided to store (in our case, Hello World will not get lost.
+Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are some nodes running your task, the data that you have decided to store (in our case, Hello World) will not get lost.
