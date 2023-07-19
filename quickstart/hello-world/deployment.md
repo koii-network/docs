@@ -1,6 +1,6 @@
 ---
-title: Deployment
-description: Deployment
+title: Let's Deploy!
+description: Let's Deploy!
 image: img/thumbnail.png
-sidebar_label: Deployment
+sidebar_label: Let's Deploy!
 ---
