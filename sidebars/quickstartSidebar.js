@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Level 1 (Basics)",
+      value: "Let's Write a Web3 Task!",
       className: "sidebar-title",
     },
     "hello-world/introduction",
@@ -37,7 +37,7 @@ const sidebars = {
     },
     "hello-world/getrequest",
     "hello-world/deployment",
-    {
+    /*    {
       type: "html",
       value: "Level 2",
       className: "sidebar-title",
@@ -48,7 +48,7 @@ const sidebars = {
       value: "Level 3",
       className: "sidebar-title",
     },
-    "hello-world/deployment",
+    "hello-world/deployment", */
   ],
 };
 
