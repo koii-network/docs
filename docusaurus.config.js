@@ -80,20 +80,22 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "quickstart",
-        path: "quickstart",
-        routeBasePath: "quickstart/",
-        sidebarPath: require.resolve("./sidebars/quickstartSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        editCurrentVersion: true,
-        include: ["**/*.md", "**/*.mdx"],
-      },
-    ],
+
+    // TODO - @saim remove these pls
+    // [
+    //   "@docusaurus/plugin-content-docs",
+    //   {
+    //     id: "quickstart",
+    //     path: "quickstart",
+    //     routeBasePath: "quickstart/",
+    //     sidebarPath: require.resolve("./sidebars/quickstartSidebar.js"),
+    //     editUrl: "https://github.com/koii-network/docs/tree/main",
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //     editCurrentVersion: true,
+    //     include: ["**/*.md", "**/*.mdx"],
+    //   },
+    // ],
     [
       "@docusaurus/plugin-content-docs",
       {
