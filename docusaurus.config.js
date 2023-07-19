@@ -414,7 +414,10 @@ const config = {
           },
           {
             to: "/concepts/introduction/welcome",
-            from: ["/concepts/koii-summary/impact", "/concepts/koii-summary/social-tech"],
+            from: [
+              "/concepts/koii-summary/impact",
+              "/concepts/koii-summary/social-tech",
+            ],
           },
           {
             to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
@@ -579,7 +582,7 @@ const config = {
           },
           {
             label: "🏗️ Build and Deploy",
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/",
+            to: "/develop/introduction/intro",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
