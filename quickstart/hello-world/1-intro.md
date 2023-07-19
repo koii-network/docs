@@ -1,75 +1,106 @@
 ---
-title:  '"Hello, World!" Quickstart Guide'
+title: 'The Community Cloud in 5 minutes'
 description: Write and deploy your first Koii task
 image: img/thumbnail.png
-sidebar_label:  Getting Started
+sidebar_label: Getting Started
 ---
 
 import Description from "@site/src/components/description";
 
+<!-- We need to fix this -- these descriptions look like plaintext in blue, so no one will read them. If we want to have a callout sentance at the top it needs to stand out, not blend in. -->
 <Description
-  text="Try this short example to see how easy it is to cut costs and increase reliability with the community cloud."
+    text="Koii's community are here to help. "
 />
 
-## The trick to building scalable community-powered apps
+We are a network of people, not computers. 
 
-The [Task-Template](https://github.com/koii-network/task-template) (here in JavaScript) provides a simple example of a distributed incentive mechanism. 
+<!-- TODO - add links to key concepts sections below - be sure to use new tab links, not direct nav  -->
+Building community-powered apps can [reduce costs](/) and [increase reliability](/) 
 
-To include community devices in your web stack, you'll need to pay them, verify that they're running properly, and provide them with a common set of tools to manage their runtime and synchronize their services. 
 
-Koii standardizes that interface, and simplifies design.
+There's two ways we've been seeing people use Koii:
 
-## Your first 'Task'
-Requests for compute from the network are packaged into a Task, which must follow a particular format in order to run on the existing nodes. The table below shows the key functions of a task, which can be modified almost infinitely to accommodate a wide range of applications.
+ 1. **Reduce existing hosting costs and increase uptime**
+    
+    Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. 
 
-To keep things organized, the task runtime is broken up into rounds based on the network timestamp. Each round, all participating nodes prepare and broadcast a 'submission', which includes proof of their participation. 
 
-The [Gradual Consensus](/develop/koii-task-101/what-are-tasks/) standard defines a process of gathering submissions, verifying their validity, and distributing rewards appropriately among the participating nodes. Distributions of rewards must also follow a verification flow, and can be rejected by participants if they are found to be incorrect. 
+<!-- add line break below -->
 
-## Get a Template
-Standards are essential to developing strong mechanisms for security and fraud prevention. 
 
-We recommend starting with a template:
 
-- Hello World is a great example of the basics (https://github.com/koii-network/task-template)
+ 2. **Build visionary products and services**
 
-- Linktree shows how to maintain and replicate a small distributed database (https://github.com/koii-network/linktree-app)
+    If you're working on something crazy, and you need a lot of compute, our community loves to get in on the next big thing. 
 
-- Data Gatherers like the Twitter Crawler can be used to harvest web data with community nodes (https://github.com/GET-Store-CAT/twitter-crawler)
 
-Clone the repo and dive in:
-```bash
- git clone https://github.com/koii-network/task-template.git hello-world
- cd hello-world
+# What are nodes?
+Nodes are people, not computers. You can interact with them in your code using the [Koii SDK](/develop/koii-sdk/overview/). 
+
+
+```
+Node : {
+    meta : { 
+        id : String, // The ID of your task, running on someone else's computer
+        task_name : String, // The name of your task
+        task_description : String, // The description of your task
+        task_manager : String, // The address of the task's owner, who can update or close the task
+        is_whitelisted : Boolean, // Whether or not this task is whitelisted to run on nodes
+        is_active : Boolean, // Whether or not this task is currently running on nodes
+        task_audit_program: String, // The IPFS CID of the task code that you want to run on this computer
+        stake_pot_account : String, // The address which will hold bounty rewards and collateral for this task
+    }, 
+    state : {
+        // The current confirmed consensus on your task's data
+        round : int, // The current round of the task
+    }
+}
 ```
 
-## How do tasks stay secure?
-There are two ways to build applications within the Koii stack:
-
-    1. Import existing code and add submission generation and verification
-
-    2. Build fresh, and integrate submission generation and verification into the app directly.
-
-In either case, the logic for connecting a single runtime to the larger network follows the same structure. First generating proof data, before submitting it to the network and then validating the submissions of others.
-
-| Method      | Description |
-| ----------- | ----------- |
-| `task()`      |  This is where you can trigger the core runtime of your app, configure sub-modules, and start the services that will prepare submission data. For already existing apps, this can usually be left empty, while relying on the existing app to generate and populate a database of proofs.  |
-| `fetchSubmission()`   | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored, and prepares a compact submission object for SubmitTask().  |
-| `submitTask()`   | This method calls a `namespace` method and submits the task's results/work to K2.        |
-| `validateNode()`   | This method contains logic to verify a node's submission value.    |
-
-## Managing Distributions
-Each round, one node is randomly selected to tally the submissions and submit a distribution event. This is a considerably smaller task than the actual runtime, submission, and audit mechanisms, and is mostly just a matter of summing on-chain submissions and accounting rewards proportional to contribution, or penalties where a submission failed verification by other nodes. 
-
-| Method      | Description |
-| ----------- | ----------- |
-| `generateDistributionList()`   | This method contains the logic to generate a [distribution list](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions). We have provided a sample logic that rewards 1 KOII to all the nodes with valid submissions for that round.|
-| `submitDistributionList()`   | Makes a call to a `namespace` method of the task-node to upload the distribution list to K2      |
-| `validateDistribution()`   | The logic to validate the distribution list goes here and the method will receive the distribution list submitted from the task-state.        |
-| `auditDistribution()`   | Makes a call to the `namespace` of task-node to raise an audit against the distribution list if the validation fails.        |
+You can recruit Koii's nodes to help build your project by writing a task.
 
 
 
 
-In the next section, we'll dive into the [Hello World](https://github.com/koii-network/task-template) task and explore how the task nodes find consensus and keep the task secure.
+# What is a task?
+A task is a piece of code that you want to run on someone else's computer.
+
+To prepare your project as a task, you'll need an object that looks like this:
+
+
+```
+Task : {
+    program : String, // The IPFS CID of the task code that you want to run on this computer
+    meta : {
+        name : String, // The name of your task - this will be shown to node operators
+        description : String, // The description of your task - this will be shown to node operators
+        bounty : int, // The amount of KOII that you are willing to pay to run your task
+        stake_min : int // The minimum amount of KOII that a node must stake to run your task
+    }
+}
+```
+
+You can use the [Koii SDK](/develop/koii-sdk/overview/) to create and manage tasks.
+
+<!-- line break -->
+
+
+# How to build tasks
+
+You can build tasks in any language that compiles to WebAssembly, as it can be injected into the existing JavaScript container. 
+
+[ORCA](/orca) (coming soon) is designed to allow the easy installation of any existing apps within a clean and sandboxed docker container. 
+
+In the next lesson, we'll cover how to build a simple REST API with Koii tasks.
+
+<!-- TODO - add links below -->
+If you're looking for a particular solution, you might want to try one of the templates below:
+1. Database Sharing - [Linktree Task Template](/)
+2. Data Gathering and AI Pre-Processing - [Data Gathering Task Template](/)
+3. Private Data - [Contact Us Form Template](/)
+
+If you've made it this far, you might as well try Koii Tasks. Our community is globally distributed and ready to help.
+
+Good luck! 
+
+Join us in the discord if you have trouble: [Discord](https://discord.gg/koii)
