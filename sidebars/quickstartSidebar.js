@@ -17,55 +17,28 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Level 1",
+      value: "Level 1 (Basics)",
       className: "sidebar-title",
     },
-    "hello-world/intro",
-    "hello-world/dive-into-the-code",
-    "hello-world/task-tutorial",
-    "hello-world/task-description",
-    "hello-world/deploy",
-
+    "hello-world/introduction",
+    "hello-world/your-first-task",
+    "hello-world/tasks101",
+    "hello-world/tasks102",
+    "hello-world/diveintocode",
+    "hello-world/task",
+    "hello-world/audit",
+    "hello-world/distribution",
+    "hello-world/getrequest",
+    "hello-world/deployment",
     {
       type: "html",
       value: "Level 2",
-      className: "sidebar-title top-margin",
-    },
-
-    {
-      type: "category",
-      label: "Register Content",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/register-content/register-content",
-      },
-      collapsed: true,
-      items: ["koii-software-toolkit-sdk/register-content/burn-koii-attention"],
+      className: "sidebar-title",
     },
     {
-      type: "category",
-      label: "Basic Utility Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
-      },
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Koii State",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
-          ],
-        },
-      ],
+      type: "html",
+      value: "Level 3",
+      className: "sidebar-title",
     },
   ],
 };

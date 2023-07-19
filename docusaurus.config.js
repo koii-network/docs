@@ -582,7 +582,7 @@ const config = {
 
           {
             label: "🥷 Hello World!",
-            to: "/quickstart/hello-world/task-tutorial",
+            to: "/quickstart/hello-world/introduction",
             activeBasePath: "hello-world",
             position: "left",
             className: "header-text",
