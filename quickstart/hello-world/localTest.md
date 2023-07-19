@@ -1,8 +1,8 @@
 ---
-title: Test your task locally
+title: Test your task
 description: Task
 image: img/thumbnail.png
-sidebar_label: Test your task locally
+sidebar_label: Test your task
 ---
 
 To test our task locally, we can use the following command in the terminal:
