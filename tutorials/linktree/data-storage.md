@@ -4,6 +4,12 @@ image: img/thumbnail.png
 sidebar_label: Data Storage - NeDB
 ---
 
+import Description from "@site/src/components/description";
+
+<Description
+text="This section will provide information on how and where your tasks can store data in a decentralized format. We will continue to learn that with the Linktree's example, where we require to store information about each individual users who creates a linktree on the application."
+/>
+
 ## Where Will the Linktree Data be Stored?
 
 Since Koii tasks run on a distributed network of nodes, each node stores a copy of the entire database **locally**, including all the data associated with a specific Linktree.
