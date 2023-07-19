@@ -596,7 +596,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "📖 Advanced Tutorials",
+            label: "📖 Tutorials",
             to: "/tutorials/hello-world/intro",
             activeBasePath: "quickstart",
             position: "left",
