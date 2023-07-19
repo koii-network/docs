@@ -8,7 +8,7 @@ sidebar_label:  Getting Started
 import Description from "@site/src/components/description";
 
 <Description
-  text="Harnessing the power of consumer hardware can be effective in reducing costs. This is where we'll teach you how to do it securely."
+  text="Try this short example to see how easy it is to cut costs and increase reliability with the community cloud."
 />
 
 ## The trick to building scalable community-powered apps
