@@ -22,7 +22,7 @@ const sidebars = {
     },
     "hello-world/introduction",
     "hello-world/your-first-task",
-    "hello-world/tasks101",
+
     "hello-world/tasks102",
     {
       type: "category",
