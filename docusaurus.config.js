@@ -590,7 +590,7 @@ const config = {
 
           {
             label: "🏗️ Tools",
-            to: "/develop/introduction/intro",
+            to: "/develop/category/koii-command-line-tool",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
