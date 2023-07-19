@@ -24,10 +24,15 @@ const sidebars = {
     "hello-world/your-first-task",
     "hello-world/tasks101",
     "hello-world/tasks102",
-    "hello-world/diveintocode",
-    "hello-world/task",
-    "hello-world/audit",
-    "hello-world/distribution",
+    {
+      type: "category",
+      label: "Dive Into Code",
+      items: [
+        "hello-world/task",
+        "hello-world/audit",
+        "hello-world/distribution",
+      ],
+    },
     "hello-world/getrequest",
     "hello-world/deployment",
     {
