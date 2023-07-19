@@ -57,6 +57,27 @@ const sidebars = {
 
     {
       type: "html",
+      value: "K2 Settlement Layer",
+      className: "sidebar-title",
+    },
+    "settlement-layer/k2-tick-tock-fast-blocks",
+    {
+      type: "category",
+      label: "Native Contracts",
+      link: {
+        type: "doc",
+        id: "settlement-layer/native-contracts/native-contracts",
+      },
+      collapsed: true,
+      items: [
+        "settlement-layer/native-contracts/the-attention-game",
+        "settlement-layer/native-contracts/the-task-contract",
+      ],
+    },
+    "settlement-layer/rent",
+
+    {
+      type: "html",
       value: "Finnie Wallet",
       className: "sidebar-title",
     },
