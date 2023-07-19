@@ -39,7 +39,11 @@ const sidebars = {
     "distributedcloud/communitypoweredhosting",
     "distributedcloud/reducedcomputingcosts",
     "distributedcloud/betterdata",
-
+    {
+      type: "html",
+      value: "Large Compute Providers",
+      className: "sidebar-title",
+    },
     {
       type: "html",
       value: "Web 3 and Social",

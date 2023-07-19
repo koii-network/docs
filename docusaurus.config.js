@@ -264,10 +264,10 @@ const config = {
               "/blockchain",
             ],
           },
-          {
-            to: "/quickstart/category/koii-command-line-tool",
-            from: "/develop/koii-software-toolkit-sdk/using-the-cli",
-          },
+          // {
+          //   to: "/quickstart/category/koii-command-line-tool",
+          //   from: "/develop/koii-software-toolkit-sdk/using-the-cli",
+          // },
 
           {
             to: "/quickstart/command-line-tool/task-node-cli",
@@ -597,7 +597,7 @@ const config = {
           },
           {
             label: "📖 Advanced Tutorials",
-            to: "/tutorials/hello-world/intro",
+            to: "/tutorials/linktree/intro",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
