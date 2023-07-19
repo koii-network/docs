@@ -81,21 +81,20 @@ const config = {
       },
     ],
 
-    // TODO - @saim remove these pls
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "quickstart",
-    //     path: "quickstart",
-    //     routeBasePath: "quickstart/",
-    //     sidebarPath: require.resolve("./sidebars/quickstartSidebar.js"),
-    //     editUrl: "https://github.com/koii-network/docs/tree/main",
-    //     showLastUpdateAuthor: true,
-    //     showLastUpdateTime: true,
-    //     editCurrentVersion: true,
-    //     include: ["**/*.md", "**/*.mdx"],
-    //   },
-    // ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "quickstart",
+        path: "quickstart",
+        routeBasePath: "quickstart/",
+        sidebarPath: require.resolve("./sidebars/quickstartSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -567,13 +566,6 @@ const config = {
             className: "header-text",
           },
           {
-            label: "🖥️ Run a Node",
-            to: "/run-a-node/introduction/types-of-nodes",
-            activeBasePath: "run-a-node",
-            position: "left",
-            className: "header-text",
-          },
-          {
             label: "💡 Key Concepts",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
@@ -581,14 +573,30 @@ const config = {
             className: "header-text",
           },
           {
-            label: "🏗️ Build and Deploy",
+            label: "🖥️ Run a Node",
+            to: "/run-a-node/introduction/types-of-nodes",
+            activeBasePath: "run-a-node",
+            position: "left",
+            className: "header-text",
+          },
+
+          {
+            label: "🥷 Hello World!",
+            to: "/quickstart/hello-world/task-tutorial",
+            activeBasePath: "hello-world",
+            position: "left",
+            className: "header-text",
+          },
+
+          {
+            label: "🏗️ Tools",
             to: "/develop/introduction/intro",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
           },
           {
-            label: "📖 Tutorials",
+            label: "📖 Advanced Tutorials",
             to: "/tutorials/hello-world/intro",
             activeBasePath: "quickstart",
             position: "left",
