@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Distribution
 ---
 
-In the usual workflow, a submission is made during each round, followed by an audit in the subsequent round. The distribution of rewards, on the other hand, occurs in the round that follows. To elaborate, for a given round n, a submission is made , the audit is conducted on the submissions made in round n-1 and the distribution process encompasses the submissions made in round n-2. Hence, after completing the implementation of the task logic, including the submission to K2 and the subsequent audit, the next step is to devise a mechanism for rewarding users based on their submissions. To achieve this, once the audit window concludes, a node is designated with the responsibility of generating and submitting an on-chain distribution list.
+In the usual workflow, for a given round n, a submission is made , the audit is conducted on the submissions made in round n-1 and the distribution process encompasses the submissions made in round n-2. Hence, after completing the implementation of the task logic, including the submission to K2 and the subsequent audit, the next step is to devise a mechanism for rewarding users based on their submissions. To achieve this, once the audit window concludes, a node is designated with the responsibility of generating and submitting an on-chain distribution list.
 
 The distribution list is represented as a JSON object, consisting of key-value pairs. In this context, where the _key_ is the node's **public key** and the _value_ is the **number of KOII tokens** to be awarded to the node.
 
