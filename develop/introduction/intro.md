@@ -3,18 +3,18 @@ title: Why Koii Tasks
 sidebar_label: Why Koii Tasks
 ---
 
-Koii is a distributed cloud platform that offers cost reduction and enhanced reliability. It achieves this by utilizing a network of computers known as "nodes."
+Koii is a distributed cloud platform that offers cost reduction and enhanced reliability. This is achieved by utilizing a network of computers known as "nodes."
+
+## Reduced costs 
+
+Unlike traditional cloud systems, Koii operates on a **compute** payment model rather than a **device** payment model. This means that you only pay for the work output needed. This approach lowers the overall operational costs.
 
 ## Higher reliability
 
 The key to the system's reliability lies in the participation of multiple nodes. If a node leaves the system, another node promptly takes its place, ensuring continuous functionality.
 
-## Reduced costs 
-
-Unlike traditional cloud systems, Koii operates on a "compute" payment model rather than a "device" payment model. This approach lowers the overall operational costs. 
 
 ## Nodes and Tasks
 
-Within the Koii ecosystem, task nodes actively engage in the system as they receive incentives for running applications, referred to as Koii Tasks.
+**Nodes** are devices (usually personal computers) that make up this distributed cloud. You can build applications called **Tasks** that will run on these nodes.
 
-In the following section, you will learn how to create a simple Koii Task that runs on this distributed network.
