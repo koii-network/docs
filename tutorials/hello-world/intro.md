@@ -1,5 +1,5 @@
 ---
-title: '"Hello, World!" Quickstart Guide'
+title: 'The Community Cloud in 5 minutes'
 description: Write and deploy your first Koii task
 image: img/thumbnail.png
 sidebar_label: Getting Started
@@ -8,7 +8,7 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 
 <Description
-text="Leveraging consumer hardware offers a cost-effective solution for reducing expenses, and we will provide a comprehensive demonstration on how to achieve this securely. Introducing 'Hello World,' a quickstart guide designed to equip you with essential knowledge in developing, testing, and deploying tasks. This guide will serve as a foundation for tackling more intricate assignments with confidence."
+text=""
 />
 
 If you want to know more about how koii helps in leveraging consumer hardware, [click here](/concepts/gradual-consensus/)
