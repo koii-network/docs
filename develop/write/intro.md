@@ -15,4 +15,4 @@ When incorporating community devices into your web stack, you'll have to compens
 
 This is where Koii comes in. It standardizes the interface and streamlines the design process.
 
-To learn more about the task template and its methods that can be beneficial for your personalized tasks, you can visit the task template page.
+To learn more about the task template and its methods that can be beneficial for your personalized tasks, you can visit the [task template](/develop/koii-task-101/) page.

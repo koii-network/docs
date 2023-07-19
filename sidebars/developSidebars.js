@@ -15,8 +15,6 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
-
-
     {
       type: "html",
       value: "Introduction",
@@ -26,21 +24,14 @@ const sidebars = {
     "introduction/hello-world",
     "introduction/planning",
     "introduction/setup",
-  
-
-
-
 
     {
       type: "html",
       value: "Write your Koii Task",
       className: "sidebar-title top-margin",
     },
-    "write/write",
-  
-  
-
-
+    "write/intro",
+    "write/delve-into-the-code",
     {
       type: "html",
       value: "Write a Koii Task",
@@ -98,7 +89,7 @@ const sidebars = {
       value: "Deployment",
       className: "sidebar-title top-margin",
     },
-   
+
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -305,7 +296,7 @@ const sidebars = {
       ],
     },
 
-     // "build-on-koii",
+    // "build-on-koii",
     // {
     //   type: "html",
     //   value: "Koii Tasks 101",
@@ -524,7 +515,6 @@ const sidebars = {
     //     "attention-mining/proof-of-real-traffic/sybil-attack-prevention",
     //   ],
     // },
-
   ],
 };
 
