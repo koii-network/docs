@@ -24,21 +24,14 @@ const sidebars = {
     "introduction/hello-world",
     "introduction/planning",
     "introduction/setup",
-  
-
-
-
 
     {
       type: "html",
       value: "Write your Koii Task",
       className: "sidebar-title top-margin",
     },
-    "write/write",
-  
-  
-
-
+    "write/intro",
+    "write/delve-into-the-code",
     {
       type: "html",
       value: "Write a Koii Task",
