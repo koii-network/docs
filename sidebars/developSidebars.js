@@ -15,28 +15,28 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
-    {
-      type: "html",
-      value: "Introduction",
-      className: "sidebar-title top-margin",
-    },
-    "introduction/intro",
-    "introduction/hello-world",
-    "introduction/planning",
-    "introduction/setup",
+    // {
+    //   type: "html",
+    //   value: "Introduction",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "introduction/intro",
+    // "introduction/hello-world",
+    // "introduction/planning",
+    // "introduction/setup",
 
-    {
-      type: "html",
-      value: "Write your Koii Task",
-      className: "sidebar-title top-margin",
-    },
-    "write/write",
+    // {
+    //   type: "html",
+    //   value: "Write your Koii Task",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "write/write",
 
-    {
-      type: "html",
-      value: "Deployment",
-      className: "sidebar-title top-margin",
-    },
+    // {
+    //   type: "html",
+    //   value: "Deployment",
+    //   className: "sidebar-title top-margin",
+    // },
     {
       type: "html",
       value: "Command Line Tool",
