@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Large Compute Providers",
+      value: "Introduction",
       className: "sidebar-title",
     },
     {
