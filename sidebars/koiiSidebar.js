@@ -33,6 +33,8 @@ const sidebars = {
     "the-koii-token/tokenomics/token-generation",
     "the-koii-token/tokenomics/supply-reduction",
     "the-koii-token/tokenomics/reputation-hardening",
+    "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
+
     {
       type: "html",
       value: "Token Value",
@@ -44,9 +46,8 @@ const sidebars = {
       value: "Ways to Get Koii",
       className: "sidebar-title top-margin",
     },
-    "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/faucet",
-    "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
+    "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/attention-mining",
     "ways-to-get-koii/grants-program",
     "ways-to-get-koii/get-free-tokens",
