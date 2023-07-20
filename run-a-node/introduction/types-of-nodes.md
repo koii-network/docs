@@ -20,7 +20,7 @@ Task node operators run compute jobs called "Tasks" to earn rewards. The best wa
 
 The K2 Settlement Layer is the core of Koii's network.
 
-In addition to providing [fast and secure micro-payments](/concepts/settlement-layer/k2-tick-tock-fast-blocks) for Koii's [Compute Economy](/concepts/ways-to-get-koii/compute-sharing-marketplace/), the K2 layer also provides a heartbeat to [synchronize Task Nodes](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot), and the apps built on top of them.
+In addition to providing [fast and secure micro-payments](/concepts/settlement-layer/k2-tick-tock-fast-blocks) for Koii's [Compute Economy](/koii/ways-to-get-koii/compute-sharing-marketplace/), the K2 layer also provides a heartbeat to [synchronize Task Nodes](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot), and the apps built on top of them.
 
 Because of this important role, and the responsibility of securing the network, K2 nodes [require significantly more powerful hardware](/run-a-node/k2-nodes/system-requirements), along with considerable collateral deposits to ensure secure.
 
