@@ -33,7 +33,7 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Decentralised Cloud",
+      value: "Distributed Cloud",
       className: "sidebar-title",
     },
     "distributedcloud/communitypoweredhosting",
