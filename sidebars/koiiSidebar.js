@@ -50,7 +50,6 @@ const sidebars = {
     "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/attention-mining",
     "ways-to-get-koii/grants-program",
-    "ways-to-get-koii/get-free-tokens",
   ],
 };
 
