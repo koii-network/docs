@@ -6,6 +6,7 @@ sidebar_label: Runtime Environment
 ---
 
 # Runtime Environment
+
 ![banner](../img/Runtime%20Environment.svg)
 
 ## Where Do Tasks Live?
@@ -14,7 +15,7 @@ While tasks run on task nodes, the data behind them is deliberately spread acros
 
 ### Incentives and Proofs (via a Blockchain Layer)
 
-The core of the tasks architecture is the reward structure, which is contained in the [settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks). The settlement layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
+The core of the tasks architecture is the reward structure, which is contained in the [settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks). The settlement layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive, and causes network bloat significantly more than other layers.&#x20;
 
 When a task executes, each task node [submits a proof once per round](/develop/koii-task-101/what-are-tasks/gradual-consensus), which usually references an IPFS CID with more information to support the node's work.&#x20;
 
