@@ -15,7 +15,7 @@ Koii is a decentralized protocol, meaning that anyone is can take a look at our 
 
 :::
 
-In our current implementation, the [settlement layer](/develop/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/) and [dispute resolution](/develop/designing-tasks/securing-task) services to support the compute economy, while providing a historical ledger.
+In our current implementation, the [settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/) and [dispute resolution](/develop/designing-tasks/securing-task) services to support the compute economy, while providing a historical ledger.
 
 Since the settlement layer is decentralized, there is no central ownership body, and following the examples of Bitcoin, Ethereum, and Solana, a tokenized model was implemented to ensure bad actors can be appropriately penalized.
 
