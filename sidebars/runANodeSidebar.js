@@ -32,7 +32,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "Desktop node",
+      value: "Desktop Node",
       className: "sidebar-title",
     },
     "task-nodes/how-to-run-a-desktop-node",
@@ -40,7 +40,7 @@ const sidebars = {
     "task-nodes/choosing-tasks",
     {
       type: "html",
-      value: "K2",
+      value: "K2 Node",
       className: "sidebar-title",
     },
     "k2-nodes/how-to-run-a-k2-node",
