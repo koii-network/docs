@@ -596,8 +596,8 @@ const config = {
             className: "header-text",
           },
           {
-            label: "📖 Tutorials",
-            to: "/tutorials/hello-world/intro",
+            label: "📖 Advanced Tutorials",
+            to: "/tutorials/linktree/intro",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
