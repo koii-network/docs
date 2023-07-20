@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Let's Write a Web3 Task!",
+      value: "Hello World!",
       className: "sidebar-title",
     },
     "hello-world/introduction",
