@@ -15,79 +15,92 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
-    {
-      type: "html",
-      value: "Introduction",
-      className: "sidebar-title top-margin",
-    },
-    "introduction/intro",
-    "introduction/hello-world",
-    "introduction/planning",
-    "introduction/setup",
+    // {
+    //   type: "html",
+    //   value: "Introduction",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "introduction/intro",
+    // "introduction/hello-world",
+    // "introduction/planning",
+    // "introduction/setup",
 
+    // {
+    //   type: "html",
+    //   value: "Write your Koii Task",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "write/write",
+
+    // {
+    //   type: "html",
+    //   value: "Deployment",
+    //   className: "sidebar-title top-margin",
+    // },
     {
       type: "html",
-      value: "Write your Koii Task",
+      value: "Command Line Tool",
       className: "sidebar-title top-margin",
     },
-    "write/intro",
-    "write/delve-into-the-code",
+    {
+      type: "category",
+      label: "Koii Command Line Tool",
+      link: {
+        type: "generated-index",
+        description:
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/koii-cli/install-cli",
+        "command-line-tool/koii-cli/create-wallet",
+        "command-line-tool/koii-cli/send-and-receive-tokens",
+        "command-line-tool/koii-cli/connect-cluster",
+      ],
+    },
+    "command-line-tool/task-node-cli",
+    "command-line-tool/create-task-cli",
+    "command-line-tool/cli-usage-reference",
     {
       type: "html",
-      value: "Write a Koii Task",
+      value: "Task Development Kit (TDK)",
       className: "sidebar-title top-margin",
     },
 
     {
       type: "category",
-      label: "Task Development Kit (TDK)",
+      label: "Using the Task Namespace",
       link: {
         type: "doc",
-        id: "write-a-koii-task/task-development-kit-tdk/task-development-kit-tdk",
+        id: "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/using-the-task-namespace",
       },
       collapsed: true,
       items: [
-        {
-          type: "category",
-          label: "Using the Task Namespace",
-          link: {
-            type: "doc",
-            id: "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/using-the-task-namespace",
-          },
-          collapsed: true,
-          items: [
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
-            "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-          ],
-        },
-        {
-          type: "category",
-          label: "Testing Locally Using Jest",
-          link: {
-            type: "doc",
-            id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
-          },
-          collapsed: true,
-          items: [
-            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
-            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
-            "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
-          ],
-        },
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
+        "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
       ],
     },
     {
-      type: "html",
-      value: "Deployment",
-      className: "sidebar-title top-margin",
+      type: "category",
+      label: "Testing Locally Using Jest",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
+      ],
     },
 
     {

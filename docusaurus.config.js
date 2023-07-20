@@ -264,10 +264,10 @@ const config = {
               "/blockchain",
             ],
           },
-          {
-            to: "/quickstart/category/koii-command-line-tool",
-            from: "/develop/koii-software-toolkit-sdk/using-the-cli",
-          },
+          // {
+          //   to: "/quickstart/category/koii-command-line-tool",
+          //   from: "/develop/koii-software-toolkit-sdk/using-the-cli",
+          // },
 
           {
             to: "/quickstart/command-line-tool/task-node-cli",
@@ -590,7 +590,7 @@ const config = {
 
           {
             label: "🏗️ Tools",
-            to: "/develop/introduction/intro",
+            to: "/develop/category/koii-command-line-tool",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
