@@ -11,34 +11,28 @@ Becoming a Web3 Developer is no longer needlessly complicated. With Koii, you ca
 
 ### Wait, but why?
 
-1.  **Build revolutionary applications:**
+1.  **Reduce existing hosting costs and increase uptime:**
+
+    Building community-powered apps on Koii can **reduce costs** and **increase reliability.**
+    Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
+
+2.  **Build revolutionary applications:**
 
     Our blockchain allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
 
     If you're working on something crazy, and you need a lot of compute, our community loves to get in on the next big thing.
 
-1.  **Reduce existing hosting costs and increase uptime:**
-
-    Building community-powered apps via KOII can **reduce costs** and **increase reliability.**
-    Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible via our Network, as whenever one of the nodes goes down, another one will take its place.
-
 <!-- add line break below -->
 
-3.  **A greener blockchain:**
-
-    Unlike already existing solutions, such as Bitcoin, KOII is not based on Proof-of-Work, which means that it does not require a lot of energy to run. Instead, KOII is based on Proof-of-Stake, which means that it is **much more** environmentally friendly.
-
-    By utilizing the KOII network, you can reduce your carbon footprint, **as we are repurposing existing compute** to run your tasks.
-
-We accomplish all these by utilizing ** KOII nodes.**
+We accomplish all these by utilizing ** Koii nodes.**
 
 ## ...What is a Node?
 
-Nodes are **people**, not computers. They are volunteers, **incentivized by KOII tokens** that run your application on their own machines.
+Nodes are **people**, not computers. They are volunteers, **incentivized by Koii tokens** that run your application on their own machines.
 
 You can interact with them in your code, by using the [Koii SDK](/develop/koii-sdk/overview/).
 
-```
+```js
 Node : {
     meta : {
         id : String, // The ID of your task, running on someone else's computer
@@ -65,7 +59,7 @@ A task is a piece of code that you want to run on someone else's computer.
 
 To prepare your project as a task, you'll need an object that looks like this:
 
-```
+```js
 Task : {
     program : String, // The IPFS CID of the task code that you want to run on this computer
     meta : {
