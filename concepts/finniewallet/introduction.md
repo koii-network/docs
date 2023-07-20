@@ -44,6 +44,8 @@ When you have Finnie installed and running, you can connect to it from your web 
 
 In order to use Finnie in your web app, you can use the following code:
 
+```
 await window.k2.connect()
+```
 
 For more information about the integration hooks of Finnie wallet, please visit Finnie for Devs.
