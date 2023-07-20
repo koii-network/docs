@@ -2,10 +2,8 @@
 title: Your first task
 description: Your first task
 image: img/thumbnail.png
-sidebar_label: What will we build?
+sidebar_label: Your first task
 ---
-
-## What will we build?
 
 We will start with a fairly simple task, utilizing Koii's global network to serve us a **GET** Endpoint. This guide will be a simple demonstration of how to write and deploy a task.
 
