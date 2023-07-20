@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Supply Reduction
 ---
 
-While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, continuous inflation benefits the network by onboarding new node operators who fulfill tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
+While early cryptocurrencies aimed to provide hard caps, like the Bitcoin network, modern utility networks have evolved to optimize for network value creation instead. In Koii’s case, **continuous inflation benefits the network** by onboarding new node operators who fulfill tasks and provide hosting for content and apps running on Koii. As a result, reducing inflation would actually reduce the rate of new nodes that can join the network, and so steady-state inflation is desirable.&#x20;
 
 ![banner](img/Supply%20Reduction%402x.svg)
 
