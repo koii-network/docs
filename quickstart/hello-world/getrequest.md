@@ -1,8 +1,8 @@
 ---
-title: REST API on KOII
+title: REST APIs
 description: Introduction
 image: img/thumbnail.png
-sidebar_label: GET Endpoint on KOII
+sidebar_label: REST APIs
 ---
 
 To enhance our workflow, we will implement a REST API to retrieve the data stored in NeDB. This can be achieved by creating a GET request. To accomplish this, we navigate to the index.js file and add our GET endpoint at the end of the file, utilizing the exposed app object, similar to how we do it in an express app.
