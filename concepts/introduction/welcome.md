@@ -10,7 +10,11 @@ import Description from "@site/src/components/description";
 
 ![banner](<./img/Welcome to Koii-X.svg>)
 
-**We built Koii to make a better world by connecting the people that live in it.**
+:::info Why did we build Koii?
+
+**To make a better world by connecting the people that live in it.**
+
+:::
 
 Ancient civilizations had information networks, too. The ancient internet wasn't fast, but language, art, and culture have always allowed our species to share knowledge and learn from one another. Occasionally, someone exaggerated a bit, and an iguana became a dragon in myth, but mostly it worked okay.
 
