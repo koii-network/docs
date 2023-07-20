@@ -8,7 +8,7 @@ sidebar_label: Solana Encryption
 Solana employs [Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wikipedia.org/wiki/EdDSA), an elliptical signature algorithm for cryptography.
 
 :::info
-[K2](/develop/settlement-layer/k2-tick-tock-fast-blocks) is a fork of Solana, so messages can also be encrypted using Koii addresses!
+[K2](/concepts/settlement-layer/k2-tick-tock-fast-blocks) is a fork of Solana, so messages can also be encrypted using Koii addresses!
 :::
 
 ## Helper Functions
@@ -37,12 +37,14 @@ const decode = (data) => {
 ```
 
 ## Sign and Verify Message
+
 A keypair's primary function is to sign messages and enable signature verification. Verification of a signature ensures that the data was signed by the owner of a specific private key.
 
 - `sign()` — Signs the message using the `secretKey` and returns a signature.
 - `verify()` — Verifies the message's signature and returns true if it was successful or false if it was unsuccessful.
 
 To do this, we will use [TweetNaCl library](https://www.npmjs.com/package/tweetnacl).
+
 ```js
 const nacl = require("tweetnacl");
 
@@ -93,6 +95,7 @@ const encrypt = (message, nonce, publicKeyB, privateKeyA) => {
 ```
 
 ## Decrypt Message
+
 Use `nacl.box.open()` to authenticate and decrypt the given box with peer's public key, our secret key, and the given nonce.
 
 **`nacl.box.open()` Parameters**

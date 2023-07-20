@@ -15,13 +15,13 @@ While Koii is still in testnet, there are lots of ways to get involved, and the 
 
 ### Testnet Airdops
 
-If you're a developer hoping to build on Koii, you can use the [CLI](/quickstart/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
+If you're a developer hoping to build on Koii, you can use the [CLI](/develop/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
 
 **Note:** These tokens will not be transferred to mainnet after launch, but are great for trying things out!
 
 <ContentLink
   title='Using the Koii CLI'
-  link='/quickstart/category/koii-command-line-tool'
+  link='/develop/category/koii-command-line-tool'
   iconType='copy'
 />
 

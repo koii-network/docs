@@ -2,7 +2,6 @@ export const exploreTopics = [
   {
     title: "Understanding Koii",
     items: [
-
       {
         title: "Grants Program",
         link: "/concepts/earning-koii/grants-program",
@@ -36,7 +35,7 @@ export const exploreTopics = [
     items: [
       {
         title: "K2 - Settlement Layer",
-        link: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+        link: "/concepts/settlement-layer/k2-tick-tock-fast-blocks",
         icon: "/img/explore-topics-icons/k2-layer.svg",
       },
       {
@@ -59,7 +58,6 @@ export const exploreTopics = [
         link: "/develop/koii-software-toolkit-sdk/wallet-and-faucet",
         icon: "/img/explore-topics-icons/koii-faucet.svg",
       },
-     
     ],
   },
 
