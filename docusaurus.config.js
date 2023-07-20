@@ -265,7 +265,7 @@ const config = {
             ],
           },
           // {
-          //   to: "/quickstart/category/koii-command-line-tool",
+          //   to: "/develop/category/koii-command-line-tool",
           //   from: "/develop/koii-software-toolkit-sdk/using-the-cli",
           // },
 
