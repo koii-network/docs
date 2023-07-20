@@ -199,11 +199,11 @@ const config = {
             from: "/microservices-and-tasks/what-are-tasks/gradual-consensus",
           },
           {
-            to: "/develop/settlement-layer/native-contracts/the-task-contract",
+            to: "/concepts/settlement-layer/native-contracts/the-task-contract",
             from: "/settlement-layer/native-contracts/the-task-contract",
           },
           {
-            to: "/develop/settlement-layer/native-contracts/the-attention-game",
+            to: "/concepts/settlement-layer/native-contracts/the-attention-game",
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
@@ -254,7 +254,7 @@ const config = {
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
           {
-            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            to: "/concepts/settlement-layer/k2-tick-tock-fast-blocks",
             from: [
               "/quickstart/building-with-koii",
               "/settlement-layer",
