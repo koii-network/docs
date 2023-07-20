@@ -30,7 +30,7 @@ We accomplish all these by utilizing ** Koii nodes.**
 
 Nodes are **people**, not computers. They are volunteers, **incentivized by Koii tokens** that run your application on their own machines.
 
-You can interact with them in your code, by using the [Koii SDK](/develop/koii-sdk/overview/).
+You can interact with them in your code, by using the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk).
 
 ```js
 Node : {
@@ -71,7 +71,7 @@ Task : {
 }
 ```
 
-You can use the [Koii SDK](/develop/koii-sdk/overview/) to create and manage tasks.
+You can use the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk) to create and manage tasks.
 
 <!-- line break -->
 
@@ -85,9 +85,9 @@ Alternatively, you can build tasks in any language that compiles to WebAssembly,
 
 If you're looking for a particular solution, you might want to try one of the templates below:
 
-1. Database Sharing - [Linktree Task Template](/)
-2. Data Gathering and AI Pre-Processing - [Data Gathering Task Template](/)
-3. Private Data - [Contact Us Form Template](/)
+1. Database Sharing - [Linktree Task Template](/tutorials/linktree/data-sharing)
+2. Data Gathering and AI Pre-Processing
+3. Private Data
 
 If you've made it this far, you might as well try Koii Desktop Node yourself! Join our globally distributed community. We are ready to help on our [Discord](https://discord.gg/koii)
 
