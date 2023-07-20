@@ -33,7 +33,7 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
-- [Hello World Example](/quickstart/hello-world/intro)
+- [Hello World Example](/quickstart/hello-world/introduction)
 - [Why use decentralized nodes when servers seem to work?](/develop/koii-task-101/what-are-tasks/nodes-vs-servers)<br/>
 - [How do tasks run across many nodes?](/develop/koii-task-101/what-are-tasks/gradual-consensus)<br/>
 - [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
