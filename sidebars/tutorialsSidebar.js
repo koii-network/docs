@@ -17,11 +17,9 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Hello World!",
+      value: "Contact Us",
       className: "sidebar-title",
     },
-    "hello-world/intro",
-
     {
       type: "html",
       value: "Linktree",
@@ -32,6 +30,16 @@ const sidebars = {
     "linktree/data-sharing",
     "linktree/rest-apis",
     "linktree/user-authentication",
+    {
+      type: "html",
+      value: "DID's Task",
+      className: "sidebar-title",
+    },
+    {
+      type: "html",
+      value: "IPFS Pinning",
+      className: "sidebar-title",
+    },
   ],
 };
 
