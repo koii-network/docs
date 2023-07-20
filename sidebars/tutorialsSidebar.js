@@ -21,15 +21,7 @@ const sidebars = {
       className: "sidebar-title",
     },
     "hello-world/intro",
-    "hello-world/dive-into-the-code",
-    // "hello-world/task-tutorial",
-    "hello-world/task-description",
-    "hello-world/deploy",
-    {
-      type: "html",
-      value: "Contact Us",
-      className: "sidebar-title",
-    },
+
     {
       type: "html",
       value: "Linktree",
@@ -40,16 +32,6 @@ const sidebars = {
     "linktree/data-sharing",
     "linktree/rest-apis",
     "linktree/user-authentication",
-    {
-      type: "html",
-      value: "DID's Task",
-      className: "sidebar-title",
-    },
-    {
-      type: "html",
-      value: "IPFS Pinning",
-      className: "sidebar-title",
-    },
   ],
 };
 
