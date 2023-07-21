@@ -5,11 +5,6 @@ image: img/thumbnail.png
 sidebar_label: How the Network Creates Value
 ---
 
-:::tip In a nutshell
-
-KOII Tokens are **inherently valuable** as they can be used for web application hosting.
-
-:::
 
 When a Koii task is run, node operators are required to stake tokens, which locks up the tokens for a specific period.
 
