@@ -41,9 +41,9 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "distributedcloud/communitypoweredhosting",
-    "distributedcloud/reducedcomputingcosts",
-    "distributedcloud/betterdata",
+    "distributedcloud/community-powered-hosting",
+    "distributedcloud/reduced-computing-costs",
+    "distributedcloud/better-data",
     {
       type: "html",
       value: "Finnie Wallet",
