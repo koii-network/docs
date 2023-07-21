@@ -18,7 +18,7 @@ Once a content creator or app developer [mines KOII](/), they have the option of
 
 Task nodes perform [automated microservices](/develop/koii-task-101/what-are-tasks/) for the network and receive bounty tokens for their work. As the task nodes work through their tasks, they post various signed payloads to storage layers or their personal API, and each node checks the work of the others before writing votes into the K2 layer and trigger the distribution of the bounty.&#x20;
 
-Want to make money while you sleep? Sign up below to join the public beta!
+Want to make money while you sleep? 
 
 <ContentLink
   title='Run a task Node'
@@ -30,7 +30,7 @@ Want to make money while you sleep? Sign up below to join the public beta!
 
 When you run a task node on a personal device or hosted server, you can select from a list of known tasks that suit your device type, and then begin staking your KOII tokens in order to fulfill the task responsibilities. Each task contains an **executable**, an **audit function**, and a **rewards model**, which can be audited by any user in advance of participation.
 
-Once staked, your node must remain online to fulfill task executions according to the rules of the _audit function_ and will operate in the background on your devices to provide microservices to Koii-X apps and developers.
+Once staked, your node must remain online to fulfill task executions according to the rules of the _audit function_ and will operate in the background on your devices to provide microservices to developers.
 
 If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover hardware and hosting.&#x20;
 
@@ -38,14 +38,10 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 <ContentLink
   title='What are tasks?'
-  link='/develop/koii-task-101/what-are-tasks/'
+  link='/quickstart/hello-world/introduction'
   iconType='copy'
 />
 
 ## **Get Involved**
 
 While the network is still in its early stages, the community has already registered tens of thousands of node applicants, providing a global network of personal computers and smartphones, and partnerships with larger providers [have now paved the way for high-performance cloud hosting](https://blog.koii.network/Introducing-Koii-x-InfStones-Partnership/).
-
-:::info
-Task nodes are currently in private beta, but you can [contact us](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) to get early access, or [signup here](https://koii.network/form/pre-register/) to join the waitlist to run your own.
-:::
