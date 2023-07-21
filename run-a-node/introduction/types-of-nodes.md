@@ -6,7 +6,8 @@ sidebar_label: Types of Nodes
 ---
 
 ![Banner](./img/Nodes%20vs%20Servers.svg)
-Nodes are computers that participate in the Koii cloud by running our software.
+
+A node can refer to any device or computer that is connected to a network. Koii Nodes make up the Koii computing cloud network.
 
 There are two types of Koii nodes, each with distinctly different purposes and requirements.
 
@@ -24,4 +25,3 @@ In addition to providing [fast and secure micro-payments](/concepts/settlement-l
 
 Because of this important role, and the responsibility of securing the network, K2 nodes [require significantly more powerful hardware](/run-a-node/k2-nodes/system-requirements), along with considerable collateral deposits to ensure secure.
 
-[Click here to learn more about running K2 Nodes.](/run-a-node/k2-nodes/how-to-run-a-k2-node)
