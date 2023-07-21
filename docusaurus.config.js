@@ -558,13 +558,33 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          
+            
           {
-            label: "🪙 $KOII",
-            to: "/koii/the-koii-token/network-economics",
-            activeBasePath: "koii",
+            label: "🥷 Hello World!",
+            to: "/quickstart/hello-world/introduction",
+            activeBasePath: "hello-world",
             position: "left",
             className: "header-text",
           },
+
+          {
+            label: "📖 Tutorials",
+            to: "/tutorials/linktree/intro",
+            activeBasePath: "quickstart",
+            position: "left",
+            className: "header-text",
+          },
+
+
+          {
+            label: "🏗️ Tools",
+            to: "/develop/category/koii-command-line-tool",
+            activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+       
           {
             label: "💡 Key Concepts",
             to: "/concepts/introduction/welcome",
@@ -579,29 +599,14 @@ const config = {
             position: "left",
             className: "header-text",
           },
-
-          {
-            label: "🥷 Hello World!",
-            to: "/quickstart/hello-world/introduction",
-            activeBasePath: "hello-world",
+        {
+            label: "🪙 $KOII",
+            to: "/koii/the-koii-token/network-economics",
+            activeBasePath: "koii",
             position: "left",
             className: "header-text",
           },
 
-          {
-            label: "🏗️ Tools",
-            to: "/develop/category/koii-command-line-tool",
-            activeBasePath: "develop",
-            position: "left",
-            className: "header-text",
-          },
-          {
-            label: "📖 Tutorials",
-            to: "/tutorials/linktree/intro",
-            activeBasePath: "quickstart",
-            position: "left",
-            className: "header-text",
-          },
         ],
       },
       footer: {},
