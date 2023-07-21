@@ -23,7 +23,7 @@ const sidebars = {
     "hello-world/introduction",
     "hello-world/your-first-task",
 
-    "hello-world/tasks102",
+    "hello-world/understand-the-template",
     {
       type: "category",
       label: "Dive Into The Code",
@@ -32,10 +32,10 @@ const sidebars = {
         "hello-world/task",
         "hello-world/audit",
         "hello-world/distribution",
-        "hello-world/localTest",
+        "hello-world/local-test",
       ],
     },
-    "hello-world/getrequest",
+    "hello-world/get-request",
     "hello-world/deployment",
     /*    {
       type: "html",
