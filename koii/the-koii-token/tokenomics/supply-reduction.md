@@ -9,7 +9,7 @@ While early cryptocurrencies aimed to provide hard caps, like the Bitcoin networ
 
 ![banner](img/Supply%20Reduction%402x.svg)
 
-The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and easy-to-use tools. Each time that a new project launches on Koii, a _bounty_ must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
+The Koii foundation is dedicated to providing developers with incentives to build on the network, including grants and easy-to-use tools. Each time that a new project launches on Koii, a **bounty** must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
 
 At steady state, the network is designed to lock up tokens in staking and bounties, exceeding those released by the inflation, which should reduce the available supply over time.
 
