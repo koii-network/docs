@@ -9,11 +9,8 @@ sidebar_label: Tokenomics
 
 ![banner](tokenomics/img/NETWORK%20ECONOMICS.svg)
 
-:::tip
 
-Koii is a decentralized protocol, meaning that anyone is can take a look at our code, and create a fork in order to build their own version for a specific purpose.
-
-:::
+Koii is a decentralized protocol, meaning that anyone can create a fork in order to build their own version for a specific purpose.
 
 In our current implementation, the [settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) provides [payments processing](/) and [dispute resolution](/develop/designing-tasks/securing-task) services to support the compute economy, while providing a historical ledger.
 
