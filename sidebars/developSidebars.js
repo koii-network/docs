@@ -175,6 +175,7 @@ const sidebars = {
         "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
       ],
     },
+    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
 
     /*   {
       type: "html",
