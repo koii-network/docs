@@ -37,6 +37,7 @@ const sidebars = {
     },
     "hello-world/get-request",
     "hello-world/deployment",
+    "hello-world/what-is-next",
     /*    {
       type: "html",
       value: "Level 2",
