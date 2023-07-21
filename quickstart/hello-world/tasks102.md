@@ -4,6 +4,7 @@ description: What's in the Hello-World template?
 image: img/thumbnail.png
 sidebar_label: Understand the template
 ---
+
 To begin, clone the task template:
 
 ```bash
@@ -19,25 +20,48 @@ Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://class
 
 - `_koiiNode` — is a directory that contains `_koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more Namespace functions.
 
-- `coreLogic.js` — is where you'll define your task, audit, and distribution logic, and control the majority of task functionality. It is recommended to break down separate features into sub-files and import them into the core logic before web-packing.
+- `task` — The task directory houses three key files: `submission.js`,`audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, respectively, enabling you to control the core functionality of the task.
 
-### The `coreLogic.js`
+In the `index.js` file, all these functions are combined as a task, which is then imported and used in `corelogic.js`. It is advisable to organize separate features into sub-files and import them into the relevant files before web-packing for better code management and maintainability. This modular approach allows for a more organized and efficient development process.
 
-There are in total 9 methods in `coreLogic` which you can modify according to your needs:
+### The `submission.js`
+
+In the `submission.js` file, there are a total of 3 methods that allow you to define the actions your task will perform and what it will submit. Here are the descriptions of these methods, which you can modify as per your specific requirements:
+
+| Method              | Description                                                                                                                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `task()`            | The logic for what your task should do goes here.                                                                                                                                                  |
+| `fetchSubmission()` | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored. |
+| `submitTask()`      | This method calls a `namespace` method and submits the task's results/work to K2.                                                                                                                  |
+|                     |
+
+### The `audit.js`
+
+In the `audit.js` file, there are a total of 2 methods that deal with verifying the submissions made. You can modify these methods to suit your needs:
+
+| Method           | Description                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `validateNode()` | This method contains logic to verify a node's submission value.                                                      |
+| `auditTask()`    | Makes a call to the `namespace` of task-node to raise an audit against the submission value if the validation fails. |
+
+### The `distribution.js`
+
+In the distribution.js file, there are a total of 4 methods that handle the flow of distributing rewards. You have the flexibility to modify these methods to meet your specific requirements:
 
 | Method                       | Description                                                                                                                                                                                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `task()`                     | The logic for what your task should do goes here.                                                                                                                                                                                                                        |
-| `fetchSubmission()`          | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored.                                                                       |
-| `submitTask()`               | This method calls a `namespace` method and submits the task's results/work to K2.                                                                                                                                                                                        |
 | `generateDistributionList()` | This method contains the logic to generate a [distribution list](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions). We have provided a sample logic that rewards 1 KOII to all the nodes with valid submissions for that round. |
 | `submitDistributionList()`   | Makes a call to a `namespace` method of the task-node to upload the distribution list to K2                                                                                                                                                                              |
-| `validateNode()`             | This method contains logic to verify a node's submission value.                                                                                                                                                                                                          |
 | `validateDistribution()`     | The logic to validate the distribution list goes here and the method will receive the distribution list submitted from the task-state.                                                                                                                                   |
-| `auditTask()`                | Makes a call to the `namespace` of task-node to raise an audit against the submission value if the validation fails.                                                                                                                                                     |
 | `auditDistribution()`        | Makes a call to the `namespace` of task-node to raise an audit against the distribution list if the validation fails.                                                                                                                                                    |
 
-Now that's out of the way, let's move forward to writing the task.
+:::info
+
+When creating a task using the Task Template, there's usually no need to edit the following methods: `auditTask()`, `auditDistribution()`, and `submitDistributionList()`.
+
+:::
+
+By implementing and modifying these methods, we will create a comprehensive and fully functional task. Let's proceed with writing the logic and submission process for our task.
 
 :::info
 The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
