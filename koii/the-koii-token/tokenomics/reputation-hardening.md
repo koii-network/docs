@@ -7,7 +7,7 @@ sidebar_label: Reputation Hardening
 
 :::tip In a nutshell
 
-Your reputation is the most important currency in Koii ecosystem. It is a measure of how much the community trusts you, and it is used to calibrate rewards and penalties in both the attention mining and compute marketplace.
+Your reputation is the most important currency in Koii's ecosystem. It is a measure of how much the community trusts you, and it is used to calibrate rewards and penalties in both the attention mining and compute marketplace.
 
 :::
 
