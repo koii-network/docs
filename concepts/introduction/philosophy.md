@@ -13,7 +13,7 @@ import Description from "@site/src/components/description";
 <Description
   text="For too long, power has been concentrated to just a small part of the world's
   population. The internet has the power to fix this, but not the way it's been
-  built so far. We're here to change that"
+  built so far. We're here to change that."
 />
 
 ## Get Involved
