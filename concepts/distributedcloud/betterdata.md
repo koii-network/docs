@@ -5,7 +5,9 @@ image: img/thumbnail.png
 sidebar_label: Better Data
 ---
 
-# Bypass Paywalls
+# Bypass Paywalls 
+
+Koii is a network of people, not computers. This means that you can get access to account-only and premium data. This enables you to bypass paywalls and get unrestricted access.
 
 # Koii’s Global Network: Your Gateway to Data-Driven Success
 
