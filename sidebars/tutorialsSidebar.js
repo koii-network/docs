@@ -17,6 +17,11 @@ const sidebars = {
   content: [
     {
       type: "html",
+      value: "Crawlers",
+      className: "sidebar-title",
+    },
+    {
+      type: "html",
       value: "Linktree",
       className: "sidebar-title",
     },
