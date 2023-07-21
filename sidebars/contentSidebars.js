@@ -30,7 +30,12 @@ const sidebars = {
     // },
     // "getstarted/globalcomputer",
     // "getstarted/koiinetwork",
-
+    {
+      type: "html",
+      value: "Crowd AI ",
+      className: "sidebar-title",
+    },
+    "crowdai/introduction",
     {
       type: "html",
       value: "Distributed Cloud",
@@ -39,43 +44,6 @@ const sidebars = {
     "distributedcloud/communitypoweredhosting",
     "distributedcloud/reducedcomputingcosts",
     "distributedcloud/betterdata",
-    {
-      type: "html",
-      value: "Large Compute Providers",
-      className: "sidebar-title",
-    },
-    {
-      type: "html",
-      value: "Web 3 and Social",
-      className: "sidebar-title",
-    },
-    "web3/introduction",
-    "web3/registeringcontent",
-    "web3/attentionmining",
-    "web3/proofofrealtraffic",
-    "web3/sybilattackprevention",
-
-    {
-      type: "html",
-      value: "K2 Settlement Layer",
-      className: "sidebar-title",
-    },
-    "settlement-layer/k2-tick-tock-fast-blocks",
-    {
-      type: "category",
-      label: "Native Contracts",
-      link: {
-        type: "doc",
-        id: "settlement-layer/native-contracts/native-contracts",
-      },
-      collapsed: true,
-      items: [
-        "settlement-layer/native-contracts/the-attention-game",
-        "settlement-layer/native-contracts/the-task-contract",
-      ],
-    },
-    "settlement-layer/rent",
-
     {
       type: "html",
       value: "Finnie Wallet",
@@ -93,10 +61,40 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Crowd AI ",
+      value: "K2 Settlement Layer",
       className: "sidebar-title",
     },
-    "crowdai/introduction",
+    "settlement-layer/k2-tick-tock-fast-blocks",
+    {
+      type: "html",
+      value: "Large Compute Providers",
+      className: "sidebar-title",
+    },
+    {
+      type: "html",
+      value: "Web 3 and Social",
+      className: "sidebar-title",
+    },
+    "web3/introduction",
+    "web3/registeringcontent",
+    "web3/attentionmining",
+    "web3/proofofrealtraffic",
+    "web3/sybilattackprevention",
+
+    {
+      type: "category",
+      label: "Native Contracts",
+      link: {
+        type: "doc",
+        id: "settlement-layer/native-contracts/native-contracts",
+      },
+      collapsed: true,
+      items: [
+        "settlement-layer/native-contracts/the-attention-game",
+        "settlement-layer/native-contracts/the-task-contract",
+      ],
+    },
+    "settlement-layer/rent",
   ],
 };
 
