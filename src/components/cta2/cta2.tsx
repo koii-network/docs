@@ -10,9 +10,9 @@ export const Cta2 = () => {
       <div className="w-full flex flex-col md:flex-row gap-6">
         <a
           className={
-            "w-full lg:max-w-[50%] bg-[transparent] no-underline hover:no-underline cursor-pointer h-full" +
+            "w-full lg:max-w-[50%] bg-[transparent] no-underline hover:no-underline cursor-pointer flex justify-around h-[120px] items-center" +
             " " +
-            styles.card
+            styles.card1
           }
           href="https://koii.network/node"
           style={{
@@ -20,47 +20,35 @@ export const Cta2 = () => {
           }}
           onClick={handleClick}
         >
-          <div className={styles.img}>
-            {" "}
-            <img
-              src={"img/Group 3.svg"}
-              className={"w-full rounded-t-[10px]"}
-              role="img"
-            />
-            <img src={"img/Group 6.svg"} className={styles.img2} role="img" />
+          <div className={"md:pl-5 pl-3" + " "+ styles.img}>
+            <img src={"img/Group 6.svg"} className={'w-full'} role="img" />
+          </div>
+          <div className="md:pr-5 pr-3">
             <h2
               className={
-                "no-underline hover:no-underline text-[#171753] lg:text-3xl text-lg" +
+                "no-underline hover:no-underline text-[#171753] m-0" +
                 " " +
                 styles.ctaText1
               }
             >
               Distributed Computing
             </h2>
-          </div>
-          <button
-            className={
-              "p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer" +
-              " " +
-              styles.cardButton
-            }
-          >
             <p
               className={
-                "no-underline hover:no-underline w-full flex items-start font-semibold m-0 lg:text-2xl text-lg pt-5 pb-3" +
+                "no-underline hover:no-underline w-full flex items-start font-semibold m-0" +
                 " " +
-                styles.cardText
+                styles.ctaText2
               }
             >
               Get the quick-start developer guide.
             </p>
-          </button>
+          </div>
         </a>
         <a
           className={
-            "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer h-full mt-8 md:mt-0" +
+            "w-full lg:max-w-[50%] bg-white no-underline hover:no-underline cursor-pointer mt-8 md:mt-0 flex justify-around h-[120px] items-center" +
             " " +
-            styles.card
+            styles.card2
           }
           href="https://koii.network/node"
           style={{
@@ -68,41 +56,29 @@ export const Cta2 = () => {
           }}
           onClick={handleClick}
         >
-          <div className={styles.img}>
-            {" "}
-            <img
-              src={"img/Group 5.svg"}
-              className={"w-full rounded-t-[10px]"}
-              role="img"
-            />
-            <img src={"img/Group 7.svg"} className={styles.img3} role="img" />
+          <div className="md:pl-5 pl-3">
             <h2
               className={
-                "no-underline hover:no-underline text-[#171753]" +
+                "no-underline hover:no-underline text-[#171753] m-0" +
                 " " +
-                styles.ctaText2
+                styles.ctaText1
               }
             >
               What are Koii Nodes?
             </h2>
-          </div>
-          <button
-            className={
-              "p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer" +
-              " " +
-              styles.cardButton
-            }
-          >
             <p
               className={
-                "no-underline hover:no-underline w-full flex items-start font-semibold m-0 lg:text-2xl md:text-base text-lg pt-5 pb-3" +
+                "no-underline hover:no-underline w-full flex items-start font-semibold m-0" +
                 " " +
-                styles.cardText
+                styles.ctaText2
               }
             >
               This node tutorial makes it easy to join.
             </p>
-          </button>
+          </div>
+          <div className={"md:pr-5 pr-3" + " "+ styles.img}>
+            <img src={"img/Group 7.svg"} className={'w-full'} role="img" />
+          </div>
         </a>
       </div>
     </div>
