@@ -13,7 +13,7 @@ yarn test
 
 Executing this command will simulate a single round, encompassing all the functions performed in an actual deployed task. If the task passes the test, the output should resemble the following:
 
-```
+```js
  PASS  tests/main.test.js (7.049 s)
   Performing the task
     √ should performs the core logic task (89 ms)
