@@ -9,7 +9,7 @@ In the usual workflow, for a given round n, a submission is made , the audit is 
 
 The distribution list is represented as a JSON object, consisting of key-value pairs. In this context, where the _key_ is the node's **public key** and the _value_ is the **number of KOII tokens** to be awarded to the node.
 
-We can utilize `generateDistributionList()` and `validateDistribution()` function for the same.
+We can utilize `generateDistributionList()` and `validateDistribution()` function for the same, that is listed in `distribution.js` under the `task` directory.
 
 ## `generateDistributionList()`
 
