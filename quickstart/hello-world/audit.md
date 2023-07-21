@@ -7,7 +7,7 @@ sidebar_label: Audit
 
 In this section, our focus is on implementing the logic to verify the node's submission value to K2. This verification process is commonly referred to as an audit. Typically, a submission is made in each round, and the corresponding audit takes place in the subsequent round. Consequently, for a given round n, we perform an audit on the submission made in round n-1.
 
-To achieve this, we will be editing the following methods in the `corelogic.js` : `validateNode()` and `auditTask()`
+To achieve this, we will be editing the following methods in `audit.js` under the `task` directory : `validateNode()` and `auditTask()`
 
 ## `validateNode()`
 
