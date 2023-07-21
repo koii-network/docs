@@ -20,15 +20,15 @@ As any industry matures, standardization and simplification become essential ing
 
 Supported networks:
 
-- Ethereum
-- Arweave
-- Filecoin (Coming Soon)
-- Polygon (Coming Soon)
-- Solana (Coming Soon)
-- NEAR (Coming Soon)
+- **Ethereum**
+- **Arweave**
+- _Filecoin (Coming Soon)_
+- _Polygon (Coming Soon)_
+- _Solana (Coming Soon)_
+- _NEAR (Coming Soon)_
 
 <br />
-We have developed a rich SDK in order to support the creation of Koii tasks, nodes, and Koii-X templates. This section includes key references and full API docs to support these initiatives.
+We have developed a rich SDK in order to support the creation of Koii tasks and nodes. This section includes key references and full API docs to support these initiatives.
 
 ### Web3 SDK
 
@@ -41,7 +41,6 @@ Check more usage [here](./koii-javascript-api)
 Koii CLI provides several features, including but not only:
 
 - Generate Koii wallet
-- Airdrop testnet KOII
 - Run Koii test validator
 
 Check the tutorial and try it [here](/develop/category/koii-command-line-tool)
@@ -61,8 +60,8 @@ The task node CLI is a helpful tool used by node operators for 4 different reaso
 
 Learn more and build complete your task [here](./what-is-the-koii-sdk)
 
-### Looking for a quick start?
+<!-- ### Looking for a quick start?
 
 Head to our [Koii-X docs](/develop/build-dapps-with-koii/welcome-to-koii-x/) to learn how you can deploy a dApp in under 10 minutes today.
 
-<ContentLink title="👋 Welcome to koii-X" link="/develop/build-dapps-with-koii/welcome-to-koii-x/"/>
+<ContentLink title="👋 Welcome to koii-X" link="/develop/build-dapps-with-koii/welcome-to-koii-x/"/> -->
