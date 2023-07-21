@@ -5,15 +5,9 @@ image: img/thumbnail.png
 sidebar_label: The Task
 ---
 
-In order to create our initial task, we will make modifications to the methods within coreLogic.js. Join us as we delve into each method to gain a deeper understanding of their functionalities and implementation details.
+To create our initial task, we will customize the methods within `submission.js` located inside the `task` directory. Join us as we delve into each method to gain a deeper understanding of their functionalities and implementation details.
 
-:::info
-
-When creating a task using the Task Template, there's usually no need to edit the following methods: `auditTask()`, `auditDistribution()`, and `submitDistributionList()`.
-
-:::
-
-In this section we will be writing our logic for the task and make a submission to K2 by writing the following methods in corelogic.js: `task()`, `fetchSubmission()` and `submitTask()`
+In this section, we will write the logic for our task and make a submission to K2 using the following methods in `submission.js`: `task()`, `fetchSubmission()`, and `submitTask()`. These methods will define the core functionality of our task and the process of submitting its results to K2.
 
 ## `task()`
 
