@@ -22,7 +22,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Types of Nodes",
+      label: "Koii Nodes",
       link: {
         type: "doc",
         id: "introduction/types-of-nodes",
