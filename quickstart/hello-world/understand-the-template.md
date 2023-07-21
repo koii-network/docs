@@ -16,11 +16,17 @@ Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://class
 
 ## What's in the template?
 
+**Core files:**
+
 - `index.js` — is the hub of your app, and ties together the other pieces. This will be the entry point when your task runs on task nodes.
 
 - `_koiiNode` — is a directory that contains `_koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more Namespace functions.
 
-- `task` — The task directory houses three key files: `submission.js`,`audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, respectively, enabling you to control the core functionality of the task.
+**Task Directory:**
+
+It houses three key files: `submission.js`, `audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, respectively, enabling you to control the core functionality of the task.
+
+The reason for separating these files is to allow for a more modular approach to task development. This allows you to easily modify and test your task logic without having to worry about the other aspects of the task. In order to understand the theory better, please refer to the [Runtime Flow](/concepts/gradualconcensus/runtimeflow).
 
 In the `index.js` file, all these functions are combined as a task, which is then imported and used in `corelogic.js`. It is advisable to organize separate features into sub-files and import them into the relevant files before web-packing for better code management and maintainability. This modular approach allows for a more organized and efficient development process.
 
@@ -63,7 +69,7 @@ When creating a task using the Task Template, there's usually no need to edit th
 
 By implementing and modifying these methods, we will create a comprehensive and fully functional task. Let's proceed with writing the logic and submission process for our task.
 
-:::info
+:::tip Final Notes
 The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
 
 If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).

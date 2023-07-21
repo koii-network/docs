@@ -143,5 +143,3 @@ Stake Pot Account Pubkey: stakepotaccount6G1XJXA1AZBKbwdhhbTSDi3AGLs7
 Note: Task Id is basically the public key of taskStateInfoKeypair.json
 Success
 ```
-
-**Congratulations!** You are officially a Koii Task creator. 🎉
