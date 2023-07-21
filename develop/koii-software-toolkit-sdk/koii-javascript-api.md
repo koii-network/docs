@@ -64,7 +64,7 @@ Example scripts for the web3.js repo and native programs:
 
 - [Web3 Examples](https://github.com/koii-network/k2-web3.js/tree/master/examples)
 
-### Disclaimer
+:::info Disclaimer
 
 All claims, content, designs, algorithms, estimates, roadmaps, specifications, and
 performance measurements described in this project are done with the KOII Network best efforts.
@@ -86,3 +86,4 @@ or (c) if the reader is or is working on behalf of a Specially Designated Nation
 The reader should be aware that U.S. export control and sanctions laws prohibit U.S. persons (and other persons that are subject to such laws) from transacting with persons in certain countries and territories or that are on the SDN list.
 As a project based primarily on open-source software, it is possible that such sanctioned persons may nevertheless bypass prohibitions, obtain the code comprising the KOII blockchain protocol (or other project code or applications) and deploy, integrate, or otherwise use it.
 Accordingly, there is a risk to individuals that other persons using the KOII blockchain protocol may be sanctioned persons and that transactions with such persons would be a violation of U.S. export controls and sanctions law. This risk applies to individuals, organizations, and other ecosystem participants that deploy, integrate, or use the KOII blockchain protocol code directly (e.g., as a node operator), and individuals that transact on the KOII blockchain through light clients, third party interfaces, and/or wallet software.
+:::
