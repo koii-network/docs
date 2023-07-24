@@ -12,13 +12,13 @@ function Tooltip({ text }: tooltipType) {
   return (
     <>
       <div className="tooltip-container">
-        <p
+        <span
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           className="tooltip-text"
         >
           {text}
-        </p>
+        </span>
         {isHovered && tooltipText && (
           <p className="tooltip-hover-text">{tooltipText + "."}</p>
         )}
