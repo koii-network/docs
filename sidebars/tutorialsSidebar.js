@@ -30,6 +30,7 @@ const sidebars = {
     "linktree/data-sharing",
     "linktree/rest-apis",
     "linktree/user-authentication",
+    "linktree/frontend",
   ],
 };
 
