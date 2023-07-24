@@ -630,7 +630,7 @@ const config = {
           },
 
           {
-            label: "📖 Tutorials",
+            label: "📖 Koii Apps",
             to: "/tutorials/linktree/intro",
             activeBasePath: "quickstart",
             position: "left",
@@ -646,7 +646,7 @@ const config = {
           },
 
           {
-            label: "💡 Key Concepts",
+            label: "💡 Concepts",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
