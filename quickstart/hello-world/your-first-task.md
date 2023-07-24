@@ -10,6 +10,8 @@ import Tooltip from "@site/src/components/Tooltip";
 
 Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With Koii, you can transfer your Javascript abilities and deploy your first blockchain application in 5 minutes.
 
+With utilizing <Tooltip text="KOII Task"/> structure, you can create <Tooltip text="Blockchain"/> based applications.
+
 :::tip
 Unlike other solutions, you don't need to learn a new language to develop on Koii.
 :::

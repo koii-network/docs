@@ -8,17 +8,24 @@ type tooltipType = {
 
 function Tooltip({ text }: tooltipType) {
   const [isHovered, setIsHovered] = useState(false);
-  const tooltipText = tooltips[text] || "Default tooltip";
+  const tooltipText = tooltips[text][0] || "Default tooltip";
+  const tooltipLink = tooltips[text][1];
+
+  const handleClick = () => {
+    window.open(tooltipLink, "_blank");
+  };
+
   return (
     <>
       <div className="tooltip-container">
-        <span
+        <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onClick={handleClick}
           className="tooltip-text"
         >
           {text}
-        </span>
+        </div>
         {isHovered && tooltipText && (
           <p className="tooltip-hover-text">{tooltipText + "."}</p>
         )}
