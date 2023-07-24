@@ -10,21 +10,23 @@ import Description from "@site/src/components/description";
 Becoming a Web3 Developer is no longer needlessly complicated. With Koii, you can transfer your Javascript abilities and deploy your first blockchain application in 5 minutes.
 
 :::tip
-Unlike other solutions, you don't need to learn a new language to develop on Koii.
+Unlike other Web3 solutions, you don't need to learn a new language to develop on Koii.
 :::
 
-### Wait, but why?
+### Why would you want to build on Koii?
 
 1.  **Reduce existing hosting costs and increase uptime:**
 
     Building community-powered apps on Koii can **reduce costs** and **increase reliability.**
-    Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
+    Our market-based, on-demand compute network can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
 
 2.  **Build revolutionary applications:**
 
-    Our blockchain allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
+    Our blockchain allows you to create products that would be simply **impossible** to create with Web2 solutions. As an example, you can create [social networks hosted by its users](https://linktree.koii.network/),unstoppable smart web crawlers and [next-gen neural networks trained with real data](/concepts/crowdai/introduction), and much more.
 
     If you're working on something crazy, and you need a lot of compute, our community loves to get in on the next big thing.
+
+Example:
 
 <!-- add line break below -->
 
