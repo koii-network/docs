@@ -1,12 +1,12 @@
 .tooltip-container {
   position: relative;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .tooltip-text {
   color: #4d3d8d;
   font-weight: 700;
-  line-height: 24px;
   cursor: pointer;
 }
 
