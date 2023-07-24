@@ -1,3 +1,15 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .tooltip-container {
   position: relative;
   display: inline-block;
@@ -8,16 +20,17 @@
   color: #4d3d8d;
   font-weight: 700;
   cursor: pointer;
+  animation: pulse 3s infinite;
 }
 
 .tooltip-hover-text {
   color: white;
   padding: 10px;
   cursor: pointer;
-  background-color: #4d3d8d9f;
+  background-color: #4d3d8dd8;
   position: absolute;
   top: -50px;
   font-weight: 700;
-  width: 30rem;
+  width: auto;
   white-space: nowrap;
 }
