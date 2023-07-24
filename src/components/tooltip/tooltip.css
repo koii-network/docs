@@ -1,0 +1,23 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  color: #4d3d8d;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.tooltip-hover-text {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4d3d8d9f;
+  position: absolute;
+  top: -50px;
+  font-weight: 700;
+  width: 30rem;
+  white-space: nowrap;
+}
