@@ -21,7 +21,6 @@ const sidebars = {
       className: "sidebar-title",
     },
     "hello-world/introduction",
-    "hello-world/your-first-task",
 
     "hello-world/understand-the-template",
     {
