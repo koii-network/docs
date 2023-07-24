@@ -5,7 +5,9 @@ image: img/thumbnail.png
 sidebar_label: Cost-Efficent Machine Learning
 ---
 
-# A revolutionary approach to machine learning
+# Cost-Efficent Machine Learning
+
+## A revolutionary approach to artificial intelligence
 
 You can utilize KOII as your cost-effective solution for training machine learning models. KOII Network leverages the power of consumer hardware and the principles of federated learning to significantly cut costs.
 

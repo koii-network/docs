@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-# Introduction to practical benefits of Web3 via KOII
+# Introduction
 
 ## Cut out the middle-man, and get paid fairly for your work
 
