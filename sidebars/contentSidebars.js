@@ -41,23 +41,23 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "distributedcloud/community-powered-hosting",
-    "distributedcloud/reduced-computing-costs",
-    "distributedcloud/better-data",
+    "distributed-cloud/community-powered-hosting",
+    "distributed-cloud/reduced-computing-costs",
+    "distributed-cloud/better-data",
     {
       type: "html",
       value: "Finnie Wallet",
       className: "sidebar-title",
     },
-    "finniewallet/introduction",
+    "finnie-wallet/introduction",
 
     {
       type: "html",
       value: "Gradual Concensus",
       className: "sidebar-title",
     },
-    "gradualconcensus/runtimeflow",
-    "gradualconcensus/tasklifecycle",
+    "gradual-concensus/runtime-flow",
+    "gradual-concensus/task-lifecycle",
 
     {
       type: "html",
@@ -76,10 +76,10 @@ const sidebars = {
       className: "sidebar-title",
     },
     "web3/introduction",
-    "web3/registeringcontent",
-    "web3/attentionmining",
-    "web3/proofofrealtraffic",
-    "web3/sybilattackprevention",
+    "web3/registering-content",
+    "web3/attention-mining",
+    "web3/proof-of-real-traffic",
+    "web3/sybil-attack-prevention",
 
     {
       type: "category",
