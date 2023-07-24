@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Better Data
 ---
 
-# Bypass Paywalls 
+# Better Data
 
 Koii is a network of people, not computers. This means that you can get access to account-only and premium data. This enables you to bypass paywalls and get unrestricted access.
 

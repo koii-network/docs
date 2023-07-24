@@ -1,8 +1,8 @@
 ---
-title: Types of Nodes
+title: Koii Nodes
 description: Application layer nodes are one of the most-needed commodities in Web3.
 image: img/thumbnail.png
-sidebar_label: Types of Nodes
+sidebar_label: Koii Nodes
 ---
 
 ![Banner](./img/Nodes%20vs%20Servers.svg)
