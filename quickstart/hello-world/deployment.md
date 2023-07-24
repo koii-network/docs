@@ -92,6 +92,8 @@ Before proceeding, download the Koii CLI [here](/quickstart/command-line-tool/ko
 
 After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
 
+- Run `yarn webpack` to compile your task code.
+
 - Run `npx @_koii/create-task-cli@latest` in your terminal within the task directory; it prompts for your wallet path:
 
 ```bash
