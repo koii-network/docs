@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: Understand the template
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 To begin, clone the task template:
 
 ```bash
@@ -24,9 +26,9 @@ Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://class
 
 **Task Directory:**
 
-It houses three key files: `submission.js`, `audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, respectively, enabling you to control the core functionality of the task.
+It houses three key files: `submission.js`, `audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, enabling you to control the core functionality of the task.
 
-The reason for separating these files is to allow for a more modular approach to task development. This allows you to easily modify and test your task logic without having to worry about the other aspects of the task. In order to understand the theory better, please refer to the [Runtime Flow](/concepts/gradualconcensus/runtimeflow).
+The reason for separating these files is to allow for a more modular approach to task development. This allows you to easily modify and test your task logic without having to worry about the other aspects of the task. In order to understand the theory better, please refer to the <Tooltip text="Runtime Flow"/>.
 
 In the `index.js` file, all these functions are combined as a task, which is then imported and used in `corelogic.js`. It is advisable to organize separate features into sub-files and import them into the relevant files before web-packing for better code management and maintainability. This modular approach allows for a more organized and efficient development process.
 

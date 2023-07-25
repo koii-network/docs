@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: The Task
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 To create our initial task, we will customize the methods within `submission.js` located inside the `task` directory. Join us as we delve into each method to gain a deeper understanding of their functionalities and implementation details.
 
 In this section, we will write the logic for our task and make a submission to K2 using the following methods in `submission.js`: `task()`, `fetchSubmission()`, and `submitTask()`. These methods will define the core functionality of our task and the process of submitting its results to K2.
@@ -35,7 +37,7 @@ async function task() {
 
 ## `fetchSubmission()`
 
-Upon task completion, the generated results or work will be stored on either IPFS or NeDB. To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet()` method.
+Upon task completion, the generated results or work will be stored on either <Tooltip text="IPFS"/> or <Tooltip text="NeDB"/> To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet()` method.
 
 To do the same, update `fetchSubmission()` with the code block below:
 

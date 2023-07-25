@@ -6,6 +6,7 @@ sidebar_label: How to Run a K2 Node
 ---
 
 import Description from "@site/src/components/description";
+import Tooltip from "@site/src/components/tooltip";
 
 # Running a K2 Node
 
