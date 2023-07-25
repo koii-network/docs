@@ -8,7 +8,7 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With Koii, you can transfer your Javascript abilities and deploy your first blockchain application in 5 minutes.
+Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With <Tooltip text="Koii"/>, you can transfer your Javascript abilities and deploy your first <Tooltip text="Blockchain Application"/> in 5 minutes.
 
 :::tip
 Unlike other solutions, you don't need to learn a new language to develop on Koii.
@@ -23,7 +23,7 @@ Unlike other solutions, you don't need to learn a new language to develop on Koi
 
 2.  **Build revolutionary applications:**
 
-    Our blockchain allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
+    Our blockchain allows you to create products that would be simply impossible to create with <Tooltip text="Web2"/> solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
 
     If you're working on something crazy, and you need a lot of compute, our community loves to get in on the next big thing.
 
@@ -31,11 +31,11 @@ Unlike other solutions, you don't need to learn a new language to develop on Koi
 
 We accomplish all these by utilizing ** Koii nodes.**
 
-## ...What is a Node?
+## What is a Node?
 
-Nodes are **people**, not computers. They are volunteers, **incentivized by Koii tokens** that run your application on their own machines.
+Nodes are people using their computers to create a world-wide network of servers. You can pay them with <Tooltip text="KOII"/> in order to incentivize them to run your application on their own machines.
 
-You can interact with them in your code, by using the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk).
+You can interact with them in your code, by using the <Tooltip text="Koii SDK"/>.
 
 ```js
 Node : {
