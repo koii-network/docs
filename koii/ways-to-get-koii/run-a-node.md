@@ -7,12 +7,11 @@ sidebar_label: Run a Node
 
 ![banner](img/Compute%20Sharing%20Marketplace.svg)
 
-You can join the Koii ecosystem by running a Koii node and start earning passive income. To earn $KOII by [running a node](/run-a-node/introduction/types-of-nodes)
+You can join the Koii ecosystem by running a Koii node and start earning passive income. To earn $KOII by [running a node, checkout our Run a Node section.](/run-a-node/introduction/types-of-nodes)
 
 :::info In a nutshell
 
 Running a node enables you to rent out your wasted compute power. By running koii tasks, you are helping developers turn their dream project into reality while earning rewards.
-
 
 :::
 
