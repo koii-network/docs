@@ -5,8 +5,8 @@ image: img/thumbnail.png
 sidebar_label: System Requirements
 ---
 
-
 import Description from "@site/src/components/description";
+import Tooltip from "@site/src/components/tooltip";
 
 # System Requirements
 
@@ -51,6 +51,3 @@ For RPC nodes:
 Currently we are only supporting Ubuntu 20.04 for our validators. We do provide binaries for other operating systems however the operation of these binaries is not guaranteed.
 
 Once a properly sized Ubuntu 20.04 system is available we can begin to configure the system for operation of a validator node.
-
-
-

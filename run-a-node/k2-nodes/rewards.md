@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: Rewards
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 The rewards you can earn when running a validator for Koii, like any proof-of-stake (PoS) blockchain, can vary based on several factors. Koii uses a PoS consensus mechanism known as Proof of History (PoH), combined with Proof of Stake (PoS), where token holders can delegate their tokens to validators who secure the network and validate transactions.
 
 The rewards you can earn as a validator on Koii primarily depend on the following factors:
@@ -17,9 +19,8 @@ The rewards you can earn as a validator on Koii primarily depend on the followin
 
 **Competition and Network Load**: The number of validators in the network and the overall network load can impact your rewards. If there are fewer validators competing for rewards or if the network has low transaction volumes, individual validators may earn more rewards.
 
-
 :::info
 Since K2 is a fork of Solana, its reward system is derived from Solana.
 
-Learn more about Solana  [stake delegation and rewards](https://docs.solana.com/cluster/stake-delegation-and-rewards#earning-credits)
+Learn more about Solana [stake delegation and rewards](https://docs.solana.com/cluster/stake-delegation-and-rewards#earning-credits)
 :::
