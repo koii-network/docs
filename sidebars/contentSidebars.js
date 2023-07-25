@@ -35,7 +35,10 @@ const sidebars = {
       value: "Crowd AI ",
       className: "sidebar-title",
     },
-    "crowdai/introduction",
+    // "crowdai/introduction",
+    "crowdai/federated-learning",
+    "crowdai/cpu",
+    "crowdai/ai-koii",
     {
       type: "html",
       value: "Distributed Cloud",
@@ -50,6 +53,38 @@ const sidebars = {
       className: "sidebar-title",
     },
     "finnie-wallet/introduction",
+    // "finnie-wallet/finnie-for-devs/welcome-to-finnie",
+    {
+      type: "category",
+      label: "K2 integration hooks",
+      link: {
+        type: "generated-index",
+        description: "Here are the articles in this section",
+      },
+      collapsed: true,
+      items: [
+        "finnie-wallet/finnie-for-devs/K2-integration-hooks/properties",
+        "finnie-wallet/finnie-for-devs/K2-integration-hooks/methods",
+        "finnie-wallet/finnie-for-devs/K2-integration-hooks/events",
+      ],
+    },
+    {
+      type: "category",
+      label: "Ethereum Network",
+      link: {
+        type: "generated-index",
+        description:
+          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
+      },
+      collapsed: true,
+      items: [
+        "finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
+        "finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
+        "finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
+        "finnie-wallet/finnie-for-devs/ethereum-network/mint-nft",
+      ],
+    },
+    "finnie-wallet/finnie-for-devs/other-evm-chains",
 
     {
       type: "html",
@@ -65,21 +100,6 @@ const sidebars = {
       className: "sidebar-title",
     },
     "settlement-layer/k2-tick-tock-fast-blocks",
-    {
-      type: "html",
-      value: "Large Compute Providers",
-      className: "sidebar-title",
-    },
-    {
-      type: "html",
-      value: "Web 3 and Social",
-      className: "sidebar-title",
-    },
-    "web3/introduction",
-    "web3/registering-content",
-    "web3/attention-mining",
-    "web3/proof-of-real-traffic",
-    "web3/sybil-attack-prevention",
 
     {
       type: "category",
@@ -95,6 +115,21 @@ const sidebars = {
       ],
     },
     "settlement-layer/rent",
+    {
+      type: "html",
+      value: "Large Compute Providers",
+      className: "sidebar-title",
+    },
+    {
+      type: "html",
+      value: "Web 3 and Social",
+      className: "sidebar-title",
+    },
+    // "web3/introduction",
+    "web3/registering-content",
+    "web3/attention-mining",
+    "web3/proof-of-real-traffic",
+    "web3/sybil-attack-prevention",
   ],
 };
 
