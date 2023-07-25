@@ -27,7 +27,9 @@ function Tooltip({ text }: tooltipType) {
           {text}
         </div>
         {isHovered && tooltipText && (
-          <p className="tooltip-hover-text">{tooltipText + "."}</p>
+          <div className="tooltip-hover-container">
+            <p className="tooltip-hover-text">{tooltipText + "."}</p>
+          </div>
         )}
       </div>
     </>
