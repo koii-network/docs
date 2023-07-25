@@ -11,13 +11,11 @@ import ContentLink from "@site/src/components/contentLink";
 
 ![Banner](./img/Koii%20Faucet.svg)
 
+The faucet lets new users claim free tokens by verifying their accounts.
+Additionally, if you are invited to Koii Network by a friend, you both will get 5 extra KOII tokens.
 
-The faucet lets new users claim free tokens by verifying their socials.  
-
-If you are invited to Koii Network by a friend, you both will get 5 extra KOII tokens.
-
-::::info Hey!
-If you aren't referred by anyone and found the Koii Network on your own, that is extra cool. We can be your friend! Contact us on discord.
+::::info I found Koii Network by myself
+If you aren't referred by anyone and found the Koii Network on your own, that is extra cool. We can be your friend! Contact us on Discord to get your 5 extra KOII tokens.
 
 ::::
 
