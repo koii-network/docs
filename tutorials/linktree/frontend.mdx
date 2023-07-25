@@ -12,7 +12,7 @@ to a regular backend; it can be easily done by following these steps:
 ### 1. Implement API Functions
 API functions serve the purpose of sending HTTP requests and interacting with the backend's endpoints (e.g., GET, POST, PUT, DELETE). Begin by creating API functions for the various HTTP requests.
 
-Here is an example illustrating how the **POST** request method is implemented in the [linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143)
+Here is an example illustrating how the **POST** request method is implemented in the [linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143):
 ```javascript
 async function setLinktree(data, publicKey, nodeList, username) {
     let result;
@@ -41,6 +41,9 @@ Integrate the API function into the user interface as shown below:
 ```js
 import { setLinktree } from "../api";
 
+const CreateLinktree = () => {
+ // ... check the repository for the full code 
+
  const res = await setLinktree(
       payload,
       publicKey,
@@ -48,7 +51,8 @@ import { setLinktree } from "../api";
       username
     );
 
-    // Component JSX and logic
-    // ... check the repository for the full code
+// Component JSX and logic
 ```
-By following these steps, your frontend will seamlessly interact with the backend, enabling a smooth flow of data and enhancing the overall functionality of your web application. Please refer to the [repository](https://github.com/koii-network/linktree-app) for comprehensive code examples and further details.
+By following these steps, your frontend will seamlessly interact with the backend, enabling a smooth flow of data and enhancing the overall functionality of your web application. 
+
+Please refer to the [repository](https://github.com/koii-network/linktree-app) for comprehensive code examples and further details.
