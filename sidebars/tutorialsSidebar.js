@@ -20,6 +20,7 @@ const sidebars = {
       value: "Crawlers",
       className: "sidebar-title",
     },
+    "crawlers/introduction",
     {
       type: "html",
       value: "Linktree",
