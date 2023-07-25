@@ -273,7 +273,7 @@ const sidebars = {
               items: [
                 "build-dapps-with-koii/template-library/leaderboard-app/customization/preview-info",
                 "build-dapps-with-koii/template-library/leaderboard-app/customization/services",
-                "build-dapps-with-koii/template-library/leaderboard-app/customization/pages",
+                "build-dapps-with-koii/template-library /leaderboard-app/customization/pages",
                 "build-dapps-with-koii/template-library/leaderboard-app/customization/assets",
                 "build-dapps-with-koii/template-library/leaderboard-app/customization/components",
                 "build-dapps-with-koii/template-library/leaderboard-app/customization/internal-api-hooks",
