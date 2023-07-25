@@ -9,7 +9,7 @@ type tooltipType = {
 function Tooltip({ text }: tooltipType) {
   const [isHovered, setIsHovered] = useState(false);
   const tooltipText = tooltips[text][0] || "Default tooltip";
-  const tooltipLink = tooltips[text][1];
+  const tooltipLink = tooltips[text][1] || "Default tooltip";
 
   const handleClick = () => {
     window.open(tooltipLink, "_blank");
