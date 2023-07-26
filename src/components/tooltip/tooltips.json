@@ -1,7 +1,7 @@
 {
     
-    "huggingface": ["ai", "https://www.google.com/"],
-    "tensorflow": ["ai", "https://www.google.com/"],
+    "huggingface": ["ai", "https://huggingface.co/"],
+    "tensorflow": ["ai", "https://www.tensorflow.org/"],
 
     "runtime flow": ["runtime flow", "/concepts/gradualconcensus/runtimeflow"],
     "rewards": ["rewards", "https://www.google.com/"],
