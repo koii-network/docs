@@ -20,7 +20,7 @@ In the below code example, change the `targetNft` to the NFT ID for which you wa
 :::
 
 ```javascript
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftState() {
   const targetNft = "gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA";

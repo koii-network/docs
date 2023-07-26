@@ -7,7 +7,7 @@ sidebar_label: Rewards
 
 import Tooltip from "@site/src/components/tooltip";
 
-The rewards you can earn when running a validator for Koii, like any proof-of-stake (PoS) blockchain, can vary based on several factors. Koii uses a PoS consensus mechanism known as Proof of History (PoH), combined with Proof of Stake (PoS), where token holders can delegate their tokens to validators who secure the network and validate transactions.
+The rewards you can earn when running a validator for Koii, like any <Tooltip text="proof of stake"/> (PoS) blockchain, can vary based on several factors. Koii uses a PoS consensus mechanism known as  <Tooltip text="proof of history"/> (PoH), combined with Proof of Stake (PoS), where token holders can delegate their tokens to validators who secure the network and validate transactions.
 
 The rewards you can earn as a validator on Koii primarily depend on the following factors:
 

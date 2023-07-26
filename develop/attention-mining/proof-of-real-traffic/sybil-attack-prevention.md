@@ -25,7 +25,7 @@ Each PoRT contains a cryptographic signature and must meet certain difficulty cr
 
 During the early days of the network, a large number of "bot" wallets were created, which created signatures continuously and were briefly able to earn a vast majority of newly created tokens with each epoch. This was obviously a huge problem and meant that actual content creators and developers couldn't hope to match the number of PoRTs that these malicious accounts were generating.
 
-As a result, the [K2](https://blog.koii.network/Koii-Announces-K2/) release contains a number of safeguards against "bot" wallets and [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack) by giving wallets different weights when viewing particular content.
+As a result, the [K2](https://blog.koii.network/Koii-Announces-K2/) release contains a number of safeguards against "bot" wallets and <Tooltip text="sybil attacks"/> by giving wallets different weights when viewing particular content.
 
 Several updates have been implemented, and others will be coming soon:
 

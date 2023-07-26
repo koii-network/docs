@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: The Namespace Object
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 # The Namespace Object
 
 Namespacing is the act of wrapping a set of entities, variables, functions, and objects under a single umbrella term. The Koii namespace object `namespace` is a global wrapper for all APIs needed in Koii tasks.&#x20;
@@ -25,7 +27,7 @@ if (namespace.app) {
 The Namespace object is important for a number of reasons, some of which are:
 
 - It **protects** and **isolates the code** from other applications.
-- It prevents **memory leakage**.
+- It prevents <Tooltip text="memory leakage"/>.
 - It ensures code is **organized,** **easy to read, and refactor** according to necessary requirements.
 - It is **easy to recognize** the **variables and functions** from where they are defined.
 
