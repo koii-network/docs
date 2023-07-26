@@ -41,6 +41,13 @@ const sidebars = {
     "crowdai/ai-koii",
     {
       type: "html",
+      value: "Containerized Tasks ",
+      className: "sidebar-title",
+    },
+    "containerized-tasks/introduction",
+
+    {
+      type: "html",
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
