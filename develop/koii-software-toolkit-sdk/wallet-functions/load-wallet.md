@@ -26,7 +26,7 @@ Path to your local wallet file that contains the private key
 ### Example Code
 
 ```jsx
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 const walletKeyLocation = "<Path to your local wallet file>";
 

@@ -5,14 +5,17 @@ image: img/thumbnail.png
 sidebar_label: getAttentionId
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 # getAttentionId
 
-This function gets the attention contract ID running on the bundler.
+This function gets the <Tooltip text="attention contract"/>
+ID running on the bundler.
 
 ### Example Code
 
 ```javascript
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 
 async function testGetAttentionId() {

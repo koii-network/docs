@@ -5,11 +5,13 @@ image: img/thumbnail.png
 sidebar_label: Wallet Signatures
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 # Wallet Signatures
 
 In certain scenarios, tasks may require access to a Koii node's wallet for writing records to a blockchain or directly to K2 as part of managing [Gradual Consensus](/develop/koii-task-101/what-are-tasks/gradual-consensus) flows. Examples include tasks like bridging, minting NFTs, and on-chain asset management.
 
-To enable this functionality, node operators can choose to allow their wallets to be used by tasks, offering a greater reward. However, tasks of this nature must first undergo a [whitelisting process](/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task), ensuring proper code auditing before being promoted to the community.
+To enable this functionality, node operators can choose to allow their wallets to be used by tasks, offering a greater reward. However, tasks of this nature must first undergo a <Tooltip text="whitelisting process"/>, ensuring proper code auditing before being promoted to the community.
 
 This documentation provides an overview of utilizing node operators' wallets to sign transactions. There are three wallet types available:
 
@@ -66,21 +68,21 @@ Example of signing a `createAccount` transaction:
 ```js
 const uploadAccount = new Keypair();
 
-  const createTransaction = new Transaction().add(
-    SystemProgram.createAccount({
-      fromPubkey: mainSystemAccountPubkey, // Sender account
-      newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
-      lamports: 1000000, // Amount to be transfered
-      programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Publickey of the program to assign as the owner of the created account
-      space: 5242880, // Amount of space in bytes to allocate to the created account
-    })
-  );
+const createTransaction = new Transaction().add(
+  SystemProgram.createAccount({
+    fromPubkey: mainSystemAccountPubkey, // Sender account
+    newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
+    lamports: 1000000, // Amount to be transfered
+    programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Publickey of the program to assign as the owner of the created account
+    space: 5242880, // Amount of space in bytes to allocate to the created account
+  })
+);
 
-  // Sign and send transaction to K2
-  const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
-    createTransaction,
-    [uploadAccount] // mainSystemAccount will be injected as the first parameter here
-  );
+// Sign and send transaction to K2
+const signature = await namespaceWrapper.sendAndConfirmTransactionWrapper(
+  createTransaction,
+  [uploadAccount] // mainSystemAccount will be injected as the first parameter here
+);
 ```
 
 ### 2. payloadSigning()

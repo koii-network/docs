@@ -16,7 +16,7 @@ This endpoint returns the state of Koii. Balances, stakes, Koii tasks and all th
 ### Example Code
 
 ```jsx
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 
 async function testGetKoiiState() {

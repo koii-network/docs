@@ -9,7 +9,7 @@ sidebar_label: Timestamp, Round, and Slot
 
 ### What is timestamp and slot?
 
-Timestamp is just a way of representing time, not related to k2. When the user sends data or receives data between K2, the slot can be used to record the time point of receiving or sending, which is a timestamp.
+Timestamp is just a way of representing time, not related to K2. When the user sends data or receives data between K2, the slot can be used to record the time point of receiving or sending, which is a timestamp.
 
 A **slot** is a unit used to measure the current progress of K2. A slot is approximately 400ms is the time that each leader takes to process transactions and produce a block. The progress of a slot is very fast, which can effectively ensure the speed and accuracy of verification.
 

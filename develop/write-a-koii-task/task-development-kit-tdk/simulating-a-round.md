@@ -23,6 +23,6 @@ let output = await coreLogic.validateNode(proof_cid, round);
 console.log('Validated round result', output);
 }, delay);
 };
-```
-
 run();
+
+```
