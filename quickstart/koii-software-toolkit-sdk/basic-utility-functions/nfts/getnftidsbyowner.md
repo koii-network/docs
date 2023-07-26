@@ -20,7 +20,7 @@ In the below code example, change the `ownerAddress` to the address for which yo
 :::
 
 ```jsx
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftIdsByOwner() {
   const ownerAddress = "7b4ll1zwenRB8jzyESjFNcRls331buyNl231Pe0V9VI";

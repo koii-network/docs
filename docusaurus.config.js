@@ -46,9 +46,11 @@ const config = {
         routeBasePath: "koii/",
         sidebarPath: require.resolve("./sidebars/koiiSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
+
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
+
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
@@ -587,6 +589,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+
       // Replace with your project's social card
       image: "img/thumbnail.png",
       // metadata: [

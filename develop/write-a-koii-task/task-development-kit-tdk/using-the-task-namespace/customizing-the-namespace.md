@@ -5,9 +5,11 @@ image: img/thumbnail.png
 sidebar_label: Customizing the Namespace
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 # Customizing the Namespace
 
-In some cases, it may be necessary to customize the namespace object to add default flows, such as app middleware. If this is the case, these new features can be implemented by adding a new file, called `namespaceWrapper.js` to the root folder of your task.
+In some cases, it may be necessary to customize the namespace object to add default flows, such as app <Tooltip text="middleware"/>. If this is the case, these new features can be implemented by adding a new file, called `namespaceWrapper.js` to the root folder of your task.
 
 Using the K2-task template to create a new task, this `namespaceWrapper.js` file is already located in the root of the folder.&#x20;
 

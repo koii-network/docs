@@ -24,7 +24,7 @@ In the below code example, replace `<walletKeyLocation>` on line 4 with the loca
 :::
 
 ```jsx
-const knode = require("@_koi/sdk/node");
+const knode = require("@_koii/sdk/node");
 const ktools = new knode.Node();
 async function testGetKoiiBalance() {
     const jwk = await ktools.loadFile(<walletKeyLocation>);

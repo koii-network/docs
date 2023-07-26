@@ -58,7 +58,7 @@ If you are using Atomic NFTs, there is often a lot of additional information suc
 
 ```javascript
 // Some code showing how to query mainnet.koii.live for the latest NFT states
-import * as kweb from "@_koi/sdk/web";
+import * as kweb from "@_koii/sdk/web";
 let ktools = new kweb.Web();
 
 const id = "NFTid";

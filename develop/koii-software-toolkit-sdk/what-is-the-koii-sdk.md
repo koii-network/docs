@@ -5,6 +5,7 @@ image: img/thumbnail.png
 sidebar_label: What is the Koii SDK?
 ---
 
+import Tooltip from "@site/src/components/tooltip";
 import Description from "@site/src/components/description";
 import ContentLink from "@site/src/components/contentLink";
 
@@ -20,34 +21,34 @@ As any industry matures, standardization and simplification become essential ing
 
 Supported networks:
 
-- **Ethereum**
-- **Arweave**
-- _Filecoin (Coming Soon)_
-- _Polygon (Coming Soon)_
-- _Solana (Coming Soon)_
-- _NEAR (Coming Soon)_
+- <Tooltip text="Ethereum"/>
+- <Tooltip text="Arweave"/>
+- <Tooltip text="Filecoin"/> (Coming Soon)
+- <Tooltip text="Polygon"/> (Coming Soon)
+- <Tooltip text="Solana"/> (Coming Soon)
+- <Tooltip text="NEAR"/> (Coming Soon)
 
 <br />
-We have developed a rich SDK in order to support the creation of Koii tasks and nodes. This section includes key references and full API docs to support these initiatives.
+We have developed a rich <Tooltip text="SDK"/>  in order to support the creation of Koii tasks and nodes. This section includes key references and full <Tooltip text="API"/>  docs to support these initiatives.
 
 ### Web3 SDK
 
 This is the KOII (K2) Javascript API built on the Koii. User can use this SDK to check status and fetch info from the K2 network.
 
-Check more usage [here](./koii-javascript-api)
+Check more usage [here.](./koii-javascript-api)
 
 ### Koii CLI
 
 Koii CLI provides several features, including but not only:
 
-- Generate Koii wallet
-- Run Koii test validator
+- Generating a Koii wallet
+- Running Koii test validator
 
 Check the tutorial and try it [here](/develop/category/koii-command-line-tool)
 
 ### Create Task CLI
 
-Create Task CLI helps you deploy your task to task node in less than 5min! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here](/quickstart/command-line-tool/create-task-cli)
+Create Task CLI helps you deploy your task to task node in less than 5 minutes! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here.](/quickstart/command-line-tool/create-task-cli)
 
 ### Task Node CLI
 

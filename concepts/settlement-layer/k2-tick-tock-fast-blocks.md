@@ -5,6 +5,8 @@ image: img/thumbnail.png
 sidebar_label: K2 - Tick, Tock, Fast Blocks
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 import Description from "@site/src/components/description";
 
 # K2 - Tick, Tock, Fast Blocks
@@ -17,7 +19,7 @@ import Description from "@site/src/components/description";
 
 K2 is the current settlement layer within Koii and provides the functionality of a message hub to other systems in the network. Thanks to the incredible work of the Solana Labs team, K2 is able to use [Proof of History](https://tokens-economy.gitbook.io/consensus/chain-based-proof-of-capacity-space/proof-of-history) to achieve 0.2-second transaction times and thousands of transactions per second.&#x20;
 
-The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all [compute task](/develop/koii-task-101/what-are-tasks/) metadata.
+The settlement layer holds the KOII tokens, as well as an <Tooltip text="immutable ledger"/> of transaction history, an active registry of open compute operations, and all <Tooltip text="compute task"/> metadata.
 
 **Heads up!** To use K2, you'll need to install the [Koii CLI](/develop/category/koii-command-line-tool) or try the [Koii SDK](/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
 
@@ -29,7 +31,7 @@ The settlement layer holds the KOII tokens, as well as an immutable ledger of tr
 
 [Koii task nodes](/quickstart/command-line-tool/task-node-cli) use the settlement layer to submit proofs and request rewards for compute work. All task related activities are managed by the built-in task contract, which is managed by the Koii foundation. Some of the operations the task contract supports are:
 
-1. Pull a timestamp proof&#x20;
+1. Pull a <Tooltip text="timestamp"/> proof&#x20;
 2. Submit proofs to claim task rewards
 3. Trigger audit on a node's reward request
 4. Submit a distribution event
