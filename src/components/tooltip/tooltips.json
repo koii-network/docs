@@ -1,4 +1,8 @@
 {
+    
+    "huggingface": ["ai", "https://www.google.com/"],
+    "tensorflow": ["ai", "https://www.google.com/"],
+
     "runtime flow": ["runtime flow", "/concepts/gradualconcensus/runtimeflow"],
     "rewards": ["rewards", "https://www.google.com/"],
     "local databases": ["local databases", "https://www.google.com/"],
@@ -8,8 +12,6 @@
     "compute economy": ["database sharing", "/koii/ways-to-get-koii/compute-sharing-marketplace/"],
     "to synchronize task nodes": ["to synchronize task nodes", "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot"],
     "significantly more powerful hardware": ["significantly more powerful hardware", "/run-a-node/k2-nodes/system-requirements"],
-
-
     "ipfs": ["ipfs", "https://www.google.com/"],
     "nedb": ["nedb", "https://www.google.com/"],
     "decentralized protocol": ["No central authority", "https://www.google.com/"],
