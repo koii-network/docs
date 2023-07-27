@@ -8,13 +8,13 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With <Tooltip text="Koii"/>, you can transfer your Javascript abilities and deploy your first <Tooltip text="Blockchain Application"/> in 5 minutes.
+Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With Koii, you can transfer your Javascript abilities and deploy your first <Tooltip text="blockchain application"/> in 5 minutes.
 
 :::tip
 Unlike other solutions, you don't need to learn a new language to develop on Koii.
 :::
 
-### Wait, but why Koii?
+### Wait, but why would I want that?
 
 1.  **Reduce existing hosting costs and increase uptime:**
 
@@ -25,17 +25,35 @@ Unlike other solutions, you don't need to learn a new language to develop on Koi
 
     Our blockchain allows you to create products that would be simply impossible to create with <Tooltip text="Web2"/> solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
 
-    If you're working on something crazy, and you need a lot of compute, our community loves to get in on the next big thing.
-
 <!-- add line break below -->
 
-We accomplish all these by utilizing ** Koii nodes.**
+We accomplish all these by utilizing ** Koii Nodes.**
 
 ## What is a Node?
 
 Nodes are people using their computers to create a world-wide network of servers. You can pay them with <Tooltip text="KOII"/> in order to incentivize them to run your application on their own machines.
 
-You can interact with them in your code, by using the <Tooltip text="Koii SDK"/>.
+In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
+
+## What is a Task?
+
+A task is a piece of code that you want to run on someone else's computer.
+
+To prepare your project as a task, you'll need an object that looks like this:
+
+```js
+Task : {
+    program : String, // The IPFS CID of the task code that you want to run on this computer
+    meta : {
+        name : String, // The name of your task - this will be shown to node operators
+        description : String, // The description of your task - this will be shown to node operators
+        bounty : int, // The amount of KOII that you are willing to pay to run your task
+        stake_min : int // The minimum amount of KOII that a node must stake to run your task
+    }
+}
+```
+
+You can also customize how it is being described as on a Koii Desktop Node user's interface. Here is an example:
 
 ```js
 Node : {
@@ -56,56 +74,12 @@ Node : {
 }
 ```
 
-You can use the already existing pool of task runners, or recruit your own band of volunteers to help hosting your application.
-
-## ...What is a Task?
-
-A task is a piece of code that you want to run on someone else's computer.
-
-To prepare your project as a task, you'll need an object that looks like this:
-
-```js
-Task : {
-    program : String, // The IPFS CID of the task code that you want to run on this computer
-    meta : {
-        name : String, // The name of your task - this will be shown to node operators
-        description : String, // The description of your task - this will be shown to node operators
-        bounty : int, // The amount of KOII that you are willing to pay to run your task
-        stake_min : int // The minimum amount of KOII that a node must stake to run your task
-    }
-}
-```
-
-You can use the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk) to create and manage tasks.
+Again, you can use the <Tooltip text="Koii SDK"/> to create and manage tasks.
 
 <!-- line break -->
 
-## Ways to build on KOII
+## How to build on KOII?
 
-In the next lesson, we'll cover how to build a simple REST API that runs on KOII Network.
+In the following pages, we will step-by-step cover how to build a simple <Tooltip text="REST API"/> that runs on KOII Network.
 
-Alternatively, you can build tasks in any language that compiles to WebAssembly, as it can be injected into the existing JavaScript container.
-
-[ORCA](/orca) (coming soon) is designed to allow the easy installation of any existing apps within a clean and sandboxed docker container.
-
-If you're looking for a particular solution, you might want to try one of the templates below:
-
-1. Database Sharing - [Linktree Task Template](/tutorials/linktree/data-sharing)
-2. Data Gathering and AI Pre-Processing
-3. Private Data
-
-If you've made it this far, you might as well try Koii Desktop Node yourself! Join our globally distributed community. We are ready to help on our [Discord](https://discord.gg/koii)
-
-Good luck revolutionizing the world!
-
-We will start with a fairly simple task, utilizing Koii's global network to serve us a **GET** Endpoint. This guide will be a simple demonstration of how to write and deploy a task.
-
-You will learn:
-
-1. How to write a Koii Task.
-2. How to deploy a Koii Task.
-3. How to test a Koii Task.
-
-## Possible Usecases
-
-Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are some nodes running your task, the data that you have decided to store (in our case, Hello World) will not get lost.
+Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are any nodes running your task, the data that you have decided to store (in our case, _Hello World_) will not get lost.
