@@ -5,7 +5,9 @@ image: img/thumbnail.png
 sidebar_label: REST APIs
 ---
 
-To enhance our workflow, we will implement a REST API to retrieve the data stored in NeDB. This can be achieved by creating a GET request. To accomplish this, we navigate to the index.js file and add our GET endpoint at the end of the file, utilizing the exposed app object, similar to how we do it in an express app.
+import Tooltip from "@site/src/components/tooltip";
+
+To enhance our workflow, we will implement a REST API to retrieve the data stored in NeDB. This can be achieved by creating a GET request. To accomplish this, we navigate to the index.js file and add our GET endpoint at the end of the file, utilizing the exposed app object, similar to how we do it in an <Tooltip text="Express"/> app.
 
 In the template there is a block of if statement, within which we will define our endpoint.
 
