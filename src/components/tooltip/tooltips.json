@@ -1,5 +1,7 @@
 {
+    "k2 task template": ["Koii Network's Task Template", "https://github.com/koii-network/task-template"],
     "koii desktop node": ["A GUI that allows users to run tasks", "/run-a-node/task-nodes/how-to-run-a-desktop-node"],
+    "hello world task": ["Our task tutorial that explains the basics", "/quickstart/hello-world/introduction"],
     "ministry of truth": ["A fictional ministry that falsifies historical events, from the book 1984", "https://en.wikipedia.org/wiki/Ministries_in_Nineteen_Eighty-Four"],
     "federated learning": ["A way to train models without directly sharing data ", "http://localhost:3000/concepts/crowdai/federated-learning"],
     "arweave": ["A decentralized storage network", "https://www.arweave.org/"],
