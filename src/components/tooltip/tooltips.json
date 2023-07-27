@@ -1,4 +1,5 @@
 {
+    "federated learning": ["A way to train models without directly sharing data ", "http://localhost:3000/concepts/crowdai/federated-learning"],
     "arweave": ["A decentralized storage network", "https://www.arweave.org/"],
     "polygon": ["Ethereum's Internet of Blockchains", "https://polygon.technology/"],
     "solana": ["High performance blockchain for decentralized apps", "https://solana.com/"],
