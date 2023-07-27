@@ -1,10 +1,21 @@
 ---
-title: Introduction
+title: Welcome to Koii Apps
 image: img/thumbnail.png
-sidebar_label: Introduction
+sidebar_label: Welcome to Koii Apps
 ---
 
-Within this section, you can find application templates, that are extensible and utilize Koii Network.
+![banner](./img/header.svg)
 
-- Decentralized Social Media Template (Linktree)
-- An Unstopable Web Crawler (StoreCat)
+**Koii Apps** is a starting point for app developers to start building their own Web3 Applications.
+
+Each of the projects publicly released here is designed to tackle a real life problem, and become a foundation for your ideas. You can follow the explaination, clone the repository and start experimenting right away!
+
+If you want your completed projects to be highlighted on our website, feel free to contact us via our [**Discord**](https://www.discord.gg/koii) link.
+
+## Our templates:
+
+| Name     |                      Concept |                 Practical Use-Case | Repo           |
+| -------- | ---------------------------: | ---------------------------------: | -------------- |
+| Linktree | Decentralized Social Network | A social media hosted by its users | Github         |
+| StoreCAT |      Distributed Web Crawler |         An unstoppable web crawler | Github         |
+| FedAI    |        Federated AI Training |         An unstoppable web crawler | In Development |

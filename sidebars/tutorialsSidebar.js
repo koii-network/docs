@@ -34,7 +34,7 @@ const sidebars = {
     "linktree/frontend",
     {
       type: "html",
-      value: "Crawlers",
+      value: "StoreCAT",
       className: "sidebar-title",
     },
     "crawlers/introduction",
