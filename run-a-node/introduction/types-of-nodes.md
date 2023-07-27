@@ -5,10 +5,14 @@ image: img/thumbnail.png
 sidebar_label: Koii Nodes
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 ![Banner](./img/Nodes%20vs%20Servers.svg)
 
-**Nodes** are the backbone of the Koii cloud, and we utilize two distinct types of them. [Task Nodes](/run-a-node/introduction/task-nodes) are ordinary computers that run Web3 applications, and [K2 Nodes](/run-a-node/introduction/k2-nodes) powerful devices that track the settlement layer.
+**Nodes** are the backbone of the Koii network.
 
+Our network requires two distinct types of nodes, [Task Nodes](/run-a-node/introduction/task-nodes) are ordinary computers that run Web3 applications, and [K2 Nodes](/run-a-node/introduction/k2-nodes) powerful devices that track the settlement layer.
 
 You can try out the Task Node by downloading the [Koii Desktop Node](https://koii.network/node) and following the [tutorial](/run-a-node/task-nodes/how-to-run-a-desktop-node).
+
 
