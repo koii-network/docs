@@ -14,6 +14,8 @@ Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated.
 Unlike other solutions, you don't need to learn a new language to develop on Koii.
 :::
 
+![banner](../img/nodesandtasks.svg)
+
 ### Wait, but why would I want that?
 
 1.  **Reduce existing hosting costs and increase uptime:**
