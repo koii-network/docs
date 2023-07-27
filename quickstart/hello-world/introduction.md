@@ -80,6 +80,6 @@ Again, you can use the <Tooltip text="Koii SDK"/> to create and manage tasks.
 
 ## How to build on KOII?
 
-In the following pages, we will step-by-step cover how to build a simple <Tooltip text="REST API"/> that runs on KOII Network.
+In the following pages, we will step-by-step cover how to build a simple **REST API** that runs on KOII Network.
 
 Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are any nodes running your task, the data that you have decided to store (in our case, _Hello World_) will not get lost.
