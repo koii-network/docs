@@ -7,7 +7,7 @@ interface PlayerProps {
 
 const VideoPlayer: React.FC<PlayerProps> = ({ link }) => {
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <ReactPlayer url={link} />
     </div>
   );
