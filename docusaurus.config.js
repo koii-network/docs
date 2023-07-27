@@ -634,7 +634,7 @@ const config = {
 
           {
             label: "📖 Koii Apps",
-            to: "/tutorials/linktree/intro",
+            to: "/tutorials/koii-apps/introduction",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
