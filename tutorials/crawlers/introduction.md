@@ -1,8 +1,8 @@
 ---
-title: "Introduction to StoreCAT"
+title: "Introduction to Web Crawlers via KOII"
 description: Experiment with your Koii task
 image: img/thumbnail.png
-sidebar_label: Introduction to StoreCAT
+sidebar_label: Introduction to Web Crawlers via KOII
 ---
 
 ![banner](./img/crawler.svg)
