@@ -14,7 +14,7 @@ To begin, clone the task template:
  cd hello-world
 ```
 
-Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed before moving forward.
+Make sure you have [node](https://nodejs.org/en/), [npm](https://www.npmjs.com/), and [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed before moving forward.
 
 ## What's in the template?
 
@@ -74,6 +74,6 @@ By implementing and modifying these methods, we will create a comprehensive and 
 :::tip Final Notes
 The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
 
-If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us at [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us at [Discord](https://discord.com/invite/koii).
 
 :::
