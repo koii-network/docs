@@ -23,11 +23,11 @@ const sidebars = {
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
 
-    {
-      type: "html",
-      value: "Koii Command Line Tool (CLI)",
-      className: "sidebar-title top-margin",
-    },
+    // {
+    //   type: "html",
+    //   value: "Koii Command Line Tool (CLI)",
+    //   className: "sidebar-title top-margin",
+    // },
     {
       type: "category",
       label: "Koii Command Line Tool",
@@ -53,6 +53,7 @@ const sidebars = {
       value: "Koii Task Development Kit (TDK)",
       className: "sidebar-title top-margin",
     },
+    "write-a-koii-task/task-development-kit-tdk/introduction",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
