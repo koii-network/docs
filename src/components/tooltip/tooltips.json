@@ -1,5 +1,6 @@
 {
     "k2 task template": ["Koii Network's Task Template", "https://github.com/koii-network/task-template"],
+    "koii leaderboard": ["An incentivized game for early adopters", "https://blog.koii.network/Koii-Leaderboard/"],
     "koii desktop node": ["A GUI that allows users to run tasks", "/run-a-node/task-nodes/how-to-run-a-desktop-node"],
     "hello world task": ["Our task tutorial that explains the basics", "/quickstart/hello-world/introduction"],
     "ministry of truth": ["A fictional ministry that falsifies historical events, from the book 1984", "https://en.wikipedia.org/wiki/Ministries_in_Nineteen_Eighty-Four"],
@@ -168,3 +169,4 @@
     "vue.js": ["Open-source JavaScript framework for building user interfaces", "https://www.google.com/"],
     "typescript": ["Open-source language enhancing JavaScript by adding static type definitions", "https://www.google.com/"]
 }
+
