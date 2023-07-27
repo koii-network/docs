@@ -28,9 +28,9 @@ Make sure you have [node](https://nodejs.org/en/), npm, and [yarn](https://class
 
 It houses three key files: `submission.js`, `audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, enabling you to control the core functionality of the task.
 
-The reason for separating these files is to allow for a more modular approach to task development. This allows you to easily modify and test your task logic without having to worry about the other aspects of the task. In order to understand the theory better, please refer to the <Tooltip text="Runtime Flow"/>.
+This structure allows a modular approach to task development. By **only utilizing these three files**, you can easily modify and test your task logic without having to worry about the other aspects. In order to understand the theory behind, please refer to the <Tooltip text="Runtime Flow"/>.
 
-In the `index.js` file, all these functions are combined as a task, which is then imported and used in `corelogic.js`. It is advisable to organize separate features into sub-files and import them into the relevant files before web-packing for better code management and maintainability. This modular approach allows for a more organized and efficient development process.
+And finally, in the `index.js` file, all these functions are combined as a task, which is then imported and used in `corelogic.js`. It is advisable to organize separate features into sub-files and import them into the relevant files before web-packing for better code management and maintainability. This modular approach allows for a more organized and efficient development process.
 
 ### The `submission.js`
 
@@ -38,7 +38,7 @@ In the `submission.js` file, there are a total of 3 methods that allow you to de
 
 | Method              | Description                                                                                                                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `task()`            | The logic for what your task should do goes here.                                                                                                                                                  |
+| **`task()`**        | The logic for what your task should do goes here.                                                                                                                                                  |
 | `fetchSubmission()` | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored. |
 | `submitTask()`      | This method calls a `namespace` method and submits the task's results/work to K2.                                                                                                                  |
 |                     |
