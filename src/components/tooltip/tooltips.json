@@ -31,6 +31,7 @@
     "port": ["placeholder", "https://docs.koii.network/"],
     "sybil attacks": ["placeholder", "https://en.wikipedia.org/wiki/Sybil_attack"],
     "proof of history": ["placeholder", "https://docs.koii.network/"],
+    "proof of stake": ["placeholder", "https://docs.koii.network/"],
     "immutable ledger": ["placeholder", "https://docs.koii.network/"],
     "compute task": ["placeholder", "/develop/koii-task-101/what-are-tasks/"],
     "timestamp": ["placeholder", "https://docs.koii.network/"],
