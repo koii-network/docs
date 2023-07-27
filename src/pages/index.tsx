@@ -21,12 +21,12 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description='Koii is Web3, for everyone.'
+      description="Koii is Web3, for everyone."
     >
       <HomepageHeader />
       <Cta />
       <Cta2 />
-      <ExploreTopics />
+      {/*   <ExploreTopics /> */}
       <Discord />
     </Layout>
   );
