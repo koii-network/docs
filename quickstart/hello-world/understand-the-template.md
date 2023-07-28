@@ -22,7 +22,7 @@ Make sure you have [node](https://nodejs.org/en/), [npm](https://www.npmjs.com/)
 
 - `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `_koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more namespace functions.
+- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more namespace functions.
 
 **Task Directory**
 

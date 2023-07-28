@@ -12,6 +12,6 @@ The Koii Task Development Kit includes the task template provided by Koii, which
  cd hello-world
 ```
 
-Once you have cloned the template, you can access the built-in classes and methods that will aid you in the development process. These methods can be found inside the `_koiiNode.js` file located in the `_koiiNode` directory.
+Once you have cloned the template, you can access the built-in classes and methods that will aid you in the development process. These methods can be found inside the `koiiNode.js` file located in the `_koiiNode` directory.
 
 The template equips developers with essential tools and resources to create their custom tasks efficiently. In the upcoming sections, you will explore various usages of the existing methods provided by the template, allowing you to maximize its potential and expedite your task development.
