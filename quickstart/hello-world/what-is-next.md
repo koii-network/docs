@@ -11,7 +11,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 You created an application that lives on the internet and allows you to store data in a decentralized manner. You can now use this application to store any data you want, forever.
 
-The <Tooltip text="Ministry of Truth"/> can no longer change nor censor your data.
+The Ministry of Truth can no longer change nor censor your data.
 
 You can extend your endpoints, add more functionality, and make the application more complex. The journey is just starting!
 

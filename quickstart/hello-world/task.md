@@ -39,7 +39,7 @@ async function task() {
 
 ## `fetchSubmission()`
 
-Upon task completion, the generated results or work will be stored on either <Tooltip text="IPFS"/> or <Tooltip text="NeDB"/> To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet()` method.
+Upon task completion, the generated results or work will be stored on either IPFS or <Tooltip text="NeDB"/> To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet()` method.
 
 To do the same, update `fetchSubmission()` with the code block below:
 
