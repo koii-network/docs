@@ -230,13 +230,6 @@ const config = {
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: [
-              "/microservices-and-tasks/task-development-guide",
-              "/develop/write-a-koii-task/task-development-kit-tdk",
-            ],
-          },
-          {
             to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
           },
@@ -592,173 +585,54 @@ const config = {
             from: "/concepts/community/contact-us",
           },
           {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
-          },
-          {
             to: "/concepts/gradual-concensus/runtime-flow",
             from: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/runtime-environment",
+            from: [
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
+              "/develop/koii-task-101/what-are-tasks/",
+              "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
+              "/develop/koii-task-101/what-are-tasks/runtime-environment",
+              "/develop/koii-task-101/what-are-tasks/key-components/intro",
+              "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
+              "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+              "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
+              "/develop/koii-task-101/what-are-tasks/key-components/auth-and-security",
+              "/develop/designing-tasks/staking-and-voting",
+              "/develop/designing-tasks/securing-task",
+              "/develop/designing-tasks/using-reputation",
+              "/develop/write-a-koii-task/task-development-kit-tdk/",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
+              "/develop/write-a-koii-task/task-development-guide/",
+              "/develop/write-a-koii-task/task-development-guide/executable-structure/",
+              "/develop/write-a-koii-task/task-development-guide/executable-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
+              "/develop/write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
+              "/develop/write-a-koii-task/task-development-guide/k2-task-template/",
+              "/develop/write-a-koii-task/task-development-guide/k2-task-template/task-function",
+              "/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+              "/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
+            ],
           },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/key-components/intro",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/koii-task-101/what-are-tasks/key-components/auth-and-security",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/designing-tasks/staking-and-voting",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/designing-tasks/securing-task",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/designing-tasks/using-reputation",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/executable-structure/setup",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/k2-task-template/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/k2-task-template/task-function",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-flow/",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-flow/compile-task",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
-          },
+
           {
             to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/",
@@ -1150,18 +1024,6 @@ const config = {
           if (existingPath.includes("/concepts/community")) {
             return [
               existingPath.replace("/concepts/community", "/develop/support"),
-            ];
-          }
-          if (
-            existingPath.includes(
-              "/develop/write-a-koii-task/task-development-kit-tdk/"
-            )
-          ) {
-            return [
-              existingPath.replace(
-                "/develop/write-a-koii-task/task-development-kit-tdk/",
-                "/develop/microservices-and-tasks/task-development-kit-tdk/"
-              ),
             ];
           }
           if (
