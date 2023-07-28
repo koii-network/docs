@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 ## What is Proof of Real Traffic?
 
-Proof of Real Traffic (PoRT) is a cryptographic primitive including a signature from a specific consumer wallet. Each viewer creates a signature and then hashes over it to find a PoRT with a specific <Tooltip text="difficulty factor"/> generating a <Tooltip text="PoW"/> that uniquely represents the content and viewer.
+Proof of Real Traffic (PoRT) is a cryptographic primitive including a signature from a specific consumer wallet. Each viewer creates a signature and then hashes over it to find a PoRT with a specific difficulty factor generating a PoW that uniquely represents the content and viewer.
 
 ![PoRT](./img/PoRT.svg)
 
