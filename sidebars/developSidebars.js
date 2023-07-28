@@ -15,28 +15,6 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
-    // {
-    //   type: "html",
-    //   value: "Introduction",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "introduction/intro",
-    // "introduction/hello-world",
-    // "introduction/planning",
-    // "introduction/setup",
-
-    // {
-    //   type: "html",
-    //   value: "Write your Koii Task",
-    //   className: "sidebar-title top-margin",
-    // },
-    // "write/write",
-
-    // {
-    //   type: "html",
-    //   value: "Deployment",
-    //   className: "sidebar-title top-margin",
-    // },
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -44,87 +22,12 @@ const sidebars = {
     },
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
-    /*     {
-      type: "category",
-      label: "Wallet Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/wallet-functions/wallet-functions",
-      },
-      collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/wallet-functions/load-wallet",
-        "koii-software-toolkit-sdk/wallet-functions/generate-wallet",
-      ],
-    }, */
-    /*     {
-      type: "category",
-      label: "Register Content",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/register-content/register-content",
-      },
-      collapsed: true,
-      items: ["koii-software-toolkit-sdk/register-content/burn-koii-attention"],
-    }, */
-    /*   {
-      type: "category",
-      label: "Basic Utility Functions",
-      link: {
-        type: "doc",
-        id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
-      },
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Koii State",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
-            "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
-          ],
-        },
-        {
-          type: "category",
-          label: "NFTs",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/nfts/nfts",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
-          ],
-        },
-        {
-          type: "category",
-          label: "Arweave And General Utility",
-          link: {
-            type: "doc",
-            id: "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/arweave-and-general-utility",
-          },
-          collapsed: true,
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
-          ],
-        },
-      ],
-    }, */
 
-    {
-      type: "html",
-      value: "Koii Command Line Tool (CLI)",
-      className: "sidebar-title top-margin",
-    },
+    // {
+    //   type: "html",
+    //   value: "Koii Command Line Tool (CLI)",
+    //   className: "sidebar-title top-margin",
+    // },
     {
       type: "category",
       label: "Koii Command Line Tool",
@@ -150,6 +53,7 @@ const sidebars = {
       value: "Koii Task Development Kit (TDK)",
       className: "sidebar-title top-margin",
     },
+    "write-a-koii-task/task-development-kit-tdk/introduction",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",

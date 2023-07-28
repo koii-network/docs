@@ -14,14 +14,14 @@ export const Cta2 = () => {
             " " +
             styles.card1
           }
-          href="https://koii.network/node"
+          href="/tutorials/koii-apps/introduction"
           style={{
             textDecoration: "no-underline",
           }}
           onClick={handleClick}
         >
-          <div className={"md:pl-5 pl-3" + " "+ styles.img}>
-            <img src={"img/Group 6.svg"} className={'w-full'} role="img" />
+          <div className={"md:pl-5 pl-3" + " " + styles.img}>
+            <img src={"img/Group 6.svg"} className={"w-full"} role="img" />
           </div>
           <div className="md:pr-5 pr-3">
             <h2
@@ -31,7 +31,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-              Distributed Computing
+              Koii Apps
             </h2>
             <p
               className={
@@ -40,7 +40,7 @@ export const Cta2 = () => {
                 styles.ctaText2
               }
             >
-              Get the quick-start developer guide.
+              Start with a ready-to-deploy template.
             </p>
           </div>
         </a>
@@ -50,7 +50,7 @@ export const Cta2 = () => {
             " " +
             styles.card2
           }
-          href="https://koii.network/node"
+          href="/concepts/introduction/welcome"
           style={{
             textDecoration: "no-underline",
           }}
@@ -64,7 +64,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-              What are Koii Nodes?
+              Introduction to Koii
             </h2>
             <p
               className={
@@ -73,11 +73,11 @@ export const Cta2 = () => {
                 styles.ctaText2
               }
             >
-              This node tutorial makes it easy to join.
+              Welcome to the New Internet.
             </p>
           </div>
-          <div className={"md:pr-5 pr-3" + " "+ styles.img}>
-            <img src={"img/Group 7.svg"} className={'w-full'} role="img" />
+          <div className={"md:pr-5 pr-3" + " " + styles.img}>
+            <img src={"img/Group 32.svg"} className={"w-full"} role="img" />
           </div>
         </a>
       </div>

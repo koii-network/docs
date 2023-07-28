@@ -1,23 +1,22 @@
 ---
-title: Let's Deploy
+title: Updating a Deployed Task
 description: Your one-stop shop for cross-chain user-engagement.
 image: img/thumbnail.png
-sidebar_label: Let's Deploy
+sidebar_label: Updating a Deployed Task
 ---
 
-After creating a Koii Task, it is highly recommended that you include a detailed description of the task so that node operators who wish to run your task have all the necessary information.
+After deploying a Koii Task, if you wish to update it, follow these steps:
 
-The configuration file `config-task.yml` contains information about your task. A sample `config-task.yml` file can be found in the root directory of your task folder.
+- Firstly, make all the desired changes in your code, implementing the necessary modifications and improvements.
+- Navigate to the config-task.yml file located in the root directory of your project.
 
-:::info
-The `secret_web3_storage_key` variable requires you to have a [Web3.storage account](https://web3.storage/); create an account and provide your API secret key into it.
-:::
+In the `config-task.yml` file, you will find instructions and fields where you need to fill in your task's updated information. Ensure you include the `task_id` of the task that needs to be re-deployed. This `task_id` is essential to identify the specific task that requires updating.
 
-Follow the instructions in the file and fill in your task's information:
+Once you have made the necessary changes and provided the updated information in the config-task.yml file, you can proceed with the re-deployment of your task.
 
 ```yml
 #Provide the taskId if you are updating the task
-task_id: ""
+task_id: "<Your Previous Task Id>"
 # Name and description of your task
 task_name: "web3-revolution"
 task_description: 'This is a simple web3 task that returns "Hello, World!"'
@@ -84,15 +83,7 @@ requirementsTags:
     value: "OSX"
 ```
 
-The `create-task-cli` is used to register a new task on K2.
-
-:::note
-Before proceeding, download the Koii CLI [here](/quickstart/command-line-tool/koii-cli/install-cli), create a [Koii wallet](/quickstart/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/quickstart/command-line-tool/koii-cli/send-and-receive-tokens).
-:::
-
-After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
-
-- Run the below command to compile your task code.
+- After updating your code and `config-task.yml`, run the below command to compile your task code.
 
 ```bash
 yarn webpack
@@ -104,19 +95,7 @@ yarn webpack
 npx @_koii/create-task-cli@latest
 ```
 
-- It prompts for your wallet path:
-
-```bash
-✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-```
-
-:::tip
-Run `koii config get` to get the information of your wallet path.
-
-Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly. Remember to save your wallet path.
-:::
-
-- Next, you will be prompted with seven options, select `Create a new task` to create a new task:
+- Next, you will be prompted with seven options, select `update existing task` to update your existing task:
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
@@ -142,11 +121,11 @@ Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cl
 ```bash
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
-Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
+Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees is taken from the last task›
 ```
 
 - Hit `y` to subtract the necessary amount of KOII for your task creation.
-- Finally, the details of your task, including the task ID, are returned.
+- Finally, the details of your updated task, including the task ID, are returned.
 
 ```bash
 Calling Create Task

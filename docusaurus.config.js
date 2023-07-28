@@ -634,7 +634,7 @@ const config = {
 
           {
             label: "📖 Koii Apps",
-            to: "/tutorials/linktree/intro",
+            to: "/tutorials/koii-apps/introduction",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
@@ -642,7 +642,7 @@ const config = {
 
           {
             label: "🏗️ Tools",
-            to: "/develop/category/koii-command-line-tool",
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
