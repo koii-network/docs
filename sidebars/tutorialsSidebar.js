@@ -44,7 +44,11 @@ const sidebars = {
       value: "Web Crawler",
       className: "sidebar-title",
     },
-    "crawlers/introduction",
+    "steam-daily-specials/steam-daily-specials-task",
+    "steam-daily-specials/setup-main",
+    "steam-daily-specials/setup-db-api",
+    "steam-daily-specials/setup-audit",
+    "steam-daily-specials/setup-submit",
   ],
 };
 
