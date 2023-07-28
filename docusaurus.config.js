@@ -134,72 +134,69 @@ const config = {
             from: "/introduction/readme",
           },
           {
-            to: "/quickstart/command-line-tool/koii-cli/install-cli",
-            from: "/koii-software-toolkit-sdk/using-the-cli",
+            to: "/develop/category/koii-command-line-tool",
+            from: ["/koii-software-toolkit-sdk/using-the-cli", "/quickstart/command-line-tool/koii-cli/install-cli"],
           },
           {
             to: "/concepts/introduction/tools",
             from: "/introduction/tools",
           },
+          // {
+          //   to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
+          //   from: ["/build-dapps-with-koii/welcome-to-koii-x", "/develop/build-dapps-with-koii/welcome-to-koii-x/"],
+          // },
           {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
-            from: "/build-dapps-with-koii/welcome-to-koii-x",
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: ["/koii-software-toolkit-sdk/what-is-the-koii-sdk", "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk"],
           },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/",
+          //   from: "/microservices-and-tasks/what-are-tasks",
+          // },
           {
-            to: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/",
-            from: "/microservices-and-tasks/what-are-tasks",
-          },
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/",
+            to: "/concepts/web3/proof-of-real-traffic",
             from: [
               "/earning-koii/proof-of-real-traffic-port",
               "/earning-koii/proof-of-real-traffic/",
+              "/develop/attention-mining/proof-of-real-traffic/"
             ],
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
-            from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
+            to: "/concepts/web3/attention-mining",
+            from: ["/earning-koii/proof-of-real-traffic-port/attention-mining", "/develop/attention-mining/proof-of-real-traffic/attention-mining"],
           },
-          {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
-            from: "/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
-          },
-          {
-            to: "/develop/build-dapps-with-koii/template-library/",
-            from: "/build-dapps-with-koii/template-library",
-          },
+          // {
+          //   to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
+          //   from: "/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
+          // },
+          // {
+          //   to: "/develop/build-dapps-with-koii/template-library/",
+          //   from: "/build-dapps-with-koii/template-library",
+          // },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/earning-koii/running-task-nodes",
           },
+          // {
+          //   to: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
+          //   from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
+          // },
           {
-            to: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
-            from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/microservices-and-tasks/gradual-consensus",
+            to: "/concepts/gradual-concensus/runtime-flow",
+            from: ["/microservices-and-tasks/gradual-consensus", "/develop/koii-task-101/what-are-tasks/gradual-consensus"],
           },
           {
             to: "/concepts/introduction/philosophy",
             from: "/introduction/philosophy",
           },
-          {
-            to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
-            from: "/build-dapps-with-koii/using-nfts-as-content",
-          },
-          {
-            to: "/quickstart/koii-software-toolkit-sdk/register-content/",
-            from: "/earning-koii/registering-content",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/microservices-and-tasks/what-are-tasks/gradual-consensus",
-          },
+          // {
+          //   to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
+          //   from: "/build-dapps-with-koii/using-nfts-as-content",
+          // },
+          // {
+          //   to: "/quickstart/koii-software-toolkit-sdk/register-content/",
+          //   from: ["/earning-koii/registering-content", "/quickstart/koii-software-toolkit-sdk/register-content/"],
+          // },
           {
             to: "/concepts/settlement-layer/native-contracts/the-task-contract",
             from: "/settlement-layer/native-contracts/the-task-contract",
@@ -213,43 +210,24 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/task-tutorials/google-doodle-task/",
-            from: "/microservices-and-tasks/google-doodle-task",
-          },
-          {
-            to: "/quickstart/command-line-tool/create-task-cli",
+            to: "/develop/command-line-tool/create-task-cli",
             from: [
               "/koii-software-toolkit-sdk/create-task-cli",
               "/develop/koii-software-toolkit-sdk/create-task-cli",
+              "/quickstart/command-line-tool/create-task-cli"
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
-            from: "/microservices-and-tasks/task-development-guide/executable-structure",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/",
-            from: "/microservices-and-tasks/task-development-guide",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
-            from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
-            from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
-            from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
+            from: ["/microservices-and-tasks/task-development-guide", '/develop/write-a-koii-task/task-development-kit-tdk'],
           },
           {
             to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/finnie-for-devs/welcome-to-finnie",
-            from: "/finnie-wallet/welcome-to-finnie/content-collectives",
+            to: "/concepts/finnie-wallet/introduction",
+            from: ["/finnie-wallet/welcome-to-finnie/content-collectives", "/develop/finnie-for-devs/welcome-to-finnie"],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
@@ -272,8 +250,8 @@ const config = {
           // },
 
           {
-            to: "/quickstart/command-line-tool/task-node-cli",
-            from: "/develop/koii-software-toolkit-sdk/task-node-cli",
+            to: "/develop/command-line-tool/task-node-cli",
+            from:[ "/develop/koii-software-toolkit-sdk/task-node-cli", '/quickstart/command-line-tool/task-node-cli'],
           },
           {
             to: "/koii/ways-to-get-koii/grants-program",
@@ -298,30 +276,21 @@ const config = {
             from: "/concepts/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/",
-            from: "/concepts/earning-koii/proof-of-real-traffic/",
-          },
-
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
-            from: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
+            to: "/concepts/web3/registering-content",
+            from: ["/concepts/earning-koii/proof-of-real-traffic/registering-content", "/develop/attention-mining/proof-of-real-traffic/registering-content"],
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/registering-content",
-            from: "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+            to: "/concepts/web3/sybil-attack-prevention",
+            from:[ "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention", "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention"],
           },
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
-            from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
-          },
-          {
-            from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
-            to: "/develop/designing-tasks/staking-and-voting",
-          },
-          {
-            from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
-            to: "/develop/designing-tasks/securing-task",
-          },
+          // {
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
+          //   to: "/develop/designing-tasks/staking-and-voting",
+          // },
+          // {
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
+          //   to: "/develop/designing-tasks/securing-task",
+          // },
           {
             to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
             from: [
@@ -340,79 +309,46 @@ const config = {
             to: "/run-a-node/k2-nodes/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
+          // },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+          // },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
+          // },
           {
-            from: "/develop/microservices-and-tasks/what-are-tasks/",
-            to: "/develop/koii-task-101/what-are-tasks/",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
-            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
-            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
-          },
-          {
-            from: "/develop/microservices-and-tasks/google-doodle-task/",
-            to: "/develop/task-tutorials/google-doodle-task/",
-          },
-
-          {
-            to: "/develop/task-tutorials/google-doodle-task/getting-started",
-            from: "/develop/microservices-and-tasks/google-doodle-task/getting-started",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
-            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-task-functions",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
-            from: "/develop/microservices-and-tasks/google-doodle-task/audit-submission-value",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
-            from: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
-            from: "/develop/microservices-and-tasks/google-doodle-task/audit-distribution-list",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
-            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-executable-code",
-          },
-          {
-            to: "/develop/task-tutorials/linktree-task/intro",
+            to: "/tutorials/linktree/intro",
             from: "/develop/microservices-and-tasks/linktree-task/intro",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/data-storage",
+            to: "/tutorials/linktree/data-storage",
             from: "/develop/microservices-and-tasks/linktree-task/data-storage",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/data-sharing",
+            to: "/tutorials/linktree/data-sharing",
             from: "/develop/microservices-and-tasks/linktree-task/data-sharing",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/rest-api",
+            to: "/tutorials/linktree/rest-apis",
             from: "/develop/microservices-and-tasks/linktree-task/rest-api",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/auth-list",
+            to: "/tutorials/linktree/user-authentication",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
           },
-          {
-            to: "/develop/designing-tasks/using-reputation",
-            from: "/develop/microservices-and-tasks/using-reputation",
-          },
+          // {
+          //   to: "/develop/designing-tasks/using-reputation",
+          //   from: "/develop/microservices-and-tasks/using-reputation",
+          // },
           {
             to: "/concepts/introduction/welcome",
             from: [
@@ -420,14 +356,14 @@ const config = {
               "/concepts/koii-summary/social-tech",
             ],
           },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
-            from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/",
-            from: ["/tasks", "/task"],
-          },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
+          //   from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
+          // },
+          // {
+          //   to: "/develop/koii-task-101/what-are-tasks/",
+          //   from: ["/tasks", "/task"],
+          // },
           {
             from: "/concepts/the-koii-token/network-economics",
             to: "/koii/the-koii-token/network-economics",
