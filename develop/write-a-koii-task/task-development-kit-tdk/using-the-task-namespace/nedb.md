@@ -32,9 +32,24 @@ This code is setting up a wrapper class for a NeDB database using the nedb-promi
   }
 ```
 
-It will connect to the database in the `namespace` folder if the task is administered by a task node, otherwise it will connect to a local database.
+It will connect to the database in the `_koiiNode` folder if the task is administered by a task node, otherwise it will connect to a local database.
 
-## storeSet
+## Built-in methods
+
+The `_koiiNode` directory contains the `namespaceWrapper` object, which offers built-in methods to support NeDB operations in your tasks. Below are the explanations and usage examples of the provided methods:
+
+### getDB
+
+The `getDB` method is used to obtain the instance of your database object. This instance can be utilized for more customized database operations tailored to your specific needs.
+Usage example:
+
+```js
+const { namespaceWrapper } = require("./_koiiNode/koiiNode");
+
+const db = await namespaceWrapper.getDB();
+```
+
+### storeSet
 
 This is the namespace wrapper call for NeDB `insert` method
 
@@ -50,7 +65,7 @@ async storeGet(key) {
   }
 ```
 
-Example:
+Usage example:
 
 ```javascript
 await namespaceWrapper.storeSet("round", "-1"); // store data
@@ -62,6 +77,8 @@ console.log("ROUND OF TASK SET TO", round_task);
 You can prevent duplicate entries in NeDB by creating a unique index on the field(s) that should be unique. Here's a simple example:
 
 ```javascript
+const db = await namespaceWrapper.getDB();
+
 // Ensure index
 db.ensureIndex({ fieldName: "uniqueField", unique: true }, function (err) {
   if (err) console.log(err); // If there are duplicate values when you apply the unique index, you'll get an error.
@@ -70,7 +87,7 @@ db.ensureIndex({ fieldName: "uniqueField", unique: true }, function (err) {
 
 :::
 
-## storeGet
+### storeGet
 
 This is the namespace wrapper call for levelDB `findOne` method
 
@@ -90,7 +107,7 @@ async storeGet(key): Promise<string> {
   }
 ```
 
-Example:
+Usage example:
 
 ```javascript
 async function execute() {
@@ -103,10 +120,9 @@ async function execute() {
 You can add more functions to your task by adding them to the `namespaceWrapper` class or create your own `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
 
 ```javascript
-const { namespaceWrapper } = require('../namespaceWrapper');
+const { namespaceWrapper } = require("./_koiiNode/koiiNode");
 
-const db = namespaceWrapper.db
-
+const db = await namespaceWrapper.getDB();
   // return items by name
   async getList() {
   const itemList = await db.find({});
