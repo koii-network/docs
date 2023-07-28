@@ -19,6 +19,6 @@ GPUs have become the preferred hardware for accelerating ML training due to thei
 While CPUs can handle machine learning tasks, they are typically less efficient than GPUs for training deep learning models due to architectural distinctions. GPUs possess numerous cores optimized for parallel processing, making them more adept at matrix operations and computations commonly used in neural networks.
 
 However, if a significant number of CPUs are available, employing them in a distributed manner allows for <Tooltip text="parallelizing"/>
-specific computations, leading to faster training processes. Techniques such as data parallelism and model parallelism can be utilized to distribute the workload across CPUs.
+specific computations, leading to faster training processes. Techniques such as data parallelism and model parallelism can be used to distribute the workload across CPUs.
 
 Checkout how we tackle this problem in our <Tooltip text="federated learning"/> section.
