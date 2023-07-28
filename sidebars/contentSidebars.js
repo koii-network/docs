@@ -30,6 +30,33 @@ const sidebars = {
     // },
     // "getstarted/globalcomputer",
     // "getstarted/koiinetwork",
+
+    {
+      type: "html",
+      value: "Koii Tasks 101",
+      className: "sidebar-title top-margin",
+    },
+    "what-are-tasks/what-are-tasks/what-are-tasks",
+
+    "what-are-tasks/what-are-tasks/nodes-vs-servers",
+    "what-are-tasks/what-are-tasks/gradual-consensus",
+    "what-are-tasks/what-are-tasks/runtime-environment",
+    {
+      type: "category",
+      label: "Key Components",
+      link: {
+        type: "doc",
+        id: "what-are-tasks/what-are-tasks/key-components/intro",
+      },
+      collapsed: true,
+      items: [
+        "what-are-tasks/what-are-tasks/key-components/database-sharding",
+        "what-are-tasks/what-are-tasks/key-components/node-to-node-sync",
+        "what-are-tasks/what-are-tasks/key-components/rest-api",
+        "what-are-tasks/what-are-tasks/key-components/auth-and-security",
+      ],
+    },
+
     {
       type: "html",
       value: "Crowd AI ",
