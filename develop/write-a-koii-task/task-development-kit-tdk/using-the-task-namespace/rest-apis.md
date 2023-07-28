@@ -13,29 +13,30 @@ import Tooltip from "@site/src/components/tooltip";
 
 - Write handlers for requests using various HTTP verbs at different URL paths/routes.
 - Establish standard web application settings, such as the port to use for connection and the location of templates used for response rendering.
-- Add additional request processing <Tooltip text="middleware"/> at any point within the request handling pipeline.
+- Add additional request processing middleware at any point within the request handling pipeline.
 
-The namespace object provides an `app` method for the configuration of an Express app.
+The `koiiNode.js` under the `_koiNode` directory provides an `app` object for creating the REST APIs. It's usage can be demonstrated as below.
 
+<!--
 ```javascript
-if (namespace.app) {
+if (app) {
   // Express app for configuration
   // Write your Express Endpoints here.
   //For Example
-  namespace.express("post", "/accept-cid", async (req, res) => {});
+  app.post("/accept-cid", async (req, res) => {});
 }
-```
+``` -->
 
-The `namespace.express()` method represents the namespace wrapper over express app methods. It takes in 3 arguments:
+<!-- The `namespace.express()` method represents the namespace wrapper over express app methods. It takes in 3 arguments:
 
 - `method` — This is the HTTP method: `post`, `get`, `put`, or `delete`.
 - `path` — This is the endpoint path appended to `namespace`.
-- `callback` — Callback function to be called.
+- `callback` — Callback function to be called. -->
 
 Example:
 
 ```javascript
-namespace.express("post", "/accept-cid", async (req, res) => {
+app.post("/accept-cid", async (req, res) => {
   try {
     const cid = req.body.cid;
     if (cid) {
@@ -48,12 +49,11 @@ namespace.express("post", "/accept-cid", async (req, res) => {
 });
 ```
 
-Express endpoints can be defined at the end of your executable file:
+Express endpoints can be defined in the `index.js` file of your task-template
 
 ```javascript
-// import app from init.js file
-const { app } = require("./init");
-const { namespaceWrapper } = require("./namespaceWrapper");
+// import app from koiiNode.js file
+const { app, namespaceWrapper } = require("../_koiiNode/koiiNode");
 
 async function setup() {
   console.log("IN SETUP");
@@ -68,7 +68,7 @@ async function execute() {
 
 setup().then(execute);
 
-if (namespace.app) {
-  namespace.express("post", "/accept-cid", doSomething());
+if (app) {
+  app.post("/accept-cid", doSomething());
 }
 ```
