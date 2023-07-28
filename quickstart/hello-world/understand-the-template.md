@@ -18,13 +18,13 @@ Make sure you have [node](https://nodejs.org/en/), [npm](https://www.npmjs.com/)
 
 ## What's in the template?
 
-**Core files:**
+**Core files**
 
-- `index.js` — is the hub of your app, and ties together the other pieces. This will be the entry point when your task runs on task nodes.
+- `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `_koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more Namespace functions.
+- `_koiiNode` — is a directory that contains `_koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/) to learn more namespace functions.
 
-**Task Directory:**
+**Task Directory**
 
 It houses three key files: `submission.js`, `audit.js` and `distribution.js`. These files are where you define your task, audit, and distribution logic, enabling you to control the core functionality of the task.
 
@@ -34,7 +34,7 @@ And finally, in the `index.js` file, all these functions are combined as a task,
 
 ### The `submission.js`
 
-In the `submission.js` file, there are a total of 3 methods that allow you to define the actions your task will perform and what it will submit. Here are the descriptions of these methods, which you can modify as per your specific requirements:
+In the `submission.js` file, there are 3 methods that allow you to define the actions your task will perform and what it will submit. Here are the descriptions of these methods, which you can modify as per your specific requirements:
 
 | Method              | Description                                                                                                                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -54,14 +54,14 @@ In the `audit.js` file, there are a total of 2 methods that deal with verifying 
 
 ### The `distribution.js`
 
-In the distribution.js file, there are a total of 4 methods that handle the flow of distributing rewards. You have the flexibility to modify these methods to meet your specific requirements:
+In the distribution.js file, there are a total of 4 methods that handle the flow of distributing rewards. You have the flexibility to modify any of these methods to meet your specific requirements:
 
-| Method                       | Description                                                                                                                                                                                                                                                              |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `generateDistributionList()` | This method contains the logic to generate a [distribution list](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions). We have provided a sample logic that rewards 1 KOII to all the nodes with valid submissions for that round. |
-| `submitDistributionList()`   | Makes a call to a `namespace` method of the task-node to upload the distribution list to K2                                                                                                                                                                              |
-| `validateDistribution()`     | The logic to validate the distribution list goes here and the method will receive the distribution list submitted from the task-state.                                                                                                                                   |
-| `auditDistribution()`        | Makes a call to the `namespace` of task-node to raise an audit against the distribution list if the validation fails.                                                                                                                                                    |
+| Method                       | Description                                                                                                                                                                                                                                                             |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `generateDistributionList()` | This method contains the logic to generate a [distribution list](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions). We have provided a sample code that rewards 1 KOII to all the nodes with valid submissions for that round. |
+| `submitDistributionList()`   | Makes a call to a `namespace` method of the task-node to upload the distribution list to K2                                                                                                                                                                             |
+| `validateDistribution()`     | The logic to validate the distribution list goes here.                                                                                                                                                                                                                  |
+| `auditDistribution()`        | Makes a call to the `namespace` of task-node to raise an audit against the distribution list if the validation fails.                                                                                                                                                   |
 
 :::info
 
@@ -74,6 +74,6 @@ By implementing and modifying these methods, we will create a comprehensive and 
 :::tip Final Notes
 The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
 
-If you encounter any difficulties, feel free to contact us at [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us on [Discord](https://discord.com/invite/koii).
 
 :::
