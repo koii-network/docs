@@ -21,7 +21,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 <!-- add line break below -->
 
-We accomplish all these by utilizing [Koii Nodes](/run-a-node/introduction/types-of-nodes).
+We accomplish all these by utilizing <Tooltip text="Koii Nodes"/>.
 
 ![banner](../img/nodesandtasks.svg)
 
