@@ -456,8 +456,8 @@ const config = {
           //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
           // },
           {
-            to: "/develop/task-tutorials/google-doodle-task/",
-            from: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/",
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
           },
           {
             to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
