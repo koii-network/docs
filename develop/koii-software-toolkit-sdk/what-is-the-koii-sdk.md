@@ -17,7 +17,7 @@ import ContentLink from "@site/src/components/contentLink";
   text="We're building one toolkit for all blockchains"
 />
 
-As any industry matures, standardization and simplification become essential ingredients for promoting long-term growth. While many decentralized networks are still in their early stages, our mission at Koii is to empower developers by giving you as many options as possible when developing new applications.&#x20;
+As the industry progresses and matures, standardization and simplification play vital roles in fostering long-term growth. Although support for various decentralized networks is still in its nascent phase, Koii's mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.&#x20;
 
 Supported networks:
 
@@ -29,37 +29,47 @@ Supported networks:
 - <Tooltip text="NEAR"/> (Coming Soon)
 
 <br />
-We have developed a rich <Tooltip text="SDK"/>  in order to support the creation of Koii tasks and nodes. This section includes key references and full <Tooltip text="API"/>  docs to support these initiatives.
+
+We have curated a comprehensive Tool Kit to offer robust support for Koii task and node development. This Tool Kit equips developers with essential resources and tools to efficiently create, deploy, and manage Koii tasks and nodes. By exploring our API documentation, you can unlock the full potential of the Koii platform and seamlessly build innovative applications.
+
+Koii provides a diverse range of tools and resources to support you throughout your development journey. Here are some of the essential offerings:
 
 ### Web3 SDK
 
-This is the KOII (K2) Javascript API built on the Koii. User can use this SDK to check status and fetch info from the K2 network.
-
-Check more usage [here.](./koii-javascript-api)
+The Web3 SDK is the KOII (K2) Javascript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
 
 ### Koii CLI
 
-Koii CLI provides several features, including but not only:
+The Koii CLI provides a set of valuable features, including:
 
 - Generating a Koii wallet
 - Running Koii test validator
 
-Check the tutorial and try it [here](/develop/category/koii-command-line-tool)
+To learn more about the Koii CLI and its functionalities, you can find additional information [here](/develop/category/koii-command-line-tool)
 
 ### Create Task CLI
 
-Create Task CLI helps you deploy your task to task node in less than 5 minutes! [Prepare your task](/develop/write-a-koii-task/task-development-guide/) and try it [here.](/quickstart/command-line-tool/create-task-cli)
+The Create Task CLI is a powerful tool that allows you to deploy your task to a task node in just under 5 minutes! To get started, you can prepare your task by following the guidelines [here](./quickstart/hello-world/introduction) and then try out the Create Task CLI[here.](/develop/command-line-tool/create-task-cli)
 
 ### Task Node CLI
 
-The task node CLI is a helpful tool used by node operators for 4 different reasons:
+The Task Node CLI serves as a valuable tool utilized by node operators for various purposes, offering four key functionalities:
 
-- Create a task staking wallet
-- Create a distribution wallet
-- Stake tokens on a task
-- Show all tasks
+- Create a Task Staking Wallet:
+  This feature allows node operators to create a wallet specifically designed for staking tokens related to Koii tasks.
 
-Learn more and build complete your task [here](./what-is-the-koii-sdk)
+- Create a Distribution Wallet:
+  Node operators can utilize this functionality to generate a wallet dedicated to distributing rewards for Koii tasks.
+
+- Stake Tokens on a Task:
+  Using this option, node operators can stake tokens on a particular Koii task, enabling them to participate in the task's network and validation process.
+
+- Show All Tasks:
+  This functionality provides node operators with a comprehensive view of all the existing Koii tasks, facilitating better management and oversight.
+
+For detailed information about the Task Node CLI and its capabilities, you can find more details [here](/develop/command-line-tool/task-node-cli).
+
+Learn more and build complete your task [here](./quickstart/hello-world/introduction)
 
 <!-- ### Looking for a quick start?
 

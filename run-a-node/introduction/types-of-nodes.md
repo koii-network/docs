@@ -5,13 +5,15 @@ image: img/thumbnail.png
 sidebar_label: Koii Nodes
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 ![Banner](./img/Nodes%20vs%20Servers.svg)
 
-:::tip In a nutshell
-**Nodes** are the backbone of the Koii cloud, and we utilize two distinct types of them. [Task Nodes](/run-a-node/introduction/task-nodes) are ordinary computers that run Web3 applications, and [K2 Nodes](/run-a-node/introduction/k2-nodes) powerful devices that track the settlement layer.
+**Nodes** are the backbone of the Koii network. We are trying to build a global, decentralized network that will rival the current monopolies on computing power. By downloading the Koii Desktop Node, your laptop can also be a part of our global network that aims to revolutionalize and democratize the world, as a <Tooltip text="Task Node"/> that run Web3 applications.
 
-::::info
-You can try out the Task Node by downloading the [Koii Desktop Node](https://koii.network/node) and following the [tutorial](/run-a-node/task-nodes/how-to-run-a-desktop-node).
-::::
+By choosing to do so, on top of helping developers all kinds of projects, you also will gain rewards in the form of <Tooltip text="KOII"/> tokens Alternatively, if you have a relatively powerful machine, you can convert it to become a <Tooltip text="K2 Node"/> which tracks the <Tooltip text="settlement layer"/>.
 
+:::tip
+As an early adopter, the amount of <Tooltip text="KOII"/> tokens you will get will be much higher. We are also incentivizing running a node by giving extra rewards via <Tooltip text="Koii Leaderboard"/>.
 :::
+Interested? You can try out the Task Node by downloading the <Tooltip text="Koii Desktop Node"/> and following our [tutorial](/run-a-node/task-nodes/how-to-run-a-desktop-node).
