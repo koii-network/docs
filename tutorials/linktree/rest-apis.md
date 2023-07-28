@@ -29,7 +29,7 @@ Other APIs include `GET /logs`, which returns the log of the node to help debug 
 
 For all types of information you might need or generate in your task, it's essential to have an API for it.
 
-## Testing APIs
+## How to test APIs
 
 To test your APIs, run:
 
@@ -37,6 +37,6 @@ To test your APIs, run:
 yarn start
 ```
 
-This will start a local server but won't run the task. For example, If you have a GET API called `/linktree/list`, your testing URL should be `localhost:10000/linktree/list`. You can create a testing module using Axios or use Postman to test your API.
+This will start a local server but won't run the task. For example, If you have a GET API called `/linktree/list`, your URL should be `localhost:10000/linktree/list`. You can create a testing module using Axios or use Postman to test your API.
 
 In the linktree task’s test folder, we have provided a module named `test_endpoint.js` that already has the Axios setup. You can use it to test your `GET` or `POST` endpoint.
