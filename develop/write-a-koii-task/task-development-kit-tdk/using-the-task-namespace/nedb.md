@@ -9,7 +9,7 @@ sidebar_label: NeDB
 
 [NeDB](https://www.npmjs.com/package/nedb) is a key-value storage library that provides an ordered mapping from string keys to string values. Embedded persistent or in memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency.
 
-The `namespaceWrapper` class provides some methods that utilize NeDB's `insert(key,value)` and `findOne(key)` basic operations for storing and retrieving data respectively.
+The `namespaceWrapper` class provides some methods that use NeDB's `insert(key,value)` and `findOne(key)` basic operations for storing and retrieving data respectively.
 
 ## Setup explained
 
