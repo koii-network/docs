@@ -1,4 +1,7 @@
 {
+    "ipfs": ["test", "/quickstart/hello-world/introduction"],
+    "nedb": ["test", "/quickstart/hello-world/introduction"],
+
     "k2 task template": ["Koii Network's Task Template", "https://github.com/koii-network/task-template"],
     "koii leaderboard": ["An incentivized game for early adopters", "https://blog.koii.network/Koii-Leaderboard/"],
     "koii desktop node": ["A GUI that allows users to run tasks", "/run-a-node/task-nodes/how-to-run-a-desktop-node"],
