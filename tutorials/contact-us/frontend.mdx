@@ -1,0 +1,67 @@
+---
+title: Connect Frontend
+image: img/thumbnail.png
+sidebar_label: Connect Frontend
+---
+
+Establishing a connection between the frontend and backend is a fundamental aspect of building a fully functional web application. This integration facilitates data communication and interaction between the user interface and the server.
+
+In this section, you will learn how to link the frontend of your project to the linktree task. The process of connecting a frontend to a deployed Koii task closely resembles connecting to a regular backend. By following these steps, you can seamlessly achieve this integration:
+
+### 1. Creating API Functions
+To enable communication with the backend's endpoints (e.g., GET, POST, PUT, DELETE), you need API functions that handle sending HTTP requests. Begin by creating functions for various HTTP requests.
+
+Below is an example illustrating the implementation of the **POST** request method in the [linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143):
+```javascript
+export async function setContact(nodeList, payload) {
+  try {
+    let nodeListIndex = 0;
+    let result;
+
+    while (!result && nodeList[nodeListIndex]) {
+      result = await axios
+        .post(`${nodeList[nodeListIndex]}/task/${TASK_ADDRESS}/contact`, {
+          payload,
+        })
+        .then((res) => res.data)
+        .catch((error) => console.log(`Error setting contact:`, error));
+      nodeListIndex++;
+    }
+
+    if (result) {
+      return result.message;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+ // ... check the repository for the complete code
+```
+:::note
+The backend endpoint is `${node}/task/${TASK_ADDRESS}/linktree/`
+- **`node`** refers to the first node that sends a successful response.
+- **`TASK_ADDRESS`** represents the address to which the task was deployed.
+
+In the provided code block, we iterate through the `nodeList` until we receive a successful response. If you log the backend endpoint, you will obtain a link similar to this: "**https://tasknet.koii.live/task/A2J2vyYqzuXBCftRMfwx5qcq5JGE9632FzceTvC2suZ9/linktree/**"
+:::
+
+
+### 2. Integrating User Interface
+Now, integrate the API function into the user interface, as demonstrated below:
+
+```js
+import { setLinktree } from "../api";
+
+const CreateLinktree = () => {
+ // ... check the repository for the full code 
+
+ const res = await setLinktree(
+      payload,
+      publicKey,
+      nodeList,
+      username
+    );
+
+// Component JSX and logic
+```
+By adhering to these guidelines, you will enable seamless interaction between your frontend and backend, ensuring smooth data flow and enhanced functionality of your web application. For comprehensive code examples and further details, please consult the [repository](https://github.com/koii-network/linktree-app).
