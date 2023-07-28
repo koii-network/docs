@@ -8,8 +8,6 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-![banner](../img/nodesandtasks.svg)
-
 ### Building on Koii helps:
 
 1.  **Reduce existing hosting costs and increase uptime**
@@ -24,6 +22,8 @@ import Tooltip from "@site/src/components/tooltip";
 <!-- add line break below -->
 
 We accomplish all these by utilizing [Koii Nodes](/run-a-node/introduction/types-of-nodes).
+
+![banner](../img/nodesandtasks.svg)
 
 ## What is a Node?
 
