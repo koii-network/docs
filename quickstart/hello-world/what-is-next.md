@@ -21,7 +21,7 @@ We are ready to help on our [Discord](https://discord.gg/koii) with any question
 
 :::tip
 
-For an advanced app example, check out our [Linktree Tutorial.](/tutorials/linktree/intro) It guides you to create a basic yet practical Full Stack Application. You can extend the structure to create a decentralized social media running on Web3!
+For an advanced app example, check out our [Linktree Tutorial.](/tutorials/linktree/intro) It guides you to create a basic yet practical Full Stack Application. You can extend the structure to create a decentralized social platform running on Web3! Or if you want to start from the stratch, check out our [Task Development Guide](/develop/write-a-koii-task/task-development-guide/).
 
 :::
 
