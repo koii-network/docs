@@ -26,5 +26,5 @@ For an advanced app example, check out our [Linktree Tutorial.](/tutorials/linkt
 :::
 
 :::tip
-As an alternative to Javascript, you can build tasks in any language that compiles to WebAssembly, as it can be injected into the existing JavaScript container. [ORCA](/concepts/containerized-tasks/orca) (coming soon) is designed to allow the easy installation of any existing apps within a clean and sandboxed docker container.
+As an alternative to JavaScript, you can build tasks in any language that compiles to WebAssembly, as it can be injected into the existing JavaScript container. [ORCA](/concepts/containerized-tasks/orca) (coming soon) is designed to allow the easy installation of any existing apps within a clean and sandboxed docker container.
 :::
