@@ -20,11 +20,11 @@ Most interaction with files and directories is accomplished with `fsPromises` me
 
 ### fs Method
 
-The `fs` method takes in three arguments:
+The `fs` method is a useful utility that accepts three arguments:
 
-- `method` : The `fsPromise` method to call
-- `path`: The path for the express call
-- `...args`: Any remaining parameters for the FS call
+- `method` :This refers to the `fsPromise` method that you want to call.
+- `path`: TThe path for the express call relevant to the specific `fsPromise` method call.
+- `...args`: Any additional parameters that may be required for the `fsPromise` call.
 
 ```typescript
 async fs(method, path, ...args) {
@@ -32,9 +32,11 @@ async fs(method, path, ...args) {
 }
 ```
 
-Example:
+Example usage of the `fs` function is demonstrated below, showcasing the creation of a new directory, copying a file, and creating a new file:
 
 ```javascript
+const { namespaceWrapper } = require("../_koiiNode/koiiNode");
+
 // CREATE NEW DIRECTORY
 await namespaceWrapper.fs("mkdir", `uploads`, {
   recursive: true,
@@ -63,9 +65,9 @@ async fsStaking(method, path, ...args) {
 
 ### fsWriteStream Method
 
-The `fsWriteStream` method takes in one argument:
+The `fsWriteStream` method accepts one argument:
 
-- `imagepath` : A `string` to the image path
+- `imagepath` : A `string` representing the image path.
 
 ```javascript
   async fsWriteStream(imagepath: string) {
@@ -79,7 +81,7 @@ The `fsWriteStream` method takes in one argument:
 
 ### fsReadStream Method
 
-The `fsReadStream` method takes in one argument:
+The `fsReadStream` method accepts one argument:
 
 - `imagepath`: A `string` to the image path
 
@@ -92,3 +94,7 @@ The `fsReadStream` method takes in one argument:
     return file;
   }
 ```
+
+In the provided examples, the `fs` method is employed to call various `fsPromise` methods such as `mkdir`, `copyFile`, and `writeFile`. Each method receives parameters that specify the relevant paths and options needed for the corresponding operations. This abstraction streamlines and consolidates file system interactions within the Koii task, enhancing the convenience and simplicity of managing file-related tasks.
+
+Additionally, the `fsStaking` method, `fsWriteStream` method, and `fsReadStream` method are implemented to facilitate file system interactions within the Koii task. These methods enable operations like staking tokens, creating write streams, and reading streams from the file system. This approach ensures efficient management of file-related tasks, catering to the specific requirements of each operation. As a result, developers benefit from a cohesive and coherent approach to handle file system tasks while developing Koii tasks, promoting effective and streamlined development processes.
