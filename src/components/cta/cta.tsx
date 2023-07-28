@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import styles from "./cta.module.css";
-
+import ReactPlayer from "react-player";
 export const Cta = () => {
   const handleClick = () => {
     window.gtag("event", "click_run_node");
@@ -26,13 +26,14 @@ export const Cta = () => {
           />
           <button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline no-underline cursor-pointer border-none">
             <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0">
-              For Developers
+              Become a Web3 Developer
             </p>
             <p className="m-0 text-base">
               Deploy your first Web3 Application in 5 Minutes
             </p>
           </button>
         </a>
+
         <a
           href="https://koii.network/node"
           className={
@@ -59,6 +60,34 @@ export const Cta = () => {
             </p>
           </button>
         </a>
+        {/*         <a
+          className={
+            "lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]" +
+            " " +
+            styles.card
+          }
+          style={{
+            textDecoration: "no-underline",
+          }}
+          onClick={handleClick}
+        >
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=p4m4qThshfg&ab_channel=KoiiNetwork"
+            width="330px"
+            height="330px"
+            config={{
+              youtube: {
+                playerVars: {
+                  controls: 0, // hide the video controls
+                  showinfo: 0, // hide information like the video title
+                  rel: 0, // disable related videos at the end
+                  iv_load_policy: 3, // hide annotations
+                  modestbranding: 1, // hide Youtube logo
+                },
+              },
+            }}
+          />
+        </a> */}
       </div>
     </div>
   );

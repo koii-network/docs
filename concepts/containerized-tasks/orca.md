@@ -5,6 +5,6 @@ image: img/thumbnail.png
 sidebar_label: ORCA
 ---
 
-# Introduction
-
-## A cloud for people, by people
+:::tip Coming Soon
+We are currently updating this page.
+:::
