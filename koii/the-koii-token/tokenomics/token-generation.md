@@ -7,7 +7,7 @@ sidebar_label: Token Generation
 
 import Tooltip from "@site/src/components/tooltip";
 
-At <Tooltip text='Mainnet'/> launch, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of **3.65%** will be issued annually.
+At <Tooltip text='Mainnet launch'/>, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of **3.65%** will be issued annually.
 
 :::info In Practice
 Every 12 hours, 500,000 new tokens (0.005% of the total supply) are minted for the community.
