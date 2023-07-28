@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
       <Cta />
 
       <Cta2 />
-      {/* <GrantArea /> */}
+       <GrantArea />
       {/*       <ExploreTopics />  */}
       <Discord />
     </Layout>
