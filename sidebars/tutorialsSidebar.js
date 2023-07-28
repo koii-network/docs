@@ -21,13 +21,14 @@ const sidebars = {
       className: "sidebar-title",
     },
     "koii-apps/introduction",
-    {
-      type: "html",
-      value: "Contact Us",
-      className: "sidebar-title",
-    },
-    "contact-us/getting-started",
-    "contact-us/frontend",
+    // {
+    //   type: "html",
+    //   value: "Contact Us",
+    //   className: "sidebar-title",
+    // },
+    // "contact-us/introduction",
+    // "contact-us/encryption",
+    // "contact-us/frontend",
     {
       type: "html",
       value: "Linktree",

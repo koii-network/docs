@@ -5,7 +5,6 @@ image: img/thumbnail.png
 sidebar_label: REST APIs
 ---
 
-import Tooltip from "@site/src/components/tooltip";
 
 # REST APIs
 
@@ -13,7 +12,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 - Write handlers for requests using various HTTP verbs at different URL paths/routes.
 - Establish standard web application settings, such as the port to use for connection and the location of templates used for response rendering.
-- Add additional request processing <Tooltip text="middleware"/> at any point within the request handling pipeline.
+- Add additional request processing middleware at any point within the request handling pipeline.
 
 The namespace object provides an `app` method for the configuration of an Express app.
 

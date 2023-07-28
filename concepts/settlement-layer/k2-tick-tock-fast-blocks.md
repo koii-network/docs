@@ -19,7 +19,7 @@ import Description from "@site/src/components/description";
 
 K2 is the current settlement layer within Koii and provides the functionality of a message hub to other systems in the network. Thanks to the incredible work of the Solana Labs team, K2 is able to use [Proof of History](https://tokens-economy.gitbook.io/consensus/chain-based-proof-of-capacity-space/proof-of-history) to achieve 0.2-second transaction times and thousands of transactions per second.&#x20;
 
-The settlement layer holds the KOII tokens, as well as an <Tooltip text="immutable ledger"/> of transaction history, an active registry of open compute operations, and all <Tooltip text="compute task"/> metadata.
+The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all <Tooltip text="compute task"/> metadata.
 
 **Heads up!** To use K2, you'll need to install the [Koii CLI](/develop/category/koii-command-line-tool) or try the [Koii SDK](/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
 
