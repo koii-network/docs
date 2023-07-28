@@ -17,4 +17,4 @@ The reduction in token supply, coupled with the increasing demand for KOII token
 
 Furthermore, transactions and interactions with various network services in the Koii Network incur fees that are paid in KOII tokens.
 
-As the network's usage and adoption grow, the demand for KOII tokens to pay for these transaction fees also increases. Users need to acquire and hold KOII tokens to access and utilize the network's services effectively.
+As the network's usage and adoption grow, the demand for KOII tokens to pay for these transaction fees also increases. Users need to acquire and hold KOII tokens to access and use the network's services effectively.

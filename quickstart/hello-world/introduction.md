@@ -10,24 +10,28 @@ import Tooltip from "@site/src/components/tooltip";
 
 ### Building on Koii helps:
 
-1.  **Reduce existing hosting costs and increase uptime:**
+1.  **Reduce existing hosting costs and increase uptime**
 
     Building community-powered apps on Koii can [reduce costs](/concepts/distributed-cloud/reduced-computing-costs) and [increase reliability](/concepts/distributed-cloud/better-data).
     Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
 
-2.  **Build revolutionary applications:**
+2.  **Build revolutionary applications**
 
+<<<<<<< HEAD
     Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-gen neural networks trained with hard-to-obtain data, and much more.
+=======
+    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more.
+>>>>>>> c0bc79f695909b60cdada007986f0d756e3ae27e
 
 <!-- add line break below -->
 
-We accomplish all these by utilizing [Koii Nodes](/run-a-node/introduction/types-of-nodes).
+We accomplish all these by utilizing <Tooltip text="Koii Nodes"/>.
 
 ![banner](../img/nodesandtasks.svg)
 
 ## What is a Node?
 
-Nodes are people using their computers to create a world-wide network of servers. You can pay them with $KOII in order to incentivize them to run your application on their own machines.
+Nodes are people using their computers to create a world-wide network of servers. You can pay them with KOII in order to incentivize them to run your application on their own machines.
 
 In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
@@ -76,6 +80,10 @@ Again, you can use the <Tooltip text="Koii SDK"/> to create and manage tasks.
 
 ## How to build on KOII?
 
-In the following pages, we will step-by-step cover how to build a simple **REST API** that runs on KOII Network.
+In the subsequent pages, we will provide a step-by-step guide on how to build a simple task with an exposed **REST API** that runs on the KOII Network.
 
-Even in its most basic form, you would have an application **that eternally stores a string.** As long as there are any nodes running your task, the data that you have decided to store (in our case, _Hello World_) will not get lost.
+This task involves creating an application that permanently stores the string _"Hello World!"_ We will develop a GET API within the context of this task, which will enable us to retrieve the stored value. By following the instructions and guidelines, you will learn how to efficiently develop and host this basic task using the KOII Network.
+
+:::info
+If you are interested in gaining an in-depth understanding of the task development process, we recommend using our [Task development Guide](/develop/write-a-koii-task/task-development-guide/). This guide provides comprehensive and detailed information on the entire process of developing tasks for the Koii platform. By following the guide, you can explore various aspects, best practices, and guidelines that will assist you in creating robust and effective Koii tasks.
+:::

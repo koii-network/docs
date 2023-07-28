@@ -1,6 +1,6 @@
 ---
 title: KOII (K2) JavaScript API
-description: This is the KOII (K2) Javascript API built on the KOII JSON RPC API.
+description: This is the KOII (K2) JavaScript API built on the KOII JSON RPC API.
 image: img/thumbnail.png
 sidebar_label: KOII (K2) JavaScript API
 ---
@@ -41,9 +41,9 @@ $ npm install --save @_koi/web3.js
 
 ### Usage
 
-The KOII JavaScript API can be utilized in various ways based on your development environment:
+The KOII JavaScript API can be used in various ways based on your development environment:
 
-#### Javascript
+#### JavaScript
 
 ```jsx
 const koiiWeb3 = require("@_koi/web3.js");

@@ -14,8 +14,8 @@ If you want your completed projects to be highlighted on our website, feel free 
 
 ## Our templates:
 
-| Name        |                      Concept |                 Practical Use-Case | Tutorial                                    |
-| ----------- | ---------------------------: | ---------------------------------: | ------------------------------------------- |
-| Linktree    | Decentralized Social Network | A social media hosted by its users | [**Click Here**](/tutorials/linktree/intro) |
-| KoiiCrawler |      Distributed Web Crawler |         An unstoppable web crawler | In Development                              |
-| FedAI       |        Federated AI Training |      Cost effective model training | In Development                              |
+| Name        |                      Concept |                 Practical Use-Case | Tutorial                                                                    |
+| ----------- | ---------------------------: | ---------------------------------: | --------------------------------------------------------------------------- |
+| Linktree    | Decentralized Social Network | A social media hosted by its users | [**Click Here**](/tutorials/linktree/intro)                                 |
+| KoiiCrawler |      Distributed Web Crawler |         An unstoppable web crawler | [**Click Here**](/tutorials/steam-daily-specials/steam-daily-specials-task) |
+| FedAI       |        Federated AI Training |      Cost effective model training | In Development                                                              |

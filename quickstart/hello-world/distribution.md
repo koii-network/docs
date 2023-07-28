@@ -11,7 +11,7 @@ Hence, after completing the implementation of the task logic, including the subm
 
 The distribution list is represented as a JSON object, consisting of key-value pairs. In this context, where the _key_ is the node's **public key** and the _value_ is the **number of KOII tokens** to be awarded to the node.
 
-We can utilize `generateDistributionList()` and `validateDistribution()` function for the same, that is listed in `distribution.js` under the `task` directory.
+We can use `generateDistributionList()` and `validateDistribution()` function for the same, that is listed in `distribution.js` under the `task` directory.
 
 ## `generateDistributionList()`
 
