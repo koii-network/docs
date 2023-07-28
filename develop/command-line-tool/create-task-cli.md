@@ -163,7 +163,7 @@ Then in your `yml` file should have:
 
 Make sure to set your environment variable `type` as `TASK_VARIABLE`.
 
-The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual Javascript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
+The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual JavaScript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
 User will setup their key of the `value` in the desktop node's `Settings -> Task Settings`
 

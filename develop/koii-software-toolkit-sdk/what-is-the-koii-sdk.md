@@ -36,7 +36,7 @@ Koii provides a diverse range of tools and resources to support you throughout y
 
 ### Web3 SDK
 
-The Web3 SDK is the KOII (K2) Javascript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
+The Web3 SDK is the KOII (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
 
 ### Koii CLI
 
@@ -53,13 +53,13 @@ The Create Task CLI is a powerful tool that allows you to deploy your task to a 
 
 ### Task Node CLI
 
-The Task Node CLI serves as a valuable tool utilized by node operators for various purposes, offering four key functionalities:
+The Task Node CLI serves as a valuable tool used by node operators for various purposes, offering four key functionalities:
 
 - Create a Task Staking Wallet:
   This feature allows node operators to create a wallet specifically designed for staking tokens related to Koii tasks.
 
 - Create a Distribution Wallet:
-  Node operators can utilize this functionality to generate a wallet dedicated to distributing rewards for Koii tasks.
+  Node operators can use this functionality to generate a wallet dedicated to distributing rewards for Koii tasks.
 
 - Stake Tokens on a Task:
   Using this option, node operators can stake tokens on a particular Koii task, enabling them to participate in the task's network and validation process.
