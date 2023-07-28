@@ -14,8 +14,8 @@ export const GrantArea = () => {
             Get a Development Grant
           </p>
           <p className="text-graphite text-lg leading-[34px] text-center mb-5">
-            Koii Founder Grants are now active, you can apply for a $USD or
-            $KOII grant to build on Koii.
+            Koii Founder Grants program is now active, you can apply for a $USD
+            or $KOII grant to build on Koii.
           </p>
         </div>
       </div>
@@ -29,7 +29,7 @@ export const GrantArea = () => {
           className="w-full max-w-[240px] hover:opacity-90 mt-5"
           target="_blank"
         >
-          <button className="py-3.5 px-5 w-full rounded-md border-none no-underline hover:no-underline text-koii-purple-2 font-semibold drop-shadow-md font-base tracking-wider bg-koii-white cursor-pointer">
+          <button className="py-3.5 px-5 w-full rounded-md border-none no-underline hover:no-underline text-koii-purple-2 font-semibold drop-shadow-lg font-base tracking-wider bg-koii-white cursor-pointer">
             Learn More
           </button>
         </a>

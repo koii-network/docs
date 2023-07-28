@@ -6,11 +6,11 @@ sidebar_label: REST APIs
 ---
 
 
-To enhance our workflow, we will implement a REST API to retrieve the data stored in NeDB. This can be achieved by creating a GET request. To accomplish this, we navigate to the index.js file and add our GET endpoint at the end of the file, utilizing the exposed app object, similar to how we do it in an Express app.
+To enhance our workflow, we will implement a REST API for retrieving the data stored in NeDB. We can achieve this by creating a GET request. To accomplish this, we will navigate to the index.js file and add our GET endpoint using the exposed app object, similar to how we do it in an Express app.
 
 In the template there is a block of if statement, within which we will define our endpoint.
 
-To retrieve the stored value from our local DB, which was stored with the key `value`, we will utilize the `namespaceWrapper.storeGet()` method. Finally, we will then send this value as a JSON response for the created endpoint.
+To retrieve the stored value from our local DB, which was stored with the key `value`, we will use the `namespaceWrapper.storeGet()` method. Finally, we will then send this value as a JSON response for the created endpoint.
 
 ```js
 if (app) {
