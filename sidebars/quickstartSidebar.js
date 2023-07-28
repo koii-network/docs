@@ -36,6 +36,7 @@ const sidebars = {
     },
     "hello-world/get-request",
     "hello-world/deployment",
+    "hello-world/update",
     "hello-world/what-is-next",
     /*    {
       type: "html",

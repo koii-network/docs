@@ -17,10 +17,10 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "Crawlers",
+      value: "KOII Apps",
       className: "sidebar-title",
     },
-    "crawlers/introduction",
+    "koii-apps/introduction",
     {
       type: "html",
       value: "Contact Us",
@@ -39,6 +39,12 @@ const sidebars = {
     "linktree/rest-apis",
     "linktree/user-authentication",
     "linktree/frontend",
+    {
+      type: "html",
+      value: "Web Crawler",
+      className: "sidebar-title",
+    },
+    "crawlers/introduction",
   ],
 };
 

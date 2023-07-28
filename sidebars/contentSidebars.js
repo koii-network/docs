@@ -45,6 +45,7 @@ const sidebars = {
       className: "sidebar-title",
     },
     "containerized-tasks/introduction",
+    "containerized-tasks/orca",
 
     {
       type: "html",

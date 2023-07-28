@@ -9,11 +9,13 @@ import Tooltip from "@site/src/components/tooltip";
 
 To create our initial task, we will customize the methods within `submission.js` located inside the `task` directory. Join us as we delve into each method to gain a deeper understanding of their functionalities and implementation details.
 
-In this section, we will write the logic for our task and make a submission to K2 using the following methods in `submission.js`: `task()`, `fetchSubmission()`, and `submitTask()`. These methods will define the core functionality of our task and the process of submitting its results to K2.
+In this section, we will write the logic for our task and make a submission to K2 using the following methods in `submission.js`: `task()`, `fetchSubmission()`, `submitTask()`.
+
+These methods will define the core functionality of our task and the process of submitting its results to K2.
 
 ## `task()`
 
-The purpose of this method is to outline the main objective of our task. As previously mentioned, our task aims to submit the value `Hello, World!` to K2. To achieve this, we will utilize the `namespaceWrapper.storeSet()` function, which allows us to store the value in NeDB.
+The purpose of this method is to outline the main objective of our task. As previously mentioned, our task aims to submit the value `Hello, World!` to K2. To achieve this, we will utilize the `namespaceWrapper.storeSet()` function, which allows us to store the value in NeDB by default.
 
 Update `task()` with the code block below to fulfill the task's logic:
 
