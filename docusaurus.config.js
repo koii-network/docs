@@ -135,7 +135,10 @@ const config = {
           },
           {
             to: "/develop/category/koii-command-line-tool",
-            from: ["/koii-software-toolkit-sdk/using-the-cli", "/quickstart/command-line-tool/koii-cli/install-cli"],
+            from: [
+              "/koii-software-toolkit-sdk/using-the-cli",
+              "/quickstart/command-line-tool/koii-cli/install-cli",
+            ],
           },
           {
             to: "/concepts/introduction/tools",
@@ -147,7 +150,10 @@ const config = {
           // },
           {
             to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: ["/koii-software-toolkit-sdk/what-is-the-koii-sdk", "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk"],
+            from: [
+              "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+              "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            ],
           },
           // {
           //   to: "/develop/koii-task-101/what-are-tasks/",
@@ -158,12 +164,15 @@ const config = {
             from: [
               "/earning-koii/proof-of-real-traffic-port",
               "/earning-koii/proof-of-real-traffic/",
-              "/develop/attention-mining/proof-of-real-traffic/"
+              "/develop/attention-mining/proof-of-real-traffic/",
             ],
           },
           {
             to: "/concepts/web3/attention-mining",
-            from: ["/earning-koii/proof-of-real-traffic-port/attention-mining", "/develop/attention-mining/proof-of-real-traffic/attention-mining"],
+            from: [
+              "/earning-koii/proof-of-real-traffic-port/attention-mining",
+              "/develop/attention-mining/proof-of-real-traffic/attention-mining",
+            ],
           },
           // {
           //   to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
@@ -183,7 +192,10 @@ const config = {
           // },
           {
             to: "/concepts/gradual-concensus/runtime-flow",
-            from: ["/microservices-and-tasks/gradual-consensus", "/develop/koii-task-101/what-are-tasks/gradual-consensus"],
+            from: [
+              "/microservices-and-tasks/gradual-consensus",
+              "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+            ],
           },
           {
             to: "/concepts/introduction/philosophy",
@@ -214,12 +226,15 @@ const config = {
             from: [
               "/koii-software-toolkit-sdk/create-task-cli",
               "/develop/koii-software-toolkit-sdk/create-task-cli",
-              "/quickstart/command-line-tool/create-task-cli"
+              "/quickstart/command-line-tool/create-task-cli",
             ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
-            from: ["/microservices-and-tasks/task-development-guide", '/develop/write-a-koii-task/task-development-kit-tdk'],
+            from: [
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
+            ],
           },
           {
             to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
@@ -227,7 +242,10 @@ const config = {
           },
           {
             to: "/concepts/finnie-wallet/introduction",
-            from: ["/finnie-wallet/welcome-to-finnie/content-collectives", "/develop/finnie-for-devs/welcome-to-finnie"],
+            from: [
+              "/finnie-wallet/welcome-to-finnie/content-collectives",
+              "/develop/finnie-for-devs/welcome-to-finnie",
+            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
@@ -251,7 +269,10 @@ const config = {
 
           {
             to: "/develop/command-line-tool/task-node-cli",
-            from:[ "/develop/koii-software-toolkit-sdk/task-node-cli", '/quickstart/command-line-tool/task-node-cli'],
+            from: [
+              "/develop/koii-software-toolkit-sdk/task-node-cli",
+              "/quickstart/command-line-tool/task-node-cli",
+            ],
           },
           {
             to: "/koii/ways-to-get-koii/grants-program",
@@ -277,11 +298,17 @@ const config = {
           },
           {
             to: "/concepts/web3/registering-content",
-            from: ["/concepts/earning-koii/proof-of-real-traffic/registering-content", "/develop/attention-mining/proof-of-real-traffic/registering-content"],
+            from: [
+              "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+              "/develop/attention-mining/proof-of-real-traffic/registering-content",
+            ],
           },
           {
             to: "/concepts/web3/sybil-attack-prevention",
-            from:[ "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention", "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention"],
+            from: [
+              "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
+              "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+            ],
           },
           // {
           //   from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
@@ -428,6 +455,10 @@ const config = {
           //   to: "/koii/koii-wallet-finnie/using-finnie",
           //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
           // },
+          {
+            to: "/develop/task-tutorials/google-doodle-task/",
+            from: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
