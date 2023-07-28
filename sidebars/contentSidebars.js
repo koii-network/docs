@@ -35,6 +35,7 @@ const sidebars = {
       value: "Crowd AI ",
       className: "sidebar-title",
     },
+
     // "crowdai/introduction",
     "crowdai/federated-learning",
     "crowdai/cpu",
@@ -104,6 +105,13 @@ const sidebars = {
 
     {
       type: "html",
+      value: "Large Compute Providers",
+      className: "sidebar-title",
+    },
+    "large-compute/large-compute",
+
+    {
+      type: "html",
       value: "K2 Settlement Layer",
       className: "sidebar-title",
     },
@@ -123,11 +131,7 @@ const sidebars = {
       ],
     },
     "settlement-layer/rent",
-    {
-      type: "html",
-      value: "Large Compute Providers",
-      className: "sidebar-title",
-    },
+
     {
       type: "html",
       value: "Web 3 and Social",
