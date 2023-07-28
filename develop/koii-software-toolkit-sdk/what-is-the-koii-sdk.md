@@ -17,16 +17,16 @@ import ContentLink from "@site/src/components/contentLink";
   text="We're building one toolkit for all blockchains"
 />
 
-As the industry progresses and matures, standardization and simplification play vital roles in fostering long-term growth. Although support for various decentralized networks is still in its nascent phase, Koii's mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.&#x20;
+Our mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.&#x20;
 
 Supported networks:
 
-- <Tooltip text="Ethereum"/>
-- <Tooltip text="Arweave"/>
-- <Tooltip text="Filecoin"/> (Coming Soon)
-- <Tooltip text="Polygon"/> (Coming Soon)
-- <Tooltip text="Solana"/> (Coming Soon)
-- <Tooltip text="NEAR"/> (Coming Soon)
+- Ethereum
+- Arweave
+- Filecoin (Coming Soon)
+- Polygon (Coming Soon)
+- Solana (Coming Soon)
+- NEAR (Coming Soon)
 
 <br />
 
