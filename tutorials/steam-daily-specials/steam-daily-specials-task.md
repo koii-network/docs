@@ -2,7 +2,7 @@
 title: "Example Task: Steam Daily Specials"
 description: This task involves scraping daily special game offers from Steam, which includes gathering data such as the game name, original price, discounted price, and game tags. The list of games will then be stored on the InterPlanetary File System (IPFS) for decentralized storage and access.
 image: img/thumbnail.png
-sidebar_label: "Example Task: Steam Daily Soecials"
+sidebar_label: "Example Task: Steam Daily Specials"
 ---
 
 # Example Task: Steam Daily Specials
