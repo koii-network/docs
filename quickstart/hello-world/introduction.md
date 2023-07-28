@@ -8,28 +8,23 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-Becoming a <Tooltip text="Web3"/> Developer is no longer needlessly complicated. With Koii, you can transfer your Javascript abilities and deploy your first <Tooltip text="blockchain application"/> in 5 minutes.
-
-:::tip
-Unlike other solutions, you don't need to learn a new language to develop on Koii.
-:::
 
 ![banner](../img/nodesandtasks.svg)
 
-### Wait, but why would I want that?
+### Building on Koii helps:
 
 1.  **Reduce existing hosting costs and increase uptime:**
 
-    Building community-powered apps on Koii can **reduce costs** and **increase reliability.**
+    Building community-powered apps on Koii can [reduce costs](/concepts/distributed-cloud/reduced-computing-costs) and [increase reliability](/concepts/distributed-cloud/better-data).
     Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
 
 2.  **Build revolutionary applications:**
 
-    Our blockchain allows you to create products that would be simply impossible to create with <Tooltip text="Web2"/> solutions. As an example, you can create social networks hosted by its users, unstoppable smart web crawlers and next-gen neural networks trained with real data, and much more.
+    Our community cloud allows you to create products that would be simply impossible to create with <Tooltip text="Web2"/> solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-gen neural networks trained with hard-to-obtain data, and much more.
 
 <!-- add line break below -->
 
-We accomplish all these by utilizing ** Koii Nodes.**
+We accomplish all these by utilizing [Koii Nodes](/run-a-node/introduction/types-of-nodes).
 
 ## What is a Node?
 
