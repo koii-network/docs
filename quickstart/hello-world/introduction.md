@@ -79,3 +79,7 @@ Again, you can use the <Tooltip text="Koii SDK"/> to create and manage tasks.
 In the subsequent pages, we will provide a step-by-step guide on how to build a simple task with an exposed **REST API** that runs on the KOII Network.
 
 This task involves creating an application that permanently stores the string _"Hello World!"_ We will develop a GET API within the context of this task, which will enable us to retrieve the stored value. By following the instructions and guidelines, you will learn how to efficiently develop and host this basic task using the KOII Network.
+
+:::info
+If you are interested in gaining an in-depth understanding of the task development process, we recommend using our [Task development Guide](/develop/write-a-koii-task/task-development-guide/). This guide provides comprehensive and detailed information on the entire process of developing tasks for the Koii platform. By following the guide, you can explore various aspects, best practices, and guidelines that will assist you in creating robust and effective Koii tasks.
+:::
