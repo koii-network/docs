@@ -81,6 +81,66 @@ const sidebars = {
     },
     "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
 
+    {
+      type: "html",
+      value: "Task Development Guide",
+      className: "sidebar-title top-margin",
+    },
+    "write-a-koii-task/task-development-guide/task-development-guide",
+    // {
+    //   type: "category",
+    //   label: "Task Development Guide",
+    //   link: {
+    //     type: "doc",
+    //     id: "write-a-koii-task/task-development-guide/task-development-guide",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    {
+      type: "category",
+      label: "Executable Structure",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-guide/executable-structure/setup",
+        "write-a-koii-task/task-development-guide/executable-structure/validate-node",
+        "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
+      ],
+    },
+    {
+      type: "category",
+      label: "K2 Task Template",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-guide/k2-task-template/task-function",
+        "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+        "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
+      ],
+    },
+    {
+      type: "category",
+      label: "Task Development Flow",
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
+      },
+      items: [
+        "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/create-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
+      ],
+    },
+    //   ],
+    // },
     /*   {
       type: "html",
       value: "Koii-X",
