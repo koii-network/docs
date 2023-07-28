@@ -32,4 +32,4 @@ Besides the [philosophical drive ](/concepts/introduction/philosophy)to include 
    Privacy is enhanced when there isn't just one core server IP address by allowing lots of devices to serve network requests and thereby hide the traffic from would-be snoopers.
 
 5. **Data responsibility and portability**<br/>
-   Despite the introduction of <Tooltip text="GDPR"/> and similar legislation, large apps tend to end up owning a lot of user data. When this content and identity information is decentralized on open frameworks, users are free to migrate from one platform to another, and developers are freed of the obligation of data stewardship.&#x20;
+   Despite the introduction of GDPR and similar legislation, large apps tend to end up owning a lot of user data. When this content and identity information is decentralized on open frameworks, users are free to migrate from one platform to another, and developers are freed of the obligation of data stewardship.&#x20;
