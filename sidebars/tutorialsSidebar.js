@@ -23,6 +23,13 @@ const sidebars = {
     "crawlers/introduction",
     {
       type: "html",
+      value: "Contact Us",
+      className: "sidebar-title",
+    },
+    "contact-us/getting-started",
+    "contact-us/frontend",
+    {
+      type: "html",
       value: "Linktree",
       className: "sidebar-title",
     },
