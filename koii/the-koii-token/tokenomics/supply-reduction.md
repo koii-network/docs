@@ -13,7 +13,7 @@ In Koii’s case, continuous inflation **benefits the network** by onboarding ne
 
 ![banner](img/Supply%20Reduction%402x.svg)
 
-The <Tooltip text="Koii Foundation"/> is dedicated to providing developers with incentives to build on the network, including <Tooltip text="grants"/> and easy-to-use <Tooltip text="tools"/>.
+The <Tooltip text="Koii Foundation"/> is dedicated to providing developers with incentives to build on the network, including <Tooltip text="grants"/> and easy-to-use tools.
 
 Each time that a new project launches on Koii, a <Tooltip text="bounty"/> must be locked to pay for hosting from Koii’s <Tooltip text="compute marketplace"/>, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must <Tooltip text="stake"/> tokens as collateral, locking up further supply.&#x20;
 
