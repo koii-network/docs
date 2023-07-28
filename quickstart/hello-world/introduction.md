@@ -17,7 +17,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 2.  **Build revolutionary applications:**
 
-    Our community cloud allows you to create products that would be simply impossible to create with <Tooltip text="Web2"/> solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-gen neural networks trained with hard-to-obtain data, and much more.
+    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-gen neural networks trained with hard-to-obtain data, and much more.
 
 <!-- add line break below -->
 
@@ -27,7 +27,7 @@ We accomplish all these by utilizing [Koii Nodes](/run-a-node/introduction/types
 
 ## What is a Node?
 
-Nodes are people using their computers to create a world-wide network of servers. You can pay them with <Tooltip text="KOII"/> in order to incentivize them to run your application on their own machines.
+Nodes are people using their computers to create a world-wide network of servers. You can pay them with KOII in order to incentivize them to run your application on their own machines.
 
 In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
