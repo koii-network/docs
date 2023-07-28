@@ -604,7 +604,6 @@ const config = {
               "/develop/designing-tasks/staking-and-voting",
               "/develop/designing-tasks/securing-task",
               "/develop/designing-tasks/using-reputation",
-              "/develop/write-a-koii-task/task-development-kit-tdk/",
               "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/",
               "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
               "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
