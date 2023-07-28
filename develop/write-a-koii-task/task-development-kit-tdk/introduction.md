@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-The Koii Task Development Kit includes the task template provided by Koii, which simplifies and streamlines the process of developing custom tasks. To utilize the task-template for your own needs, follow the steps below:
+The Koii Task Development Kit includes the task template provided by Koii, which simplifies and streamlines the process of developing custom tasks. To use the task-template for your own needs, follow the steps below:
 
 ```bash
  git clone https://github.com/koii-network/task-template.git hello-world
