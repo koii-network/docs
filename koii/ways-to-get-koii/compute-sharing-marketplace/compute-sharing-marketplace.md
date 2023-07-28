@@ -13,11 +13,11 @@ import Tooltip from "@site/src/components/tooltip";
 
 ![banner](../img/Compute%20Sharing%20Marketplace.svg)
 
-<Description text='Application layer nodes are one of the most-needed commodities in Web3.' />
+Application layer nodes are one of the most-needed commodities in Web3.
 
-Once a content creator or app developer mines <Tooltip text="KOII"/>, they have the option of <Tooltip text="staking"/> their new tokens as <Tooltip text="collateral"/> against either a <Tooltip text="Task Node"/> or a <Tooltip text="K2 Settlement Node"/>.
+Once a content creator or app developer mines <Tooltip text="KOII"/>, they have the option of <Tooltip text="staking"/> their new tokens as collateral against either a <Tooltip text="Task Node"/> or a <Tooltip text="K2 Settlement Node"/>.
 
-Task nodes provide web app and microservice hosting and support an open and extensible consensus process known as <Tooltip text="Gradual Consensus"/>, while <Tooltip text="settlement nodes"/> provide fast payments using a storage-based <Tooltip text="Solana"/> fork.&#x20;
+Task nodes provide web app and microservice hosting and support an open and extensible consensus process known as <Tooltip text="Gradual Consensus"/>, while <Tooltip text="settlement nodes"/> provide fast payments using a storage-based Solana fork.&#x20;
 
 Task nodes perform <Tooltip text="automated microservices"/> for the network and receive <Tooltip text="bounty tokens"/> for their work.
 
