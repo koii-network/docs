@@ -393,7 +393,6 @@ const config = {
             from: "/concepts/the-koii-token/tokenomics/token-generation/",
             to: "/koii/the-koii-token/tokenomics/token-generation",
           },
-
           {
             to: "/koii/the-koii-token/tokenomics/supply-reduction",
             from: "/concepts/the-koii-token/tokenomics/supply-reduction",
@@ -519,10 +518,6 @@ const config = {
           {
             to: "/koii/the-koii-token/network-economics",
             from: "/concepts/the-koii-token/network-economics",
-          },
-          {
-            to: "/koii/the-koii-token/tokenomics/token-generation",
-            from: "/concepts/the-koii-token/tokenomics/token-generation",
           },
           {
             to: "/koii/the-koii-token/tokenomics/supply-reduction",
