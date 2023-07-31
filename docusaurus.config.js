@@ -281,7 +281,7 @@ const config = {
             to: "/concepts/what-are-tasks/designing-tasks/staking-and-voting",
             from: [
               "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
-              "develop/designing-tasks/staking-and-voting",
+              "/develop/designing-tasks/staking-and-voting",
             ],
           },
           {
