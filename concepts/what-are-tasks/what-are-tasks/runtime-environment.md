@@ -35,6 +35,6 @@ This layer can be thought of like RAM, and is only needed to support task operat
 
 ## Where Do Tasks Run?&#x20;
 
-Koii tasks run on **Koii task nodes,** which are computers or other devices such as smart phones managed by node operators. Node operators will follow the instructions set by task owners and run the Koii task (a JavaScript script) on their devices to get KOII tokens as rewards.&#x20;
+Koii tasks run on **Koii Task Nodes,** which are computers managed by node operators. Node operators will follow the instructions set by task owners and run the Koii task (a JavaScript script) on their devices to get KOII tokens as rewards.&#x20;
 
 Koii provides both a command-line and GUI interface for managing tasks. You may want to jump to the [Run a Task Node](/run-a-node/introduction/task-nodes) section for more information about these tools.
