@@ -22,7 +22,7 @@ Besides the [philosophical drive ](/concepts/introduction/philosophy)to include 
    Centralized ownership and control creates vulnerabilities by introducing unnecessary single points of failure.
 
 2. **Protecting Tokenized Assets**<br/>
-   Tokens or NFTs can be exploited if there is a master key, or an app server that manages the smart contracts. If a web3 project promises inflationary token rewards to support their hosting or network participation (such as **utility tokens**) then the issuance of new tokens cannot be controlled centrally or participants have no guarantee of fair treatment.
+   Tokens or NFTs can be exploited if there is a master key, or an app server that manages the smart contracts. If a Web3 project promises inflationary token rewards to support their hosting or network participation (such as **utility tokens**) then the issuance of new tokens cannot be controlled centrally or participants have no guarantee of fair treatment.
 
 3. **Cost Reduction**<br/>
    Marketplace dynamics can ensure compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
