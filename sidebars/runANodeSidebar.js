@@ -36,6 +36,7 @@ const sidebars = {
       className: "sidebar-title",
     },
     "task-nodes/how-to-run-a-desktop-node",
+    "task-nodes/time-to-node",
     "task-nodes/rewards",
     "task-nodes/choosing-tasks",
     {
