@@ -137,8 +137,10 @@ const sidebars = {
       value: "Encryption",
       className: "sidebar-title",
     },
-    "gradual-consensus/runtime-flow",
-    "gradual-consensus/task-lifecycle",
+    "encryption/intro",
+    "encryption/ethereum-encryption",
+    "encryption/solana-encryption",
+
     {
       type: "html",
       value: "Large Compute Providers",
