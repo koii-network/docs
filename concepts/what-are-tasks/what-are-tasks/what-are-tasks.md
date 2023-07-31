@@ -37,4 +37,4 @@ There's a lot of material here, so if you're just getting started, you might wan
 
 - [Build your first Full Stack Application on Koii](/quickstart/hello-world/introduction)
 - [Why use decentralized nodes when servers seem to work?](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers)<br/>
-- [What is KOII?](/koii/the-koii-token/network-economics)<br/>
+- [What is $KOII?](/koii/the-koii-token/network-economics)<br/>
