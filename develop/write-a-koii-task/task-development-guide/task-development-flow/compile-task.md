@@ -11,8 +11,8 @@ After you've created a task using the K2 task template as a guide, you'll need t
 
 Open up your terminal, and in the directory of your task:
 
-- Run `yarn` to install all dependencies
-- Run `yarn webpack` to compile code
+- Run `npm` to install all dependencies
+- Run `npm webpack` to compile code
 - You should see a new directory `/dist`
 - Your compiled executable is located in `/dist/main.js`
 

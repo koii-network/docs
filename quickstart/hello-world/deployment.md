@@ -95,7 +95,7 @@ After setting up the KOII CLI and funding your Koii wallet, follow the steps bel
 - Run the below command to compile your task code.
 
 ```bash
-yarn webpack
+npm webpack
 ```
 
 - Run the following command in your terminal within the task directory to begin deploying your task;

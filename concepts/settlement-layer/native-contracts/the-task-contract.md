@@ -7,6 +7,6 @@ sidebar_label: The Task Contract
 
 # The Task Contract
 
-The task contract maintains the [Koii compute marketplace](/concepts/earning-koii/compute-sharing-marketplace), and can be used to deploy, audit, and incentivize new tasks for the network. The task contract is not yet open sourced, but check back soon for the full K2 source code.
+The Task Contract maintains the [Koii Compute Marketplace](/koii/ways-to-get-koii/compute-sharing-marketplace/).
 
-### Check out the Task Docs to use our network of honest compute devices!
+You can use it to deploy, audit, and incentivize new tasks for the network. Take a look at our open-source task marketplace [here!](/tutorials/koii-apps/introduction)
