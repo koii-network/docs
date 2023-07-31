@@ -61,7 +61,7 @@ There are in total 9 functions in `CoreLogic` which the you can modify according
 
 # Testing and Deploying
 
-Before you begin this process, be sure to check your code and write unit tests wherever possible to verify individual core logic functions. Testing using the [docker container](/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/) should be mostly used for consensus flows, as it will take longer to rebuild and re-deploy the docker container.
+Before you begin this process, be sure to check your code and write unit tests wherever possible to verify individual core logic functions. Testing using the docker container should be mostly used for consensus flows, as it will take longer to rebuild and re-deploy the docker container.
 
 ## Build
 
