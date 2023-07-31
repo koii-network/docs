@@ -27,7 +27,7 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 ![banner](<../img/What%20are%20tasks%20(1).png>)
 
-<p>Koii tasks (currently in beta) provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
+<p>Koii tasks provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
 
 ## Quick Links
 
