@@ -141,10 +141,6 @@ const config = {
             ],
           },
           {
-            to: "/develop/category/koii-command-line-tool",
-            from: ["/koii-software-toolkit-sdk/using-the-cli"],
-          },
-          {
             to: "/develop/command-line-tool/koii-cli/install-cli",
             from: "/quickstart/command-line-tool/koii-cli/install-cli",
           },
@@ -252,11 +248,6 @@ const config = {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
-          // {
-          //   to: "/develop/category/koii-command-line-tool",
-          //   from: "/develop/koii-software-toolkit-sdk/using-the-cli",
-          // },
-
           {
             to: "/develop/command-line-tool/task-node-cli",
             from: [
@@ -286,14 +277,20 @@ const config = {
             to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/concepts/earning-koii/compute-sharing-marketplace",
           },
-          // {
-          //   from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
-          //   to: "/develop/designing-tasks/staking-and-voting",
-          // },
-          // {
-          //   from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
-          //   to: "/develop/designing-tasks/securing-task",
-          // },
+          {
+            to: "/concepts/what-are-tasks/designing-tasks/staking-and-voting",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
+              "develop/designing-tasks/staking-and-voting",
+            ],
+          },
+          {
+            to: "/concepts/what-are-tasks/designing-tasks/securing-task",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
+              "/develop/designing-tasks/securing-task",
+            ],
+          },
           {
             to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
             from: [
@@ -343,10 +340,13 @@ const config = {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
           },
-          // {
-          //   to: "/develop/designing-tasks/using-reputation",
-          //   from: "/develop/microservices-and-tasks/using-reputation",
-          // },
+          {
+            to: "/concepts/what-are-tasks/designing-tasks/using-reputation",
+            from: [
+              "/develop/microservices-and-tasks/using-reputation",
+              "/develop/designing-tasks/using-reputation",
+            ],
+          },
           {
             to: "/concepts/what-are-tasks/what-are-tasks/key-components/intro",
             from: [
@@ -507,9 +507,6 @@ const config = {
             from: [
               "/microservices-and-tasks/task-development-guide",
               "/develop/write-a-koii-task/task-development-kit-tdk",
-              "/develop/designing-tasks/staking-and-voting",
-              "/develop/designing-tasks/securing-task",
-              "/develop/designing-tasks/using-reputation",
               "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/",
             ],
           },
@@ -785,7 +782,11 @@ const config = {
           },
           {
             to: "/develop/category/koii-command-line-tool",
-            from: "/quickstart/category/koii-command-line-tool",
+            from: [
+              "/quickstart/category/koii-command-line-tool",
+              "/develop/koii-software-toolkit-sdk/using-the-cli",
+              "/koii-software-toolkit-sdk/using-the-cli",
+            ],
           },
           {
             to: "/develop/command-line-tool/koii-cli/create-wallet",
