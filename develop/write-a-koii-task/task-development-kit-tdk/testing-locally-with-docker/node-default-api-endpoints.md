@@ -10,20 +10,22 @@ sidebar_label: Node Default API Endpoints
 Every node will have the following endpoints available by default at the defined service node address:
 
 ```js
- app.get('/', heartbeat);
- app.get('/nodes/:taskId', nodes);
- app.post('/register-node/:taskId', registerNode);
- app.get('/get-all-running-tasks', getAllRunningTasks);
+app.get("/", heartbeat);
+app.get("/nodes/:taskId", nodes);
+app.post("/register-node/:taskId", registerNode);
+app.get("/get-all-running-tasks", getAllRunningTasks);
 ```
+
 To only test your endpoint locally, you can use the following command:
 
 ```bash
 npm run start
 ```
+
 or
 
 ```bash
-yarn start
+npm start
 ```
 
 :::note

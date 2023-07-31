@@ -46,7 +46,7 @@
     "settlement nodes": ["K2 Nodes", "/concepts/settlement-layer/k2-tick-tock-fast-blocks"],
     "compute sharing marketplace": ["Service connecting excess computing resources with computational power needs", "https://www.google.com/"],
     "desktop node": ["Our easy-to-use app for running compute jobs and earning tokens", "https://www.koii.network/node"],
-    "gradual consensus": ["Koii's method for achieving consensus through delayed reward distribution", "/concepts/gradual-concensus/runtime-flow"],
+    "gradual consensus": ["Koii's method for achieving consensus through delayed reward distribution", "/concepts/gradual-consensus/runtime-flow"],
     "audit nodes": ["Nodes that inspect tasks for malicious intent", "https://www.google.com/"],
     "tasks": ["Executable code run on the network", "/concepts/what-are-tasks/what-are-tasks/"],
     "slot": ["Time for each leader to accept transactions and generate a block", "https://www.google.com/"],
@@ -60,7 +60,7 @@
     "proofs of real traffic, aka port": ["Koii's attention tracking system rewarding creators", "https://www.google.com/"],
     "finnie": ["Official wallet of Koii Network for managing digital assets", "https://www.google.com/"],
     "koii sdk": ["Software Development Kit for creating Koii Tasks, Nodes, and templates", "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"],
-    "koii cli": ["Tool for developers to interact with Koii network via command line", "https://www.google.com/"],
+    "koii cli": ["Our Command Line Interface for developers to interact with Koii network via command line", "/develop/category/koii-command-line-tool"],
     "koii faucet": ["Online KOII token dispenser offering free tokens", "https://www.google.com/"],
     "koii task": ["Framework for developers to create tasks quickly", "https://www.google.com/"]
 }
