@@ -13,7 +13,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 We need a Koii account and network setup first. We provide the Koii CLI tool to easily set up K2 locally and generate a wallet; check here.&#x20;
 
-<ContentLink title="Using the Koii CLI" link="/quickstart/category/koii-command-line-tool" iconType="copy"/>
+<ContentLink title="Using the Koii CLI" link="/develop/category/koii-command-line-tool" iconType="copy"/>
 
 <br/>
 Now that we have our account and the network setup, let's move on to actually creating a task and registering it with the network.
