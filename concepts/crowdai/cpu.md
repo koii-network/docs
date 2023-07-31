@@ -5,7 +5,6 @@ image: img/thumbnail.png
 sidebar_label: CPU's vs GPU's
 ---
 
-
 ## The big GPU problem
 
 The "big GPU
@@ -20,8 +19,4 @@ While CPUs can handle machine learning tasks, they are typically less efficient 
 However, if a significant number of CPUs are available, employing them in a distributed manner allows for parallelizing
 specific computations, leading to faster training processes. Techniques such as data parallelism and model parallelism can be utilized to distribute the workload across CPUs.
 
-<<<<<<< HEAD
-Checkout how we tackle this problem in our federated learning section.
-=======
-Checkout how we tackle this problem in our [Federated Learning](./concepts/crowdai/federated-learning) section.
->>>>>>> c0bc79f695909b60cdada007986f0d756e3ae27e
+Checkout how we tackle this problem in our [Federated Learning](/concepts/crowdai/federated-learning) section.

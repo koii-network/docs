@@ -38,18 +38,6 @@ const sidebars = {
     "hello-world/deployment",
     "hello-world/update",
     "hello-world/what-is-next",
-    /*    {
-      type: "html",
-      value: "Level 2",
-      className: "sidebar-title",
-    },
-    "hello-world/getrequest",
-    {
-      type: "html",
-      value: "Level 3",
-      className: "sidebar-title",
-    },
-    "hello-world/deployment", */
   ],
 };
 

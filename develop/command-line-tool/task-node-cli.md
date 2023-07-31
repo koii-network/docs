@@ -14,11 +14,11 @@ The Task Node CLI is a powerful tool that offers several essential operations, i
 - Staking tokens on a task
 - Getting a list of all tasks
 
-The staking CLI can be started by running the command `yarn stake` in the root directory of the task node. The steps are:
+The staking CLI can be started by running the command `npm stake` in the root directory of the task node. The steps are:
 
 - Clone the [task node repository](https://gitlab.com/koii-network/task-node) if you haven’t already done it.
-- Run `yarn build` to build the necessary components.
-- Execute `yarn stake` in your terminal to start the staking CLI.
+- Run `npm build` to build the necessary components.
+- Execute `npm stake` in your terminal to start the staking CLI.
 - Provide the path to your wallet as prompted.
 - You will then be presented with four options to choose from, based on your specific requirements.
 
