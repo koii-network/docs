@@ -119,7 +119,6 @@ const sidebars = {
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
         "finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
-        "finnie-wallet/finnie-for-devs/ethereum-network/mint-nft",
       ],
     },
     "finnie-wallet/finnie-for-devs/other-evm-chains",

@@ -489,7 +489,10 @@ const config = {
           },
           {
             to: "/",
-            from: ["/concepts/community/community-forums", "/concepts/community/contact-us"],
+            from: [
+              "/concepts/community/community-forums",
+              "/concepts/community/contact-us",
+            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
@@ -617,7 +620,7 @@ const config = {
           },
 
           {
-            to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/mint-nft",
+            to: "/concepts/category/ethereum-network",
             from: "/develop/finnie-for-devs/ethereum-network/mint-nft",
           },
           {
