@@ -13,8 +13,7 @@ A Koii **task executable** is a single JavaScript file that contains all of the 
 
 ```javascript
 const coreLogic = require("./coreLogic");
-const { app } = require("./init");
-const { namespaceWrapper } = require("./namespaceWrapper");
+const { namespaceWrapper, app } = require("../_koiiNode/koiiNode");
 
 /**
  * @description Setup function is the first  function that is called in executable to setup the node

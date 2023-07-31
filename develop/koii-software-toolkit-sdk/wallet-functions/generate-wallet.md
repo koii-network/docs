@@ -8,7 +8,7 @@ sidebar_label: generateWallet
 # generateWallet
 
 :::danger
-This function will generate an Arweave wallet, not a Koii wallet. To generate a Koii wallet please check [Koii CLI](/quickstart/category/koii-command-line-tool).
+This function will generate an Arweave wallet, not a Koii wallet. To generate a Koii wallet please check [Koii CLI](/develop/category/koii-command-line-tool).
 :::
 
 This function creates a new Arweave wallet, but it does not return the private key of the generated wallet. Instead, it stores the info under the `wallet` property and returns a boolean value of `True` or `False`.
@@ -53,13 +53,11 @@ This will return the contents of the JSON for your newly generated private key.
 **wallet** - has the key of the generated wallet, which is the private key to the wallet if saved as a .json file.
 
 **mnemonic** - generates a wallet with mnemonic words
-
-:::tip
-
-- The generated wallet can be accessed via **`ktools.wallet`** , Save this info into a file in .JSON format and that's the **Private Key** to the generated wallet.
-- The wallet can also be accessed via **`ktools.mnemonic`** , If you selected to generate a mnemonic wallet via parameters.
-  :::
-
 :::info
 Optional: Arweave uses the JSON Web Key (JWK) format (RFC 7517) with 4096 length RSA-PSS keys. This JWK format allows for cryptographic keys to be represented as JSON object where each property represents a property of the underlying cryptographic key.
 :::
+:::tip
+
+- The generated wallet can be accessed via **`ktools.wallet`** , Save this info into a file in JSON format and that's the **Private Key** to the generated wallet.
+- The wallet can also be accessed via **`ktools.mnemonic`** , If you selected to generate a mnemonic wallet via parameters.
+  :::
