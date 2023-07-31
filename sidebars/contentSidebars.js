@@ -83,7 +83,6 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "distributed-cloud/community-powered-hosting",
     "distributed-cloud/reduced-computing-costs",
     "distributed-cloud/better-data",
     {
@@ -120,7 +119,6 @@ const sidebars = {
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
         "finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
-        "finnie-wallet/finnie-for-devs/ethereum-network/mint-nft",
       ],
     },
     "finnie-wallet/finnie-for-devs/other-evm-chains",

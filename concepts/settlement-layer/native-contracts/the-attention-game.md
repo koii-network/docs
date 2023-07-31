@@ -11,22 +11,10 @@ import ContentLink from "@site/src/components/contentLink";
 
 ## Playing the Game
 
-To start mining Koii, there are two options:
+To start mining Koii via the attention game, you need to download the Finnie browser extension. [Get Finnie by clicking here.](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)
 
-### **1. Use the Finnie Wallet to Upload Content**
-
-The Finnie wallet is Koii's native browser extension, and supports drag and drop NFT minting, which can be used to turn any file on your computer into a revenue-generating asset that mines KOII tokens every time it's viewed.
-
-Just drag, drop, and share to start tracking views and earning KOII.
-
-[Get Finnie](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)
-
-### **2. Register Web Content Programmatically**
+## Register Web Content Programmatically
 
 If you have existing content online, such as a blog, website, or app, you can use the developer kit to track attention on your content and mine KOII for every view.
 
-<ContentLink title="Registering Content" link="/concepts/earning-koii/proof-of-real-traffic/registering-content" iconType="copy"/>
-
-## Source Code
-
-The attention game is not yet open sourced - check back soon!
+[Learn more here.](/concepts/web3/attention-mining)
