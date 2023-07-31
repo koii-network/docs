@@ -23,31 +23,7 @@ const sidebars = {
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
 
-    // {
-    //   type: "html",
-    //   value: "Koii Command Line Tool (CLI)",
-    //   className: "sidebar-title top-margin",
-    // },
-    {
-      type: "category",
-      label: "Koii Command Line Tool",
-      link: {
-        type: "generated-index",
-        description:
-          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
-      },
-      collapsed: true,
-      items: [
-        "command-line-tool/koii-cli/install-cli",
-        "command-line-tool/koii-cli/create-wallet",
-        "command-line-tool/koii-cli/send-and-receive-tokens",
-        "command-line-tool/koii-cli/connect-cluster",
-      ],
-    },
-    "command-line-tool/task-node-cli",
-    "command-line-tool/create-task-cli",
-    "command-line-tool/cli-usage-reference",
-
+    "koii-software-toolkit-sdk/wallet-and-faucet",
     {
       type: "category",
       label: "Wallet Functions",
@@ -123,6 +99,30 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: "html",
+      value: "Koii Command Line Tool (CLI)",
+      className: "sidebar-title top-margin",
+    },
+    {
+      type: "category",
+      label: "Koii Command Line Tool",
+      link: {
+        type: "generated-index",
+        description:
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/koii-cli/install-cli",
+        "command-line-tool/koii-cli/create-wallet",
+        "command-line-tool/koii-cli/send-and-receive-tokens",
+        "command-line-tool/koii-cli/connect-cluster",
+      ],
+    },
+    "command-line-tool/task-node-cli",
+    "command-line-tool/create-task-cli",
+    "command-line-tool/cli-usage-reference",
     {
       type: "html",
       value: "Koii Task Development Kit (TDK)",
