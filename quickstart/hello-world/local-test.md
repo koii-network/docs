@@ -8,7 +8,7 @@ sidebar_label: Test your Task
 To test our task locally, we can use the following command in the terminal:
 
 ```bash
-yarn test
+npm test
 ```
 
 Executing this command will simulate a single round, encompassing all the functions performed in an actual deployed task. If the task passes the test, the output should resemble the following:
