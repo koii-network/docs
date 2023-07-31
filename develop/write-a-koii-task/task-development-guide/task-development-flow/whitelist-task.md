@@ -9,7 +9,7 @@ sidebar_label: Whitelist Task
 
 :::caution
 
-Contact the development team on the [Koii Discord](https://discord.gg/koii) and share your&#x20;
+Contact the development team on the [Koii Discord](https://discord.gg/koii) and share your:&#x20;
 
 - Executable file
 - State Info Pubkey
