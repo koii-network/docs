@@ -1,8 +1,8 @@
 ---
-title: Nodes vs Servers
+title: Nodes vs. Servers
 description: Decentralization sounds good philosophically, but it's also just better design.
 image: img/thumbnail.png
-sidebar_label: Nodes vs Servers
+sidebar_label: Nodes vs. Servers
 ---
 
 import Description from "@site/src/components/description";

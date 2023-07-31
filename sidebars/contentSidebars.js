@@ -33,14 +33,15 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Koii Tasks 101",
+      value: "What are Tasks?",
       className: "sidebar-title top-margin",
     },
     "what-are-tasks/what-are-tasks/what-are-tasks",
 
     "what-are-tasks/what-are-tasks/nodes-vs-servers",
-    "what-are-tasks/what-are-tasks/gradual-consensus",
     "what-are-tasks/what-are-tasks/runtime-environment",
+    "what-are-tasks/what-are-tasks/task-design",
+    "what-are-tasks/what-are-tasks/using-reputation",
     {
       type: "category",
       label: "Key Components",
