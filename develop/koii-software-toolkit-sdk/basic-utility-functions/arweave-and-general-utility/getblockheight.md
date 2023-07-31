@@ -5,6 +5,10 @@ image: img/thumbnail.png
 sidebar_label: getBlockHeight
 ---
 
+# Arweave & General Utility
+
+The following section cexplains the use of Arweave and General Utility functions of the Koii SDK
+
 # getBlockHeight
 
 This function returns the current block height of the Arweave blockchain.
