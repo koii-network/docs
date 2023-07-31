@@ -5,6 +5,10 @@ image: img/thumbnail.png
 sidebar_label: getNftIdsByOwner
 ---
 
+# NFTs
+
+You can get information on each NFT that is registered on Koii by using the functions in this section.&#x20;
+
 # getNftIdsByOwner
 
 This function returns an array of strings for a list of all the NFTs owned by a given address.

@@ -33,7 +33,7 @@ When creating a new task, there are three main functions that define the task's 
 
    Any significant aspects of the task, regardless of whether they are directly associated with bounties or not, should be subject to audits.
 
-   Please see the [audit section ](/develop/designing-tasks/securing-task)for details.
+   Please see the [audit section ](/concepts/what-are-tasks/designing-tasks/securing-task)for details.
 
 3. **The Distribution Function** <br />
    This function generates a distribution list and submits it on-chain. A distribution list is a JSON object containing a key-value pair, where the key is the public key of the node that made the submission and the value is the number of KOII tokens to be rewarded to the node.
