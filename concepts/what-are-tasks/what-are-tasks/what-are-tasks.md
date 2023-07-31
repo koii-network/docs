@@ -29,16 +29,12 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 ![banner](<../img/What%20are%20tasks%20(1).png>)
 
-<p>This provides a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
+<p>Koii provides a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
 
 ## Quick Links
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
-- [Hello World Example](/quickstart/hello-world/intro)
-- [Why use decentralized nodes when servers seem to work?](/develop/koii-task-101/what-are-tasks/nodes-vs-servers)<br/>
-- [How do tasks run across many nodes?](/develop/koii-task-101/what-are-tasks/gradual-consensus)<br/>
-- [Where does task data live?](/develop/koii-task-101/what-are-tasks/runtime-environment)<br/>
-- [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/intro)<br/>
-  - [Database Sharding](/develop/koii-task-101/what-are-tasks/key-components/database-sharding)<br/>
-  - [Node to Node Sync](/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync)
+- [Build your first Full Stack Application on Koii](/quickstart/hello-world/introduction)
+- [Why use decentralized nodes when servers seem to work?](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers)<br/>
+- [What is KOII?](/koii/the-koii-token/network-economics)<br/>
