@@ -83,7 +83,6 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "distributed-cloud/community-powered-hosting",
     "distributed-cloud/reduced-computing-costs",
     "distributed-cloud/better-data",
     {
