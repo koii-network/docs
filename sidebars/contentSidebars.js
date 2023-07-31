@@ -125,11 +125,11 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Gradual Concensus",
+      value: "Gradual Consensus",
       className: "sidebar-title",
     },
-    "gradual-concensus/runtime-flow",
-    "gradual-concensus/task-lifecycle",
+    "gradual-consensus/runtime-flow",
+    "gradual-consensus/task-lifecycle",
 
     {
       type: "html",
