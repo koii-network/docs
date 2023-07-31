@@ -70,7 +70,7 @@ const sidebars = {
             "koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoibalance",
           ],
         },
-        {
+        /*  {
           type: "category",
           label: "NFTs",
           link: {
@@ -84,8 +84,8 @@ const sidebars = {
             "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
             "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
           ],
-        },
-        {
+        }, */
+        /*        {
           type: "category",
           label: "Arweave And General Utility",
           link: {
@@ -96,7 +96,7 @@ const sidebars = {
           items: [
             "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
           ],
-        },
+        }, */
       ],
     },
     {
