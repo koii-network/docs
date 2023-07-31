@@ -34,7 +34,7 @@ For all types of information you might need or generate in your task, it's essen
 To test your APIs, run:
 
 ```javascript
-yarn start
+npm start
 ```
 
 This will start a local server but won't run the task. For example, If you have a GET API called `/linktree/list`, your URL should be `localhost:10000/linktree/list`. You can create a testing module using Axios or use Postman to test your API.

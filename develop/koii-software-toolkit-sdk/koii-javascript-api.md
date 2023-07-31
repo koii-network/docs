@@ -17,16 +17,16 @@ To get started with the installation process and understand how to use the KOII 
 
 You can install the API using one of the following methods:
 
-#### Yarn
-
-```
-$ yarn add @_koi/web3.js
-```
-
 #### npm
 
 ```
 $ npm install --save @_koi/web3.js
+```
+
+#### Yarn
+
+```
+$ yarn add @_koi/web3.js
 ```
 
 #### Browser bundle

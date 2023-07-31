@@ -86,7 +86,7 @@ requirementsTags:
 - After updating your code and `config-task.yml`, run the below command to compile your task code.
 
 ```bash
-yarn webpack
+npm webpack
 ```
 
 - Run the following command in your terminal within the task directory to begin deploying your task;
