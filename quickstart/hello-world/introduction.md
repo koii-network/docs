@@ -17,11 +17,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 2.  **Build revolutionary applications**
 
-<<<<<<< HEAD
-    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-gen neural networks trained with hard-to-obtain data, and much more.
-=======
     Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more.
->>>>>>> c0bc79f695909b60cdada007986f0d756e3ae27e
 
 <!-- add line break below -->
 
