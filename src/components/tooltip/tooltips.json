@@ -60,7 +60,7 @@
     "proofs of real traffic, aka port": ["Koii's attention tracking system rewarding creators", "https://www.google.com/"],
     "finnie": ["Official wallet of Koii Network for managing digital assets", "https://www.google.com/"],
     "koii sdk": ["Software Development Kit for creating Koii Tasks, Nodes, and templates", "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"],
-    "koii cli": ["Tool for developers to interact with Koii network via command line", "https://www.google.com/"],
+    "koii cli": ["Our Command Line Interface for developers to interact with Koii network via command line", "/develop/category/koii-command-line-tool"],
     "koii faucet": ["Online KOII token dispenser offering free tokens", "https://www.google.com/"],
     "koii task": ["Framework for developers to create tasks quickly", "https://www.google.com/"]
 }

@@ -33,14 +33,17 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Koii Tasks 101",
+      value: "What are Tasks?",
       className: "sidebar-title top-margin",
     },
     "what-are-tasks/what-are-tasks/what-are-tasks",
 
     "what-are-tasks/what-are-tasks/nodes-vs-servers",
-    // "what-are-tasks/what-are-tasks/gradual-consensus",
     "what-are-tasks/what-are-tasks/runtime-environment",
+    "what-are-tasks/designing-tasks/securing-task",
+    "what-are-tasks/designing-tasks/staking-and-voting",
+    "what-are-tasks/designing-tasks/using-reputation",
+
     {
       type: "category",
       label: "Key Components",
@@ -80,7 +83,6 @@ const sidebars = {
       value: "Distributed Cloud",
       className: "sidebar-title",
     },
-    "distributed-cloud/community-powered-hosting",
     "distributed-cloud/reduced-computing-costs",
     "distributed-cloud/better-data",
     {
@@ -117,7 +119,6 @@ const sidebars = {
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
         "finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
         "finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
-        "finnie-wallet/finnie-for-devs/ethereum-network/mint-nft",
       ],
     },
     "finnie-wallet/finnie-for-devs/other-evm-chains",
@@ -129,6 +130,14 @@ const sidebars = {
     },
     "gradual-consensus/runtime-flow",
     "gradual-consensus/task-lifecycle",
+    {
+      type: "html",
+      value: "Encryption",
+      className: "sidebar-title",
+    },
+    "encryption/intro",
+    "encryption/ethereum-encryption",
+    "encryption/solana-encryption",
 
     {
       type: "html",
