@@ -137,8 +137,11 @@ const config = {
             to: "/develop/category/koii-command-line-tool",
             from: [
               "/koii-software-toolkit-sdk/using-the-cli",
-              "/quickstart/command-line-tool/koii-cli/install-cli",
             ],
+          },
+          {
+            to: "/develop/command-line-tool/koii-cli/install-cli",
+            from: "/quickstart/command-line-tool/koii-cli/install-cli",
           },
           {
             to: "/concepts/introduction/tools",
@@ -148,13 +151,6 @@ const config = {
           //   to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
           //   from: ["/build-dapps-with-koii/welcome-to-koii-x", "/develop/build-dapps-with-koii/welcome-to-koii-x/"],
           // },
-          {
-            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: [
-              "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-              "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            ],
-          },
           // {
           //   to: "/develop/koii-task-101/what-are-tasks/",
           //   from: "/microservices-and-tasks/what-are-tasks",
@@ -918,7 +914,7 @@ const config = {
           },
           {
             to: "/quickstart/hello-world/introduction",
-            from: "/quickstart/hello-world/intro",
+            from: ["/quickstart/hello-world/intro", "/develop/build-on-koii",],
           },
           {
             to: "/quickstart/hello-world/understand-the-template",
@@ -935,10 +931,6 @@ const config = {
           {
             to: "/develop/category/koii-command-line-tool",
             from: "/quickstart/category/koii-command-line-tool",
-          },
-          {
-            to: "/develop/command-line-tool/koii-cli/install-cli",
-            from: "/quickstart/command-line-tool/koii-cli/install-cli",
           },
           {
             to: "/develop/command-line-tool/koii-cli/create-wallet",
@@ -966,31 +958,23 @@ const config = {
           },
           {
             to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: [
+              "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+              "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            ],
           },
           {
             to: "/develop/koii-software-toolkit-sdk/koii-javascript-api",
             from: "/quickstart/koii-software-toolkit-sdk/koii-javascript-api",
           },
           {
-            to: "/develop/command-line-tool/koii-cli/create-wallet",
-            from: "/quickstart/koii-software-toolkit-sdk/wallet-and-faucet",
-          },
-          {
-            to: "/develop/command-line-tool/koii-cli/create-wallet",
-            from: "/quickstart/koii-software-toolkit-sdk/wallet-functions/",
-          },
-          {
-            to: "/develop/command-line-tool/koii-cli/create-wallet",
-            from: "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
-          },
-          {
-            to: "/develop/command-line-tool/koii-cli/create-wallet",
-            from: "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
-          },
-          {
-            to: "/develop/command-line-tool/koii-cli/create-wallet",
-            from: "/quickstart/koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: ["/quickstart/koii-software-toolkit-sdk/wallet-and-faucet",
+            "/quickstart/koii-software-toolkit-sdk/wallet-functions/",
+            "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
+            "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
+            "/quickstart/koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+          ],
           },
           {
             to: "/concepts/web3/registering-content",
@@ -1001,10 +985,6 @@ const config = {
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           { to: "/concepts/introduction/welcome", from: "/concepts/glossary" },
-          {
-            to: "/quickstart/hello-world/introduction",
-            from: "/develop/build-on-koii",
-          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
