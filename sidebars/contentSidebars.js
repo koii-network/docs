@@ -40,8 +40,10 @@ const sidebars = {
 
     "what-are-tasks/what-are-tasks/nodes-vs-servers",
     "what-are-tasks/what-are-tasks/runtime-environment",
-    "what-are-tasks/what-are-tasks/task-design",
-    "what-are-tasks/what-are-tasks/using-reputation",
+    "what-are-tasks/designing-tasks/securing-task",
+    "what-are-tasks/designing-tasks/staking-and-voting",
+    "what-are-tasks/designing-tasks/using-reputation",
+
     {
       type: "category",
       label: "Key Components",
@@ -130,7 +132,13 @@ const sidebars = {
     },
     "gradual-consensus/runtime-flow",
     "gradual-consensus/task-lifecycle",
-
+    {
+      type: "html",
+      value: "Encryption",
+      className: "sidebar-title",
+    },
+    "gradual-consensus/runtime-flow",
+    "gradual-consensus/task-lifecycle",
     {
       type: "html",
       value: "Large Compute Providers",
