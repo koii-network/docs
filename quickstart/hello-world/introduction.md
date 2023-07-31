@@ -8,14 +8,14 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-### Building on Koii helps:
+### Build on Koii:
 
 1.  **Reduce existing hosting costs and increase uptime**
 
     Building community-powered apps on Koii can [reduce costs](/concepts/distributed-cloud/reduced-computing-costs) and [increase reliability](/concepts/distributed-cloud/better-data).
     Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
 
-2.  **Build revolutionary applications**
+2.  **Develop revolutionary applications**
 
     Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more.
 
