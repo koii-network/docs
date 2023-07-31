@@ -169,6 +169,12 @@ const sidebars = {
     "web3/attention-mining",
     "web3/proof-of-real-traffic",
     "web3/sybil-attack-prevention",
+    {
+      type: "html",
+      value: "Reference",
+      className: "sidebar-title",
+    },
+    "glossary",
   ],
 };
 
