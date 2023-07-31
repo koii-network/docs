@@ -11,10 +11,8 @@ import Description from "@site/src/components/description";
 
 ![banner](../img/Nodes%20vs%20Servers.svg)
 
-<Description
-  text="Decentralization sounds good philosophically, but it's also just better
-  design."
-/>
+** Decentralization sounds good philosophically, but it's also just better
+design. **
 
 ## Why Deploy to Lots of Computers?
 
