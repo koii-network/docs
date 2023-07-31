@@ -1,15 +1,15 @@
 ---
-title: What are Tasks?
+title:Koii Tasks
 description: Smart contracts were the first step, but now it's time for p2p computing.
 image: img/thumbnail.png
-sidebar_label: What are Tasks?
+sidebar_label: Koii Tasks
 ---
 
 import Description from "@site/src/components/description";
 
-# What are Tasks?
+# Koii Tasks
 
-![banner](../img/_What%20are%20tasks_%20(1).svg)
+![banner](<../img/_What%20are%20tasks_%20(1).svg>)
 
 <Description
   text="Building truly decentralized systems requires a complicated mix of incentive engineering and cryptographic- Gradual Consensus in Koii Tasks standardize this structure to provide a single community cloud toolkit for all purposes."
@@ -23,9 +23,9 @@ Whether you're building a database, newsfeed, federated learning network, or a s
       2. Fraud Prevention
       3. Synchronization
 
-Koii tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows task nodes to perform a range of easily customizable services, providing a flexible and efficient foundation for a wide range of applications. 
+Koii tasks are off-chain computations that are verified and submitted on-chain, then audited by other nodes. This unique structure of accountability allows task nodes to perform a range of easily customizable services, providing a flexible and efficient foundation for a wide range of applications.
 
-![banner](../img/What%20are%20tasks%20(1).png)
+![banner](<../img/What%20are%20tasks%20(1).png>)
 
 <p>Koii tasks (currently in beta) provide a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
 
@@ -40,4 +40,3 @@ There's a lot of material here, so if you're just getting started, you might wan
 - [What does it take to build a task?](/develop/koii-task-101/what-are-tasks/key-components/intro)<br/>
   - [Database Sharding](/develop/koii-task-101/what-are-tasks/key-components/database-sharding)<br/>
   - [Node to Node Sync](/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync)
-
