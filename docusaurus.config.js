@@ -131,13 +131,19 @@ const config = {
         redirects: [
           {
             to: "/concepts/introduction/welcome",
-            from: "/introduction/readme",
+            from: [
+              "/introduction/readme",
+              "/concepts/koii-summary/impact",
+              "/concepts/koii-summary/social-tech",
+              "/develop/encryption/intro",
+              "/develop/encryption/solana-encryption",
+              "/develop/encryption/ethereum-encryption",
+              "/concepts/glossary",
+            ],
           },
           {
             to: "/develop/category/koii-command-line-tool",
-            from: [
-              "/koii-software-toolkit-sdk/using-the-cli",
-            ],
+            from: ["/koii-software-toolkit-sdk/using-the-cli"],
           },
           {
             to: "/develop/command-line-tool/koii-cli/install-cli",
@@ -187,9 +193,11 @@ const config = {
           //   from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
           // },
           {
-            to: "/concepts/gradual-concensus/runtime-flow",
+            to: "/concepts/gradual-consensus/runtime-flow",
             from: [
               "/microservices-and-tasks/gradual-consensus",
+              "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+              "/concepts/gradual-consensus",
               "/develop/koii-task-101/what-are-tasks/gradual-consensus",
             ],
           },
@@ -228,13 +236,6 @@ const config = {
           {
             to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
-          },
-          {
-            to: "/concepts/finnie-wallet/introduction",
-            from: [
-              "/finnie-wallet/welcome-to-finnie/content-collectives",
-              "/develop/finnie-for-devs/welcome-to-finnie",
-            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
@@ -365,13 +366,6 @@ const config = {
           //   to: "/develop/designing-tasks/using-reputation",
           //   from: "/develop/microservices-and-tasks/using-reputation",
           // },
-          {
-            to: "/concepts/introduction/welcome",
-            from: [
-              "/concepts/koii-summary/impact",
-              "/concepts/koii-summary/social-tech",
-            ],
-          },
           // {
           //   to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
           //   from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
@@ -381,64 +375,13 @@ const config = {
           //   from: ["/tasks", "/task"],
           // },
           {
-            from: "/concepts/the-koii-token/network-economics",
-            to: "/koii/the-koii-token/network-economics",
-          },
-
-          {
             from: "/concepts/the-koii-token/tokenomics/token-generation/",
             to: "/koii/the-koii-token/tokenomics/token-generation",
-          },
-          {
-            to: "/koii/the-koii-token/tokenomics/supply-reduction",
-            from: "/concepts/the-koii-token/tokenomics/supply-reduction",
-          },
-
-          {
-            to: "/koii/the-koii-token/tokenomics/reputation-hardening",
-            from: "/concepts/the-koii-token/tokenomics/reputation-hardening",
-          },
-
-          {
-            to: "/koii/the-koii-token/tokenomics/how-the-network-creates-value",
-            from: "/concepts/the-koii-token/tokenomics/how-the-network-creates-value",
-          },
-
-          {
-            from: "/concepts/ways-to-get-koii/run-a-node",
-            to: "/koii/ways-to-get-koii/run-a-node",
-          },
-          {
-            from: "/concepts/ways-to-get-koii/faucet",
-            to: "/koii/ways-to-get-koii/faucet",
-          },
-          {
-            from: "/concepts/ways-to-get-koii/attention-mining",
-            to: "/koii/ways-to-get-koii/attention-mining",
           },
           {
             from: "/concepts/ways-to-get-koii/grants-program",
             to: "/koii/ways-to-get-koii/grants-program",
           },
-          {
-            from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
-            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
-          },
-
-          {
-            from: "/concepts/gradual-consensus/",
-            to: "/concepts/gradual-concensus/runtime-flow",
-          },
-          {
-            from: "/concepts/gradual-consensus/task-lifecycle",
-            to: "/concepts/gradual-concensus/task-lifecycle",
-          },
-
-          {
-            from: "/concepts/koii-wallet-finnie/welcome-to-finnie",
-            to: "/concepts/finnie-wallet/introduction",
-          },
-
           // {
           //   to: "/koii/koii-wallet-finnie/using-finnie",
           //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
@@ -500,18 +443,6 @@ const config = {
             from: "/quickstart/pirate-ship/ambassador-program",
           },
           {
-            to: "/concepts/introduction/welcome",
-            from: "/concepts/introduction/welcome",
-          },
-          {
-            to: "/concepts/introduction/tools",
-            from: "/concepts/introduction/tools",
-          },
-          {
-            to: "/concepts/introduction/philosophy",
-            from: "/concepts/introduction/philosophy",
-          },
-          {
             to: "/koii/the-koii-token/network-economics",
             from: "/concepts/the-koii-token/network-economics",
           },
@@ -544,40 +475,21 @@ const config = {
             from: "/concepts/ways-to-get-koii/attention-mining",
           },
           {
-            to: "/",
-            from: "/concepts/ways-to-get-koii/grants-program",
-          },
-          {
             to: "/koii/ways-to-get-koii/faucet",
             from: "/concepts/ways-to-get-koii/get-free-tokens",
           },
           {
-            to: "/concepts/gradual-concensus/runtime-flow",
-            from: "/concepts/gradual-consensus/",
-          },
-          {
-            to: "/concepts/gradual-concensus/task-lifecycle",
-            from: "/concepts/gradual-consensus/task-lifecycle",
-          },
-          {
             to: "/concepts/finnie-wallet/introduction",
-            from: "/concepts/koii-wallet-finnie/welcome-to-finnie",
-          },
-          {
-            to: "/concepts/finnie-wallet/introduction",
-            from: "/concepts/koii-wallet-finnie/using-finnie",
+            from: [
+              "/concepts/koii-wallet-finnie/welcome-to-finnie",
+              "/concepts/koii-wallet-finnie/using-finnie",
+              "/develop/finnie-for-devs/welcome-to-finnie",
+              "/finnie-wallet/welcome-to-finnie/content-collectives",
+            ],
           },
           {
             to: "/",
-            from: "/concepts/community/community-forums",
-          },
-          {
-            to: "/",
-            from: "/concepts/community/contact-us",
-          },
-          {
-            to: "/concepts/gradual-concensus/runtime-flow",
-            from: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+            from: ["/concepts/community/community-forums", "/concepts/community/contact-us"],
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
@@ -672,10 +584,6 @@ const config = {
             from: "/develop/task-tutorials/linktree-task/auth-list",
           },
           {
-            to: "/concepts/finnie-wallet/introduction",
-            from: "/develop/finnie-for-devs/welcome-to-finnie",
-          },
-          {
             to: "/concepts/category/k2-integration-hooks",
             from: "/develop/category/k2-integration-hooks",
           },
@@ -731,18 +639,6 @@ const config = {
           {
             to: "/concepts/settlement-layer/native-contracts/the-task-contract",
             from: "/develop/settlement-layer/native-contracts/the-task-contract",
-          },
-          {
-            to: "/concepts/introduction/welcome",
-            from: "/develop/encryption/intro",
-          },
-          {
-            to: "/concepts/introduction/welcome",
-            from: "/develop/encryption/solana-encryption",
-          },
-          {
-            to: "/concepts/introduction/welcome",
-            from: "/develop/encryption/ethereum-encryption",
           },
           {
             to: "/tutorials/koii-apps/introduction",
@@ -914,7 +810,7 @@ const config = {
           },
           {
             to: "/quickstart/hello-world/introduction",
-            from: ["/quickstart/hello-world/intro", "/develop/build-on-koii",],
+            from: ["/quickstart/hello-world/intro", "/develop/build-on-koii"],
           },
           {
             to: "/quickstart/hello-world/understand-the-template",
@@ -969,12 +865,13 @@ const config = {
           },
           {
             to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: ["/quickstart/koii-software-toolkit-sdk/wallet-and-faucet",
-            "/quickstart/koii-software-toolkit-sdk/wallet-functions/",
-            "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
-            "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
-            "/quickstart/koii-software-toolkit-sdk/wallet-functions/generate-wallet",
-          ],
+            from: [
+              "/quickstart/koii-software-toolkit-sdk/wallet-and-faucet",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+            ],
           },
           {
             to: "/concepts/web3/registering-content",
@@ -984,7 +881,6 @@ const config = {
             to: "/concepts/web3/registering-content",
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
-          { to: "/concepts/introduction/welcome", from: "/concepts/glossary" },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
