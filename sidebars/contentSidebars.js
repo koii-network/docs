@@ -39,7 +39,7 @@ const sidebars = {
     "what-are-tasks/what-are-tasks/what-are-tasks",
 
     "what-are-tasks/what-are-tasks/nodes-vs-servers",
-    "what-are-tasks/what-are-tasks/gradual-consensus",
+    // "what-are-tasks/what-are-tasks/gradual-consensus",
     "what-are-tasks/what-are-tasks/runtime-environment",
     {
       type: "category",
