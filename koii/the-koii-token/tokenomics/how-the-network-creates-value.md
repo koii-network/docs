@@ -7,7 +7,19 @@ sidebar_label: How the Network Creates Value
 
 import Tooltip from "@site/src/components/tooltip";
 
-## Value through Staking
+![Banner](./img/value.svg)
+
+## Value throught practical demand
+
+**KOII** tokens are always inherently valuable as they can always be converted into computing power.
+
+They are the default currency of the Koii Network, which is a global network of computers that rivals traditional hosting solutions like AWS.
+
+Because of the principle of supply and demand, as long as our network offers a better price-performance ratio than traditional hosting solutions, there will always be a demand for KOII tokens.
+
+And due to its nature, as we don't have any middlemen (you directly pay your hosters, which are <Tooltip text="task nodes"/>) that aims to make a profit, we can **always** offer a better price-performance ratio than traditional hosting solutions.
+
+## Value through staking
 
 When a Koii task is run, node operators are required to stake tokens, which locks up the tokens for a specific period.
 
