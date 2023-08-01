@@ -249,7 +249,7 @@ const config = {
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
           {
-            to: "/develop/command-line-tool/task-node-cli",
+            to: "/",
             from: [
               "/develop/koii-software-toolkit-sdk/task-node-cli",
               "/develop/category/koii-command-line-tool",
