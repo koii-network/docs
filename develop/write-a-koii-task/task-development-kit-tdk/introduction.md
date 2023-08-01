@@ -5,11 +5,11 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-The Koii Task Development Kit includes the task template provided by Koii, which simplifies and streamlines the process of developing custom tasks. To use the task-template for your own needs, follow the steps below:
+We built the Koii Task Development Kit as a ready-to-develop template, which simplifies and streamlines the process of developing custom tasks. To use the task-template for your own needs, follow the steps below:
 
 ```bash
- git clone https://github.com/koii-network/task-template.git hello-world
- cd hello-world
+ git clone https://github.com/koii-network/task-template.git
+ cd task-template
 ```
 
 Once you have cloned the template, you can access the built-in classes and methods that will aid you in the development process. These methods can be found inside the `koiiNode.js` file located in the `_koiiNode` directory.
