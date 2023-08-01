@@ -970,7 +970,7 @@ const config = {
 
           {
             label: "🏗️ Tools",
-            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            to: "/develop/write-a-koii-task/task-development-guide/",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
