@@ -5,24 +5,25 @@ image: img/thumbnail.png
 sidebar_label: Simulating a Round
 ---
 
-You can also simulate a round via adding this code to your tests folder:
+You can also simulate a round via calling the task functions in a seperate javascript file.
 
-```
-const { coreLogic } = require('../coreLogic');
+Here is an example code that you can use in your tests folder:
+
+```javascript
+const { coreLogic } = require("../coreLogic");
 
 const run = async () => {
-let delay = 60000;
-let round = 4;
-console.log('Started a new task at round', round);
+  let delay = 60000;
+  let round = 4;
+  console.log("Started a new task at round", round);
 
-setTimeout(async () => {
-console.log('Stopping task at round', round);
-let proof_cid = await coreLogic.fetchSubmission(round - 1);
-console.log('Got round result', proof_cid);
-let output = await coreLogic.validateNode(proof_cid, round);
-console.log('Validated round result', output);
-}, delay);
+  setTimeout(async () => {
+    console.log("Stopping task at round", round);
+    let proof_cid = await coreLogic.fetchSubmission(round - 1);
+    console.log("Got round result", proof_cid);
+    let output = await coreLogic.validateNode(proof_cid, round);
+    console.log("Validated round result", output);
+  }, delay);
 };
 run();
-
 ```
