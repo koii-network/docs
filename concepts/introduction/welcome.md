@@ -7,19 +7,27 @@ sidebar_label: 🎏 Welcome to the New Internet
 
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
+import Tooltip from "@site/src/components/tooltip";
 
 ![banner](<./img/Welcome to Koii-X.svg>)
 
-<Description text="We built Koii to make a better world by connecting the people that live in it." />
+:::info Why did we build Koii?
+
+**To make a better world by connecting the people that live in it.**
+
+:::
 
 Ancient civilizations had information networks, too. The ancient internet wasn't fast, but language, art, and culture have always allowed our species to share knowledge and learn from one another. Occasionally, someone exaggerated a bit, and an iguana became a dragon in myth, but mostly it worked okay.
 
-As technologies have advanced, from printing presses, to radio antennae, to modern 5G and mobile devices, the power of the network has grown exponentially. At the same time, democracy has emerged as the de-facto form of governance, elevating mass communication networks and those who control them and creating a massive power imbalance for the rest of us. 
+As technologies have advanced, from printing presses, to radio antennae, to modern 5G and mobile devices, the power of the network has grown exponentially. At the same time, democracy has emerged as the de-facto form of governance, elevating mass communication networks and those who control them and creating a massive power imbalance for the rest of us.
 
-Koii is designed to return that power back to the people. We are the network, after all. We just need to pool enough computers, and we can quickly replace social media, publishing, news, and even artificial intelligence with community owned-and-operated alternatives. Beyond edge computing being better for the environment, it's also a whole lot less expensive to use existing consumer hardware than to build new data centers.
+Koii is designed to return that power back to the people. We are the network, after all. We just need to pool enough computers, and we can quickly replace social media, publishing, news, and even artificial intelligence with community owned-and-operated alternatives.
 
+Beyond edge computing being better for the environment, it's also a whole lot less expensive to use existing consumer hardware than to build new data centers.
 
-<Description text="Your personal computer could be paying your rent, and it could help us build a more fair and open web." />
+**Your personal computer could be paying your rent, and it could help us build a more fair and open web.**
+
+## The World Computer
 
 Since Ethereum's debut in 2015, the idea of a **World Computer** has captured the imagination of millions around the world. The benefits of a trustless digital machine with inherent censorship resistance are, in many ways, the answer to the growing pains and civil unrest as our societies struggle to adapt to the realities of global communication via the internet.
 
@@ -27,15 +35,15 @@ Ethereum and other payments networks have paved the way for decentralized commer
 
 <Description text="Building your next project on Koii might be cheaper, but it will definitely be more secure, and our community would love to help." />
 
-Whether you're designing Artificial Intelligence, Social Media apps, or any number of other products, Koii's community cloud can provide [cost and security benefits](/develop/koii-task-101/what-are-tasks/nodes-vs-servers). 
+Whether you're designing Artificial Intelligence, Social Media apps, or any number of other products, Koii's community cloud can provide [cost and security benefits](/develop/koii-task-101/what-are-tasks/nodes-vs-servers).
 
-We designed an open standard called [**Gradual Consensus**](/develop/koii-task-101/what-are-tasks/gradual-consensus), and implemented a prototype called [**Tasks**](/develop/koii-task-101/what-are-tasks/).
+We designed an open standard called <Tooltip text="Gradual Consensus"/>, and implemented that technology to our revolutionary product, Koii <Tooltip text="Tasks"/>.
 
 Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
 
 <Cards>
 
-  <Card
+<Card
     title="<p>🛠️ <strong>Tools</strong></p>"
     description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal compute power, and onboard your community.</p>"
     link="tools"
@@ -43,7 +51,7 @@ Depending on the size of the community, volunteer task operators may be sufficie
     svgName="tools"
     cardPerRow="2"
   />
-  <Card
+<Card
     title="<p>💡 <strong>Philosophy of Decentralization</strong></p>"
     description=" <p>For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.</p>"
     link="philosophy"
