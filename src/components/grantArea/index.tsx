@@ -14,14 +14,13 @@ export const GrantArea = () => {
             Get a Development Grant
           </p>
           <p className="text-graphite text-lg leading-[34px] text-center mb-5">
-            Koii Founder Grants program is now active, you can apply for a $USD
-            or $KOII grant to build on Koii.
+            You can apply for a $USD or $KOII grant to build on Koii.
           </p>
         </div>
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <div className="player-wrapper w-1/2 min-w-[300px]">
+        <div className="player-wrapper w-1/3 min-w-[300px]">
           <ReactPlayer className="react-player" url={url} width="100%" />
         </div>
         <a
