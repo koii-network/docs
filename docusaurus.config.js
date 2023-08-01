@@ -252,7 +252,7 @@ const config = {
             to: "/develop/command-line-tool/task-node-cli",
             from: [
               "/develop/koii-software-toolkit-sdk/task-node-cli",
-              "/quickstart/command-line-tool/task-node-cli",
+              "/develop/category/koii-command-line-tool",
             ],
           },
           {
