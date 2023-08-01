@@ -40,7 +40,7 @@ This line of code utilizes the `storeSet()` method from the namespace object to 
 The Namespace object is important for a number of reasons, some of which are:
 
 - It **protects** and **isolates the code** from other applications.
-- It prevents <Tooltip text="memory leakage"/>.
+- It prevents **memory leakage**.
 - It ensures code is **organized,** **easy to read, and refactor** according to necessary requirements.
 - It is **easy to recognize** the **variables and functions** from where they are defined.
 

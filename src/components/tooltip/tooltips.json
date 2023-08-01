@@ -8,7 +8,7 @@
     "tdk": ["Task Development Kit", "https://docs.koii.network/"],
     "memory leakage": ["Unintentional memory hold by a computer program", "https://docs.koii.network/"],
     "nw.js": ["Toolkit for building desktop apps with web technologies", "https://docs.koii.network/"],
-    "whitelisting process": ["Process of approving entities in a security protocol", "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task"],
+    "whitelisting process": ["Process of approving Koii Tasks", "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task"],
     "task staking wallet": ["A wallet for staking Koii task", "https://docs.koii.network/"],
     "distribution wallet": ["Wallet for distributing rewards or tokens", "https://docs.koii.network/"],
     "decentralized commerce": ["Trade of goods on decentralized platforms", "https://docs.koii.network/"],

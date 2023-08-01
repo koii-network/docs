@@ -62,7 +62,7 @@ Your task should pass all the tests. If not, please check the error message and 
 
 ![Test Pass](../../img/testpass.png)
 
-## How to conifg your own test?
+## How to config your own test?
 
 To config your own test, check tests folder and modify the `main.test.js` file. For more information, please check:
 
