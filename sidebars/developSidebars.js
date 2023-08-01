@@ -102,7 +102,7 @@ const sidebars = {
         "command-line-tool/koii-cli/connect-cluster",
       ],
     },
-    "command-line-tool/task-node-cli",
+
     "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
     "koii-software-toolkit-sdk/wallet-and-faucet",

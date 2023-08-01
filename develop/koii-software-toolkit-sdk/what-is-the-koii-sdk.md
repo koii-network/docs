@@ -51,24 +51,6 @@ To learn more about the Koii CLI and its functionalities, you can find additiona
 
 The Create Task CLI is a powerful tool that allows you to deploy your task to a task node in just under 5 minutes! To get started, you can prepare your task by following the guidelines [here](./quickstart/hello-world/introduction) and then try out the Create Task CLI [here.](/develop/command-line-tool/create-task-cli)
 
-### Task Node CLI
-
-The Task Node CLI serves as a valuable tool used by node operators for various purposes, offering four key functionalities:
-
-- Create a Task Staking Wallet:
-  This feature allows node operators to create a wallet specifically designed for staking tokens related to Koii tasks.
-
-- Create a Distribution Wallet:
-  Node operators can use this functionality to generate a wallet dedicated to distributing rewards for Koii tasks.
-
-- Stake Tokens on a Task:
-  Using this option, node operators can stake tokens on a particular Koii task, enabling them to participate in the task's network and validation process.
-
-- Show All Tasks:
-  This functionality provides node operators with a comprehensive view of all the existing Koii tasks, facilitating better management and oversight.
-
-For detailed information about the Task Node CLI and its capabilities, you can find more details [here](/develop/command-line-tool/task-node-cli).
-
 Learn more and build complete your task [here](./quickstart/hello-world/introduction)
 
 <!-- ### Looking for a quick start?
