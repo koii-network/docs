@@ -17,7 +17,7 @@ const sidebars = {
   content: [
     {
       type: "html",
-      value: "KOII Apps",
+      value: "Koii Apps",
       className: "sidebar-title",
     },
     "koii-apps/introduction",
