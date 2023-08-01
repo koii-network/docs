@@ -10,11 +10,7 @@ import Description from "@site/src/components/description";
 
 ![img alt](img/Philosophy.svg)
 
-<Description
-  text="For too long, power has been concentrated to just a small part of the world's
-  population. The internet has the power to fix this, but not the way it's been
-  built so far. We're here to change that"
-/>
+For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far. We're here to change that.
 
 ## Get Involved
 
@@ -95,14 +91,8 @@ import Description from "@site/src/components/description";
 ## Reading
 
 <Cards>
-  <Card
-    title="<p><strong>CARP</strong></p>"
-    description=" <p>Koii is a reputation-based community. We believe in accountability, trust, and most of all, fairness for every community member.</p>"
-    link="/develop/designing-tasks/using-reputation"
-    svgName="carp"
-    cardPerRow="2"
-  />
-  <Card
+
+<Card
     title="<p><strong>Gradual Consensus</strong></p>"
     description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with slow and steady verification of information over time.</p>"
     link="/develop/koii-task-101/what-are-tasks/gradual-consensus"

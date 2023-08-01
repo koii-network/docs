@@ -5,22 +5,37 @@ image: img/thumbnail.png
 sidebar_label: The Namespace Object
 ---
 
+import Tooltip from "@site/src/components/tooltip";
+
 # The Namespace Object
 
-Namespacing is the act of wrapping a set of entities, variables, functions, and objects under a single umbrella term. The Koii namespace object `namespace` is a global wrapper for all APIs needed in Koii tasks.&#x20;
+Namespacing is a programming concept that involves encapsulating a group of entities, variables, functions, or objects under a single umbrella term. In the context of Koii, the Koii namespace object `namespace` serves as a global wrapper for all APIs required in Koii tasks.
 
-This JavaScript object is injected into a Koii task by the task node running the task, and the Koii task has access to all wrapped utilities. Below is an example of accessing the [Express](https://expressjs.com/) utility from the `namespace` object:
+This javaScript object is injected into a Koii task by the task node running the task, and the Koii task has access to all wrapped utilities.
+
+Here's an example demonstrating how you can store a key-value pair in the local NeDB database using the `namespace` object:
 
 ```javascript
-if (namespace.app) {
-  // Express app for configuration
-  // Write your Express Endpoints here.
-  //For Example
-  namespace.express("post", "/register", async (req, res) => {});
+const { namespaceWrapper } = require("../_koiiNode/koiiNode");
+
+async function task() {
+  try {
+    const value = "Hello, World!";
+
+    if (value) {
+      // store value on NeDB
+      await namespaceWrapper.storeSet("key", value);
+    }
+    return value;
+  } catch (err) {
+    console.log("ERROR IN EXECUTING TASK", err);
+  }
 }
 ```
 
-## Why is The Namespace Object Important&#x20;
+This line of code utilizes the `storeSet()` method from the namespace object to store the key-value pair "key" and "value" in the local NeDB database. The task can then retrieve and use this stored data as needed. The namespace object provides a convenient and unified way to interact with various utilities within a Koii task.
+
+## Why is The Namespace Object Important?&#x20;
 
 The Namespace object is important for a number of reasons, some of which are:
 
@@ -31,4 +46,4 @@ The Namespace object is important for a number of reasons, some of which are:
 
 ## Custom Namespace Utilities
 
-The Namespace object can be expanded by including unique utilities when a Koii task is created. More information on this is discussed in this [section](customizing-the-namespace).
+The Namespace object can be expanded by including unique utilities when a Koii task is created. More information on this is discussed in this [section](./customizing-the-namespace).

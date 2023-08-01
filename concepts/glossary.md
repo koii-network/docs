@@ -26,11 +26,13 @@ These are nodes that perform audits on tasks to ensure there is no malicious int
 A piece of executable code that is run on the network
 
 ## Slot
+
 The time span over which each leader (a validator that appends entries to the ledger) accepts transactions and generates a [block](/concepts/glossary#block).
 
 Slots are are ordered sequentially and collectively make a logical clock.
 
 ## Epoch
+
 The period of time, i.e. the number of [slots](/concepts/glossary#slot), during which a leader schedule is valid.
 
 ## Rent
@@ -46,13 +48,10 @@ Accounts that have more than two years of [rent](/concepts/glossary#rent) paymen
 <br />
 
 # The Koii Stack
+
 <h2 style={{marginTop: '0px'}}> Finnie Identity SDK </h2>
 
 A single wallet SDK that is compatible with most major blockchains and decentralized networks, allowing people to create a single identity across multiple systems
-
-## Koii-X UI Framework
-
-A frontend template library built in JavaScript to help developers build & deploy an application in 10 minutes
 
 ## Task Nodes
 
@@ -68,7 +67,7 @@ This is where data is stored on a decentralized network by users or groups who a
 
 ## Koii Nodes
 
-A downloadable computer program that allows programmers to use some of their computer processing power to accomplish tasks
+Computers that are running Koii tasks via the Desktop Node.
 
 ## Task Nodes
 
@@ -84,7 +83,7 @@ The official wallet of Koii Network, which enables users to create, store, manag
 
 ## Koii SDK
 
-The Software Development Kit that supports the creation of Koii Tasks, Nodes, and Koii-X templates
+The Software Development Kit that supports the creation of Koii Tasks and Nodes.
 
 ## Koii CLI
 
@@ -95,19 +94,21 @@ The Koii CLI (Command Line Interface) is a software tool provided by the Koii Ne
 An online KOII token dispenser designed for people to get a small amount of free tokens
 
 ## KOII Task
+
 - <h3 style={{marginTop: '0px'}}> Task Template </h3>
-A framework that allows a developer to create tasks easily and quickly
+  A framework that allows a developer to create tasks easily and quickly
 
 - ### Create a Task
-Creating a task usually happens when developers use “Create-task-CLI” to package their task code to task node and upload the task configuration information to IPFS
+
+  Creating a task usually happens when developers use “Create-task-CLI” to package their task code to task node and upload the task configuration information to IPFS
 
 - ### Deploy a Task
-The allow-list process for other people to run that task from their personal devices
-
+  The allow-list process for other people to run that task from their personal devices
 
 <br/>
 
 # General Computing Terms
+
 <h2 style={{marginTop: '0px'}}> An Application Programming Interface (API) </h2>
 
 A way for two or more programs to communicate with each other.
@@ -123,6 +124,7 @@ A set of tools provided by a software company to allow developers to work with t
 <br/>
 
 # Web3 terms
+
 <h2 style={{marginTop: '0px'}}> Consensus </h2>
 
 A general agreement; consensus is achieved when all participants of the network agree on the order and content in a decentralized manner
@@ -192,6 +194,7 @@ Usually a string of numbers that serves as the address for a blockchain wallet, 
 As opposed to a public key, a private key is the confidential code you use to access your wallet where your cryptocurrencies are stored. NEVER share your private key with anyone.
 
 ## Keypair
+
 A [public key](/concepts/glossary#wallet-address-aka-public-key) and corresponding [private key](/concepts/glossary#private-key) for accessing an account.
 
 ## Web3
@@ -243,6 +246,7 @@ When a project has a giveaway for either tokens or coins, and can also be NFTs
 Known as NFTs, this allows developers to classify owned arbitrary data as a valid token
 
 ## ERC-20
+
 A token standard that allows the Application Programming Interface (API) to be implemented for cryptocurrencies. This makes it so every token possesses the same form and value, and grants the exchange, sharing, and transferring of new tokens into a crypto wallet.
 
 ## Staking
@@ -254,14 +258,15 @@ The process of putting your tokens in a proof-of-stake system to serve as a vali
 A cryptocurrency with low volatility
 
 ## Altcoin
+
 All other cryptocurrency coins other than Bitcoin
 
 ## Fiat Currency
 
 Any kind of currency not backed by a real asset such as silver or gold, but is backed and issued by a centralized government
 
-
 ## Exchange
+
 Platforms where you can buy and sell cryptocurrencies
 
 ## Testnet aka “Test Network”
@@ -271,7 +276,7 @@ A network used to stimulate the behavior of the mainnet. This is where developer
 ## Mainnet aka “Main Network”
 
 The main public version of a blockchain that is fully developed
+
 ## Bytecode
 
 A form of instruction set designed for efficient execution by a software interpreter
-

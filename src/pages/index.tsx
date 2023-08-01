@@ -2,6 +2,8 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { ExploreTopics } from "@site/src/components/exploreTopics";
+import { GrantArea } from "@site/src/components/grantArea";
+
 import { Hero } from "@site/src/components/homePageHero";
 import { Discord } from "../components/discord";
 import { Cta } from "../components/cta";
@@ -21,12 +23,14 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description='Koii is Web3, for everyone.'
+      description="Koii is Web3, for everyone."
     >
       <HomepageHeader />
       <Cta />
+
       <Cta2 />
-      <ExploreTopics />
+       <GrantArea />
+      {/*       <ExploreTopics />  */}
       <Discord />
     </Layout>
   );

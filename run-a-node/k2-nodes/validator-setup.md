@@ -6,12 +6,14 @@ sidebar_label: Validator Setup
 ---
 
 import Description from "@site/src/components/description";
+import Tooltip from "@site/src/components/tooltip";
 
 # Validator Setup
 
 The following guide describes how to setup a validator on Ubuntu.
 
 ## Identity Setup
+
 You will need to create the following keys on your system:
 
 ```bash
@@ -21,6 +23,7 @@ koii-keygen new --outfile ~/stake-account-keypair.json
 koii-keygen new --outfile ~/vote-account-keypair.json
 
 ```
+
 The authorized-withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
 This is a very important keypair. Anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
@@ -127,10 +130,12 @@ koii delegate-stake ~/stake-account-keypair.json <VALIDATOR_VOTE_ACCOUNT_ADDRESS
 Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address. That address can be found using the `koii validator-info get` command.
 
 ---
+
 title: Validator Setup
 description: To run the K2 node, first, you have to install the Koii command-line tools
 image: img/thumbnail.png
 sidebar_label: Validator Setup
+
 ---
 
 import ContentLink from "@site/src/components/contentLink";
@@ -140,6 +145,7 @@ import ContentLink from "@site/src/components/contentLink";
 The following guide describes how to setup a validator on Ubuntu.
 
 ## Identity Setup
+
 You will need to create the following keys on your system:
 
 ```bash
@@ -149,6 +155,7 @@ koii-keygen new --outfile ~/stake-account-keypair.json
 koii-keygen new --outfile ~/vote-account-keypair.json
 
 ```
+
 The authorized-withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
 This is a very important keypair. Anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.

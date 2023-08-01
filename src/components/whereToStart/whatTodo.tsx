@@ -2,25 +2,25 @@ import React, { ReactNode } from "react";
 
 export const WhatToDo = () => {
   return (
-    <div className='w-full px-4 md:px-8 max-w-[1096px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-24'>
-      <p className='text-koii-purple-2 font-semibold text-[40px] leading-[48px]'>
+    <div className="w-full px-4 md:px-8 max-w-[1096px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-24">
+      <p className="text-koii-purple-2 font-semibold text-[40px] leading-[48px]">
         What do you want to do now?
       </p>
-      <div className='w-full flex flex-col md:flex-row gap-6'>
+      <div className="w-full flex flex-col md:flex-row gap-6">
         <a
-          href='/concepts/introduction/welcome'
-          className='w-full lg:max-w-[50%] lg:h-44 hover:drop-shadow-lg transition-all duration-300'
+          href="/concepts/introduction/welcome"
+          className="w-full lg:max-w-[50%] lg:h-44 hover:drop-shadow-lg transition-all duration-300"
         >
-          <img src='/img/new-web.svg' alt='Discord logo' className='w-full' />
+          <img src="/img/new-web.svg" alt="Discord logo" className="w-full" />
         </a>
         <a
-          href='/develop/settlement-layer/k2-tick-tock-fast-blocks'
-          className='w-full lg:max-w-[50%] lg:h-44 hover:drop-shadow-lg transition-all duration-300'
+          href="/concepts/settlement-layer/k2-tick-tock-fast-blocks"
+          className="w-full lg:max-w-[50%] lg:h-44 hover:drop-shadow-lg transition-all duration-300"
         >
           <img
-            src='/img/build-impossible.svg'
-            alt='Discord logo'
-            className='w-full'
+            src="/img/build-impossible.svg"
+            alt="Discord logo"
+            className="w-full"
           />
         </a>
       </div>

@@ -104,7 +104,7 @@ export const cardDetails: Cards[] = [
       },
       {
         title: "K2",
-        link: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+        link: "/concepts/settlement-layer/k2-tick-tock-fast-blocks",
         image: "/img/K2.svg",
       },
       {
