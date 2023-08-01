@@ -21,14 +21,9 @@ Our mission is to empower developers by providing extensive support options for 
 
 Supported networks:
 
-- Ethereum
-- Arweave
-- Filecoin (Coming Soon)
-- Polygon (Coming Soon)
-- Solana (Coming Soon)
-- NEAR (Coming Soon)
-
-<br />
+- [K2 (Our Native Blockchain)](/concepts/settlement-layer/k2-tick-tock-fast-blocks)
+- [Solana](https://solana.com/)
+  <br />
 
 We have curated a comprehensive Tool Kit to offer robust support for Koii task and node development. This Tool Kit equips developers with essential resources and tools to efficiently create, deploy, and manage Koii tasks and nodes. By exploring our API documentation, you can unlock the full potential of the Koii platform and seamlessly build innovative applications.
 
