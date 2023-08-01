@@ -13,7 +13,9 @@ import Description from "@site/src/components/description";
 
 ## **Easy-Peasy, JavaScript**
 
-Our mission is to improve access to decentralized technology, which is why Koii tasks are written and configured entirely in JavaScript (NodeJS 16, to be exact) and support the majority of popular [NPM Modules](https://npmjs.org). It can help to think of task executables as [Express.js](https://expressjs.com/) nodes for hire, each of which stake tokens and reputation to participate. Combined with[ Koii-X](/develop/build-dapps-with-koii/welcome-to-koii-x/), that means you can deploy an entire stack, decentralized, with just JavaScript, while taking advantage of all the existing Node.js modules.&#x20;
+Our mission is to improve access to decentralized technology, which is why Koii tasks are written and configured entirely in JavaScript (NodeJS 16, to be exact) and support the majority of popular [NPM Modules](https://npmjs.org).
+
+It can help to think of task executables as [Express.js](https://expressjs.com/) nodes for hire, each of which stake tokens and reputation to participate. Combined with[ Koii App Library](/tutorials/koii-apps/introduction), that means you can deploy an entire stack, decentralized, with just JavaScript, while taking advantage of all the existing Node.js modules.&#x20;
 
 ![Task Development Guide](./img/Koii%20Tasks.svg)
 
