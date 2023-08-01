@@ -137,67 +137,6 @@ const sidebars = {
 
     "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
-    "koii-software-toolkit-sdk/wallet-and-faucet",
-    {
-      type: "category",
-      label: "Wallet Functions",
-      // link: {
-      //   type: "doc",
-      //   id:
-      // },
-      // collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/wallet-functions/wallet-functions",
-        "koii-software-toolkit-sdk/wallet-functions/load-wallet",
-        "koii-software-toolkit-sdk/wallet-functions/generate-wallet",
-      ],
-    },
-    {
-      type: "category",
-      label: "Register Content",
-      // link: {
-      //   type: "doc",
-      //   id: "koii-software-toolkit-sdk/register-content/register-content",
-      // },
-      // collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/register-content/register-content",
-        "koii-software-toolkit-sdk/register-content/burn-koii-attention",
-      ],
-    },
-    {
-      type: "category",
-      label: "Basic Utility Functions",
-      // link: {
-      //   type: "doc",
-      //   id: "koii-software-toolkit-sdk/basic-utility-functions/basic-utility-functions",
-      // },
-      // collapsed: true,
-      items: [
-        "koii-software-toolkit-sdk/basic-utility-functions/koii-state/koii-state",
-
-        {
-          type: "category",
-          label: "NFTs",
-
-          items: [
-            // "koii-software-toolkit-sdk/basic-utility-functions/nfts/nfts",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
-            "koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
-          ],
-        },
-        {
-          type: "category",
-          label: "Arweave And General Utility",
-
-          items: [
-            "koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
-          ],
-        },
-      ],
-    },
 
     //   ],
     // },
