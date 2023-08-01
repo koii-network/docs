@@ -14,7 +14,7 @@ To begin, clone the task template:
  cd hello-world
 ```
 
-Make sure you have [node](https://nodejs.org/en/)and [npm](https://www.npmjs.com/)installed before moving forward.
+Make sure you have [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed before moving forward.
 
 ## What's in the template?
 
