@@ -13,10 +13,6 @@ import ContentLink from "@site/src/components/contentLink";
 
 ![Banner](./img/What%20is%20the%20Koii%20SDK_.svg)
 
-<Description
-  text="We're building one toolkit for all blockchains"
-/>
-
 Our mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.&#x20;
 
 Supported networks:
@@ -29,9 +25,9 @@ We have curated a comprehensive Tool Kit to offer robust support for Koii task a
 
 Koii provides a diverse range of tools and resources to support you throughout your development journey. Here are some of the essential offerings:
 
-### Web3 SDK
+### Koii SDK
 
-The Web3 SDK is the KOII (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
+The Koii SDK is the KOII (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
 
 ### Koii CLI
 
@@ -44,9 +40,7 @@ To learn more about the Koii CLI and its functionalities, you can find additiona
 
 ### Create Task CLI
 
-The Create Task CLI is a powerful tool that allows you to deploy your task to a task node in just under 5 minutes! To get started, you can prepare your task by following the guidelines [here](./quickstart/hello-world/introduction) and then try out the Create Task CLI [here.](/develop/command-line-tool/create-task-cli)
-
-Learn more and build complete your task [here](./quickstart/hello-world/introduction)
+The Create Task CLI is a powerful tool that allows you to deploy your task in just under 5 minutes! To get started, try out the Create Task CLI [here.](/develop/command-line-tool/create-task-cli)
 
 <!-- ### Looking for a quick start?
 
