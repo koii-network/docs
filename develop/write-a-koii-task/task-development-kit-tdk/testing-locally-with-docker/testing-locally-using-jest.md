@@ -30,23 +30,25 @@ npm run install
 npm run webpack
 npm run test
 ```
+
 or
 
 ```bash
-yarn install
-yarn webpack
-yarn test
+npm install
+npm webpack
+npm test
 ```
 
 It will start testing your task with Jest. The steps are:
+
 - executeTask() => This is your main task function.
 - submitPayload() => This is the function that fetch and make the submission with dummy round 1.
 - auditTask() => This is the function that fetch submission and audit data. Then return the vote result.
 - submitDistributionList() => If vote is true, this function use dummyTaskData to simulate the distribution list.
 - Avaliable of your endpoints.
 
-
 It will check that your task should:
+
 - performs the core logic task
 - fetch the submission
 - make the submission to k2 for dummy round 1
@@ -60,7 +62,7 @@ Your task should pass all the tests. If not, please check the error message and 
 
 ![Test Pass](../../img/testpass.png)
 
-## How to conifg your own test?
+## How to config your own test?
 
 To config your own test, check tests folder and modify the `main.test.js` file. For more information, please check:
 

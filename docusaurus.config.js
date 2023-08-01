@@ -41,10 +41,26 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "koii",
+        path: "koii",
+        routeBasePath: "koii/",
+        sidebarPath: require.resolve("./sidebars/koiiSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "concepts",
         path: "concepts",
         routeBasePath: "concepts/",
-        sidebarPath: require.resolve("./contentSidebars.js"),
+        sidebarPath: require.resolve("./sidebars/contentSidebars.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -58,7 +74,7 @@ const config = {
         id: "develop",
         path: "develop",
         routeBasePath: "develop/",
-        sidebarPath: require.resolve("./developSidebars.js"),
+        sidebarPath: require.resolve("./sidebars/developSidebars.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -66,13 +82,14 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+
     [
       "@docusaurus/plugin-content-docs",
       {
         id: "quickstart",
         path: "quickstart",
         routeBasePath: "quickstart/",
-        sidebarPath: require.resolve("./quickstartSidebar.js"),
+        sidebarPath: require.resolve("./sidebars/quickstartSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -86,7 +103,21 @@ const config = {
         id: "run-a-node",
         path: "run-a-node",
         routeBasePath: "run-a-node/",
-        sidebarPath: require.resolve("./runANodeSidebar.js"),
+        sidebarPath: require.resolve("./sidebars/runANodeSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "tutorials",
+        path: "tutorials",
+        routeBasePath: "tutorials/",
+        sidebarPath: require.resolve("./sidebars/tutorialsSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -100,204 +131,165 @@ const config = {
         redirects: [
           {
             to: "/concepts/introduction/welcome",
-            from: "/introduction/readme",
+            from: [
+              "/introduction/readme",
+              "/concepts/koii-summary/impact",
+              "/concepts/koii-summary/social-tech",
+              "/develop/encryption/intro",
+              "/develop/encryption/solana-encryption",
+              "/develop/encryption/ethereum-encryption",
+            ],
           },
           {
-            to: "/quickstart/command-line-tool/koii-cli/install-cli",
-            from: "/koii-software-toolkit-sdk/using-the-cli",
+            to: "/develop/command-line-tool/koii-cli/install-cli",
+            from: "/quickstart/command-line-tool/koii-cli/install-cli",
           },
           {
             to: "/concepts/introduction/tools",
             from: "/introduction/tools",
           },
           {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
-            from: "/build-dapps-with-koii/welcome-to-koii-x",
-          },
-          {
-            to: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-            from: "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/",
-            from: "/microservices-and-tasks/what-are-tasks",
-          },
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/",
+            to: "/",
             from: [
-              "/earning-koii/proof-of-real-traffic-port",
-              "/earning-koii/proof-of-real-traffic/",
+              "/build-dapps-with-koii/welcome-to-koii-x",
+              "/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
+              "/develop/build-dapps-with-koii/welcome-to-koii-x/",
+              "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
             ],
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
-            from: "/earning-koii/proof-of-real-traffic-port/attention-mining",
+            to: "/concepts/web3/proof-of-real-traffic",
+            from: [
+              "/earning-koii/proof-of-real-traffic-port",
+              "/earning-koii/proof-of-real-traffic/",
+              "/develop/attention-mining/proof-of-real-traffic/",
+            ],
           },
           {
-            to: "/develop/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
-            from: "/build-dapps-with-koii/welcome-to-koii-x/tech-stack",
+            to: "/concepts/web3/attention-mining",
+            from: [
+              "/earning-koii/proof-of-real-traffic-port/attention-mining",
+              "/develop/attention-mining/proof-of-real-traffic/attention-mining",
+            ],
           },
           {
-            to: "/develop/build-dapps-with-koii/template-library/",
-            from: "/build-dapps-with-koii/template-library",
+            to: "/concepts/web3/registering-content",
+            from: [
+              "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+              "/develop/attention-mining/proof-of-real-traffic/registering-content",
+            ],
           },
+          {
+            to: "/concepts/web3/sybil-attack-prevention",
+            from: [
+              "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
+              "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
+            ],
+          },
+
+          // {
+          //   to: "/develop/build-dapps-with-koii/template-library/",
+          //   from: "/build-dapps-with-koii/template-library",
+          // },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
             from: "/earning-koii/running-task-nodes",
           },
+          // {
+          //   to: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
+          //   from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
+          // },
           {
-            to: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
-            from: "/build-dapps-with-koii/using-nfts-as-content/create-nfts",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/microservices-and-tasks/gradual-consensus",
+            to: "/concepts/gradual-consensus/runtime-flow",
+            from: [
+              "/microservices-and-tasks/gradual-consensus",
+              "/develop/koii-task-101/what-are-tasks/gradual-consensus",
+              "/concepts/gradual-consensus",
+              "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+            ],
           },
           {
             to: "/concepts/introduction/philosophy",
             from: "/introduction/philosophy",
           },
+          // {
+          //   to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
+          //   from: "/build-dapps-with-koii/using-nfts-as-content",
+          // },
+          // {
+          //   to: "/quickstart/koii-software-toolkit-sdk/register-content/",
+          //   from: ["/earning-koii/registering-content", "/quickstart/koii-software-toolkit-sdk/register-content/"],
+          // },
           {
-            to: "/develop/build-dapps-with-koii/using-nfts-as-content/",
-            from: "/build-dapps-with-koii/using-nfts-as-content",
-          },
-          {
-            to: "/quickstart/koii-software-toolkit-sdk/register-content/",
-            from: "/earning-koii/registering-content",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/microservices-and-tasks/what-are-tasks/gradual-consensus",
-          },
-          {
-            to: "/develop/settlement-layer/native-contracts/the-task-contract",
+            to: "/concepts/settlement-layer/native-contracts/the-task-contract",
             from: "/settlement-layer/native-contracts/the-task-contract",
           },
           {
-            to: "/develop/settlement-layer/native-contracts/the-attention-game",
+            to: "/concepts/settlement-layer/native-contracts/the-attention-game",
             from: "/settlement-layer/native-contracts/the-attention-game",
           },
           {
-            to: "/concepts/the-koii-token/network-economics",
+            to: "/koii/the-koii-token/network-economics",
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/task-tutorials/google-doodle-task/",
-            from: "/microservices-and-tasks/google-doodle-task",
-          },
-          {
-            to: "/quickstart/command-line-tool/create-task-cli",
+            to: "/develop/command-line-tool/create-task-cli",
             from: [
               "/koii-software-toolkit-sdk/create-task-cli",
               "/develop/koii-software-toolkit-sdk/create-task-cli",
+              "/quickstart/command-line-tool/create-task-cli",
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/",
-            from: "/microservices-and-tasks/task-development-guide/executable-structure",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/",
-            from: "/microservices-and-tasks/task-development-guide",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
-            from: "/microservices-and-tasks/google-doodle-task/submit-distribution-list",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/executable-structure/validate-node",
-            from: "/microservices-and-tasks/task-development-guide/executable-structure/validate-node",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
-            from: "/microservices-and-tasks/task-development-guide/task-development-flow/create-task",
-          },
-          {
-            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/earning-koii/compute-sharing-marketplace",
-          },
-          {
-            to: "/develop/finnie-for-devs/welcome-to-finnie",
-            from: "/finnie-wallet/welcome-to-finnie/content-collectives",
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
             from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
           },
           {
-            to: "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            to: "/",
             from: [
-              "/quickstart/building-with-koii",
-              "/settlement-layer",
-              "/settlementlayer",
-              "/settlement",
-              "/k2",
-              "/blockchain",
+              "/develop/koii-software-toolkit-sdk/task-node-cli",
+              "/develop/category/koii-command-line-tool",
             ],
           },
           {
-            to: "/quickstart/category/koii-command-line-tool",
-            from: "/develop/koii-software-toolkit-sdk/using-the-cli",
-          },
-
-          {
-            to: "/quickstart/command-line-tool/task-node-cli",
-            from: "/develop/koii-software-toolkit-sdk/task-node-cli",
-          },
-          {
-            to: "/develop/category/k2-integration-hooks",
-            from: "/quickstart/category/koii-network",
-          },
-          {
-            to: "/develop/category/ethereum-network",
-            from: "/quickstart/category/ethereum-network",
-          },
-          {
-            to: "/concepts/ways-to-get-koii/grants-program",
+            to: "/koii/ways-to-get-koii/grants-program",
             from: [
               "/earning-koii/grants-program",
               "/concepts/earning-koii/grants-program",
             ],
           },
           {
-            to: "/concepts/ways-to-get-koii/get-free-tokens",
+            to: "/koii/ways-to-get-koii/get-free-tokens",
             from: [
               "/earning-koii/get-free-tokens",
               "/concepts/earning-koii/get-free-tokens",
             ],
           },
           {
-            to: "/concepts/the-koii-token/network-economics",
+            to: "/koii/the-koii-token/network-economics",
             from: "/concepts/earning-koii/network-economics",
           },
           {
-            to: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
             from: "/concepts/earning-koii/compute-sharing-marketplace",
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/",
-            from: "/concepts/earning-koii/proof-of-real-traffic/",
-          },
-
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/attention-mining",
-            from: "/concepts/earning-koii/proof-of-real-traffic/attention-mining",
+            to: "/concepts/what-are-tasks/designing-tasks/staking-and-voting",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
+              "/develop/designing-tasks/staking-and-voting",
+            ],
           },
           {
-            to: "/develop/attention-mining/proof-of-real-traffic/registering-content",
-            from: "/concepts/earning-koii/proof-of-real-traffic/registering-content",
-          },
-          {
-            to: "/develop/attention-mining/proof-of-real-traffic/sybil-attack-prevention",
-            from: "/concepts/earning-koii/proof-of-real-traffic/sybil-attack-prevention",
-          },
-          {
-            from: "/develop/microservices-and-tasks/what-are-tasks/staking-and-voting",
-            to: "/develop/designing-tasks/staking-and-voting",
-          },
-          {
-            from: "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
-            to: "/develop/designing-tasks/securing-task",
+            to: "/concepts/what-are-tasks/designing-tasks/securing-task",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/what-are-audits",
+              "/develop/designing-tasks/securing-task",
+            ],
           },
           {
             to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
@@ -318,68 +310,30 @@ const config = {
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
           {
-            from: "/develop/microservices-and-tasks/what-are-tasks/",
-            to: "/develop/koii-task-101/what-are-tasks/",
+            to: "/concepts/what-are-tasks/what-are-tasks/runtime-environment",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
+              "/develop/koii-task-101/what-are-tasks/runtime-environment",
+            ],
           },
           {
-            to: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
-            from: "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/gradual-consensus",
-            from: "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
-          },
-          {
-            to: "/develop/koii-task-101/what-are-tasks/runtime-environment",
-            from: "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
-          },
-          {
-            from: "/develop/microservices-and-tasks/google-doodle-task/",
-            to: "/develop/task-tutorials/google-doodle-task/",
-          },
-
-          {
-            to: "/develop/task-tutorials/google-doodle-task/getting-started",
-            from: "/develop/microservices-and-tasks/google-doodle-task/getting-started",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
-            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-task-functions",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
-            from: "/develop/microservices-and-tasks/google-doodle-task/audit-submission-value",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
-            from: "/develop/microservices-and-tasks/google-doodle-task/submit-distribution-list",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
-            from: "/develop/microservices-and-tasks/google-doodle-task/audit-distribution-list",
-          },
-          {
-            to: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
-            from: "/develop/microservices-and-tasks/google-doodle-task/google-doodle-executable-code",
-          },
-          {
-            to: "/develop/task-tutorials/linktree-task/intro",
+            to: "/tutorials/linktree/intro",
             from: "/develop/microservices-and-tasks/linktree-task/intro",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/data-storage",
+            to: "/tutorials/linktree/data-storage",
             from: "/develop/microservices-and-tasks/linktree-task/data-storage",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/data-sharing",
+            to: "/tutorials/linktree/data-sharing",
             from: "/develop/microservices-and-tasks/linktree-task/data-sharing",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/rest-api",
+            to: "/tutorials/linktree/rest-apis",
             from: "/develop/microservices-and-tasks/linktree-task/rest-api",
           },
           {
-            to: "/develop/task-tutorials/linktree-task/auth-list",
+            to: "/tutorials/linktree/user-authentication",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
           {
@@ -387,28 +341,496 @@ const config = {
             from: "/develop/microservices-and-tasks/run-a-task-node",
           },
           {
-            to: "/develop/designing-tasks/using-reputation",
-            from: "/develop/microservices-and-tasks/using-reputation",
+            to: "/concepts/what-are-tasks/designing-tasks/using-reputation",
+            from: [
+              "/develop/microservices-and-tasks/using-reputation",
+              "/develop/designing-tasks/using-reputation",
+            ],
           },
           {
-            to: "/concepts/introduction/welcome",
-            from: "/concepts/koii-summary/impact",
+            to: "/concepts/what-are-tasks/what-are-tasks/key-components/intro",
+            from: [
+              "/develop/microservices-and-tasks/what-are-tasks/key-components",
+              "/develop/koii-task-101/what-are-tasks/key-components/intro",
+            ],
           },
           {
-            to: "/concepts/introduction/welcome",
-            from: "/concepts/koii-summary/social-tech",
+            to: "/concepts/what-are-tasks/what-are-tasks",
+            from: [
+              "/tasks",
+              "/task",
+              "/microservices-and-tasks/what-are-tasks",
+              "/develop/koii-task-101/what-are-tasks/",
+            ],
           },
           {
-            to: "/develop/koii-task-101/what-are-tasks/key-components/intro",
-            from: "/develop/microservices-and-tasks/what-are-tasks/key-components",
+            to: "/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers",
+            from: [
+              "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
+              "/develop/microservices-and-tasks/what-are-tasks/nodes-vs-servers",
+            ],
           },
           {
-            to: "/develop/koii-task-101/what-are-tasks/",
-            from: ["/tasks", "/task"],
+            to: "/concepts/what-are-tasks/what-are-tasks/key-components/database-sharding",
+            from: "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
           },
           {
-            to: "/concepts/koii-wallet-finnie/using-finnie",
-            from: "/concepts/koii-wallet-finnie/connecting-finnie",
+            to: "/concepts/what-are-tasks/what-are-tasks/key-components/node-to-node-sync",
+            from: "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+          },
+          {
+            to: "/concepts/what-are-tasks/what-are-tasks/key-components/rest-api",
+            from: "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
+          },
+          {
+            to: "/concepts/what-are-tasks/what-are-tasks/key-components/auth-and-security",
+            from: "/develop/koii-task-101/what-are-tasks/key-components/auth-and-security",
+          },
+          {
+            from: "/concepts/the-koii-token/tokenomics/token-generation/",
+            to: "/koii/the-koii-token/tokenomics/token-generation",
+          },
+          {
+            from: "/concepts/ways-to-get-koii/grants-program",
+            to: "/koii/ways-to-get-koii/grants-program",
+          },
+          // {
+          //   to: "/koii/koii-wallet-finnie/using-finnie",
+          //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
+          // },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/koii-state/",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/koii-state/getattentionid",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiistate",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/koii-state/getkoiibalance",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/nfts/",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftidsbyowner",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftreward",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/nfts/getnftstate",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/nfts/getnsfwnfts",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: "/quickstart/koii-software-toolkit-sdk/basic-utility-functions/arweave-and-general-utility/getblockheight",
+          },
+          {
+            to: "/",
+            from: "/quickstart/pirate-ship/ambassador-program",
+          },
+          {
+            to: "/koii/the-koii-token/network-economics",
+            from: "/concepts/the-koii-token/network-economics",
+          },
+          {
+            to: "/koii/the-koii-token/tokenomics/supply-reduction",
+            from: "/concepts/the-koii-token/tokenomics/supply-reduction",
+          },
+          {
+            to: "/koii/the-koii-token/tokenomics/reputation-hardening",
+            from: "/concepts/the-koii-token/tokenomics/reputation-hardening",
+          },
+          {
+            to: "/koii/the-koii-token/tokenomics/how-the-network-creates-value",
+            from: "/concepts/the-koii-token/tokenomics/how-the-network-creates-value",
+          },
+          {
+            to: "/koii/ways-to-get-koii/run-a-node",
+            from: "/concepts/ways-to-get-koii/run-a-node",
+          },
+          {
+            to: "/koii/ways-to-get-koii/faucet",
+            from: "/concepts/ways-to-get-koii/faucet",
+          },
+          {
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
+            from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+          },
+          {
+            to: "/koii/ways-to-get-koii/attention-mining",
+            from: "/concepts/ways-to-get-koii/attention-mining",
+          },
+          {
+            to: "/koii/ways-to-get-koii/faucet",
+            from: "/concepts/ways-to-get-koii/get-free-tokens",
+          },
+          {
+            to: "/concepts/finnie-wallet/introduction",
+            from: [
+              "/concepts/koii-wallet-finnie/welcome-to-finnie",
+              "/concepts/koii-wallet-finnie/using-finnie",
+              "/develop/finnie-for-devs/welcome-to-finnie",
+              "/finnie-wallet/welcome-to-finnie/content-collectives",
+            ],
+          },
+          {
+            to: "/",
+            from: [
+              "/concepts/community/community-forums",
+              "/concepts/community/contact-us",
+            ],
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/introduction",
+            from: [
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
+              "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/",
+            ],
+          },
+
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/getting-started",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
+          },
+          {
+            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            from: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
+          },
+          {
+            to: "/tutorials/linktree/intro",
+            from: "/develop/task-tutorials/linktree-task/intro",
+          },
+          {
+            to: "/tutorials/linktree/data-storage",
+            from: "/develop/task-tutorials/linktree-task/data-storage",
+          },
+          {
+            to: "/tutorials/linktree/data-sharing",
+            from: "/develop/task-tutorials/linktree-task/data-sharing",
+          },
+          {
+            to: "/tutorials/linktree/rest-apis",
+            from: "/develop/task-tutorials/linktree-task/rest-api",
+          },
+          {
+            to: "/tutorials/linktree/user-authentication",
+            from: "/develop/task-tutorials/linktree-task/auth-list",
+          },
+          {
+            to: "/concepts/category/k2-integration-hooks",
+            from: "/develop/category/k2-integration-hooks",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/K2-integration-hooks/properties",
+            from: "/develop/finnie-for-devs/K2-integration-hooks/properties",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/K2-integration-hooks/methods",
+            from: "/develop/finnie-for-devs/K2-integration-hooks/methods",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/K2-integration-hooks/events",
+            from: "/develop/finnie-for-devs/K2-integration-hooks/events",
+          },
+          {
+            to: "/concepts/category/ethereum-network",
+            from: "/develop/category/ethereum-network",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
+            from: "/develop/finnie-for-devs/ethereum-network/send-eth",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
+            from: "/develop/finnie-for-devs/ethereum-network/send-eth-eip-1559",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
+            from: "/develop/finnie-for-devs/ethereum-network/contract-deployment",
+          },
+
+          {
+            to: "/concepts/category/ethereum-network",
+            from: "/develop/finnie-for-devs/ethereum-network/mint-nft",
+          },
+          {
+            to: "/concepts/finnie-wallet/finnie-for-devs/other-evm-chains",
+            from: "/develop/finnie-for-devs/other-evm-chains",
+          },
+          {
+            to: "/concepts/settlement-layer/k2-tick-tock-fast-blocks",
+            from: [
+              "/quickstart/building-with-koii",
+              "/settlement-layer",
+              "/settlementlayer",
+              "/settlement",
+              "/k2",
+              "/blockchain",
+              "/develop/settlement-layer/k2-tick-tock-fast-blocks",
+            ],
+          },
+          {
+            to: "/concepts/settlement-layer/native-contracts/",
+            from: "/develop/settlement-layer/native-contracts/",
+          },
+          {
+            to: "/concepts/settlement-layer/native-contracts/the-attention-game",
+            from: "/develop/settlement-layer/native-contracts/the-attention-game",
+          },
+          {
+            to: "/concepts/settlement-layer/native-contracts/the-task-contract",
+            from: "/develop/settlement-layer/native-contracts/the-task-contract",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/welcome-to-koii-x/quick-start",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/welcome-to-koii-x/site-metadata",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/welcome-to-koii-x/environment",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/fetching-nft-data",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/display-nfts",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/lists-and-leaderboards",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/using-thumbnails",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/using-nfts-as-content/koii-bridges",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/integrating-wallets/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/integrating-wallets/accepting-payments",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/integrating-wallets/ethereum-metamask",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/integrating-wallets/other-wallets",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/box",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/simplegrid",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/button-and-button-group",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/basic-setup",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/preview-info",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/services",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/pages",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/assets",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/components",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/internal-api-hooks",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/search",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/crowdfunding-portal/",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/installation",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/customization",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/currencies-and-wallets",
+          },
+          {
+            to: "/tutorials/koii-apps/introduction",
+            from: "/develop/build-dapps-with-koii/template-library/deploy",
+          },
+          {
+            to: "/quickstart/hello-world/introduction",
+            from: ["/quickstart/hello-world/intro", "/develop/build-on-koii"],
+          },
+          {
+            to: "/quickstart/hello-world/understand-the-template",
+            from: "/quickstart/hello-world/task-tutorial",
+          },
+          {
+            to: "/quickstart/hello-world/task",
+            from: "/quickstart/hello-world/task-description",
+          },
+          {
+            to: "/quickstart/hello-world/deployment",
+            from: "/quickstart/hello-world/deploy",
+          },
+          {
+            to: "/develop/category/koii-command-line-tool",
+            from: [
+              "/quickstart/category/koii-command-line-tool",
+              "/develop/koii-software-toolkit-sdk/using-the-cli",
+              "/koii-software-toolkit-sdk/using-the-cli",
+            ],
+          },
+          {
+            to: "/develop/command-line-tool/koii-cli/create-wallet",
+            from: "/quickstart/command-line-tool/koii-cli/create-wallet",
+          },
+          {
+            to: "/develop/command-line-tool/koii-cli/send-and-receive-tokens",
+            from: "/quickstart/command-line-tool/koii-cli/send-and-receive-tokens",
+          },
+          {
+            to: "/develop/command-line-tool/koii-cli/connect-cluster",
+            from: "/quickstart/command-line-tool/koii-cli/connect-cluster",
+          },
+          {
+            to: "/develop/command-line-tool/cli-usage-reference",
+            from: "/quickstart/command-line-tool/cli-usage-reference",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: [
+              "/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+              "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            ],
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/koii-javascript-api",
+            from: "/quickstart/koii-software-toolkit-sdk/koii-javascript-api",
+          },
+          {
+            to: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+            from: [
+              "/quickstart/koii-software-toolkit-sdk/wallet-and-faucet",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/load-wallet",
+              "/quickstart/koii-software-toolkit-sdk/wallet-functions/generate-wallet",
+            ],
+          },
+          {
+            to: "/concepts/web3/registering-content",
+            from: "/quickstart/koii-software-toolkit-sdk/register-content/",
+          },
+          {
+            to: "/concepts/web3/registering-content",
+            from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
         ],
         createRedirects(existingPath) {
@@ -423,18 +845,6 @@ const config = {
           if (existingPath.includes("/concepts/community")) {
             return [
               existingPath.replace("/concepts/community", "/develop/support"),
-            ];
-          }
-          if (
-            existingPath.includes(
-              "/develop/write-a-koii-task/task-development-kit-tdk/"
-            )
-          ) {
-            return [
-              existingPath.replace(
-                "/develop/write-a-koii-task/task-development-kit-tdk/",
-                "/develop/microservices-and-tasks/task-development-kit-tdk/"
-              ),
             ];
           }
           if (
@@ -456,6 +866,9 @@ const config = {
                 "/develop/finnie-for-devs"
               ),
             ];
+          }
+          if (existingPath.includes("/concepts/the-koii-token")) {
+            return [existingPath.replace("/koii/the-koii-token")];
           }
           if (existingPath.includes("/quickstart/koii-software-toolkit-sdk")) {
             return [
@@ -504,6 +917,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+
       // Replace with your project's social card
       image: "img/thumbnail.png",
       // metadata: [
@@ -539,30 +953,47 @@ const config = {
         },
         items: [
           {
-            label: "🚀 Quickstart",
-            to: "/quickstart/hello-world/intro",
+            label: "🥷 Hello World!",
+            to: "/quickstart/hello-world/introduction",
+            activeBasePath: "hello-world",
+            position: "left",
+            className: "header-text",
+          },
+
+          {
+            label: "📖 Koii Apps",
+            to: "/tutorials/koii-apps/introduction",
             activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },
+
           {
-            label: "📖 Learn",
+            label: "🏗️ Tools",
+            to: "/develop/write-a-koii-task/task-development-guide/",
+            activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+
+          {
+            label: "💡 Concepts",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
           },
           {
-            label: "🏗️ Build on Koii",
-            to: "/develop/build-on-koii",
-            activeBasePath: "develop",
+            label: "🖥️ Run a Node",
+            to: "/run-a-node/introduction/types-of-nodes",
+            activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
           },
           {
-            label: "💻 Run a Node",
-            to: "/run-a-node/introduction/types-of-nodes",
-            activeBasePath: "run-a-node",
+            label: "🪙 $KOII",
+            to: "/koii/the-koii-token/network-economics",
+            activeBasePath: "koii",
             position: "left",
             className: "header-text",
           },

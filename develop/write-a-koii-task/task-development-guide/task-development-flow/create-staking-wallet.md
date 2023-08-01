@@ -1,17 +1,17 @@
 ---
 title: Create Staking Wallet
-description: The staking CLI can be started by running the command `yarn stake` in the root directory of the task node.
+description: The staking CLI can be started by running the command `npm stake` in the root directory of the task node.
 image: img/thumbnail.png
 sidebar_label: Create Staking Wallet
 ---
 
 # Create Staking Wallet
 
-The staking CLI can be started by running the command `yarn stake` in the root directory of the task node. The steps are:
+The staking CLI can be started by running the command `npm stake` in the root directory of the task node. The steps are:
 
 - Clone the [task node repository](https://gitlab.com/koii-network/task-node) if you haven’t already done it.
-- Run `yarn build`
-- Run `yarn stake` in your terminal
+- Run `npm build`
+- Run `npm stake` in your terminal
 - Enter the path to your wallet
 - Next you will be prompted with four options&#x20;
 

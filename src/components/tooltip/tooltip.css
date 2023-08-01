@@ -1,0 +1,42 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.tooltip-text {
+  color: #4d3d8d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tooltip-hover-text {
+  color: white;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: #4d3d8df5;
+  position: absolute;
+  top: -50px;
+  font-weight: 500;
+  width: auto;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+.tooltip-hover-container {
+}
