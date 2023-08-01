@@ -79,7 +79,7 @@ task_id: ""
 task_name: "Your-task-name"
 task_description: "This task is to test out the namespace function"
 
-# Network value can be DEVELOPMENT, ARWEAVE or IPFS
+# Network value can be DEVELOPMENT or IPFS
 task_executable_network: "DEVELOPMENT"
 
 # Provide your web3.storage key as it is needed for uploading your metadata
@@ -88,7 +88,7 @@ secret_web3_storage_key: ""
 # Path to your executable webpack if the selected network is IPFS otherwise leave blank
 task_audit_program: ""
 
-# Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
+# In case of DEVELOPMENT give your executable name as main otherwise leave blank
 task_audit_program_id: "main"
 
 # Total round time of your task: it must be given in slots and each slot is roughly equal to 4ms
@@ -210,7 +210,7 @@ Fill in the necessary information by following the instructions below:
   The description should not be longer than 64 characters.
   :::
 
-- **Please select the type of network: ** Choose _IPFS_ or _ARWEAVE_ for storage of your executable file, or _DEVELOPMENT_ if you want to test in development environment.
+- **Please select the type of network: ** Choose **IPFS** for storage of your executable file, or **DEVELOPMENT** if you want to test in development environment.
   :::note
   The next prompt depends on your answer to the prompt above.
   :::
@@ -220,14 +220,12 @@ Fill in the necessary information by following the instructions below:
   Visit [Web3.storage](https://web3.storage/), create an account, create an API token for your project, copy your token, and paste it on this prompt.
   :::
 
-- [For Arweave] **Enter Arweave id of the deployed Koii task executable program:** Upload your executable file to [Arweave](https://www.arweave.org/) and enter its ID into this prompt.
-
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
   :::caution
   The name should not contain `.js`. For example, if you want to run `task-mytask.js`, you should enter `task-mytask` as the executable name.
   :::
 
-- [For IPFS and ARWEAVE] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
+- [For IPFS] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
 
 - **Enter the round time in slots:** The preferred number of slots per round for the task. E.g: `1000`
 

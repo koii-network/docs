@@ -15,16 +15,6 @@ $ koii-keygen pubkey
 <PUBKEY>
 ```
 
-## Airdrop KOII
-
-```
-// Command
-$ koii airdrop 5
-
-// Return
-"5 KOII"
-```
-
 ## Get Balance
 
 ```
@@ -54,10 +44,12 @@ $ koii program deploy <PATH>
 // Return
 <PROGRAM_ID>
 ```
+
 <br />
 <br />
 
 # Usage
+
 <h3 style={{marginTop: 0}}>koii-cli</h3>
 
 ```
@@ -764,7 +756,3 @@ Account modes:
     w: writable
     x: program account (inner instructions excluded)
 ```
-
-
-
-
