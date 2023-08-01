@@ -1,6 +1,6 @@
 ---
 title: Install the Koii CLI Suite
-description: To interact with the K2 locally, you need to install the Koii CLI.
+description: How to install the Koii CLI Suite?
 image: img/thumbnail.png
 sidebar_label: Install the Koii CLI Suite
 ---
@@ -20,6 +20,52 @@ To interact with the K2 network locally, you must install the Koii CLI. The Koii
 By using the Koii CLI, you can seamlessly interact with the K2 network within your local development environment, empowering you to build and test your applications efficiently.
 
 The KOII CLI can be installed in various ways based on your operating system:
+
+# Windows
+
+1. Open a Command Prompt (cmd.exe) as an Administrator:
+
+   - In the Windows search bar, type "Command Prompt."
+   - When the Command Prompt app appears, right-click on it and select "Open as Administrator."
+   - If a pop-up window asks, "Do you want to allow this app to make changes to your device?," click "Yes."
+
+2. Download the Koii installer into a temporary directory:
+
+   - Copy and paste the following command into the Command Prompt, then press Enter:
+
+     ```
+     cmd /c "curl https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
+     ```
+
+     :::note
+
+     - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe).
+     - Your browser may display a warning about the file being potentially harmful. Please accept to keep the file.
+     - After downloading, copy and paste the downloaded file to the location `C:\koii-install-tmp\` and rename it to "koii-install-init.exe."
+       :::
+
+3. Install the latest version of the Koii CLI:
+
+   - Copy and paste the following command into the Command Prompt, then press Enter.
+
+   ```
+   C:\koii-install-tmp\koii-install-init.exe v1.15.0
+   ```
+
+   - If your system displays a security pop-up, select "Allow" to run the program.
+
+4. Wait for the installer to complete, and then press Enter.
+
+5. Close the Command Prompt window and open a new one as a normal user.
+
+6. To confirm that the Koii CLI was successfully installed, run the following command:
+   ```
+   koii --version
+   ```
+   - You should see the version information similar to this:
+     ```
+     koii-cli 1.15.0
+     ```
 
 # MacOS & Linux
 
@@ -79,49 +125,3 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 5. Now, the Koii CLI should work correctly in any new terminal session.
 
 Feel free to [reach out](https://discord.gg/koii) if you have any further questions or need assistance.
-
-# Windows
-
-1. Open a Command Prompt (cmd.exe) as an Administrator:
-
-   - In the Windows search bar, type "Command Prompt."
-   - When the Command Prompt app appears, right-click on it and select "Open as Administrator."
-   - If a pop-up window asks, "Do you want to allow this app to make changes to your device?," click "Yes."
-
-2. Download the Koii installer into a temporary directory:
-
-   - Copy and paste the following command into the Command Prompt, then press Enter:
-
-     ```
-     cmd /c "curl https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
-     ```
-
-     :::note
-
-     - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe).
-     - Your browser may display a warning about the file being potentially harmful. Please accept to keep the file.
-     - After downloading, copy and paste the downloaded file to the location `C:\koii-install-tmp\` and rename it to "koii-install-init.exe."
-       :::
-
-3. Install the latest version of the Koii CLI:
-
-   - Copy and paste the following command into the Command Prompt, then press Enter.
-
-   ```
-   C:\koii-install-tmp\koii-install-init.exe v1.15.0
-   ```
-
-   - If your system displays a security pop-up, select "Allow" to run the program.
-
-4. Wait for the installer to complete, and then press Enter.
-
-5. Close the Command Prompt window and open a new one as a normal user.
-
-6. To confirm that the Koii CLI was successfully installed, run the following command:
-   ```
-   koii --version
-   ```
-   - You should see the version information similar to this:
-     ```
-     koii-cli 1.15.0
-     ```
