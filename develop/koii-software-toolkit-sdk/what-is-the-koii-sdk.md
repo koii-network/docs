@@ -49,7 +49,7 @@ To learn more about the Koii CLI and its functionalities, you can find additiona
 
 ### Create Task CLI
 
-The Create Task CLI is a powerful tool that allows you to deploy your task to a task node in just under 5 minutes! To get started, you can prepare your task by following the guidelines [here](./quickstart/hello-world/introduction) and then try out the Create Task CLI[here.](/develop/command-line-tool/create-task-cli)
+The Create Task CLI is a powerful tool that allows you to deploy your task to a task node in just under 5 minutes! To get started, you can prepare your task by following the guidelines [here](./quickstart/hello-world/introduction) and then try out the Create Task CLI [here.](/develop/command-line-tool/create-task-cli)
 
 ### Task Node CLI
 
