@@ -11,7 +11,7 @@ To begin, clone the task template:
 
 ```bash
  git clone https://github.com/koii-network/task-template.git
- cd hello-world
+ cd task-template
 ```
 
 Make sure you have [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed before moving forward.
@@ -72,7 +72,6 @@ When creating a task using the Task Template, there's usually no need to edit th
 By implementing and modifying these methods, we will create a comprehensive and fully functional task. Let's proceed with writing the logic and submission process for our task.
 
 :::tip Final Notes
-The source code to the hello-world task can be found [here](https://github.com/koii-network/hello-world).
 
 If you encounter any difficulties, feel free to contact us on [Discord](https://discord.com/invite/koii).
 
