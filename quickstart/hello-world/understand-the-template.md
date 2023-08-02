@@ -10,7 +10,7 @@ import Tooltip from "@site/src/components/tooltip";
 To begin, clone the task template:
 
 ```bash
- git clone https://github.com/koii-network/task-template.git
+ git clone https://github.com/koii-network/task-template.git hello-world
  cd hello-world
 ```
 
