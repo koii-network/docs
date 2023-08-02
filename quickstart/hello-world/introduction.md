@@ -55,7 +55,9 @@ Task : {
 In the next steps of this tutorial, you'll learn how to create a task and run it on the Koii Network. But first, let's take a look at how tasks run on the Koii Network.
 
 When your task runs on Koii nodes, it will have access to three types of data:
-- Static metadata: This is the information submitted when the task is created
+- Static metadata ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state)): This is the information submitted when the task is created
+- Dynamic state data ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state)): This is the live data maintained by the global consensus on <Tooltip text="K2"/>
+- Environment variables ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets)): Dynamic inputs passed from the user, which can include login info, API keys, and other sensitive data
 
 ```js
 Node : {
@@ -75,6 +77,9 @@ Node : {
         round : int, // The current round of the task
         bounty : Number, // the current amount of rewards in the task's bounty pool
         nodes : [ Address : String ], // The current list of staked nodes participating in this task
+    },
+    environment : {
+        __any_name__ : String // Any environment variables that you want node operators to pass to your task 
     }
 }
 ```
