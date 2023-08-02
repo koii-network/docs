@@ -35,7 +35,9 @@ In order to host your application, you can use the already existing pool of task
 
 A task is a piece of code that you want to run on someone else's computer.
 
-To prepare your project as a task, you'll need an object that looks like this:
+To prepare your project as a task, we'll build two main components, a task program and a meta data file. 
+
+In pseudocode, a task is a data object like this:
 
 ```js
 Task : {
@@ -49,7 +51,11 @@ Task : {
 }
 ```
 
-You can also customize how it is being described as on a Koii Desktop Node user's interface. Here is an example:
+## How do tasks run?
+In the next steps of this tutorial, you'll learn how to create a task and run it on the Koii Network. But first, let's take a look at how tasks run on the Koii Network.
+
+When your task runs on Koii nodes, it will have access to three types of data:
+- Static metadata: This is the information submitted when the task is created
 
 ```js
 Node : {
@@ -57,15 +63,18 @@ Node : {
         id : String, // The ID of your task, running on someone else's computer
         task_name : String, // The name of your task
         task_description : String, // The description of your task
-        task_manager : String, // The address of the task's owner,
-        is_whitelisted : Boolean, // Whether or not this task is whitelisted to run on nodes
-        is_active : Boolean, // Whether or not this task is currently running on nodes
         task_audit_program: String, // The IPFS CID of the task code
         stake_pot_account : String, // The address which will hold bounty rewards and collateral
+        stake_min : Number, // The minimum amount of KOII that a node must stake to run your task
     },
     state : {
         // The current confirmed consensus on your task's data
+        task_manager : String, // The address of the task's owner,
+        is_whitelisted : Boolean, // Whether or not this task is whitelisted to run on nodes
+        is_active : Boolean, // Whether or not this task is currently running on nodes
         round : int, // The current round of the task
+        bounty : Number, // the current amount of rewards in the task's bounty pool
+        nodes : [ Address : String ], // The current list of staked nodes participating in this task
     }
 }
 ```
