@@ -10,8 +10,8 @@ import Tooltip from "@site/src/components/tooltip";
 To begin, clone the task template:
 
 ```bash
- git clone https://github.com/koii-network/task-template.git
- cd task-template
+ git clone https://github.com/koii-network/task-template.git hello-world
+ cd hello-world
 ```
 
 Make sure you have [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed before moving forward.
