@@ -961,7 +961,7 @@ const config = {
           },
 
           {
-            label: "📖 Koii Apps",
+            label: "📖 Templates",
             to: "/tutorials/koii-apps/introduction",
             activeBasePath: "quickstart",
             position: "left",
