@@ -11,11 +11,14 @@ export enum HubspotFormLinks {
 }
 
 export const getInvolvedLinks = [
-  { label: "Run a Node", url: "/run-a-node/task-nodes/how-to-run-a-desktop-node" },
+  {
+    label: "Run a Node",
+    url: "/run-a-node/task-nodes/how-to-run-a-koii-node",
+  },
   { label: "Get Finnie", url: "https://koii.me/finnie", target: "_blank" },
   { label: "Founders Program", url: "/concepts/earning-koii/grants-program" },
   {
-    label: "Download Desktop Node",
+    label: "Download Koii Node",
     url: "https://www.koii.network/node",
     target: "_blank",
   },

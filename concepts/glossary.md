@@ -9,7 +9,7 @@ sidebar_label: Glossary
 
 Our decentralized service that connects people around the world who have excess computing resources with those who require additional computational power for their applications
 
-## Desktop Node
+## Koii Node
 
 A small program that allows you to run compute jobs called “tasks” for people around the world and earn tokens
 
@@ -67,7 +67,7 @@ This is where data is stored on a decentralized network by users or groups who a
 
 ## Koii Nodes
 
-Computers that are running Koii tasks via the Desktop Node.
+Computers that are running Koii tasks via the Koii Node.
 
 ## Task Nodes
 
