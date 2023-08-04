@@ -7,7 +7,7 @@ sidebar_label: AI on Koii
 
 ## The Power of Collective Computing
 
-AI applications require massive computing resources to handle complex algorithms and process large datasets. Koii addresses this challenge by creating a network of real people who collectively contribute their computing power to the platform. By pooling the computational capabilities of our users' computers using our Desktop Node, we create a distributed infrastructure capable of handling sophisticated AI tasks without the need for centralized GPU centers. This decentralized approach not only ensures cost-effectiveness but also enhances scalability and flexibility for users of all sizes, from individuals to enterprises.
+AI applications require massive computing resources to handle complex algorithms and process large datasets. Koii addresses this challenge by creating a network of real people who collectively contribute their computing power to the platform. By pooling the computational capabilities of our users' computers using our Koii Node, we create a distributed infrastructure capable of handling sophisticated AI tasks without the need for centralized GPU centers. This decentralized approach not only ensures cost-effectiveness but also enhances scalability and flexibility for users of all sizes, from individuals to enterprises.
 
 ## Democratizing AI Data Access
 
