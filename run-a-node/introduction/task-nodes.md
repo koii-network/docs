@@ -11,9 +11,9 @@ import Tooltip from "@site/src/components/tooltip";
 
 ## Task Nodes
 
-Task node operators run compute jobs called <Tooltip text="tasks"/> to earn <Tooltip text="rewards"/>. The best way to try out the task node is with the <Tooltip text="desktop node"/>.
+Task node operators run compute jobs called <Tooltip text="tasks"/> to earn <Tooltip text="rewards"/>. The best way to try out the task node is with the <Tooltip text="Koii Node"/>.
 
-[**Click here for a short tutorial that covers the onboarding process.**](/run-a-node/task-nodes/how-to-run-a-desktop-node)
+[**Click here for a short tutorial that covers the onboarding process.**](/run-a-node/task-nodes/how-to-run-a-koii-node)
 
 Task nodes serve as the fundamental infrastructure for executing Koii tasks, assuming a pivotal role in their successful implementation. Notably, these nodes are efficiently hosted on personal devices, ensuring widespread accessibility by virtually any user.
 

@@ -55,4 +55,4 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 While the network is still in its early stages, our community has tens of thousands of node runners and applicants, providing a global network of personal computers.
 
-[Click here to download our Desktop Node](https://www.koii.network/node)
+[Click here to download our Koii Node](https://www.koii.network/node)
