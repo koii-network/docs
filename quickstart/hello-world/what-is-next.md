@@ -15,7 +15,7 @@ The [Ministry of Truth](https://en.wikipedia.org/wiki/Ministries_in_Nineteen_Eig
 
 You can extend your endpoints, add more functionality, and make the application more complex. The journey is just starting!
 
-In order the understand the user experience better, you can try the <Tooltip text="Koii Desktop Node"/> yourself.
+In order the understand the user experience better, you can try the <Tooltip text="Koii Node"/> yourself.
 
 We are ready to help on our [Discord](https://discord.gg/koii) with any questions you may have. We are also happy to help you with any problems that you might face and provide feedback on your applications!
 
