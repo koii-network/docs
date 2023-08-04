@@ -31,7 +31,7 @@ The settlement layer holds the KOII tokens, as well as an immutable ledger of tr
 
 ### The Task Contract
 
-[Koii Task Nodes](/quickstart/command-line-tool/task-node-cli) use the settlement layer to submit proofs and request rewards for compute work.
+Koii Task Nodes use the settlement layer to submit proofs and request rewards for compute work.
 
 All task related activities are managed by the built-in task contract, which is managed by the Koii foundation. Some of the operations the task contract supports are:
 
