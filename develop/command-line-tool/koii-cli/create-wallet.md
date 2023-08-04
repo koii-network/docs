@@ -12,8 +12,7 @@ Koii supports a file system wallet that can be used to interface directly with t
 
 To generate a file system wallet keypair, use Koii's command-line tool `koii-keygen`. Run the following command:
 ```bash
-mkdir ~/my-koii-wallet
-koii-keygen new --outfile ~/my-koii-wallet/my-keypair.json
+koii-keygen new --outfile ~/.config/koii/id.json
 ```
 
 :::danger
@@ -28,8 +27,5 @@ It will return a string of characters like:
 ```
 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBq
 ```
-:::info
-This is the public key for the keypair found in /my-koii-wallet/my-keypair.json.
-:::
 
 Congratulations! You now have a Koii wallet, next, let's airdrop some KOII in your wallet.
