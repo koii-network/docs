@@ -192,7 +192,7 @@ const config = {
           //   from: "/build-dapps-with-koii/template-library",
           // },
           {
-            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
             from: "/earning-koii/running-task-nodes",
           },
           // {
@@ -337,7 +337,7 @@ const config = {
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
           {
-            to: "/run-a-node/task-nodes/how-to-run-a-desktop-node",
+            to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
           },
           {

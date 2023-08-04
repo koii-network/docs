@@ -32,10 +32,10 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "Desktop Node",
+      value: "Koii Node",
       className: "sidebar-title",
     },
-    "task-nodes/how-to-run-a-desktop-node",
+    "task-nodes/how-to-run-a-koii-node",
     "task-nodes/time-to-node",
     "task-nodes/rewards",
     "task-nodes/choosing-tasks",

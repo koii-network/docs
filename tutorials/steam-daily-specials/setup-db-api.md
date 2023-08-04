@@ -9,7 +9,7 @@ sidebar_label: Set Up Database and API
 
 It use `nedb` to set up database. `nedb` is a lightweight database that can be used in Node.js. It is a file-based database. It is easy to use and does not require a separate database server.
 
-In `db.js` file, it will call `namespaceWrapper.getDb();` before using db, which will initialize the database. It will create a database file `localKOIIDB.db` in the root folder. If the task is running on the desktop node, it will create a database file `KOIIDB.db`.
+In `db.js` file, it will call `namespaceWrapper.getDb();` before using db, which will initialize the database. It will create a database file `localKOIIDB.db` in the root folder. If the task is running on the Koii Node, it will create a database file `KOIIDB.db`.
 
 In this task, it provide three main db functions:
 
@@ -44,16 +44,17 @@ The funcitons will be used in `coreLogic.js` file. For example in `submit` funct
 API set up in `index.js` file. It use `express` to set up API. `express` is a web framework for Node.js. It is used to build web applications and APIs. It is easy to use and has a large community.
 
 ```js
- app.get('/getSpecialList', async (req, res) => {
+app.get("/getSpecialList", async (req, res) => {
   try {
     const specialList = await db.getSpecialList();
     res.send(specialList);
   } catch (err) {
-    console.log('ERROR IN GET Special LIST', err);
-    res.send('ERROR IN GET Special LIST');
+    console.log("ERROR IN GET Special LIST", err);
+    res.send("ERROR IN GET Special LIST");
   }
 });
 ```
+
 :::caution
 Please make sure use try catch to handle the error.
 :::
