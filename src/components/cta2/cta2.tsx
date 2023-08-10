@@ -31,7 +31,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-              Koii Apps
+              Koii Templates
             </h2>
             <p
               className={
