@@ -17,7 +17,7 @@ We'll cover how to:
 3. [Test and debug your distributed application](/quickstart/hello-world/local-test)
 4. [Deploy your task to the Koii community cloud](/quickstart/hello-world/deployment)
 
-There's obviously a lot more that Koii can do, so feel free to jump over to the [Koii Apps](/tutorials/koii-apps/introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
+There's obviously a lot more that Koii can do, so feel free to jump over to the [Koii Templates](/tutorials/koii-apps/introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
 
 This tutorial is written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
 
