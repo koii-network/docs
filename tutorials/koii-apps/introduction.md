@@ -1,12 +1,12 @@
 ---
-title: Welcome to Koii Apps
+title: Welcome to Koii Templates
 image: img/thumbnail.png
-sidebar_label: Welcome to Koii Apps
+sidebar_label: Welcome to Koii Templates
 ---
 
 ![banner](./img/header.svg)
 
-**Koii Apps** is a starting point for app developers to start building their own Web3 Applications.
+**Koii Templates** is the starting point for app developers to start building their own Web3 Applications.
 
 Each of the projects publicly released here is designed to tackle a real life problem, and become a foundation for your ideas. You can follow the explaination, clone the repository and start experimenting right away!
 
