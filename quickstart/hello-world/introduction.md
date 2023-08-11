@@ -8,16 +8,16 @@ sidebar_label: Getting Started
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-
 This short tutorial will walk you through deploying your first app on Koii.
 
 We'll cover how to:
+
 1. [Expose a **REST API** use Koii Nodes to host an API](/quickstart/hello-world/get-request)
 2. [Coordinate Koii Nodes to submit blockchain transactions](/quickstart/hello-world/task)
-3. [Test and debug your distributed application](/quickstart/hello-world/local-test) 
+3. [Test and debug your distributed application](/quickstart/hello-world/local-test)
 4. [Deploy your task to the Koii community cloud](/quickstart/hello-world/deployment)
 
-There's obviously a lot more that Koii can do, so feel free to jump over to the [Koii Apps](/tutorials/koii-apps/introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
+There's obviously a lot more that Koii can do, so feel free to jump over to the [Koii Templates](/tutorials/koii-apps/introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
 
 This tutorial is written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
 
@@ -25,8 +25,9 @@ This tutorial is written mostly in JavaScript, but once you understand the basic
 If you are interested in gaining an in-depth understanding of the task development process, we recommend using our [Task development Guide](/develop/write-a-koii-task/task-development-guide/). This guide provides comprehensive and detailed information on the entire process of developing tasks for the Koii platform. By following the guide, you can explore various aspects, best practices, and guidelines that will assist you in creating robust and effective Koii tasks.
 :::
 
-### Build on Koii:
-There are many reasons to build on Koii, but here are the two of the big ones:
+![banner](../img/buildingonkoii.svg)
+
+<!-- There are many reasons to build on Koii, but here are the two of the big ones:
 
 1.  **Reduce existing hosting costs and increase uptime**
 
@@ -35,13 +36,12 @@ There are many reasons to build on Koii, but here are the two of the big ones:
 
 2.  **Develop revolutionary applications**
 
-    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more.
+    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more. -->
 
 <!-- add line break below -->
 
-We accomplish all these by utilizing <Tooltip text="Koii Nodes"/>.
-
-![banner](../img/nodesandtasks.svg)
+<!-- We accomplish all these by utilizing <Tooltip text="Koii Nodes"/>.
+ -->
 
 ## What is a Node?
 
@@ -49,11 +49,14 @@ Nodes are people using their computers to create a world-wide network of servers
 
 In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
+![banner](../img/nodesandtasks.svg)
+
 ## What is a Task?
 
+![banner](../img/whataretaskssimplified.svg)
 A task is a piece of code that you want to run on someone else's computer.
 
-To prepare your project as a task, we'll build two main components, a task program and a meta data file. 
+To prepare your project as a task, we'll build two main components, a task program and a meta data file.
 
 In pseudocode, a task is a data object like this:
 
@@ -70,9 +73,11 @@ Task : {
 ```
 
 ## How do tasks run?
+
 In the next steps of this tutorial, you'll learn how to create a task and run it on the Koii Network. But first, let's take a look at how tasks run on the Koii Network.
 
 When your task runs on Koii nodes, it will have access to three types of data:
+
 - Static metadata ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state)): This is the information submitted when the task is created
 - Dynamic state data ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state)): This is the live data maintained by the global consensus on <Tooltip text="K2"/>
 - Environment variables ([more](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets)): Dynamic inputs passed from the user, which can include login info, API keys, and other sensitive data
@@ -97,7 +102,7 @@ Node : {
         nodes : [ Address : String ], // The current list of staked nodes participating in this task
     },
     environment : {
-        __any_name__ : String // Any environment variables that you want node operators to pass to your task 
+        __any_name__ : String // Any environment variables that you want node operators to pass to your task
     }
 }
 ```
@@ -105,4 +110,3 @@ Node : {
 In the next lesson, we'll demonstrate how to get up and running using the <Tooltip text="Koii SDK"/> to create and manage tasks.
 
 <!-- line break -->
-
