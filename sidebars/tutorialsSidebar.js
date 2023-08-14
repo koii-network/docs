@@ -40,9 +40,22 @@ const sidebars = {
     "linktree/rest-apis",
     "linktree/user-authentication",
     "linktree/frontend",
+
     {
       type: "html",
-      value: "Web Crawler",
+      value: "Twitter Archiver",
+      className: "sidebar-title",
+    },
+    "archiver/introduction",
+    "archiver/using",
+    "archiver/testing",
+
+    "archiver/adapter",
+    "archiver/deployment",
+
+    {
+      type: "html",
+      value: "Steam Crawler",
       className: "sidebar-title",
     },
     "steam-daily-specials/steam-daily-specials-task",
