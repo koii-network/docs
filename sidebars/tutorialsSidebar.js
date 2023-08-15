@@ -50,6 +50,12 @@ const sidebars = {
     "steam-daily-specials/setup-db-api",
     "steam-daily-specials/setup-audit",
     "steam-daily-specials/setup-submit",
+    {
+      type: "html",
+      value: "Migrating Apps",
+      className: "sidebar-title",
+    },
+    "migrate-apps/web-crawler",
   ],
 };
 
