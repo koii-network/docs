@@ -21,6 +21,7 @@ const sidebars = {
       className: "sidebar-title",
     },
     "koii-apps/introduction",
+    "task-dos-and-donts/task-dos-and-donts",
     // {
     //   type: "html",
     //   value: "Contact Us",
