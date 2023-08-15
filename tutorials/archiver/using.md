@@ -8,7 +8,7 @@ sidebar_label: Using the Crawler
 
 To modify the crawler query, or change how it uses the local database, check-out `twitter-task.js`.
 
-The `query` object manages the key parts of the crawler.
+The `query` object passes the fundamental instructions to our crawler.
 
 ```javascript
 let searchTerm = "#koii";
@@ -22,6 +22,16 @@ let query = {
     round: 1 // the current round
 }
 ```
+
+## Testing the Crawler
+
+Within the tests folder you will find multiple pre-written tests. By utilizing these, you can see how your crawler will behave in deployment.
+
+One of files that you will find useful is is the `test-one-round.js`. This test will locally simuate running the crawler for one round and will output the results in the console.
+
+You can run it with:
+
+`node test/test-one-round.js`
 
 ## Interacting with Task Runners (config-task.yaml)
 
@@ -46,12 +56,3 @@ Be sure to provide a secret_web3_storage_key , as we are using the IPFS to deplo
 #### Other Variables:
 
 Don't forget to edit the task_name, task_description, total_bounty_amount and bounty_amount_per_round before deployment, as these would be directly visible by potential task runners in Koii Node.
-
-## Creating a Webpack & Deployment To IPFS
-Before deploying our task, we must first convert it to webpack format with by typing yarn webpack in our terminal.
-
-We can use use create-task-cli package to deploy our webpacked application to IPFS.type npx @\_koii/create-task-cli@latest
-
-Voila! Now you have your crawler deployed on Koii. Be sure to save the returned task id, as you will need it in Koii Node.
-
-Within Koii Node, head over to My Node. Click “Advanced”, (at the bottom of the interface). Copy your Task Id and start running the task! Do not forget that in order to have the audit step working, you need at least two people. So invite a friend of yours to test your application in deployment.

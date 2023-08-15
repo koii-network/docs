@@ -6,7 +6,7 @@ sidebar_label: Twitter Adapter Template
 
 ### Modules
 
-Before anything, let's take a look at the necessary modules and libraries that will be used throughout the code.
+Let's take a look at the necessary modules and libraries that will be used throughout the code:
 
 We have a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
 
