@@ -8,18 +8,9 @@ sidebar_label: The Task Structure & Final Steps
 
 The `TwitterTask` class,found in `twitter-task.js` provides functionality to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
 
-### **Constructor:**
-
-- `getRound`: A function that retrieves the current round.
-- `round`: The current round's number.
-
-#### **Properties:**
-
-- `round`: Represents the current round.
-- `lastRoundCheck`: Timestamp when the last round check occurred.
-- `isRunning`: Boolean to check if the crawler is currently running.
-- `searchTerm`: The term used to search on Twitter (defaulted to 'Web3').
-- `adapter`: The adapter used for the crawler.
+:::tip
+Edit `searchTerm` (defaulted to 'Web3') to customize your crawler.
+:::
 
 ### **Methods:**
 
@@ -79,10 +70,9 @@ Fetches the JSON data from a CID.
 
 ### **Implementation Details:**
 
-- The crawler is started when an instance of the `TwitterTask` class is created.
 - The Twitter adapter takes the environment variables `TWITTER_USERNAME` and `TWITTER_PASSWORD` to authenticate the Twitter session.
 
-- To validate a round of results from another node, the class retrieves the data from the provided CID. It then performs a random check on a predefined threshold of the records against the actual Twitter content. If any check fails, the validation returns `false`. We are using this for our audit.
+- To validate a round of results from another node, the class retrieves the data from the provided CID. It then performs a random check on a predefined threshold of the records against the actual Twitter content. If any check fails, the validation returns `false`. We are using this for our audit step.
 
 ### **Dependencies:**
 

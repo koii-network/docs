@@ -14,12 +14,6 @@ Let's take a look at our `adapters/twitter.js` file.
 
 We are making use of a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
 
-### Twitter Adapter Class
-
-#### Constructor
-
-The constructor here initializes necessary variables such as credentials, data storage, proofs, session checks, browser instances.
-
 ### Session Management
 
 **checkSession Method:**
