@@ -33,26 +33,28 @@ You can run it with:
 
 `node test/test-one-round.js`
 
-## Interacting with Task Runners (config-task.yaml)
+## Interacting with Task Runners
+
+Within `config-task.yaml`, you can edit how your task is presented to potential task-runners.
 
 #### Environment Variables:
 
-Your task runners will populate this via Koii Node. We need:
+Your task runners will populate this via Koii Node. We need the following:
 
-- Username
-- Password
+- Twitter Username
+- Twitter Password
 - Web3 storage token
 
-A Web3 Storage Token is required from the task-runner as it is used to upload data to InterPlanetary File System protocol.
+_A Web3 Storage Token is required from the task-runner as it is used to upload data to InterPlanetary File System protocol._
 
 #### Task Id:
 
-Do not provide a task_id for the first deployment, as it would be assigned automatically when you create your task.
+Do not provide a `task_id` for the first deployment, as it would be assigned automatically when you create your task.
 
 #### Secret Web3 Storage Key:
 
-Be sure to provide a secret_web3_storage_key , as we are using the IPFS to deploy our application; we need a storage space for it.
+Be sure to provide a `secret_web3_storage_key`, we are using the IPFS to deploy our application; we need a storage space for it.
 
 #### Other Variables:
 
-Don't forget to edit the task_name, task_description, total_bounty_amount and bounty_amount_per_round before deployment, as these would be directly visible by potential task runners in Koii Node.
+Don't forget to edit the task_name, `task_description`, `total_bounty_amount` and `bounty_amount_per_round` before deployment, as these would be directly visible by potential task runners in Koii Node.
