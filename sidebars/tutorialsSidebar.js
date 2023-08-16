@@ -49,7 +49,6 @@ const sidebars = {
     },
     "archiver/introduction",
     "archiver/using",
-    "archiver/testing",
 
     "archiver/adapter",
     "archiver/deployment",

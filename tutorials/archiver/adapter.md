@@ -1,12 +1,16 @@
 ---
-title: Twitter Adapter Template
+title: Adapter
 image: img/thumbnail.png
-sidebar_label: Twitter Adapter Template
+sidebar_label: Adapter
 ---
 
-### Modules
+Within our template, we are making use of an adapter class.
 
-Let's take a look at the necessary modules and libraries that will be used throughout the code:
+We are extending it to interact with Twitter, but you can extend it to interact with any website you want.
+
+Let's take a look at our `twitter.js` file
+
+### Modules
 
 We have a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
 
@@ -14,11 +18,7 @@ We are also importing the _Adapter_. This is a base class that provides a framew
 
 ### Twitter Adapter Class
 
-#### Definition:
-
-Here, we are extending the base Adapter class. Instead of a twitter crawler, you can extend this class for any other type of crawler.
-
-#### Constructor:
+#### Constructor
 
 The constructor initializes necessary variables such as credentials, data storage, proofs, session checks, browser instances.
 
@@ -47,31 +47,43 @@ The constructor initializes necessary variables such as credentials, data storag
 ### Data Handling
 
 **getSubmissionCID Method:**
-Returns the CID (Content Identifier) of a submission for a given round. If the submission hasn't been uploaded yet, it uploads the submission and then returns the CID.
 
-**parseItem Method**
-This method is for scraping data from a Twitter post. It waits for the page to load, extracts data such as tweet text, username, likes, shares, etc., using Cheerio, and then returns the extracted data.
+- Returns the CID (Content Identifier) of a submission for a given round. If the submission hasn't been uploaded yet, it uploads the submission and then returns the CID.
+
+**parseItem Method:**
+
+- This method is for scraping data from a Twitter post. It waits for the page to load, extracts data such as tweet text, username, likes, shares, etc., using Cheerio, and then returns the extracted data.
 
 ### Crawling Logic
 
 **crawl Method:**
-Initializes a list of URLs to crawl.
-For each URL, it parses the item at the URL and extracts relevant data. If recursive querying is allowed, it fetches more links from each link.
 
-**fetchList Method**
-This method is tasked with visiting a given URL, waiting for its content to fully load, scraping it, and then returning an array of links found on the page.
+- Initializes a list of URLs to crawl.
+  For each URL, it parses the item at the URL and extracts relevant data. If recursive querying is allowed, it fetches more links from each link.
 
-**stop Method**
-This method sets the break variable to true, stopping the crawl.
+**fetchList Method:**
+
+- This method is tasked with visiting a given URL, waiting for its content to fully load, scraping it, and then returning an array of links found on the page.
+
+**stop Method:**
+
+- This method sets the break variable to true, stopping the crawl.
 
 ### Utilities
 
 The final portion of the code contains utility functions:
-**makeStorageClient:** Returns a new instance of Web3Storage for decentralized storage.
 
-**makeFileFromObjectWithName** Converts an object to a File with a specified name.
+**makeStorageClient:**
 
-**storeFiles** Stores files using the Web3 storage client and returns their CID.
+- Returns a new instance of Web3Storage for decentralized storage.
+
+**makeFileFromObjectWithName:**
+
+- Converts an object to a File with a specified name.
+
+**storeFiles:**
+
+- Stores files using the Web3 storage client and returns their CID.
 
 ### Summary
 
