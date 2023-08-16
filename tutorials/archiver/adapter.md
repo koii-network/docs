@@ -81,4 +81,4 @@ The final portion of our file contains utility functions:
 
 The Twitter class in the code provides a framework for crawling Twitter using puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using web3.storage.
 
-You can use it as a starting point to develop your own Twitter crawler to your own needs, or you can use it as a reference to develop a crawler for a different website.
+You can use it as a starting point to develop your own Twitter crawler to your own needs, or as a reference to develop a crawler for a different website.
