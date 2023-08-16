@@ -14,9 +14,9 @@ If you want your completed projects to be highlighted on our website, feel free 
 
 ## Our templates:
 
-| Type                   | Example Implementation |                                            Practical Use-Case | Tutorial                                                                    |
-| ---------------------- | ---------------------: | ------------------------------------------------------------: | --------------------------------------------------------------------------- |
-| Full Stack Application | Decentralized Bio Page |                  A full stack application hosted by its users | [**Click Here**](/tutorials/linktree/intro)                                 |
-| Web Crawler            |        Twitter Crawler | A decentralized web crawler that can scrape data from Twitter | [**Click Here**](/tutorials/archiver/introduction)                          |
-| Web Crawler            |          Steam Crawler |  An decentralized crawler that scrapes Steam's daily specials | [**Click Here**](/tutorials/steam-daily-specials/steam-daily-specials-task) |
-| Federated AI Training  |  Federated AI Training |                                 Cost effective model training | In Development                                                              |
+| Type                   | Example Implementation |                                               Practical Use-Case | Tutorial                                                                    |
+| ---------------------- | ---------------------: | ---------------------------------------------------------------: | --------------------------------------------------------------------------- |
+| Full Stack Application | Decentralized Bio Page |                     A full stack application hosted by its users | [**Click Here**](/tutorials/linktree/intro)                                 |
+| Web Crawler            |        Twitter Crawler |    A decentralized web crawler that can scrape data from Twitter | [**Click Here**](/tutorials/archiver/introduction)                          |
+| Web Crawler            |          Steam Crawler | An decentralized web crawler that scrapes Steam's daily specials | [**Click Here**](/tutorials/steam-daily-specials/steam-daily-specials-task) |
+| Federated AI Training  |  Federated AI Training |                                    Cost effective model training | In Development                                                              |

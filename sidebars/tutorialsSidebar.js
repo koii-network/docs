@@ -51,7 +51,7 @@ const sidebars = {
     "archiver/using",
 
     "archiver/adapter",
-    "archiver/deployment",
+    "archiver/task-structure",
 
     {
       type: "html",
