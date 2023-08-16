@@ -1,26 +1,24 @@
 ---
-title: Adapter
+title: Adapters
 image: img/thumbnail.png
-sidebar_label: Adapter
+sidebar_label: Adapters
 ---
 
-Within our template, we are making use of an adapter class.
+Within our template, we are making use adapters.
 
-We are extending it to interact with Twitter, but you can extend it to interact with any website you want.
+We are extending the adapter class to interact with Twitter, but you can extend it to interact with any website you want.
 
-Let's take a look at our `twitter.js` file
+Let's take a look at our `adapters/twitter.js` file.
 
 ### Modules
 
-We have a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
-
-We are also importing the _Adapter_. This is a base class that provides a framework for crawling data from a website.
+We are making use of a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
 
 ### Twitter Adapter Class
 
 #### Constructor
 
-The constructor initializes necessary variables such as credentials, data storage, proofs, session checks, browser instances.
+The constructor here initializes necessary variables such as credentials, data storage, proofs, session checks, browser instances.
 
 ### Session Management
 
@@ -41,7 +39,7 @@ The constructor initializes necessary variables such as credentials, data storag
 
 - Navigates to Twitter's main page and then to the login page.
 - Fills in the username and password and presses 'Enter' to attempt logging in.
-- There's also logic to handle verification (perhaps two-factor authentication).
+- Includes logic to handle verification.
 - After a successful login, it sets the session to valid.
 
 ### Data Handling
@@ -71,7 +69,7 @@ The constructor initializes necessary variables such as credentials, data storag
 
 ### Utilities
 
-The final portion of the code contains utility functions:
+The final portion of our file contains utility functions:
 
 **makeStorageClient:**
 
