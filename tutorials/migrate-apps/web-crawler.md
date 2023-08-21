@@ -1,18 +1,18 @@
 ---
 title: Migrating from a Node.js App to a Koii Task; Transforming a Web Scraper
 image: img/thumbnail.png
-sidebar_label: Migrate a Node.js App
+sidebar_label: Migrate a Web Scraper
 ---
 
 # Migrating from a Node.js App to a Koii Task: Transforming a Web Scraper
 
-This guide walks you through the conversion of a basic Node.js web scraper into a Koii Task, outlining the necessary steps to achieve this migration.
+This guide provides a step-by-step walkthrough of the process to convert a basic Node.js web scraper into a Koii Task. By following these steps, you'll adapt an existing web scraper to operate as a Koii Task, tapping into the benefits of decentralized hosting and incentivization on the Koii network.
 
 # Getting Started
 
-The application being converted into a Koii Task is a web scraper that retrieves the latest news headlines from the [CoinMarketCap](https://coinmarketcap.com/headlines/news) website.
+To start the migration process, let's examine the existing Node.js web scraper that retrieves the latest news headlines from the [CoinMarketCap](https://coinmarketcap.com/headlines/news) website.
 
-Below is the existing code for the web scraper. Within the `fetchLatestNews` function, an HTTP GET request is initiated using the `axios` library. The `cheerio` library is utilized to load, parse HTML content, and select elements with specific classes. The `.each` function iterates through selected elements to extract news titles and URLs.
+Below is the code for the web scraper. In the `fetchLatestNews` function, an HTTP GET request is initiated using the `axios` library. The `cheerio` library is utilized to load, parse HTML content, and select elements with specific classes. The `.each` function iterates through selected elements to extract news titles and URLs.
 
 ```js
 // Dependencies
@@ -22,20 +22,21 @@ const cheerio = require("cheerio");
 const PORT = 8000;
 const app = express();
 
-// URL to scrape
+// URL to Scrape
 const URL = "https://coinmarketcap.com/headlines/news";
 
-// Fetch latest news headlines
+// Fetch Latest News Headlines
 async function fetchLatestNews() {
   try {
-    const response = await axios(URL);
-    const html = response.data;
-    const $ = cheerio.load(html);
-
     const latestNews = [];
+    const response = await axios(URL);
+    const html = response.data; // Extract HTML content from response
+    const $ = cheerio.load(html); // Load HTML content for parsing
+
+    // Iterate through elements to extract news titles and URLs
     $(`.uikit-row .uikit-col-sm-10 .cmc-link`, html).each(function () {
-      const title = $(this).text();
-      const url = $(this).attr("href");
+      const title = $(this).text(); // Extract news title
+      const url = $(this).attr("href"); // Extract URL
       latestNews.push({
         title,
         url,
@@ -53,64 +54,118 @@ fetchLatestNews();
 
 ## Converting to a Koii Task
 
-Follow these steps to convert the Node.js application into a Koii Task:
+Now, let's walk through the steps to transform this Node.js web scraper into a Koii Task:
 
-1. Clone the [Task Template](https://github.com/koii-network/task-template) repository and execute `yarn` to install dependencies.
+1. **Clone the Task Template Repository:** Begin by cloning the [Task Template](https://github.com/koii-network/task-template) repository. Then, execute `yarn && yarn add cheerio` to install the required dependencies.
 
-2. Navigate to the `task/submission.js` file, where the core logic of the task exists. Replace the default `task()` method with the code block below:
+2. **Include Helper Functions:** To assist with various operations throughout the tutorial, we'll be using helper functions that facilitate file manipulation and data retrieval from IPFS using Web3.storage. To set up these functions, follow these steps:
+
+  a. Create a new file named `helpers.js` in the root of the task folder.
+
+  b. Open this [helpers.js file](https://github.com/Giftea/web-scraper/blob/main/koii-task/helpers.js) in your browser.
+
+  c. Copy the entire content of the helpers.js [file](https://github.com/Giftea/web-scraper/blob/main/koii-task/helpers.js).
+
+  d. Paste the copied content into the newly created `helpers.js` file in your task folder.
+
+3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `Web3Storage` for IPFS interactions.
+
+  ```js title="/task/submission.js"
+  require("dotenv").config();
+  const { namespaceWrapper } = require("../_koiiNode/koiiNode");
+  const axios = require("axios");
+  const cheerio = require("cheerio");
+  const fs = require("fs");
+  const { createFile, deleteFile } = require("../helpers");
+  const { Web3Storage, getFilesFromPath } = require("web3.storage");
+  const storageClient = new Web3Storage({
+    token: process.env.SECRET_WEB3_STORAGE_KEY,
+  });
+  ```
+
+  :::caution
+  Ensure you have a [Web3.storage](https://web3.storage/) API key and store it as an environment variable, specifically `SECRET_WEB3_STORAGE_KEY`, within a `.env` file.
+  :::
+
+4. **Update Submission Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
   ```js title="/task/submission.js"
   // Existing code...
-    async task(round) {
-      try {
-        const URL = 'https://coinmarketcap.com/headlines/news';
-        const latestNews = [];
-        const response = await axios(URL);
-        const html = response.data;
-        const $ = cheerio.load(html);
+  async function task(round) {
+    try {
+      const URL = "https://coinmarketcap.com/headlines/news"; // URL to scrape
+      const latestNews = [];
+      let proof_cid; // CID for proof of work
+      const response = await axios(URL);
+      const html = response.data;
+      const $ = cheerio.load(html);
 
-        $(`.uikit-row .uikit-col-sm-10 .cmc-link`, html).each(function () {
-          const title = $(this).text();
-          const url = $(this).attr('href');
-          latestNews.push({
-            title,
-            url,
-          });
+      $(`.uikit-row .uikit-col-sm-10 .cmc-link`, html).each(function () {
+        const title = $(this).text();
+        const url = $(this).attr("href");
+        latestNews.push({
+          title,
+          url,
         });
+      });
 
-        if (latestNews !== null && latestNews.length !== 0) {
+      if (latestNews !== null && latestNews.length !== 0) {
+        const path = `./Latest_news/proofs.json`; // Path to store file
+
+        if (!fs.existsSync("./Latest_news")) fs.mkdirSync("./Latest_news"); // Create directory if not exists
+
+        await createFile(path, latestNews); // Create file with latest news
+
+        if (storageClient) {
+          const file = await getFilesFromPath(path);
+          proof_cid = await storageClient.put(file); // Upload file to IPFS
+
+          // Delete the file from filesystem once uploaded to IPFS
+          await deleteFile(path);
+
           // Store value on NeDB
-          await namespaceWrapper.storeSet('value', JSON.stringify(latestNews));
-          console.log('LATEST NEWS FETCHED', latestNews);
+          await namespaceWrapper.storeSet("value", JSON.stringify(proof_cid)); // Store CID
+          console.log("LATEST NEWS CID", proof_cid);
+        } else {
+          console.log("NODE DOES NOT HAVE ACCESS TO WEB3.STORAGE");
         }
-        return JSON.stringify(latestNews);
-      } catch (err) {
-        console.log('ERROR IN EXECUTING TASK', err);
-        return 'ERROR IN EXECUTING TASK' + err;
       }
+      return proof_cid; // Return the proof CID
+    } catch (err) {
+      console.log("ERROR IN EXECUTING TASK", err);
+      return "ERROR IN EXECUTING TASK" + err;
     }
+  }
   // Existing code...
   ```
 
-  In this code block, the web scraper logic remains intact. However, the submission process now involves sending a stringified version of `latestNews` to K2 (Koii Settlement Layer) as proof of the executed task.
-
-3. Update the audit logic in the `task/audit.js` file to suit the web scraper's behavior. Inside the `validateNode()` method, modify the audit condition as shown:
+5. **Update Audit Logic:** In the `task/audit.js` file, within the `validateNode()` method, modify the audit condition to accommodate the web scraper's behavior. This involves extracting the stored news data from the CID using the [**`dataFromCid`**](https://github.com/Giftea/web-scraper/blob/main/koii-task/helpers.js#L27) helper function. The validation checks whether the data is not false and has a non-zero length.
 
   ```js title="/task/audit.js"
+  // Existing imports...
+  const { dataFromCid } = require('../helpers');
+
   // Existing code...
-  if (JSON.parse(submission_value) !== null && JSON.parse(submission_value).length !== 0) {
-    // For a successful audit, return true (indicating the audited node submission is correct)
-    vote = true;
-  } else {
+      const output = await dataFromCid(submission_value); // Extract news from CID
+
+      try {
+        if (output !== false && JSON.parse(output).length !==
+
+  0) {
+          // For a successful audit, return true (indicating the audited node submission is correct)
+          vote = true;
+        } else {
+          // Existing code...
+        }
   // Existing code...
   ```
 
-  The validation checks whether the parsed object (`submission_value`) is not null and the length is not zero. Depending on this validation outcome, the `vote` variable is set to **`true`** or **`false`**, indicating the accuracy of the audited node's submission.
-
-4. Finally, validate the Koii Task by executing `yarn test`. Successful validation will yield output similar to the one illustrated below:
+6. **Validate the Koii Task:** After making these updates, validate the Koii Task by executing `yarn test`. A successful validation will generate output similar to the one shown in the image below:
 
   ![Test](./img/test.png)
 
-Congratulations on the successfully converting a Node.js application into a Koii Task!
+Congratulations! You've successfully transformed a Node.js application into a Koii Task.
 
-For access to the source code of both the original Node.js application and the converted Koii Task, refer to the [GitHub repository](https://github.com/Giftea/web-scraper).
+For access to the source code of both the original Node.js application and the converted Koii Task, visit the [GitHub repository](https://github.com/Giftea/web-scraper).
+
+By following these steps, you've harnessed the benefits of the Koii network's decentralized hosting and incentivization, making your web scraper more cost-effective and secure.
