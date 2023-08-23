@@ -87,7 +87,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
   Ensure you have a [Web3.storage](https://web3.storage/) API key and store it as an environment variable, specifically `SECRET_WEB3_STORAGE_KEY`, within a `.env` file.
   :::
 
-4. **Update Submission Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
+4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
   ```js title="/task/submission.js"
   // Existing code...
