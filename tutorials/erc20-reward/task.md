@@ -42,7 +42,7 @@ RECIPIENT_ADDRESS = ""
 ```
 **3. Add Contract ABI**
 
-Create a new file named `KToken.json` in the root directory of the repository. Copy and paste the contract's ABI (Application Binary Interface) into this file. You can obtain the ABI by following the arrow in the image below:
+Create a new file named `KToken.json` in the root directory of the project. Copy and paste the contract's ABI (Application Binary Interface) into this file. You can obtain the ABI by following the arrow in the image below:
 
 ![ABI](./img/abi.png)
 
@@ -114,7 +114,7 @@ Still in `task/submission.js` file, replace the default `task()` method with the
     }
 ```
 
-Let's breakdown the code's functionality:
+Let's break down the code's functionality:
 
    - An instance of the token contract is created using its ABI (Application Binary Interface) and address.
    - The current gas price is fetched from the Ethereum network using `web3.eth.getGasPrice()`.
