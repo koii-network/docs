@@ -17,7 +17,12 @@ import Tooltip from "@site/src/components/tooltip";
 ![Banner](./img/Running%20a%20K2%20Node.svg)
 :::info
 
-At this time we only support Ubuntu 20.04 LTS. We offer macOS and Windows binaries however we do not have official guides on how to set up your validator environment on those operating systems.
+This guide is only for version 1.14.19 of our validators which are running on our new testnet: https://testnet.koii.network
+
+:::
+:::info
+
+At this time we only support Ubuntu 20.04 LTS. 
 
 :::
 
