@@ -69,6 +69,13 @@ Save and close your editor.
 You will need your validator keypair to be funded with KOII tokens before continuing.
 
 :::
+:::warning
+
+Please make sure your `koii` cli is configured for `testnet` and using your validator identity before continuing:
+
+`koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
+
+:::
 
 For the remainder of the steps please elevate your user to your validator account.
 
