@@ -64,6 +64,15 @@ const sidebars = {
     "steam-daily-specials/setup-submit",
     {
       type: "html",
+      value: "ERC20 Reward",
+      className: "sidebar-title",
+    },
+    "erc20-reward/introduction",
+    "erc20-reward/smart-contract",
+    "erc20-reward/task",
+    "erc20-reward/audit",
+    {
+      type: "html",
       value: "Migrating Apps",
       className: "sidebar-title",
     },
