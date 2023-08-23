@@ -15,7 +15,7 @@ To begin, access the Remix IDE by visiting [Remix Ethereum IDE](https://remix.et
 
 ![Remix IDE](./img/ERC.png)
 
-Upon completing these steps, you will find the smart contract you generated located at `/contracts/MyToken.sol`.
+Upon completing these steps, you will find the smart contract you generated at `/contracts/MyToken.sol`.
 
 ![Token Smart Contract](./img/token.png)
 
@@ -31,13 +31,13 @@ constructor() ERC20("KToken", "KTK") {
 
 **3. Compiling the Smart Contract**
 
-Efficiently compile your smart contract by clicking on the Solidity compiler icon situated in the left panel. Initiate the compilation process by clicking the **"Compile MyToken.sol"** button.
+Efficiently compile your smart contract by clicking the Solidity compiler icon in the left panel. Initiate the compilation process by clicking the **"Compile MyToken.sol"** button.
 
 ![Compile](./img/compile.png)
 
 **4. Deploying the Contract**
 
-Click on the Deploy icon on the left panel, inject your Ethereum browser wallet and click the "Deploy" button to deploy the contract. You'll be re-directed to sign the transaction with your Ethereum browser wallet.
+Click the Deploy icon on the left panel, inject your Ethereum browser wallet, and click the "Deploy" button to deploy the contract. You'll be redirected to sign the transaction with your Ethereum browser wallet.
 
 ![Deploy](./img/deploy.png)
 
