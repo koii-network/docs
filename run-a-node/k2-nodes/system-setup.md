@@ -47,7 +47,7 @@ sudo su koii
 We host an install script that will install and configure the Koii validator software. Run it with the following command
 
 ```bash
-sh -c "$(curl -sSfL https://koi-node-releases.s3.us-east-2.amazonaws.com/koii-install-init.sh)"
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.14.19.sh)"
 ```
 
 This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created **is not** your validator identity. If you have a private key which is funded for staking with a validator you can replace the one generated with this script.
