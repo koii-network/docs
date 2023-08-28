@@ -69,8 +69,10 @@ const sidebars = {
     },
     "erc20-reward/introduction",
     "erc20-reward/smart-contract",
+    "erc20-reward/getting-started",
     "erc20-reward/task",
-    "erc20-reward/audit",
+    // "erc20-reward/audit",
+    "erc20-reward/distribution",
     {
       type: "html",
       value: "Migrating Apps",
