@@ -61,3 +61,11 @@ This will configure certain aspects of your system to better support the validat
 ```bash
 koii-sys-tuner --user koii
 ```
+
+## Step 4: Allow traffic on ports
+
+If you have firewall software installed you will need to allow traffic on the following ports:
+
+**TCP and UDP for ports 10000-10500**
+
+**TCP for port 10899**
