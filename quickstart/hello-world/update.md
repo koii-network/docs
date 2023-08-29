@@ -27,11 +27,8 @@ task_executable_network: "IPFS"
 # Provide your web3.storage key as it is needed for uploading your metadata
 secret_web3_storage_key: ""
 
-# Path to your executable webpack if the selected network is IPFS otherwise leave blank
-task_audit_program: ""
-
-# Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
-task_audit_program_id: "main"
+# Path to your executable webpack if the selected network is IPFS and in case of DEVELOPMENT  name it as main
+task_audit_program: "main"
 
 # Total round time of your task: it must be given in slots and each slot is roughly equal to 4ms
 round_time: 1500
