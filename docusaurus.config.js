@@ -206,7 +206,6 @@ const config = {
               "/develop/koii-task-101/what-are-tasks/gradual-consensus",
               "/concepts/gradual-consensus",
               "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
-              "/develop/microservices-and-tasks/what-are-tasks"
             ],
           },
           {
@@ -308,6 +307,10 @@ const config = {
           {
             to: "/run-a-node/k2-nodes/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
+          },
+          {
+            to: "/concepts/what-are-tasks/what-are-tasks",
+            from: "/develop/microservices-and-tasks/what-are-tasks"
           },
           {
             to: "/concepts/what-are-tasks/what-are-tasks/runtime-environment",
