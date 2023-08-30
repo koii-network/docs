@@ -309,6 +309,10 @@ const config = {
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
           {
+            to: "/concepts/what-are-tasks/what-are-tasks",
+            from: "/develop/microservices-and-tasks/what-are-tasks"
+          },
+          {
             to: "/concepts/what-are-tasks/what-are-tasks/runtime-environment",
             from: [
               "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
