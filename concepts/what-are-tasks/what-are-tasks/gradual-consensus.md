@@ -20,7 +20,7 @@ While the task standard supports a wide range of possible applications, the most
 
 ## **Why is it gradual?**
 
-One of the major limitations of stake-based games is the potential for an actor with a large amount of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
+One of the major limitations of stake-based games is the potential for an actor with a large amount of tokens to temporarily take over the unfairlysystem and potentially even extract rewards . Koii tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
 
 ## **How does it work?**
