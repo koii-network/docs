@@ -43,4 +43,4 @@ async function setup() {
 }
 ```
 
-Usually there's no need to modify this function, except you want to add extra `console.log` or change a function's name.
+Usually, there's no need to modify this function, except if you want to add an extra `console.log` or change a function's name.

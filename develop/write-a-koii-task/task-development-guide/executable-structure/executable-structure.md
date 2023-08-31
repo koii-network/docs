@@ -7,7 +7,7 @@ sidebar_label: Executable Structure
 
 # Executable Structure
 
-The Koii **task template** contains three seperate JavaScript files that contain all of the functions for a Koii task to function properly.
+The Koii **task template** contains three separate JavaScript files that contain all of the functions for a Koii task to function properly.
 
 The task function, audit function, and distribution function were mentioned in the previous section; you can find `submission.js`, `audit.js`, and `distribution.js` in the task template that contains the functions for each of these steps.
 

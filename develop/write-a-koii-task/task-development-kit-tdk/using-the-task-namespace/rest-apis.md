@@ -14,7 +14,7 @@ sidebar_label: REST APIs
 - Establish standard web application settings, such as the port to use for connection and the location of templates used for response rendering.
 - Add additional request processing middleware at any point within the request handling pipeline.
 
-The `koiiNode.js` under the `_koiNode` directory provides an `app` object for creating the REST APIs. It's usage can be demonstrated as below.
+The `koiiNode.js` under the `_koiNode` directory provides an `app` object for creating the REST APIs. Its usage can be demonstrated as below.
 
 <!--
 ```javascript
