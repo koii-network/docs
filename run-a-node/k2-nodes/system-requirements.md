@@ -20,7 +20,7 @@ There is no strict minimum amount of KOII tokens required to run the K2 node.
 
 ### Minimum Hardware Requirements
 
-Here are the minimum hardware requirements for running a K2 node in terms of memory, compute, storage, and your operating system:
+Here are the minimum hardware requirements for running a K2 node in terms of memory, computing, storage, and your operating system:
 
 **1. Memory**
 
@@ -48,6 +48,6 @@ For RPC nodes:
 
 **4. Operating System**
 
-Currently we are only supporting Ubuntu 20.04 for our validators. We do provide binaries for other operating systems however the operation of these binaries is not guaranteed.
+Currently, we are only supporting Ubuntu 20.04 for our validators. We do provide binaries for other operating systems however the operation of these binaries is not guaranteed.
 
 Once a properly sized Ubuntu 20.04 system is available we can begin to configure the system for operation of a validator node.
