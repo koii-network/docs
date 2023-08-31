@@ -11,7 +11,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 Namespacing is a programming concept that involves encapsulating a group of entities, variables, functions, or objects under a single umbrella term. In the context of Koii, the Koii namespace object `namespace` serves as a global wrapper for all APIs required in Koii tasks.
 
-This javaScript object is injected into a Koii task by the task node running the task, and the Koii task has access to all wrapped utilities.
+This JavaScript object is injected into a Koii task by the task node running the task, and the Koii task has access to all wrapped utilities.
 
 Here's an example demonstrating how you can store a key-value pair in the local NeDB database using the `namespace` object:
 
@@ -37,11 +37,11 @@ This line of code utilizes the `storeSet()` method from the namespace object to 
 
 ## Why is The Namespace Object Important?&#x20;
 
-The Namespace object is important for a number of reasons, some of which are:
+The Namespace object is important for several reasons, some of which are:
 
 - It **protects** and **isolates the code** from other applications.
 - It prevents **memory leakage**.
-- It ensures code is **organized,** **easy to read, and refactor** according to necessary requirements.
+- It ensures code is **organized,** **easy to read, and refactored** according to requirements.
 - It is **easy to recognize** the **variables and functions** from where they are defined.
 
 ## Custom Namespace Utilities

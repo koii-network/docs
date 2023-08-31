@@ -14,16 +14,16 @@ import Description from "@site/src/components/description";
   capabilities."
 />
 
-This API allows interaction with files on a user's local device or on a user-accessible network file system. The core functionality of this API includes reading files, writing or saving files, and accessing the directory structure.
+This API allows interaction with files on a user's local device or user-accessible network file system. The core functionality of this API includes reading files, writing or saving files, and accessing the directory structure.
 
-Most interaction with files and directories is accomplished with `fsPromises` methods from the namespace wrapper class. The available `fsPromises` methods on the namespace wrapper class include: `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream`.
+Most interaction with files and directories is accomplished with `fsPromises` methods from the namespace wrapper class. The available `fsPromises` methods on the namespace wrapper class include `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream`.
 
 ### fs Method
 
 The `fs` method is a useful utility that accepts three arguments:
 
-- `method` :This refers to the `fsPromise` method that you want to call.
-- `path`: TThe path for the express call relevant to the specific `fsPromise` method call.
+- `method`: This refers to the `fsPromise` method that you want to call.
+- `path`: The path for the express call is relevant to the specific `fsPromise` method call.
 - `...args`: Any additional parameters that may be required for the `fsPromise` call.
 
 ```typescript
@@ -53,7 +53,7 @@ await namespaceWrapper.fs("writeFile", `uploads/handler.js`);
 
 The `fsStaking` method takes in three arguments:
 
-- `method` : The `fsPromise` method to call
+- `method`: The `fsPromise` method to call
 - `path`: The path for the express call
 - `...args`: Any remaining parameters for the FS call
 
@@ -67,7 +67,7 @@ async fsStaking(method, path, ...args) {
 
 The `fsWriteStream` method accepts one argument:
 
-- `imagepath` : A `string` representing the image path.
+- `imagepath`: A `string` representing the image path.
 
 ```javascript
   async fsWriteStream(imagepath: string) {
@@ -97,4 +97,4 @@ The `fsReadStream` method accepts one argument:
 
 In the provided examples, the `fs` method is employed to call various `fsPromise` methods such as `mkdir`, `copyFile`, and `writeFile`. Each method receives parameters that specify the relevant paths and options needed for the corresponding operations. This abstraction streamlines and consolidates file system interactions within the Koii task, enhancing the convenience and simplicity of managing file-related tasks.
 
-Additionally, the `fsStaking` method, `fsWriteStream` method, and `fsReadStream` method are implemented to facilitate file system interactions within the Koii task. These methods enable operations like staking tokens, creating write streams, and reading streams from the file system. This approach ensures efficient management of file-related tasks, catering to the specific requirements of each operation. As a result, developers benefit from a cohesive and coherent approach to handle file system tasks while developing Koii tasks, promoting effective and streamlined development processes.
+Additionally, the `fsStaking` method, `fsWriteStream` method, and `fsReadStream` method are implemented to facilitate file system interactions within the Koii task. These methods enable operations like staking tokens, creating write streams, and reading streams from the file system. This approach ensures efficient management of file-related tasks, catering to the specific requirements of each operation. As a result, developers benefit from a cohesive and coherent approach to handling file system tasks while developing Koii tasks, promoting effective and streamlined development processes.

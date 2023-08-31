@@ -9,7 +9,7 @@ sidebar_label: Compile Task
 
 After you've created a task using the K2 task template as a guide, you'll need to compile it with Webpack into a single executable file.
 
-Open up your terminal, and in the directory of your task:
+Open up your terminal and in the directory of your task:
 
 - Run `npm` to install all dependencies
 - Run `npm webpack` to compile code

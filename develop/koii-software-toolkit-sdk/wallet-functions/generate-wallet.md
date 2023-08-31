@@ -54,10 +54,10 @@ This will return the contents of the JSON for your newly generated private key.
 
 **mnemonic** - generates a wallet with mnemonic words
 :::info
-Optional: Arweave uses the JSON Web Key (JWK) format (RFC 7517) with 4096 length RSA-PSS keys. This JWK format allows for cryptographic keys to be represented as JSON object where each property represents a property of the underlying cryptographic key.
+Optional: Arweave uses the JSON Web Key (JWK) format (RFC 7517) with 4096-length RSA-PSS keys. This JWK format allows for cryptographic keys to be represented as JSON objects where each property represents a property of the underlying cryptographic key.
 :::
 :::tip
 
-- The generated wallet can be accessed via **`ktools.wallet`** , Save this info into a file in JSON format and that's the **Private Key** to the generated wallet.
-- The wallet can also be accessed via **`ktools.mnemonic`** , If you selected to generate a mnemonic wallet via parameters.
+- The generated wallet can be accessed via **`ktools.wallet`**, Save this info into a file in JSON format and that's the **Private Key** to the generated wallet.
+- The wallet can also be accessed via **`ktools.mnemonic`**, If you selected to generate a mnemonic wallet via parameters.
   :::

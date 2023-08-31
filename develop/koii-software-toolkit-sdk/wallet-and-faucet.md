@@ -17,4 +17,4 @@ Visit the Faucet below to start building your Koii Identity and get some free to
 <ContentLink title="Faucet | Koii Network" link="https://faucet.koii.live/" imageLink="https://faucet.koii.live/favicon.ico" />
 
 <br />
-Now you have your wallet and some KOII in it. Enjoy the environment with Koii task and more features!
+Now you have your wallet and some KOII in it. Enjoy the environment with Koii tasks and more features!
