@@ -61,7 +61,7 @@ However, when it comes to more complex projects involving database management an
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | db_model.js   | A **local database** is required to store and manage data such as Linktree information, proofs, and the authentication list on a [node](/run-a-node/introduction/task-nodes) operator's local device. This is important because it reduces the need for frequent API calls to a remote database. |
 | routes.js     | **API endpoints** will be required for the project to handle incoming requests, process data, and return appropriate responses to the client.                                                                                                                                                    |
-| db_sharing.js | Since each Koii node has its local database, when one node’s data is updated, it must also be updated on other nodes to ensure consistency. The `db_sharing.js` will contain a single function called `share()` that works to keep the network synchronized.                                     |
+| db_sharing.js | Since each Koii node has its local database when one node’s data is updated, it must also be updated on other nodes to ensure consistency. The `db_sharing.js` will contain a single function called `share()` that works to keep the network synchronized.                                     |
 
 :::tip
 
