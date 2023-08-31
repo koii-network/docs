@@ -11,7 +11,7 @@ sidebar_label: Ambassador Program
 
 At Koii Network, we value our community and want to reward those who are dedicated and passionate about our mission to take back the internet for the people who use it.
 
-That’s why we’re excited to introduce our new pirate uprising! We would have called you ambassadors, but that is for for governments. We are a pirate ship, that is working to revolutionize the world againts tech monopolies. 🏴‍☠
+That’s why we’re excited to introduce our new pirate uprising! We would have called you ambassadors, but that is for governments. We are a pirate ship, that is working to revolutionize the world against tech monopolies. 🏴‍☠
 
 This uprising features three stages, that allow our most engaged and knowledgeable community members to level up and enjoy exclusive benefits and opportunities.
 
