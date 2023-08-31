@@ -111,6 +111,6 @@ Follow these steps to convert the Node.js application into a Koii Task:
 
   ![Test](./img/test.png)
 
-Congratulations on the successfully converting a Node.js application into a Koii Task!
+Congratulations on successfully converting a Node.js application into a Koii Task!
 
 For access to the source code of both the original Node.js application and the converted Koii Task, refer to the [GitHub repository](https://github.com/Giftea/web-scraper).
