@@ -27,7 +27,7 @@ If you are interested in gaining an in-depth understanding of the task developme
 
 ![banner](../img/buildingonkoii.svg)
 
-<!-- There are many reasons to build on Koii, but here are the two of the big ones:
+<!-- There are many reasons to build on Koii, but here are  two of the big ones:
 
 1.  **Reduce existing hosting costs and increase uptime**
 

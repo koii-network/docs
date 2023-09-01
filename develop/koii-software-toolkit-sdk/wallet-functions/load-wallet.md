@@ -7,14 +7,14 @@ sidebar_label: loadWallet
 
 # loadWallet
 
-Every crypto wallet has a public address and a private key; your private key is used to access and make changes from the wallet. This function is used for programmatically loading the wallet by reading the private key stored locally.
+Every crypto wallet has a public address and a private key; your private key is used to access and make changes to the wallet. This function is used for programmatically loading the wallet by reading the private key stored locally.
 
 :::info
 For developing frontend applications that interact with the Finnie extension (login with Finnie), check out Koii-X.
 :::
 
 :::info
-Each Arweave public address contains 43 characters. All the information pertaining to the Arweave address, including transactions, balance, and other tokens can be viewed on the [Arweave block explorer](https://viewblock.io/arweave).
+Each Arweave public address contains 43 characters. All the information about the Arweave address, including transactions, balance, and other tokens can be viewed on the [Arweave block explorer](https://viewblock.io/arweave).
 :::
 
 For example, you can view all the information about the Arweave public address `7b4ll1zwenRB8jzyESjFNcRls331buyNl231Pe0V9VI` [here](https://viewblock.io/arweave/address/7b4ll1zwenRB8jzyESjFNcRls331buyNl231Pe0V9VI).

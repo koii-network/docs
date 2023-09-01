@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 :::tip In a nutshell
 
-Your reputation is the most important currency in Koii's ecosystem. It is a measure of how much the community trusts you, it is used to calibrate rewards and penalties in both the attention mining and compute marketplace.
+Your reputation is the most important currency in Koii's ecosystem. It is a measure of how much the community trusts you, it is used to calibrate rewards and penalties in both the attention-mining and computing marketplace.
 
 :::
 

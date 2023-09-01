@@ -7,7 +7,7 @@ sidebar_label: getBlockHeight
 
 # Arweave & General Utility
 
-The following section cexplains the use of Arweave and General Utility functions of the Koii SDK
+The following section explains the use of Arweave and General Utility functions of the Koii SDK
 
 # getBlockHeight
 

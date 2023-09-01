@@ -9,7 +9,7 @@ sidebar_label: "Example Task: Steam Daily Specials"
 
 ![banner](./img/Example%20Task_%20Steam.png)
 
-**Steam Daily Specials** is a simple Koii task created by our Koii community member Dongyue. It is a simple and almost contained every aspect of a Koii task. It is an excellent way to get started writing Koii tasks.
+**Steam Daily Specials** is a simple Koii task created by our Koii community member Dongyue. It is simple and almost contains every aspect of a Koii task. It is an excellent way to get started writing Koii tasks.
 
 Let's first understand the logic behind the task before moving on to the coding aspect.
 

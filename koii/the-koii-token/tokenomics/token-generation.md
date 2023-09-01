@@ -18,4 +18,4 @@ The newly generated tokens are split between <Tooltip text='Attention Mining'/>,
 
 ![Token Generation](./img/Token%20Generation.svg)
 
-Attention mining receives 80% of new tokens, K2 settlement layer nodes receive 10%, and task nodes receive 10%. This ensures that content creators that use Koii Network are rewarded fairly.
+Attention mining receives 80% of new tokens, K2 settlement layer nodes receive 10%, and task nodes receive 10%. This ensures that content creators who use Koii Network are rewarded fairly.

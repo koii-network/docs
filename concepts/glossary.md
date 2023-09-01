@@ -7,7 +7,7 @@ sidebar_label: Glossary
 
 ## Compute Sharing Marketplace
 
-Our decentralized service that connects people around the world who have excess computing resources with those who require additional computational power for their applications
+Our decentralized service connects people around the world who have excess computing resources with those who require additional computational power for their applications
 
 ## Koii Node
 
@@ -29,11 +29,11 @@ A piece of executable code that is run on the network
 
 The time span over which each leader (a validator that appends entries to the ledger) accepts transactions and generates a [block](/concepts/glossary#block).
 
-Slots are are ordered sequentially and collectively make a logical clock.
+Slots are ordered sequentially and collectively make a logical clock.
 
 ## Epoch
 
-The period of time, i.e. the number of [slots](/concepts/glossary#slot), during which a leader schedule is valid.
+The period of time, i.e. the number of [slots](/concepts/glossary#slot), during which a leader's schedule is valid.
 
 ## Rent
 
