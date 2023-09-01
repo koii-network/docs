@@ -15,7 +15,7 @@ The `create-task-cli` tool allows you to register and deploy a new Koii task. In
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
     update existing task
-    Activate task
+    Activate/Deactivate task
     Claim reward
     Fund task with more KOII
     Withdraw staked funds from task
