@@ -5,18 +5,76 @@ image: img/thumbnail.png
 sidebar_label: Activate/Deactivate Task
 ---
 
-# Getting Started
+This section provides clear instructions on how to activate and deactivate a Koii task, ensuring smooth task management.
 
-- After executing the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To update an existing task, select the following option:
+## 1. Activate a Task
 
-```bash
-? Select operation › - Use arrow-keys. Return to submit.
-    Create a new task
-    update existing task
-❯   Activate/Deactivate task
-    Claim reward
-    Fund task with more KOII
-    Withdraw staked funds from task
-    upload assets to IPFS(metadata/local vars)
-```
+- To activate a task, select the `Activate/Deactivate task` option as shown below:
 
+    ```bash
+    ? Select operation › - Use arrow-keys. Return to submit.
+        Create a new task
+        update existing task
+    ❯   Activate/Deactivate task
+        Claim reward
+        Fund task with more KOII
+        Withdraw staked funds from task
+        upload assets to IPFS(metadata/local vars)
+    ```
+
+- Enter your task ID:
+
+    ```bash
+    ? Enter the task id › 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
+    ```
+
+- Select `Active`:
+
+    ```bash
+    ? Do you want to set the task to Active or Inactive? › - Use arrow-keys. Return to submit.
+    ❯   Active - Set the task active
+        Inactive
+    ```
+Upon successful activation, you should see an output similar to this:
+    ```bash
+    Calling SetActive
+    ✔ Enter the task id … 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
+    ✔ Do you want to set the task to Active or Inactive? › Active
+    Success
+    ```
+
+## 2. Deactivate a Task
+
+- To deactivate a task, select the `Activate/Deactivate task` option as shown below:
+
+    ```bash
+    ? Select operation › - Use arrow-keys. Return to submit.
+        Create a new task
+        update existing task
+    ❯   Activate/Deactivate task
+        Claim reward
+        Fund task with more KOII
+        Withdraw staked funds from task
+        upload assets to IPFS(metadata/local vars)
+    ```
+
+- Enter your task ID:
+
+    ```bash
+    ? Enter the task id › 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
+    ```
+
+- Select `Inactive`:
+
+    ```bash
+    ? Do you want to set the task to Active or Inactive? › - Use arrow-keys. Return to submit.
+    ❯   Active - Set the task active
+        Inactive
+    ```
+Upon successful deactivation, you should see an output similar to this:
+    ```bash
+    Calling SetActive
+    ✔ Enter the task id … 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
+    ✔ Do you want to set the task to Active or Inactive? › Inactive
+    Success
+    ```
