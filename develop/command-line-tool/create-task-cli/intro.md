@@ -15,7 +15,7 @@ This guide will walk you through the various options and functionalities availab
 1. [Installation](/develop/command-line-tool/create-task-cli/install)
 2. [Create a New Task](/develop/command-line-tool/create-task-cli/create-task)
 3. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
-4. [Activate/Deactivate task](#activate-task)
+4. [Activate/Deactivate task](./activate-task)
 5. [Claim Reward](#claim-reward)
 6. [Fund Task with More KOII](#fund-task-with-more-koii)
 7. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
