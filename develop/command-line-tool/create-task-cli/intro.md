@@ -8,17 +8,18 @@ sidebar_label: Create Task CLI
 ![Banner](../../img/Create%20Task%20CLI.svg)
 
 
-This guide will walk you through the various options and functionalities available when using the `create-task-cli`. To provide you with a comprehensive understanding, we have organized the documentation into seven distinct sections, each dedicated to a specific task.
+This guide will walk you through the various options and functionalities available when using the `create-task-cli`. To provide you with a comprehensive understanding, we have organized the documentation into different sections, each dedicated to a specific task.
 
 ## Table of Contents
 
-1. [Create a New Task](./create-task.md)
-2. [Update Existing Task](./update-task.md)
-3. [Activate Task](#activate-task)
-4. [Claim Reward](#claim-reward)
-5. [Fund Task with More KOII](#fund-task-with-more-koii)
-6. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
-7. [Upload Assets to IPFS (Metadata/Local Variables)](#upload-assets-to-ipfs-metadatalocal-vars)
+1. [Installation](/develop/command-line-tool/create-task-cli/install)
+2. [Create a New Task](/develop/command-line-tool/create-task-cli/create-task)
+3. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
+4. [Activate Task](#activate-task)
+5. [Claim Reward](#claim-reward)
+6. [Fund Task with More KOII](#fund-task-with-more-koii)
+7. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
+8. [Upload Assets to IPFS (Metadata/Local Variables)](#upload-assets-to-ipfs-metadatalocal-vars)
 
 
 :::info Please Note
