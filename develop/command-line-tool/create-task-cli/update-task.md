@@ -15,7 +15,7 @@ Now that we have covered creating a task, let's explore the process of updating 
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new task
 ❯   update existing task
-    Activate task
+    Activate/Deactivate task
     Claim reward
     Fund task with more KOII
     Withdraw staked funds from task
