@@ -42,7 +42,7 @@ A keypair's primary function is to sign messages and enable signature verificati
 - `sign()` — Signs the message using the `secretKey` and returns a signature.
 - `verify()` — Verifies the message's signature and returns true if it was successful or false if it was unsuccessful.
 
-To do this, we will use [TweetNaCl library](https://www.npmjs.com/package/tweetnacl).
+To do this, we will use the [TweetNaCl library](https://www.npmjs.com/package/tweetnacl).
 ```js
 const nacl = require("tweetnacl");
 

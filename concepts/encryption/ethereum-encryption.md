@@ -17,7 +17,7 @@ Ethereum keys are generated using asymmetric encryption algorithms, specifically
 
 ## New Ethereum Keypair
 
-Generate a new ethereum-identity with a private key and public key.
+Generate a new identity with a private key and a public key.
 
 We'd be using the [eth-crypto library](https://www.npmjs.com/package/eth-crypto#decryptwithprivatekey).
 
@@ -38,9 +38,9 @@ async function generateECIESKeypair() {
 
 ## Encrypt Message
 
-Compress the `publicKey` and use the `EthCrypto.encryptWithPublicKey` method to encrypt the `message` with the compressed public key so that only the corressponding `privateKey` can decrypt it.
+Compress the `publicKey` and use the `EthCrypto.encryptWithPublicKey` method to encrypt the `message` with the compressed public key so that only the corresponding `privateKey` can decrypt it.
 
-Return a smaller string-representation of the encrypted data.
+Return a smaller string representation of the encrypted data.
 
 ```javascript
 async function encryptMessage(publicKey, message) {
@@ -58,9 +58,8 @@ async function encryptMessage(publicKey, message) {
 
 ## Decrypt Message
 
-Parse the string-representation back into the encrypted object and then decrypt the encrypted data with the `privateKey`.
-
-Return decrypted message.
+Parse the string representation back into the encrypted object and then decrypt the encrypted data with the `privateKey`.
+Return the decrypted message.
 
 ```js
 async function decryptMessage(privateKey, encryptedMessage) {
@@ -76,7 +75,7 @@ async function decryptMessage(privateKey, encryptedMessage) {
 }
 ```
 
-Now that we have functions to generate keypair, encrypt message, and decrypt message, let's put them to use:
+Now that we have functions to generate keypair, encrypt messages, and decrypt messages, let's put them to use:
 
 ```js
 async function main() {

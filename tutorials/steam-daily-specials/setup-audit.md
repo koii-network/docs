@@ -1,13 +1,13 @@
 ---
 title: Audit function
-description: This part incluede the Audit function of the task.
+description: This part include the Audit function of the task.
 image: img/thumbnail.png
 sidebar_label: Audit function
 ---
 
 # Audit function
 
-The audit function is where the data is verified. The audit function is defined in the `special_audit.js` file. The file is located in the root folder. The audit function is exported from the file and imported in the `audit.js` file.
+The audit function is where the data is verified. The audit function is defined in the `special_audit.js` file. The file is located in the root folder. The audit function is exported from the file and imported into the `audit.js`` file.
 
 During audit round, the task will verify other nodes submission value to make sure the data is correct. The audit function will be called by K2 to verify the data. If the data is correct, the task will return `true` to K2. Otherwise, it will return `false`.
 
@@ -15,7 +15,7 @@ In this function, we will use the `proof_cid` that we just uploaded in `submit` 
 
 ## Verify Node
 
-After extract the data from `proof_cid`, we will use `node_pubKey` and `node_signature` to verify the data. There's `dataFromCid` function in helpers folder that can help you extract the data from `proof_cid`.
+After extracting the data from `proof_cid`, we will use `node_pubKey` and `node_signature` to verify the data. There's `dataFromCid` function in helpers folder that can help you extract the data from `proof_cid`.
 
 ```js
 const outputraw = await dataFromCid(submission);
@@ -40,7 +40,7 @@ if (!voteResp || cleanVoteRespData !== steam_special) {
 
 ## Verify Data
 
-After verify the node, we will verify the data. In this task, we will use `steam_special` to verify the data. If the data format is json, it return `true`. Otherwise, it will return `false`.
+After verifying the node, we will verify the data. In this task, we will use `steam_special` to verify the data. If the data format is JSON, it returns `true`. Otherwise, it will return `false`.
 
 ```js
 if (!typeof steam_special_resp.data === "json") {

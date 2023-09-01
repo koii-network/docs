@@ -7,7 +7,7 @@ sidebar_label: getNftState
 
 # getNftState
 
-This function returns all the details about a given NFT such as creator address, title, description, etc.
+This function returns all the details about a given NFT such as creator's address, title, description, etc.
 
 ### Parameters
 
@@ -60,4 +60,4 @@ State of the NFT gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA
 
 ### Returns
 
-**Promise `<any>`** - All the information pertaining to a given NFT including the state of the NFT, views, and rewards.
+**Promise `<any>`** - All the information about a given NFT including the state of the NFT, views, and rewards.

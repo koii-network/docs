@@ -9,7 +9,7 @@ sidebar_label: Main function
 
 The main function is the entry point of the task. It is the function that will be called when the task is executed. The main function is where the logic of the task is written.
 
-The main function is defined in the `special_main.js` file. The file is located in the root folder. The main function is exported from the file and imported in the `submission.js` file.
+The main function is defined in the `special_main.js` file. The file is located in the root folder. The main function is exported from the file and imported into the `submission.js` file.
 
 In this task, it used jsdom and axios to scrape the specials. The data is then stored on the IPFS. The main function is where the scraping and storing logic is written.
 
