@@ -233,11 +233,12 @@ const config = {
             from: "/earning-koii/network-economics",
           },
           {
-            to: "/develop/command-line-tool/create-task-cli",
+            to: "/develop/command-line-tool/create-task-cli/intro",
             from: [
               "/koii-software-toolkit-sdk/create-task-cli",
               "/develop/koii-software-toolkit-sdk/create-task-cli",
               "/quickstart/command-line-tool/create-task-cli",
+              "/develop/command-line-tool/create-task-cli",
             ],
           },
           {
