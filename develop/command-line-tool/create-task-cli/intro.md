@@ -17,7 +17,7 @@ This guide will walk you through the various options and functionalities availab
 3. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
 4. [Activate/Deactivate task](./activate-task)
 5. [Claim Reward](#claim-reward)
-6. [Fund Task with More KOII](#fund-task-with-more-koii)
+6. [Fund Task with More KOII](./fund-task)
 7. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
 8. [Upload Assets to IPFS (Metadata/Local Variables)](#upload-assets-to-ipfs-metadatalocal-vars)
 
