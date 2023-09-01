@@ -11,7 +11,7 @@ You can join the Koii ecosystem by running a Koii node and start earning passive
 
 :::info In a nutshell
 
-Running a node enables you to rent out your wasted compute power. By running koii tasks, you are helping developers turn their dream project into reality while earning rewards.
+Running a node enables you to rent out your wasted compute power. By running Koii tasks, you are helping developers turn their dream projects into reality while earning rewards.
 
 :::
 

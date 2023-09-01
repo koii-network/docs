@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: Adapters
 ---
 
-Within our template, we are making use adapters.
+Within our template, we are making use of adapters.
 
 We are extending the adapter class to interact with Twitter, but you can extend it to interact with any website you want.
 
@@ -12,7 +12,7 @@ Let's take a look at our `adapters/twitter.js` file.
 
 ### Modules
 
-We are making use of a database model, puppeteer for web scraping, cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
+We are making use of a database model, Puppeteer for web scraping, Cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
 
 ### Session Management
 
@@ -31,8 +31,8 @@ We are making use of a database model, puppeteer for web scraping, cheerio for D
 
 **twitterLogin Method:**
 
-- Navigates to Twitter's main page and then to the login page.
-- Fills in the username and password and presses 'Enter' to attempt logging in.
+- Navigate to Twitter's main page and then to the login page.
+- Fill in the username and password and press 'Enter' to attempt logging in.
 - Includes logic to handle verification.
 - After a successful login, it sets the session to valid.
 
@@ -75,10 +75,10 @@ The final portion of our file contains utility functions:
 
 **storeFiles:**
 
-- Stores files using the Web3 storage client and returns their CID.
+- Stores files using the Web3 storage client and returns the CID.
 
 ### Summary
 
-The Twitter class in the code provides a framework for crawling Twitter using puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using web3.storage.
+The Twitter class in the code provides a framework for crawling Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using web3.storage.
 
 You can use it as a starting point to develop your own Twitter crawler to your own needs, or as a reference to develop a crawler for a different website.

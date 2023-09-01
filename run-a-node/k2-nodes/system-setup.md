@@ -50,7 +50,7 @@ We host an install script that will install and configure the Koii validator sof
 sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.14.19.sh)"
 ```
 
-This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created **is not** your validator identity. If you have a private key which is funded for staking with a validator you can replace the one generated with this script.
+This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created **is not** your validator identity. If you have a private key that is funded for staking with a validator you can replace the one generated with this script.
 
 If everything is configured correctly you can test it by running `koii balance` which will return the balance of the local key.
 

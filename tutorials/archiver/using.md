@@ -6,7 +6,7 @@ sidebar_label: Using the Crawler
 
 # Using The Crawler
 
-To modify the crawler query, or change how it uses the local database, check-out `twitter-task.js`.
+To modify the crawler query, or change how it uses the local database, check out `twitter-task.js`.
 
 The `query` object passes the fundamental instructions to our crawler.
 
@@ -25,9 +25,9 @@ let query = {
 
 ## Testing the Crawler
 
-Within the tests folder you will find multiple pre-written tests. By utilizing these, you can see how your crawler will behave in deployment.
+Within the tests folder, you will find multiple pre-written tests. By utilizing these, you can see how your crawler will behave in deployment.
 
-One of files that you will find useful is is the `test-one-round.js`. This test will locally simuate running the crawler for one round and will output the results in the console.
+One of the files that you will find useful is the `test-one-round.js`. This test will locally simulate running the crawler for one round and will output the results in the console.
 
 You can run it with:
 
@@ -45,11 +45,11 @@ Your task runners will populate this via Koii Node. We need the following:
 - Twitter Password
 - Web3 storage token
 
-_A Web3 Storage Token is required from the task-runner as it is used to upload data to InterPlanetary File System protocol._
+_A Web3 Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
 
 #### Task Id:
 
-Do not provide a `task_id` for the first deployment, as it would be assigned automatically when you create your task.
+Do not provide a `task_id` for the first deployment, as it will be assigned automatically when you create your task.
 
 #### Secret Web3 Storage Key:
 
@@ -57,4 +57,4 @@ Be sure to provide a `secret_web3_storage_key`, we are using the IPFS to deploy 
 
 #### Other Variables:
 
-Don't forget to edit the task_name, `task_description`, `total_bounty_amount` and `bounty_amount_per_round` before deployment, as these would be directly visible by potential task runners in Koii Node.
+Don't forget to edit the task_name, `task_description`, `total_bounty_amount` and `bounty_amount_per_round` before deployment, as these would be directly visible to potential task runners in Koii Node.

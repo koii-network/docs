@@ -7,7 +7,7 @@ sidebar_label: Other EVM Chains
 
 # Other EVM Chains
 
-The Majority of EVM functionality within Finnie is handled by the same methods as the [Metamask standard](https://docs.metamask.io/guide/getting-started.html#basic-considerations), and provides the same injected methods. Some useful examples are below.
+The Majority of EVM functionality within Finnie is handled by the same methods as the [Metamask standard](https://docs.metamask.io/guide/getting-started.html#basic-considerations) and provides the same injected methods. Some useful examples are below.
 
 ### eth_requestAccounts
 
@@ -74,7 +74,7 @@ console.log(chainId) // 0x1
 
 ### net_version
 
-Get current network ID from the Finnie wallet.
+Get the current network ID from the Finnie wallet.
 
 ```
 type NetworkId = Number

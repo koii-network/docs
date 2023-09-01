@@ -17,7 +17,7 @@ import Tooltip from "@site/src/components/tooltip";
 ![Banner](./img/Running%20a%20K2%20Node.svg)
 :::info
 
-This guide is only for version 1.14.19 of our validators which are running on our new testnet: https://testnet.koii.network
+This guide is only for version 1.14.19 of our validators which are running on our new test net: https://testnet.koii.network
 
 :::
 :::info

@@ -37,9 +37,9 @@ The Finnie wallet provides some key features right out of the box, and we're wor
 
 ## For Developers:
 
-When you have Finnie installed and running, you can connect to it from your web app. For example, in the page faucet.koii.network, here is the button "Connect Finnie". The Finnie will pop up and ask you to connect to the faucet. Select the wallet you want to connect to and click "Connect". Then your wallet will be connected to the faucet.
+When you have Finnie installed and running, you can connect to it from your web app. For example, on the [Faucet](faucet.koii.network) page, here is the button **"Connect Finnie"**. The Finnie will pop up and ask you to connect to the faucet. Select the wallet you want to connect to and click "Connect". Then your wallet will be connected to the faucet.
 
-In order to use Finnie in your web app, you can use the following code:
+To use Finnie in your web app, you can use the following code:
 
 ```
 await window.k2.connect()

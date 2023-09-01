@@ -21,11 +21,11 @@ Many services have attempted to create global machines, that hope to encompass a
 
 A **CARP**, blends together the benefits of a "collateralized" (a.k.a. "Proof of Stake") model with the benefits of trust that are common in the current internet.
 
-When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gate keeping and monopolies that will soon control most of the information our species has created.
+When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gatekeeping and monopolies that will soon control most of the information our species has created.
 
-Typically, these exist because of the reputation of the hosting provider, and the technology that these providers are able to build to entrench their relationship with customers.
+Typically, these exist because of the reputation of the hosting provider, and the technology that these providers can build to entrench their relationship with customers.
 
-With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their own hosting to the network.&#x20;
+With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their hosting to the network.&#x20;
 
 ## Definition of CARP
 
@@ -33,11 +33,11 @@ Under a CARP model, a community member must have some initial way to build reput
 
 **1. Reputation Can Be Earned Without Up-Front Investment**
 
-In order for such a system to trend away from centralization, it must be possible for new entrants to join and contribute value without access to hosting resources or other personal assets. This ensures that the most honest providers can always rise to the top, without prioritizing those that would attempt to buy out the network.
+For such a system to trend away from centralization, it must be possible for new entrants to join and contribute value without access to hosting resources or other personal assets. This ensures that the most honest providers can always rise to the top, without prioritizing those that would attempt to buy out the network.
 
 **2. Reputation Reduces Work Replication**
 
-The computational efficiency of a compute network defines the overall cost. If a hosting provider is not well-trusted by the community, their work must be audited by other nodes to verify it's authenticity, which wastes valuable network cycles and increases the unit cost of each individual task proportionately. As a result, if reputation systems can be employed to reduce overall audits, it is possible to implement potentially lower cost alternatives.
+The computational efficiency of a compute network defines the overall cost. If a hosting provider is not well-trusted by the community, their work must be audited by other nodes to verify its authenticity, which wastes valuable network cycles and increases the unit cost of each task proportionately. As a result, if reputation systems can be employed to reduce overall audits, it is possible to implement potentially lower-cost alternatives.
 
 **3. Tasks Can Prioritize High-Reputation Providers**
 
@@ -45,7 +45,7 @@ In order for reputation to provide a significant advantage, it is necessary to e
 
 ## Network Growth
 
-Under a model where honesty and reliability are the most valuable property, consistently honest participants becomes the de-facto distributors of all resources. As a result, we expect that there will arise competitive markets to provide up-stream hosting capacity to these providers, ensuring that they are able to access as many resources as necessary to satisfy demand for their services.&#x20;
+Under a model where honesty and reliability are the most valuable property, consistently honest participants become the de-facto distributors of all resources. As a result, we expect that there will arise competitive markets to provide up-stream hosting capacity to these providers, ensuring that they are able to access as many resources as necessary to satisfy demand for their services.&#x20;
 
 As a parallel, a reliable business typically receives more credit, allowing it to grow. We hope to see hosting providers use their reputation and their past earnings to receive priority treatment as re-sellers of existing hosting, as well as new hardware.&#x20;
 

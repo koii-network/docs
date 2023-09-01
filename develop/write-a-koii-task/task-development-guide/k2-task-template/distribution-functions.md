@@ -35,7 +35,7 @@ For the example on the template:
 - The task's data is retrieved using the `getTaskState` helper function
 - All valid submissions are fetched from the task's data
 - The `submissions_audit_trigger` is also retrieved from the task's data; this object contains information about the audited submissions
-- If `submissions` is null, an empty distribution list is returned. Else, the keys and values of the `submissions` are grouped separately and in a loop, it calculates the audits on each submission and how many votes on the audit, and based on that it makes a decision.
+- If `submissions` is null, an empty distribution list is returned. Otherwise, the keys and values of the `submissions` are grouped separately and in a loop, it calculates the audits on each submission and how many votes on the audit, and based on that it makes a decision.
 
 ```javascript
 /**

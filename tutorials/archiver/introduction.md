@@ -10,7 +10,7 @@ With Koii, you have the power of hundreds of CPUs that belong to real users at y
 
 [This template](https://github.com/GET-Store-CAT/twitter-crawler) provides a simple crawler that uses headless browsers to scrape Twitter data.
 
-** It is designed to be used as a template for building your own crawlers, ** exclusively for theoretical use in public archival projects and is not intended to be used for for-profit activities.
+** It is designed to be used as a template for building your crawlers, ** exclusively for theoretical use in public archival projects and is not intended to be used for for-profit activities.
 
 :::tip Example usecases:
 
@@ -21,12 +21,12 @@ With Koii, you have the power of hundreds of CPUs that belong to real users at y
 
 :::warning Do not use this template to:
 
-- Steal data (i.e. selling large scale analytics)
+- Steal data (i.e. selling large-scale analytics)
 - Infringe on personal privacy (i.e. "stalking")
 
 :::
 
-** Important Note: ** Depending on your legal juristiction, running a web crawler might require certain permissions. Please consult with a legal professional before engaging in any form of web-crawling or data-gathering activities.
+** Important Note: ** Depending on your legal jurisdiction, running a web crawler might require certain permissions. Please consult with a legal professional before engaging in any form of web-crawling or data-gathering activities.
 
 ## The Structure
 

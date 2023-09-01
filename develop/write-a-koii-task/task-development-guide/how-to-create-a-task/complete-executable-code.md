@@ -134,4 +134,4 @@ module.exports = {
 };
 ```
 
-Follow the instructions [here](../task-development-flow/create-task) to register this new task.
+Follow the instructions [here](../task-development-flow/create-task) to register for this new task.
