@@ -149,7 +149,7 @@ const sidebars = {
       ],
     },
 
-    "command-line-tool/create-task-cli",
+    // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
 
     //   ],
