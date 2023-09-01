@@ -1,6 +1,6 @@
 ---
 title: Tokenomics
-description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose.
+description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their version for a specific purpose.
 image: img/thumbnail.png
 sidebar_label: Tokenomics
 ---
@@ -11,9 +11,9 @@ import Tooltip from "@site/src/components/tooltip";
 
 ![banner](tokenomics/img/NETWORK%20ECONOMICS.svg)
 
-Koii is a decentralized protocol, meaning that anyone can create a fork in order to build their own version for a specific purpose.
+Koii is a decentralized protocol, meaning that anyone can create a fork to build their version for a specific purpose.
 
-In our current implementation, the settlement layer provides payments processing and dispute resolution services to support the compute economy, while providing a historical ledger.
+In our current implementation, the settlement layer provides payment processing and dispute resolution services to support the compute economy, while providing a historical ledger.
 
 Since the settlement layer is decentralized, there is no central ownership body, and following the examples of Bitcoin, Ethereum, and Solana, a tokenized model was implemented to ensure bad actors can be appropriately penalized.
 

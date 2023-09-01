@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Simulating a Round
 ---
 
-You can also simulate a round via calling the task functions in a seperate javascript file.
+You can also simulate a round by calling the task functions in a separate javascript file.
 
 Here is an example code that you can use in your tests folder:
 

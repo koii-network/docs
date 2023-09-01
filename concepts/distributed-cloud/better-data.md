@@ -15,7 +15,7 @@ Koii’s Global Network, powered by thousands of real people worldwide, is your 
 
 ## Train Better AI Models
 
-Our revolutionary network provides access to a vast and diversified nodes, run by a multitude of individuals from various demographics. Using this computing power, you can fine-tune your AI models to understand nuanced behaviours, recognize intricate patterns, and improve prediction accuracy.
+Our revolutionary network provides access to vast and diversified nodes, run by a multitude of individuals from various demographics. Using this computing power, you can fine-tune your AI models to understand nuanced behaviors, recognize intricate patterns, and improve prediction accuracy.
 
 - Access to diversified data sets
 - Enhanced AI model training

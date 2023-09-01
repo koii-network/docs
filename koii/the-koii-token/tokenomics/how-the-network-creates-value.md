@@ -1,6 +1,6 @@
 ---
 title: How the Network Creates Value
-description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their own version for a specific purpose.
+description: Koii is a decentralized protocol, meaning that anyone is free to fork the code and build their version for a specific purpose.
 image: img/thumbnail.png
 sidebar_label: How the Network Creates Value
 ---
@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 ![Banner](./img/value.svg)
 
-## Value throught practical demand
+## Value through practical demand
 
 **KOII** tokens are always inherently valuable as they can always be converted into computing power.
 
@@ -17,7 +17,7 @@ They are the default currency of the Koii Network, which is a global network of 
 
 Because of the principle of supply and demand, as long as our network offers a better price-performance ratio than traditional hosting solutions, there will always be a demand for KOII tokens.
 
-And due to its nature, as we don't have any middlemen (you directly pay your hosters, which are <Tooltip text="task nodes"/>) that aims to make a profit, we can **always** offer a better price-performance ratio than traditional hosting solutions.
+And due to its nature, as we don't have any middlemen (you directly pay your hosters, which are ) that aim to make a profit, we can **always** offer a better price-performance ratio than traditional hosting solutions.
 
 ## Value through staking
 

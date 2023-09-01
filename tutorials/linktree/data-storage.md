@@ -10,7 +10,7 @@ import Description from "@site/src/components/description";
 text="This section will provide information on how and where your tasks can store data in a decentralized format. We will continue to learn that with the Linktree's example, where we require to store information about each individual users who creates a linktree on the application."
 />
 
-## Where Will the Linktree Data be Stored?
+## Where Will the Linktree Data Be Stored?
 
 Since Koii tasks run on a distributed network of nodes, each node stores a copy of the entire database **locally**, including all the data associated with a specific Linktree.
 The goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. We

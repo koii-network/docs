@@ -7,15 +7,15 @@ sidebar_label: Set Up Database and API
 
 ## Set Up Database
 
-It use `nedb` to set up database. `nedb` is a lightweight database that can be used in Node.js. It is a file-based database. It is easy to use and does not require a separate database server.
+It uses `nedb` to set up the database. `nedb` is a lightweight database that can be used in Node.js. It is a file-based database. It is easy to use and does not require a separate database server.
 
 In `db.js` file, it will call `namespaceWrapper.getDb();` before using db, which will initialize the database. It will create a database file `localKOIIDB.db` in the root folder. If the task is running on the Koii Node, it will create a database file `KOIIDB.db`.
 
-In this task, it provide three main db functions:
+In this task, it provides three main db functions:
 
-- `setSpecial` for set the data to database.
-- `getSpecial` for get the data from database.
-- `getSpecialList` for get the data list from database.
+- `setSpecial` for setting the data to the database.
+- `getSpecial` to get the data from the database.
+- `getSpecialList` to get the data list from the database.
 
 ```js
 const setSpecial = async (cid, round) => {
@@ -37,11 +37,11 @@ const setSpecial = async (cid, round) => {
 };
 ```
 
-The funcitons will be used in `coreLogic.js` file. For example in `submit` function, it will use `getSpecial` to get the data that stored in `main` function.
+The funcitons will be used in `coreLogic.js` file. For example, in `submit` function, it will use `getSpecial` to get the data stored in `main` function.
 
 ## Set Up API
 
-API set up in `index.js` file. It use `express` to set up API. `express` is a web framework for Node.js. It is used to build web applications and APIs. It is easy to use and has a large community.
+API set up in `index.js` file. It uses `express` to set up API. `express` is a web framework for Node.js. It is used to build web applications and APIs. It is easy to use and has a large community.
 
 ```js
 app.get("/getSpecialList", async (req, res) => {
@@ -56,5 +56,5 @@ app.get("/getSpecialList", async (req, res) => {
 ```
 
 :::caution
-Please make sure use try catch to handle the error.
+Please make sure you use try catch to handle the error.
 :::

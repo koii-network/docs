@@ -24,9 +24,9 @@ koii-keygen new --outfile ~/vote-account-keypair.json
 
 ```
 
-The authorized-withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
+The authorized withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
-This is a very important keypair. Anyone in possession of it has the ability to permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
+This is a very important keypair. Anyone in possession of it can permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
 
 It doesn't have to be stored on your validator and it shouldn't be stored anywhere where an unauthorized person could access it.
 
@@ -71,7 +71,7 @@ You will need your validator keypair to be funded with KOII tokens before contin
 :::
 :::warning
 
-Please make sure your `koii` cli is configured for `testnet` and using your validator identity before continuing:
+Please make sure your `koii` CLI is configured for `testnet` and using your validator identity before continuing:
 
 `koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
 
