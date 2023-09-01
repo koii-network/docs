@@ -28,4 +28,4 @@ It will return a string of characters like:
 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBq
 ```
 
-Congratulations! You now have a Koii wallet, next, let's airdrop some KOII in your wallet.
+Congratulations! You now have a Koii wallet, Next, let's airdrop some KOII in your wallet.
