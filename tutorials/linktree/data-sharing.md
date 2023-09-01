@@ -8,7 +8,7 @@ sidebar_label: Data Sharing
 
 In a distributed system, every node has a copy of the database, which can lead to discrepancies when new data is updated on one node. To ensure that every node has the most up-to-date information, a **data sharing** interface is needed. This interface periodically checks for new data and shares it with all nodes in the network. This will usually be in a separate module and be called in the `setup()` function of the task in the `index.js` module.
 
-For the linktree task, we will create a `dbSharing.js` module that serves as the data sharing interface and is imported into the `index.js` file. The `share()` function from `dbSharing.js` is called every 20 seconds to enable data replication among the nodes. By using the `dbSharing` module, the system can improve consistency and reliability, which is essential in a blockchain system where data integrity is critical.
+For the linktree task, we will create a `dbSharing.js` module that serves as the data-sharing interface and is imported into the `index.js` file. The `share()` function from `dbSharing.js` is called every 20 seconds to enable data replication among the nodes. By using the `dbSharing` module, the system can improve consistency and reliability, which is essential in a blockchain system where data integrity is critical.
 
 ## Here is a high-level overview of how the module works
 

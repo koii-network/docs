@@ -42,7 +42,7 @@ Then in your `index.html` file add
 
 #### Example code:
 
-First you have to initialize the PoRT class:
+First, you have to initialize the PoRT class:
 
 ```jsx
 import * as port from "@_koii/k2-port";
@@ -50,7 +50,7 @@ import * as port from "@_koii/k2-port";
 let portAPI = new port.PoRT({
   trustedNodeAddress: "https://k2-tasknet.koii.live", //Address of KOII mainnet
   node: 5, //maximum number of nodes to send PoRTs to.
-  connectionWait: true, // this parameters waits for Finne to be connected
+  connectionWait: true, // this parameter waits for Finne to be connected
 });
 ```
 
@@ -62,7 +62,7 @@ import * as port from "@_koii/k2-port";
 let portAPI = new port.PoRT({
   trustedNodeAddress: "https://k2-tasknet.koii.live", //Address of KOII mainnet
   node: 5, //maximum number of nodes to send PoRTs to.
-  connectionWait: true, // this parameters waits for Finne to be connected
+  connectionWait: true, // this parameter waits for Finne to be connected
 });
 
 // portAPI.propagatePoRT('https://www.koii.network/')
@@ -77,7 +77,7 @@ import * as port from "@_koii/k2-port";
 let portAPI = new port.PoRT({
   trustedNodeAddress: "https://k2-tasknet.koii.live", //Address of KOII mainnet
   node: 5, //maximum number of nodes to send PoRTs to.
-  connectionWait: true, // this parameters waits for Finne to be connected
+  connectionWait: true, // this parameter waits for Finne to be connected
 });
 
 // portAPI.propagatePoRT('bafybeiae5xyoekitp23qiuedcxzjtakh2a2dky5aieajp7qsnwdanvqjri')
@@ -88,7 +88,7 @@ portAPI.propagatePoRT("<Your content CID>"); // Your content CID
 
 #### **`PropagatePoRT()`**
 
-This function is the core of this SDK. It attempts to send **Proofs of Real Traffic** to the KOII network for a given transaction Id. First, it tries Finnie wallet and if permissions are available to SignPoRTs it will sign PoRTs else it will generate a new wallet and store it in your browser and sign PoRTs with them.
+This function is the core of this SDK. It attempts to send **Proofs of Real Traffic** to the KOII network for a given transaction Id. First, it tries Finnie wallet and if permissions are available to SignPoRTs it will sign PoRTs else it will generate a new wallet store it in your browser and sign PoRTs with them.
 
 **`Arguments`**
 
@@ -109,6 +109,6 @@ Check on our GitHub to learn more about this SDK. If you need any help or find a
 
 Human time is the scarcest and most expensive resource we have access to today, and attention is how we use that time to absorb new knowledge and transfer it to others. This superpower has led our species to an almost inconceivably powerful position, and we hope to use Koii to help everyone participate in the governance of our communal attention.&#x20;
 
-While KOII tokens are used as a compute resource, we are more concerned with creating a safe protocol for the storage of our communal history. The attention economy is everyone's opportunity to build reputation and trust, and ultimately run their own node and receive rewards for supporting the ecosystem.
+While KOII tokens are used as a compute resource, we are more concerned with creating a safe protocol for the storage of our communal history. The attention economy is everyone's opportunity to build reputation and trust, and ultimately run their node and receive rewards for supporting the ecosystem.
 
-For further reading, Albert Wenger summarizes a number of key points in [The World After Capital](https://worldaftercapital.org/).&#x20;
+For further reading, Albert Wenger summarizes several key points in [The World After Capital](https://worldaftercapital.org/).&#x20;

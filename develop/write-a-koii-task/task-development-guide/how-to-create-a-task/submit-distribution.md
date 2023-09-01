@@ -4,7 +4,7 @@ During the distribution period of running a task, a selected node is tasked with
 
 **What is a Distribution List?**
 
-A distribution list is a JSON object containing a key-value pair, where the `key` is the public key of the node that made the submission and the `value` is the number of KOII tokens to be rewarded to the node.
+A distribution list is a JSON object containing a key-value pair, where the `key` is the public key of the node that submitted and the `value` is the number of KOII tokens to be rewarded to the node.
 
 Distribution list example:
 

@@ -7,7 +7,7 @@ sidebar_label: NeDB
 
 # NeDb
 
-[NeDB](https://www.npmjs.com/package/nedb) is a key-value storage library that provides an ordered mapping from string keys to string values. Embedded persistent or in memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency.
+[NeDB](https://www.npmjs.com/package/nedb) is a key-value storage library that provides an ordered mapping from string keys to string values. Embedded persistent or in-memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency.
 
 The `namespaceWrapper` class provides some methods that use NeDB's `insert(key,value)` and `findOne(key)` basic operations for storing and retrieving data respectively.
 
@@ -117,7 +117,7 @@ async function execute() {
 
 ## Setup more functions in your task
 
-You can add more functions to your task by adding them to the `namespaceWrapper` class or create your own `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
+You can add more functions to your task by adding them to the `namespaceWrapper` class or create your `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
 
 ```javascript
 const { namespaceWrapper } = require("./_koiiNode/koiiNode");
