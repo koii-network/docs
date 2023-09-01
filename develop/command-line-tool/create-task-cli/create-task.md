@@ -7,6 +7,8 @@ sidebar_label: Create a New Task
 
 The `create-task-cli` tool allows you to register and deploy a new Koii task. In this section, we'll walk you through the process of creating a new task.
 
+![Image](../../img/DEV%20koii%20task%20for%20docs.svg)
+
 # Getting Started:
 
 - After running the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To create a new task, select the following option:
