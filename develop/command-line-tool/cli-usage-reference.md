@@ -5,43 +5,48 @@ image: img/thumbnail.png
 sidebar_label: CLI Usage Reference
 ---
 
+## Install Koii CLI
+Check [here](/develop/command-line-tool/koii-cli/install-cli) to learn about how to install the Koii CLI.
+
+After installing the Koii CLI, you can use the following commands to interact with the K2.
+
 ## Get Pubkey
 
-```
-// Command
-$ koii-keygen pubkey
+```bash
+# Command
+koii-keygen pubkey
 
-// Return
+# Return
 <PUBKEY>
 ```
 
 ## Get Balance
 
-```
-// Command
-$ koii balance
+```bash
+# Command
+koii balance
 
-// Return
+# Return
 "3.00050001 KOII"
 ```
 
 ## Confirm Transaction
 
-```
-// Command
-$ koii confirm <TX_SIGNATURE>
+```bash
+# Command
+koii confirm <TX_SIGNATURE>
 
-// Return
+# Return
 "Confirmed" / "Not found" / "Transaction failed with error <ERR>"
 ```
 
 ## Deploy Program
 
-```
-// Command
-$ koii program deploy <PATH>
+```bash
+# Command
+koii program deploy <PATH>
 
-// Return
+# Return
 <PROGRAM_ID>
 ```
 
@@ -52,7 +57,7 @@ $ koii program deploy <PATH>
 
 <h3 style={{marginTop: 0}}>koii-cli</h3>
 
-```
+```bash
 koii-cli 1.10.0 (src:devbuild; feat:167192737)
 Blockchain, Rebuilt for Scale
 
@@ -162,7 +167,7 @@ SUBCOMMANDS:
 
 ## koii-account
 
-```
+```bash
 koii-account
 Show the contents of an account
 
@@ -201,7 +206,7 @@ ARGS:
 
 ## koii-address
 
-```
+```bash
 koii-address
 Get your public key
 
@@ -231,7 +236,7 @@ OPTIONS:
 
 ## koii-address-lookup-table
 
-```
+```bash
 koii-address-lookup-table
 Address lookup table management
 
@@ -269,7 +274,7 @@ SUBCOMMANDS:
 
 ## koii-airdrop
 
-```
+```bash
 koii-airdrop
 Request SOL from a faucet
 
@@ -307,7 +312,7 @@ ARGS:
 
 ## koii-authorize-nonce-account
 
-```
+```bash
 koii-authorize-nonce-account
 Assign account authority to a new entity
 
@@ -362,7 +367,7 @@ ARGS:
 
 ## koii-balance
 
-```
+```bash
 koii-balance
 Get your balance
 
@@ -400,7 +405,7 @@ ARGS:
 
 ## koii-block
 
-```
+```bash
 koii-block
 Get a confirmed block
 
@@ -432,7 +437,7 @@ ARGS:
 
 ## koii-block-height
 
-```
+```bash
 koii-block-height
 Get current block height
 
@@ -461,7 +466,7 @@ OPTIONS:
 
 ## koii-block-production
 
-```
+```bash
 koii-block-production
 Show information about block production
 
@@ -493,7 +498,7 @@ OPTIONS:
 
 ## koii-block-time
 
-```
+```bash
 koii-block-time
 Get estimated production time of a block
 
@@ -525,7 +530,7 @@ ARGS:
 
 ## koii-catchup
 
-```
+```bash
 koii-catchup
 Wait for a validator to catch up to the cluster
 
@@ -567,7 +572,7 @@ ARGS:
 
 ## koii-close-vote-account
 
-```
+```bash
 koii-close-vote-account
 Close a vote account and withdraw all funds remaining
 
@@ -624,7 +629,7 @@ ARGS:
 
 ## koii-cluster-date
 
-```
+```bash
 koii-cluster-date
 Get current cluster date, computed from genesis creation time and network time
 
@@ -653,7 +658,7 @@ OPTIONS:
 
 ## koii-cluster-version
 
-```
+```bash
 koii-cluster-version
 Get the version of the cluster entrypoint
 
@@ -682,7 +687,7 @@ OPTIONS:
 
 ## koii-config
 
-```
+```bash
 koii-config
 Koii command-line tool configuration settings
 
@@ -718,7 +723,7 @@ SUBCOMMANDS:
 
 ## koii-confirm
 
-```
+```bash
 koii-confirm
 Confirm transaction by signature
 
