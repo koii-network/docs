@@ -5,43 +5,48 @@ image: img/thumbnail.png
 sidebar_label: CLI Usage Reference
 ---
 
+## Install Koii CLI
+Check [here](/develop/command-line-tool/koii-cli/install-cli) to learn about how to install the Koii CLI.
+
+After installing the Koii CLI, you can use the following commands to interact with the K2.
+
 ## Get Pubkey
 
-```
-// Command
-$ koii-keygen pubkey
+```bash
+# Command
+koii-keygen pubkey
 
-// Return
+# Return
 <PUBKEY>
 ```
 
 ## Get Balance
 
-```
-// Command
-$ koii balance
+```bash
+# Command
+koii balance
 
-// Return
+# Return
 "3.00050001 KOII"
 ```
 
 ## Confirm Transaction
 
-```
-// Command
-$ koii confirm <TX_SIGNATURE>
+```bash
+# Command
+koii confirm <TX_SIGNATURE>
 
-// Return
+# Return
 "Confirmed" / "Not found" / "Transaction failed with error <ERR>"
 ```
 
 ## Deploy Program
 
-```
-// Command
-$ koii program deploy <PATH>
+```bash
+# Command
+koii program deploy <PATH>
 
-// Return
+# Return
 <PROGRAM_ID>
 ```
 
