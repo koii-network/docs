@@ -1,55 +1,23 @@
 ---
-title: Create Task CLI
+title: Create a New Task
 description: We provide create-task-cli to help you easily create and deploy your task.
 image: img/thumbnail.png
-sidebar_label: Create Task CLI
+sidebar_label: Create a New Task
 ---
 
-# Create Task CLI
+The `create-task-cli` tool allows you to register and deploy a new Koii task. In this section, we'll walk you through the process of creating a new task.
 
-![Banner](../img/Create%20Task%20CLI.svg)
+![Image](../../img/DEV%20koii%20task%20for%20docs.svg)
 
-We provide `create-task-cli` tool for task creators to easily:
+# Getting Started:
 
-- Create a new task
-- Update an existing task
-- Activate a task
-- Claim reward
-- Fund a task with more KOII
-- Withdraw staked funds from a task
-- Upload assets to IPFS
-
-![Image](../img/DEV%20koii%20task%20for%20docs.svg)
-
-To get started with the installation process and its usage, follow the steps provided below:
-
-## Install Create-Task-CLI
-
-- Run the command below in your terminal within the task directory to install and run the create-task-cli:
-
-```bash
-npx @_koii/create-task-cli@latest
-```
-
-- It prompts for your wallet path:
-
-```bash
-✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-```
-
-:::tip
-Run `koii config get` in another terminal, the “**Keypair Path**” is your wallet path.
-
-Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly.
-:::
-
-- Next, you will be prompted with seven options, select `Create a new task` to create a new task:
+- After running the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To create a new task, select the following option:
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
     update existing task
-    Activate task
+    Activate/Deactivate task
     Claim reward
     Fund task with more KOII
     Withdraw staked funds from task
@@ -63,6 +31,10 @@ Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cl
 ❯   using CLI
     using config YML
 ```
+
+:::tip
+For creating a task, it's recommended to use the `using config YML` option, which offers a more structured approach and contains comprehensive information about your task.
+:::
 
 To create a task, we recommend using the `config-task.yml` file, which can be easily edited in your task folder and contains more information about your task.
 
@@ -131,7 +103,7 @@ task_id: ""
 migrationDescription: ""
 ```
 
-- Follow the instructions and fill in your task's information.
+- Follow the instructions on the file and fill in your task's information.
 
 :::caution
 Please make sure all of your environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
@@ -143,7 +115,7 @@ If you have something like:
 const username = process.env.TWITTER_USER_NAME;
 ```
 
-Then in your `yml` file should have:
+Then your `yml` file should have:
 
 ```yaml
 - type: TASK_VARIABLE
@@ -155,9 +127,9 @@ Make sure to set your environment variable `type` as `TASK_VARIABLE`.
 
 The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual JavaScript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
-User will set their key of the `value` in the Koii Node's `Settings -> Task Settings`
+User will setup their key of the `value` in the Koii Node's `Settings -> Task Settings`
 
-![Code Sample](../img/setting_env_key.png)
+![Code Sample](../../img/setting_env_key.png)
 
 So, if you have more than one environment variable, your `requirementsTags` section should look like this:
 
@@ -171,12 +143,12 @@ requirementsTags:
     description: "used to connect twitter"
 ```
 
-Each environment variable has its `type` set as `TASK_VARIABLE`, a unique `value` and a short `description`.
+With each environment variable having their `type` set as `TASK_VARIABLE`, a unique `value` and a short `description`.
 
 :::
 
 - After updating the config file, run `npx @_koii/create-task-cli@latest` again and choose "using config YML".
-- If there is an error, follow the instructions to correct it. If it was successful, your terminal should display an output similar to this:
+- If an error occurs, follow the provided instructions for correction. If successful, your terminal will display an output similar to this:
 
 ```bash
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
@@ -184,20 +156,20 @@ Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm
 Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
 ```
 
-- Hit `y` to deduct the necessary amount of KOII for your task creation.
-- Finally, the details of your task, including the "Task Id" and "Stake Pot Account Pubkey" are returned.
+- Confirm by entering `y` to deduct the necessary KOII amount for task creation.
+- You will receive details of your task, including the "Task Id" and "Stake Pot Account Pubkey."
 
 ### Using the CLI
 
-When you use this method to create a new task, you will be prompted to enter the information needed to create your task.
+When opting for this method to create a new task, you will be prompted to enter all the essential information needed for task creation.
 
-Fill in the necessary information by following the instructions below:
+Follow these instructions to input the required details:
 
-- **Enter the name of the task:** Any Name .. Seriously your choice! E.g: `Blazing-Fast-Execution`
+- **Enter the name of the task:** Provide a name for your task. Your choice is entirely flexible (e.g., `Blazing-Fast-Execution`).
 
-- **Enter a short description of your task:** A brief explanation of the task you're creating.
+- **Enter a short description of your task:** Enter a concise description of your task's purpose.
   :::caution
-  The description should not be longer than 64 characters.
+  The description should not exceed 64 characters.
   :::
 
 - **Please select the type of network: ** Choose **IPFS** for storage of your executable file, or **DEVELOPMENT** if you want to test in development environment.
@@ -205,9 +177,9 @@ Fill in the necessary information by following the instructions below:
   The next prompt depends on your answer to the prompt above.
   :::
 
-- [For IPFS] **Enter the web3.storage API key:** Add a web3.storage API key to store your task executable on IPFS. E.g: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`
+- [For IPFS] **Enter the web3.storage API key:** Input your web3.storage API key to store your task executable on IPFS (e.g., `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`).
   :::tip
-  Visit [Web3.storage](https://web3.storage/), create an account, create an API token for your project, copy your token, and paste it on this prompt.
+   Visit [Web3.storage](https://web3.storage/), create an account, generate an API token for your project, copy the token, and paste it on this prompt.
   :::
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
@@ -215,31 +187,31 @@ Fill in the necessary information by following the instructions below:
   The name should not contain `.js`. For example, if you want to run `task-mytask.js`, you should enter `task-mytask` as the executable name.
   :::
 
-- [For IPFS] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
+- [For IPFS] **Enter the path to your executable webpack:** Provide the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
 
-- **Enter the round time in slots:** The preferred number of slots per round for the task. E.g: `1000`
+- **Enter the round time in slots:** Define the preferred number of slots per round for your task (e.g., `1000`).
 
-- **Enter the audit window in slots:** The number of slots to be allocated to the audit window. E.g: `500`
+- **Enter the audit window in slots:** Specify the number of slots to be allocated to the audit window (e.g., `500`).
 
-- **Enter the submission window in slots:** The number of slots to be allocated to the submission window. E.g: `300`
+- **Enter the submission window in slots:** Specify the number of slots to be allocated to the submission window (e.g., `300`).
   :::caution
-  The number of slots in the audit window and submission must be lower than the number of slots per round.
+   Ensure that the audit and submission window slot numbers are lower than the slots per round.
   :::
 
-- **Enter the minimum staking amount for the task (in KOII):** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
+- **Enter the minimum staking amount for the task (in KOII):** Set the minimum amount that node operators must stake on your task (e.g., `50`).
 
-- **Enter the total bounty you want to allocate for the task (In KOII):** Any amount not more than what you have in your wallet though. E.g: `1000` (We suggest the amount could be run at least 4 epochs)
+- **Enter the total bounty you want to allocate for the task (In KOII):** Define the total bounty allocated for your task (e.g., `1000`). It should be an amount that can cover at least 4 epochs.
 
-- **Enter the bounty amount per round (In KOII):** Total amount would be divided equally for each node until the bounty fund is exhausted. E.g: `10`
+- **Enter the bounty amount per round (In KOII):** Total amount would be divided equally for each node until the bounty fund is exhausted (e.g., `10`).
 
-- **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
+- **Enter the number of distribution list submission retry in case it fails:** Specify the number of accepted attempts to resubmit the distribution list if the initial submission fails.
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. Use the "Upload Files" button on your web3.storage account to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt.
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty.
 
-- **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
+- **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs (e.g., `10`).
 - **Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) › ** y/n
 
-After the final confirmation of `y`, your task would be created along with a `taskStateInfoKeypair.json` which is used to control the task state info.
+- **Final Confirmation:** Upon final confirmation (typically by entering `y`), your task will be created, and a `taskStateInfoKeypair.json` file will be generated to manage task state information.
 
 :::danger
 Strong measures should be taken to protect this JSON file.
@@ -290,3 +262,5 @@ Success
 Whenever we refer to task account, we mean the task **State Info Pubkey**.
 The bounty amount will be present in **Stake Pot Account**
 :::
+
+Once you have created a task, you can proceed to update existing tasks on the [next page](./update-task.md). Make sure you copy your **Task Id** and **Stake Pot Account Pubkey** and keep them safe.
