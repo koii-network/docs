@@ -12,6 +12,8 @@ After deploying a Koii Task, if you wish to update it, follow these steps:
 
 In the `config-task.yml` file, you will find instructions and fields where you need to fill in your task's updated information. Ensure you include the `task_id` of the task that needs to be re-deployed. This `task_id` is essential to identify the specific task that requires updating.
 
+Additionally, the `migrationDescription` parameter is used specifically for task updates. On the Koii Node, it informs task runners what was changed in the new version of the task.
+
 Once you have made the necessary changes and provided the updated information in the config-task.yml file, you can proceed with the re-deployment of your task.
 
 ```yml
@@ -20,6 +22,8 @@ task_id: "<Your Previous Task Id>"
 # Name and description of your task
 task_name: "web3-revolution"
 task_description: 'This is a simple web3 task that returns "Hello, World!"'
+
+migrationDescription: "Optimized CPU and RAM usage"
 
 # Network value can be DEVELOPMENT, ARWEAVE or IPFS
 task_executable_network: "IPFS"
