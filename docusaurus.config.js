@@ -957,7 +957,7 @@ const config = {
         },
         items: [
           {
-            label: "🥷 Hello World!",
+            label: "👋 Hello World!",
             to: "/quickstart/hello-world/introduction",
             activeBasePath: "hello-world",
             position: "left",
@@ -995,7 +995,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "🪙 $KOII",
+            label: "💰 $KOII",
             to: "/koii/the-koii-token/network-economics",
             activeBasePath: "koii",
             position: "left",
