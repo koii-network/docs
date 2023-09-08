@@ -122,7 +122,7 @@ Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cl
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
     update existing task
-    Activate task
+    Activate/Deactivate task
     Claim reward
     Fund task with more KOII
     Withdraw staked funds from task

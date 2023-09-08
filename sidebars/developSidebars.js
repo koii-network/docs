@@ -134,8 +134,24 @@ const sidebars = {
         "command-line-tool/koii-cli/connect-cluster",
       ],
     },
+    {
+      type: "category",
+      label: "Create Task CLI",
+      link: {
+        type: "doc",
+        id: "command-line-tool/create-task-cli/intro",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/create-task-cli/install",
+        "command-line-tool/create-task-cli/create-task",
+        "command-line-tool/create-task-cli/update-task",
+        "command-line-tool/create-task-cli/activate-task",
+        "command-line-tool/create-task-cli/fund-task",
+      ],
+    },
 
-    "command-line-tool/create-task-cli",
+    // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
 
     //   ],
