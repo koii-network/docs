@@ -21,7 +21,7 @@ export const GrantArea = () => {
 
       <div className="flex flex-col items-center justify-center">
         <div className="player-wrapper w-1/3 min-w-[500px] flex justify-center pb-5">
-          <ReactPlayer className="react-player" url={url} width="78%" height="498px" />
+          <ReactPlayer className="react-player" url={url} width="78%" height="499px" />
         </div>
         <a
           href="https://www.koii.network/founders"
