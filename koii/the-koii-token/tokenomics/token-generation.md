@@ -14,7 +14,7 @@ Every 12 hours, 500,000 new tokens (0.005% of the total supply) are minted for t
 
 :::
 
-The newly generated tokens are split between <Tooltip text='Attention Mining'/>, <Tooltip text='K2 Nodes'/> and <Tooltip text='Task Nodes'/> that run the attention game.
+The newly generated tokens are split between <Tooltip text='Attention Mining'/>, <Tooltip text='K2 Validators'/> and <Tooltip text='Task Nodes'/> that run the attention game.
 
 ![Token Generation](./img/Token%20Generation.svg)
 
