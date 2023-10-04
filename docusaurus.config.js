@@ -761,11 +761,11 @@ const config = {
             from: "/develop/build-dapps-with-koii/template-library/customization",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/currencies-and-wallets",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/deploy",
           },
           {
