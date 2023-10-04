@@ -1,8 +1,8 @@
 ---
-title: Understand the template
+title: Understand the Template
 description: What's in the Hello-World template?
 image: img/thumbnail.png
-sidebar_label: Understand the template
+sidebar_label: Understand the Template
 ---
 
 import Tooltip from "@site/src/components/tooltip";

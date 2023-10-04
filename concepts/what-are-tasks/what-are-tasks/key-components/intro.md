@@ -20,9 +20,9 @@ import Description from "@site/src/components/description";
 
 Every task is compiled into a single JavaScript executable file that contains all of the functions required to run the task. We go into detail throughout the tutorial. Three functions are required to be defined:
 
-- **Task function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](/develop/write-a-koii-task/task-development-guide/k2-task-template/task-function)
-- **Audit function** — This function audits other participating nodes. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function)
-- **Distribution function** — This function creates the distribution list and submits it on-chain. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions)
+- **Task Function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](/develop/write-a-koii-task/task-development-guide/k2-task-template/task-function)
+- **Audit Function** — This function audits other participating nodes. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function)
+- **Distribution Function** — This function creates the distribution list and submits it on-chain. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions)
 
 ## Metadata
 
