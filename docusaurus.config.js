@@ -292,7 +292,7 @@ const config = {
             ],
           },
           {
-            to: "/run-a-node/k2-validators/how-to-run-a-k2-node",
+            to: "/run-a-node/k2-validators/how-to-run-a-k2-validator",
             from: [
               "/develop/settlement-layer/running-a-k2-node/",
               "/settlement-layer/running-a-k2-node",
@@ -321,23 +321,23 @@ const config = {
             ],
           },
           {
-            to: "/tutorials/linktree/intro",
+            to: "/quickstart/linktree/intro",
             from: "/develop/microservices-and-tasks/linktree-task/intro",
           },
           {
-            to: "/tutorials/linktree/data-storage",
+            to: "/quickstart/linktree/data-storage",
             from: "/develop/microservices-and-tasks/linktree-task/data-storage",
           },
           {
-            to: "/tutorials/linktree/data-sharing",
+            to: "/quickstart/linktree/data-sharing",
             from: "/develop/microservices-and-tasks/linktree-task/data-sharing",
           },
           {
-            to: "/tutorials/linktree/rest-apis",
+            to: "/quickstart/linktree/rest-apis",
             from: "/develop/microservices-and-tasks/linktree-task/rest-api",
           },
           {
-            to: "/tutorials/linktree/user-authentication",
+            to: "/quickstart/linktree/user-authentication",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
           {
@@ -721,51 +721,51 @@ const config = {
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/preview-info",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/services",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/pages",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/assets",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/components",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/internal-api-hooks",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/search",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/crowdfunding-portal/",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/installation",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/customization",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/tutorials/koii-apps/introduction",
             from: "/develop/build-dapps-with-koii/template-library/currencies-and-wallets",
           },
           {
-            to: "/tutorials/introduction",
+            to: "/tutorials/koii-apps/introduction",
             from: "/develop/build-dapps-with-koii/template-library/deploy",
           },
           {
