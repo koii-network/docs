@@ -1,11 +1,11 @@
 ---
-title: Audit function
+title: Audit Function
 description: This part include the Audit function of the task.
 image: img/thumbnail.png
-sidebar_label: Audit function
+sidebar_label: Audit Function
 ---
 
-# Audit function
+# Audit Function
 
 The audit function is where the data is verified. The audit function is defined in the `special_audit.js` file. The file is located in the root folder. The audit function is exported from the file and imported into the `audit.js`` file.
 

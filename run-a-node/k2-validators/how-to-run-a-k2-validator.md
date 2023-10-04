@@ -1,14 +1,14 @@
 ---
-title: How to Run a K2 Node
+title: How to Run a K2 Validator
 description: Application layer nodes are one of the most-needed commodities in Web3.
 image: img/thumbnail.png
-sidebar_label: How to Run a K2 Node
+sidebar_label: How to Run a K2 Validator
 ---
 
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-# Running a K2 Node
+# Running a K2 Validator
 
 <Description
   text="This section describes how to run a K2 Validator."

@@ -76,7 +76,7 @@ export const exploreTopics = [
     items: [
       {
         title: "Koii Apps Library",
-        link: "/tutorials/koii-apps/introduction",
+        link: "/quickstart/introduction",
         icon: "/img/explore-topics-icons/tem-lib.svg",
       },
       {

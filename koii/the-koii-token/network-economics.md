@@ -19,4 +19,4 @@ Since the settlement layer is decentralized, there is no central ownership body,
 
 Transaction fees paid in KOII tokens control how data is added to the network, preventing a bad actor from flooding the system with spam.
 
-Note: The token does not confer governance rights, nor does it provide any ownership of the system. Ownership of tokens does permit a community member to run either a <Tooltip text="K2 Node"/> or a <Tooltip text="Task Node"/>, and provide services to the network.
+Note: The token does not confer governance rights, nor does it provide any ownership of the system. Ownership of tokens does permit a community member to run either a <Tooltip text="K2 Validator"/> or a <Tooltip text="Task Node"/>, and provide services to the network.
