@@ -51,7 +51,7 @@ Koii Network's **Twitter Crawler** uses community devices to efficiently crawl t
 
 - **Cost Savings:** Centralized API prices rise with data's value, while our decentralized approach becomes more affordable with more nodes, avoiding large Twitter API costs.
 - **Large Data:** With Koii, you can gather more tweets more often. No rate-limits and of all the data available not just what the API provides.
-- **Relevant Data:** Only gather what you need. By [setting your search requirements](/tutorials/crawler/advancedsearch), you ensure only relevant data is fetched, improving the efficiency of your tasks. Community nodes only receive incentives if the tweets they submit match your specification (i.e. tweets since 09/01/2023, containing `"#elon_musk_is_cool"`)
+- **Relevant Data:** Only gather what you need. By [setting your search requirements](/compute/aggregator/advancedsearch), you ensure only relevant data is fetched, improving the efficiency of your tasks. Community nodes only receive incentives if the tweets they submit match your specification (i.e. tweets since 09/01/2023, containing `"#elon_musk_is_cool"`)
 - **Filter by Engagement:** Users can filter tweets based on a threshold of likes, retweets, or replies, which the Twitter API does not support directly.
 
 :::info Coming Soon

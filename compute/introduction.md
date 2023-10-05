@@ -12,7 +12,7 @@ sidebar_label: Introduction
 
 | **Aspect** | **Details**                                                                                                      | **Metric**                                                                                                             |
 |------------|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| **Latency**    | Latency levels are on par with leading cloud VM instances.                                                 | **Typically 20-30ms (up to 50ms) latency.**                                        |
+| **Latency**    | Latency levels are on par with leading cloud VM instances.                                                 | **Typically 20-30ms latency.**                                        |
 | **Cost**       | During our testnet phase, costs are provisional as $KOII is not monetized.                              | **75% savings compared to AWS.**            |
 | **Speed**      | Tasks can be simultaneously processed by hundreds to thousands of compute nodes. | **With appropriate incentives, Koii can exceed AWS in speed.** |
 | **Uptime**     | Benefit from the resilience of a decentralized network — it's almost always operational.                   | **Always online, any downtime is communicated in advance.**    |
@@ -37,7 +37,7 @@ sidebar_label: Introduction
 
 At Koii, we recognize the rapid evolution of technology, especially in the computational domain. Our network seamlessly integrates with popular technologies, ensuring compute buyers have access to familiar tools. Explore in-depth how the Koii Network supports:
 
-- **Docker Images:** Harness the power of containerization. Create, deploy, and run your tasks using Docker to ensure consistency across the network.
+- **Docker Images (coming soon):** Harness the power of containerization. Create, deploy, and run your tasks using Docker to ensure consistency across the network.
   
 - **CUDA:** Accelerate your tasks by leveraging CUDA, a parallel computing platform and API model created by Nvidia. Ideal for compute-intensive workloads, especially in domains like AI and graphics.
 

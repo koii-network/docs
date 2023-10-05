@@ -19,4 +19,4 @@ In addition to providing fast and secure micro-payments for Koii's compute econo
 
 Because of this important role, and the responsibility of securing the network, K2 Validators require significantly more powerful hardware, along with considerable collateral deposits to ensure security.
 
-[Click here to learn more about running a K2 Validator.](/run-a-node/k2-nodes/how-to-run-a-k2-validator)
+[Click here to learn more about running a K2 Validator.](/run-a-node/k2-validators/how-to-run-a-k2-validator)

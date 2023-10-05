@@ -7,7 +7,7 @@ sidebar_label: Performance Metrics
 **Latency:** 
 Latency levels are on par with leading cloud VM instances.
 
-    For reference, this is typically 20-30ms (up to 50ms) latency. Node location may influence latency.
+    For reference, this is typically 20-30ms latency. Node location may influence latency.
 
 **Cost:** 
 During our testnet phase, costs are provisional as **$KOII** is not monetized.
