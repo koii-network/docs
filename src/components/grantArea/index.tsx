@@ -14,7 +14,7 @@ export const GrantArea = () => {
           Funding Your Journey on Koii
           </p>
           <p className="text-graphite text-lg leading-[34px] text-center mb-5">
-          Apply now for a <strong>$KOII</strong> grant to cover your compute costs for up to a year.
+          Apply now for a <strong>$50,000</strong> grant to cover your compute costs for up to a year.
           </p>
         </div>
       </div>
