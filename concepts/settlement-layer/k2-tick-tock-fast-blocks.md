@@ -49,4 +49,4 @@ Each day, Koii nodes collect Proofs of Real Traffic and submit batches of them i
 
 Every [epoch](https://docs.solana.com/terminology#epoch) (roughly every 12 hours), a pool of new tokens is created and distributed to anyone who receives attention to their content. 
 
-Node operators can also earn new tokens by running a K2 node, or by running the attention task on a task node and helping to verify Proofs of Real Traffic or lock them into the settlement layer.
+Node operators can also earn new tokens by running a K2 Validator, or by running the attention task on a task node and helping to verify Proofs of Real Traffic or lock them into the settlement layer.

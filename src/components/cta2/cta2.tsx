@@ -7,14 +7,14 @@ export const Cta2 = () => {
   };
   return (
     <div className="w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8 mt-5">
-      <div className="w-full flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col w-full gap-6 md:flex-row">
         <a
           className={
             "w-full lg:max-w-[50%] bg-[transparent] no-underline hover:no-underline cursor-pointer flex justify-around h-[120px] items-center" +
             " " +
             styles.card1
           }
-          href="/tutorials/koii-apps/introduction"
+          href="/compute/introduction"
           style={{
             textDecoration: "no-underline",
           }}
@@ -23,7 +23,7 @@ export const Cta2 = () => {
           <div className={"md:pl-5 pl-3" + " " + styles.img}>
             <img src={"img/Group 6.svg"} className={"w-full"} role="img" />
           </div>
-          <div className="md:pr-5 pr-3">
+          <div className="pr-3 md:pr-5">
             <h2
               className={
                 "no-underline hover:no-underline text-[#171753] m-0" +
@@ -31,7 +31,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-              Koii Templates
+            Compute Buyers
             </h2>
             <p
               className={
@@ -40,7 +40,7 @@ export const Cta2 = () => {
                 styles.ctaText2
               }
             >
-              Start with a ready-to-deploy template.
+              Secure Compute on Koii now.
             </p>
           </div>
         </a>
@@ -56,7 +56,7 @@ export const Cta2 = () => {
           }}
           onClick={handleClick}
         >
-          <div className="md:pl-5 pl-3">
+          <div className="pl-3 md:pl-5">
             <h2
               className={
                 "no-underline hover:no-underline text-[#171753] m-0" +
