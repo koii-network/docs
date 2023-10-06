@@ -41,14 +41,14 @@ const sidebars = {
     "task-nodes/choosing-tasks",
     {
       type: "html",
-      value: "K2 Node",
+      value: "K2 Validator",
       className: "sidebar-title",
     },
-    "k2-nodes/how-to-run-a-k2-node",
-    "k2-nodes/system-requirements",
-    "k2-nodes/system-setup",
-    "k2-nodes/validator-setup",
-    "k2-nodes/rewards",
+    "k2-validators/how-to-run-a-k2-validator",
+    "k2-validators/system-requirements",
+    "k2-validators/system-setup",
+    "k2-validators/validator-setup",
+    "k2-validators/rewards",
   ],
 };
 

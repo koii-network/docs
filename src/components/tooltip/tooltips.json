@@ -67,15 +67,15 @@
   ],
   "database sharing": [
     "Koii network allows nodes to share their databases",
-    "/tutorials/linktree/data-sharing"
+    "/quickstart/linktree/data-sharing"
   ],
   "nedb": ["JavaScript database for Node.js", "https://dbdb.io/db/nedb"],
-  "k2 node": [
-    "A specialized node that tracks the Koii blockchain ledger",
+  "k2 validator": [
+    "A specialized node that tracks the Koii Blockchain Ledger",
     "/run-a-node/introduction/k2-nodes"
   ],
-  "k2 nodes": [
-    "Many network units",
+  "k2 validators": [
+    "Specialized nodes that track the Koii Blockchain Ledger",
     "/develop/settlement-layer/running-a-k2-node"
   ],
   "bounty tokens": [
@@ -91,7 +91,7 @@
     "/quickstart/hello-world/distribution"
   ],
   "validators": [
-    "Desktop or/and K2 Nodes in this context",
+    "Desktop or/and K2 Validators in this context",
     "/run-a-node/introduction/types-of-nodes"
   ],
   "proofs of real traffic": [
@@ -117,7 +117,7 @@
   "inflation": ["Inflation", "/concepts/web3/attentionmining"],
   "utility networks": ["Utility Networks", "/concepts/web3/attentionmining"],
   "node operators": [
-    "People who run Task Nodes or K2 Nodes",
+    "People who run Task Nodes or K2 Validators",
     "/run-a-node/introduction/types-of-nodes"
   ],
   "koii foundation": [
@@ -142,7 +142,7 @@
     "/run-a-node/introduction/k2-nodes"
   ],
   "settlement nodes": [
-    "K2 Nodes",
+    "K2 Validators",
     "/concepts/settlement-layer/k2-tick-tock-fast-blocks"
   ],
   "compute sharing marketplace": [

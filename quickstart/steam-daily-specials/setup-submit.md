@@ -1,11 +1,11 @@
 ---
-title: Submit function
+title: Submit Function
 description: This part incluede the fetchSubmission function of the task.
 image: img/thumbnail.png
-sidebar_label: Submit function
+sidebar_label: Submit Function
 ---
 
-# Submit function
+# Submit Function
 
 The submit function is where the data is submitted to the K2. The submit function is defined in the `special_submit.js` file. The file is located in the root folder. It is exported from the file and imported into the `submission.js` file.
 
