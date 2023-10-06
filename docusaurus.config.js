@@ -1014,6 +1014,7 @@ const config = {
       //   theme: darkCodeTheme,
       //   darkTheme: darkCodeTheme,
       // },
+      //
     }),
 };
 
