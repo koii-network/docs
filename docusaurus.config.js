@@ -1003,10 +1003,10 @@ const config = {
       footer: {},
       algolia: {
         // The application ID provided by Algolia
-        appId: "29G9TFK9ME",
+        appId: "5ZYGLTQ5FL",
         // Public API key: it is safe to commit it
-        apiKey: "0afa9bf81ac9b664f951bdf2f042b274",
-        indexName: "dev_koii",
+        apiKey: "24cf44066f20cc284d670794521d2b06",
+        indexName: "koii",
         // Optional: see doc section below
         // contextualSearch: true,
       },
