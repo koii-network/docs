@@ -2,7 +2,7 @@
 title: 💡 Philosophy
 description: For too long, power has been concentrated to just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.
 image: img/thumbnail.png
-sidebar_label: 💡 Philosophy
+sidebar_label: Philosophy
 ---
 
 import Card, { Cards } from "@site/src/components/card";

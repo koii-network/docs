@@ -2,7 +2,7 @@
 title: 🎏 Welcome to the New Internet
 description: We built Koii to make a better world by connecting the people that live in it.
 image: img/thumbnail.png
-sidebar_label: 🎏 Welcome to the New Internet
+sidebar_label: Welcome to the New Internet
 ---
 
 import Card, { Cards } from "@site/src/components/card";

@@ -11,16 +11,16 @@ import Tooltip from "@site/src/components/tooltip";
 # System Requirements
 
 <Description
-  text="This section gives an overview on the minimum requirement to run a K2 Node"
+  text="This section gives an overview on the minimum requirement to run a K2 Validator"
 />
 
-To run a K2 node, you need some KOII tokens and also possess the minimum memory (128 GB or 258 GB), computational (12 or 16 cores), and storage requirements.
+To run a K2 Validator, you need some KOII tokens and also possess the minimum memory (128 GB or 258 GB), computational (12 or 16 cores), and storage requirements.
 
-There is no strict minimum amount of KOII tokens required to run the K2 node.
+There is no strict minimum amount of KOII tokens required to run the K2 Validator.
 
 ### Minimum Hardware Requirements
 
-Here are the minimum hardware requirements for running a K2 node in terms of memory, computing, storage, and your operating system:
+Here are the minimum hardware requirements for running a K2 Validator in terms of memory, computing, storage, and your operating system:
 
 **1. Memory**
 

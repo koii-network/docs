@@ -11,17 +11,17 @@ export const GrantArea = () => {
       <div>
         <div className="mb-10 mx-auto xl:max-w-[1300px] lg:max-w-[1024px] w-100 px-[2rem]">
           <p className="text-koii-purple-2 font-semibold text-[40px] leading-[48px] text-center mt-16 mb-5">
-            Get a Development Grant
+          Funding Your Journey on Koii
           </p>
           <p className="text-graphite text-lg leading-[34px] text-center mb-5">
-            You can apply for a $USD or $KOII grant to build on Koii.
+          Apply now for a <strong>$50,000</strong> grant to cover your compute costs for up to a year.
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center">
-        <div className="player-wrapper w-1/3 min-w-[300px]">
-          <ReactPlayer className="react-player" url={url} width="100%" />
+      <div className="flex flex-col items-center justify-center">
+        <div className="player-wrapper w-1/3 min-w-[500px] flex justify-center pb-5">
+          <ReactPlayer className="react-player" url={url} width="78%" height="499px" />
         </div>
         <a
           href="https://www.koii.network/founders"

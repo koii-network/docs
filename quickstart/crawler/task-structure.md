@@ -28,11 +28,11 @@ Updates the current round. If more than one minute has passed since the last rou
 
 #### 3. **start()**
 
-Initializes the Twitter adapter and starts the Twitter crawler.
+Initializes the Twitter adapter and starts the Twitter Crawler.
 
 #### 4. **stop()**
 
-Stops the Twitter crawler.
+Stops the Twitter Crawler.
 
 #### 5. **getRoundCID(roundID)**
 

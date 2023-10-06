@@ -114,10 +114,10 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "tutorials",
-        path: "tutorials",
-        routeBasePath: "tutorials/",
-        sidebarPath: require.resolve("./sidebars/tutorialsSidebar.js"),
+        id: "compute",
+        path: "compute",
+        routeBasePath: "compute/",
+        sidebarPath: require.resolve("./sidebars/computeSidebar.js"),
         editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -292,21 +292,21 @@ const config = {
             ],
           },
           {
-            to: "/run-a-node/k2-nodes/how-to-run-a-k2-node",
+            to: "/run-a-node/k2-validators/how-to-run-a-k2-validator",
             from: [
               "/develop/settlement-layer/running-a-k2-node/",
               "/settlement-layer/running-a-k2-node",
             ],
           },
           {
-            to: "/run-a-node/k2-nodes/system-requirements",
+            to: "/run-a-node/k2-validators/system-requirements",
             from: [
               "/develop/settlement-layer/running-a-k2-node/system-requirements",
               "/settlement-layer/running-a-k2-node/setup-process",
             ],
           },
           {
-            to: "/run-a-node/k2-nodes/system-setup",
+            to: "/run-a-node/k2-validators/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
           {
@@ -321,23 +321,23 @@ const config = {
             ],
           },
           {
-            to: "/tutorials/linktree/intro",
+            to: "/quickstart/linktree/intro",
             from: "/develop/microservices-and-tasks/linktree-task/intro",
           },
           {
-            to: "/tutorials/linktree/data-storage",
+            to: "/quickstart/linktree/data-storage",
             from: "/develop/microservices-and-tasks/linktree-task/data-storage",
           },
           {
-            to: "/tutorials/linktree/data-sharing",
+            to: "/quickstart/linktree/data-sharing",
             from: "/develop/microservices-and-tasks/linktree-task/data-sharing",
           },
           {
-            to: "/tutorials/linktree/rest-apis",
+            to: "/quickstart/linktree/rest-apis",
             from: "/develop/microservices-and-tasks/linktree-task/rest-api",
           },
           {
-            to: "/tutorials/linktree/user-authentication",
+            to: "/quickstart/linktree/user-authentication",
             from: "/develop/microservices-and-tasks/linktree-task/auth-list",
           },
           {
@@ -516,51 +516,51 @@ const config = {
           },
 
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/getting-started",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
           },
           {
-            to: "/tutorials/steam-daily-specials/steam-daily-specials-task",
+            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
             from: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
           },
           {
-            to: "/tutorials/linktree/intro",
+            to: "/quickstart/linktree/intro",
             from: "/develop/task-tutorials/linktree-task/intro",
           },
           {
-            to: "/tutorials/linktree/data-storage",
+            to: "/quickstart/linktree/data-storage",
             from: "/develop/task-tutorials/linktree-task/data-storage",
           },
           {
-            to: "/tutorials/linktree/data-sharing",
+            to: "/quickstart/linktree/data-sharing",
             from: "/develop/task-tutorials/linktree-task/data-sharing",
           },
           {
-            to: "/tutorials/linktree/rest-apis",
+            to: "/quickstart/linktree/rest-apis",
             from: "/develop/task-tutorials/linktree-task/rest-api",
           },
           {
-            to: "/tutorials/linktree/user-authentication",
+            to: "/quickstart/linktree/user-authentication",
             from: "/develop/task-tutorials/linktree-task/auth-list",
           },
           {
@@ -629,143 +629,143 @@ const config = {
             from: "/develop/settlement-layer/native-contracts/the-task-contract",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/welcome-to-koii-x/quick-start",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/welcome-to-koii-x/site-metadata",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/welcome-to-koii-x/environment",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/create-nfts",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/fetching-nft-data",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/display-nfts",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/lists-and-leaderboards",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/using-thumbnails",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/using-nfts-as-content/koii-bridges",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/integrating-wallets/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/integrating-wallets/accepting-payments",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/integrating-wallets/ethereum-metamask",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/integrating-wallets/other-wallets",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/box",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/simplegrid",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/ui-template-layout/button-and-button-group",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/basic-setup",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/preview-info",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/services",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/pages",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/assets",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/components",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/internal-api-hooks",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/leaderboard-app/customization/search",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/crowdfunding-portal/",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/installation",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/customization",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/currencies-and-wallets",
           },
           {
-            to: "/tutorials/koii-apps/introduction",
+            to: "/compute/introduction",
             from: "/develop/build-dapps-with-koii/template-library/deploy",
           },
           {
@@ -957,45 +957,42 @@ const config = {
         },
         items: [
           {
-            label: "👋 Hello World!",
-            to: "/quickstart/hello-world/introduction",
-            activeBasePath: "hello-world",
-            position: "left",
-            className: "header-text",
-          },
-
-          {
-            label: "📖 Templates",
-            to: "/tutorials/koii-apps/introduction",
-            activeBasePath: "quickstart",
-            position: "left",
-            className: "header-text",
-          },
-
-          {
-            label: "🏗️ Tools",
-            to: "/develop/write-a-koii-task/task-development-guide/",
-            activeBasePath: "develop",
-            position: "left",
-            className: "header-text",
-          },
-
-          {
-            label: "💡 Concepts",
+            label: "💡 What is KOII",
             to: "/concepts/introduction/welcome",
             activeBasePath: "concepts",
             position: "left",
             className: "header-text",
           },
           {
-            label: "🖥️ Run a Node",
+            label: "🖥️ Nodes",
             to: "/run-a-node/introduction/types-of-nodes",
             activeBasePath: "run-a-node",
             position: "left",
             className: "header-text",
           },
           {
-            label: "💰 $KOII",
+            label: "⚙️ Deploy",
+            to: "/quickstart/hello-world/introduction",
+            activeBasePath: "hello-world",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "</> Developers",
+            to: "/develop/write-a-koii-task/task-development-guide/",
+            activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "📖 Get Compute",
+            to: "/compute/introduction",
+            activeBasePath: "compute",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "💰 Token",
             to: "/koii/the-koii-token/network-economics",
             activeBasePath: "koii",
             position: "left",
@@ -1006,10 +1003,10 @@ const config = {
       footer: {},
       algolia: {
         // The application ID provided by Algolia
-        appId: "29G9TFK9ME",
+        appId: "5ZYGLTQ5FL",
         // Public API key: it is safe to commit it
-        apiKey: "0afa9bf81ac9b664f951bdf2f042b274",
-        indexName: "dev_koii",
+        apiKey: "24cf44066f20cc284d670794521d2b06",
+        indexName: "koii",
         // Optional: see doc section below
         // contextualSearch: true,
       },
