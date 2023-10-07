@@ -41,7 +41,7 @@ At Koii, we recognize the rapid evolution of technology, especially in the compu
   
 - **CUDA:** Accelerate your tasks by leveraging CUDA, a parallel computing platform and API model created by Nvidia. Ideal for compute-intensive workloads, especially in domains like AI and graphics.
 
-- **PyTorch:** Whether you're into machine learning, deep learning, or AI, our support for PyTorch ensures you can build and train your models on the Koii Network efficiently.
+- **PyTorch:** Whether you're into machine learning, deep learning, or AI, our support for PyTorch ensures you can build and train your models on the Koii efficiently.
 
 To delve deeper into how these technologies seamlessly integrate with Koii, [read more here](/compute/supported).
 
@@ -51,4 +51,4 @@ At the heart of Koii's developer toolkit is our [Developer API](/compute/develop
 
 ## FAQ
 
-For anything else please refer to our [Frequently Asked Questions (FAQ)](/compute/FAQ) page for anything else regarding task distribution, handling of requests, and much more.
+For anything else please refer to our [Frequently Asked Questions (FAQ) page](/compute/FAQ) for anything else regarding task distribution, handling of requests, and much more.

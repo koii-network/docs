@@ -8,11 +8,11 @@ sidebar_label: FAQ
 
 1. **How are tasks distributed to nodes? Is there a limit on how many nodes can work on one task?**
  
-    Koii simply provides the infrastructure for tasks and the execution of those tasks is depended on node operators. Distribution depends on how much computing power is needed and task requirements, but there is no limit on how many nodes can work on one given task. It is incentive based, so hundreds to thousands of nodes can complete a single task.
+    Koii simply provides the infrastructure for tasks and the execution of those tasks is dependent on node operators. Distribution depends on how much computing power is needed and the task requirements, but there is no limit on how many nodes can work on one task. It is incentive based, so hundreds to thousands of nodes can complete a single compute task.
 
 2. **For tasks that require specific GPUs, is that supported on Koii?**
 
-    Absolutely. The network supports this in task setup, this is all contingent on the task creator setting requirements for their task and the nodes meeting those requirements. There's no restriction from Koii's side.
+    Absolutely. The network supports this in task setup, contingent on the task creator setting requirements for their task and the nodes meeting those requirements. There's no restriction on Koii's side.
 
 3. **Can we guarantee a task will be completed once its live?**
 
