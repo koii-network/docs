@@ -24,4 +24,4 @@ sidebar_label: FAQ
 
 5. **Will you guys ever have any maintenance periods? Or will Koii always be up?**
 
-    The goal is continuous uptime. However, downtimes can occur and typically scheduled and communicated in advance.
+    The goal is continuous uptime. However, downtimes can occur and are typically scheduled and communicated in advance.
