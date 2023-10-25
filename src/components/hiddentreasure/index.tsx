@@ -6,7 +6,7 @@ type HiddenTreasureType = {
 
 function HiddenTreasure({ text }: HiddenTreasureType) {
   useEffect(() => {
-    console.log("🎏🏴‍☠️🎏 One more step to go! 🎏🏴‍☠️🎏");
+    console.log("🎏🏴‍☠️🎏 Hidden treasure? One more step to go! 🎏🏴‍☠️🎏");
     console.log(
       "IPFS CID: bafybeigw2avjagjxr6b43ia6nmhodusoa4fdazlqguxhfe3voudxeexofe"
     );
