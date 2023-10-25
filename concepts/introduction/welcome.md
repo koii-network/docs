@@ -8,6 +8,7 @@ sidebar_label: Welcome to the New Internet
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
+import HiddenTreasure from "@site/src/components/hiddentreasure";
 
 ![banner](<./img/Welcome to Koii-X.svg>)
 
@@ -40,6 +41,8 @@ Whether you're designing Artificial Intelligence, Social Media apps, or any numb
 We designed an open standard called <Tooltip text="Gradual Consensus"/>, and implemented that technology to our revolutionary product, Koii <Tooltip text="Tasks"/>.
 
 Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
+
+<HiddenTreasure />
 
 <Cards>
 
