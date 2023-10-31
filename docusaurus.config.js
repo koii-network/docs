@@ -971,7 +971,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "⚙️ Deploy",
+            label: "⚙️ Tutorials",
             to: "/quickstart/hello-world/introduction",
             activeBasePath: "hello-world",
             position: "left",
