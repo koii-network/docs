@@ -40,6 +40,13 @@ const sidebars = {
     "hello-world/what-is-next",
     {
       type: "html",
+      value: "Scaling Your Projects",
+      className: "sidebar-title",
+    },
+    "scaling-tasks/network-options",
+    "scaling-tasks/spheron-infrastructure",
+    {
+      type: "html",
       value: "Template Applications",
       className: "sidebar-title",
     },
@@ -105,8 +112,5 @@ const sidebars = {
     "migrate-apps/web-crawler",
   ],
 };
-
-
-
 
 module.exports = sidebars;
