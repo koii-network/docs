@@ -85,8 +85,7 @@ function makeStorageClient() {
   const { SpheronClient, ProtocolEnum } = require("@spheron/storage");
 
   return new SpheronClient({
-    token: process.env.SECRET_SPHERON_STORAGE_KEY,
-    apiUrl: "https://temp-api-dev.spheron.network",
+    token: process.env.Spheron_Storage,
   });
 }
 
