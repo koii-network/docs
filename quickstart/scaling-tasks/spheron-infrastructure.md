@@ -28,9 +28,9 @@ description: "used to store the data";
 retrievalInfo: "https://faucet-api.koii.network/api/get-spheron-storage-key;GET;SYSTEM_WALLET_PUBLIC_KEY";
 ```
 
-For testing purposes, Koii Network will automaticially will provide a Spheron token for your task-runners. This way, you can use Spheron in your task without worrying about setting up the infrastructure.
+By utilizing this variable, your task-runners will be able to obtain Spheron tokens within the Koii App with ease, by clicking the "get a key" prompt before running your app.
 
-By utilizing this, your task-runners will be able to use the get key button before running your task. Clicking it will internally call the URL provided by the task creator. For production-tier tasks, you will need to provide your own server for this process.
+This way, you can use Spheron in your task without worrying about setting up the infrastructure by yourself.
 
 Available retrievalInfo options are:
 `URL;GET|POST;SYSTEM_WALLET_PUBLIC_KEY|STAKING_WALLET_PUBLIC_KEY`
@@ -57,47 +57,59 @@ In Node.js environments, the absence of the File module (which is a browser-spec
 
 Once written, the file's path is then provided to the client.upload() method in Spheron, along with the specified protocol and file name. This method returns the unique CID for the uploaded file.
 
-Here is a function that facilitates this process:
+Here is an example function that will create a file from a JSON object.
 
 ```javascript
-/**
- * Converts a given data object to a JSON file and saves it to the server.
- *
- * @param {Object} data - The data object to be converted into a JSON file.
- * @param {string} [filename='data.json'] - The name of the file to be created. Defaults to 'data.json'.
- * @returns {Promise<string>} A promise that resolves with the filename indicating where the data has been written.
- *
- * @example
- * const data = { key: 'value' };
- * convertToJsonFileAsync(data, 'output.json').then(filename => {
- *   console.log(`File saved as ${filename}`);
- * });
- */
+const {
+  namespaceWrapper,
+} = require("(Namespace Wrapper Path found within the Koii Template)");
+const { writeFileSync } = require("fs");
 
-async function convertToJsonFileAsync(data, filename = "data.json") {
-  const jsonString = JSON.stringify(data, null, 2);
-  await fs.writeFile(filename, jsonString, "utf8");
-  return filename;
-}
-module.exports = {
-  convertToJsonFileAsync,
-};
-async function storeFilesOnSpheron(files) {
-  const client = createSpheronClient();
-  const CIDs = [];
-  for (const file of files) {
-    const spheronData = await client.upload(file.path, {
-      protocol: ProtocolEnum.IPFS,
-      name: file.name,
-    });
-    CIDs.push(spheronData.cid);
+async function makeFileFromObjectWithName(obj) {
+  try {
+    const dataString = JSON.stringify(obj);
+    const path = await namespaceWrapper.getBasePath();
+    const filePath = path + "/data.json";
+    writeFileSync(filePath, dataString);
+    return filePath;
+  } catch (error) {
+    console.log("error", error);
   }
-  console.log("Stored files with CID:", cid);
-  return CIDs;
 }
-module.exports = {
-  storeFilesOnSpheron,
-};
+```
+
+And here is another snippet that will upload the file to Spheron.
+
+```javascript
+function makeStorageClient() {
+  const { SpheronClient, ProtocolEnum } = require("@spheron/storage");
+
+  return new SpheronClient({
+    token: process.env.SECRET_SPHERON_STORAGE_KEY,
+    apiUrl: "https://temp-api-dev.spheron.network",
+  });
+}
+
+async function storeFiles(filePath) {
+  const client = makeStorageClient();
+
+  let currentlyUploaded = 0;
+
+  const { cid } = await client.upload(filePath, {
+    protocol: ProtocolEnum.IPFS,
+    name: "test",
+    onUploadInitiated: (uploadId) => {
+      console.log(`Upload with id ${uploadId} started...`);
+    },
+    onChunkUploaded: (uploadedSize, totalSize) => {
+      currentlyUploaded += uploadedSize;
+      console.log(`Uploaded ${currentlyUploaded} of ${totalSize} Bytes.`);
+    },
+  });
+
+  console.log(`CID: ${cid}`);
+  return cid;
+}
 ```
 
 Now you have access to the CID of your file. Which is the key to obtain your JSON file from anywhere else. You can use this CID as a part of your submission, which will allow you to retrieve the data back.
@@ -109,6 +121,8 @@ In order to retrieve the data, we need to know the CID of the file. In our case,
 Here is an example code snippet that retrieves the data from a CID.
 
 ```javascript
+const axios = require('axios');
+
 const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) => {
   let url = `https://${cid}.ipfs.dweb.link/${fileName}`;
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -125,7 +139,7 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
         console.log(`Waiting for ${retryDelay / 1000} seconds before retrying...`);
         await sleep(retryDelay);
       } else {
-        return false; // Rethrow the last error
+        return false;
       }
     }
   }
