@@ -28,7 +28,12 @@ description: "used to store the data";
 retrievalInfo: "https://faucet-api.koii.network/api/get-spheron-storage-key;GET;SYSTEM_WALLET_PUBLIC_KEY";
 ```
 
-Koii Network automaticially will provide a Spheron token for your task-runners. This way, you can use Spheron in your task without worrying about setting up the infrastructure.
+For testing purposes, Koii Network will automaticially will provide a Spheron token for your task-runners. This way, you can use Spheron in your task without worrying about setting up the infrastructure.
+
+By utilizing this, your task-runners will be able to use the get key button before running your task. Clicking it will internally call the URL provided by the task creator. For production-tier tasks, you will need to provide your own server for this process.
+
+Available retrievalInfo options are:
+`URL;GET|POST;SYSTEM_WALLET_PUBLIC_KEY|STAKING_WALLET_PUBLIC_KEY`
 
 #### Required Package
 
