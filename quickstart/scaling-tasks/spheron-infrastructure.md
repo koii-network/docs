@@ -1,8 +1,8 @@
 ---
-title: Sphreon Infrastructure
-description: Sphreon Infrastructure
+title: Spheron Infrastructure
+description: Spheron Infrastructure
 image: img/thumbnail.png
-sidebar_label: Sphreon Infrastructure
+sidebar_label: Spheron Infrastructure
 ---
 
 ## Introduction
@@ -28,7 +28,7 @@ description: "used to store the data";
 retrievalInfo: "https://faucet-api.koii.network/api/get-spheron-storage-key;GET;SYSTEM_WALLET_PUBLIC_KEY";
 ```
 
-By utilizing this variable, your task-runners will be able to obtain Spheron tokens within the Koii App with ease, by clicking the "get a key" prompt before running your app.
+By utilizing this variable, your task-runners will be able to obtain Spheron tokens within the Koii App with ease, by clicking the "get a key" prompt before running your app. After completing the verification steps via Koii Faucet, they will be assigned a Spheron key.
 
 This way, you can use Spheron in your task without worrying about setting up the infrastructure by yourself.
 
@@ -146,4 +146,4 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
 
 ### Final Notes
 
-On order task templates, you might encounter web3storage as an IPFS storage option. Our tasks are compatible with that option, but as we encourage using Spheron as otherwise, you would need your users to provide a storage key.
+On older task templates, you might encounter web3storage as an IPFS storage option. Our tasks are compatible with that option, but as we encourage using Spheron as otherwise, you would need your users to provide a storage key.
