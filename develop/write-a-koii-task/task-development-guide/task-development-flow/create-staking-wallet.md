@@ -30,7 +30,7 @@ To create a staking wallet, select the "Create a task staking wallet" option and
 /Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a task staking wallet
 create-task-staking-wallet
-Connection to cluster established: https://k2-testnet.koii.live
+Connection to cluster established: https://testnet.koii.live
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 379.99414788 KOII to pay for fees
 ✔ Enter the amount to add to staking wallet … 20
 Success

@@ -252,13 +252,13 @@ The output of the command should be similar to the following.
 ✔ Select operation › Create a new task
 create-task
 CONFIG {
-  json_rpc_url: 'https://k2-testnet.koii.live',
+  json_rpc_url: 'https://testnet.koii.live/',
   websocket_url: '',
   keypair_path: '/Users/<YOUR_HOME>/.config/koii/id.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://k2-testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Select operation › using CLI
