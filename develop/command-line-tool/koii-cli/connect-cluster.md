@@ -17,8 +17,8 @@ The output of the command should be similar to the following:
 
 ```
 Config File: /Users/<YOUR_HOME>/.config/koii/cli/config.yml
-RPC URL: https://k2-testnet.koii.live
-WebSocket URL: wss://k2-testnet.koii.live/ (computed)
+RPC URL: https://testnet.koii.live/
+WebSocket URL: wss://testnet.koii.live/ (computed)
 Keypair Path: /Users/<YOUR_HOME>/.config/koii/id.json
 Commitment: confirmed
 ```
@@ -28,7 +28,7 @@ The RPC URL can be toggled between testnet and mainnet by pointing the RPC URL t
 The command below is an example of how to switch to testnet:
 
 ```
-koii config set --url https://k2-testnet.koii.live
+koii config set --url https://testnet.koii.live/
 ```
 
 The wallet default URL can also be updated, the default URL lives in `/Users/<YOUR_HOME>/.config/koii/id.json ` and it can be updated with this config command:
