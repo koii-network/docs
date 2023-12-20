@@ -179,7 +179,7 @@ Follow these instructions to input the required details:
 
 - [For IPFS] **Enter the web3.storage API key:** Input your web3.storage API key to store your task executable on IPFS (e.g., `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`).
   :::tip
-   Visit [Web3.storage](https://web3.storage/), create an account, generate an API token for your project, copy the token, and paste it on this prompt.
+  Visit [Web3.storage](https://web3.storage/), create an account, generate an API token for your project, copy the token, and paste it on this prompt.
   :::
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
@@ -195,7 +195,7 @@ Follow these instructions to input the required details:
 
 - **Enter the submission window in slots:** Specify the number of slots to be allocated to the submission window (e.g., `300`).
   :::caution
-   Ensure that the audit and submission window slot numbers are lower than the slots per round.
+  Ensure that the audit and submission window slot numbers are lower than the slots per round.
   :::
 
 - **Enter the minimum staking amount for the task (in KOII):** Set the minimum amount that node operators must stake on your task (e.g., `50`).
@@ -224,13 +224,13 @@ The output of the command should be similar to the following.
 ✔ Select operation › Create a new task
 create-task
 CONFIG {
-  json_rpc_url: 'https://k2-testnet.koii.live',
+  json_rpc_url: 'https://testnet.koii.live',
   websocket_url: '',
   keypair_path: '/Users/<YOUR_HOME>/.config/koii/id.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://k2-testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Select operation › using CLI
