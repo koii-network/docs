@@ -51,7 +51,7 @@ After=network.target
 User=koii
 Group=koii
 Environment="PATH=/home/koii/.local/share/koii/install/active_release/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-ExecStart=/home/koii/.local/share/koii/install/active_release/bin/koii-validator --identity /home/koii/validator-keypair.json --ledger /home/koii/validator-ledger --accounts /home/koii/validator-accounts --rpc-bind-address 0.0.0.0 --dynamic-port-range 10000-10500 --rpc-port 10899 --gossip-port 10001 --log - --limit-ledger-size --enable-rpc-transaction-history --enable-cpi-and-log-storage --no-os-network-limits-test --no-poh-speed-test --full-rpc-api --entrypoint testnet-validator-1.koii.network:10001 --known-validator CVYuw3N4wjfh5gwDTjcyz1UqQAT9tRLcqZJjEpuc4vf3
+ExecStart=/home/koii/.local/share/koii/install/active_release/bin/koii-validator --identity /home/koii/validator-keypair.json --ledger /home/koii/validator-ledger --accounts /home/koii/validator-accounts --rpc-bind-address 0.0.0.0 --dynamic-port-range 10000-10500 --rpc-port 10899 --gossip-port 10001 --log - --limit-ledger-size --enable-rpc-transaction-history --enable-cpi-and-log-storage --no-os-network-limits-test --no-poh-speed-test --full-rpc-api --entrypoint testnet-validator-1.koii.live:10001 --known-validator CVYuw3N4wjfh5gwDTjcyz1UqQAT9tRLcqZJjEpuc4vf3
 
 Restart=on-failure
 RestartSec=10
