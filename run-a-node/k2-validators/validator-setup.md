@@ -73,7 +73,7 @@ You will need your validator keypair to be funded with KOII tokens before contin
 
 Please make sure your `koii` CLI is configured for `testnet` and using your validator identity before continuing:
 
-`koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
+`koii config set --url https://testnet.koii.live --keypair ~/validator-keypair.json`
 
 :::
 
@@ -110,6 +110,7 @@ koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --s
 Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address. That address can be found using the `koii validator-info get` command.
 
 ## Step 5: Enable and Start the Koii Validator Service
+
 From the system user with root permissions, enable and start the validator service.
 
 Enable the service
@@ -130,9 +131,10 @@ Check the service status
 sudo systemctl status koii-validator.service
 ```
 
-
 ## Step 6: Check Your Stake
+
 Because your validator will not show up in the `koii validators` list for 12 to 24 hours, you can check your stake to make sure it as properly delegated by running `koii stake-account ~/stake-account-keypair.json` which should output something similar to the following:
+
 ```bash
 Balance: 500 KOII
 Rent Exempt Reserve: 0.00228288 KOII
@@ -142,4 +144,5 @@ Delegated Vote Account Address: <pubkey>
 Stake Authority: <pubkey>
 Withdraw Authority: <pubkey>
 ```
+
 If you see a value in `Activating Stake` then you should be successfully voting within two epochs (about 24 hours)
