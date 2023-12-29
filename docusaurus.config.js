@@ -998,6 +998,13 @@ const config = {
             position: "left",
             className: "header-text",
           },
+          {
+            label: "❓ FAQ",
+            to: "/koii/faq",
+            activeBasePath: "koii",
+            position: "left",
+            className: "header-text",
+          },
         ],
       },
       footer: {},
