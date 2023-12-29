@@ -16,11 +16,11 @@ Please visit [Koii Node](https://www.koii.network/node) and click "Download Now"
 
 After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide a account name and a password. System will provide you with a private key. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
 
-## Q：How to get some KOII tokens?
+## Q: How to get some KOII tokens?
 
 You can get KOII tokens by visiting our faucet page or running the tasks. After log in to Koii Node, please click "Add funds" button at the bottom left corner. You will be directed to our faucet page. Please follow the instructions to get some KOII tokens.
 
-## Q:How to run the task?
+## Q: How to run the task?
 
 After log in to Koii Node, you will see the avaliable task list. Stake some KOII tokens to the task you want to run. After staking, please click "Run" button to run the task. Some tasks need to set up the task enviorment to run, Please follow the instructions to complete the item set up. 
 
