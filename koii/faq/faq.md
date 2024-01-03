@@ -22,7 +22,7 @@ You can get KOII tokens by visiting our faucet page or running the tasks. After 
 
 ## Q: How to run the task?
 
-After log in to Koii Node, you will see the avaliable task list. Stake some KOII tokens to the task you want to run. After staking, please click "Run" button to run the task. Some tasks need to set up the task enviorment to run, Please follow the instructions to complete the item set up. 
+After log in to Koii Node, you will see the avaliable task list. Stake some KOII tokens to the task you want to run. After staking, please click "Run" button to run the task. Some tasks need to set up the task enviorment to run, Please follow the instructions to complete the item set up.
 
 Notice: You can run multiple tasks at the same time. Please make sure you have enough KOII tokens to stake.
 
@@ -33,3 +33,53 @@ The tasks status are listed in My Node page. If the task is shown as "Error" and
 ## Q: How to withdraw KOII tokens?
 
 After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens by clicking "Claim Rewards" button. The longer you run the task, the more KOII tokens you will earn. You can withdraw your KOII tokens at any time.
+
+## Tutorial: Step-by-Step Guide to Getting a Spheron Storage Key
+**Step 1: Logging in**
+
+1. Visit the Koii Node platform.If you don’t have it, you can download it at [HERE](https://www.koii.network/node).
+
+2. Enter your six-digit credentials to log in. If you don’t have an account, you’ll need to create one.
+
+**Step 2: Navigating to Storage Key Section**
+
+1. Once logged in, navigate to the **Add Task** dashboard.
+
+![step1](./imageFaq/Step1.png)
+
+**Step 3: Generating a Storage Key**
+
+1. Select the option to create a new storage key (click the **gear wheel**).
+
+![step2](./imageFaq/Step2.png)
+
+2. Click **Get Key** to automatically get the Spheron_Storage key.
+
+![step3](./imageFaq/Step3.png)yarn
+
+3. Follow the on-screen instructions. Select **Spheron_Storage**.
+
+![step4](./imageFaq/Step4.png)
+
+## Tutorial: Using the Storage Key in the Task Node
+**Step 1: Accessing the Task Node**
+
+Click the **gear wheel** beside the task that you want to run.
+
+**Step 2: Entering the Storage Key**
+
+Select the Spheron_Storage you created.
+
+![step5](./imageFaq/Step5.png)
+
+**Step 3: Stake the tokens**
+
+Stake the tokens (we call them KOII) to the program you want to run.
+
+![step6](./imageFaq/Step6.png)
+
+**Step 4: Run the task**
+
+1. Click the triangular symbol to run the task!
+
+![step7](./imageFaq/Step7.png)
