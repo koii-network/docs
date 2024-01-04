@@ -1,13 +1,17 @@
 ---
-title: Sphreon Infrastructure
-description: Sphreon Infrastructure
+title: Spheron Infrastructure
+description: Spheron Infrastructure
 image: img/thumbnail.png
-sidebar_label: Sphreon Infrastructure
+sidebar_label: Spheron Infrastructure
 ---
 
 ## Introduction
 
-In this tutorial, we will learn how to use IPFS via Spheron Network in our task. While Spheron does support various other protocols, the **IPFS** protocol is mandatory for retrieving Content Identifiers (CIDs).
+In this tutorial, we will learn how to use IPFS via <a href="https://spheron.network/" target="_blank">Spheron Network</a> in our task. While Spheron does support various other protocols, the **IPFS** protocol is mandatory for retrieving Content Identifiers (CIDs).
+
+:::tip What is Spheron?
+Spheron Network is a decentralized platform for automating and enhancing Dapps, focusing on rapid deployment, scalability, and personalized content delivery in a decentralized network, thereby overcoming the constraints of traditional centralized cloud services​. Check out their [website](https://spheron.network/) for more information.
+:::
 
 :::tip Example Task
 If you prefer learning by example, check out our [X-Scraper Repo](https://github.com/koii-network/X-scraper). It utilizes Spheron to store data in IPFS.
