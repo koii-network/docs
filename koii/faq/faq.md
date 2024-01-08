@@ -44,10 +44,12 @@ Register Finnie Wallet:
 3. Set up your password by selecting “**Start from scratch**,” then “**Koii**.”
 4. Carefully note down the **12-word secret phrase** provided, as it is critical for your account recovery and security.
 
+**Here is the tutorial video**: [Register Finnie Wallet](https://www.loom.com/share/8e0900d0f3414aabbcc2eb392b773e40?sid=44b74f75-9373-4a42-b374-f335513771fa).
+
 **Importing Wallet to Koii Node**
 
 Install Koii Node:  
-- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node).
+- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node){:target="_blank"}.
 - Launch Koii Node, and if it's your first time, follow the initial setup prompts.
 Prepare Wallet Details:  
 - Have your 12-word secret phrase from Finnie wallet ready for the import process.
@@ -65,6 +67,8 @@ To **sell** or **transfer** tokens:
 - Next to your token balance, click the button to open the transfer interface.
 - Input your destination wallet address, which you can find by clicking “**Receive**” in your Finnie wallet and copying the address.
 - Specify the amount of tokens you wish to transfer.
+
+**Here is the tutorial video**: [Transfer Token](https://www.loom.com/share/d2b6a875fc444f61b2167834595724a0?sid=058bc2db-a269-47c6-82c0-5c328064194b)
 
 Always ensure the security of your secret phrase and double-check all details before confirming transactions.
 
