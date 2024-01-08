@@ -1,6 +1,6 @@
 ---
 title: Running on VPS
-description: "Learn how tu run on VPS"
+description: "Learn how to run on VPS"
 image: img/thumbnail.png
 sidebar_label: Running on VPS
 ---
