@@ -34,6 +34,41 @@ The tasks status are listed in My Node page. If the task is shown as "Error" and
 
 After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens by clicking "Claim Rewards" button. The longer you run the task, the more KOII tokens you will earn. You can withdraw your KOII tokens at any time.
 
+## Tutorial for Finnie Wallet
+
+**Setting Up Finnie Wallet**
+
+Register Finnie Wallet:  
+1. Add Finnie as a browser extension from [HERE](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
+2. Click “**Get a new key**” and follow the instructions to create a new wallet.
+3. Set up your password by selecting “**Start from scratch**,” then “**Koii**.”
+4. Carefully note down the **12-word secret phrase** provided, as it is critical for your account recovery and security.
+
+**Importing Wallet to Koii Node**
+
+Install Koii Node:  
+- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node).
+- Launch Koii Node, and if it's your first time, follow the initial setup prompts.
+Prepare Wallet Details:  
+- Have your 12-word secret phrase from Finnie wallet ready for the import process.
+Import Wallet:  
+- In the Koii Node software, find and select “**Import with seed phrase**.”
+- Enter your Finnie wallet 12-word secret phrase when prompted.
+
+**Managing and Transferring Tokens**
+
+Transfer Tokens:  
+- With your wallet imported, you can manage and transfer tokens using Koii Node.
+
+To **sell** or **transfer** tokens:  
+- Go to **settings** in the top right corner, select “**Security**” on the left.
+- Next to your token balance, click the button to open the transfer interface.
+- Input your destination wallet address, which you can find by clicking “**Receive**” in your Finnie wallet and copying the address.
+- Specify the amount of tokens you wish to transfer.
+
+Always ensure the security of your secret phrase and double-check all details before confirming transactions.
+
+
 ## Tutorial: Step-by-Step Guide to Getting a Spheron Storage Key
 **Step 1: Logging in**
 
