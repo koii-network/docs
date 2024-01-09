@@ -11,7 +11,6 @@ Questions? We have answers. If you can't find what you're looking for, please co
 
 Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koii).
 
-
 ## Q: How to create a Koii account?
 
 After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide a account name and a password. System will provide you with a private key. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
@@ -33,6 +32,45 @@ The tasks status are listed in My Node page. If the task is shown as "Error" and
 ## Q: How to withdraw KOII tokens?
 
 After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens by clicking "Claim Rewards" button. The longer you run the task, the more KOII tokens you will earn. You can withdraw your KOII tokens at any time.
+
+## Tutorial for Finnie Wallet
+
+**Setting Up Finnie Wallet**
+
+Register Finnie Wallet:  
+1. Add Finnie as a browser extension from [HERE](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
+2. Click “**Get a new key**” and follow the instructions to create a new wallet.
+3. Set up your password by selecting “**Start from scratch**,” then “**Koii**.”
+4. Carefully note down the **12-word secret phrase** provided, as it is critical for your account recovery and security.
+
+**Here is the tutorial video**: [Register Finnie Wallet](https://www.loom.com/share/8e0900d0f3414aabbcc2eb392b773e40?sid=44b74f75-9373-4a42-b374-f335513771fa).
+
+**Importing Wallet to Koii Node**
+
+Install Koii Node:  
+- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node).
+- Launch Koii Node, and if it's your first time, follow the initial setup prompts.
+Prepare Wallet Details:  
+- Have your 12-word secret phrase from Finnie wallet ready for the import process.
+Import Wallet:  
+- In the Koii Node software, find and select “**Import with seed phrase**.”
+- Enter your Finnie wallet 12-word secret phrase when prompted.
+
+**Managing and Transferring Tokens**
+
+Transfer Tokens:  
+- With your wallet imported, you can manage and transfer tokens using Koii Node.
+
+To **sell** or **transfer** tokens:  
+- Go to **settings** in the top right corner, select “**Security**” on the left.
+- Next to your token balance, click the button to open the transfer interface.
+- Input your destination wallet address, which you can find by clicking “**Receive**” in your Finnie wallet and copying the address.
+- Specify the amount of tokens you wish to transfer.
+
+**Here is the tutorial video**: [Transfer Token](https://www.loom.com/share/d2b6a875fc444f61b2167834595724a0?sid=058bc2db-a269-47c6-82c0-5c328064194b)
+
+Always ensure the security of your secret phrase and double-check all details before confirming transactions.
+
 
 ## Tutorial: Step-by-Step Guide to Getting a Spheron Storage Key
 **Step 1: Logging in**
