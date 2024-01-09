@@ -11,7 +11,6 @@ Questions? We have answers. If you can't find what you're looking for, please co
 
 Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koii).
 
-
 ## Q: How to create a Koii account?
 
 After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide a account name and a password. System will provide you with a private key. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
@@ -49,7 +48,7 @@ Register Finnie Wallet:
 **Importing Wallet to Koii Node**
 
 Install Koii Node:  
-- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node){:target="_blank"}.
+- Download the latest version of the Koii Node software from [HERE](https://www.koii.network/node).
 - Launch Koii Node, and if it's your first time, follow the initial setup prompts.
 Prepare Wallet Details:  
 - Have your 12-word secret phrase from Finnie wallet ready for the import process.
