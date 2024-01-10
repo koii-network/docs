@@ -87,4 +87,14 @@ you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
    ```bash
     exec task node npx @ koii/create-task-cli@latest
    ```
+**The option will looks like:**
 
+ Wallet path:`/Users/ycw/.config/koii/id.json?`  
+  Select operation    
+   - Create a new task  
+   - update existing task  
+   - Activate/Deactivate task  
+   - Claim reward  
+   - Fund task with more KOII  
+   - Withdraw staked funds from task  
+   - upload assets to IPFS(metadata/local vars)
