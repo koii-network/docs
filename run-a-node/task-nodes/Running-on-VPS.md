@@ -28,13 +28,13 @@
 3. **Ensure Koii CLI is Installed**:
    The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-4. **Run koii**
+4. **Run koii and set up new pubkey**
 
    ```bash
    koii balance
    ```
-It will shows you don't have an account, Please run  "koii-keygen new -o /your/path/of/id.json":
-this path will automaticly generated
+It will shows "Error: Dynamic program error: No default signer found, run "koii-keygen new -o /your/path/of/id.json" to create a new one"
+**this path will automaticly generated**
 
    ```bash
    koii-keygen new -o /your/path/of/id.json
@@ -42,11 +42,15 @@ this path will automaticly generated
 
 After that the system will generated a new account for you, associate with your account address
 
+To improve security, system want you set up BIP39 Passphrase, you can leave it for empty.
+
+Then you will have your new pubkey
+
 Then transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
 
 5. **Run Docker Compose**:
 
-[Install](https://docs.docker.com/get-docker/) the **Docker** to your computer.
+First, [Install](https://docs.docker.com/get-docker/) the **Docker** to your computer.
 
    ```bash
    docker-compose up
