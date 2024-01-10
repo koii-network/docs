@@ -52,80 +52,27 @@ Then transfer some tokens to this account using [Finnie Wallet](https://chromewe
 
 First, [Install](https://docs.docker.com/get-docker/) the **Docker** to your computer.
 
+Then, use this code to run the task node in Docker
+
    ```bash
    docker-compose up
    ```
    This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 
-### Running the Node
+Now your Node is running in Docker
 
-1. Navigate to the K2 Node Directory:
+### Executing Tasks & Managing Stakes
+
+- Use this code to load your pubkey to docker
+
    ```bash
-   cd path/to/k2-node
+   docker run -v /your/path/of/id.json:/wallet your-image-name
    ```
+   
+- Use this code to Managing Stakes in your node task
 
-2. Install Dependencies:
    ```bash
-   npm install
+    exec task node npx @ koii/create-task-cli@latest
    ```
-
-3. Start the Node:
-   ```bash
-   node app.js
-   ```
-
-### Verifying Node Status
-
-1. **Check Logs**: Look for startup logs in the command line. They should indicate that the node has started successfully and is running.
-
-2. **Status Check Command**:
-   Use a command like the following to check the node's status:
-   ```bash
-   curl http://localhost:3000/status
-   ```
-
-### Executing Tasks
-
-1. **Identify the Task Requirements**: Understand what the task requires in terms of resources and dependencies.
-
-2. **Configure Task Environment**: Install necessary packages and configure settings as needed.
-
-3. **Start the Task**:
-   ```bash
-   node run-task.js
-   ```
-
-   Replace `run-task.js` with the specific script for your task.
-
-### Managing Stakes
-
-1. **Log in to Node or Wallet**: Access your node or wallet where the tasks are managed.
-
-2. **Choose the Task for Staking**.
-
-3. **Stake or Unstake Tokens**:
-   - To stake:
-     ```bash
-     npx create-task-cli stake --task <task_id> --amount <amount>
-     ```
-   - To unstake:
-     ```bash
-     npx create-task-cli unstake --task <task_id> --amount <amount>
-     ```
-
-   Replace `<task_id>` with the task identifier and `<amount>` with the number of tokens.
-
-### Claiming Rewards
-
-1. **Verify Task Completion and Reward Generation**.
-
-2. **Log in to Node or Wallet**.
-
-3. **Claim Rewards**:
-   ```bash
-   npx create-task-cli claim-reward --task <task_id>
-   ```
-
-   Replace `<task_id>` with the identifier of the task you completed.
 
 These steps provide a detailed guide to setting up a VPS for running automated tasks, managing stakes, and claiming rewards in a K2 node and Koii network environment. Always refer to the specific documentation for the tools and platforms you are using for the most accurate and up-to-date information.
