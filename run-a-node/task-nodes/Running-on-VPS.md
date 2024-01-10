@@ -75,4 +75,3 @@ Now your Node is running in Docker
     exec task node npx @ koii/create-task-cli@latest
    ```
 
-These steps provide a detailed guide to setting up a VPS for running automated tasks, managing stakes, and claiming rewards in a K2 node and Koii network environment. Always refer to the specific documentation for the tools and platforms you are using for the most accurate and up-to-date information.
