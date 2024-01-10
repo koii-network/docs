@@ -22,13 +22,12 @@
    TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
    TASK_STAKES= 5, 2
    ```
-
    :::
 
 3. **Ensure Koii CLI is Installed**:
    The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-4. **Run koii and set up new pubkey**
+4. **Set up new koii pubkey**
 
    ```bash
    koii balance
@@ -44,9 +43,7 @@ After that the system will generated a new account for you, associate with your 
 
 To improve security, system want you set up BIP39 Passphrase, you can leave it for empty.
 
-Then you will have your new pubkey
-
-Then transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
+Then you will have your new pubkey, transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
 
 5. **Run Docker Compose**:
 
@@ -61,15 +58,27 @@ Then, use this code to run the task node in Docker
 
 Now your Node is running in Docker
 
-### Executing Tasks & Managing Stakes
+### Managing Stakes
 
-- Use this code to load your pubkey to docker
+- Use this code to load your wallet to docker
+
+
 
    ```bash
-   docker run -v /your/path/of/id.json:/wallet your-image-name
+   docker run -v /your/path/of/wallet:/wallet your-image-name
    ```
-   
-- Use this code to Managing Stakes in your node task
+
+:::tip
+you can find you wallet path in `.env.local`
+:::
+
+- In this case, the image name is `public.ecr.aws/koii-network/task_node`, you can always find your image name by:
+
+ ```bash
+   docker images ls
+   ```
+
+- Use this code to Unstake, Claim rewards in your node task
 
    ```bash
     exec task node npx @ koii/create-task-cli@latest
