@@ -4,7 +4,7 @@
 1. **Clone the Task-Template Repository**:
    ```bash
    git clone https://github.com/koii-network/VPS-task
-   cd task-template
+   cd VPS-task
    ```
 
 2. **Configure Environment Variables**:
@@ -28,7 +28,26 @@
 3. **Ensure Koii CLI is Installed**:
    The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
-4. **Run Docker Compose**:
+4. **Run koii**
+
+   ```bash
+   koii balance
+   ```
+It will shows you don't have an account, Please run  "koii-keygen new -o /your/path/of/id.json":
+this path will automaticly generated
+
+   ```bash
+   koii-keygen new -o /your/path/of/id.json
+   ```
+
+After that the system will generated a new account for you, associate with your account address
+
+Then transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
+
+5. **Run Docker Compose**:
+
+[Install](https://docs.docker.com/get-docker/) the **Docker** to your computer.
+
    ```bash
    docker-compose up
    ```
