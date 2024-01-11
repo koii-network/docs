@@ -89,7 +89,7 @@ you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
    ```
 **The option will looks like:**
 
- Wallet path:`/Users/ycw/.config/koii/id.json?`  
+ Wallet path:`/your/path/of/wallet/id.json?`  
   Select operation    
    - Create a new task  
    - update existing task  
