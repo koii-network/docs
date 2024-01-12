@@ -31,7 +31,7 @@ The tasks status are listed in My Node page. If the task is shown as "Error" and
 
 ## Q: How to withdraw KOII tokens?
 
-After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens by clicking "Claim Rewards" button. The longer you run the task, the more KOII tokens you will earn. You can withdraw your KOII tokens at any time.
+After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens **by clicking "Claim Rewards" button**. The longer you run the task, the more KOII tokens you will earn. **You can withdraw your KOII tokens at any time**.
 
 ## Q: I accidentally clicked on the devnet. how can I open again my koii app/node?
 
