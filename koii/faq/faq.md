@@ -41,7 +41,7 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 ## Q: My task failed at: Start task/Upgrade task/accidentally close the Koii Node and lead to stake token gone, Where should I find them? 
 
-Mostly can find out in your staking wallet. and then you can find back their lost tokens.
+Mostly can find out in your staking wallet. And then you can find back their lost tokens.
 ![stakewallet](./imageFaq/stakeWallet.png)
 
 ## Q: what's the suggest balance I should at lease have in staking wallket?
@@ -52,7 +52,7 @@ It varies on the amount of data you will hold, so if you are running more task y
 
 ## Q: Why I doesn't have permission to check the main.log when a error occurred in my task? How to fix it?
 
-It should be the permission issue, try run it as Administrator and try again
+It should be the permission issue, try run it as **Administrator** and try again
 
 ## Tutorial for Finnie Wallet
 
