@@ -52,6 +52,7 @@ It varies on the amount of data you will hold, so if you are running more task y
 
 ## Q: Why I doesn't have permission to check the main.log when a error occurred in my task? How to fix it?
 
+That's the permission issue, try run it as Administrator and try again
 
 ## Tutorial for Finnie Wallet
 
