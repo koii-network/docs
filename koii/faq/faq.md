@@ -48,7 +48,7 @@ Mostly can find out in your staking wallet. and then you can find back their los
 
 It varies on the amount of data you will hold, so if you are running more task you will be storing more data in staking wallet. 
 
-~7 KOII is sufficient for 1mb of rent exemption, though if you have more data and less koii than rent exemption you will need to pay rent ~0.0047 KOII per epoch per mb
+Around 7 KOII is sufficient for 1mb of rent exemption, though if you have more data and less koii than rent exemption you will need to pay rent ~0.0047 KOII per epoch per mb.
 
 ## Tutorial for Finnie Wallet
 
