@@ -44,6 +44,9 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 Mostly can find out in your staking wallet. and then you can find back their lost tokens.
 ![stakewallet](./imageFaq/stakeWallet.png)
 
+Q: what's the suggest balance I should at lease have in staking wallket?
+
+
 
 ## Tutorial for Finnie Wallet
 
