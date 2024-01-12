@@ -33,6 +33,14 @@ The tasks status are listed in My Node page. If the task is shown as "Error" and
 
 After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens by clicking "Claim Rewards" button. The longer you run the task, the more KOII tokens you will earn. You can withdraw your KOII tokens at any time.
 
+## Q: I accidentally remove the spheron key or cannot get one, what should I do?
+
+1. **setting up a new account** and generating a new key will be the easiest way, then you can switch back to using your newly generated key for your previous account.
+
+2. you can easily **transfer your tokens** from your koii node application to your **Finnie wallet**. And then transfer them to your new account and keep mining.
+
+3. Go to **spheron website** and log in with your email, then follow the [tutorial](https://docs.spheron.network/rest-api/#creating-an-access-token).
+
 ## Q: What is the current version of the validators for the K2 node?
 
 The latest version of the validators for the K2 node can always be found at our official GitHub repository. To ensure you are using the most current and stable release, please visit [K2 Release on GitHub](https://github.com/koii-network/k2-release). It is important to keep your node updated to the latest version for optimal performance and security. For future reference, this information will be maintained in the FAQ section to assist with responding to support tickets.
