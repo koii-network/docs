@@ -41,6 +41,10 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 3. Go to **spheron website** and log in with your email, then follow the [tutorial](https://docs.spheron.network/rest-api/#creating-an-access-token).
 
+## Q: What is the current version of the validators for the K2 node?
+
+The latest version of the validators for the K2 node can always be found at our official GitHub repository. To ensure you are using the most current and stable release, please visit [K2 Release on GitHub](https://github.com/koii-network/k2-release). It is important to keep your node updated to the latest version for optimal performance and security. For future reference, this information will be maintained in the FAQ section to assist with responding to support tickets.
+
 ## Tutorial for Finnie Wallet
 
 **Setting Up Finnie Wallet**
@@ -101,7 +105,7 @@ Always ensure the security of your secret phrase and double-check all details be
 
 2. Click **Get Key** to automatically get the Spheron_Storage key.
 
-![step3](./imageFaq/Step3.png)yarn
+![step3](./imageFaq/Step3.png)
 
 3. Follow the on-screen instructions. Select **Spheron_Storage**.
 

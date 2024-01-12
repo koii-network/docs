@@ -1,23 +1,100 @@
+
+### Setting Up the Environment on VPS
+
+1. **Clone the Task-Template Repository**:
+   ```bash
+   git clone https://github.com/koii-network/VPS-task
+   cd VPS-task
+   ```
+
+2. **Configure Environment Variables**:
+   - Update the `.env.local` file.
+     - Set the `ENVIRONMENT` field to `"production"`.
+   - Update the `TASKS` field with the task IDs you want to run, separated by commas.
+   - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
+   - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
+   - Add any specific task variables required for the tasks at the end of the file.
+
+   ---
+
+   :::tip Multi-task example
+      ```bash
+   TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
+   TASK_STAKES= 5, 2
+   ```
+   :::
+
+3. **Ensure Koii CLI is Installed**:
+   The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli).
+
 ---
-title: Running on VPS
-description: "Learn how to run on VPS"
-image: img/thumbnail.png
-sidebar_label: Running on VPS
+
+### Set up New Koii Pubkey
+
+   ```bash
+   koii balance
+   ```
+It will shows "Error: Dynamic program error: No default signer found, run "koii-keygen new -o /your/path/of/id.json" to create a new one"
+**this path will automaticly generated**.
+
+   ```bash
+   koii-keygen new -o /your/path/of/id.json
+   ```
+
+- After that the system will generated a new account for you, associate with your account address.
+
+- To improve security, system want you set up BIP39 Passphrase, you can leave it for empty.
+
+- Then you will have your new pubkey, **transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)**.
+
 ---
 
+### Run Docker Compose:
 
-A **Virtual Private Server (VPS)** is a virtual machine offered as a service by internet hosting providers, featuring its own operating system (OS) where customers have superuser-level access. This enables the installation of almost any software compatible with the OS. VPS is commonly used for web hosting and running applications or services that need a dedicated environment without the expense of a complete physical server. Particularly useful in a **Command Line Interface (CLI)** context, setting up a VPS involves configuring a task-template repository for automating tasks in a production setting. The process includes cloning a repository, setting environment variables, updating task and stake information, and deploying the setup using Docker. This approach is beneficial for those seeking to run automated tasks in a stable and isolated VPS environment, optimizing the advantages of this technology for efficient and controlled operational management.
+- First, [Install](https://docs.docker.com/get-docker/) the **Docker** to your computer.
 
-**The steps are as follows:**
+- Then, use this code to run the task node in Docker
 
-1. Clone the task-template repository: https://github.com/koii-network/task-template
+   ```bash
+   docker-compose up
+   ```
+   This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 
-2. Update the `.env.local` file for the following:
-   - Update the `Environment` field in the file to `"production"`
-   - Update the `TASKS` field to the task ids of all tasks that you want to run (The task ids needs to be comma seperated)
-   - Update the `TASK_STAKES` field to the stake amount of all tasks that you want to run, each value in `TASK_STAKES` will correspond to the task in the `TASKS` So the length of both will be equal (The task stakes needs to be comma seperated)
-   - Update `INITIAL_STAKING_WALLET_BALANCE` to the amount of koii you want in staking wallet. This amount must be at least greater than the sum of all `TASK_STAKES` plus 1 koii buffer atleast for rent.
-   - At the end of the file add any Task variables that the task will require in order to run
-3. Make sure you have the [koii cli](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli) installed as the task node will use the wallet that is pointing in the `koii config get`
+- Now your Node is running in Docker
 
-4. Run `docker-compose up`  which will first make a staking wallet, stake on the tasks and then run the tasks.
+---
+
+### Managing Stakes
+
+- Use this code to load your wallet to docker
+
+   ```bash
+   docker run -v /your/path/of/wallet:/wallet your-image-name
+   ```
+
+:::tip
+you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
+:::
+
+- In this case, the image name is `public.ecr.aws/koii-network/task_node`, you can always find your image name by using:
+
+ ```bash
+   docker images ls
+   ```
+
+- Use this code to Unstake, Claim rewards in your node task:
+
+   ```bash
+    exec task node npx @ koii/create-task-cli@latest
+   ```
+**The option will looks like:**
+
+ Wallet path:`/your/path/of/wallet/id.json?`  
+  Select operation    
+   - Create a new task  
+   - update existing task  
+   - Activate/Deactivate task  
+   - Claim reward  
+   - Fund task with more KOII  
+   - Withdraw staked funds from task  
+   - upload assets to IPFS(metadata/local vars)
