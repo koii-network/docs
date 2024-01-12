@@ -73,6 +73,6 @@ By implementing and modifying these methods, we will create a comprehensive and 
 
 :::tip Final Notes
 
-If you encounter any difficulties, feel free to contact us on [Discord](https://discord.com/invite/koii).
+If you encounter any difficulties, feel free to contact us on [Discord](https://discord.gg/koiin).
 
 :::
