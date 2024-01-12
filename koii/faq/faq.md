@@ -35,8 +35,9 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 ## Q: I accidentally clicked on the devnet. how can I open again my koii app/node?
 
-For Mac: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
-For Linux: Delete this file and start the node ~/.config/desktop-node/config.json
+**For Mac**: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
+
+**For Linux**: Delete this file and start the node ~/.config/desktop-node/config.json
 
 ## Q: My task failed at: Start task/Upgrade task/accidentally close the Koii Node and lead to stake token gone, Where should I find them? 
 
