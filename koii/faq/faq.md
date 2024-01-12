@@ -97,7 +97,7 @@ Always ensure the security of your secret phrase and double-check all details be
 
 2. Click **Get Key** to automatically get the Spheron_Storage key.
 
-![step3](./imageFaq/Step3.png)yarn
+![step3](./imageFaq/Step3.png)
 
 3. Follow the on-screen instructions. Select **Spheron_Storage**.
 
