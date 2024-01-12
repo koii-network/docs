@@ -50,6 +50,9 @@ It varies on the amount of data you will hold, so if you are running more task y
 
 **Around 7 KOII** is sufficient for 1mb of rent exemption, though if you have more data and less koii than rent exemption you will need to pay rent ~0.0047 KOII per epoch per mb.
 
+## Q: Why I doesn't have permission to check the main.log when a error occurred in my task? How to fix it?
+
+
 ## Tutorial for Finnie Wallet
 
 **Setting Up Finnie Wallet**
