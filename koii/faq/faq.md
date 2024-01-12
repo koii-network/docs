@@ -38,6 +38,11 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 For Mac: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
 For Linux: Delete this file and start the node ~/.config/desktop-node/config.json
 
+## Q: My task failed at: Start task/Upgrade task/accidentally close the Koii Node and lead to stake token gone, Where should I find them? 
+
+Mostly can find out in your staking wallet. and then you can find back their lost tokens.
+![stakewallet](./imageFaq/stakeWallet.png)
+
 
 ## Tutorial for Finnie Wallet
 
