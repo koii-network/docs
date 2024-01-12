@@ -35,6 +35,8 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 ## Q: I accidentally clicked on the devnet. how can I open again my koii app/node?
 
+For Mac: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
+For Linux: Delete this file and start the node ~/.config/desktop-node/config.json
 
 
 ## Tutorial for Finnie Wallet
