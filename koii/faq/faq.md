@@ -60,6 +60,12 @@ we noted this issue(token stucked in the box), Will patch this in the next versi
 
 Somehow your task ended in the Available tasks but you still has 100 koii staked. Your koii are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake  KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
 
+## Q: I created wallet when koii were on K1 (Arweave based koii) but as koii have migrated to k2 (Solana forked KOII), what should i do to get my tokens back.
+
+You cannot keep use your old key phrase to retrieve the wallet, Older keys run on Arweave. If your key was created before K2, select Arweave for import.
+
+![k1](./imageFaq/oldK1phrase.png)
+
 
 ## Q:  Lost a lot of tokens overnight (not in my staking key).
 
