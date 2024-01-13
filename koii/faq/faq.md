@@ -58,7 +58,7 @@ It should be the permission issue, try run it as **Administrator** and try again
 
 we noted this issue(token stucked in the box), Will patch this in the next version. 
 
-Somehow your task ended in the Available tasks but you still has 100 koii staked. Your koii are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake  KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
+Somehow your task ended in the Available tasks but you still has some koii staked. Your koii are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake  KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
 
 ## Q: I created wallet when koii were on K1 (Arweave based koii) but as koii have migrated to k2 (Solana forked KOII), what should i do to get my tokens back.
 
