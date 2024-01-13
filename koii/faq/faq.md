@@ -54,6 +54,10 @@ It varies on the amount of data you will hold, so if you are running more task y
 
 It should be the permission issue, try run it as **Administrator** and try again
 
+## Q: I have an issue of stuck my koiis in the stake box, they can neither take it back nor use them to run the task, What should I do?
+
+
+
 ## Tutorial for Finnie Wallet
 
 **Setting Up Finnie Wallet**
