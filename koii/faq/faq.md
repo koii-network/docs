@@ -62,7 +62,7 @@ Somehow your task ended in the Available tasks but you still has some koii stake
 
 ## Q: I created wallet when koii were on K1 (Arweave based koii) but as koii have migrated to k2 (Solana forked KOII), what should i do to get my tokens back.
 
-You cannot keep use your old key phrase to retrieve the wallet, Older keys run on Arweave. If your key was created before K2, select Arweave for import.
+You **cannot keep use your old key phrase to retrieve the wallet**, Older keys run on Arweave. If your key was created before K2, select Arweave for import.
 
 ![k1](./imageFaq/oldK1phrase.png)
 
