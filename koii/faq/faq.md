@@ -69,9 +69,9 @@ You **cannot keep use your old key phrase to retrieve the wallet**, Older keys r
 
 ## Q:  Lost a lot of tokens overnight (not in my staking key).
 
-The problem is you may stake too many koii on a single task, and might have get slashed, most tasks currently are not really dependent on the stake amount currently, so staking more won't get you more KOII for these tasks (In future there will be such tasks). 
+The problem is you may **stake too many koii** on a single task, and might have get slashed, most tasks currently are not really dependent on the stake amount currently, so staking more won't get you more KOII for these tasks (In future there will be such tasks). 
 
-For safety you can also have another cold wallet that you don't use with the koii node, and then you can transfer all the amount that is not in use to that cold wallet and only use the node wallet as hot wallet for all the tasks running and staking
+For safety you can also have another cold wallet that you don't use with the koii node, and then you can **transfer all the amount that is not in use to that cold wallet and only use the node wallet as hot wallet for all the tasks running and staking**
 
 ## Tutorial for Finnie Wallet
 
