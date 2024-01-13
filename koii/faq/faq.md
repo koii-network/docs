@@ -56,7 +56,9 @@ It should be the permission issue, try run it as **Administrator** and try again
 
 ## Q: I have an issue of stuck my koiis in the stake box, they can neither take it back nor use them to run the task, What should I do?
 
-Noted this issue, Will patch this in the next version. Somehow your task ended in the Available tasks but you still has 100 koii staked. **Your koii are safe and staked in the task**. Its just a UI issue that when he is trying to click play button it is trying to stake 100 KOII again and since he doesn't had that much KOII so he is not able to stake it again.
+we noted this issue(token stucked in the box), Will patch this in the next version. 
+
+Somehow your task ended in the Available tasks but you still has 100 koii staked. Your koii are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake  KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
 
 
 ## Q:  Lost a lot of tokens overnight (not in my staking key).
