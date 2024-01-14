@@ -13,11 +13,11 @@ Please visit [Koii Node](https://www.koii.network/node) and click "Download Now"
 
 ## Q: How to create a Koii account?
 
-After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide a account name and a password. System will provide you with a private key. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
+After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide a account name and a password. System will provide you with a **private key**. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
 
 ## Q: How to get some KOII tokens?
 
-You can get KOII tokens by visiting our faucet page or running the tasks. After log in to Koii Node, please click "Add funds" button at the bottom left corner. You will be directed to our faucet page. Please follow the instructions to get some KOII tokens.
+You can get KOII tokens by visiting our **faucet page** or **running the tasks**. After log in to Koii Node, please click "Add funds" button at the bottom left corner. You will be directed to our faucet page. Please follow the instructions to get some KOII tokens.
 
 ## Q: How to run the task?
 
