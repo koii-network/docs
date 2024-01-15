@@ -80,7 +80,7 @@ Please **not to empty your main wallet completely**, just put some koii so that 
 
 ## Q: I am trying to run twitter tasks for a while now but keeps facing this issue "Password is incorrect or email verfication needed".
 
-please ask  open an inclination window, go to twitter login page and use your username(not email or phone number), and password to log in to twitter. You might faced a reCAPTCHA from twitter. After any verification such as email or phone number and you can log in without the verfication, use Koii Node and try to run the task again.
+please open an **incognito** window, go to twitter login page and use your username(not email or phone number), and password to log in to twitter. You might faced a reCAPTCHA from twitter. After any verification such as email or phone number and you can log in without the verfication, use Koii Node and try to run the task again.
 
 ## Tutorial for Finnie Wallet
 
