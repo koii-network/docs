@@ -39,10 +39,7 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 2. Also, you can easily transfer your koii tokens from your koii node application to your Finnie wallet. And then transfer them to your new account and keep mining.
 
-3. Additionally, they can follow this tutorial: https://docs.spheron.network/rest-api/#creating-an-access-token to get a new one and manually insert it.
-
-
-
+3. Additionally, they can follow this tutorial: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
 
 ## Q: I accidentally clicked on the devnet. how can I open again my koii app/node?
 
