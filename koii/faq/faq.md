@@ -73,6 +73,12 @@ The problem is you may **stake too many koii** on a single task, and might have 
 
 For safety you can also have another cold wallet that you don't use with the koii node, and then you can **transfer all the amount that is not in use to that cold wallet and only use the node wallet as hot wallet for all the tasks running and staking**
 
+## Q: I have issue with unable to claim rewards or unstake my Koiis 
+
+The issue is **you doesn’t have enough koii to pay for the transaction fees** of unstake and claim rewards.
+Please **not to empty your main wallet completely**, just put some koii so that it can cover for transaction fees like submitting data for task, claiming reward, unstaking etc
+
+
 ## Tutorial for Finnie Wallet
 
 **Setting Up Finnie Wallet**
