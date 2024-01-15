@@ -11,7 +11,7 @@ export const SocialMediaLinks = () => {
           height={32}
         />
       </a>
-      <a href="https://discord.gg/koii">
+      <a href="https://discord.gg/koiin">
         <img
           src="/img/media/discord.svg"
           alt="Discord logo"
