@@ -82,6 +82,10 @@ Please **not to empty your main wallet completely**, just put some koii so that 
 
 please open an **incognito** window, go to twitter login page and use your username(not email or phone number), and password to log in to twitter. You might faced a reCAPTCHA from twitter. After any verification such as email or phone number and you can log in without the verfication, use Koii Node and try to run the task again.
 
+## Q: Will the mainnet token will be distributed 1:1 for node runners?
+
+Yes, The only exception is in cases where fraud or other nefarious activity is detected
+
 ## Tutorial for Finnie Wallet
 
 **Setting Up Finnie Wallet**
