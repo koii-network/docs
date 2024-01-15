@@ -78,6 +78,9 @@ For safety you can also have another cold wallet that you don't use with the koi
 The issue is **you doesn’t have enough koii to pay for the transaction fees** of unstake and claim rewards.
 Please **not to empty your main wallet completely**, just put some koii so that it can cover for transaction fees like submitting data for task, claiming reward, unstaking etc
 
+## Q: I am trying to run twitter tasks for a while now but keeps facing this issue "Password is incorrect or email verfication needed".
+
+
 
 ## Tutorial for Finnie Wallet
 
