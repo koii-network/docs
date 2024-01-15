@@ -35,11 +35,11 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 ## Q: I accidently delete my spheron storage key, how to get another one?
 
-1. Setting up a new account and generating a new key will be the easiest way, then you can switch back to using your newly generated key for your previous account.
+1. **Setting up a new account** and generating a new key will be the **easiest** way, then you can switch back to using your newly generated key for your previous account.
 
-2. Also, you can easily transfer your koii tokens from your koii node application to your Finnie wallet. And then transfer them to your new account and keep mining.
+2. Also, you can easily **transfer** your koii tokens from your koii node application to your Finnie wallet. And then transfer them to your new account and keep mining.
 
-3. Additionally, they can follow this tutorial: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
+3. Additionally, they can **follow this tutorial**: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
 
 ## Q: I accidentally clicked on the devnet. how can I open again my koii app/node?
 
