@@ -41,7 +41,7 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 3. Additionally, they can **follow this tutorial**: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
 
-## Q: I accidentally clicked on the devnet. how can I open again my KOII app/node?
+## Q: I accidentally clicked on the devnet. how can I open again my Koii app/node?
 
 **For Mac**: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
 
@@ -62,11 +62,11 @@ It varies on the amount of data you will hold, so if you are running more task, 
 
 It should be the permission issue, try run it as **Administrator** and try again.
 
-## Q: I have an issue of my KOIIs stuck in the stake box, they can neither take it back nor use them to run the task. What should I do?
+## Q: I have an issue of my KOII stuck in the stake box, they can neither take it back nor use them to run the task. What should I do?
 
 We noted this issue(**token stuck in the box**), Will patch this in the next version. 
 
-Somehow your task ended in the available tasks, but you still have some KOII staked. Your KOII are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
+Somehow your task ended in the available tasks, but you still have some KOII staked. Your KOII are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake KOII again and since you doesn't had that much KOII so you is not able to stake it again.
 
 ## Q: I created wallet when Koii was on K1 (Arweave based KOII) but as Koii has migrated to k2 (Solana forked Koii), what should I do to get my tokens back.
 
@@ -81,7 +81,7 @@ The problem is you may **stake too many KOII** on a single task, and might have 
 
 For safety you can also have another cold wallet that you don't use with the KOII node, and then you can **transfer all the amount that is not in use to that cold wallet and only use the node wallet as hot wallet for all the tasks running and staking**
 
-## Q: I have issue with unable to claim rewards or unstake my KOIIs 
+## Q: I have issue with unable to claim rewards or unstake my KOII
 
 The issue is **you doesn’t have enough KOII to pay for the transaction fees** of unstake and claim rewards.
 Please **not to empty your main wallet completely**, just put some KOII so that it can cover for transaction fees like submitting data for task, claiming reward, unstaking, etc.
