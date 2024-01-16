@@ -5,11 +5,11 @@ image: img/thumbnail.png
 sidebar_label: FAQ
 ---
 
-Questions? We have answers. If you can't find what you're looking for, please contact us on [Discord](https://discord.gg/KOIIn).
+Questions? We have answers. If you can't find what you're looking for, please contact us on [Discord](https://discord.gg/koiin).
 
 ## Q: How to download/update Koii Node?
 
-Please visit [Koii Node](https://www.KOII.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/KOIIn).
+Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koiin).
 
 ## Q: How to create a Koii account?
 
@@ -27,17 +27,17 @@ Notice: You can run multiple tasks at the same time. Please make sure you have e
 
 ## Q: How to check the task status?
 
-The tasks status is listed in My Node page. If the task is shown as "Error" and stop running, please check the task log to see what's wrong. If you have trouble fixing the error, please contact us on [Discord](https://discord.gg/KOIIn).
+The tasks status is listed in My Node page. If the task is shown as "Error" and stop running, please check the task log to see what's wrong. If you have trouble fixing the error, please contact us on [Discord](https://discord.gg/koiin).
 
 ## Q: How to withdraw KOII tokens?
 
 After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens **by clicking "Claim Rewards" button**. The longer you run the task, the more KOII tokens you will earn. **You can withdraw your KOII tokens at any time**.
 
-## Q: I accidently delete my spheron storage key, how to get another one?
+## Q: I accidently delete my Spheron storage key, how to get another one?
 
 1. **Setting up a new account** and generating a new key will be the **easiest** way, then you can switch back to using your newly generated key for your previous account.
 
-2. Also, you can easily **transfer** your KOII tokens from your KOII node application to your Finnie wallet. And then transfer them to your new account and keep mining.
+2. Also, you can easily **transfer** your KOII tokens from your Koii node application to your Finnie wallet. And then transfer them to your new account and keep mining.
 
 3. Additionally, they can **follow this tutorial**: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
 
@@ -62,13 +62,13 @@ It varies on the amount of data you will hold, so if you are running more task, 
 
 It should be the permission issue, try run it as **Administrator** and try again.
 
-## Q: I have an issue of stuck my KOIIs in the stake box, they can neither take it back nor use them to run the task. What should I do?
+## Q: I have an issue of my KOIIs stuck in the stake box, they can neither take it back nor use them to run the task. What should I do?
 
 We noted this issue(**token stuck in the box**), Will patch this in the next version. 
 
 Somehow your task ended in the available tasks, but you still have some KOII staked. Your KOII are safe and staked in the task. Its just a UI issue that when you trying to click play button it is trying to stake KOIIs again and since you doesn't had that much KOII so you is not able to stake it again.
 
-## Q: I created wallet when KOII was on K1 (Arweave based KOII) but as KOII has migrated to k2 (Solana forked KOII), what should I do to get my tokens back.
+## Q: I created wallet when Koii was on K1 (Arweave based KOII) but as Koii has migrated to k2 (Solana forked Koii), what should I do to get my tokens back.
 
 You **cannot keep use your old key phrase to retrieve the wallet**, Older keys run on Arweave. If your key was created before K2, select Arweave for import.
 
@@ -136,7 +136,7 @@ Always ensure the security of your secret phrase and double-check all details be
 ## Tutorial: Step-by-Step Guide to Getting a Spheron Storage Key
 **Step 1: Logging in**
 
-1. Visit the Koii Node platform. If you don’t have it, you can download it at [HERE](https://www.KOII.network/node).
+1. Visit the Koii Node platform. If you don’t have it, you can download it at [HERE](https://www.koii.network/node).
 
 2. Enter your six-digit credentials to log in. If you don’t have an account, you’ll need to create one.
 
