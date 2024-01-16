@@ -27,6 +27,7 @@ const config = {
     locales: ["en"],
   },
   plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
@@ -916,6 +917,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
+      },
       colorMode: {
         defaultMode: "light",
         disableSwitch: true,
