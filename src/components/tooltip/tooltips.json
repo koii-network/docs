@@ -55,7 +55,7 @@
   ],
   "runtime flow": [
     "Koii's blockchain flow logic",
-    "/concepts/gradual-concensus/runtime-flow"
+    "/concepts/gradual-consensus/runtime-flow"
   ],
   "rewards": [
     "Incentives in the form of KOII tokens to reward nodes",
@@ -188,7 +188,7 @@
   ],
   "k2": [
     "Koii’s high-speed settlement layer processing secure payments",
-    "https://www.google.com/"
+    "/concepts/settlement-layer/k2-tick-tock-fast-blocks"
   ],
   "koii nodes": [
     "Computers that run the Koii Network",
