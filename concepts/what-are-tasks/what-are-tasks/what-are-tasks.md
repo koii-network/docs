@@ -13,7 +13,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 ![banner](<../img/_What%20are%20tasks_%20(1).svg>)
 
-Building truly decentralized systems, requires a complicated mix of incentive engineering cryptography.
+Building truly decentralized systems requires a complicated mix of incentive, engineering, and cryptography.
 
 <Tooltip text="Gradual Consensus"/> in Koii Tasks standardize this structure to provide a single community cloud toolkit for all purposes.
 
