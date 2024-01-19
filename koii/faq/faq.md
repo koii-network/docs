@@ -11,6 +11,11 @@ Questions? We have answers. If you can't find what you're looking for, please co
 
 Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koiin).
 
+<video width="320" height="240" controls>
+    <source src="./video/download.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
+
 ## Q: How to create a Koii account?
 
 After downloading Koii Node, please follow the instructions to create a Koii account. You will need to provide an account name and a password. System will provide you with a **private key**. Please keep your private key safe. You will need it to log in to your account if you switch your device. If you lose your private key, you will lose access to your account.
