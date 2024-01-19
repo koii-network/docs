@@ -121,7 +121,7 @@ export const exploreTopics = [
       },
       {
         title: "Our official Discord server",
-        link: "https://discord.gg/koiin",
+        link: "https://discord.gg/koii-network",
         icon: "/img/explore-topics-icons/discord.svg",
       },
       {

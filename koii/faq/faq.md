@@ -5,11 +5,11 @@ image: img/thumbnail.png
 sidebar_label: FAQ
 ---
 
-Questions? We have answers. If you can't find what you're looking for, please contact us on [Discord](https://discord.gg/koiin).
+Questions? We have answers. If you can't find what you're looking for, please contact us on [Discord](https://discord.gg/koii-network).
 
 ## Q: How to download/update Koii Node?
 
-Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koiin).
+Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.gg/koii-network).
 
 ## Q: How to create a Koii account?
 
@@ -27,7 +27,7 @@ Notice: You can run multiple tasks at the same time. Please make sure you have e
 
 ## Q: How to check the task status?
 
-The tasks status is listed in My Node page. If the task is shown as "Error" and stop running, please check the task log to see what's wrong. If you have trouble fixing the error, please contact us on [Discord](https://discord.gg/koiin).
+The tasks status is listed in My Node page. If the task is shown as "Error" and stop running, please check the task log to see what's wrong. If you have trouble fixing the error, please contact us on [Discord](https://discord.gg/koii-network).
 
 ## Q: How to withdraw KOII tokens?
 
