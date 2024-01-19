@@ -18,7 +18,7 @@ For too long, power has been concentrated on just a small part of the world's po
   <Card
     title="<p><strong>Join the Discord</strong></p>"
     description=" <p>Koii's discord is where the community comes to discuss new ideas and recent updates.</p>"
-    link="https://discord.gg/koiin"
+    link="https://discord.gg/koii-network"
     linkText="Sign in Here"
     svgName="discord"
     cardPerRow="3"
