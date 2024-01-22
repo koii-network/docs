@@ -12,7 +12,7 @@ Let's take a look at our `adapters/twitter.js` file.
 
 ### Modules
 
-We are making use of a database model, Puppeteer for web scraping, Cheerio for DOM parsing, crypto for potential cryptography tasks, and web3.storage for decentralized storage.
+We are making use of a database model, Puppeteer for web scraping, Cheerio for DOM parsing, crypto for potential cryptography tasks, and Spheron for decentralized storage.
 
 ### Session Management
 
@@ -79,6 +79,6 @@ The final portion of our file contains utility functions:
 
 ### Summary
 
-The Twitter class in the code provides a framework for crawling Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using web3.storage.
+The Twitter class in the code provides a framework for crawling Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using Spheron.
 
 You can use it as a starting point to develop your own Twitter crawler to your own needs, or as a reference to develop a crawler for a different website.
