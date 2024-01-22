@@ -10,6 +10,9 @@ The main function of this task will involve submitting `'Hello, World!'` togethe
 
 ### Update Dependency Imports
 
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
+
+<!-- 
 Navigate to the `task/submission.js` file, and update the dependency imports as follows:
 
 ```js title="/task/submission.js"
@@ -71,4 +74,4 @@ Here's a breakdown of the code's functionality:
 - The `submission` object is transformed into a Blob which is then used to create a File named `submission.json`.
 
 - The file is uploaded to IPFS using the `storageClient.put` and the obtained CID is stored using the `namespaceWrapper.storeSet`.
-
+ -->

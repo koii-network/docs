@@ -1,15 +1,19 @@
 ---
 title: Storage via IPFS
-description: IPFS can be easily implemented as decentralized storage for a task. Using libraries such as web3.Storage
+description: IPFS can be easily implemented as decentralized storage for a task. Using libraries such as Spheron
 image: img/thumbnail.png
 sidebar_label: Storage via IPFS
 ---
 
 # Storage via IPFS
 
-IPFS can be easily implemented as decentralized storage for a task. Using libraries such as [web3.Storage](https://web3.storage/), data can easily be stored, retrieved, and maintained on IPFS. The stored data will be referenced using [IPFS content identifiers](https://docs.ipfs.tech/concepts/content-addressing/) that are unique to the data, making your data completely portable and accessible from anywhere broadcasting data to the IPFS network, whether on a local or peer device or uploaded to web3.storage.
+IPFS can be easily implemented as decentralized storage for a task. Using libraries such as [Spheron](https://docs.spheron.network/storage/), data can easily be stored, retrieved, and maintained on IPFS. The stored data will be referenced using [IPFS content identifiers](https://docs.ipfs.tech/concepts/content-addressing/) that are unique to the data, making your data completely portable and accessible from anywhere broadcasting data to the IPFS network, whether on a local or peer device or uploaded to Spheron.
 
-Import the library and create a new client in your executable file:
+<!-- TODO : Tutorial for implementing with Spheron -->
+** Spheron Storage Tutorial Coming Soon!
+For now see [Spheron Docs](https://docs.spheron.network/storage/)**
+
+<!-- Import the library and create a new client in your executable file:
 
 ```javascript
 // Using Web3Storage to make uploading to IPFS easier
@@ -40,4 +44,4 @@ async function task() {
     console.error("No web3 storage API key provided");
   }
 }
-```
+``` -->
