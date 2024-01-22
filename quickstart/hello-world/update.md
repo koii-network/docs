@@ -28,7 +28,7 @@ migrationDescription: "Optimized CPU and RAM usage"
 # Network value can be DEVELOPMENT, ARWEAVE or IPFS
 task_executable_network: "IPFS"
 
-# Provide your web3.storage key as it is needed for uploading your metadata
+# Provide your Spheron key as it is needed for uploading your metadata
 secret_web3_storage_key: ""
 
 # Path to your executable webpack if the selected network is IPFS and in case of DEVELOPMENT  name it as main
@@ -66,7 +66,7 @@ imageUrl: "Enter you image URL"
 requirementsTags:
   - type: TASK_VARIABLE
     value: SECRET_WEB3_STORAGE_KEY (required for this task)
-    description: "used to connect web3.storage"
+    description: "used to connect to Spheron"
   - type: TASK_VARIABLE
     value: "SCRAPING_URL"
     description: "URL from which you want to scrape"
