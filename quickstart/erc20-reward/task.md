@@ -10,7 +10,7 @@ The main function of this task will involve submitting `'Hello, World!'` togethe
 
 ### Update Dependency Imports
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- 
 Navigate to the `task/submission.js` file, and update the dependency imports as follows:

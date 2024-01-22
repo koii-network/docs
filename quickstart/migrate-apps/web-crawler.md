@@ -70,7 +70,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `@spheron/storage` for IPFS interactions.
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- ```js title="/task/submission.js"
   require("dotenv").config();
@@ -91,7 +91,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- ```js title="/task/submission.js"
   // Existing code...
@@ -145,7 +145,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 5. **Update Audit Logic:** In the `task/audit.js` file, within the `validateNode()` method, modify the audit condition to accommodate the web scraper's behavior. This involves extracting the stored news data from the CID using the [**`dataFromCid`**](https://github.com/Giftea/web-scraper/blob/main/koii-task/helpers.js#L27) helper function. The validation checks whether the data is not false and has a non-zero length.
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- ```js title="/task/audit.js"
   // Existing imports...

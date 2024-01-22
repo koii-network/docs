@@ -44,7 +44,7 @@ In this task, it used jsdom and axios to scrape the specials. The data is then s
 
 To store data on IPFS, we need to use the [Spheron](https://docs.spheron.network/sdk/storage-v2/) library. It also requires a secret key to access the Spheron API. The secret key is stored in the `.env` file. To get your secret key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- 
 ```js
