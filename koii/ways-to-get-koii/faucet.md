@@ -15,7 +15,7 @@ The faucet lets new users claim free tokens by verifying their accounts.
 Additionally, if you invite someone to Koii Network, you both will get 5 extra KOII tokens.
 
 ::::info I wasn't referred by anyone. Can I still get the 5 extra KOII tokens?
-If you found the Koii Network on your own, that is extra cool. We can be your friend! Contact us on [Discord](https://discord.gg/koiin) to get your 5 extra KOII tokens.
+If you found the Koii Network on your own, that is extra cool. We can be your friend! Contact us on [Discord](https://discord.gg/koii-network) to get your 5 extra KOII tokens.
 
 ::::
 
