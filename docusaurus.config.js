@@ -98,6 +98,21 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "faq",
+        path: "faq",
+        routeBasePath: "faq/",
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -1025,8 +1040,8 @@ const config = {
           },
           {
             label: "❓ FAQ",
-            to: "/koii/faq",
-            activeBasePath: "koii",
+            to: "/faq/questions/",
+            activeBasePath: "faq",
             position: "left",
             className: "header-text",
           },
