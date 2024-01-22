@@ -41,7 +41,7 @@ export const cardImages = {
   koiiX: require(`@site/concepts/introduction/img/Welcome to Koii-X.png`)
     .default,
   discord: require(`@site/concepts/introduction/img/Discord.png`).default,
-  peeranha: require(`@site/concepts/introduction/img/Peeranha forums.png`)
+  telegram: require(`@site/concepts/introduction/img/Telegram.png`)
     .default,
   decentralConVideo:
     require(`@site/concepts/introduction/img/Screenshot from 2023-01-18 22-33-40.png`)
