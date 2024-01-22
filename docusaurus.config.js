@@ -126,6 +126,22 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "doc",
+        path: "doc",
+        routeBasePath: "doc/",
+        sidebarPath: require.resolve("./sidebars/docSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -1013,6 +1029,13 @@ const config = {
             label: "❓ FAQ",
             to: "/koii/faq",
             activeBasePath: "koii",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "📚 Documentation",
+            to: "/doc/techWords/documentation",
+            activeBasePath: "doc",
             position: "left",
             className: "header-text",
           },
