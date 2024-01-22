@@ -45,7 +45,7 @@ migrationDescription: "Updated the task name"
 ```
 After making your updates and describing them in `migrationDescription`, select `using config YML` to proceed to the next step.
 
-- **✔ Enter the web3.storage API key:** Input your web3.storage API key.
+- **✔ Enter the Spheron API key:** Input your Spheron API key.
 
 ```
 Your MetaData CID is bafybeiafgp57vwmemlthabkrvsxs5je3ichvywum7w4ccfvrsnq3onxbci/metadata.json

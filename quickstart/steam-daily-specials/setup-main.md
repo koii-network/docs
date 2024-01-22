@@ -42,8 +42,11 @@ In this task, it used jsdom and axios to scrape the specials. The data is then s
 
 ## Store data on IPFS
 
-To store data on IPFS, we need to use the [Web3.Storage](https://web3.storage/) client library. It also requires a secret key to access the Web3.Storage API. The secret key is stored in the `.env` file. To get your secret key, check the tutorial <a href="https://blog.koii.network/Introduce-web3-storage/" target="_blank">here</a>
+To store data on IPFS, we need to use the [Spheron](https://docs.spheron.network/sdk/storage-v2/) library. It also requires a secret key to access the Spheron API. The secret key is stored in the `.env` file. To get your secret key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
+
+<!-- 
 ```js
 const { Web3Storage, File } = require("web3.storage");
 const storageClient = new Web3Storage({
@@ -57,7 +60,8 @@ const file = new File([gameSalesJson], filename, {
 
 const cid = await storageClient.put([file]);
 ```
+-->
 
 :::info
 `cid` is the content identifier of the file. It is the hash of the file. It is used to retrieve the file from the IPFS.
-:::
+::: 
