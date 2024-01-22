@@ -77,9 +77,9 @@ Before deploying a task, you'll need to build it into a single file executable b
 
 Complete the following to deploy your task on the k2 testnet and test it locally with docker compose.
 
-### To get a web3.storage key
+### To get a Spheron key
 
-If you have already created an account on [web3.storage](https://web3.storage/docs/#quickstart) you'll just need to enter the API key after the prompts in the deployment process.
+You'll need a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. You'll just need to enter the API key after the prompts in the deployment process.
 
 ### Find or create a k2 wallet key
 

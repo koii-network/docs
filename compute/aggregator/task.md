@@ -61,7 +61,7 @@ To offer your query as a task that others can run, you can configure its propert
 ## Environment Variables
 
 :::info
-The Twitter Crawler application requires you to have a [Web3.Storage account](https://web3.storage/) and a [Twitter Account](https://twitter.com/i/flow/signup). For an in-depth guide on how to create a Web3.Storage account click [here](https://blog.koii.network/Introduce-web3-storage/).
+The Twitter Crawler application requires you to have a requires you to have a [Twitter Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
 :::
 
 ### Where to Declare
