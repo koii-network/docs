@@ -85,7 +85,7 @@ space: 1
 
 requirementsTags:
   - type: TASK_VARIABLE
-    value: "WEB3.STORAGE"
+    value: "SPHERON_KEY"
     description: "used to store the data"
   - type: CPU
     value: "4-core"
@@ -137,7 +137,7 @@ So, if you have more than one environment variable, your `requirementsTags` sect
 requirementsTags:
   - type: TASK_VARIABLE
     value: "SECRET_WEB3_STORAGE_KEY"
-    description: "used to connect web3.storage"
+    description: "used to connect to Spheron"
   - type: TASK_VARIABLE
     value: "TWITTER_USER_NAME"
     description: "used to connect twitter"
@@ -177,9 +177,9 @@ Follow these instructions to input the required details:
   The next prompt depends on your answer to the prompt above.
   :::
 
-- [For IPFS] **Enter the web3.storage API key:** Input your web3.storage API key to store your task executable on IPFS (e.g., `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`).
+- [For IPFS] **Enter the Spheron API key:** Input your Spheron API key to store your task executable on IPFS (e.g., `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`).
   :::tip
-  Visit [Web3.storage](https://web3.storage/), create an account, generate an API token for your project, copy the token, and paste it on this prompt.
+  Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. , copy the token, and paste it on this prompt.
   :::
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
@@ -238,7 +238,7 @@ create-task-cli
 ✔ Enter the name of the task … my-new-task
 ✔ Enter a short description of your task … This is a simple task
 ✔ Please select the type of network › IPFS
-✔ Enter the web3.storage API key … eyOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTsIm5hbWUiOiJzYXZpbmdIaX
+✔ Enter the Spheron API key … eyOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTsIm5hbWUiOiJzYXZpbmdIaX
 ✔ Enter the path to your executable webpack … /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 ✔ Enter the round time in slots … 600
