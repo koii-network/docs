@@ -234,7 +234,7 @@ Fill in the necessary information by following the instructions below:
 
 - **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. <!-- Use the "Upload Files" button on your storage account to upload a JSON file containing the metadata for your task. --> Add the uploaded file's CID to this prompt. 
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty.  See the [Spheron Docs](https://docs.spheron.network/) on how to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. 
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 - **Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) › ** y/n
