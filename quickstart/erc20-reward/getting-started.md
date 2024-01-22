@@ -48,7 +48,7 @@ Create a new file named `KToken.json` in the root directory of the project. Copy
 
 We'll need a helper function to retrieve data from CID, create a new file named `helpers.js` in the root of the task folder and paste the code below:
 
-# Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/)
+** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
 
 <!-- TODO: Make updated tutorial that uses Spheron, I think the method required is referenced here: https://docs.spheron.network/sdk/storage-v2/#get-upload -->
 <!-- 
