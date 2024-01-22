@@ -77,7 +77,7 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 ## Dependencies
 - **Cheerio**: For parsing HTML content.
 - **Axios**: For making HTTP requests.
-- **Web3.Storage**: For interacting with IPFS.
+- **Spheron**: For interacting with IPFS.
 - **Twitter Adapter** (`./adapters/twitter/twitter.js`): To authenticate and crawl Twitter.
 - **Database Helper** (`./helpers/db`): To populate the database with crawl results.
 - **Data Model** (`./model/data`): Model for the data.
