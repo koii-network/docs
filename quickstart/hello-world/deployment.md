@@ -19,7 +19,7 @@ The `secret_spheron_storage_key` variable requires you to have a Spheron Key, ei
 git clone https://github.com/koii-network/task-template.git
 ```
 
-**Configure Environment Variables**:
+## Configure Environment Variables:
    - Update the `TASKS` field with the task IDs you want to run, separated by commas.
    - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
    - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
