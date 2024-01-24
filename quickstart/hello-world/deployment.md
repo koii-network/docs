@@ -35,6 +35,26 @@ Multi-task example
    ```
 :::
 
+### Set up New Koii Pubkey
+
+   ```bash
+   koii balance
+   ```
+It will shows "Error: Dynamic program error: No default signer found, run "koii-keygen new -o /your/path/of/id.json" to create a new one"
+**this path will automaticly generated**.
+
+   ```bash
+   koii-keygen new -o /your/path/of/id.json
+   ```
+
+- After that the system will generated a new account for you, associate with your account address.
+
+- To improve security, system want you set up BIP39 Passphrase, you can leave it for empty.
+
+- Then you will have your new pubkey, **transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)**.
+
+---
+
 - Run the below command to install npm.
 
 ```bash
