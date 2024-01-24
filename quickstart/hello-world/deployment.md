@@ -9,6 +9,8 @@ After creating a Koii Task, it is highly recommended that you include a detailed
 
 The configuration file `config-task.yml` contains information about your task. A sample `config-task.yml` file can be found in the root directory of your task folder.
 
+## Generate Spheron Storage Key
+
 :::info
 The `secret_spheron_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/faq/pagetwo/#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 :::
@@ -111,7 +113,8 @@ SCRAPING_URL=""
 
 ```
 
-**Ensure Koii CLI is Installed**:
+## Ensure Koii CLI is Installed:
+
    The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli).
 
 :::note Create Wallet
@@ -121,6 +124,7 @@ Before proceeding,  create a [Koii wallet](/develop/command-line-tool/koii-cli/c
 ---
 The `create-task-cli` is used to register a new task on K2.
 
+## Get Started!
 
 **After setting up the KOII CLI and funding your Koii wallet**, follow the steps below to create and register your task on K2:
 
