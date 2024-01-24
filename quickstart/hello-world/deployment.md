@@ -27,6 +27,14 @@ git clone https://github.com/koii-network/task-template.git
 
    ---
 
+:::tip 
+Multi-task example
+   ```
+   TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
+   TASK_STAKES= 5, 2
+   ```
+:::
+
 - Run the below command to install npm.
 
 ```bash
