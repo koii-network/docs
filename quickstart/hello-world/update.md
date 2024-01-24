@@ -29,7 +29,7 @@ migrationDescription: "Optimized CPU and RAM usage"
 task_executable_network: "IPFS"
 
 # Provide your Spheron key as it is needed for uploading your metadata
-secret_web3_storage_key: ""
+secret_spheron_storage_key: ""
 
 # Path to your executable webpack if the selected network is IPFS and in case of DEVELOPMENT  name it as main
 task_audit_program: "main"
@@ -65,7 +65,7 @@ repositoryUrl: "https://github.com/koii-network/hello-world"
 imageUrl: "Enter you image URL"
 requirementsTags:
   - type: TASK_VARIABLE
-    value: SECRET_WEB3_STORAGE_KEY (required for this task)
+    value: SECRET_SPHERON_STORAGE_KEY (required for this task)
     description: "used to connect to Spheron"
   - type: TASK_VARIABLE
     value: "SCRAPING_URL"

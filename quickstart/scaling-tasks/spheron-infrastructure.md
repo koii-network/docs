@@ -150,4 +150,4 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
 
 ### Final Notes
 
-On order task templates, you might encounter web3storage as an IPFS storage option. Our tasks are compatible with that option, but as we encourage using Spheron as otherwise, you would need your users to provide a storage key.
+On order task templates, you might encounter web3storage as an IPFS storage option. Our tasks are compatible with that option, but we encourage using Spheron, otherwise you would need your users to provide a storage key.

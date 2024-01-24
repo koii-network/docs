@@ -86,7 +86,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
   ``` -->
 
   :::caution
-  Ensure you have a a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.  Then store it as an environment variable, specifically `SECRET_WEB3_STORAGE_KEY`, within a `.env` file.
+  Ensure you have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.  Then store it as an environment variable, specifically `SECRET_SPHERON_STORAGE_KEY`, within a `.env` file.
   :::
 
 4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
