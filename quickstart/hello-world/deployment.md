@@ -9,88 +9,124 @@ After creating a Koii Task, it is highly recommended that you include a detailed
 
 The configuration file `config-task.yml` contains information about your task. A sample `config-task.yml` file can be found in the root directory of your task folder.
 
+## Generate Spheron Storage Key
+
 :::info
-The `secret_spheron_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
+The `secret_spheron_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/faq/pagetwo/#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 :::
 
-Follow the instructions in the file and fill in your task's information:
+- Run the below command to clone.
 
-```yml
-#Provide the taskId if you are updating the task
-task_id: ""
-# Name and description of your task
-task_name: "web3-revolution"
-task_description: 'This is a simple web3 task that returns "Hello, World!"'
-
-# Network value can be DEVELOPMENT, ARWEAVE or IPFS
-task_executable_network: "IPFS"
-
-# Provide your Spheron storage key as it is needed for uploading your metadata
-secret_spheron_storage_key: ""
-
-# Path to your executable webpack if the selected network is IPFS otherwise leave blank
-task_audit_program: ""
-
-# Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
-task_audit_program_id: "main"
-
-# Total round time of your task: it must be given in slots and each slot is roughly equal to 4ms
-round_time: 1500
-
-audit_window: 300
-submission_window: 300
-
-# Amounts in KOII
-
-minimum_stake_amount: 2
-
-# total_bounty_amount cannot be greater than bounty_amount_per_round
-# total bounty is not accepted in case of update task
-total_bounty_amount: 15
-
-bounty_amount_per_round: 1
-
-#Number of times allowed to re-submit the distribution  list in case the distribution list is audited
-allowed_failed_distributions: 3
-
-#Space in MBs
-space: 1
-
-# Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
-# To add more global variables and task variables, please refer to the type, value, and description format shown below
-
-author: "Cool Dev"
-description: 'This is a simple task that returns "Hello, World!"'
-repositoryUrl: "https://github.com/koii-network/hello-world"
-imageUrl: "Enter you image URL"
-requirementsTags:
-  - type: TASK_VARIABLE
-    value: SECRET_WEB3_STORAGE_KEY (required for this task)
-    description: "used to connect to Spheron"
-  - type: TASK_VARIABLE
-    value: "SCRAPING_URL"
-    description: "URL from which you want to scrape"
-  - type: CPU
-    value: "4-core"
-  - type: RAM
-    value: "5 GB"
-  - type: STORAGE
-    value: "test"
-  - type: NETWORK
-    value: "test"
-  - type: ARCHITECTURE
-    value: "AMD"
-  - type: OS
-    value: "OSX"
+```bash
+git clone https://github.com/koii-network/task-template.git
 ```
 
-The `create-task-cli` is used to register a new task on K2.
+## Configure Environment Variables:
+   - Update the `TASKS` field with the task IDs you want to run, separated by commas.
+   - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
+   - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
+   - Add any specific task variables required for the tasks at the end of the file.
 
-:::note
-Before proceeding, download the Koii CLI [here](/develop/command-line-tool/koii-cli/install-cli), create a [Koii wallet](/develop/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/develop/command-line-tool/koii-cli/send-and-receive-tokens).
+   ---
+
+:::tip 
+Multi-task example
+   ```
+   TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
+   TASK_STAKES= 5, 2
+   ```
 :::
 
-After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
+### Set up New Koii Pubkey
+
+   ```bash
+   koii balance
+   ```
+It will shows "Error: Dynamic program error: No default signer found, run "koii-keygen new -o /your/path/of/id.json" to create a new one"
+**this path will automaticly generated**.
+
+   ```bash
+   koii-keygen new -o /your/path/of/id.json
+   ```
+
+- After that the system will generated a new account for you, associate with your account address.
+
+- To improve security, system want you set up BIP39 Passphrase, you can leave it for empty.
+
+- Then you will have your new pubkey, **transfer some tokens to this account using [Finnie Wallet](https://chromewebstore.google.com/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)**.
+
+---
+
+- Run the below command to install npm.
+
+```bash
+npm install
+```
+
+## Fill up task information
+Follow the instructions in the file and fill in your task's information:  
+You can find this code in: "**.env.local**"
+
+```yml
+# Location of main wallet Do not change this, it mounts the ~/.config/koii:/app/config if you want to change, update it in the docker-compose.yml
+WALLET_LOCATION="/app/config/id.json"
+# Node Mode
+NODE_MODE="service"
+# The nodes address
+SERVICE_URL="http://localhost:8080"
+# Intial balance for the distribution wallet which will be used to hold the distribution list. 
+INITIAL_DISTRIBUTION_WALLET_BALANCE= 2
+# Global timers which track the round time, submission window and audit window and call those functions
+GLOBAL_TIMERS="true"
+# HAVE_STATIC_IP is flag to indicate you can run tasks that host APIs
+# HAVE_STATIC_IP=true
+# To be used when developing your tasks locally and don't want them to be whitelisted by koii team yet
+RUN_NON_WHITELISTED_TASKS=true
+# The address of the main trusted node
+# TRUSTED_SERVICE_URL="https://k2-tasknet.koii.live"
+######################################################
+################ DO NOT EDIT ABOVE ###################
+######################################################
+
+# For the purpose of automating the staking wallet creation, the value must be greater 
+# than the sum of all TASK_STAKES, the wallet will only be created and staking on task 
+# will be done if it doesn't already exist
+INITIAL_STAKING_WALLET_BALANCE=10
+
+# environment
+ENVIRONMENT="development"
+
+# Location of K2 node
+K2_NODE_URL="https://testnet.koii.live"
+
+# Tasks to run and their stakes. This is the varaible you can add your Task ID to after
+# registering with the crete-task-cli. This variable supports a comma separated list:
+# TASKS="id1,id2,id3"
+# TASK_STAKES="1,1,1"
+TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
+TASK_STAKES=5
+
+# User can enter as many environment variables as they like below. These can be task
+# specific variables that are needed for the task to perform it's job. Some examples:
+WEB3_STORAGE_KEY=""
+SCRAPING_URL=""
+
+```
+
+## Ensure Koii CLI is Installed:
+
+   The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli).
+
+:::note Create Wallet
+Before proceeding,  create a [Koii wallet](/develop/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/develop/command-line-tool/koii-cli/send-and-receive-tokens).
+:::
+
+---
+The `create-task-cli` is used to register a new task on K2.
+
+## Get Started!
+
+**After setting up the KOII CLI and funding your Koii wallet**, follow the steps below to create and register your task on K2:
 
 - Run the below command to compile your task code.
 
