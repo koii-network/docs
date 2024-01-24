@@ -31,4 +31,4 @@ For `task_executable_network`, following values are accepted:
 
 Arweave is a similar technology to IPFS, but for Koii applications we highly recommend using IPFS due to its ease of use.
 
-As a task developer, the other place you can benefit from a solution like this, is while retrieving data from your task runners. To interact with IPFS in that regard, let's take a look at **Using Spheron**.
+As a task developer, the other place you can benefit from a solution like this, is while retrieving data from your task runners. To interact with IPFS in that regard, let's take a look at [**Using Spheron**](spheron-infrastructure).

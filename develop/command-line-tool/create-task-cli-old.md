@@ -164,7 +164,7 @@ So, if you have more than one environment variable, your `requirementsTags` sect
 ```yml
 requirementsTags:
   - type: TASK_VARIABLE
-    value: "SECRET_WEB3_STORAGE_KEY"
+    value: "SECRET_SPHERON_STORAGE_KEY"
     description: "used to connect to Spheron"
   - type: TASK_VARIABLE
     value: "TWITTER_USER_NAME"

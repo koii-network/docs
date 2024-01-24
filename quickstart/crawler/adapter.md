@@ -67,7 +67,7 @@ The final portion of our file contains utility functions:
 
 **makeStorageClient:**
 
-- Returns a new instance of Web3Storage for decentralized storage.
+- Returns a new instance of Spheron Storage for decentralized storage.
 
 **makeFileFromObjectWithName:**
 
@@ -75,7 +75,7 @@ The final portion of our file contains utility functions:
 
 **storeFiles:**
 
-- Stores files using the Web3 storage client and returns the CID.
+- Stores files using the Spheron Storage client and returns the CID.
 
 ### Summary
 

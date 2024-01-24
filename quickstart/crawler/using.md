@@ -43,17 +43,17 @@ Your task runners will populate this via Koii Node. We need the following:
 
 - Twitter Username
 - Twitter Password
-- Web3 storage token
+- Spheron storage token
 
-_A Web3 Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
+_A Spheron Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
 
 #### Task Id:
 
 Do not provide a `task_id` for the first deployment, as it will be assigned automatically when you create your task.
 
-#### Secret Web3 Storage Key:
+#### Secret Spheron Storage Key:
 
-Be sure to provide a `secret_web3_storage_key`, we are using the IPFS to deploy our application; we need a storage space for it.
+Be sure to provide a `secret_spheron_storage_key`, we are using the IPFS to deploy our application; we need a storage space for it.
 
 #### Other Variables:
 
