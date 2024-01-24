@@ -10,7 +10,7 @@ After creating a Koii Task, it is highly recommended that you include a detailed
 The configuration file `config-task.yml` contains information about your task. A sample `config-task.yml` file can be found in the root directory of your task folder.
 
 :::info
-The `secret_web3_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
+The `secret_spheron_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 :::
 
 Follow the instructions in the file and fill in your task's information:
@@ -26,7 +26,7 @@ task_description: 'This is a simple web3 task that returns "Hello, World!"'
 task_executable_network: "IPFS"
 
 # Provide your Spheron storage key as it is needed for uploading your metadata
-secret_web3_storage_key: ""
+secret_spheron_storage_key: ""
 
 # Path to your executable webpack if the selected network is IPFS otherwise leave blank
 task_audit_program: ""
