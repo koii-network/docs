@@ -70,9 +70,9 @@ Environment variables should be declared in a `.env` file located at the root of
 
 - **Twitter Username**
 - **Twitter Password**
-- **Web3 storage token**
+- **Spheron storage token**
 
-_A Web3 Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
+_A Spheron Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
 
 ---
 
