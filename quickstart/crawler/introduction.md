@@ -8,7 +8,7 @@ sidebar_label: Introduction
 
 With Koii, you have the power of hundreds of CPUs that belong to real users at your fingertips. By utilizing this power, you can build **crawlers that are more powerful than ever before.**
 
-[This template](https://github.com/GET-Store-CAT/twitter-crawler) provides a simple crawler that uses headless browsers to gather Twitter data.
+[The X-scraper Template](https://github.com/koii-network/X-scraper) provides a simple crawler that uses headless browsers to gather data from X, previously know as Twitter.
 
 ** It is designed to be used as a template for building your crawlers, ** exclusively for theoretical use in public archival projects and is not intended to be used for for-profit activities.
 
