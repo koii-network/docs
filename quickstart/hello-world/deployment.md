@@ -61,6 +61,7 @@ It will shows "Error: Dynamic program error: No default signer found, run "koii-
 npm install
 ```
 
+## Fill up task information
 Follow the instructions in the file and fill in your task's information:  
 You can find this code in: "**.env.local**"
 
