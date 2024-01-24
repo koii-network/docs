@@ -13,12 +13,19 @@ The configuration file `config-task.yml` contains information about your task. A
 The `secret_spheron_storage_key` variable requires you to have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/faq/pagetwo/#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. 
 :::
 
-**Environment set up:**
 - Run the below command to clone.
 
 ```bash
 git clone https://github.com/koii-network/task-template.git
 ```
+
+**Configure Environment Variables**:
+   - Update the `TASKS` field with the task IDs you want to run, separated by commas.
+   - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
+   - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
+   - Add any specific task variables required for the tasks at the end of the file.
+
+   ---
 
 - Run the below command to install npm.
 
