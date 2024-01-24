@@ -92,6 +92,12 @@ Before proceeding, download the Koii CLI [here](/develop/command-line-tool/koii-
 
 After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
 
+- Run the below command to install npm.
+
+```bash
+npm install
+```
+
 - Run the below command to compile your task code.
 
 ```bash
