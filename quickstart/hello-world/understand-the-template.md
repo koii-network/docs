@@ -54,14 +54,14 @@ In the `audit.js` file, there are a total of 2 methods that deal with verifying 
 
 ### The `distribution.js`
 
-In the distribution.js file, there are a total of 4 methods that handle the flow of distributing rewards. You have the flexibility to modify any of these methods to meet your specific requirements:
+In the `distribution.js` file, there are a total of 4 methods that handle the flow of distributing rewards. You have the flexibility to modify any of these methods to meet your specific requirements:
 
 | Method                       | Description                                                                                                                                                                                                                                                             |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `generateDistributionList()` | This method contains the logic to generate a [distribution list](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions). We have provided a sample code that rewards 1 KOII to all the nodes with valid submissions for that round. |
-| `submitDistributionList()`   | Makes a call to a `namespace` method of the task-node to upload the distribution list to K2                                                                                                                                                                             |
+| `submitDistributionList()`   | Makes a call to a `namespace`[^1] method of the task-node to upload the distribution list to K2                                                                                                                                                                         |
 | `validateDistribution()`     | The logic to validate the distribution list goes here.                                                                                                                                                                                                                  |
-| `auditDistribution()`        | Makes a call to the `namespace` of task-node to raise an audit against the distribution list if the validation fails.                                                                                                                                                   |
+| `auditDistribution()`        | Makes a call to the `namespace`[^1] of task-node to raise an audit against the distribution list if the validation fails.                                                                                                                                               |
 
 :::info
 
@@ -75,4 +75,4 @@ By implementing and modifying these methods, we will create a comprehensive and 
 
 If you encounter any difficulties, feel free to contact us on [Discord](https://discord.gg/koii-network).
 
-:::
+[^1]: **Namespace**: In programming, a namespace is a container that holds a set of identifiers, such as variable and function names, and allows them to be distinguished from others that might have the same name but are in a different namespace. In this context, it likely refers to a specific set of functions or methods within the task-node that are used for managing the distribution list.

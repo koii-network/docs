@@ -27,7 +27,7 @@ const config = {
     locales: ["en"],
   },
   plugins: [
-    require.resolve('docusaurus-plugin-image-zoom'),
+    require.resolve("docusaurus-plugin-image-zoom"),
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
@@ -98,6 +98,21 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "faq",
+        path: "faq",
+        routeBasePath: "faq/",
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -126,6 +141,22 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "doc",
+        path: "doc",
+        routeBasePath: "doc/",
+        sidebarPath: require.resolve("./sidebars/docSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
+
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -252,9 +283,7 @@ const config = {
           },
           {
             to: "/",
-            from: [
-              "/develop/koii-software-toolkit-sdk/task-node-cli"
-            ],
+            from: ["/develop/koii-software-toolkit-sdk/task-node-cli"],
           },
           {
             to: "/koii/ways-to-get-koii/grants-program",
@@ -312,7 +341,7 @@ const config = {
           },
           {
             to: "/concepts/what-are-tasks/what-are-tasks",
-            from: "/develop/microservices-and-tasks/what-are-tasks"
+            from: "/develop/microservices-and-tasks/what-are-tasks",
           },
           {
             to: "/concepts/what-are-tasks/what-are-tasks/runtime-environment",
@@ -918,14 +947,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       zoom: {
-        selector: '.markdown :not(em) > img',
+        selector: ".markdown :not(em) > img",
         background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
+          light: "rgb(255, 255, 255)",
+          dark: "rgb(50, 50, 50)",
         },
         config: {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-        }
+        },
       },
       colorMode: {
         defaultMode: "light",
@@ -1011,8 +1040,8 @@ const config = {
           },
           {
             label: "❓ FAQ",
-            to: "/koii/faq",
-            activeBasePath: "koii",
+            to: "/faq/questions/",
+            activeBasePath: "faq",
             position: "left",
             className: "header-text",
           },
