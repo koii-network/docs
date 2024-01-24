@@ -90,16 +90,18 @@ SCRAPING_URL=""
 
 ```
 
-The `create-task-cli` is used to register a new task on K2.
+**Ensure Koii CLI is Installed**:
+   The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli).
 
-:::note
-Before proceeding, download the Koii CLI [here](/develop/command-line-tool/koii-cli/install-cli), create a [Koii wallet](/develop/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/develop/command-line-tool/koii-cli/send-and-receive-tokens).
+:::note Create Wallet
+Before proceeding,  create a [Koii wallet](/develop/command-line-tool/koii-cli/create-wallet), and fund your [wallet](/develop/command-line-tool/koii-cli/send-and-receive-tokens).
 :::
 
-After setting up the KOII CLI and funding your Koii wallet, follow the steps below to create and register your task on K2:
+---
+The `create-task-cli` is used to register a new task on K2.
 
 
-
+**After setting up the KOII CLI and funding your Koii wallet**, follow the steps below to create and register your task on K2:
 
 - Run the below command to compile your task code.
 
