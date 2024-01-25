@@ -17,6 +17,6 @@ This tutorial will guide you on how to manage rewarding users with ERC20 tokens 
 
 :::info
 
-Clone the task-template [repo](https://github.com/koii-network/task-template) to get started. If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us on [Discord](https://discord.gg/koii-network).
+Clone the task-template [repo](https://github.com/koii-network/task-template) to get started. If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us on [Discord](https://discord.com/invite/koii-network).
 
 :::

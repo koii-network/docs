@@ -23,4 +23,4 @@ This uprising features three stages, that allow our most engaged and knowledgeab
 
 [🏴‍☠ Click here to learn more! 🏴‍☠](https://blog.koii.network/calling-all-pirates/)
 
-[🏴‍☠ Join our discord, join the revolution. 🏴‍☠](https://discord.gg/koii-network)
+[🏴‍☠ Join our discord, join the revolution. 🏴‍☠](https://discord.com/invite/koii-network)
