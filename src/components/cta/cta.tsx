@@ -16,7 +16,7 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
         >
           <img
@@ -42,7 +42,7 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
@@ -66,7 +66,7 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
