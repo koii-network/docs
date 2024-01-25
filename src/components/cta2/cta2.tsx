@@ -16,12 +16,12 @@ export const Cta2 = () => {
           }
           href="/compute/introduction"
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
           <div className={"md:pl-5 pl-3" + " " + styles.img}>
-            <img src={"img/Group 6.svg"} className={"w-full"} role="img" />
+            <img src={"img/Group%206.svg"} alt={"window browser with checkmark"} className={"w-full"}/>
           </div>
           <div className="pr-3 md:pr-5">
             <h2
@@ -52,7 +52,7 @@ export const Cta2 = () => {
           }
           href="/concepts/introduction/welcome"
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
@@ -77,7 +77,7 @@ export const Cta2 = () => {
             </p>
           </div>
           <div className={"md:pr-5 pr-3" + " " + styles.img}>
-            <img src={"img/Group 32.svg"} className={"w-full"} role="img" />
+            <img src={"img/Group%2032.svg"} alt={"browser window"} className={"w-full"} />
           </div>
         </a>
       </div>
