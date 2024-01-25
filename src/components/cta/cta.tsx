@@ -16,13 +16,13 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
         >
           <img
-            src={"/img/COLOR- Built the impossible.svg"}
+            src={"/img/COLOR-%20Built%20the%20impossible.svg"}
+            alt="Built the impossible: computer and laptop with a crane and windmill"
             className="w-full rounded-t-[10px]"
-            role="img"
           />
           <button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline no-underline cursor-pointer border-none">
             <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0">
@@ -42,14 +42,13 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
           <img
-            src={"/img/COLOR- Run a Task Node.svg"}
+            src={"/img/COLOR-%20Run%20a%20Task%20Node.svg"}
             className="w-full rounded-t-[10px]"
-            role="img"
           />
           <button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer">
             <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 ">
@@ -67,7 +66,7 @@ export const Cta = () => {
             styles.card
           }
           style={{
-            textDecoration: "no-underline",
+            textDecoration: "none",
           }}
           onClick={handleClick}
         >
