@@ -71,7 +71,7 @@ Before you begin this process, be sure to check your code and write unit tests w
 
 ## Build
 
-Before deploying a task, you'll need to build it into a single file executable by running `npm webpack`.
+Before deploying a task, you'll need to build it into a single file executable by running `npm run webpack`.
 
 ## Deploy your bundle
 
@@ -103,7 +103,7 @@ If you need to create a Koii wallet you can follow the instructions [here](/quic
 
 To test the task with the [K2 settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
 
-We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/quickstart/command-line-tool/create-task-cli). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm webpack`.
+We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/quickstart/command-line-tool/create-task-cli). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run `.
 
 ## Run a node locally
 
@@ -115,7 +115,7 @@ If you want to get a closer look at the console and test environment variables, 
 
 ### Redeploying
 
-You do not need to publish your task every time you make modifications. You do however need to restart the `task_node` in order for the latest code to be used. To prepare your code you can run `npm webpack` to create the bundle. If you have a `task_node` ruinning already, you can exit it and then run `docker compose up` to restart (or start) the node.
+You do not need to publish your task every time you make modifications. You do however need to restart the `task_node` in order for the latest code to be used. To prepare your code you can run `npm run ` to create the bundle. If you have a `task_node` ruinning already, you can exit it and then run `docker compose up` to restart (or start) the node.
 
 ### Environment variables
 
