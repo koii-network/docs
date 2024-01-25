@@ -131,7 +131,7 @@ The `create-task-cli` is used to register a new task on K2.
 - Run the below command to compile your task code.
 
 ```bash
-npm webpack
+npm run webpack
 ```
 
 - Run the following command in your terminal within the task directory to begin deploying your task;
