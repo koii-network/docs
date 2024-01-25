@@ -19,6 +19,6 @@ The latest Steam daily specials are scraped from [Steam](https://store.steampowe
 
 :::info
 
-You need the task-template repo before you start it. Clone this [repo](https://github.com/koii-network/task-template) and continue. If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us on [Discord](https://discord.gg/koii-network).
+You need the task-template repo before you start it. Clone this [repo](https://github.com/koii-network/task-template) and continue. If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat with us on [Discord](https://discord.com/invite/koii-network).
 
 :::

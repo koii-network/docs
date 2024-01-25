@@ -14,7 +14,7 @@ export const Discord = () => {
           Any questions? Join our Discord.
         </p>
         <a
-          href="https://www.discord.gg/koii"
+          href="https://discord.com/invite/koii"
           className="w-full max-w-[240px] hover:opacity-90"
           target="_blank"
         >
