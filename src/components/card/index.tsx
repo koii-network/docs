@@ -18,7 +18,7 @@ function Card ({title, description, link, linkText, svgName, cardPerRow="3"}:Car
     <a href={link} className={styles.card} style={{width: `calc((100% / ${cardPerRow}) - 20px)`}} target={target}>
          {
           image && (
-            <img src={image} className={styles.cardSvg} role="img" />
+            <img src={image} className={styles.cardSvg}/>
           )
          }
         <div className={styles.textContainer}>
