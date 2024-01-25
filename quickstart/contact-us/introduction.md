@@ -20,7 +20,7 @@ cd contactusTask
 ```
 
 :::tip
-If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.gg/koii-network).
+If you encounter any difficulties, feel free to contact us at [Koii support](https://share.hsforms.com/1Nmy8p6zWSN2J2skJn5EcOQc20dg) or chat us at [Discord](https://discord.com/invite/koii-network).
 :::
 
 Shout out to our amazing developer [@saimiqbal](https://github.com/saimiqbal7) for building this project, you can find the source code to the project [here](https://github.com/saimiqbal7/contactus).

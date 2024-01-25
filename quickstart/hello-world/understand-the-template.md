@@ -73,6 +73,6 @@ By implementing and modifying these methods, we will create a comprehensive and 
 
 :::tip Final Notes
 
-If you encounter any difficulties, feel free to contact us on [Discord](https://discord.gg/koii-network).
+If you encounter any difficulties, feel free to contact us on [Discord](https://discord.com/invite/koii-network).
 
 [^1]: **Namespace**: In programming, a namespace is a container that holds a set of identifiers, such as variable and function names, and allows them to be distinguished from others that might have the same name but are in a different namespace. In this context, it likely refers to a specific set of functions or methods within the task-node that are used for managing the distribution list.

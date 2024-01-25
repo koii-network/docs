@@ -124,4 +124,4 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 
 5. Now, the Koii CLI should work correctly in any new terminal session.
 
-Feel free to [reach out](https://discord.gg/koii-network) if you have any further questions or need assistance.
+Feel free to [reach out](https://discord.com/invite/koii-network) if you have any further questions or need assistance.

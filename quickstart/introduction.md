@@ -10,7 +10,7 @@ sidebar_label: Introduction
 
 Each of the projects publicly released here is designed to tackle a real-life problem and become a foundation for your ideas. You can follow the explanation, clone the repository and start experimenting right away!
 
-If you want your completed projects to be highlighted on our website, feel free to contact us via our [**Discord**](https://www.discord.gg/koii) link.
+If you want your completed projects to be highlighted on our website, feel free to contact us via our [**Discord**](https://discord.com/invite/koii) link.
 
 ## Our templates:
 
