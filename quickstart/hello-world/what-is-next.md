@@ -17,7 +17,7 @@ You can extend your endpoints, add more functionality, and make the application 
 
 In order the understand the user experience better, you can try the <Tooltip text="Koii Node"/> yourself.
 
-We are ready to help on our [Discord](https://discord.gg/koii-network) with any questions you may have. We are also happy to help you with any problems that you might face and provide feedback on your applications!
+We are ready to help on our [Discord](https://discord.com/invite/koii-network) with any questions you may have. We are also happy to help you with any problems that you might face and provide feedback on your applications!
 
 :::tip
 

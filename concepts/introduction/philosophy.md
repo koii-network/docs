@@ -23,7 +23,7 @@ Take an active role in shaping Koii Network's future. Your involvement is vital,
   <Card
     title="<p><strong>Join the Discord</strong></p>"
     description=" <p>Koii's discord is where the community comes to discuss new ideas and recent updates.</p>"
-    link="https://discord.gg/koii-network"
+    link="https://discord.com/invite/koii-network"
     linkText="Sign in Here"
     svgName="discord"
     cardPerRow="3"
