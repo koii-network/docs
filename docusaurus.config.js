@@ -513,6 +513,11 @@ const config = {
             from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
           },
           {
+            to: "/faq/questions",
+            from: "/koii/faq",
+          },
+
+          {
             to: "/koii/ways-to-get-koii/attention-mining",
             from: "/concepts/ways-to-get-koii/attention-mining",
           },
