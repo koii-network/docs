@@ -17,4 +17,4 @@ Now that your task is deployed do you want to run it on the Koii Node App? In or
 - Add to the staking amount
 - Press the triangular play button
 
-Congratulations you made your first task and ran it in the Koii Node app!
+Congratulations you made your first task and ran it in the Koii Node app! 
