@@ -103,7 +103,7 @@ If you need to create a Koii wallet you can follow the instructions [here](/quic
 
 To test the task with the [K2 settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
 
-We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/quickstart/command-line-tool/create-task-cli). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run `.
+We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/quickstart/command-line-tool/create-task-cli). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run webpack`.
 
 ## Run a node locally
 
