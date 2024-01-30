@@ -18,23 +18,27 @@ The purpose of the `validateNode()` method is to verify whether a node has submi
 To update the `validateNode()` method, replace it with the following code block:
 
 ```js
-async validateNode(submission_value, round) {
-    let vote;
-    console.log("SUBMISSION VALUE", submission_value, round);
+  async validateNode(submission_value, round) {
+    // Write your logic for the validation of submission value here and return a boolean value in response
 
+    // The sample logic can be something like mentioned below to validate the submission
+    let vote;
+    console.log('SUBMISSION VALUE', submission_value, round);
     try {
-      if (submission_value == "Hello, World!") {
+      if (submission_value == 'Hello, World!') {
+        // If successful we return true (Means the audited node submission is correct)
         vote = true;
       } else {
+        // If unsuccessful we return false (Means the audited node submission is incorrect)
         vote = false;
       }
     } catch (e) {
       console.error(e);
       vote = false;
     }
-
     return vote;
-}
+  }
+
 ```
 
 ## `auditTask()`
