@@ -68,32 +68,30 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
   d. Paste the copied content into the newly created `helpers.js` file in your task folder.
 
-3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `@spheron/storage` for IPFS interactions.
+  e. Update the `helpers.js` file to use Spheron as shown in our **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)** tutorial.
 
-** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
+3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `@spheron/storage` for IPFS interactions. You should have implemented functions to interact with Spheron in your helpers file.
 
-<!-- ```js title="/task/submission.js"
+```js title="/task/submission.js"
   require("dotenv").config();
   const { namespaceWrapper } = require("../_koiiNode/koiiNode");
   const axios = require("axios");
   const cheerio = require("cheerio");
   const fs = require("fs");
-  const { createFile, deleteFile } = require("../helpers");
-  const { Web3Storage, getFilesFromPath } = require("web3.storage");
-  const storageClient = new Web3Storage({
-    token: process.env.SECRET_WEB3_STORAGE_KEY,
-  });
-  ``` -->
+  const { createFile, deleteFile , makeFileFromObjectWithName, storeFiles} = require("../helpers");
+  ```
 
-  :::caution
-  Ensure you have a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.  Then store it as an environment variable, specifically `SECRET_SPHERON_STORAGE_KEY`, within a `.env` file.
-  :::
+:::warning   Ensure you have a Spheron Key
 
-4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Web.storage and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
+   Either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.  Then store it as an environment variable, specifically `SECRET_SPHERON_STORAGE_KEY`, within a `.env` file.
 
-** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
+:::
 
-<!-- ```js title="/task/submission.js"
+4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Spheron and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
+
+For more details on Spheron see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**
+
+```js title="/task/submission.js"
   // Existing code...
   async function task(round) {
     try {
@@ -118,11 +116,12 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
         if (!fs.existsSync("./Latest_news")) fs.mkdirSync("./Latest_news"); // Create directory if not exists
 
-        await createFile(path, latestNews); // Create file with latest news
+        // Create file with latest news
+        await makeFileFromObjectWithName({blob,'submission.json' }); 
 
-        if (storageClient) {
+        try {
           const file = await getFilesFromPath(path);
-          proof_cid = await storageClient.put(file); // Upload file to IPFS
+          proof_cid = storeFiles(file) // Upload file to IPFS
 
           // Delete the file from filesystem once uploaded to IPFS
           await deleteFile(path);
@@ -130,8 +129,8 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
           // Store value on NeDB
           await namespaceWrapper.storeSet("value", JSON.stringify(proof_cid)); // Store CID
           console.log("LATEST NEWS CID", proof_cid);
-        } else {
-          console.log("NODE DOES NOT HAVE ACCESS TO WEB3.STORAGE");
+        } catch(error) {
+          console.log("ERROR STORING FILE", error);
         }
       }
       return proof_cid; // Return the proof CID
@@ -141,18 +140,16 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
     }
   }
   // Existing code...
-  ``` -->
+  ```
 
 5. **Update Audit Logic:** In the `task/audit.js` file, within the `validateNode()` method, modify the audit condition to accommodate the web scraper's behavior. This involves extracting the stored news data from the CID using the [**`dataFromCid`**](https://github.com/Giftea/web-scraper/blob/main/koii-task/helpers.js#L27) helper function. The validation checks whether the data is not false and has a non-zero length.
 
-** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
-
-<!-- ```js title="/task/audit.js"
+```js title="/task/audit.js"
   // Existing imports...
-  const { dataFromCid } = require('../helpers');
+  const { getJSONFromCID } = require('../helpers');
 
   // Existing code...
-      const output = await dataFromCid(submission_value); // Extract news from CID
+      const output = await getJSONFromCID(submission_value); // Extract news from CID
 
       try {
         if (output !== false && JSON.parse(output).length !==
@@ -164,7 +161,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
           // Existing code...
         }
   // Existing code...
-  ``` -->
+  ```
 
 6. **Validate the Koii Task:** After making these updates, validate the Koii Task by executing `yarn test`. A successful validation will generate output similar to the one shown in the image below:
 
@@ -175,3 +172,11 @@ Congratulations! You've successfully transformed a Node.js application into a Ko
 For access to the source code of both the original Node.js application and the converted Koii Task, visit the [GitHub repository](https://github.com/Giftea/web-scraper).
 
 By following these steps, you've harnessed the benefits of the Koii network's decentralized hosting and incentivization, making your web scraper more cost-effective and secure.
+
+:::warning Older Project Repos still use web3.storage
+
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
+
+For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/questions/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
+
+:::
