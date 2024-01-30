@@ -35,7 +35,7 @@ or
 
 ```bash
 npm install
-npm webpack
+npm run webpack
 npm test
 ```
 
