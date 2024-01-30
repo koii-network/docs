@@ -20,6 +20,7 @@ const { namespaceWrapper } = require('../_koiiNode/koiiNode');
 //   token: process.env.SECRET_WEB3_STORAGE_KEY,
 // });
 const nodeEthAddress = process.env.RECIPIENT_ADDRESS;
+const {makeFileFromObjectWithName, storeFiles} = require("../helpers");
 ```
 
 ### Task Main Logic
@@ -43,7 +44,7 @@ Still in `task/submission.js` file, replace the default `task()` method with the
   
       // Create a File containing the Blob with a specified filename
       // const files = [new File([blob], 'submission.json')];
-      const files = [makeFileFromObjectWithName(blob)]
+      const files = [makeFileFromObjectWithName({blob,'submission.json' })]
       // Upload to IPFS
       //const cid = await storageClient.put(files);
       const cid = storeFiles(files)
