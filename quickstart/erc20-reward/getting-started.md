@@ -13,7 +13,7 @@ Begin by cloning the [Task Template](https://github.com/koii-network/task-templa
 
 ```bash
 yarn
-yarn add web3
+yarn add @spheron/storage
 ```
 
 **2. Set Environment Variables**
@@ -46,36 +46,40 @@ Create a new file named `KToken.json` in the root directory of the project. Copy
 
 **4. Helper Function**
 
-We'll need a helper function to retrieve data from CID, create a new file named `helpers.js` in the root of the task folder and paste the code below:
+We'll need a helper function to retrieve data from CID, create a new file named `helpers.js` in the root of the task folder write a code snippet to retrieve data from the CID.
 
-** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
+```
+const axios = require('axios');
 
-<!-- TODO: Make updated tutorial that uses Spheron, I think the method required is referenced here: https://docs.spheron.network/sdk/storage-v2/#get-upload -->
-<!-- 
-```js title="/helpers.js"
-require("dotenv").config();
-const axios = require("axios");
-const { Web3Storage } = require("web3.storage");
-const storageClient = new Web3Storage({
-  token: process.env.SECRET_WEB3_STORAGE_KEY,
-});
-
-async function retrieveFromCid(cid) {
-  const res = await storageClient.get(cid.replace(/['"]/g, ""));
-
-  if (res?.ok) {
-    const file = await res.files();
-    const url = `https://${file[0].cid}.ipfs.w3s.link/?filename=${file[0].name}`;
-
+const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) => {
+  let url = `https://${cid}.ipfs.dweb.link/${fileName}`;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      const output = await axios.get(url);
-      return output.data;
+      const response = await axios.get(url);
+      if (response.status === 200) {
+        return response.data;
+      } else {
+        console.log(`Attempt ${attempt}: Received status ${response.status}`);
+      }
     } catch (error) {
-      console.log("ERROR", error);
+      console.log(`Attempt ${attempt} failed: ${error.message}`);
+      if (attempt < maxRetries) {
+        console.log(`Waiting for ${retryDelay / 1000} seconds before retrying...`);
+        await sleep(retryDelay);
+      } else {
+        return false;
+      }
     }
-  } else {
-    return false;
   }
 }
-module.exports = { retrieveFromCid };
-``` -->
+```
+
+For more details see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**
+
+:::warning Older Project Repos still use web3.storage
+
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
+
+For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/questions/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
+
+:::
