@@ -24,7 +24,7 @@ For more information on how the task flow works, check out the [runtime environm
 
 - `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/introduction/) to learn more namespace functions.
+- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more namespace functions.
 
 ## Timers
 
