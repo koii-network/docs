@@ -14,7 +14,12 @@
    - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
    - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
    - Add any specific task variables required for the tasks at the end of the file.
-
+   
+   :::info Example
+   After you enter a task Id needs your twitter information, you can add them as environment variables,
+   please add them under the SCRAPING_URL=""
+   for example: TWITTER_USERNAME=""
+   :::
    ---
 
    :::tip Multi-task example
