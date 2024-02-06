@@ -10,19 +10,17 @@ The main function of this task will involve submitting `'Hello, World!'` togethe
 
 ### Update Dependency Imports
 
-** Tutorial being updated to use Spheron, in meantime see [Spheron SDK Docs](https://docs.spheron.network/sdk/storage-v2/) **
-
-<!-- 
 Navigate to the `task/submission.js` file, and update the dependency imports as follows:
 
 ```js title="/task/submission.js"
 require('dotenv').config();
 const { namespaceWrapper } = require('../_koiiNode/koiiNode');
-const { Web3Storage, File } = require('web3.storage');
-const storageClient = new Web3Storage({
-  token: process.env.SECRET_WEB3_STORAGE_KEY,
-});
+//const { Web3Storage, File } = require('web3.storage');
+// const storageClient = new Web3Storage({
+//   token: process.env.SECRET_WEB3_STORAGE_KEY,
+// });
 const nodeEthAddress = process.env.RECIPIENT_ADDRESS;
+const {makeFileFromObjectWithName, storeFiles} = require("../helpers");
 ```
 
 ### Task Main Logic
@@ -45,10 +43,11 @@ Still in `task/submission.js` file, replace the default `task()` method with the
       });
   
       // Create a File containing the Blob with a specified filename
-      const files = [new File([blob], 'submission.json')];
-  
+      // const files = [new File([blob], 'submission.json')];
+      const files = [makeFileFromObjectWithName({blob,'submission.json' })]
       // Upload to IPFS
-      const cid = await storageClient.put(files);
+      //const cid = await storageClient.put(files);
+      const cid = storeFiles(files)
       console.log('stored files with cid:', cid);
   
       // Check if the CID was obtained
@@ -73,5 +72,13 @@ Here's a breakdown of the code's functionality:
 
 - The `submission` object is transformed into a Blob which is then used to create a File named `submission.json`.
 
-- The file is uploaded to IPFS using the `storageClient.put` and the obtained CID is stored using the `namespaceWrapper.storeSet`.
- -->
+- The file is uploaded to IPFS using Spheron and the obtained CID is stored using the `namespaceWrapper.storeSet`.
+
+:::warning Older Project Repos still use web3.storage
+
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
+
+For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/questions/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
+
+:::
+
