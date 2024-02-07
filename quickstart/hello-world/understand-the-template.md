@@ -14,7 +14,7 @@ To begin, clone the task template:
  cd hello-world
 ```
 
-Make sure you have [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed before moving forward.
+Make sure you have [node](https://nodejs.org/en/) and [npm](https://docs.npmjs.com/cli/v8/commands/npm-install/) installed before moving forward.
 
 Next from inside the hello-world folder install the packages using mpm:
 
