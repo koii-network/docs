@@ -73,7 +73,7 @@ You will need your validator keypair to be funded with KOII tokens before contin
 
 Please make sure your `koii` CLI is configured for `testnet` and using your validator identity before continuing:
 
-`koii config set --url https://testnet.koii.live --keypair ~/validator-keypair.json`
+`koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
 
 :::
 
