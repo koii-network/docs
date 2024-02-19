@@ -1,7 +1,25 @@
+---
+title: VPS Tutorial
+description: Running on VPS
+sidebar_label: VPS Tutorial
+---
 
-### Setting Up the Environment on VPS
+import ReactPlayer from "react-player";
 
-1. **Clone the Task-Template Repository**:
+:::info Coming Soon
+Our internal VPS tutorial is in the process of being updated, in the meantime we have some great community tutorial videos we want to highlight!
+:::
+
+### How to launch Koii Network Task Node on VPS
+[by C-Diamond](https://www.youtube.com/@c-diamond/videos)
+<ReactPlayer width="100%" alt="youtube video embed by C-Diamond" controls url="https://youtu.be/fkcl98CYXWU?si=GGBxxkCY9RBVo1X4" />
+
+### Complete Guide to Setting Up a Koii Node on a Debian VPS: From Zero to Earning Rewards
+[by Pewd_Crypto](https://www.youtube.com/@pewdcrypto3985/videos)
+<ReactPlayer width="100%" alt="youtube video embed by Pewd_Crypto" controls url="https://youtu.be/h9LkcSo29IA?si=rWZYygrQd0UZMUIJ" />
+
+
+<!-- 1. **Clone the Task-Template Repository**:
    ```bash
    git clone https://github.com/koii-network/VPS-task
    cd VPS-task
@@ -102,4 +120,4 @@ you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
    - Claim reward  
    - Fund task with more KOII  
    - Withdraw staked funds from task  
-   - upload assets to IPFS(metadata/local vars)
+   - upload assets to IPFS(metadata/local vars) -->
