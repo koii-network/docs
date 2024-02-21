@@ -47,7 +47,7 @@ If you are interested in gaining an in-depth understanding of the task developme
 
 Nodes are people using their computers to create a world-wide network of servers. You can pay them with KOII in order to incentivize them to run your application on their own machines.
 
-In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
+In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help host your application. You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
 ![banner](../img/nodesandtasks.svg)
 
