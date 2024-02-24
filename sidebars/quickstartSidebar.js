@@ -74,7 +74,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Twitter Crawler",
+      label: "Crawler with Login",
       items: [
         "crawler/introduction",
         "crawler/using",
