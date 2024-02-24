@@ -23,7 +23,7 @@ Thanks to the growth and adoption of AI, data on the web is now more precious th
 
 Web platforms are incentivized to restrict data, as API costs rise, so does the value of the data. In contrast, a decentralized data market like Koii **becomes more affordable with increased competition.**
 
-One of our example template tasks is a [Twitter Crawler](/quickstart/crawler/introduction) that uses nodes to efficiently crawl Twitter Data. As an example, we have improved the crawler to function as a [**full-featured Twitter API alternative**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate Twitter replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
+One of our example template tasks is a [Crawler](/quickstart/crawler/introduction) that uses nodes to efficiently crawl public websites. As an example, we have improved the crawler to function as a [**community data feed for X**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
 
 1. **Gather Data from any Website using Koii.**
 2. **Put that Information on a Database.**
@@ -31,28 +31,28 @@ One of our example template tasks is a [Twitter Crawler](/quickstart/crawler/int
 
 ## **Features**
 
-Koii Network's **Twitter Crawler** uses community devices to efficiently crawl tweets with speed and flexibility. While this doesn’t expose private information, it allows crowdsourced data projects to **bypass the limitations of traditional Twitter API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
+Koii Network's **community data feeds** uses community devices to efficiently crawl tweets with speed and flexibility. While this doesn’t expose private information, it allows crowdsourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
 
 | Feature                                           | Koii Data Aggregator |
 |---------------------------------------------------|:--------------------:|
-| Working Twitter Search                            | ✔️  Yes              |
-| No Proxy Required                                 | ✔️  Yes              |
-| Reply to Tweets                                   | ✔️  Yes              |
-| Follow Accounts                                   | ✔️  Yes              |
-| Tweets Per Hour                                   | 2000 Tweets          |
+| Working Search                                    | ✔️  Yes               |
+| No Proxy Required                                 | ✔️  Yes               | 
+| Reply to Tweets                                   | ✔️  Yes               |
+| Follow Accounts                                   | ✔️  Yes               |
+| Tweets Per Hour                                   | 2000 Queries         |
 | Search Data Range                                 |  Unlimited           |
-| Advanced Search                                   | ✔️  Yes              |
-| Engagement Filter                                 | ✔️  Yes              |
-| Date Filter                                       | ✔️  Yes              |
-| Profile Filter                                    | ✔️  Yes              |
-| Link, Video, Image Filters                        | ✔️  Yes              |
-| Exclude Retweets                                  | ✔️  Yes              |
+| Advanced Search                                   | ✔️  Yes               |
+| Engagement Filter                                 | ✔️  Yes               |
+| Date Filter                                       | ✔️  Yes               |
+| Profile Filter                                    | ✔️  Yes               |
+| Link, Video, Image Filters                        | ✔️  Yes               |
+| Exclude Retweets                                  | ✔️  Yes               |
 
 
-- **Cost Savings:** Centralized API prices rise with data's value, while our decentralized approach becomes more affordable with more nodes, avoiding large Twitter API costs.
+- **Cost Savings:** Centralized API prices rise with data's value, while our decentralized approach becomes more affordable with more nodes, avoiding large API costs.
 - **Large Data:** With Koii, you can gather more tweets more often. No rate-limits and **ALL** the data available **NOT** just what the API provides.
 - **Relevant Data:** Only gather what you need. By [setting your requirements](/compute/aggregator/advancedsearch), you ensure only relevant data is fetched, improving the efficiency of your compute tasks. Community nodes only receive incentives if the tweets they submit match your specifications (i.e. tweets since 09/01/2023, containing `"#elon_musk_is_cool"`)
-- **Filter by Engagement:** Users can filter tweets based on a threshold of likes, retweets, or replies, which the Twitter API does not support.
+- **Filter by Engagement:** Users can filter tweets based on a threshold of likes, retweets, or replies, which the traditional APIs may not support.
 
 :::info Coming Soon
 Support for Reddit and Facebook.

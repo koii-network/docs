@@ -42,7 +42,7 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 #### `setAdapter()`
 - **Parameters**: None
 - **Returns**: None
-- Initializes Twitter credentials for the adapter.
+- Initializes credentials for the adapter.
 
 #### `updateRound()`
 - **Parameters**: None
@@ -57,7 +57,7 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 #### `stop()`
 - **Parameters**: None
 - **Returns**: None
-- Stops the Twitter crawler.
+- Stops the crawler.
 
 #### `getRoundCID(roundID)`
 - **Parameters**: 
@@ -78,7 +78,7 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 - **Cheerio**: For parsing HTML content.
 - **Axios**: For making HTTP requests.
 - **Spheron**: For interacting with IPFS.
-- **Twitter Adapter** (`./adapters/twitter/twitter.js`): To authenticate and crawl Twitter.
+- **Adapter** (`./adapters/twitter/twitter.js`): To authenticate and crawl the particular source.
 - **Database Helper** (`./helpers/db`): To populate the database with crawl results.
 - **Data Model** (`./model/data`): Model for the data.
 - **.env** (`dotenv`): To load environment variables.

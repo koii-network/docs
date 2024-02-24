@@ -34,7 +34,7 @@ Our internal VPS tutorial is in the process of being updated, in the meantime we
    - Add any specific task variables required for the tasks at the end of the file.
    
    :::info Example
-   After you enter a task Id needs your twitter information, you can add them as environment variables,
+   After you enter a task Id needs your information, you can add them as environment variables,
    please add them under the SCRAPING_URL=""
    for example: TWITTER_USERNAME=""
    :::
