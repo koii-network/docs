@@ -21,7 +21,7 @@ Improve your search query with a wide variety of parameters to only get the data
    - Tweets containing links: `#web3 filter:links`
 
 4. **Engagement Threshold**:
-   - While the Twitter API doesn’t provide filtering by engagement, with the Twitter Crawler you can filter tweets based on a threshold of likes, retweets, or replies.
+   - While APIs like Twitter don't provide filtering by engagement, with community data feeds you can filter tweets based on a threshold of likes, retweets, or replies.
 
 5. **Date Filters**:
    - Tweets sent before a date: `#web3 until:2023-09-01`

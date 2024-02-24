@@ -6,7 +6,7 @@ sidebar_label: The Task Structure & Final Steps
 
 ### **Overview:**
 
-The `TwitterTask` class,found in `twitter-task.js` provides functionality to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
+The `TwitterTask` class,found in `twitter-task.js` provides functionality for non-profits to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
 
 :::tip
 Edit `searchTerm` (defaulted to 'Web3') to customize your crawler.
@@ -28,11 +28,11 @@ Updates the current round. If more than one minute has passed since the last rou
 
 #### 3. **start()**
 
-Initializes the Twitter adapter and starts the Twitter Crawler.
+Initializes the adapter and starts the Crawler.
 
 #### 4. **stop()**
 
-Stops the Twitter Crawler.
+Stops the Crawler.
 
 #### 5. **getRoundCID(roundID)**
 
@@ -70,13 +70,13 @@ Fetches the JSON data from a CID.
 
 ### **Implementation Details:**
 
-- The Twitter adapter takes the environment variables `TWITTER_USERNAME` and `TWITTER_PASSWORD` to authenticate the Twitter session.
+- The adapter takes the environment variables `TWITTER_USERNAME` and `TWITTER_PASSWORD` to authenticate a login session.
 
-- To validate a round of results from another node, the class retrieves the data from the provided CID. It then performs a random check on a predefined threshold of the records against the actual Twitter content. If any check fails, the validation returns `false`. We are using this for our audit step.
+- To validate a round of results from another node, the class retrieves the data from the provided CID. It then performs a random check on a predefined threshold of the records against the actual content. If any check fails, the validation returns `false`. We are using this for our audit step.
 
 ### **Dependencies:**
 
-- Twitter Adapter (`./adapters/twitter/twitter.js`): To authenticate and crawl Twitter.
+- Adapter (`./adapters/twitter/twitter.js`): To authenticate and crawl the site.
 - Database Helper (`./helpers/db`): To populate the database with crawl results.
 - Spheron (`@spheron/storage`): To retrieve and manage CIDs.
 - Data Model (`./model/data`): Model for the data.

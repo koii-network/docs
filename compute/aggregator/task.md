@@ -6,7 +6,7 @@ sidebar_label: Creating the Task
 
 ## Introduction
 
-Lets learn how to create a **Twitter Crawler Task**. This powerful tool allows you to gather Twitter data based on specific queries, populate a database, and validate the data.
+Lets learn how to create a **Crawler Task**. This powerful tool allows you to gather data based on specific queries, populate a database, and validate the data.
 
 ---
 
@@ -14,7 +14,7 @@ Lets learn how to create a **Twitter Crawler Task**. This powerful tool allows y
 
 ### Basic Configuration
 
-The `query` object is your key to customizing the data you receive from Twitter. Here's a basic example:
+The `query` object is your key to customizing the data you receive from the source website. Here's a basic example:
 
 ```javascript
 let searchTerm = "#koii";
@@ -32,7 +32,7 @@ let query = {
 #### Parameters Explained
 
 - `limit`: Total number of records to return.
-- `searchTerm`: The keyword to look for on Twitter.
+- `searchTerm`: The keyword to look for.
 - `query`: The complete query URL, including the search term.
 - `depth`: The depth of recursive layers to follow.
 - `recursive`: Whether to descend recursively through layers.
@@ -61,7 +61,7 @@ To offer your query as a task that others can run, you can configure its propert
 ## Environment Variables
 
 :::info
-The Twitter Crawler application requires you to have a requires you to have a [Twitter Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
+The Crawler application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
 :::
 
 ### Where to Declare
@@ -78,7 +78,7 @@ _A Spheron Storage Token is required from the task-runner as it is used to uploa
 
 ## Creating and Deploying a Task
 
-To ensure your Twitter Crawler task is deployment-ready, follow the steps below:
+To ensure your Crawler task is deployment-ready, follow the steps below:
 
 ### 1. **Preparation: Webpack Conversion**
 
