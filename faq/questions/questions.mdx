@@ -155,6 +155,13 @@ If you're having trouble locating or restarting the node, it's
 important to note that the node **may be minimized**. Please **check your system tray** or similar areas where minimized applications are displayed. You'll likely find the node there, and you can close it from that location. Once closed, 
 you should be able to restart the node without any issues. This step ensures that you regain control over the node's operation.
 
+## Q: What should I do if I facing  an RPC request error shows like this?
+```
+Error: RPC request error: cluster version query failed: error sending request for url (https://k2-testnet.koii.live/): error trying to connect: tcp connect error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060)
+```
+
+**Solution:** please type in this:  
+```koii config set -- url https://testnet.koii.live```
 
 <!--Keep this section in the very last please-->
  ## Warning 
