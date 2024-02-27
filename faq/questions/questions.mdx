@@ -41,7 +41,7 @@ The Tasks status is listed in My Node page. If the task is shown as "Error" and 
 
 ## Q: How to withdraw KOII tokens?
 
-After running the task, you will earn your first reward after 10 - 30 minutes. Then you can withdraw your KOII tokens **by clicking the "Claim Rewards" button**. The longer you run the task, the more KOII tokens you will earn. **You can withdraw your KOII tokens at any time**.
+After running the task, you will earn your first reward after **10 - 30 minutes**. Then you can withdraw your KOII tokens **by clicking the "Claim Rewards" button**. The longer you run the task, the more KOII tokens you will earn. **You can withdraw your KOII tokens at any time**.
 
 <ReactPlayer width="100%" controls url="https://youtu.be/dgUuOoSZ2Ds" />
 
@@ -49,7 +49,7 @@ After running the task, you will earn your first reward after 10 - 30 minutes. T
 
 1. **Setting up a new account** and generating a new key will be the **easiest** way, then you can switch back to using your newly generated key for your previous account.
 
-2. Also, you can easily **transfer** your KOII tokens from your Koii node application to your Finnie wallet. And then transfer them to your new account and keep mining.
+2. Also, you can easily **transfer** your KOII tokens from your Koii node application to your Finnie wallet. And **then transfer them to your new account** and keep mining.
 
 3. Additionally, they can **follow this tutorial**: [Click Here](https://docs.spheron.network/rest-api/#creating-an-access-token) to get a new one and manually insert it.
 
@@ -72,7 +72,7 @@ It varies on the amount of data you will hold, so if you are running more tasks,
 
 ## Q: Why don’t I have permission to check the main.log when an error occurred in my task? How to fix it?
 
-It should be the permission issue, try running it as **Administrator** and try again.
+It should be the **permission** issue, try running it as **Administrator** and try again.
 
 ## Q: I have an issue with my KOII stuck in the stake box, they can neither take it back nor use them to run the task. What should I do?
 
@@ -105,23 +105,23 @@ Please open an **incognito** window, go to twitter login page and use your usern
 
 ## Q: Will the mainnet token will be distributed 1:1 for node runners?
 
-Yes, the only exception is in cases where fraud or other nefarious activity is detected.
+**Yes**, the only exception is in cases where fraud or other nefarious activity is detected.
 
 ## Q: I changed computer, can I sync my old Koii node with my new Koii nodes?
 
 **On VPS**: We don't have the support as of now for the seeds of staking_wallet (Will add in future).  
-**On PC**: What you should have done is backup the private key of staking_wallet which is found under <path_to_k2_vps_repo>/namespace/staking_wallet.json and as for the main wallet that is the one created using koii-keygen
+**On PC**: What you should have done is **backup the private key of staking_wallet** which is found under <path_to_k2_vps_repo>/namespace/staking_wallet.json and as for the main wallet that is the one created using koii-keygen
 (Also outputs the seed phrase for you to store) and can be found under koii config get command KeyPair Path.
 
 ## Q: Where do I find my Spheron Key after it's set up?
 
-You can find your storage key here:
+You can find your **storage key** here:
 
 <ReactPlayer width="100%" controls url="https://www.youtube.com/watch?v=1QVket3Mjzo" />
 
 ## Q: I do not having enough KOII for gas fees when staking full numbers.
 
-**Reserve Tokens for Gas Fees**: Before staking all your KOII tokens, ensure you reserve a small portion of them to cover the gas fees. 
+**Reserve Tokens for Gas Fees**: Before staking all your KOII tokens, ensure you **reserve a small portion of them** to cover the gas fees. 
 
 **Acquire Additional KOII**: You can acquire additional KOII tokens to cover the gas fees. Please reserve at least 7 KOII in you staking key
 
@@ -132,11 +132,11 @@ You can find your storage key here:
 
 The web3.storage did an upgrade and **no longer has the free tier** which means you will need to have a credit card in order to have a web3.storage key.
 
-So we did a partnership with Spheron to allow users to have easy one click integration without requiring any credit card.
+So we did a partnership with **Spheron** to allow users to have easy one click integration without requiring any credit card.
 
 ## Q: I have a problem when I claim the rewards.
 
-So far all the problems here are visual, please **wait a while** after clicking to claim reward and **then refreshing** will solve the problem. 
+Please **wait a while** after clicking "claim reward" button and **then refreshing** will solve the problem. 
 
 ## Q: If I stake more on tasks do I get bigger rewards?
 
@@ -155,6 +155,13 @@ If you're having trouble locating or restarting the node, it's
 important to note that the node **may be minimized**. Please **check your system tray** or similar areas where minimized applications are displayed. You'll likely find the node there, and you can close it from that location. Once closed, 
 you should be able to restart the node without any issues. This step ensures that you regain control over the node's operation.
 
+## Q: What should I do if I facing  an RPC request error shows like this?
+```
+Error: RPC request error: cluster version query failed: error sending request for url (https://k2-testnet.koii.live/): error trying to connect: tcp connect error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060)
+```
+
+**Solution:** please type in this:  
+```koii config set -- url https://testnet.koii.live```
 
 ## Q: What should I do if I meet this Javascript error?
 
