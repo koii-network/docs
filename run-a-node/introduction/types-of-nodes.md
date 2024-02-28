@@ -13,7 +13,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 By choosing to do so, on top of helping developers all kinds of projects, you also will gain rewards in the form of KOII tokens Alternatively, if you have a relatively powerful machine, you can convert it to become a <Tooltip text="K2 Validator"/> which tracks the settlement layer.
 
-:::tip
+:::tip 
 As an early adopter, the amount of KOII tokens you will get will be much higher. We are also incentivizing running a node by giving extra rewards via <Tooltip text="Koii Leaderboard"/>.
 :::
 Interested? You can try out the Task Node by downloading the <Tooltip text="Koii Node"/> and following our [tutorial](/run-a-node/task-nodes/how-to-run-a-koii-node).
