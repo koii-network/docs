@@ -17,6 +17,6 @@ The <Tooltip text="Koii Foundation"/> is dedicated to providing developers with 
 
 Each time that a new project launches on Koii, a bounty must be locked to pay for hosting from Koii’s compute marketplace, which removes tokens from the circulating supply. Additionally, each time that a new node joins the task, it must stake tokens as collateral, locking up further supply.&#x20;
 
-![Supply Reduction]
+![Supply Reduction](img/Supply%20Reduction%202%402x.svg)
 
 At a steady state, the network is designed to lock up tokens in staking and bounties, exceeding those released by inflation, which should reduce the available supply over time.
