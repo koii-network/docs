@@ -120,7 +120,7 @@ RUN_NON_WHITELISTED_TASKS=true
 INITIAL_STAKING_WALLET_BALANCE=10
 
 # environment
-ENVIRONMENT="development"
+ENVIRONMENT="DEVELOPMENT"
 
 # Location of K2 node
 K2_NODE_URL="https://testnet.koii.live"
@@ -134,7 +134,7 @@ TASK_STAKES=5
 
 # User can enter as many environment variables as they like below. These can be task
 # specific variables that are needed for the task to perform it's job. Some examples:
-WEB3_STORAGE_KEY=""
+SPHERON_STORAGE_KEY=""
 SCRAPING_URL=""
 
 ```
@@ -176,13 +176,13 @@ It will shows "Error: Dynamic program error: No default signer found, run "koii-
 
 **After setting up config variables, the KOII CLI and funding your Koii wallet**, follow the steps below to create and register your task on K2:
 
-- Run the below command to compile your task code.
+- Run the below command to compile your task code:
 
 ```bash
 npm run webpack
 ```
 
-- Run the following command in your terminal within the task directory to begin deploying your task;
+- Run the following command in your terminal within the task directory to begin deploying your task:
 
 ```bash
 npx @_koii/create-task-cli@latest
@@ -204,8 +204,8 @@ Don't have a Koii wallet yet? Check [here](/develop/command-line-tool/koii-cli/c
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
-❯   Create a new task
-    update existing task
+    Create a new task
+❯   update existing task
     Activate/Deactivate task
     Claim reward
     Fund task with more KOII

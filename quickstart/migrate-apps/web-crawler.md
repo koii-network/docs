@@ -89,7 +89,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Spheron and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
-For more details on Spheron see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**
+For more details on Spheron see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**.
 
 ```js title="/task/submission.js"
   // Existing code...

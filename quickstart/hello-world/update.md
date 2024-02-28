@@ -84,13 +84,13 @@ requirementsTags:
     value: "OSX"
 ```
 
-- After updating your code and `config-task.yml`, run the below command to compile your task code.
+- After updating your code and `config-task.yml`, run the below command to compile your task code:
 
 ```bash
 npm run webpack
 ```
 
-- Run the following command in your terminal within the task directory to begin deploying your task;
+- Run the following command in your terminal within the task directory to begin deploying your task:
 
 ```bash
 npx @_koii/create-task-cli@latest
