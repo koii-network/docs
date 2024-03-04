@@ -208,3 +208,68 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Navbar Fix */
+
+@media screen and (min-width: 997px) and (max-width: 1336px) {
+  .navbar__items a, .navbar__brand {
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 0 10px; /* Adjust spacing around navbar items */
+  }
+
+  .navbar__logo img {
+    width: 1.8rem; /* Optionally adjust the logo size for consistency */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding-left: 0rem;
+  }
+
+  .header-text {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 997px) and (max-width: 1200px) {
+  .navbar__title.text--truncate {
+    display: none; /* Hide the navbar title elements */
+  }
+}
+
+/* Existing CSS rules */
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding-left: 0rem;
+  }
+
+  .header-text {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}
