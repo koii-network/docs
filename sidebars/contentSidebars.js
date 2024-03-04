@@ -33,6 +33,15 @@ const sidebars = {
 
     {
       type: "html",
+      value: "What are Koii Nodes?",
+      className: "sidebar-title",
+    },
+    "what-are-koii-nodes/introduction",
+    "what-are-koii-nodes/koii-node-app",
+    "what-are-koii-nodes/get-started",
+
+    {
+      type: "html",
       value: "What are Tasks?",
       className: "sidebar-title top-margin",
     },
