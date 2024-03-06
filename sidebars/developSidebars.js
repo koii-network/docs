@@ -17,6 +17,13 @@ const sidebars = {
   content: [
     {
       type: "html",
+      value: "Welcome",
+      className: "sidebar-title top-margin",
+    },
+    "onboarding/welcome-to-koii",
+    
+    {
+      type: "html",
       value: "Task Development Guide",
       className: "sidebar-title top-margin",
     },
