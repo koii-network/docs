@@ -107,7 +107,7 @@ Delegate the stake to the validator using the staking account and validator's id
 koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
 ```
 
-Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address. That address can be found using the `koii validator-info get` command.
+To get your validator identity id and more details, please use the `koii validator-info get` command.
 
 ## Step 5: Enable and Start the Koii Validator Service
 
