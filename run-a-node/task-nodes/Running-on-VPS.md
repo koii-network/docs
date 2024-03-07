@@ -84,6 +84,42 @@ Ctrl +S = Save
 Ctrl +X = Exit
 ```
 
+4. **Install dependencies**
+ - Ensure Koii CLI is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
+
+ - Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
+
+```bath
+koii balance
+```
+
+It will show: "Error: Dynamic program error: No default signer found, run "koii-keygen new -o ....." to create a new one" Please copy the command from the "" which is automatically generated path, as that will set the wallet keys in correct place.
+
+```bath
+koii-keygen new -o /YOUR-USER/.config/koii/id.json
+```
+
+To improve security, system want you to set up BIP39 Passphrase - additional layer for securing your account, please fill it in. **SAVE the generated SEED PHRASE in order for you to recover your funds later!**
+
+Check what is your Wallet address and Transfer some KOII in it! at least 4 KOII to launch your first Free Token Task
+
+```bash
+koii address
+```
+
+For getting started Koii Foundation have created a Koii Faucet in order to receive first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
+
+- **Installing Docker**
+
+```bash
+sudo apt install docker
+```
+```bash
+sudo apt install docker-compose
+```
+
+
+
 
 
 ### How to launch Koii Network Task Node on VPS
