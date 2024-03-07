@@ -19,7 +19,7 @@ We provide `create-task-cli` tool for task creators to easily:
 - Withdraw staked funds from a task
 - Upload assets to IPFS
 
-![Image](../img/update_dev_task.svg)
+![Image](../img/spheron-key.svg)
 
 To get started with the installation process and its usage, follow the steps provided below:
 
