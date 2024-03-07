@@ -10,6 +10,12 @@ import Tooltip from "@site/src/components/tooltip";
 
 # System Requirements
 
+:::warning
+
+Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
+
+:::
+
 <Description
   text="This section gives an overview on the minimum requirement to run a K2 Validator"
 />
