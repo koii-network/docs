@@ -18,5 +18,3 @@ While CPUs can handle machine learning tasks, they are typically less efficient 
 
 However, if a significant number of CPUs are available, employing them in a distributed manner allows for parallelizing
 specific computations, leading to faster training processes. Techniques such as data parallelism and model parallelism can be utilized to distribute the workload across CPUs.
-
-Checkout how we tackle this problem in our [Federated Learning](/concepts/crowdai/federated-learning) section.
