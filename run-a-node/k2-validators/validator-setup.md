@@ -8,6 +8,12 @@ sidebar_label: Validator Setup
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
+:::warning
+
+Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
+
+:::
+
 # Validator Setup
 
 The following guide describes how to setup a validator on Ubuntu.
@@ -71,7 +77,7 @@ You will need your validator keypair to be funded with KOII tokens before contin
 :::
 :::warning
 
-Please make sure your `koii` CLI is configured for `testnet` and using your validator identity before continuing:
+Please make sure your `koii` CLI is configured for `testnet.koiinetwork` and using your validator identity before continuing:
 
 `koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
 
