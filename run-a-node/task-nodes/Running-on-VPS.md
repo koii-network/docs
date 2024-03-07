@@ -254,6 +254,36 @@ stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
 HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
 /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
 
+## Example how to Unstake from the "Free Token Task!"
+
+```
+1. Calling Withdraw staked funds from task
+✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
+✔ Enter the submitter wallet path address … /home/koii/koii-node/namespace/staking_wallet.json
+
+Gives error but don't worry, follow on with next step ->
+
+2.Calling ClaimReward
+✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
+✔ Enter the stakePotAccount address … stakepotaccountUSDX2sDSAcq8ZEvA3Tiv7tRpJ1Dv
+✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … HERE_YOUR_WALLET_PUBLIC_ADDRESS
+✔ Enter the path to Claimer wallet … /home/koii/koii-node/namespace/staking_wallet.json
+Success
+```
+
+4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
+stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
+HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
+/home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
+
+
+
+
+
+
+
+
+
 
 
 
