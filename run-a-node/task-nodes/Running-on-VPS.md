@@ -17,9 +17,23 @@ If you decide running a node on VPS isn't for you there are other options availa
 ## Operating System
 Using Ubuntu Server 20.04.xx LTS is highly recommended for running Koii Nodes due to its stability and compatibility. The acronym LTS stands for "Long Term Support" which signifies that Ubuntu will provide updates and patches for this operating system until 2030.
 
+## Koii Node Installation   
+**Connect with SSH**
 
+If you are renting a server or need to connect to your home-hosted server remotely, you will require an SSH client or terminal to communicate with your Koii node. If you have a preferred terminal please use that. Otherwise, Windows Command Prompt or the built-in terminal for MacOS and Linux users can be used. Putty is a free SSH client available for Windows users who prefer a graphical interface, it can be downloaded from [Here](www.putty.org). To establish a remote connection to your Koii node, you will utilize SSH, also known as Secure Shell. This enables two computers to communicate over the internet. Initially, you will require your Koii node's IP address: If you are hosting from home, this will be your public IP address. If you are renting a server, your provider will give you an IP address.
 
+We will begin by connecting as the root user, although some server providers may use ubuntu or admin instead.
 
+To connect to your server, type the following command in your SSH client and then enter your server's password when prompted (replacing 11.111.11.11 with your server's IP address):
+
+```
+ssh root@11.111.11.11
+```
+Once you have successfully logged in, you will be presented with a command line that appears similar to:
+
+```
+root@servername:~$ 
+```
 
 
 
