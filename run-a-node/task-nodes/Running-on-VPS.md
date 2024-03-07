@@ -277,6 +277,48 @@ HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the clai
 /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
 
 
+## Additional way to claim rewards using Koii_claimer:
+
+In order to have an semi-automatic way to claim $KOII rewards, first need to get perequisites which has to be stored in your server for Koii CLaimer to function.
+
+```bash
+git clone https://github.com/eviangel/Koii_claimer
+
+```
+
+Then we enter that exact directory where the installation files can be found.
+```bash
+cd Koii_claimer
+```
+
+Then we need to create json file that contains the task configurations in order to claim rewards correctly
+
+```bash
+nano params.json
+```
+
+This will create a json file now you need to fill in some information for example:
+
+```bash
+{"taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
+
+"stakePotAccount": "stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ",
+
+"beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
+
+"claimerKeypairPath": "VPS-task/namespace/staking_wallet.json"}
+```
+
+Please change the beneficiaryAccount here to make it your wallet public address.
+
+Then all you need is to call :
+
+
+```bash
+npx koii_claimrewards@latest params.json
+```
+
+
 
 
 
