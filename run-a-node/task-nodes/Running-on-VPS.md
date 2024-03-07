@@ -318,14 +318,26 @@ Then all you need is to call :
 npx koii_claimrewards@latest params.json
 ```
 
+## Additional helpful commands you should know
 
+```bash
+koii -u https://testnet.koii.live balance
+koii --version
+koii address
+koii-keygen pubkey staking_wallet.json /or/ id.json
+```
 
+If you encounter after server restart that your "koii" commands is not working, you should set PATH again in order to fully functioning KOII CLI!
 
+```bash
+export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check verify what is your correct path in certain server!
+```
 
+Feel free to reach out to us in [Discord](https://discord.gg/koii-network) if you have any further questions or need assistance.
 
+Thing to note: You should always have to keep your Staking_Public_Key balance filled.
 
-
-
+**Full list of Tasks can be found [here](https://docs.koii.network/faq/pagethree/#full-list-of-tasks-for-vps)**
 
 
 
