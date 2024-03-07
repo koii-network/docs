@@ -47,7 +47,7 @@ root@servername:~$
 
 1. **Install OS Updates**
 
-Before deploying Koii Node on your server you should install the most recent updates and security patches for your operating system. To accomplish this, use your terminal to execute the following command:
+Before deploying Koii Node on your server you should **install the most recent updates and security patches for your operating system**. To accomplish this, use your terminal to execute the following command:
 
 ```bash
 sudo apt update && sudo apt dist-upgrade -y
