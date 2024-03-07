@@ -79,7 +79,7 @@ nano .env-local
 
 Set `ENVIRONMENT` to `"production"`
 
-Update the `TASKS` field with the task IDs you want to run, seperataed by commas, no space between! Full list of Tasks and their details (i.e. min stakes) found here.
+Update the `TASKS` field with the task IDs you want to run, **seperataed by commas, no space between!** Full list of Tasks and their details (i.e. min stakes) found here.
 
 Update `TASK_STAKES` field with the minimum or greater stake amounts corresponding to each task in TASKS, seperated by commas.
 
