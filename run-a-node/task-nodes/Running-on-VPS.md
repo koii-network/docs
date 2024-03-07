@@ -89,6 +89,16 @@ Ctrl +X = Exit
 
  - Wallet setup (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
 
+:::tip
+Don't forget to run this after installed Cli
+```bash
+koii config set --url https://testnet.koii.live
+```
+:::
+
+
+
+
 ```bath
 koii balance
 ```
@@ -100,6 +110,7 @@ koii-keygen new -o /YOUR-USER/.config/koii/id.json
 ```
 
 To improve security, system want you to set up BIP39 Passphrase - additional layer for securing your account, please fill it in. **SAVE the generated SEED PHRASE in order for you to recover your funds later!**
+
 
 Check what is your Wallet address and Transfer some KOII in it! at least 4 KOII to launch your first Free Token Task
 
@@ -132,12 +143,7 @@ If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify
 ```bash
 docker-compose --version
 ```
-:::
 
-
-
-
-:::tip
 If you have version below 1.29, please execute next commands:
 
 ```bash
@@ -199,7 +205,38 @@ task_node  | getTaskLevelDBPath
 
 It is success!
 
+## How to interact now with the running Node?
 
+1. Install dependencies (NodeJS + NPM)
+
+```bash
+sudo apt install npm
+```
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g npm@latest
+```
+
+Execute the command 'create-task-cli' and you will see an interactive menu
+
+
+```bash
+npx @_koii/create-task-cli@latest
+
+```
+
+```
+? Select operation › - Use arrow-keys. Return to submit.
+❯   Create a new task
+    update existing task
+    Activate/Deactivate task
+    Claim reward
+    Fund task with more KOII
+    Withdraw staked funds from task
+    upload assets to IPFS(metadata/local vars)
+```
 
 
 
