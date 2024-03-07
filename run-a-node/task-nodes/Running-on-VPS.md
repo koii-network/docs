@@ -81,7 +81,7 @@ Set `ENVIRONMENT` to `"production"`
 
 Update the `TASKS` field with the task IDs you want to run, **seperataed by commas, no space between!** Full list of Tasks and their details (i.e. min stakes) found here.
 
-Update `TASK_STAKES` field with the minimum or greater stake amounts corresponding to each task in TASKS, seperated by commas.
+Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, seperated by commas.
 
 Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staking wallet. This should be greater than the SUM of all `TASK_STAKES` + 1 KOII for covering gas.
 
