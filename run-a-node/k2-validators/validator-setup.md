@@ -8,6 +8,12 @@ sidebar_label: Validator Setup
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
+:::warning
+
+Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
+
+:::
+
 # Validator Setup
 
 The following guide describes how to setup a validator on Ubuntu.
@@ -71,7 +77,7 @@ You will need your validator keypair to be funded with KOII tokens before contin
 :::
 :::warning
 
-Please make sure your `koii` CLI is configured for `testnet` and using your validator identity before continuing:
+Please make sure your `koii` CLI is configured for `testnet.koiinetwork` and using your validator identity before continuing:
 
 `koii config set --url https://testnet.koii.network --keypair ~/validator-keypair.json`
 
@@ -107,7 +113,7 @@ Delegate the stake to the validator using the staking account and validator's id
 koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
 ```
 
-Replace `<VALIDATOR_VOTE_ACCOUNT_ADDRESS>` with the validator's public address. That address can be found using the `koii validator-info get` command.
+To get your validator identity id and more details, please use the `koii validator-info get` command.
 
 ## Step 5: Enable and Start the Koii Validator Service
 
