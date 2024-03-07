@@ -14,6 +14,9 @@ Make sure your hardware and internet speeds meet the minimum requirements for a 
 
 If you decide running a node on VPS isn't for you there are other options available, like Dekstop version. Go to our website where you will be able to download [Desktop Node](https://www.koii.network/node)
 
+## Operating System
+Using Ubuntu Server 20.04.xx LTS is highly recommended for running Koii Nodes due to its stability and compatibility. The acronym LTS stands for "Long Term Support" which signifies that Ubuntu will provide updates and patches for this operating system until 2030.
+
 
 
 
