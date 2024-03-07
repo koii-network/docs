@@ -6,9 +6,22 @@ sidebar_label: VPS Tutorial
 
 import ReactPlayer from "react-player";
 
-:::info Coming Soon
-Our internal VPS tutorial is in the process of being updated, in the meantime we have some great community tutorial videos we want to highlight!
-:::
+
+## Before you start
+Setting up and maintaining a Koii Node requires a basic level of technical knowledge, basic experience with Linux is advisable. Anyway we will guide you through the entire process step-by-step, in case you will encounter some obstacles please reach out to **#node-vps channel** in our [Discord](https://discord.gg/koii-network).
+
+Make sure your hardware and internet speeds meet the minimum requirements for a Koii Node which are very minimal (similiar to Desktop version) but at least 2GB RAM and >1GHz processor and stable internet.
+
+If you decide running a node on VPS isn't for you there are other options available, like Dekstop version. Go to our website where you will be able to download [Desktop Node](https://www.koii.network/node)
+
+
+
+
+
+
+
+
+
 
 ### How to launch Koii Network Task Node on VPS
 [by C-Diamond](https://www.youtube.com/@c-diamond/videos)
