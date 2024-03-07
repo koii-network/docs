@@ -26,12 +26,12 @@ We will begin by connecting as the root user, although some server providers may
 
 To connect to your server, type the following command in your SSH client and then enter your server's password when prompted (replacing 11.111.11.11 with your server's IP address):
 
-```
+```bash
 ssh root@11.111.11.11
 ```
 Once you have successfully logged in, you will be presented with a command line that appears similar to:
 
-```
+```bash
 root@servername:~$ 
 ```
 
@@ -41,7 +41,7 @@ root@servername:~$
 
 Before deploying Koii Node on your server you should install the most recent updates and security patches for your operating system. To accomplish this, use your terminal to execute the following command:
 
-```
+```bash
 sudo apt update && sudo apt dist-upgrade -y
 ```
 
@@ -51,23 +51,38 @@ The updates will now begin downloading and installing. This process may take som
 
 In order to succesfully launch a Koii Node there are perequisites which has to be stored in your server for Koii Node to function.
 
-```
+```bash
 git clone https://github.com/koii-network/VPS-task
 ```
 
 Then we enter that exact directory where the installation files can be found.
 
-```
+```bash
 cd VPS-task
 ```
 
+3. **Configure the Environment Variables**
 
+Update main configuration file:
 
+```bash
+nano .env-local
+```
 
+Set `ENVIRONMENT` to `"production"`
 
+Update the `TASKS` field with the task IDs you want to run, seperataed by commas, no space between! Full list of Tasks and their details (i.e. min stakes) found here.
 
+Update `TASK_STAKES` field with the minimum or greater stake amounts corresponding to each task in TASKS, seperated by commas.
 
+Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staking wallet. This should be greater than the SUM of all `TASK_STAKES` + 1 KOII for covering gas.
 
+Remember this must be less than 1 KOII of what you will have in your Main wallet (i.e. you set `TASK_STAKES=2,2` and `INITIAL_STAKING_WALLET_BALANCE= 5` then you must have in your main wallet 6 KOII so there is enough for covering gas)
+
+```bash
+Ctrl +S = Save
+Ctrl +X = Exit
+```
 
 
 
