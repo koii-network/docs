@@ -79,13 +79,6 @@ const sidebars = {
     "crowdai/federated-learning",
     "crowdai/cpu",
     "crowdai/ai-koii",
-    {
-      type: "html",
-      value: "Containerized Tasks ",
-      className: "sidebar-title",
-    },
-    "containerized-tasks/introduction",
-    "containerized-tasks/orca",
 
     {
       type: "html",
