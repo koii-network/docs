@@ -120,6 +120,12 @@ button {
   color: #353570;
 }
 
+.navbar__link--active {
+  outline: 2px solid #5ed9d1;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 main {
   padding-left: 8rem;
 }
