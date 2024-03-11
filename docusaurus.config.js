@@ -1018,7 +1018,7 @@ const config = {
           {
             label: "⚙️ Tutorials",
             to: "/quickstart/hello-world/introduction",
-            activeBasePath: "hello-world",
+            activeBasePath: "quickstart",
             position: "left",
             className: "header-text",
           },
