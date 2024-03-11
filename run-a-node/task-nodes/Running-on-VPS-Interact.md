@@ -48,10 +48,10 @@ Calling ClaimReward
 Success
 ```
 
-4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
-stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
-HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
-/home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
+- 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
+- stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
+- HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
+- /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
 
 ## Example how to Unstake from the "Free Token Task!"
 
@@ -70,10 +70,10 @@ Gives error but don't worry, follow on with next step ->
 Success
 ```
 
-4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
-stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
-HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
-/home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
+- 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
+- stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
+- HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
+- /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
 
 
 ## Additional way to claim rewards using Koii_claimer:
@@ -99,13 +99,13 @@ nano params.json
 This will create a json file now you need to fill in some information for example:
 
 ```bash
-{"taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
+{ "taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
 
 "stakePotAccount": "stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ",
 
 "beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
 
-"claimerKeypairPath": "VPS-task/namespace/staking_wallet.json"}
+"claimerKeypairPath": "VPS-task/namespace/staking_wallet.json" }
 ```
 
 Please change the beneficiaryAccount here to make it your wallet public address.
@@ -138,16 +138,3 @@ Thing to note: You should always have to keep your Staking_Public_Key balance fi
 
 
 
-
-
-
-
-
-
-### How to launch Koii Network Task Node on VPS
-[by C-Diamond](https://www.youtube.com/@c-diamond/videos)
-<ReactPlayer width="100%" alt="youtube video embed by C-Diamond" controls url="https://youtu.be/fkcl98CYXWU?si=GGBxxkCY9RBVo1X4" />
-
-### Complete Guide to Setting Up a Koii Node on a Debian VPS: From Zero to Earning Rewards
-[by Pewd_Crypto](https://www.youtube.com/@pewdcrypto3985/videos)
-<ReactPlayer width="100%" alt="youtube video embed by Pewd_Crypto" controls url="https://youtu.be/h9LkcSo29IA?si=rWZYygrQd0UZMUIJ" />
