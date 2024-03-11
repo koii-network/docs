@@ -38,7 +38,7 @@ Ctrl/Command +X = Exit
 ```
 ---
 
-4. **Install dependencies**
+**Install dependencies**
  - Ensure **Koii CLI** is Installed. Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 
  - **Wallet setup** (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)

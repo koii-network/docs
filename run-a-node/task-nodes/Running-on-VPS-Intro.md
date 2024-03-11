@@ -184,3 +184,11 @@ you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
    - Fund task with more KOII  
    - Withdraw staked funds from task  
    - upload assets to IPFS(metadata/local vars) -->
+## Video Guides
+### How to launch Koii Network Task Node on VPS
+[by C-Diamond](https://www.youtube.com/@c-diamond/videos)
+<ReactPlayer width="100%" alt="youtube video embed by C-Diamond" controls url="https://youtu.be/fkcl98CYXWU?si=GGBxxkCY9RBVo1X4" />
+
+### Complete Guide to Setting Up a Koii Node on a Debian VPS: From Zero to Earning Rewards
+[by Pewd_Crypto](https://www.youtube.com/@pewdcrypto3985/videos)
+<ReactPlayer width="100%" alt="youtube video embed by Pewd_Crypto" controls url="https://youtu.be/h9LkcSo29IA?si=rWZYygrQd0UZMUIJ" />
