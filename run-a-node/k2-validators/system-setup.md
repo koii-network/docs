@@ -46,7 +46,14 @@ Elevate into the user
 
 ```bash
 sudo su koii
+cd ~
 ```
+
+:::tip
+Please make sure you are in the home directory of the user you created before continuing
+check by running `pwd` and it should return `/home/koii`
+:::
+
 
 ## Step 2: Install the Koii software
 
@@ -56,19 +63,16 @@ We host an install script that will install and configure the Koii validator sof
 sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.14.19.sh)"
 ```
 
+:::tip
+You may need to update the PATH environment variable. You can do this by running 
+```bash
+echo 'export PATH="/home/koii/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
+```
+:::
+
 This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created **is not** your validator identity. If you have a private key that is funded for staking with a validator you can replace the one generated with this script.
 
-If everything is configured correctly you can test it by running `koii balance` which will return the balance of the local key.
-
-## Step 3: Run the System Tuner
-
-This will configure certain aspects of your system to better support the validator.
-
-```bash
-koii-sys-tuner --user koii
-```
-
-## Step 4: Allow traffic on ports
+## Step 3: Allow traffic on ports
 
 If you have firewall software installed you will need to allow traffic on the following ports:
 
