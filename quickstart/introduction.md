@@ -18,5 +18,5 @@ If you want your completed projects to be highlighted on our website, feel free 
 | ---------------------- | ---------------------: | ---------------------------------------------------------------: | --------------------------------------------------------------------------- |
 | Full Stack Application | Decentralized Bio Page |                     A full stack application hosted by its users | [**Click Here**](/quickstart/linktree/intro)                                 |
 | Web Crawler            |         Crawler |    A decentralized web crawler that can gather data from public websites | [**Click Here**](/quickstart/crawler/introduction)                          |
-| Web Crawler            |          Steam Crawler | An decentralized web crawler that scrapes Steam's daily specials | [**Click Here**](/quickstart/steam-daily-specials/steam-daily-specials-task) |
+| Web Crawler            |         
 | Federated AI Training  |  Federated AI Training |                                    Cost effective model training | In Development                                                              |

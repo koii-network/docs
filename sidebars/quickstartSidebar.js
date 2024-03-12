@@ -84,17 +84,6 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Steam Crawler",
-      items: [
-        "steam-daily-specials/steam-daily-specials-task",
-        "steam-daily-specials/setup-main",
-        "steam-daily-specials/setup-db-api",
-        "steam-daily-specials/setup-audit",
-        "steam-daily-specials/setup-submit",
-      ],
-    },
-    {
-      type: "category",
       label: "ERC20 Reward",
       items: [
         "erc20-reward/introduction",
