@@ -8,13 +8,13 @@ sidebar_label: Validator Setup
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
+# Validator Setup
+
 :::warning
 
 Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
 
 :::
-
-# Validator Setup
 
 The following guide describes how to setup a validator on Ubuntu.
 
