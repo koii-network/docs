@@ -8,7 +8,7 @@ sidebar_label: Introduction
 We are just the marketplace for people to do these tasks. Templates are only there to help on how to write these tasks. We can’t be the ones directly doing
 Framing it so its less scary
 So how the template 
-Crawler example but mainly not 
+Extractor example but mainly not 
 1. How its executed
 2. How to make it private (encrypt the payload)
 3. Database 
@@ -23,7 +23,7 @@ Thanks to the growth and adoption of AI, data on the web is now more precious th
 
 Web platforms are incentivized to restrict data, as API costs rise, so does the value of the data. In contrast, a decentralized data market like Koii **becomes more affordable with increased competition.**
 
-One of our example template tasks is a [Crawler](/quickstart/crawler/introduction) that uses nodes to efficiently crawl public websites. As an example, we have improved the crawler to function as a [**community data feed for X**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
+One of our example template tasks is a [Extractor](/quickstart/extractor/introduction) that uses nodes to efficiently extract public websites. As an example, we have improved the extractor to function as a [**community data feed for X**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
 
 1. **Gather Data from any Website using Koii.**
 2. **Put that Information on a Database.**
@@ -31,7 +31,7 @@ One of our example template tasks is a [Crawler](/quickstart/crawler/introductio
 
 ## **Features**
 
-Koii Network's **community data feeds** uses community devices to efficiently crawl tweets with speed and flexibility. While this doesn’t expose private information, it allows crowdsourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
+Koii Network's **community data feeds** uses community devices to efficiently extract tweets with speed and flexibility. While this doesn’t expose private information, it allows crowdsourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
 
 | Feature                                           | Koii Data Aggregator |
 |---------------------------------------------------|:--------------------:|
