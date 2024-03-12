@@ -8,13 +8,13 @@ sidebar_label: Validator Setup
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
+# Validator Setup
+
 :::warning
 
 Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
 
 :::
-
-# Validator Setup
 
 The following guide describes how to setup a validator on Ubuntu.
 
@@ -47,6 +47,10 @@ sudo nano /etc/systemd/system/koii-validator.service
 ```
 
 Paste the service configuration below into your editor.
+
+:::note
+If the file is already existing, you can save and close it directly.
+:::
 
 ```makefile
 [Unit]
@@ -87,7 +91,13 @@ For the remainder of the steps please elevate your user to your validator accoun
 
 ```bash
 sudo su koii
+cd ~
 ```
+
+:::tip
+Please make sure you are in the home directory of the user you created before continuing
+check by running `pwd` and it should return `/home/koii`
+:::
 
 Using the keys created in the first portion of this guide, create a vote account.
 
@@ -127,29 +137,28 @@ Check the service status
 sudo systemctl status koii-validator.service
 ```
 
-
-## Step 5: Delegate Your Stake
-
-Delegate the stake to the validator using the staking account and validator's identity keypair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
-
-```bash
-koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
-```
-
-To get your validator identity id and more details, please use the `koii validator-info get` command.
-
-## Step 6: Check Your Stake
+## Step 5: Check Your Stake
 
 Because your validator will not show up in the `koii validators` list for 12 to 24 hours, you can check your stake to make sure it as properly delegated by running `koii stake-account ~/stake-account-keypair.json` which should output something similar to the following:
 
 ```bash
-Balance: 500 KOII
-Rent Exempt Reserve: 0.00228288 KOII
-Delegated Stake: 0 KOII
-Activating Stake: 499.99771712 KOII
+Balance: <Amount of KOII>
+Rent Exempt Reserve: <Amount of KOII>
+Delegated Stake: <Amount of KOII>
+Activating Stake: <Amount of KOII>
 Delegated Vote Account Address: <pubkey>
 Stake Authority: <pubkey>
 Withdraw Authority: <pubkey>
 ```
 
 If you see a value in `Activating Stake` then you should be successfully voting within two epochs (about 24 hours)
+
+## Step 6: Delegate Your Stake
+
+If your delegated stake is not showing up, you can delegate the stake to the validator using the staking account and validator's identity keypair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
+
+```bash
+koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
+```
+
+To get your validator identity id and more details, please use the `koii validator-info get` command.
