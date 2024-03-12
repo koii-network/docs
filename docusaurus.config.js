@@ -551,34 +551,6 @@ const config = {
           },
 
           {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/getting-started",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/google-doodle-task-functions",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/audit-submission-value",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/submit-distribution-list",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/audit-distribution-list",
-          },
-          {
-            to: "/quickstart/steam-daily-specials/steam-daily-specials-task",
-            from: "/develop/task-tutorials/google-doodle-task/google-doodle-executable-code",
-          },
-          {
             to: "/quickstart/linktree/intro",
             from: "/develop/task-tutorials/linktree-task/intro",
           },
