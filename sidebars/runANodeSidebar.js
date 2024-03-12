@@ -44,7 +44,7 @@ const sidebars = {
       label: "Running on VPS",
       link: {
         type: "doc",
-        id: "task-nodes/Running-on-VPS-Intro",
+        id: "task-nodes/Running-on-VPS",
       },
       items: [
         "task-nodes/Running-on-VPS-Choose",
