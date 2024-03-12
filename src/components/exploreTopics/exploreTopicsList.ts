@@ -131,7 +131,7 @@ export const exploreTopics = [
       },
       {
         title: "Koii Network on Twitter ",
-        link: "https://twitter.com/KoiiNetwork",
+        link: "https://twitter.com/KoiiFoundation",
         icon: "/img/explore-topics-icons/twitter.svg",
       },
       {
