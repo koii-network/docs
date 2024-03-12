@@ -148,6 +148,6 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
   }
 ```
 
-### Final Notes
+:::warning Older Project Repos still use web3.storage
 
-On older task templates, you might encounter web3storage as an IPFS storage option. Our tasks are compatible with that option, but we encourage using Spheron, otherwise you would need your users to provide a storage key.
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
