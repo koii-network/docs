@@ -105,17 +105,7 @@ koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake
 
 Where <AMOUNT_TO_STAKE> is the number of tokens you want to stake with.
 
-## Step 4: Delegate Your Stake
-
-Delegate the stake to the validator using the staking account and validator's identity keypair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
-
-```bash
-koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
-```
-
-To get your validator identity id and more details, please use the `koii validator-info get` command.
-
-## Step 5: Enable and Start the Koii Validator Service
+## Step 4: Enable and Start the Koii Validator Service
 
 From the system user with root permissions, enable and start the validator service.
 
@@ -136,6 +126,17 @@ Check the service status
 ```bash
 sudo systemctl status koii-validator.service
 ```
+
+
+## Step 5: Delegate Your Stake
+
+Delegate the stake to the validator using the staking account and validator's identity keypair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
+
+```bash
+koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
+```
+
+To get your validator identity id and more details, please use the `koii validator-info get` command.
 
 ## Step 6: Check Your Stake
 

@@ -10,13 +10,12 @@ sidebar_label: Introduction
 
 Each of the projects publicly released here is designed to tackle a real-life problem and become a foundation for your ideas. You can follow the explanation, clone the repository and start experimenting right away!
 
-If you want your completed projects to be highlighted on our website, feel free to contact us via our [**Discord**](https://discord.com/invite/koii) link.
+If you want your completed projects to be highlighted on our website, feel free to contact us via our [**Discord**](https://discord.com/invite/koii-network) link.
 
 ## Our templates:
 
 | Type                   | Example Implementation |                                               Practical Use-Case | Tutorial                                                                    |
 | ---------------------- | ---------------------: | ---------------------------------------------------------------: | --------------------------------------------------------------------------- |
 | Full Stack Application | Decentralized Bio Page |                     A full stack application hosted by its users | [**Click Here**](/quickstart/linktree/intro)                                 |
-| Web Crawler            |         Extractor |    A decentralized web extractor that can gather data from public websites | [**Click Here**](/quickstart/extractor/introduction)                          |
-| Web Crawler            |         
+| Web Crawler            |         Crawler |    A decentralized web crawler that can gather data from public websites | [**Click Here**](/quickstart/crawler/introduction)                          |      
 | Federated AI Training  |  Federated AI Training |                                    Cost effective model training | In Development                                                              |

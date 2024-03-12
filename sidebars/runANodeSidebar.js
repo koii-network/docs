@@ -39,7 +39,19 @@ const sidebars = {
     "task-nodes/time-to-node",
     "task-nodes/rewards",
     "task-nodes/choosing-tasks",
-      "task-nodes/Running-on-VPS",
+    {
+      type: "category",
+      label: "Running on VPS",
+      link: {
+        type: "doc",
+        id: "task-nodes/Running-on-VPS",
+      },
+      items: [
+        "task-nodes/Running-on-VPS-Choose",
+        "task-nodes/Running-on-VPS-Docker",
+        "task-nodes/Running-on-VPS-Interact",
+      ],
+    },
     {
       type: "html",
       value: "K2 Validator",

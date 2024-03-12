@@ -8,7 +8,7 @@ export const Policy = () => {
         <FooterLink title={"Terms of Service"} url={"https://www.koii.network/terms"} target={"_blank"} />
         <FooterLink title={"Privacy Policy"} url={"https://www.koii.network/privacy"} target={"_blank"}  />
         <FooterLink
-          title={"© Koii Foundation 2023, All Rights Reserved."}
+          title={"© Koii Foundation 2024, All Rights Reserved."}
           url={"https://www.koii.network/"}
           target={"_blank"} 
         />
