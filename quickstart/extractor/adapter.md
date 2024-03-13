@@ -46,11 +46,11 @@ We are making use of a database model, Puppeteer for web scraping, Cheerio for D
 
 - This method is for scraping data from a Twitter post. It waits for the page to load, extracts data such as tweet text, username, likes, shares, etc., using Cheerio, and then returns the extracted data.
 
-### Crawling Logic
+### Extacting Logic
 
-**crawl Method:**
+**Extract Method:**
 
-- Initializes a list of URLs to crawl.
+- Initializes a list of URLs to extract.
   For each URL, it parses the item at the URL and extracts relevant data. If recursive querying is allowed, it fetches more links from each link.
 
 **fetchList Method:**
@@ -59,7 +59,7 @@ We are making use of a database model, Puppeteer for web scraping, Cheerio for D
 
 **stop Method:**
 
-- This method sets the break variable to true, stopping the crawl.
+- This method sets the break variable to true, stopping the extraction.
 
 ### Utilities
 
@@ -79,6 +79,6 @@ The final portion of our file contains utility functions:
 
 ### Summary
 
-The Twitter class in the code provides a framework for crawling Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the crawling queue, and can store the extracted data on decentralized storage using Spheron.
+The Twitter class in the code provides a framework for extracting Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the extractling queue, and can store the extracted data on decentralized storage using Spheron.
 
-You can use it as a starting point to develop your own Twitter crawler to your own needs, or as a reference to develop a crawler for a different website.
+You can use it as a starting point to develop your own Twitter extractor to your own needs, or as a reference to develop a extractor for a different website.

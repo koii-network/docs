@@ -6,7 +6,7 @@ sidebar_label: Creating the Task
 
 ## Introduction
 
-Lets learn how to create a **Crawler Task**. This powerful tool allows you to gather data based on specific queries, populate a database, and validate the data.
+Lets learn how to create a **Extractor Task**. This powerful tool allows you to gather data based on specific queries, populate a database, and validate the data.
 
 ---
 
@@ -45,7 +45,7 @@ In the context of web scraping or data collection, a `round` refers to one compl
 
 If you're looking to scrape only the most recent 50 tweets regarding a particular hashtag, you'd adjust the `limit` and `searchTerm` parameters accordingly. 
 
-To modify the crawler query, or change how it uses the local database, check out the [`twitter-task.js`](https://github.com/somali0128/X-scraper/blob/e0cfff8421fb95dd4fdc123bde38a7293aee5098/twitter-task.js#L33).
+To modify the extractor query, or change how it uses the local database, check out the [`twitter-task.js`](https://github.com/somali0128/X-scraper/blob/e0cfff8421fb95dd4fdc123bde38a7293aee5098/twitter-task.js#L33).
 
 ----
 
@@ -61,7 +61,7 @@ To offer your query as a task that others can run, you can configure its propert
 ## Environment Variables
 
 :::info
-The Crawler application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
+The Extractor application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
 :::
 
 ### Where to Declare
@@ -78,7 +78,7 @@ _A Spheron Storage Token is required from the task-runner as it is used to uploa
 
 ## Creating and Deploying a Task
 
-To ensure your Crawler task is deployment-ready, follow the steps below:
+To ensure your Extractor task is deployment-ready, follow the steps below:
 
 ### 1. **Preparation: Webpack Conversion**
 
@@ -102,7 +102,7 @@ Executing the above command deploys your webpacked application to IPFS.
 
 ### 3. **Final Steps Post-Deployment**
 
-Congratulations! Your customized **Crawler Task** is now deployed on Koii. A task id will be returned upon successful deployment — make sure to save it as it's essential to execute in Koii Node.
+Congratulations! Your customized **Extractor Task** is now deployed on Koii. A task id will be returned upon successful deployment — make sure to save it as it's essential to execute in Koii Node.
 
 To start your task:
 - Go to Koii Node and navigate to `My Node`.
