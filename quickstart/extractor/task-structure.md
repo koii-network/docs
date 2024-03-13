@@ -9,14 +9,14 @@ sidebar_label: The Task Structure & Final Steps
 The `TwitterTask` class,found in `twitter-task.js` provides functionality for non-profits to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
 
 :::tip
-Edit `searchTerm` (defaulted to 'Web3') to customize your crawler.
+Edit `searchTerm` (defaulted to 'Web3') to customize your extractor.
 :::
 
 ### **Methods:**
 
 #### 1. **setAdapter()**
 
-Sets up the Twitter adapter with the necessary credentials (from environment variables) for the crawler.
+Sets up the Twitter adapter with the necessary credentials (from environment variables) for the extractor.
 
 - **Throws**: Error if `TWITTER_USERNAME` or `TWITTER_PASSWORD` are not set in environment variables.
 
@@ -28,11 +28,11 @@ Updates the current round. If more than one minute has passed since the last rou
 
 #### 3. **start()**
 
-Initializes the adapter and starts the Crawler.
+Initializes the adapter and starts the Extractor.
 
 #### 4. **stop()**
 
-Stops the Crawler.
+Stops the Extractor.
 
 #### 5. **getRoundCID(roundID)**
 
@@ -94,7 +94,7 @@ webpack format with by typing `yarn webpack` in our terminal.
 
 We can use use create-task-cli package to deploy our webpacked application to IPFS.type `npx @\_koii/create-task-cli@latest`
 
-Voila! Now you have your crawler deployed on Koii. Be sure to save the returned task id, as you will need it in Koii Node.
+Voila! Now you have your extractor deployed on Koii. Be sure to save the returned task id, as you will need it in Koii Node.
 
 Within Koii Node, head over to My Node. Click “Advanced”, (at the bottom of the interface). Copy your Task Id and start running the task!
 

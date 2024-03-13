@@ -28,8 +28,8 @@ Fetches a list of tweet URLs from a given search page.
 - **Returns**: An array of unique tweet URLs.
 
 ## TwitterTask Class
-This class manages the Twitter crawler and its associated tasks. Twhe main functionalities include:
-- Crawler control (`start`, `stop`)
+This class manages the Twitter extractor and its associated tasks. Twhe main functionalities include:
+- Extractor control (`start`, `stop`)
 - Data validation (`validate`)
 - Round management (`updateRound`, `getRoundCID`)
 
@@ -52,12 +52,12 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 #### `start()`
 - **Parameters**: None
 - **Returns**: None
-- Starts the Twitter crawler.
+- Starts the Twitter extractor.
 
 #### `stop()`
 - **Parameters**: None
 - **Returns**: None
-- Stops the crawler.
+- Stops the extractor.
 
 #### `getRoundCID(roundID)`
 - **Parameters**: 
@@ -78,7 +78,7 @@ This class manages the Twitter crawler and its associated tasks. Twhe main funct
 - **Cheerio**: For parsing HTML content.
 - **Axios**: For making HTTP requests.
 - **Spheron**: For interacting with IPFS.
-- **Adapter** (`./adapters/twitter/twitter.js`): To authenticate and crawl the particular source.
-- **Database Helper** (`./helpers/db`): To populate the database with crawl results.
+- **Adapter** (`./adapters/twitter/twitter.js`): To authenticate and extract the particular source.
+- **Database Helper** (`./helpers/db`): To populate the database with extract results.
 - **Data Model** (`./model/data`): Model for the data.
 - **.env** (`dotenv`): To load environment variables.

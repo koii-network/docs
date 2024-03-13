@@ -1,14 +1,14 @@
 ---
-title: Using the Crawler
+title: Using the Extractor
 image: img/thumbnail.png
-sidebar_label: Using the Crawler
+sidebar_label: Using the Extractor
 ---
 
-# Using The Crawler
+# Using The Extractor
 
-To modify the crawler query, or change how it uses the local database, check out `twitter-task.js`.
+To modify the extractor query, or change how it uses the local database, check out `twitter-task.js`.
 
-The `query` object passes the fundamental instructions to our crawler.
+The `query` object passes the fundamental instructions to our extractor.
 
 ```javascript
 let searchTerm = "#koii";
@@ -23,11 +23,11 @@ let query = {
 }
 ```
 
-## Testing the Crawler
+## Testing the Extractor
 
-Within the tests folder, you will find multiple pre-written tests. By utilizing these, you can see how your crawler will behave in deployment.
+Within the tests folder, you will find multiple pre-written tests. By utilizing these, you can see how your extractor will behave in deployment.
 
-One of the files that you will find useful is the `test-one-round.js`. This test will locally simulate running the crawler for one round and will output the results in the console.
+One of the files that you will find useful is the `test-one-round.js`. This test will locally simulate running the extractor for one round and will output the results in the console.
 
 You can run it with:
 
