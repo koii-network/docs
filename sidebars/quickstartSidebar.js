@@ -74,12 +74,12 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Crawler with Login",
+      label: "Extractor with Login",
       items: [
-        "crawler/introduction",
-        "crawler/using",
-        "crawler/adapter",
-        "crawler/task-structure",
+        "extractor/introduction",
+        "extractor/using",
+        "extractor/adapter",
+        "extractor/task-structure",
       ],
     },
     {
