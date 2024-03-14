@@ -19,8 +19,6 @@ Find these files in the 'task' directory of the template, where `submission.js` 
   text="Execute ➡ Validate Node ➡ Distribute Rewards"
 />
 
-These files
-
 **Example submission.js file:**
 
 ```javascript
