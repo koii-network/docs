@@ -18,7 +18,7 @@ Before submitting your application for the whitelisting process, it's recommende
 ### 3. Apply for Whitelisting
 To have your task appear on the whitelisted tasks list, take the following actions:
   - Make your repository **public** or share it directly with the Koii team.
-  - Open a **support ticket on [Discord](https://discord.com/invite/koii-network)** to initiate the whitelisting process. 
+  - Open a **support ticket on [Discord](https://discord.com/invite/koii-network)** to initiate the whitelisting process. Please also provide the link to your public repository as well as your Task ID.
 
 ### Note
 During this process, our team will create a dedicated GitHub account for holding your project. 
