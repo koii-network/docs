@@ -41,3 +41,10 @@ When creating a new task, there are three main functions that define the task's 
    This function generates a distribution list and submits it on-chain. A distribution list is a JSON object containing a key-value pair, where the key is the public key of the node that made the submission and the value is the number of KOII tokens to be rewarded to the node.
 
    ![Distribute Rewards](./img/Distribute%20Rewards.svg)
+
+
+:::tip
+Confused on how's the runtime flow looks like? Check out the [Runtime Flow](/concepts/what-are-tasks/what-are-tasks/gradual-consensus) to understand the task execution flow.
+:::
+
+Ready to get started? Let's dive into the details of each of these functions. Start [here](/develop/write-a-koii-task/task-development-guide/task-structure/).&#x20;
