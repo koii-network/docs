@@ -29,7 +29,7 @@ The Koii [task template](https://github.com/koii-network/task-template) contains
 The task function, audit function, and distribution function were mentioned in the previous section; you can find `task/submission.js`, `task/audit.js`, and `task/distribution.js` in the task template that contains the functions for each of these steps.
 
 :::tip
-Confused on how task runs? Check out the [Runtime Flow](/concepts/what-are-tasks/what-are-tasks/runtime-flow) to understand the task execution flow.
+Confused on how task runs? Check out the [Runtime Flow](/concepts/what-are-tasks/what-are-tasks/gradual-consensus) to understand the task execution flow.
 :::
 
 Next, we will go through each of these functions in detail.
