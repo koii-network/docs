@@ -1,8 +1,8 @@
 ---
-title: Task Whitelisted
+title: Whitelist Your Task
 description: Comics pages providing a more easy explanation for the most frequent asked questions regarding Koii.
 image: img/thumbnail.png
-sidebar_label: Task Whitelisted
+sidebar_label: Whitelist Your Task
 ---
 
 ## How to Whitelist Your Task
