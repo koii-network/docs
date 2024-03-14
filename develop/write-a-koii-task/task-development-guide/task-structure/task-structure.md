@@ -7,7 +7,7 @@ sidebar_label: Task Structure
 
 # Task Structure
 
-In this guide let's use the [Koii Task Template](https://github.com/koii-network/task-template) to explain the structure and how the functions work together. 
+In this guide let's use the [Koii Task Template](https://github.com/koii-network/task-template) to explain the structure and how the functions work together. Jump [here](/develop/write-a-koii-task/task-development-kit-tdk/introduction) to learn more about the task template.
 
 The task template contains three separate JavaScript files in `task` folder that contain all of the functions for a Koii task to function properly.
 
