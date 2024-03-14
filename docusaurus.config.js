@@ -513,7 +513,7 @@ const config = {
             from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
           },
           {
-            to: "/faq/questions",
+            to: "/faq/getting-started",
             from: "/koii/faq",
           },
 
@@ -1017,7 +1017,7 @@ const config = {
           },
           {
             label: "❓ FAQ",
-            to: "/faq/questions/",
+            to: "/faq/getting-started/",
             activeBasePath: "faq",
             position: "left",
             className: "header-text",
