@@ -22,13 +22,12 @@ Find these files in the 'task' directory of the template, where `submission.js` 
 **Example submission.js file:**
 
 ```javascript
-const { namespaceWrapper } = require("../_koiiNode/koiiNode");
 class Submission {
+  
+  // Task logic for doing work, submitting the values and optionally store the result in levelDB
   async task(round) {
-    // Write the logic to do the work required for submitting the values and optionally store the result in levelDB
 
-    // Below is just a sample of work that a task can do
-
+    // Example : Store "Hello, World!" on NeDB
     try {
       const value = "Hello, World!";
 
@@ -37,45 +36,37 @@ class Submission {
         await namespaceWrapper.storeSet("value", value);
       }
       return value;
+    
     } catch (err) {
-      console.log("ERROR IN EXECUTING TASK", err);
       return "ERROR IN EXECUTING TASK" + err;
     }
   }
 
   async submitTask(roundNumber) {
-    console.log("submitTask called with round", roundNumber);
     try {
-      console.log("inside try");
-      console.log(
-        await namespaceWrapper.getSlot(),
-        "current slot while calling submit"
-      );
+      // get the submission
       const submission = await this.fetchSubmission(roundNumber);
-      console.log("SUBMISSION", submission);
+      
+      // check submission and update round
       await namespaceWrapper.checkSubmissionAndUpdateRound(
         submission,
         roundNumber
       );
-      console.log("after the submission call");
+
       return submission;
+    
     } catch (error) {
       console.log("error in submission", error);
     }
   }
 
+  // Write the logic to fetch the submission values here and return the cid string
   async fetchSubmission(round) {
-    // Write the logic to fetch the submission values here and return the cid string
-
-    // fetching round number to store work accordingly
-
-    console.log("IN FETCH SUBMISSION");
 
     // The code below shows how you can fetch your stored value from level DB
-
     const value = await namespaceWrapper.storeGet("value"); // retrieves the value
-    console.log("VALUE", value);
     return value;
+
   }
 }
 const submission = new Submission();
