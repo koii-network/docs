@@ -5,11 +5,21 @@ image: img/thumbnail.png
 sidebar_label: Executable Structure
 ---
 
+import Description from "@site/src/components/description";
+
 # Executable Structure
 
-The Koii **task template** contains three separate JavaScript files that contain all of the functions for a Koii task to function properly.
+The Koii **task template** includes three JavaScript files: `submission.js`, `audit.js`, and `distribution.js`. Together they contain the essential functions for a task's operation.
 
-The task function, audit function, and distribution function were mentioned in the previous section; you can find `submission.js`, `audit.js`, and `distribution.js` in the task template that contains the functions for each of these steps.
+Find these files in the 'task' directory of the template, where `submission.js` handles the task execution, `audit.js` is for verifying task completion, and `distribution.js` manages reward allocation.
+
+![banner](../../img/Runtime%20Flow.svg)
+
+<Description
+  text="Execute ➡ Validate Node ➡ Distribute Rewards"
+/>
+
+These files
 
 **Example submission.js file:**
 
