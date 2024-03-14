@@ -14,7 +14,7 @@ To get your task whitelisted, follow these steps:
 Begin by testing your task on your local environment to ensure it functions correctly. 
 
 ### 2. Use the Advanced Task Feature
-Before submitting your application for the whitelisting process, it's recommended to first take advantage of the Advanced Task feature available on the node. This feature permits you to create and run your custom task even before obtaining official whitelisting. By navigating to the **Add Task** section and selecting **+ Advanced**, you can set up your task. After creating it, sharing this task with friends is a great way to conduct additional testing and gather feedback.
+It's recommended to make use of the Advanced Task feature available on the node. This functionality enables you to design and run your own custom task even before you receive official whitelisting. To initiate your task, navigate to the **Add Task** section and choose the **+ Advanced** option. Additionally, sharing your task with friends offers a fantastic opportunity for further testing and obtaining valuable feedback.
 ### 3. Apply for Whitelisting
 To have your task appear on the whitelisted tasks list, take the following actions:
   - Make your repository **public** or share it directly with the Koii team.
