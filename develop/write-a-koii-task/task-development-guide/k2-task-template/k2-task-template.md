@@ -18,7 +18,7 @@ For more information on how the task flow works, check out the [runtime environm
 ## Requirements
 
 - [Node >=16.0.0](https://nodejs.org/en/)
-- [Docker compose](https://docs.docker.com/compose/install/docker)
+- [Docker compose](https://docs.docker.com/compose/install/)
 
 ## What's in the template?
 
