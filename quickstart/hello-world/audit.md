@@ -9,7 +9,7 @@ In this section, our focus is on implementing the logic to verify the node's sub
 
 Typically, a submission is made in each round, and the corresponding audit takes place in the subsequent round. Consequently, for a given round n, we perform an audit on the submission made in round n-1.
 
-To achieve this, we will be editing the following methods in `audit.js` under the task directory : `validateNode()` and `auditTask()`.
+To achieve this, we will be editing the following methods in `audit.js` under the task directory: `validateNode()` and `auditTask()`.
 
 ## `validateNode()`
 
@@ -19,9 +19,9 @@ To update the `validateNode()` method, replace it with the following code block:
 
 ```js
   async validateNode(submission_value, round) {
-    // Write your logic for the validation of submission value here and return a boolean value in response
+    // Write your logic for the validation of the submission value here and return a boolean value in response
 
-    // The sample logic can be something like mentioned below to validate the submission
+    // The sample logic can be something like the one mentioned below to validate the submission
     let vote;
     console.log('SUBMISSION VALUE', submission_value, round);
     try {
@@ -45,7 +45,7 @@ To update the `validateNode()` method, replace it with the following code block:
 
 The `auditTask()` function calls `namespaceWrapper.validateAndVoteOnNodes()` and passes the `validateNode()` method we created initially, along with the current round number.
 
-During each round, participating nodes execute the `auditTask()` method on each node to verify the validity of the submitted value. In our case, a valid submission value is `"Hello, World!"`. If a node submits a different value, an audit is triggered on K2, and the node responsible may have their stake confiscated.
+During each round, participating nodes execute the `auditTask()` method on each node to verify the validity of the submitted value. In our case, a valid submission value is `"Hello, World!"`. If a node submits a different value, an audit is triggered on K2, and the node responsible may have its stake confiscated.
 
 ```js
   async auditTask(roundNumber) {
