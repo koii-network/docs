@@ -71,11 +71,11 @@ Computers that are running Koii tasks via the Koii Node.
 
 ## Task Nodes
 
-Task Nodes help keep the network running smoothly by executing tasks that are requested from the network
+Task Nodes help keep the network running smoothly by executing tasks that are requested from the network.
 
 ## Proofs of Real Traffic, aka PoRT
 
-Proof of Real-Traffic is Koii’s attention tracking system. This is the way creators get rewarded for their work and published content.
+Proof of Real Traffic is Koii’s attention-tracking system. This is the way creators get rewarded for their work and published content.
 
 ## Finnie
 
@@ -100,7 +100,7 @@ An online KOII token dispenser designed for people to get a small amount of free
 
 - ### Create a Task
 
-  Creating a task usually happens when developers use “Create-task-CLI” to package their task code to task node and upload the task configuration information to IPFS
+  Creating a task usually happens when developers use “Create-task-CLI” to package their task code to the task node and upload the task configuration information to IPFS
 
 - ### Deploy a Task
   The allow-list process for other people to run that task from their personal devices
@@ -115,7 +115,7 @@ A way for two or more programs to communicate with each other.
 
 ## REST API - A subset of APIs
 
-A public set of functions exposed by a server to allow third parties to interact with it. For example, the Google Images API allows an image to be uploaded to find similar images through a reverse search.
+A public set of functions is exposed by a server to allow third parties to interact with it. For example, the Google Images API allows an image to be uploaded to find similar images through a reverse search.
 
 ## SDK (Software Development Kit)
 
@@ -127,51 +127,51 @@ A set of tools provided by a software company to allow developers to work with t
 
 <h2 style={{marginTop: '0px'}}> Consensus </h2>
 
-A general agreement; consensus is achieved when all participants of the network agree on the order and content in a decentralized manner
+A general agreement; consensus is achieved when all participants of the network agree on the order and content in a decentralized manner.
 
 ## Blockchain
 
-A publicly-accessible digital ledger used to store and transfer information without the need for a central authority
+A publicly-accessible digital ledger used to store and transfer information without the need for a central authority.
 
 ## Decentralization
 
-The distribution of control and decision-making from central authority, to a distributed network of power
+The distribution of control and decision-making from central authority to a distributed network of power.
 
 ## Distributed Ledger Technology (DLT)
 
-A distributed and encoded database that serves as a ledger where transaction records are stored
+A distributed and encoded database that serves as a ledger where transaction records are stored.
 
 ## Block
 
-A collection of information on transactions completed during a given period of time
+A collection of information on transactions completed during a given period of time.
 
 ## Peer-to-Peer (P2P)
 
-Used to describe the interactions between parties, in which they disperse tasks and workloads
+Used to describe the interactions between parties, in which they disperse tasks and workloads.
 
 ## Minting
 
-The process of authenticating data, creating new tokens, and bringing them into circulation onto a blockchain using a Proof-of-Stake process
+The process of authenticating data, creating new tokens, and bringing them into circulation onto a blockchain using a Proof-of-Stake process.
 
 ## Mining
 
-The process of earning crypto by recording and verifying transactions on the blockchain
+The process of earning crypto by recording and verifying transactions on the blockchain.
 
 ## Proof-of-Stake (PoS)
 
-A method used by blockchain protocols to achieve distributed consensus. It is an upgrade from Proof-of-Work that uses much less processing power by using a select few of validators
+A method used by blockchain protocols to achieve distributed consensus. It is an upgrade from Proof-of-Work that uses much less processing power by using a select few validators.
 
 ## Validator
 
-A node in a proof-of-stake system that is responsible for processing transactions, storing data, and adding new blocks to the blockchain
+A node in a proof-of-stake system that is responsible for processing transactions, storing data, and adding new blocks to the blockchain.
 
 ## Proof-of-Work (PoW)
 
-A consensus algorithm in a blockchain used by miners who then complete tasks to confirm transactions and add new blocks to the chain. It has less decentralization because of mining pools, and requires a huge amount of processing power per miner
+A consensus algorithm in a blockchain is used by miners who then complete tasks to confirm transactions and add new blocks to the chain. It has less decentralization because of mining pools and requires a huge amount of processing power per miner.
 
 ## NFT (Non-Fungible Token)
 
-A digital certificate of authenticity used to assign and verify ownership of a unique digital or physical asset. Unlike fungible tokens, NFTs are not interchangeable with one another.
+A digital certificate of authenticity is used to assign and verify ownership of a unique digital or physical asset. Unlike fungible tokens, NFTs are not interchangeable with one another.
 
 ## Fungible Token
 
@@ -187,7 +187,7 @@ A software application or hardware device used to store the private keys to bloc
 
 ## Wallet Address (aka Public Key)
 
-Usually a string of numbers that serves as the address for a blockchain wallet, similar to a bank account number. The Wallet Address is how you send transactions to a Key.
+Usually a string of numbers serves as the address for a blockchain wallet, similar to a bank account number. The Wallet Address is how you send transactions to a Key.
 
 ## Private Key
 
@@ -199,7 +199,7 @@ A [public key](/concepts/glossary#wallet-address-aka-public-key) and correspondi
 
 ## Web3
 
-The next iteration of the web where there is no centralized authority, and restored ownership of data and information to users. Also known as the ‘read-write-trust web,’ Web 3 is the replacement of ‘read-write’ (Web2) and its predecessor “read only” (Web1).
+The next iteration of the web where there is no centralized authority, and restored ownership of data and information to users. Also known as the ‘read-write-trust web,’ Web 3 is the replacement of ‘read-write’ (Web2) and its predecessor “read-only” (Web1).
 
 ## Secret Phrase aka Seed Phrase/Recovery Phrase
 
@@ -211,23 +211,23 @@ Peer-to-peer financial service on public blockchains - uses emerging technology 
 
 ## Decentralized Exchange (DEX)
 
-A peer-to-peer exchange that allows users to trade cryptocurrencies without the need for a mediator
+A peer-to-peer exchange that allows users to trade cryptocurrencies without the need for a mediator.
 
 ## Decentralized Autonomous Organization (DAO)
 
-A network of people with no central leadership, and is collectively owned and governed by its members
+A network of people with no central leadership, and is collectively owned and governed by its members.
 
 ## Signature (Cryptographic Signature)
 
-A mathematical operation that allows someone to prove their ownership of their wallet, coin, or data
+A mathematical operation that allows someone to prove their ownership of their wallet, coin, or data.
 
 ## Key Pair
 
-A combination of a public key and a private key that helps encrypt information that guarantees data is protected at a higher security level
+A combination of a public key and a private key helps encrypt information that guarantees data is protected at a higher security level.
 
 ## Whitepaper
 
-A document crypto projects release the provide investors with technical information about its purpose
+A document crypto projects release that provides investors with technical information about its purpose.
 
 ## Wrapped Tokens
 
@@ -239,11 +239,11 @@ The ability to build an NFT on top of another NFT where the initial NFT is wrapp
 
 ## Airdrop
 
-When a project has a giveaway for either tokens or coins, and can also be NFTs
+When a project has a giveaway for either tokens or coins and can also be NFTs.
 
 ## ERC-721
 
-Known as NFTs, this allows developers to classify owned arbitrary data as a valid token
+Known as NFTs, this allows developers to classify owned arbitrary data as a valid token.
 
 ## ERC-20
 
@@ -271,7 +271,7 @@ Platforms where you can buy and sell cryptocurrencies
 
 ## Testnet aka “Test Network”
 
-A network used to stimulate the behavior of the mainnet. This is where developers can test the performance of new protocols before making them public.
+A network is used to stimulate the behavior of the main net. This is where developers can test the performance of new protocols before making them public.
 
 ## Mainnet aka “Main Network”
 

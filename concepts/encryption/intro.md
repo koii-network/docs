@@ -18,6 +18,6 @@ These platforms, in addition to their primary functions, provide robust security
 In this section, we will learn how to encrypt and decrypt messages using Solana and Ethereum keys.
 
 :::info
-Check out [Encryption Package](https://www.npmjs.com/package/solana-encryption) on npm.
+Check out the [Encryption Package](https://www.npmjs.com/package/solana-encryption) on npm.
 
 :::
