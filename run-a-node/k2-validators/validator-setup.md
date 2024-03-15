@@ -16,7 +16,7 @@ Our validators are currently under maintenance. Running a validator is not recom
 
 :::
 
-The following guide describes how to setup a validator on Ubuntu.
+The following guide describes how to set up a validator on Ubuntu.
 
 ## Identity Setup
 
@@ -30,7 +30,7 @@ koii-keygen new --outfile ~/vote-account-keypair.json
 
 ```
 
-The authorized withdrawer keypair is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
+The authorized withdrawer keypair is the ultimate authority over your validator. This key pair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
 
 This is a very important keypair. Anyone in possession of it can permanently take control of your vote account and make any changes they please. Therefore, it's crucial to store your authorized-withdrawer keypair in a secure location.
 
@@ -95,7 +95,7 @@ cd ~
 ```
 
 :::tip
-Please make sure you are in the home directory of the user you created before continuing
+Please make sure you are in the home directory of the user you created before continuing to
 check by running `pwd` and it should return `/home/koii`
 :::
 
@@ -155,7 +155,7 @@ If you see a value in `Activating Stake` then you should be successfully voting 
 
 ## Step 6: Delegate Your Stake
 
-If your delegated stake is not showing up, you can delegate the stake to the validator using the staking account and validator's identity keypair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
+If your delegated stake is not showing up, you can delegate the stake to the validator using the staking account and validator's identity key pair. You will have to use the `--force` option in order to bypass the warning that your vote account has no root slot.
 
 ```bash
 koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
