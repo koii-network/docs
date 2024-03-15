@@ -180,3 +180,37 @@ koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/
 ```
 
 Remember to move your authorized withdrawer keypair into a very secure location after running the above command.
+
+## Known validators
+
+If you know and respect other validator operators, you can specify this on the command line with the `--known-validator <PUBKEY>` argument to `koii-validator`. You can specify multiple ones by repeating the argument `--known-validator <PUBKEY1> --known-validator <PUBKEY2>`. This has two effects, one is when the validator is booting with `--only-known-rpc`, it will only ask that set of known nodes for downloading genesis and snapshot data. Another is that in combination with the `--halt-on-known-validators-accounts-hash-mismatch` option, it will monitor the merkle root hash of the entire accounts state of other known nodes on gossip and if the hashes produce any mismatch, the validator will halt the node to prevent the validator from voting or processing potentially incorrect state values. At the moment, the slot that the validator publishes the hash on is tied to the snapshot interval. For the feature to be effective, all validators in the known set should be set to the same snapshot interval value or multiples of the same.
+
+It is highly recommended you use these options to prevent malicious snapshot state download or account state divergence.
+
+## Connect Your Validator
+
+Connect to the cluster by running:
+
+```bash
+koii-validator \
+  --identity ~/validator-keypair.json \
+  --vote-account ~/vote-account-keypair.json \
+  --rpc-port 8899 \
+  --entrypoint testnet.koii.network:8001 \
+  --limit-ledger-size \
+  --log ~/koii-validator.log
+```
+
+To force validator logging to the console add a `--log` argument, otherwise the validator will automatically log to a file.
+
+The ledger will be placed in the `ledger/` directory by default, use the -`-ledger` argument to specify a different location.
+
+:::note
+You can use a paper wallet seed phrase for your `--identity` and/or `--authorized-voter` keypairs. To use these, pass the respective argument as `koii-validator --identity ASK ... --authorized-voter ASK ...` and you will be prompted to enter your seed phrases and optional passphrase.
+:::
+
+Confirm your validator is connected to the network by opening a new terminal and running:
+
+koii gossip
+
+If your validator is connected, its public key and IP address will appear in the list.
