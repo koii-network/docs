@@ -143,21 +143,6 @@ const config = {
     ],
 
     [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "doc",
-        path: "doc",
-        routeBasePath: "doc/",
-        sidebarPath: require.resolve("./sidebars/docSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        editCurrentVersion: true,
-        include: ["**/*.md", "**/*.mdx"],
-      },
-    ],
-
-    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -513,7 +498,7 @@ const config = {
             from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
           },
           {
-            to: "/faq/getting-started",
+            to: "/faq/questions",
             from: "/koii/faq",
           },
 
@@ -1017,7 +1002,7 @@ const config = {
           },
           {
             label: "❓ FAQ",
-            to: "/faq/getting-started/",
+            to: "/faq/questions/",
             activeBasePath: "faq",
             position: "left",
             className: "header-text",
