@@ -157,3 +157,26 @@ Or to see in finer detail:
 ```bash
 koii balance --lamports
 ```
+
+## Create Authorized Withdrawer Account
+
+If you haven't already done so, create an authorized-withdrawer keypair to be used as the ultimate authority over your validator. This keypair will have the authority to withdraw from your vote account, and will have the additional authority to change all other aspects of your vote account. Needless to say, this is a very important keypair as anyone who possesses it can make any changes to your vote account, including taking ownership of it permanently. So it is very important to keep your authorized-withdrawer keypair in a safe location. It does not need to be stored on your validator, and should not be stored anywhere from where it could be accessed by unauthorized parties. To create your authorized-withdrawer keypair:
+
+```bash
+koii-keygen new -o ~/authorized-withdrawer-keypair.json
+```
+
+## Create Vote Account
+
+If you haven’t already done so, create a vote-account keypair and create the vote account on the network. If you have completed this step, you should see the “vote-account-keypair.json” in your Koii runtime directory:
+
+```bash
+koii-keygen new -o ~/vote-account-keypair.json
+```
+
+The following command can be used to create your vote account on the blockchain with all the default options:
+```bash
+koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/authorized-withdrawer-keypair.json
+```
+
+Remember to move your authorized withdrawer keypair into a very secure location after running the above command.
