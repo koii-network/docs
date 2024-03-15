@@ -8,7 +8,7 @@ sidebar_label: Choose Your Tasks
 
 Update the `TASKS` field with the task IDs you want to run, **seperataed by commas, no space between!** Full list of Tasks and their details (i.e. min stakes) found here.
 
-**Full list of Tasks can be found [HERE](https://docs.koii.network/faq/pagethree/#full-list-of-tasks-for-vps)**
+**Full list of Tasks can be found [HERE](https://docs.koii.network/faq/documentations/#full-list-of-tasks-for-vps)**
 
 Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, seperated by commas.
 
