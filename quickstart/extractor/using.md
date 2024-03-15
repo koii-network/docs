@@ -57,4 +57,4 @@ Be sure to provide a `secret_spheron_storage_key`, we are using the IPFS to depl
 
 #### Other Variables:
 
-Don't forget to edit the task_name, `task_description`, `total_bounty_amount` and `bounty_amount_per_round` before deployment, as these would be directly visible to potential task runners in Koii Node.
+Don't forget to edit the task_name, `task_description`, `total_bounty_amount`, and `bounty_amount_per_round` before deployment, as these would be directly visible to potential task runners in Koii Node.
