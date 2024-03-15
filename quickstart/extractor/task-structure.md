@@ -6,7 +6,7 @@ sidebar_label: The Task Structure & Final Steps
 
 ### **Overview:**
 
-The `TwitterTask` class,found in `twitter-task.js` provides functionality for non-profits to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
+The `TwitterTask` class, found in `twitter-task.js` provides functionality for non-profits to crawl Twitter based on a search term, populate a database with the crawl results, validate submissions of other nodes using the database, and manage CID (Content Identifier) submissions.
 
 :::tip
 Edit `searchTerm` (defaulted to 'Web3') to customize your extractor.
@@ -90,7 +90,7 @@ Check out `coreLogic.js` to see how it utilizes these functions for the task & a
 ## Creating a Webpack & Deployment To IPFS
 
 Before deploying our task, we must first convert it to
-webpack format with by typing `yarn webpack` in our terminal.
+webpack format by typing `yarn webpack` in our terminal.
 
 We can use use create-task-cli package to deploy our webpacked application to IPFS.type `npx @\_koii/create-task-cli@latest`
 
