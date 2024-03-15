@@ -13,7 +13,7 @@ Proof of Real Traffic (PoRT) is a cryptographic primitive including a signature 
 
 # How does it work?
 
-The attention task runs on the network of Koii nodes. After a user registers their content to the attention task, it will keep collecting the views received by the content. Currently, supported content: NFT on Arweave, content on IPFS or your webpage. After collecting certain views, users can get their KOII.
+The attention task runs on the network of Koii nodes. After a user registers their content to the attention task, it will keep collecting the views received by the content. Currently, supported content: NFT on Arweave, content on IPFS, or your webpage. After collecting certain views, users can get their KOII.
 
 # How can I use it?
 

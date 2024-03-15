@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Solana Encryption
 ---
 
-Solana employs [Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wikipedia.org/wiki/EdDSA), an elliptical signature algorithm for cryptography.
+Solana employs the [Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wikipedia.org/wiki/EdDSA), an elliptical signature algorithm for cryptography.
 
 :::info
 [K2](/develop/settlement-layer/k2-tick-tock-fast-blocks) is a fork of Solana, so messages can also be encrypted using Koii addresses!
@@ -16,7 +16,7 @@ Solana employs [Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wi
 Create two helper functions to help encode a message and decode data using [`TextEncoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder) and [`TextDecoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder), respectively.
 
 - `TextEncoder` — An interface that takes in a stream of code points as input and emits a stream of UTF-8 bytes.
-- `TextDecoder` — An interface that represents a decoder for a specific text encoding, such as UTF-8, ISO-8859-2 etc.
+- `TextDecoder` — An interface that represents a decoder for a specific text encoding, such as UTF-8, ISO-8859-2, etc.
 
 ```js
 // Encode message
@@ -93,7 +93,7 @@ const encrypt = (message, nonce, publicKeyB, privateKeyA) => {
 ```
 
 ## Decrypt Message
-Use `nacl.box.open()` to authenticate and decrypt the given box with peer's public key, our secret key, and the given nonce.
+Use `nacl.box.open()` to authenticate and decrypt the given box with the peer's public key, our secret key, and the given nonce.
 
 **`nacl.box.open()` Parameters**
 
