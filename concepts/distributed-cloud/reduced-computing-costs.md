@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 <!-- ![banner](../img/Nodes%20vs%20Servers.svg) -->
 
-Marketplace dynamics can ensure compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
+Marketplace dynamics can ensure that compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
 
 ## Pay for Compute, not Device
 
