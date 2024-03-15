@@ -7,7 +7,7 @@ sidebar_label: Events
 
 ## accountChanged
 
-Finnie will emit accountChanged when the user switches to an another account. This is how you can listen to the events on your app
+Finnie will emit accountChanged when the user switches to an another account. This is how you can listen to the events on your app:
 
 ```javascript
 window.k2.on('accountChanged', (publicKey: PublicKey) => {

@@ -40,7 +40,7 @@ console.log(window.k2.isConnected); // false
 
 To sign and send a transaction with Finnie, you can use the `signAndSendTransaction()` method. First, create a transaction using the `Transaction` object imported from the `@_koi/web3.js` package.
 
-Once you have a transaction ready, you can sign it using a keypair and send it to the network by calling the `signAndSendTransaction()` method. If the transaction is successfully signed and sent, the method will resolve the returned promise with the signature. This allows you to inspect the transaction using <a href="https://explorer.koii.live/" target="_blank">K2 explorer</a>.  However, if there are any issues during the signing or sending process, the promise will be rejected.
+Once you have a transaction-ready, you can sign it using a keypair and send it to the network by calling the `signAndSendTransaction()` method. If the transaction is successfully signed and sent, the method will resolve the returned promise with the signature. This allows you to inspect the transaction using <a href="https://explorer.koii.live/" target="_blank">K2 Explorer</a>.  However, if there are any issues during the signing or sending process, the promise will be rejected.
 
 ```javascript
 import { Transaction, Keypair } from '@_koi/web3.js'
@@ -58,14 +58,14 @@ try {
     signer,
   ]);
 } catch (error) {
-  // request rejected or no permisisons
+  // request rejected or no permissions
   console.error(error); // { code: 4001, message: 'User rejected the request' }
 }
 ```
 
 ## signMessage
 
-Finnie will sign your arbitrary string message. Signature will be verified before being sent to the page.
+Finnie will sign your arbitrary string message. The signature will be verified before being sent to the page.
 
 ```javascript
 interface SignMessageResult {
