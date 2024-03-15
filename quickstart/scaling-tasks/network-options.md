@@ -13,7 +13,7 @@ While developing your first task, you have probably noticed the following variab
   "task_executable_network": "IPFS"
 ```
 
-Let's take a step back, and understand what exactly is a **task executable network**. In this context, it is where your webpacked task will be stored. This is where the Koii users will be retrieve the task from.
+Let's take a step back, and understand what exactly is a **task executable network**. In this context, it is where your webpacked task will be stored. This is where the Koii users will retrieve the task from.
 
 Our default option IPFS, which stands for **InterPlanetary File System**. It is a peer-to-peer network that allows one to store and share data in a distributed file system.
 
@@ -23,7 +23,7 @@ Instead of storing the data directly in the blockchain, we store it in IPFS, and
 
 :::
 
-For `task_executable_network`, following values are accepted:
+For `task_executable_network`, the following values are accepted:
 
 - **DEVELOPMENT** (Only for testing purposes)
 - **IPFS**
@@ -31,4 +31,4 @@ For `task_executable_network`, following values are accepted:
 
 Arweave is a similar technology to IPFS, but for Koii applications we highly recommend using IPFS due to its ease of use.
 
-As a task developer, the other place you can benefit from a solution like this, is while retrieving data from your task runners. To interact with IPFS in that regard, let's take a look at [**Using Spheron**](spheron-infrastructure).
+As a task developer, the other place you can benefit from a solution like this is while retrieving data from your task runners. To interact with IPFS in that regard, let's take a look at [**Using Spheron**](spheron-infrastructure).
