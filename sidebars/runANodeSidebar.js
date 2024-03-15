@@ -61,6 +61,8 @@ const sidebars = {
     "k2-validators/system-requirements",
     "k2-validators/system-setup",
     "k2-validators/validator-setup",
+    "k2-validators/validator-start",
+    "k2-validators/validator-stake",
     "k2-validators/rewards",
   ],
 };
