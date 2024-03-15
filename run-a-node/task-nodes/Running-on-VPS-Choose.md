@@ -6,18 +6,18 @@ sidebar_label: Choose Your Tasks
 
 ## NOW Choose your Tasks
 
-Update the `TASKS` field with the task IDs you want to run, **seperataed by commas, no space between!** Full list of Tasks and their details (i.e. min stakes) found here.
+Update the `TASKS` field with the task IDs you want to run, **separated by commas, no space between!** A full list of Tasks and their details (i.e. min stakes) is found here.
 
-**Full list of Tasks can be found [HERE](https://docs.koii.network/faq/documentations/#full-list-of-tasks-for-vps)**
+**A full list of Tasks can be found [HERE](https://docs.koii.network/faq/documentations/#full-list-of-tasks-for-vps)**
 
-Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, seperated by commas.
+Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, separated by commas.
 
 Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staking wallet. This **should be greater than the SUM of all `TASK_STAKES` + 1 KOII** for covering gas.
 
    - Add any specific task variables required for the tasks at the end of the file.
    
    :::info Example
-   After you enter a task Id needs your information, you can add them as environment variables,
+   After you enter a task Id that needs your information, you can add them as environment variables,
    please add them under the `SCRAPING_URL=""`  
    for example: `TWITTER_USERNAME=""`
    :::
@@ -44,7 +44,7 @@ Ctrl/Command +X = Exit
  - **Wallet setup** (Set up New Koii Publick Key/New wallet) Documentation [here](https://docs.koii.network/develop/command-line-tool/koii-cli/create-wallet)
 
 :::tip
-Don't forget to run this after installed Cli
+Don't forget to run this after installing CLI
 ```bash
 koii config set --url https://testnet.koii.live
 ```
@@ -57,13 +57,13 @@ koii config set --url https://testnet.koii.live
 koii balance
 ```
 
-It will show: "Error: Dynamic program error: No default signer found, run "koii-keygen new -o ....." to create a new one" Please copy the command from the "" which is automatically generated path, as that will set the wallet keys in correct place.
+It will show: "Error: Dynamic program error: No default signer found, run "koii-keygen new -o ....." to create a new one" Please copy the command from the "" which is automatically generated path, as that will set the wallet keys in the correct place.
 
 ```bath
 koii-keygen new -o /YOUR-USER/.config/koii/id.json
 ```
 
-To improve security, system want you to set up BIP39 Passphrase - additional layer for securing your account, please fill it in. **SAVE the generated SEED PHRASE in order for you to recover your funds later!**
+To improve security, the system wants you to set up BIP39 Passphrase - an additional layer for securing your account, please fill it in. **SAVE the generated SEED PHRASE in order for you to recover your funds later!**
 
 
 Check what is your Wallet address and Transfer some KOII in it! at least 4 KOII to launch your first Free Token Task
@@ -72,4 +72,4 @@ Check what is your Wallet address and Transfer some KOII in it! at least 4 KOII 
 koii address
 ```
 
-For getting started Koii Foundation have created a Koii Faucet in order to receive first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
+To get started Koii Foundation has created a Koii Faucet in order to receive the first KOII - start from [here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)

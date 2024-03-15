@@ -28,14 +28,14 @@ If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify
 docker-compose --version
 ```
 
-If you have version below 1.29, please execute next commands:
+If you have a version below 1.29, please execute the next commands:
 
 ```bash
 which docker-compose 
 ```
 :::
 
-Update the docker-compose library. Make sure that path in the end is the same as you retrieved from previous command.
+Update the docker-compose library. Make sure that the path in the end is the same as you retrieved from the previous command.
 
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -46,14 +46,14 @@ Give the system ther permission
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## Run the Docker Compose again in order to launch sucessfuly your node
+## Run the Docker Compose again in order to launch successfuly your node
 
 ```bash
 cd VPS-task
 docker-compose up
 ```
 
-**After completing this step you have your node sucessfully running**
+**After completing this step you will have your node successfully running**
 
 In order to verify this:
 

@@ -17,7 +17,7 @@ Our validators are currently under maintenance. Running a validator is not recom
 :::
 
 <Description
-  text="This section provides a guide for how to configure your Ubuntu system"
+  text="This section provides a guide on how to configure your Ubuntu system"
 />
 
 Before continuing with this section you should ensure that your environment is up to date
@@ -42,7 +42,7 @@ sudo adduser koii
 sudo usermod -aG sudo koii
 ```
 
-Elevate into the user
+Elevate the user
 
 ```bash
 sudo su koii
@@ -50,7 +50,7 @@ cd ~
 ```
 
 :::tip
-Please make sure you are in the home directory of the user you created before continuing
+Please make sure you are in the home directory of the user you created before continuing to
 check by running `pwd` and it should return `/home/koii`
 :::
 
