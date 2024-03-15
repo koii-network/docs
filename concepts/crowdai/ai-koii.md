@@ -13,10 +13,10 @@ AI applications require massive computing resources to handle complex algorithms
 
 Data is the lifeblood of AI, and access to high-quality datasets can be a major barrier for many AI projects. Koii consists of real individuals who, with proper consent, contribute to collecting data using their accounts. This decentralized data-sharing model allows AI researchers and developers to access diverse datasets that are otherwise hard to obtain.
 
-## Leveraging Open Source AI Models
+## Leveraging Open-Source AI Models
 
 Open source models, like [Hugging Face](https://huggingface.co/) and [TensorFlow](https://www.tensorflow.org/) are revolutionizing the AI landscape. Koii aims to bring this openness to the next level by integrating such models into its platform.
 
 With the inclusion of widely recognized pre-trained models, developers will have immediate access to state-of-the-art AI technologies for natural language processing and a cost-effective way to train them via the Koii Network.
 
-Network users can contribute by improving these models using their unique datasets and computing capabilities. By facilitating a symbiotic relationship with nodes, developers and open-source projects, Koii empowers its users to push the boundaries of what's possible with AI.
+Network users can contribute by improving these models using their unique datasets and computing capabilities. By facilitating a symbiotic relationship with nodes, developers, and open-source projects, Koii empowers its users to push the boundaries of what's possible with AI.
