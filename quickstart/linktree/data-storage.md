@@ -7,7 +7,7 @@ sidebar_label: Data Storage - NeDB
 import Description from "@site/src/components/description";
 
 <Description
-text="This section will provide information on how and where your tasks can store data in a decentralized format. We will continue to learn that with the Linktree's example, where we require to store information about each individual users who creates a linktree on the application."
+text="This section will provide information on how and where your tasks can store data in a decentralized format. We will continue to learn that with Linktree's example, where we are required to store information about each individual user who creates a Linktree on the application."
 />
 
 ## Where Will the Linktree Data Be Stored?
@@ -16,17 +16,17 @@ Since Koii tasks run on a distributed network of nodes, each node stores a copy 
 The goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. We
 need a module to manage the database.
 
-In the linktree task, this module is called `db_model.js`. It manages three different object types, which include:
+In the Linktree task, this module is called `db_model.js`. It manages three different object types, which include:
 
-- **Linktree data** — We need to be able to store and retrieve the link tree data. This data includes the changes to the linktree, the public address along with the user signatures.
+- **Linktree data** — We need to be able to store and retrieve the link tree data. This data includes the changes to the Linktree, the public address along the user signatures.
 
 - **Proofs** — Proofs are essential for ensuring the validity of any updates made to the database. In cryptographic systems, each transaction is accompanied by a digital signature, which serves as an authentication mechanism. By verifying the signature, we can ascertain the legitimacy of the transaction and associated message.
 
 - **Authentication list** — We need to keep an authentication list to ensure only the nodes that have access to the task can update or retrieve data. This is essential for the security of our task.
 
-Each of these needs to have its setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our linktree task.
+Each of these needs to have its setters and getters. You can define these to serve the needs of your task however you see fit. Let’s now look at the implementation of this module in our Linktree task.
 
-For the linktree data, we have the following functions:
+For the Linktree data, we have the following functions:
 
 - `getLinktree()`
 - `setLinktree()`
@@ -49,11 +49,11 @@ const getLinktree = async (publicKey) => {
 };
 ```
 
-The function takes a public key as a parameter and returns the linktree data associated with that public key. It calls the `levelDB.get` method from the `namespaceWrapper` module.
+The function takes a public key as a parameter and returns the Linktree data associated with that public key. It calls the `levelDB.get` method from the `namespaceWrapper` module.
 
-The `getLinktreeId` function is used to construct the key by concatenating the _"linktree:"_ prefix with the given `publicKey`. For example: `"linktree:0x07c3e160270ed08f307a49013f4b1ac37659e572"`
+The `getLinktreeId` function is used to construct the key by concatenating the _"Linktree:"_ prefix with the given `publicKey`. For example: `"Linktree:0x07c3e160270ed08f307a49013f4b1ac37659e572"`
 
-Similarly, the `setLinktree` method stores a user's linktree data on levelDB and the `getAllLinketrees` method returns all linktree data.
+Similarly, the `setLinktree` method stores a user's Linktree data on levelDB and the `getAllLinketrees` method returns all Linktree data.
 
 For the proofs, we have the following functions:
 
