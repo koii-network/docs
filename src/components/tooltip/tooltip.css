@@ -38,5 +38,11 @@
   border-radius: 8px;
 }
 
-.tooltip-hover-container {
+/* tooltip adjustment on hover to bottom left for small and medium sized screens */
+@media screen and (max-width: 1440px) {
+  .tooltip-hover-text {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-75%);
+  }
 }
