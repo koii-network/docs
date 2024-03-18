@@ -249,8 +249,9 @@ Note that the above target of 500 GB does not account for other items that may r
 
 Running the validator as a systemd unit is one easy way to manage running in the background.
 
-Assuming you have a user called koii on your machine, create the file /etc/systemd/system/koii.service with the following:
+Assuming you have a user called `koii` on your machine, create the file `/etc/systemd/system/koii.service` with the following:
 
+```bash
 [Unit]
 Description=Koii Validator
 After=network.target
@@ -268,6 +269,7 @@ ExecStart=/home/koii/bin/validator.sh
 
 [Install]
 WantedBy=multi-user.target
+```
 
 Now create `/home/koii/bin/validator.sh` to include the desired `koii-validator` command-line. Ensure that the 'exec' command is used to start the validator process (i.e. "exec koii-validator ..."). This is important because without it, logrotate will end up killing the validator every time the logs are rotated.
 
@@ -283,7 +285,7 @@ sudo systemctl enable --now koii
 
 #### Log output tuning
 
-The messages that a validator emits to the log can be controlled by the RUST_LOG environment variable. Details can by found in the documentation for the env_logger Rust crate.
+The messages that a validator emits to the log can be controlled by the `RUST_LOG` environment variable. Details can by found in the documentation for the `env_logger` Rust crate.
 
 Note that if logging output is reduced, this may make it difficult to debug issues encountered later. Should support be sought from the team, any changes will need to be reverted and the issue reproduced before help can be provided.
 
@@ -297,7 +299,7 @@ If the validator is being started by a wrapper shell script, it is important to 
 
 #### Using logrotate
 
-An example setup for the logrotate, which assumes that the validator is running as a systemd service called koii.service and writes a log file at /home/koii/koii-validator.log:
+An example setup for the `logrotate`, which assumes that the validator is running as a systemd service called `koii.service` and writes a log file at `/home/koii/koii-validator.log`:
 
 ```bash
 # Setup log rotation
