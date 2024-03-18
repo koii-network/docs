@@ -5,20 +5,21 @@ image: img/thumbnail.png
 sidebar_label: Whitelist Task
 ---
 
-# Whitelist Task
 
-:::caution
+## How to Whitelist Your Task
 
-Contact the development team on the [Koii Discord](https://discord.com/invite/koii-network) and share your:&#x20;
+To get your task whitelisted, follow these steps:
 
-- Executable file
-- State Info Pubkey
 
-Then ask them to whitelist your task
-:::
+### 1. Test Locally
+Begin by testing your task on your local environment to ensure it functions correctly. 
 
----
+### 2. Use the Advanced Task Feature
+It's recommended to make use of the Advanced Task feature available on the node. This functionality enables you to design and run your own custom task even before you receive official whitelisting. To initiate your task, navigate to the **Add Task** section and choose the **+ Advanced** option. Additionally, sharing your task with friends offers a fantastic opportunity for further testing and obtaining valuable feedback.
+### 3. Apply for Whitelisting
+To have your task appear on the whitelisted tasks list, take the following actions:
+  - Make your repository **public** or share it directly with the Koii team.
+  - Open a **support ticket on [Discord](https://discord.com/invite/koii-network)** to initiate the whitelisting process. Please also provide the link to your public repository as well as your Task ID.
 
-**Note**: Other nodes can still run your task if it's not whitelisted, but will not be able to use the Koii Node to find it.&#x20;
-
-To run a task without whitelisting first, use the flag `RUN_NON_WHITELISTED_TASKS=true` while [running the CLI node](/run-a-node/introduction/task-nodes).
+### Note
+During this process, our team will create a dedicated GitHub account for holding your project. 
