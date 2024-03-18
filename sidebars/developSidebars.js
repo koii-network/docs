@@ -39,32 +39,33 @@ const sidebars = {
     //   items: [
     {
       type: "category",
-      label: "Executable Structure",
+      label: "Task Structure",
       link: {
         type: "doc",
-        id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
+        id: "write-a-koii-task/task-development-guide/task-structure/task-structure",
       },
       collapsed: true,
       items: [
-        "write-a-koii-task/task-development-guide/executable-structure/setup",
-        "write-a-koii-task/task-development-guide/executable-structure/validate-node",
-        "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
+        "write-a-koii-task/task-development-guide/task-structure/execute-task",
+        "write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+        "write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
+        "write-a-koii-task/task-development-guide/task-structure/setup",
       ],
     },
-    {
-      type: "category",
-      label: "K2 Task Template",
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
-      },
-      collapsed: true,
-      items: [
-        "write-a-koii-task/task-development-guide/k2-task-template/task-function",
-        "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
-        "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "K2 Task Template",
+    //   link: {
+    //     type: "doc",
+    //     id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "write-a-koii-task/task-development-guide/k2-task-template/task-function",
+    //     "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+    //     "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
+    //   ],
+    // },
     {
       type: "category",
       label: "Task Development Flow",
@@ -343,13 +344,13 @@ const sidebars = {
     //       label: "Executable Structure",
     //       link: {
     //         type: "doc",
-    //         id: "write-a-koii-task/task-development-guide/executable-structure/executable-structure",
+    //         id: "write-a-koii-task/task-development-guide/task-structure/task-structure",
     //       },
     //       collapsed: true,
     //       items: [
-    //         "write-a-koii-task/task-development-guide/executable-structure/setup",
-    //         "write-a-koii-task/task-development-guide/executable-structure/validate-node",
-    //         "write-a-koii-task/task-development-guide/executable-structure/api-endpoints-optional",
+    //         "write-a-koii-task/task-development-guide/task-structure/setup",
+    //         "write-a-koii-task/task-development-guide/task-structure/validate-node",
+    //         "write-a-koii-task/task-development-guide/task-structure/api-endpoints-optional",
     //       ],
     //     },
     //     {

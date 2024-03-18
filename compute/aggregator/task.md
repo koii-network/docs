@@ -61,7 +61,7 @@ To offer your query as a task that others can run, you can configure its propert
 ## Environment Variables
 
 :::info
-The Extractor application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
+The Extractor application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
 :::
 
 ### Where to Declare
