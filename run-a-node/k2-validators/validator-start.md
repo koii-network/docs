@@ -7,7 +7,7 @@ sidebar_label: Starting a Validator
 
 ## Configure Koii CLI
 
-The Koii cli includes get and set configuration commands to automatically set the `--url` argument for cli commands. For example:
+The Koii cli includes `get` and `set` configuration commands to automatically set the `--url` argument for cli commands. For example:
 
 ```bash
 koii config set --url https://testnet.koii.network 
@@ -57,13 +57,13 @@ Add
 ```bash
 LimitNOFILE=1000000
 ```
-to the [Service] section of your systemd service file, if you use one, otherwise add
+to the `[Service]` section of your systemd service file, if you use one, otherwise add
 
 ```bash
 DefaultLimitNOFILE=1000000
 ```
 
-to the [Manager] section of /etc/systemd/system.conf.
+to the `[Manager]` section of `/etc/systemd/system.conf`.
 
 ```bash
 sudo systemctl daemon-reload
@@ -158,6 +158,10 @@ Or to see in finer detail:
 koii balance --lamports
 ```
 
+:::note
+If the air drop fails, you may need to wait a few minutes and try again. If you still don't receive the air drop, please reach out to the Koii team on [Discord](https://discord.gg/koii-network).
+:::
+
 ## Create Authorized Withdrawer Account
 
 If you haven't already done so, create an authorized-withdrawer keypair to be used as the ultimate authority over your validator. This keypair will have the authority to withdraw from your vote account, and will have the additional authority to change all other aspects of your vote account. Needless to say, this is a very important keypair as anyone who possesses it can make any changes to your vote account, including taking ownership of it permanently. So it is very important to keep your authorized-withdrawer keypair in a safe location. It does not need to be stored on your validator, and should not be stored anywhere from where it could be accessed by unauthorized parties. To create your authorized-withdrawer keypair:
@@ -192,13 +196,23 @@ It is highly recommended you use these options to prevent malicious snapshot sta
 Connect to the cluster by running:
 
 ```bash
-koii-validator \
-  --identity ~/validator-keypair.json \
-  --vote-account ~/vote-account-keypair.json \
-  --rpc-port 8899 \
-  --entrypoint testnet.koii.network:8001 \
-  --limit-ledger-size \
-  --log ~/koii-validator.log
+#!/usr/bin/env bash
+
+exec koii-validator \
+  --identity /home/koii/validator-keypair.json \
+  --vote-account vote-account-keypair.json \
+  --ledger /home/koii/validator-ledger \
+  --accounts /home/koii/validator-accounts \ 
+  --rpc-bind-address 0.0.0.0 \
+  --dynamic-port-range 10000-10500 \
+  --rpc-port 10899 --gossip-port 10001 \
+  --log /home/koii/koii-validator.log \
+  --limit-ledger-size \ 
+  --only-known-rpc \
+  --entrypoint testnet-validator-1.koii.network:10001 \
+  --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \
+  --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF \
+  --wal-recovery-mode skip_any_corrupted_record
 ```
 
 To force validator logging to the conkoiie add a `--log` argument, otherwise the validator will automatically log to a file.
@@ -211,13 +225,13 @@ You can use a paper wallet seed phrase for your `--identity` and/or `--authorize
 
 Confirm your validator is connected to the network by opening a new terminal and running:
 
-koii gossip
+`koii gossip`
 
 If your validator is connected, its public key and IP address will appear in the list.
 
 ### Controlling local network port allocation
 
-By default the validator will dynamically select available network ports in the 8000-10000 range, and may be overridden with `--dynamic-port-range`. For example, koii-validator `--dynamic-port-range 11000-11020 ...` will restrict the validator to ports 11000-11020.
+By default the validator will dynamically select available network ports in the 10000-10500 range, and may be overridden with `--dynamic-port-range`. For example, koii-validator `--dynamic-port-range 10000-10500 ...` will restrict the validator to ports 10000-10500.
 
 ### Limiting ledger size to conserve disk space
 
