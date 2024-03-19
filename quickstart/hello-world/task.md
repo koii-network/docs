@@ -21,7 +21,7 @@ Update `task()` with the code block below to fulfill the task's logic:
 
 ```js
 async task(round) {
-    // Write the logic to do the work required for submitting the values and optionally store the result in levelDB
+    // Write the logic to do the work required for submitting the values and optionally store the result in NeDB
 
     // Below is just a sample of work that a task can do
     try {

@@ -12,7 +12,7 @@ async function task() {
   console.log("HASH:", cid);
 
   if (cid) {
-    await namespaceWrapper.storeSet("cid", cid); // store in levelDB
+    await namespaceWrapper.storeSet("cid", cid); // store in NeDB
   }
   return false;
 }
