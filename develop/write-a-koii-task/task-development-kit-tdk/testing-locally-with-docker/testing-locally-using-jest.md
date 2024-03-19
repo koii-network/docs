@@ -26,7 +26,7 @@ For more information, please check [Jest's official website](https://jestjs.io/)
 If your task is cloned from our [K2 Task Template](/develop/write-a-koii-task/task-development-guide/k2-task-template/), you can directly run:
 
 ```bash
-npm run install
+npm install
 npm run webpack
 npm run test
 ```
