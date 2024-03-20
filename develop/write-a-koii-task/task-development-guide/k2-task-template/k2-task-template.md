@@ -50,7 +50,7 @@ The directory houses three key files: `submission.js`, `audit.js` and `distribut
 ### `submission.js`
 
 1. `task()` - The logic for what your task should do goes here. There is a window in round that is dedicated to do work. The code in task is executed in that window.
-2. `fetchSubmission()` - After completing the task , the results/work will be stored somewhere like on IPFS or local levelDB. This function is the place where you can write the logic to fetch that work. It is called in `submitTask()` function which does the actual submission on K2.
+2. `fetchSubmission()` - After completing the task , the results/work will be stored somewhere like on IPFS or local NeDB. This function is the place where you can write the logic to fetch that work. It is called in `submitTask()` function which does the actual submission on K2.
 3. `submitTask()` - It makes the call to namespace function of task-node using the wrapper.
 
 ### `audit.js`
