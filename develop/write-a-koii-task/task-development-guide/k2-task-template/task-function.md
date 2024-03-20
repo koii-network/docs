@@ -16,7 +16,7 @@ The core logic for the sample task on the template is straightforward: a random 
 ```javascript
 /**
  * @description Contains the logic to do the work required
- * for submitting the values and optionally storing the result on levelDB
+ * for submitting the values and optionally storing the result on NeDB
  */
 async function task() {
   const x = Math.random().toString(); // generate random number and convert to string
@@ -24,18 +24,18 @@ async function task() {
   console.log("HASH:", cid);
 
   if (cid) {
-    await namespaceWrapper.storeSet("cid", cid); // store CID on levelDB
+    await namespaceWrapper.storeSet("cid", cid); // store CID on NeDB
   }
 }
 ```
 
 # fetchSubmission()
 
-The `fetchSubmission` function retrieves a node's submission value(CID) from levelDB.
+The `fetchSubmission` function retrieves a node's submission value(CID) from NeDB.
 
 ```javascript
 /**
- * @description Fetch's submission from levelDB
+ * @description Fetch's submission from NeDB
  * @returns {string} The CID
  */
 async function fetchSubmission() {
