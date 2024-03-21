@@ -20,7 +20,7 @@ Besides the [philosophical drive ](/concepts/introduction/philosophy)to include 
    Centralized ownership and control creates vulnerabilities by introducing unnecessary single points of failure.
 
 2. **Cost Reduction**<br/>
-   Marketplace dynamics can ensure compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
+   Marketplace dynamics can ensure that compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
 
 3. **Access Privacy**<br/>
    Privacy is enhanced when there isn't just one core server IP address by allowing lots of devices to serve network requests and thereby hide the traffic from would-be snoopers.

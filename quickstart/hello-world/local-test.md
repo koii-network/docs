@@ -11,7 +11,7 @@ To test our task locally, we can use the following command in the terminal:
 npm test
 ```
 :::tip 
-If you can't run test you may have skipped the step to install packages:
+If you can't run the test you may have skipped the step to install packages:
 
 ```bash
 npm install
@@ -23,7 +23,7 @@ Executing this command will simulate a single round, encompassing all the functi
 ```js
   PASS  tests/main.test.js
   Performing the task
-    √ should performs the core logic task (288 ms)
+    √ should perform the core logic task (288 ms)
     √ should make the submission to k2 for dummy round 1 (59 ms)
     √ should make the make an audit on submission (42 ms)
     √ should make the distribution submission to k2 for dummy round 1 (44 ms)

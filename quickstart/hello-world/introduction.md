@@ -45,9 +45,9 @@ If you are interested in gaining an in-depth understanding of the task developme
 
 ## What is a Node?
 
-Nodes are people using their computers to create a world-wide network of servers. You can pay them with KOII in order to incentivize them to run your application on their own machines.
+Nodes are people using their computers to create a worldwide network of servers. You can pay them with KOII in order to incentivize them to run your application on their own machines.
 
-In order to host your application, you can use the already existing pool of task runners, or recruit people that would volunteer to help hosting your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
+In order to host your application, you can use the already existing pool of task runners, or recruit people who would volunteer to help host your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
 ![banner](../img/nodesandtasks.svg)
 
@@ -56,7 +56,7 @@ In order to host your application, you can use the already existing pool of task
 ![banner](../img/whataretaskssimplified.svg)
 A task is a piece of code that you want to run on someone else's computer.
 
-To prepare your project as a task, we'll build two main components, a task program and a meta data file.
+To prepare your project as a task, we'll build two main components, a task program and a metadata file.
 
 In pseudocode, a task is a data object like this:
 

@@ -15,7 +15,7 @@ import Description from "@site/src/components/description";
 
 According to the specification:
 
-> A transaction pricing mechanism that includes fixed-per-block network fee that is burned and dynamically expands/contracts block sizes to deal with transient congestion.
+> A transaction pricing mechanism that includes a fixed-per-block network fee that is burned and dynamically expands/contracts block sizes to deal with transient congestion.
 
 Example `EIP1559` transaction:
 
@@ -42,9 +42,9 @@ const sendEthEIP1559 = async () => {
 };
 ```
 
-If you would like to read a more detailed description of what `EIP-1559` transaction is, you can check out the official specification document:
+If you would like to read a more detailed description of what the `EIP-1559` transaction is, you can check out the official specification document:
 
 :::info
-What is EIP-1559 transaction?  
+What is the EIP-1559 transaction?  
 [https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md)
 :::

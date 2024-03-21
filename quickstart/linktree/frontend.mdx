@@ -6,14 +6,14 @@ sidebar_label: Connect the Frontend
 
 Connecting the frontend and backend of a project is an essential step in creating a fully functional web application by enabling data communication and interaction between the user interface and the server.
 
-In this section, you'll learn how to connect the frontend of your project to the linktree task. Connecting a frontend to a deployed Koii task is no different from connecting
+In this section, you'll learn how to connect the frontend of your project to the Linktree task. Connecting a frontend to a deployed Koii task is no different from connecting
 to a regular backend; it can be easily done by following these steps:
 
 ### 1. Implement API Functions
 
 API functions serve the purpose of sending HTTP requests and interacting with the backend's endpoints (e.g., GET, POST, PUT, DELETE). Begin by creating API functions for the various HTTP requests.
 
-Here is an example illustrating how the **POST** request method is implemented in the [linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143):
+Here is an example illustrating how the **POST** request method is implemented in the [Linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143):
 
 ```javascript
 async function setLinktree(data, publicKey, nodeList, username) {

@@ -1,6 +1,6 @@
 ---
 title: Koii Node App
-description: The Koii Node is a very small computer program—about the same size as your favorite music playing app—that allows you to run compute jobs called “tasks” for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times.
+description: The Koii Node is a very small computer program—about the same size as your favorite music-playing app—that allows you to run compute jobs called “tasks” for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times.
 image: img/thumbnail.png
 sidebar_label: Koii Node App
 ---
@@ -10,7 +10,7 @@ import Description from "@site/src/components/description";
 # Koii Node App
 
 <Description
-  text="The Koii Node is a very small computer program—about the same size as your favorite music playing app—that allows you to run compute jobs called “tasks” for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times."
+  text="The Koii Node is a very small computer program—about the same size as your favorite music-playing app—that allows you to run compute jobs called “tasks” for people around the world. They pay you to rent the extra space, like Uber for your computer, but it stays on your desk at all times."
 />
 
 The Koii Node app refers to software that allows individuals to participate in the Koii Network by running a node. This app is designed to enable users to contribute to the network's operations, such as content tracking, transaction validation, decentralized hosting, and consensus participation, directly from their devices.

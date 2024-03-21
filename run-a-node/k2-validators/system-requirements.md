@@ -17,7 +17,7 @@ Our validators are currently under maintenance. Running a validator is not recom
 :::
 
 <Description
-  text="This section gives an overview on the minimum requirement to run a K2 Validator"
+  text="This section gives an overview of the minimum requirement to run a K2 Validator"
 />
 
 To run a K2 Validator, you need some KOII tokens and also possess the minimum memory (128 GB or 258 GB), computational (12 or 16 cores), and storage requirements.
@@ -35,7 +35,7 @@ Here are the minimum hardware requirements for running a K2 Validator in terms o
 
 **2. Compute**
 
-- 12 cores / 24 threads, or more @ minimum of 2.8GHz for consensus validator nodes
+- 12 cores / 24 threads, or more at a minimum of 2.8GHz for consensus validator nodes
 - 16 cores / 32 threads, or more for RPC nodes
 
 **3. Storage**
@@ -48,7 +48,7 @@ For consensus validators:
 
 For RPC nodes:
 
-- A larger ledger disk if longer transaction history is required, accounts and ledger should not be stored on the same disk
+- A larger ledger disk if a longer transaction history is required, accounts and ledger should not be stored on the same disk
 - GPUs are not strictly necessary
 - Network: 1 GBPS up and downlink speed, must be unshaped and unmetered
 

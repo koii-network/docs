@@ -37,7 +37,7 @@ npx @_koii/create-task-cli@latest
     upload assets to IPFS(metadata/local vars)
 ```
 
-## Example how to claim rewards from the "Free Token Task!"
+## Example of how to claim rewards from the "Free Token Task!"
 
 ```
 Calling ClaimReward
@@ -53,16 +53,16 @@ Success
 - HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
 - /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
 
-## Example how to Unstake from the "Free Token Task!"
+## Example of how to Unstake from the "Free Token Task!"
 
 ```
 1. Calling Withdraw staked funds from task
 ✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the submitter wallet path address … /home/koii/koii-node/namespace/staking_wallet.json
 
-Gives error but don't worry, follow on with next step ->
+Gives an error but don't worry, follow on with the next step ->
 
-2.Calling ClaimReward
+2. Calling ClaimReward
 ✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the stakePotAccount address … stakepotaccountUSDX2sDSAcq8ZEvA3Tiv7tRpJ1Dv
 ✔ Enter the beneficiaryAccount address (Address that the funds will be transferred to) … HERE_YOUR_WALLET_PUBLIC_ADDRESS
@@ -78,7 +78,7 @@ Success
 
 ## Additional way to claim rewards using Koii_claimer:
 
-In order to have an semi-automatic way to claim $KOII rewards, first need to get perequisites which has to be stored in your server for Koii CLaimer to function.
+In order to have a semi-automatic way to claim $KOII rewards, you first need to get perequisites which have to be stored in your server for Koii CLaimer to function.
 
 ```bash
 git clone https://github.com/eviangel/Koii_claimer
@@ -90,13 +90,13 @@ Then we enter that exact directory where the installation files can be found.
 cd Koii_claimer
 ```
 
-Then we need to create json file that contains the task configurations in order to claim rewards correctly
+Then we need to create a .json file that contains the task configurations in order to claim rewards correctly
 
 ```bash
 nano params.json
 ```
 
-This will create a json file now you need to fill in some information for example:
+This will create a .json file now you need to fill in some information for example:
 
 ```bash
 { "taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
@@ -126,15 +126,15 @@ koii address
 koii-keygen pubkey staking_wallet.json /or/ id.json
 ```
 
-If you encounter after server restart that your "koii" commands is not working, you should set PATH again in order to fully functioning KOII CLI!
+If you encounter after server restart that your "koii" commands are not working, you should set PATH again in order to fully fuction KOII CLI!
 
 ```bash
-export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check verify what is your correct path in certain server!
+export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check to verify what is your correct path in the certain server!
 ```
 
 Feel free to reach out to us in [Discord](https://discord.gg/koii-network) if you have any further questions or need assistance.
 
-Thing to note: You should always have to keep your Staking_Public_Key balance filled.
+The thing to note: You should always have to keep your Staking_Public_Key balance filled.
 
 
 
