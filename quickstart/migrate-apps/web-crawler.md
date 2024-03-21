@@ -177,6 +177,6 @@ By following these steps, you've harnessed the benefits of the Koii network's de
 
 The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
 
-For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/getting-started/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
+For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/questions/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
 
 :::

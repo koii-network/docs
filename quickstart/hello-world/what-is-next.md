@@ -11,7 +11,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 You created an application that lives on the internet and allows you to store data in a decentralized manner. You can now use this application to store any data you want, forever.
 
-The [Ministry of Truth](https://en.wikipedia.org/wiki/Ministries_in_Nineteen_Eighty-Four) can no longer change nor censor your data.
+The [Ministry of Truth](https://en.wikipedia.org/wiki/Ministries_in_Nineteen_Eighty-Four) can no longer change or censor your data.
 
 You can extend your endpoints, add more functionality, and make the application more complex. The journey is just starting!
 
@@ -21,7 +21,7 @@ We are ready to help on our [Discord](https://discord.com/invite/koii-network) w
 
 :::tip
 
-For an advanced app example, check out our [Linktree Tutorial.](/quickstart/linktree/intro) It guides you to create a basic yet practical Full Stack Application. You can extend the structure to create a decentralized social platform running on Web3! Or if you want to start from the stratch, check out our [Task Development Guide](/develop/write-a-koii-task/task-development-guide/).
+For an advanced app example, check out our [Linktree Tutorial.](/quickstart/linktree/intro) It guides you to create a basic yet practical Full Stack Application. You can extend the structure to create a decentralized social platform running on Web3! Or if you want to start from scratch, check out our [Task Development Guide](/develop/write-a-koii-task/task-development-guide/).
 
 :::
 

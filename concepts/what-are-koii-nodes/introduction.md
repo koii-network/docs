@@ -27,4 +27,4 @@ These nodes are responsible for processing tasks, recording attention metrics, a
 Participants who run Koii Nodes are incentivized through KOII tokens, the native cryptocurrency of the Koii Network. These rewards are distributed based on the node's contributions to the network, such as validating transactions, hosting content, and tracking attention metrics.
 
 ### Technology and Integration
-Koii Nodes leverage blockchain technology to maintain a decentralized ledger of content attention metrics and transactions. This ensures transparency and allows for a trustless system where creators are fairly rewarded.
+Koii Nodes leverages blockchain technology to maintain a decentralized ledger of content attention metrics and transactions. This ensures transparency and allows for a trustless system where creators are fairly rewarded.

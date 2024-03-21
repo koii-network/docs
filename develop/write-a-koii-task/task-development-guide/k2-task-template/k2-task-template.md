@@ -24,11 +24,11 @@ For more information on how the task flow works, check out the [runtime environm
 
 - `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task-node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more namespace functions.
+- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more about namespace functions.
 
 ## Timers
 
-When a task is executed, it goes through different [phases](/concepts/gradual-consensus/runtime-flow#how-does-it-work) that occur consecutively, and during each phase, a function is required to be run. Timers are IPC calls on the task-node that call events on the task during a particular time/slot during a task execution period.
+When a task is executed, it goes through different [phases](/concepts/gradual-consensus/runtime-flow#how-does-it-work) that occur consecutively, and during each phase, a function is required to be run. Timers are IPC calls on the task node that call events on the task during a particular time/slot during a task execution period.
 
 For example, after off-chain work has been done and a node submits its result on-chain, the timers trigger the next phase, which is the audit phase for verification of the submitted result.
 
@@ -56,14 +56,14 @@ The directory houses three key files: `submission.js`, `audit.js` and `distribut
 ### `audit.js`
 
 1. `validateNode()` - This function is called to verify the submission value, so based on the value received from the task-state we can vote on the submission.
-2. `auditTask()` - Makes call to namespace of task-node to raise an audit against the submission value if the validation fails.
+2. `auditTask()` - Makes call to namespace of task node to raise an audit against the submission value if the validation fails.
 
 ### `distribution.js`
 
 1. `generateDistributionList()` - You have full freedom to prepare your reward distributions as you like and the logic for that goes here. We have provided a sample logic that rewards 1 KOII to all the nodes who did the correct submission for that round. This function is called in `submitDistributionList()`
-2. `submitDistributionList()` - Makes call to the namespace function of task-node to upload the list and on succesful upload does the transaction to update the state.
+2. `submitDistributionList()` - Makes call to the namespace function of task node to upload the list and on succesful upload does the transaction to update the state.
 3. `validateDistribution()` - The logic to validate the distribution list goes here and the function will receive the distribution list submitted form task-state.
-4. `auditDistribution()` - Makes call to namespace of task-node to raise an audit against the distribution list if the validation fails.
+4. `auditDistribution()` - Makes call to namespace of task node to raise an audit against the distribution list if the validation fails.
 
 # Testing and Deploying
 

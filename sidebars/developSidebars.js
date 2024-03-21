@@ -432,7 +432,7 @@ const sidebars = {
     //   label: "K2 integration hooks",
     //   link: {
     //     type: "generated-index",
-    //     description: "Here are the articles in this section",
+    //     description: "Here are the articles in this section:",
     //   },
     //   collapsed: true,
     //   items: [

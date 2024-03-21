@@ -21,7 +21,7 @@ If you prefer learning by example, check out our [X-Scraper Repo](https://github
 
 #### YAML Configuration
 
-Let's start from the beginning. How will your task-runners use Spheron on their end? Koii provides a one-click solution for that problem with our parthership with Spheron.
+Let's start from the beginning. How will your task-runners use Spheron on their end? Koii provides a one-click solution for that problem with our partnership with Spheron.
 
 1. Open your config-task.yml file.
 2. Under the requirementsTags section, you need to add a new entry for defining the SECRET_SPHERON_TOKEN variable. 
@@ -60,7 +60,7 @@ Imagine that we have a task that scrapes data from a public website and stores i
 Currently, Spheron does not support direct JSON uploads. Only files are supported. This means that we will need to convert our JSON data into a file before uploading it to Spheron.
 :::
 
-In Node.js environments, the absence of the File module (which is a browser-specific API) means that we need to use the `fs` module create a file from our JSON data.
+In Node.js environments, the absence of the File module (which is a browser-specific API) means that we need to use the `fs` module to create a file from our JSON data.
 
 Once written, the file's path is then provided to the client.upload() method in Spheron, along with the specified protocol and file name. This method returns the unique CID for the uploaded file.
 
@@ -118,7 +118,7 @@ async function storeFiles(filePath) {
 }
 ```
 
-Now you have access to the CID of your file. Which is the key to obtain your JSON file from anywhere else. You can use this CID as a part of your submission, which will allow you to retrieve the data back.
+Now you have access to the CID of your file, which is the key to obtaining your JSON file from anywhere else. You can use this CID as a part of your submission, which will allow you to retrieve the data back.
 
 ### Data Retrieval from IPFS
 

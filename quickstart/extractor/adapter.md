@@ -46,7 +46,7 @@ We are making use of a database model, Puppeteer for web scraping, Cheerio for D
 
 - This method is for scraping data from a Twitter post. It waits for the page to load, extracts data such as tweet text, username, likes, shares, etc., using Cheerio, and then returns the extracted data.
 
-### Extacting Logic
+### Extracting Logic
 
 **Extract Method:**
 

@@ -12,7 +12,7 @@ import Description from "@site/src/components/description";
 ![Banner](./img/Welcome%20to%20finnie.svg)
 
 <Description
-  text="Your one-stop shop for cross-chain user-engagement."
+  text="Your one-stop shop for cross-chain user engagement."
 />
 
 Building cross-chain applications might be optimal for developers, but what about the communities that use these products?
@@ -20,7 +20,7 @@ Building cross-chain applications might be optimal for developers, but what abou
 The Finnie wallet provides some key features right out of the box, and we're working on adding more:
 
 1. **Cross-Chain Wallets**  
-   Ethereum and Arweave are supported now. Filecoin, NEAR, Polygon, and more coming soon!
+   Ethereum and Arweave are supported now. Filecoin, NEAR, Polygon, and more are coming soon!
 
 2. **Attention Tracking**  
    Koii's native token (KOII) can only be mined by tracking attention on your content. Finnie supports these features natively, providing hooks to sign Proofs of Real Traffic, and streamlining uploads to Koii nodes.
@@ -29,7 +29,7 @@ The Finnie wallet provides some key features right out of the box, and we're wor
 
 ## Download and Use Finnie:
 
-1. **Download:** Go to <a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj" target="_blank">Finnie</a> and install the Finnie Wallet. The wallet is available for Chrome, Firefox and Brave browsers.
+1. **Download:** Go to <a href="https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj" target="_blank">Finnie</a> and install the Finnie Wallet. The wallet is available for Chrome, Firefox, and Brave browsers.
 
 2. **Set-Up:** Once the installation is complete, open the Finnie Wallet app and follow the instructions to set up your wallet. This will include creating a new wallet or importing an existing one, and setting up security features such as a password and backup phrase.
 
@@ -37,7 +37,7 @@ The Finnie wallet provides some key features right out of the box, and we're wor
 
 ## For Developers:
 
-When you have Finnie installed and running, you can connect to it from your web app. For example, on the [Faucet](https://faucet.koii.network/) page, after you install and activate the extension for the site, there is a button **"Connect Finnie"**. The Finnie will pop up and ask you to connect to the faucet. Select the wallet you want to connect to and click "Connect". Then your wallet will be connected to the faucet.
+When you have Finnie installed and running, you can connect to it from your web app. For example, on the [Faucet](https://faucet.koii.network/) page, after you install and activate the extension for the site, there is a button called **"Connect Finnie"**. The Finnie will pop up and ask you to connect to the faucet. Select the wallet you want to connect to and click "Connect". Then your wallet will be connected to the faucet.
 
 To use Finnie in your web app, you can use the following code:
 

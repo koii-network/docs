@@ -15,7 +15,7 @@ As the blockchain cluster needs to actively maintain data to process any upcomin
 
 An account or program executable with at least two years' worth of rent, is regarded as rent-exempt. Every time an account's balance is decreased, this is checked, and transactions that would bring the balance down to the required minimum will be rejected.
 
-The runtime requires that program executable accounts be rent-exempt to prevent them from being deleted. This procedure is known as Garbage Collection.
+The runtime requires that program executable accounts be rent-exempt to prevent them from being deleted. This procedure is known as the Garbage Collection.
 
 # How to Estimate Rent?
 
@@ -51,7 +51,7 @@ OPTIONS:
         --ws <URL>                         WebSocket URL for the koii cluster
 
 ARGS:
-    <DATA_LENGTH_OR_MONIKER>    Length of data field in the account to calculate rent for, or moniker: [nonce,
+    <DATA_LENGTH_OR_MONIKER>    Length of the data field in the account to calculate rent for, or moniker: [nonce,
                                 stake, system, vote]
 ```
 

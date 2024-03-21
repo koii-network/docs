@@ -15,7 +15,7 @@ import Description from "@site/src/components/description";
 
 ### Install ethers.js to interact with Ethereum
 
-With our Finnie wallet properly set and initialized, its time to create our `collectiblesContract`  
+With our Finnie wallet properly set and initialized, it's time to create our `collectiblesContract`  
 &#8211; an exemplary contract that can be used to mint NFTs.  
 In the following example, we will use `ethers.js` library to interact with the `Ethereum` blockchain. You can install it by running:
 
@@ -46,7 +46,7 @@ const deploy = async () => {
   try {
     // deploy the contract
     const contract = await collectiblesFactory.deploy();
-    // wait until deployment transaction will be finished
+    // wait until the deployment transaction is finished
     await contract.deployTransaction.wait();
 
     return contract;
