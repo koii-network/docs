@@ -23,13 +23,16 @@ If you prefer learning by example, check out our [X-Scraper Repo](https://github
 
 Let's start from the beginning. How will your task-runners use Spheron on their end? Koii provides a one-click solution for that problem with our partnership with Spheron.
 
-All you need to do is add the following lines to your `config-task.yml` file.
-
+1. Open your config-task.yml file.
+2. Under the requirementsTags section, you need to add a new entry for defining the SECRET_SPHERON_TOKEN variable. 
 ```yaml
-- type: TASK_VARIABLE
-value: "SECRET_SPHERON_TOKEN";
-description: "used to store the data";
-retrievalInfo: "https://faucet-api.koii.network/api/get-spheron-storage-key;GET;SYSTEM_WALLET_PUBLIC_KEY";
+requirementsTags:
+  # Existing entries for CPU, RAM, STORAGE, etc. are above
+  # Add the new TASK_VARIABLE entry below all existing entries
+  - type: TASK_VARIABLE
+    value: "SECRET_SPHERON_TOKEN"
+    description: "used to store the data"
+    retrievalInfo: "https://faucet-api.koii.network/api/get-spheron-storage-key;GET;SYSTEM_WALLET_PUBLIC_KEY"
 ```
 
 By utilizing this variable, your task-runners will be able to obtain Spheron tokens within the Koii App with ease, by clicking the "get a key" prompt before running your app.

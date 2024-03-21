@@ -15,13 +15,13 @@ These methods will define the core functionality of our task and the process of 
 
 ## `task()`
 
-The purpose of this method is to outline the main objective of our task. As previously mentioned, our task aims to submit the value `Hello, World!` to K2. To achieve this, we will use the `namespaceWrapper.storeSet(key, value)` function, which allows us to store the value in [NeDB](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb) by default.
+The purpose of this method is to outline the main objective of our task. As previously mentioned, our task aims to submit the value `Hello, World!` to K2. To achieve this, we will use the `namespaceWrapper.storeSet(key,value)` function, which allows us to store the value in [NeDB](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb) by default.
 
 Update `task()` with the code block below to fulfill the task's logic:
 
 ```js
 async task(round) {
-    // Write the logic to do the work required for submitting the values and optionally store the result in levelDB
+    // Write the logic to do the work required for submitting the values and optionally store the result in NeDB
 
     // Below is just a sample of work that a task can do
     try {
@@ -62,7 +62,7 @@ async submitTask(roundNumber) {
 
 ## `fetchSubmission()`
 
-Upon task completion, the generated results or work will be stored on either IPFS or NeDB, in this case, NeDB. To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet(key)` method.
+Upon task completion, the generated results or work will be stored on either IPFS or NeDB, in this case NeDB. To access the stored data, this method retrieves it from the respective storage location. As we have stored our value `Hello World` to NeDB, we will fetch it using the `namespaceWrapper.storeGet(key)` method.
 
 To do the same, update `fetchSubmission()` with the code block below:
 
