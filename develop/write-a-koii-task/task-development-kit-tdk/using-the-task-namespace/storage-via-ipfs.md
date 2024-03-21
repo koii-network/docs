@@ -11,5 +11,5 @@ IPFS can be easily implemented as decentralized storage for a task. Using librar
 
 
 # Spheron Tutorial
-See our tutorial on **[Spheron Infrascructure](https://docs.spheron.network/storage/)** for how to get started!
+See our tutorial on **[Spheron Storage SDK](https://docs.spheron.network/sdk/storage)** for how to get started!
 
