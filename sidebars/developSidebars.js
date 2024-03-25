@@ -28,15 +28,7 @@ const sidebars = {
       className: "sidebar-title top-margin",
     },
     "write-a-koii-task/task-development-guide/task-development-guide",
-    // {
-    //   type: "category",
-    //   label: "Task Development Guide",
-    //   link: {
-    //     type: "doc",
-    //     id: "write-a-koii-task/task-development-guide/task-development-guide",
-    //   },
-    //   collapsed: true,
-    //   items: [
+    "write-a-koii-task/task-development-guide/introduction",
     {
       type: "category",
       label: "Task Structure",
@@ -52,20 +44,6 @@ const sidebars = {
         "write-a-koii-task/task-development-guide/task-structure/setup",
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "K2 Task Template",
-    //   link: {
-    //     type: "doc",
-    //     id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "write-a-koii-task/task-development-guide/k2-task-template/task-function",
-    //     "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
-    //     "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
-    //   ],
-    // },
     {
       type: "category",
       label: "Task Development Flow",
@@ -83,49 +61,12 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "Koii Task Template",
-      className: "sidebar-title top-margin",
-    },
-    "write-a-koii-task/task-development-kit-tdk/introduction",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-
-    {
-      type: "category",
-      label: "Testing Locally Using Jest",
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
-      },
-      collapsed: true,
-      items: [
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
-      ],
-    },
-    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
-    {
-      type: "html",
       value: "Koii Software Toolkit (SDK)",
       className: "sidebar-title top-margin",
     },
     "koii-software-toolkit-sdk/what-is-the-koii-sdk",
     "koii-software-toolkit-sdk/koii-javascript-api",
 
-    // {
-    //   type: "html",
-    //   value: "Koii Command Line Tool (CLI)",
-    //   className: "sidebar-title top-margin",
-    // },
     {
       type: "category",
       label: "Koii Command Line Tool",
@@ -161,6 +102,55 @@ const sidebars = {
 
     // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
+   
+    // {
+    //   type: "category",
+    //   label: "K2 Task Template",
+    //   link: {
+    //     type: "doc",
+    //     id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "write-a-koii-task/task-development-guide/k2-task-template/task-function",
+    //     "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
+    //     "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
+    //   ],
+    // },
+
+    {
+      type: "html",
+      value: "Koii Task Template",
+      className: "sidebar-title top-margin",
+    },
+    "write-a-koii-task/task-development-kit-tdk/introduction",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
+    "write-a-koii-task/task-development-guide/scaling-tasks/network-options",
+    "write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure",
+    {
+      type: "category",
+      label: "Testing Locally Using Jest",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
+      ],
+    },
+    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
 
     //   ],
     // },
