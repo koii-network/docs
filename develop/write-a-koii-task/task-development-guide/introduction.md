@@ -107,6 +107,4 @@ Node : {
 }
 ```
 
-In the next lesson, we'll demonstrate how to get up and running using the <Tooltip text="Koii SDK"/> to create and manage tasks.
-
 <!-- line break -->
