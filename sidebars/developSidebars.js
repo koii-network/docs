@@ -120,10 +120,9 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Koii Task Template",
+      value: "Getting Advanced",
       className: "sidebar-title top-margin",
     },
-    "write-a-koii-task/task-development-kit-tdk/introduction",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
