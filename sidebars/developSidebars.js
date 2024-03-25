@@ -199,13 +199,6 @@ const sidebars = {
         "erc20-reward/distribution",
       ],
     },
-    {
-      type: "html",
-      value: "Migrating Apps",
-      className: "sidebar-title",
-    },
-    "migrate-apps/web-crawler",
-
   ],  
 };
 
