@@ -12,18 +12,15 @@ This short tutorial will walk you through deploying your first app on Koii.
 
 We'll cover how to:
 
-1. [Expose a **REST API** use Koii Nodes to host an API](/quickstart/hello-world/get-request)
-2. [Coordinate Koii Nodes to submit blockchain transactions](/quickstart/hello-world/task)
-3. [Test and debug your distributed application](/quickstart/hello-world/local-test)
-4. [Deploy your task to the Koii community cloud](/quickstart/hello-world/deployment)
+1. Expose a **REST API** use Koii Nodes to host an API
+2. Coordinate Koii Nodes to submit blockchain transactions
+3. Test and debug your distributed application
+4. Deploy your task to the Koii community cloud
 
-There's obviously a lot more that Koii can do, so feel free to jump over to the [Template Application](/quickstart/introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
+There's obviously a lot more that Koii can do, so feel free to jump over to the [Template Application](../../introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
 
 This tutorial is written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
 
-:::info
-If you are interested in gaining an in-depth understanding of the task development process, we recommend using our [Task Development Guide](/develop/write-a-koii-task/task-development-guide/). This guide provides comprehensive and detailed information on the entire process of developing tasks for the Koii platform. By following the guide, you can explore various aspects, best practices, and guidelines that will assist you in creating robust and effective Koii tasks.
-:::
 
 ![banner](../img/buildingonkoii.svg)
 
