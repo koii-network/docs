@@ -144,7 +144,6 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/node-default-api-endpoints",
         "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
         "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
       ],
