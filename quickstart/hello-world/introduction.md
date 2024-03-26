@@ -1,10 +1,9 @@
 ---
 title: "Getting Started"
 description: Write and deploy your first Koii task
-image: img/thumbnail.png
 sidebar_label: Getting Started
 ---
-
+<!-- Moved to new page -->
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 

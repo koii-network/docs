@@ -972,13 +972,13 @@ const config = {
             position: "left",
             className: "header-text",
           },
-          {
-            label: "⚙️ Tutorials",
-            to: "/quickstart/hello-world/introduction",
-            activeBasePath: "quickstart",
-            position: "left",
-            className: "header-text",
-          },
+          // {
+          //   label: "⚙️ Tutorials",
+          //   to: "/quickstart/hello-world/introduction",
+          //   activeBasePath: "quickstart",
+          //   position: "left",
+          //   className: "header-text",
+          // },
           {
             label: "</> Developers",
             to: "/develop/write-a-koii-task/task-development-guide/",
