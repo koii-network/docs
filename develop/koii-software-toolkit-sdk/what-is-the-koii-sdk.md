@@ -27,7 +27,7 @@ Koii provides a diverse range of tools and resources to support you throughout y
 
 ### Koii SDK
 
-The Koii SDK is the KOII (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
+The Koii SDK is the Koii (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
 
 ### Koii CLI
 

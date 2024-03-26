@@ -981,7 +981,7 @@ const config = {
           // },
           {
             label: "</> Developers",
-            to: "/develop/write-a-koii-task/task-development-guide/",
+            to: "/develop/onboarding/welcome-to-koii/",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",

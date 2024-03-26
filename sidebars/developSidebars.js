@@ -21,44 +21,6 @@ const sidebars = {
       className: "sidebar-title top-margin",
     },
     "onboarding/welcome-to-koii",
-    
-    {
-      type: "html",
-      value: "Task Development Guide",
-      className: "sidebar-title top-margin",
-    },
-    "write-a-koii-task/task-development-guide/task-development-guide",
-    "write-a-koii-task/task-development-guide/introduction",
-    {
-      type: "category",
-      label: "Task Structure",
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-guide/task-structure/task-structure",
-      },
-      collapsed: true,
-      items: [
-        "write-a-koii-task/task-development-guide/task-structure/execute-task",
-        "write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-        "write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-        "write-a-koii-task/task-development-guide/task-structure/setup",
-      ],
-    },
-    {
-      type: "category",
-      label: "Task Development Flow",
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
-      },
-      items: [
-        "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/create-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
-      ],
-    },
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -102,6 +64,43 @@ const sidebars = {
 
     // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
+    {
+      type: "html",
+      value: "Task Development Guide",
+      className: "sidebar-title top-margin",
+    },
+    "write-a-koii-task/task-development-guide/task-development-guide",
+    "write-a-koii-task/task-development-guide/introduction",
+    {
+      type: "category",
+      label: "Task Structure",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-guide/task-structure/task-structure",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-guide/task-structure/execute-task",
+        "write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+        "write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
+        "write-a-koii-task/task-development-guide/task-structure/setup",
+      ],
+    },
+    {
+      type: "category",
+      label: "Task Development Flow",
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
+      },
+      items: [
+        "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/create-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+        "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
+      ],
+    },
    
     // {
     //   type: "category",

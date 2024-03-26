@@ -1,13 +1,13 @@
 ---
-title: KOII (K2) JavaScript API
-description: This is the KOII (K2) JavaScript API built on the KOII JSON RPC API.
+title: Koii (K2) JavaScript API
+description: This is the Koii (K2) JavaScript API built on the KOII JSON RPC API.
 image: img/thumbnail.png
-sidebar_label: KOII (K2) JavaScript API
+sidebar_label: Koii (K2) JavaScript API
 ---
 
-# KOII (K2) JavaScript API
+# Koii (K2) JavaScript API
 
-The KOII (K2) JavaScript API is a powerful tool developed for the Koii platform. It is built on top of the KOII [JSON RPC API](https://docs.solana.com/api/http), which provides essential functionalities for interacting with the Koii network.
+The Koii (K2) JavaScript API is a powerful tool developed for the Koii platform. It is built on top of the KOII [JSON RPC API](https://docs.solana.com/api/http), which provides essential functionalities for interacting with the Koii network.
 
 To explore the latest API documentation and understand how to leverage the capabilities of the KOII JavaScript API, please refer to the [Latest API Documentation](https://solana-labs.github.io/solana-web3.js/). This documentation serves as a comprehensive guide, providing insights into the API's methods, parameters, and usage, allowing you to harness the full potential of the Koii platform in your JavaScript applications.
 
