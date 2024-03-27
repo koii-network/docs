@@ -40,7 +40,7 @@ npx @_koii/create-task-cli@latest
 :::tip
 Run `koii config get` in another terminal, the “**Keypair Path**” is your wallet path.
 
-Don't have a Koii wallet yet? Check [here](/quickstart/command-line-tool/koii-cli/create-wallet) and generate one quickly.
+Don't have a Koii wallet yet? Check [here](/develop/command-line-tool/koii-cli/create-wallet) and generate one quickly.
 :::
 
 - Next, you will be prompted with seven options, select `Create a new task` to create a new task:
