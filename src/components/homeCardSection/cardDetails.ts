@@ -99,7 +99,7 @@ export const cardDetails: Cards[] = [
     items: [
       {
         title: "Koii SDK",
-        link: "/quickstart/koii-software-toolkit-sdk/what-is-the-koii-sdk",
+        link: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
         image: "/img/Koii SDK.svg",
       },
       {
@@ -114,7 +114,7 @@ export const cardDetails: Cards[] = [
       },
       {
         title: "Finnie",
-        link: "/quickstart/finnie-for-devs/welcome-to-finnie",
+        link: "/concepts/finnie-wallet/introduction",
         image: "/img/Finnie.svg",
       },
     ],

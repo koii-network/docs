@@ -103,7 +103,7 @@ async function storeFiles(filePath) {
 
   const { cid } = await client.upload(filePath, {
     protocol: ProtocolEnum.IPFS,
-    name: "test",
+    name: "taskData",
     onUploadInitiated: (uploadId) => {
       console.log(`Upload with id ${uploadId} started...`);
     },
@@ -117,6 +117,10 @@ async function storeFiles(filePath) {
   return cid;
 }
 ```
+
+:::warning
+Please do not change `name: "taskData"`, as it is a mandatory field for Spheron. If you change it, your task may fail.
+:::
 
 Now you have access to the CID of your file, which is the key to obtaining your JSON file from anywhere else. You can use this CID as a part of your submission, which will allow you to retrieve the data back.
 
@@ -150,7 +154,3 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
     }
   }
 ```
-
-:::warning Older Project Repos still use web3.storage
-
-The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 

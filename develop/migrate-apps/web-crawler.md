@@ -68,7 +68,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
   d. Paste the copied content into the newly created `helpers.js` file in your task folder.
 
-  e. Update the `helpers.js` file to use Spheron as shown in our **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)** tutorial.
+  e. Update the `helpers.js` file to use Spheron as shown in our **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)** tutorial.
 
 3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `@spheron/storage` for IPFS interactions. You should have implemented functions to interact with Spheron in your helpers file.
 
@@ -89,7 +89,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Spheron and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
-For more details on Spheron see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**.
+For more details on Spheron see our tutorial on **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)**.
 
 ```js title="/task/submission.js"
   // Existing code...
@@ -175,8 +175,8 @@ By following these steps, you've harnessed the benefits of the Koii network's de
 
 :::warning Older Project Repos still use web3.storage
 
-The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/quickstart/scaling-tasks/spheron-infrastructure) tutorial to update. 
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure) tutorial to update. 
 
-For more information why we moved to using Spheron see our [FAQ](https://docs.koii.network/faq/questions/#q-didnt-koii-used-to-use-web3storage-why-did-we-switch-to-spheron).
+For more information why we moved to using Spheron see our [FAQ](/faq/questions/platform/#q-didnt-koii-use-to-use-web3storage-why-did-we-switch-to-spheron).
 
 :::

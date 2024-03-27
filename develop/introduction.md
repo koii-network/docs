@@ -16,6 +16,6 @@ If you want your completed projects to be highlighted on our website, feel free 
 
 | Type                   | Example Implementation |                                               Practical Use-Case | Tutorial                                                                    |
 | ---------------------- | ---------------------: | ---------------------------------------------------------------: | --------------------------------------------------------------------------- |
-| Full Stack Application | Decentralized Bio Page |                     A full stack application hosted by its users | [**Click Here**](/quickstart/linktree/intro)                                 |
-| Web Crawler            |         Crawler |    A decentralized web crawler that can gather data from public websites | [**Click Here**](/quickstart/extractor/introduction)                          |      
+| Full Stack Application | Decentralized Bio Page |                     A full stack application hosted by its users | [**Click Here**](linktree/intro)                                 |
+| Web Crawler            |         Crawler |    A decentralized web crawler that can gather data from public websites | [**Click Here**](extractor/introduction)                          |      
 | Federated AI Training  |  Federated AI Training |                                    Cost effective model training | In Development                                                              |

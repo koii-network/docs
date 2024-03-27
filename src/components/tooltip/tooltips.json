@@ -1,5 +1,5 @@
 {
-  "ipfs": ["test", "/quickstart/hello-world/introduction"],
+  "ipfs": ["test", "hel/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs"],
   "k2 task template": [
     "Koii Network's Task Template",
     "https://github.com/koii-network/task-template"
@@ -14,7 +14,7 @@
   ],
   "hello world task": [
     "Our task tutorial that explains the basics",
-    "/quickstart/hello-world/introduction"
+    "/develop/write-a-koii-task/task-development-guide/"
   ],
   "tdk": ["Task Development Kit", "https://docs.koii.network/"],
   "memory leakage": [
@@ -67,7 +67,7 @@
   ],
   "database sharing": [
     "Koii network allows nodes to share their databases",
-    "/quickstart/linktree/data-sharing"
+    "/develop/linktree/data-sharing"
   ],
   "nedb": ["JavaScript database for Node.js", "https://dbdb.io/db/nedb"],
   "k2 validator": [
@@ -84,11 +84,11 @@
   ],
   "audit function": [
     "Task submissions are audited by task runners",
-    "/quickstart/hello-world/audit"
+    "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions"
   ],
   "rewards model": [
     "Developers will reward task runners with KOII tokens",
-    "/quickstart/hello-world/distribution"
+    "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards"
   ],
   "validators": [
     "Desktop or/and K2 Validators in this context",

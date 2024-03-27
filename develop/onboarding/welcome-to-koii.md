@@ -5,9 +5,38 @@ image: img/thumbnail.png
 sidebar_label: Onboarding
 ---
 
+import Card, { Cards } from "@site/src/components/card";
+import Description from "@site/src/components/description";
+import Tooltip from "@site/src/components/tooltip";
+import HiddenTreasure from "@site/src/components/hiddentreasure";
+
 # 🎉 A Warm Welcome to You!
 
 We're thrilled to have you on board with Koii, an innovative leader in the realm of open-source AI Infrastructure. As a startup, we're on a fast-paced journey, driven by the dedication of our global team. Together, we're democratizing access to reliable and cost-effective computing power. Our platform not only empowers enterprises and startups but also rewards individuals worldwide for contributing their computing resources. The Koii ecosystem is built to foster development, offering grants to developers who integrate verified data and content into their products using our tools. This initiative supports the creation of new, fair content monetization models.
+
+## You May Be Wondering...
+
+<Cards>
+<Card
+    title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
+    link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+    svgName="tasks"
+    cardPerRow="3"
+  />
+  <Card
+    title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
+    link="/develop/category/koii-command-line-tool"
+    svgName="socialTech"
+    cardPerRow="3"
+  />
+<Card
+    title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
+    link="/develop/write-a-koii-task/task-development-guide/"
+    svgName="taskTemplate"
+    cardPerRow="3"
+  />
+</Cards>
+
 
 ### 🌐 Getting to Know the Basics
 
@@ -101,7 +130,7 @@ This symbiotic relationship between supply and demand not only fuels the Koii ec
 
 We believe the best way to learn is by doing. That's why we invite you to tackle a small, introductory task. This guided tutorial will walk you through the basics, giving you a solid foundation in the Koii ecosystem and its functionalities.
 
-[Start Your First Koii Task Here](https://docs.koii.network/quickstart/hello-world/introduction)
+[Start Your First Koii Task Here](/develop/write-a-koii-task/task-development-guide/)
 
 Dive in and explore the possibilities that Koii offers. This is your opportunity to put theory into practice and begin shaping the future of decentralized content and computing power distribution. Welcome to the team, and enjoy your journey with Koii!
 

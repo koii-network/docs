@@ -23,7 +23,7 @@ Thanks to the growth and adoption of AI, data on the web is now more precious th
 
 Web platforms are incentivized to restrict data, as API costs rise, so does the value of the data. In contrast, a decentralized data market like Koii **becomes more affordable with increased competition.**
 
-One of our example template tasks is a [Extractor](/quickstart/extractor/introduction) that uses nodes to efficiently extract public websites. As an example, we have improved the extractor to function as a [**community data feed for X**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
+One of our example template tasks is a Extractor that uses nodes to efficiently extract public websites. As an example, we have improved the extractor to function as a [**community data feed for X**](https://github.com/somali0128/X-scraper) allowing users to collect data, automate replies, filter by engagement, and pull data from specific tweet IDs. However, this is just an example of how you can:
 
 1. **Gather Data from any Website using Koii.**
 2. **Put that Information on a Database.**

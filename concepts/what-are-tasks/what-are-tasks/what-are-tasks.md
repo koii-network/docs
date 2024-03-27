@@ -35,6 +35,6 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
-- [Build your first Full Stack Application on Koii](/quickstart/hello-world/introduction)
+- [Build your first Full Stack Application on Koii](/develop/write-a-koii-task/task-development-guide/task-structure/)
 - [Why use decentralized nodes when servers seem to work?](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers)<br/>
 - [What is $KOII?](/koii/the-koii-token/network-economics)<br/>
