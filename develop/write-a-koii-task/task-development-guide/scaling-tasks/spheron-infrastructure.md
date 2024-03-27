@@ -103,7 +103,7 @@ async function storeFiles(filePath) {
 
   const { cid } = await client.upload(filePath, {
     protocol: ProtocolEnum.IPFS,
-    name: "test",
+    name: "taskData",
     onUploadInitiated: (uploadId) => {
       console.log(`Upload with id ${uploadId} started...`);
     },
