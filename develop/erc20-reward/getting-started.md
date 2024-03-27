@@ -74,7 +74,7 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
 }
 ```
 
-For more details see our tutorial on **[Spheron Infrastructure](/quickstart/scaling-tasks/spheron-infrastructure)**
+For more details see our tutorial on **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)**
 
 :::warning Older Project Repos still use web3.storage
 
