@@ -76,7 +76,7 @@ export const exploreTopics = [
     items: [
       {
         title: "Koii Apps Library",
-        link: "/quickstart/introduction",
+        link: "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk",
         icon: "/img/explore-topics-icons/tem-lib.svg",
       },
       {
