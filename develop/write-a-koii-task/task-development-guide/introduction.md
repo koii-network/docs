@@ -10,16 +10,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 This short tutorial will walk you through deploying your first app on Koii.
 
-We'll cover how to:
-
-1. Expose a **REST API** use Koii Nodes to host an API
-2. Coordinate Koii Nodes to submit blockchain transactions
-3. Test and debug your distributed application
-4. Deploy your task to the Koii community cloud
-
-There's obviously a lot more that Koii can do, so feel free to jump over to the [Template Application](../../introduction) section for turnkey tutorials on web crawling, database sharding, machine learning, and more.
-
-This tutorial is written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
+Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
 
 
 ![banner](../img/buildingonkoii.svg)
