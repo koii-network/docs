@@ -97,13 +97,13 @@ Commitment: confirmed
 
 The `Keypair Path` will be used to pay gas fees and fund your bounty wallet by inputing it into the task CLI.
 
-If you need to create a Koii wallet you can follow the instructions [here](/quickstart/category/koii-command-line-tool). Make sure to either copy your keypair path from the output, or use the method above to supply the task CLI with the proper wallet path.
+If you need to create a Koii wallet you can follow the instructions [here](/develop/command-line-tool/koii-cli/create-wallet). Make sure to either copy your keypair path from the output, or use the method above to supply the task CLI with the proper wallet path.
 
 ### Deploy to K2
 
 To test the task with the [K2 settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
 
-We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/quickstart/command-line-tool/create-task-cli). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run webpack`.
+We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/develop/category/koii-command-line-tool). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run webpack`.
 
 ## Run a node locally
 

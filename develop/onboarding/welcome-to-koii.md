@@ -130,7 +130,7 @@ This symbiotic relationship between supply and demand not only fuels the Koii ec
 
 We believe the best way to learn is by doing. That's why we invite you to tackle a small, introductory task. This guided tutorial will walk you through the basics, giving you a solid foundation in the Koii ecosystem and its functionalities.
 
-[Start Your First Koii Task Here](https://docs.koii.network/quickstart/hello-world/introduction)
+[Start Your First Koii Task Here](/develop/write-a-koii-task/task-development-guide/)
 
 Dive in and explore the possibilities that Koii offers. This is your opportunity to put theory into practice and begin shaping the future of decentralized content and computing power distribution. Welcome to the team, and enjoy your journey with Koii!
 
