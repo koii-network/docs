@@ -118,6 +118,10 @@ async function storeFiles(filePath) {
 }
 ```
 
+:::warning
+Please do not change `name: "taskData"`, as it is a mandatory field for Spheron. If you change it, your task may fail.
+:::
+
 Now you have access to the CID of your file, which is the key to obtaining your JSON file from anywhere else. You can use this CID as a part of your submission, which will allow you to retrieve the data back.
 
 ### Data Retrieval from IPFS
