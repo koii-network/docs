@@ -828,6 +828,22 @@ const config = {
                 "/quickstart/erc20-reward/distribution",
               ]
           },
+          {
+            to: "/faq/community-contributions",
+            from: "/faq/pagefive"
+          },
+          {
+            to: "/faq/comics",
+            from: "/faq/pagefour",
+          },
+          {
+            to: "/faq/documentations",
+            from: "/faq/pagethree",
+          },
+          {
+            to: "/faq/tutorial",
+            from: "/faq/pagetwo"
+          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
