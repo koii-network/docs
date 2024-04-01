@@ -19,7 +19,7 @@ Building truly decentralized systems requires a complicated mix of incentive, en
 
 ## Fundamentals
 
-Whether you're building a database, newsfeed, federated learning network, or a storage and caching service, you'll need the same three components.
+Whether you're building a database, news feed, federated learning network, or a storage and caching service, you'll need the same three components.
 
 1. ** Incentives **
 2. ** Fraud Prevention **

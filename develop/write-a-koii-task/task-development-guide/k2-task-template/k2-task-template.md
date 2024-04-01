@@ -39,7 +39,7 @@ The `index.js` file has a function `setup()` that is responsible for switching b
 There are two ways to run your task when doing development:
 
 1. With Timer ON (see `.env-local`)- When the timer is ON, IPC calls are made by calculating the average time slots of all the task running your node.
-2. With Timer OFF - This allows you to do manual calls to K2 and disables the triggers for round managemnt on K2. Transactions are only accepted during the correct period. Guide for manual calls is in `index.js`
+2. With Timer OFF - This allows you to do manual calls to K2 and disables the triggers for round management on K2. Transactions are only accepted during the correct period. Guide for manual calls is in `index.js`
 
 ## Modifying CoreLogic.js
 
@@ -61,7 +61,7 @@ The directory houses three key files: `submission.js`, `audit.js` and `distribut
 ### `distribution.js`
 
 1. `generateDistributionList()` - You have full freedom to prepare your reward distributions as you like and the logic for that goes here. We have provided a sample logic that rewards 1 KOII to all the nodes who did the correct submission for that round. This function is called in `submitDistributionList()`
-2. `submitDistributionList()` - Makes call to the namespace function of task node to upload the list and on succesful upload does the transaction to update the state.
+2. `submitDistributionList()` - Makes call to the namespace function of task node to upload the list and on successful upload does the transaction to update the state.
 3. `validateDistribution()` - The logic to validate the distribution list goes here and the function will receive the distribution list submitted form task-state.
 4. `auditDistribution()` - Makes call to namespace of task node to raise an audit against the distribution list if the validation fails.
 
@@ -95,7 +95,7 @@ Keypair Path: /home/<user>/.config/koii/id.json
 Commitment: confirmed
 ```
 
-The `Keypair Path` will be used to pay gas fees and fund your bounty wallet by inputing it into the task CLI.
+The `Keypair Path` will be used to pay gas fees and fund your bounty wallet by inputting it into the task CLI.
 
 If you need to create a Koii wallet you can follow the instructions [here](/develop/command-line-tool/koii-cli/create-wallet). Make sure to either copy your keypair path from the output, or use the method above to supply the task CLI with the proper wallet path.
 
@@ -115,7 +115,7 @@ If you want to get a closer look at the console and test environment variables, 
 
 ### Redeploying
 
-You do not need to publish your task every time you make modifications. You do however need to restart the `task_node` in order for the latest code to be used. To prepare your code you can run `npm run webpack` to create the bundle. If you have a `task_node` ruinning already, you can exit it and then run `docker compose up` to restart (or start) the node.
+You do not need to publish your task every time you make modifications. You do however need to restart the `task_node` in order for the latest code to be used. To prepare your code you can run `npm run webpack` to create the bundle. If you have a `task_node` running already, you can exit it and then run `docker compose up` to restart (or start) the node.
 
 ### Environment variables
 

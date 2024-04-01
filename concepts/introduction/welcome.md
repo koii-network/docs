@@ -4,10 +4,11 @@ description: We built Koii to make a better world by connecting the people that 
 image: img/thumbnail.png
 sidebar_label: Welcome to the New Internet
 ---
-
+<!-- cspell:disable-next-line -->
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
+<!-- cspell:disable-next-line -->
 import HiddenTreasure from "@site/src/components/hiddentreasure";
 
 ![banner](<./img/Welcome to Koii-X.svg>)

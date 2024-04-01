@@ -19,7 +19,7 @@ This uprising features three stages, that allow our most engaged and knowledgeab
 | ------------------ | ------------------ | -------------- | ----------------- |
 | **Deckhand**       | Complete 5 Quests  | None           | $KOII             |
 | **Master-at-Arms** | Write a quiz       | 2 Weeks        | $KOII             |
-| **Buccaneer**      | Pass an assesment  | 1 Month        | Job opportunities |
+| **Buccaneer**      | Pass an assessment  | 1 Month        | Job opportunities |
 
 [🏴‍☠ Click here to learn more! 🏴‍☠](https://blog.koii.network/calling-all-pirates/)
 

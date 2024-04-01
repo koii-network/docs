@@ -45,4 +45,4 @@ To use Finnie in your web app, you can use the following code:
 await window.k2.connect()
 ```
 
-For more information about the integration hooks of Finnie wallet, please visit [Finnie for Devs](/concepts/finnie-wallet/finnie-for-devs/K2-integration-hooks/methods#connect).
+For more information about the integration hooks of Finnie wallet, please visit [Finnie for Developers](/concepts/finnie-wallet/finnie-for-devs/K2-integration-hooks/methods#connect).

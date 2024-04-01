@@ -28,7 +28,7 @@ Fetches a list of tweet URLs from a given search page.
 - **Returns**: An array of unique tweet URLs.
 
 ## TwitterTask Class
-This class manages the Twitter extractor and its associated tasks. Twhe main functionalities include:
+This class manages the Twitter extractor and its associated tasks. The main functionalities include:
 - Extractor control (`start`, `stop`)
 - Data validation (`validate`)
 - Round management (`updateRound`, `getRoundCID`)

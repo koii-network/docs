@@ -4,7 +4,7 @@ description: The Koii Foundation also gives grants to developers and anyone who 
 image: img/thumbnail.png
 sidebar_label: Grants Program
 ---
-
+<!-- cspell:disable-next-line -->
 import HubspotForm from 'react-hubspot-form';
 
 # Grants Program

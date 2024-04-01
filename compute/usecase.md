@@ -1,7 +1,7 @@
 ---
-title: Potential Usecases
+title: Potential Use Cases
 image: img/thumbnail.png
-sidebar_label: Potential Usecases
+sidebar_label: Potential Use Cases
 ---
 
 Koii provides a decentralized infrastructure for various computational tasks. Below are some potential use cases across different domains:
@@ -31,7 +31,7 @@ Koii provides a decentralized infrastructure for various computational tasks. Be
 |                           | Cybersecurity Threat Analysis | Identifying, analyzing, and mitigating cyber threats.                 |
 | **Game Development**      | Multiplayer Game Hosting | Providing server capabilities for online multiplayer games.              |
 |                           | Game Testing            | Running simulations to test game environments and user experience.           |
-|                           | Live Streaming          | Facilitating the streaming of live gameplays.                                |
+|                           | Live Streaming          | Facilitating the streaming of live game plays.                                |
 | **Internet of Things (IoT)** | IoT Data Processing | Analyzing data from various IoT devices.                                 |
 |                           | IoT Security Management | Providing decentralized security solutions for IoT networks.                 |
 |                           | Smart Grid Management   | Controlling and optimizing energy use in smart grids.                        |

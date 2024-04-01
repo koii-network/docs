@@ -130,7 +130,7 @@ const db = await namespaceWrapper.getDB();
   }
 ```
 
-Exaample:
+Example:
 
 ```javascript
 const datadb = require("./db-model");

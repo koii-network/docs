@@ -21,7 +21,7 @@ Many services have attempted to create global machines, that hope to encompass a
 
 A **CARP**, blends together the benefits of a "collateralized" (a.k.a. "Proof of Stake") model with the benefits of trust that are common in the current internet.
 
-When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gatekeeping and monopolies that will soon control most of the information our species has created.
+When we think of hosting applications, we usually imagine paying someone else to run our code on their device, but this model has created gate keeping and monopolies that will soon control most of the information our species has created.
 
 Typically, these exist because of the reputation of the hosting provider, and the technology that these providers can build to entrench their relationship with customers.
 

@@ -45,7 +45,7 @@ It will start testing your task with Jest. The steps are:
 - submitPayload() => This is the function that fetches and makes the submission with dummy round 1.
 - auditTask() => This is the function that fetches submission and audit data. Then return the vote result.
 - submitDistributionList() => If the vote is true, this function uses dummyTaskData to simulate the distribution list.
-- Avaliable of your endpoints.
+- Available of your endpoints.
 
 It will check that your task should:
 

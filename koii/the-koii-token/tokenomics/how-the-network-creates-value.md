@@ -17,7 +17,7 @@ They are the default currency of the Koii Network, which is a global network of 
 
 Because of the principle of supply and demand, as long as our network offers a better price-performance ratio than traditional hosting solutions, there will always be a demand for KOII tokens.
 
-And due to its nature, as we don't have any middlemen (you directly pay your hosters, which are ) that aim to make a profit, we can **always** offer a better price-performance ratio than traditional hosting solutions.
+And due to its nature, as we don't have any middlemen (you directly pay your hosts, which are ) that aim to make a profit, we can **always** offer a better price-performance ratio than traditional hosting solutions.
 
 ## Value through staking
 
