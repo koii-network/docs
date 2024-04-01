@@ -8,7 +8,6 @@ sidebar_label: Onboarding
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
-<!-- cspell:disable-next-line -->
 import HiddenTreasure from "@site/src/components/hiddentreasure";
 
 # 🎉 A Warm Welcome to You!

@@ -65,12 +65,10 @@
       "Tock",
       "collateralized",
       "unmetered",
-      "merkle"
-
-
-
-
-
+      "merkle",
+      "hiddentreasure",
+      "hubspot",
+      "conkoiie"
   ],
   "caseSensitive": false,
   "flagWords": [
