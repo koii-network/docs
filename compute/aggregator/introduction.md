@@ -31,7 +31,7 @@ One of our example template tasks is a Extractor that uses nodes to efficiently 
 
 ## **Features**
 
-Koii Network's **community data feeds** uses community devices to efficiently extract tweets with speed and flexibility. While this doesn’t expose private information, it allows crowdsourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
+Koii Network's **community data feeds** uses community devices to efficiently extract tweets with speed and flexibility. While this doesn’t expose private information, it allows crowd sourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
 
 | Feature                                           | Koii Data Aggregator |
 |---------------------------------------------------|:--------------------:|

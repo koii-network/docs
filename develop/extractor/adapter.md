@@ -79,6 +79,6 @@ The final portion of our file contains utility functions:
 
 ### Summary
 
-The Twitter class in the code provides a framework for extracting Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the extractling queue, and can store the extracted data on decentralized storage using Spheron.
+The Twitter class in the code provides a framework for extracting Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the extracting queue, and can store the extracted data on decentralized storage using Spheron.
 
 You can use it as a starting point to develop your own Twitter extractor to your own needs, or as a reference to develop a extractor for a different website.

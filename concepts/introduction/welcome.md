@@ -4,7 +4,6 @@ description: We built Koii to make a better world by connecting the people that 
 image: img/thumbnail.png
 sidebar_label: Welcome to the New Internet
 ---
-
 import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";

@@ -78,7 +78,7 @@ Success
 
 ## Additional way to claim rewards using Koii_claimer:
 
-In order to have a semi-automatic way to claim $KOII rewards, you first need to get perequisites which have to be stored in your server for Koii CLaimer to function.
+In order to have a semi-automatic way to claim $KOII rewards, you first need to get prerequisites which have to be stored in your server for Koii CLaimer to function.
 
 ```bash
 git clone https://github.com/eviangel/Koii_claimer
@@ -126,7 +126,7 @@ koii address
 koii-keygen pubkey staking_wallet.json /or/ id.json
 ```
 
-If you encounter after server restart that your "koii" commands are not working, you should set PATH again in order to fully fuction KOII CLI!
+If you encounter after server restart that your "koii" commands are not working, you should set PATH again in order to fully function KOII CLI!
 
 ```bash
 export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check to verify what is your correct path in the certain server!

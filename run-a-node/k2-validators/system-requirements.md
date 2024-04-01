@@ -50,7 +50,7 @@ For RPC nodes:
 
 - A larger ledger disk if a longer transaction history is required, accounts and ledger should not be stored on the same disk
 - GPUs are not strictly necessary
-- Network: 1 GBPS up and downlink speed, must be unshaped and unmetered
+- Network: 1 Gbps up and downlink speed, must be unshaped and unmetered
 
 **4. Operating System**
 

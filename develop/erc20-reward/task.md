@@ -76,7 +76,7 @@ Here's a breakdown of the code's functionality:
 
 :::warning Older Project Repos still use web3.storage
 
-The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrascructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure) tutorial to update. 
+The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure) tutorial to update. 
 
 For more information why we moved to using Spheron see our [FAQ](/faq/questions/platform/#q-didnt-koii-use-to-use-web3storage-why-did-we-switch-to-spheron).
 
