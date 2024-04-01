@@ -774,6 +774,7 @@ const config = {
             "/quickstart/hello-world/run-your-task",
             "/quickstart/hello-world/what-is-next",
             "/quickstart/migrate-apps/web-crawler",
+            "/quickstart/crawler/introduction",
             "/quickstart/hello-world/intro", "/develop/build-on-koii",
             "/quickstart/hello-world/task-tutorial",
             "/quickstart/hello-world/task-description",
