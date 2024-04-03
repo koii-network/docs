@@ -13,7 +13,7 @@ This guide will walk you through the various options and functionalities availab
 ## Table of Contents
 
 1. [Installation](/develop/command-line-tool/create-task-cli/install)
-2. [Create a new local repository](/develop/command-line-tool/create-task-cli/create-repo)
+2. [Create a new repository](/develop/command-line-tool/create-task-cli/create-repo)
 3. [Deploy a New Task](/develop/command-line-tool/create-task-cli/create-task)
 4. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
 5. [Activate/Deactivate task](./activate-task)
