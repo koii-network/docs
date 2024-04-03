@@ -55,6 +55,7 @@ const sidebars = {
       collapsed: true,
       items: [
         "command-line-tool/create-task-cli/install",
+        "command-line-tool/create-task-cli/create-repo",
         "command-line-tool/create-task-cli/create-task",
         "command-line-tool/create-task-cli/update-task",
         "command-line-tool/create-task-cli/activate-task",
