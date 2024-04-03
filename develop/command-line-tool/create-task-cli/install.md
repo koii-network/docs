@@ -13,7 +13,7 @@ Follow the steps below to install the Create-Task-CLI tool:
 npx @_koii/create-task-cli@latest
 ```
 
-- It prompts for your wallet path:
+- After you choose some of the options, it prompts for your wallet path:
 
 ```bash
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json

@@ -13,13 +13,14 @@ This guide will walk you through the various options and functionalities availab
 ## Table of Contents
 
 1. [Installation](/develop/command-line-tool/create-task-cli/install)
-2. [Create a New Task](/develop/command-line-tool/create-task-cli/create-task)
-3. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
-4. [Activate/Deactivate task](./activate-task)
-5. [Claim Reward](#claim-reward)
-6. [Fund Task with More KOII](./fund-task)
-7. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
-8. [Upload Assets to IPFS (Metadata/Local Variables)](#upload-assets-to-ipfs-metadatalocal-vars)
+2. [Create a new local repository](/develop/command-line-tool/create-task-cli/create-task)
+3. [Deploy a New Task](/develop/command-line-tool/create-task-cli/create-task)
+4. [Update Existing Task](/develop/command-line-tool/create-task-cli/update-task)
+5. [Activate/Deactivate task](./activate-task)
+6. [Claim Reward](#claim-reward)
+7. [Fund Task with More KOII](./fund-task)
+8. [Withdraw Staked Funds from Task](#withdraw-staked-funds-from-task)
+9. [Upload Assets to IPFS (Metadata/Local Variables)](#upload-assets-to-ipfs-metadatalocal-vars)
 
 
 :::info Please Note

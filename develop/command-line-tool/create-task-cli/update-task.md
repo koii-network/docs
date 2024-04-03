@@ -13,7 +13,8 @@ Now that we have covered creating a task, let's explore the process of updating 
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
-    Create a new task
+    Create a new local repository
+    Deploy a new task
 ❯   update existing task
     Activate/Deactivate task
     Claim reward
