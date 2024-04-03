@@ -2,7 +2,7 @@
 title: Create a new repository
 description: We provide create-task-cli to help you easily create and deploy your task.
 image: img/thumbnail.png
-sidebar_label: Create a new local repository
+sidebar_label: Create a repository
 ---
 
 
