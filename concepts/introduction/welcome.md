@@ -8,6 +8,8 @@ import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
+import CardSpecial, {CardsSpecial} from '@site/src/components/image_link';
+
 
 ![banner](<./img/Welcome to Koii-X.svg>)
 
@@ -43,22 +45,22 @@ Depending on the size of the community, volunteer task operators may be sufficie
 
 <HiddenTreasure />
 
-<Cards>
+<CardsSpecial>
 
-<Card
+<CardSpecial
     title="<p>🛠️ <strong>Tools</strong></p>"
     description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal computing power, and onboard your community.</p>"
     link="tools"
     linkText="Try out the Koii Tools"
-    svgName="tools"
+    svgName="tools2"
     cardPerRow="2"
   />
-<Card
+<CardSpecial
     title="<p>💡 <strong>Philosophy of Decentralization</strong></p>"
     description=" <p>For too long, power has been concentrated on just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.</p>"
     link="philosophy"
     linkText="Learn more about why Koii was built"
-    svgName="philosophy"
+    svgName="Philosophy"
     cardPerRow="2"
   />
-</Cards>
+</CardsSpecial>
