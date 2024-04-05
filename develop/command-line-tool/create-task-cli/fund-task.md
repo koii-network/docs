@@ -12,7 +12,8 @@ To ensure the smooth operation of your task, it's crucial to prevent it from run
 
     ```bash
     ? Select operation › - Use arrow-keys. Return to submit.
-        Create a new task
+        Create a new local repository
+        Deploy a new task
         update existing task
         Activate/Deactivate task
         Claim reward

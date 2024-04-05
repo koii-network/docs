@@ -66,20 +66,19 @@ The output of the command should be similar to the following.
 ```bash
 > task-contract@0.0.1 start
 > ts-node src/main.ts
-
 No wallet found
-✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-/Users/<YOUR_HOME>/.config/koii/id.json
-✔ Select operation › Create a new task
+✔ Select operation › Deploy a new task
 create-task
+√ Enter the path to your wallet ... /Users/<YOUR_HOME>/.config/koii/id.json
+Wallet path:  /Users/<YOUR_HOME>/.config/koii/id.json
 CONFIG {
-  json_rpc_url: 'https://testnet.koii.live',
+  json_rpc_url: 'https://testnet.koii.network',
   websocket_url: '',
-  keypair_path: '/Users/<YOUR_HOME>/.config/koii/id.json',
+  keypair_path: '~/validator-keypair.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://testnet.koii.network { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 329.992521 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Enter the name of the task … testing-task-v1

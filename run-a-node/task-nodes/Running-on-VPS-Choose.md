@@ -46,7 +46,7 @@ Ctrl/Command +X = Exit
 :::tip
 Don't forget to run this after installing CLI
 ```bash
-koii config set --url https://testnet.koii.live
+koii config set --url https://testnet.koii.network
 ```
 :::
 

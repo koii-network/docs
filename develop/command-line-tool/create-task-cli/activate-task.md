@@ -11,16 +11,17 @@ This section provides clear instructions on how to activate and deactivate a Koi
 
 1. To activate a task, select the `Activate/Deactivate task` option as shown below:
 
-    ```bash
-    ? Select operation › - Use arrow-keys. Return to submit.
-        Create a new task
-        update existing task
-    ❯   Activate/Deactivate task
-        Claim reward
-        Fund task with more KOII
-        Withdraw staked funds from task
-        upload assets to IPFS(metadata/local vars)
-    ```
+```bash
+? Select operation › - Use arrow-keys. Return to submit.
+    Create a new local repository
+    Deploy a new task
+    update existing task
+❯   Activate/Deactivate task
+    Claim reward
+    Fund task with more KOII
+    Withdraw staked funds from task
+    upload assets to IPFS(metadata/local vars)
+```
 
 2. Enter your task ID:
 
@@ -48,16 +49,17 @@ Success
 
 1. To deactivate a task, select the `Activate/Deactivate task` option as shown below:
 
-    ```bash
-    ? Select operation › - Use arrow-keys. Return to submit.
-        Create a new task
-        update existing task
-    ❯   Activate/Deactivate task
-        Claim reward
-        Fund task with more KOII
-        Withdraw staked funds from task
-        upload assets to IPFS(metadata/local vars)
-    ```
+```bash
+? Select operation › - Use arrow-keys. Return to submit.
+    Create a new local repository
+    Deploy a new task
+    update existing task
+❯   Activate/Deactivate task
+    Claim reward
+    Fund task with more KOII
+    Withdraw staked funds from task
+    upload assets to IPFS(metadata/local vars)
+```
 
 2. Enter your task ID:
 

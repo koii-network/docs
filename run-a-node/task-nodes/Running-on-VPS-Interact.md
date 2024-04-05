@@ -120,7 +120,7 @@ npx koii_claimrewards@latest params.json
 ## Additional helpful commands you should know
 
 ```bash
-koii -u https://testnet.koii.live balance
+koii -u https://testnet.koii.network balance
 koii --version
 koii address
 koii-keygen pubkey staking_wallet.json /or/ id.json

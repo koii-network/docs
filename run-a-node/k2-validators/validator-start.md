@@ -215,7 +215,7 @@ exec koii-validator \
   --wal-recovery-mode skip_any_corrupted_record
 ```
 
-To force validator logging to the conkoiie add a `--log` argument, otherwise the validator will automatically log to a file.
+To force validator logging to the console add a `--log` argument, otherwise the validator will automatically log to a file.
 
 The ledger will be placed in the `ledger/` directory by default, use the -`-ledger` argument to specify a different location.
 

@@ -1,26 +1,24 @@
 ---
-title: Create a New Task
+title: Deploy a New Task
 description: We provide create-task-cli to help you easily create and deploy your task.
 image: img/thumbnail.png
-sidebar_label: Create a New Task
+sidebar_label: Deploy a New Task
 ---
 
-The `create-task-cli` tool allows you to register and deploy a new Koii task. In this section, we'll walk you through the process of creating a new task.
 
 ![Image](../../img/spheron-key.svg)
 
 :::tip
 Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. , copy the token, and paste it on this prompt.
-
 :::
-
 # Getting Started:
 
-- After running the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To create a new task, select the following option:
+- To deploy a new task, select the following option:
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
-❯   Create a new task
+    Create a new local repository
+❯   Deploy a new task
     update existing task
     Activate/Deactivate task
     Claim reward
@@ -29,7 +27,7 @@ Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](htt
     upload assets to IPFS(metadata/local vars)
 ```
 
-- There are two options to create a new task, the next prompt asks you to select how you want to create your task:
+- There are two options to deploy a new task, the next prompt asks you to select how you want to deploy your task:
 
 ```bash
 ? Select operation › - Use arrow-keys. Return to submit.
@@ -38,10 +36,10 @@ Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](htt
 ```
 
 :::tip
-For creating a task, it's recommended to use the `using config YML` option, which offers a more structured approach and contains comprehensive information about your task.
+For deploying a task, it's recommended to use the `using config YML` option, which offers a more structured approach and contains comprehensive information about your task.
 :::
 
-To create a task, we recommend using the `config-task.yml` file, which can be easily edited in your task folder and contains more information about your task.
+To deploy a task, we recommend using the `config-task.yml` file, which can be easily edited in your task folder and contains more information about your task.
 
 ### Using config YML
 
@@ -166,7 +164,7 @@ Your account will be deducted 16.96090088 KOII for creating the task, which incl
 
 ### Using the CLI
 
-When opting for this method to create a new task, you will be prompted to enter all the essential information needed for task creation.
+When opting for this method to deploy a new task, you will be prompted to enter all the essential information needed for task deployment.
 
 Follow these instructions to input the required details:
 
@@ -225,17 +223,17 @@ Strong measures should be taken to protect this JSON file.
 The output of the command should be similar to the following.
 
 ```bash
-✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
-✔ Select operation › Create a new task
+✔ Select operation › Deploy a new task
 create-task
+✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 CONFIG {
-  json_rpc_url: 'https://testnet.koii.live',
+  json_rpc_url: 'https://testnet.koii.network',
   websocket_url: '',
-  keypair_path: '/Users/<YOUR_HOME>/.config/koii/id.json',
+  keypair_path: '~/validator-keypair.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://testnet.koii.network { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Select operation › using CLI
