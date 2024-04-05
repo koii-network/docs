@@ -234,7 +234,7 @@ Fill in the necessary information by following the instructions below:
 
 - **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty.  See the [Spheron Docs](https://docs.spheron.network/storage/) on how to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt. 
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. See the [Spheron Docs](https://docs.spheron.network/storage/) on how to upload a JSON file containing the metadata for your task. Add the uploaded file's CID to this prompt.
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 - **Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) › ** y/n
@@ -252,13 +252,13 @@ The output of the command should be similar to the following.
 ✔ Select operation › Create a new task
 create-task
 CONFIG {
-  json_rpc_url: 'https://testnet.koii.live/',
+  json_rpc_url: 'https://testnet.koii.network/',
   websocket_url: '',
   keypair_path: '/Users/<YOUR_HOME>/.config/koii/id.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://testnet.koii.live { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://testnet.koii.network { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Select operation › using CLI
