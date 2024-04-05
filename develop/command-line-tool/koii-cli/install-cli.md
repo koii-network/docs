@@ -127,7 +127,7 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 Set the **testnet rpc endpoint** correctly  
 Run this command 
 ```
-koii config set --url https://testnet.koii.live
+koii config set --url https://testnet.koii.network
 ```
 
 Feel free to [reach out](https://discord.com/invite/koii-network) if you have any further questions or need assistance.

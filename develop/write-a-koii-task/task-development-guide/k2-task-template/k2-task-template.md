@@ -89,8 +89,8 @@ If you have already generated a Koii wallet on your filesystem you can obtain th
 
 ```bash
 Config File: /home/<user>/.config/koii/cli/config.yml
-RPC URL: https://testnet.koii.live/
-WebSocket URL: wss://testnet.koii.live/ (computed)
+RPC URL: https://testnet.koii.network/
+WebSocket URL: wss://testnet.koii.network/ (computed)
 Keypair Path: /home/<user>/.config/koii/id.json
 Commitment: confirmed
 ```

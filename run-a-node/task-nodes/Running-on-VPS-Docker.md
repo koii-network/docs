@@ -69,7 +69,7 @@ task_node    | Staking wallet already exists
 task_node    | { isStakingWalletExists: true }
 task_node    | Staked 2 on 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 .....
-Cluster RPC URL: https://testnet.koii.live
+Cluster RPC URL: https://testnet.koii.network
 task_node  | *********************ENDPOINTS*********************
 task_node  | /attention*
 task_node  | /
