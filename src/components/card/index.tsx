@@ -1,3 +1,4 @@
+// This is PNG ONLY. So if you want to create a SVG photo, use image_link folders CardSpecial and CardsSpecial!
 import React from 'react';
 import styles from './card.module.css';
 import { cardImages } from './cardImages';
