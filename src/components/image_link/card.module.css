@@ -24,10 +24,9 @@
 
 .cardSvg {
   width: 100%;
-  height: auto; /* Adjust this as needed, 'auto' will maintain the aspect ratio */
-  object-fit: contain; /* Change to 'contain' to ensure the image fits within the container */
+  height: 237px;
+  object-fit: cover;
 }
-
 
 
 .textContainer{
