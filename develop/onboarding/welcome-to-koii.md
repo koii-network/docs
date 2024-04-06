@@ -17,26 +17,26 @@ We're thrilled to have you on board with Koii, an innovative leader in the realm
 
 ## You May Be Wondering...
 
-<Cards>
-  <Card
+<CardsSpecial>
+  <CardSpecial
       title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
       link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
       svgName="koiiJSAPI"
       cardPerRow="3"
     />
-    <Card
+    <CardSpecial
       title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
       link="/develop/category/koii-command-line-tool"
       svgName="koiiCLI"
       cardPerRow="3"
     />
-  <Card
+  <CardSpecial
       title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
       link="/develop/write-a-koii-task/task-development-guide/"
       svgName="createKoiiTask"
       cardPerRow="3"
     />
-</Cards>
+</CardsSpecial>
 
 
 ### 🌐 Getting to Know the Basics
