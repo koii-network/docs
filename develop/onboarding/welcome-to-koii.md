@@ -5,10 +5,10 @@ image: img/thumbnail.png
 sidebar_label: Onboarding
 ---
 
-import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
+import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 
 # 🎉 A Warm Welcome to You!
 
@@ -16,26 +16,26 @@ We're thrilled to have you on board with Koii, an innovative leader in the realm
 
 ## You May Be Wondering...
 
-<Cards>
-<Card
-    title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
-    link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
-    svgName="tasks"
-    cardPerRow="3"
-  />
+<CardsSpecial>
+  <CardSpecial
+      title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
+      link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+      svgName="koiiJSAPI"
+      cardPerRow="3"
+    />
+    <CardSpecial
+      title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
+      link="/develop/category/koii-command-line-tool"
+      svgName="koiiCLI"
+      cardPerRow="3"
+    />
   <Card
-    title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
-    link="/develop/category/koii-command-line-tool"
-    svgName="socialTech"
-    cardPerRow="3"
-  />
-<Card
-    title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
-    link="/develop/write-a-koii-task/task-development-guide/"
-    svgName="taskTemplate"
-    cardPerRow="3"
-  />
-</Cards>
+      title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
+      link="/develop/write-a-koii-task/task-development-guide/"
+      svgName="createKoiiTask"
+      cardPerRow="3"
+    />
+</CardsSpecial>
 
 
 ### 🌐 Getting to Know the Basics

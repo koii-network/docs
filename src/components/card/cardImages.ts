@@ -64,4 +64,19 @@ export const cardImages = {
   consensus: require(`@site/concepts/introduction/img/Gradual Consensus.png`)
     .default,
   carp: require(`@site/concepts/introduction/img/CARP.png`).default,
+  createKoiiTask:
+    require(`@site/develop/img/Create_a_koii_task.png`)
+      .default,
+  koiiCLI:
+    require(`@site/develop/img/Koii_CLI.png`)
+    .default,
+  koiiJSAPI:
+    require(`@site/develop/img/Koii_JavaScript_API.png`)
+    .default,
+  Philosophy:
+    require(`@site/develop/img/Philosophy_1.png`)
+    .default,
+  tools2:
+    require(`@site/develop/img/Tools.png`)
+    .default,
 };
