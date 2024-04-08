@@ -1,6 +1,6 @@
 export const cardImages = {
   createKoiiTask:
-    require(`@site/develop/img/Create_a_koii_task.svg`)
+    require(`@site/develop/img/Create_a_koii_task.png`)
       .default,
   koiiCLI:
     require(`@site/develop/img/Koii_CLI.svg`)

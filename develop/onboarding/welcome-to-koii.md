@@ -5,11 +5,10 @@ image: img/thumbnail.png
 sidebar_label: Onboarding
 ---
 
-import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
-import CardSpecial, {CardsSpecial} from '@site/src/components/image_link';
+import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 
 # 🎉 A Warm Welcome to You!
 
@@ -30,7 +29,7 @@ We're thrilled to have you on board with Koii, an innovative leader in the realm
       svgName="koiiCLI"
       cardPerRow="3"
     />
-  <CardSpecial
+  <Card
       title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
       link="/develop/write-a-koii-task/task-development-guide/"
       svgName="createKoiiTask"

@@ -11,8 +11,8 @@ type CardItem = {
   cardPerRow?: string;
 };
 
-function CardSpecial({ title, description, link, linkText, svgName, cardPerRow = "3" }) {
-  const SvgImage = cardImages[svgName]; // 假设这是一个React组件
+export function CardSpecial({ title, description, link, linkText, svgName, cardPerRow = "3" }) {
+  const SvgImage = cardImages[svgName]; 
   console.log(cardImages[svgName]);
   const target = link && link.includes('https') ? '_blank' : '';
 
@@ -20,7 +20,7 @@ function CardSpecial({ title, description, link, linkText, svgName, cardPerRow =
     <a href={link} className={styles.card} style={{ width: `calc((100% / ${cardPerRow}) - 20px)` }} target={target} rel="noopener noreferrer">
       {
         SvgImage && (
-          <SvgImage className={styles.cardSvg} alt={title} /> // 直接渲染SVG组件
+          <SvgImage className={styles.cardSvg} alt={title} /> 
         )
       }
       <div className={styles.textContainer}>
@@ -32,7 +32,24 @@ function CardSpecial({ title, description, link, linkText, svgName, cardPerRow =
   );
 }
 
-
+export function Card ({title, description, link, linkText, svgName, cardPerRow="3"}:CardItem) {
+  const image = cardImages[svgName]
+  const target = link.includes('https') ? '_blank' : ''
+return (
+  <a href={link} className={styles.card} style={{width: `calc((100% / ${cardPerRow}) - 20px)`}} target={target}>
+       {
+        image && (
+          <img src={image} className={styles.cardSvg}  alt={title}/>
+        )
+       }
+      <div className={styles.textContainer}>
+          <div  dangerouslySetInnerHTML={{__html: title}}/>
+         <div dangerouslySetInnerHTML={{__html: description}}/>
+          <a href={link}>{linkText}</a>
+      </div>
+  </a>
+);
+}
 
 
 export function CardsSpecial({children}): JSX.Element {
@@ -47,4 +64,3 @@ export function CardsSpecial({children}): JSX.Element {
   );
 }
 
-export default CardSpecial;
