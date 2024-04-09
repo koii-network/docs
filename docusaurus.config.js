@@ -128,6 +128,20 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "learn",
+        path: "learn",
+        routeBasePath: "learn/",
+        sidebarPath: require.resolve("./sidebars/learnSidebar.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
 
     [
       "@docusaurus/plugin-client-redirects",
@@ -1024,6 +1038,14 @@ const config = {
             position: "left",
             className: "header-text",
           },
+          {
+            label: "📄 Learn",
+            to: "/learn/comics/",
+            activeBasePath: "learn",
+            position: "left",
+            className: "header-text",
+          },         
+          
         ],
       },
       footer: {},
