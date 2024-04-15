@@ -84,8 +84,6 @@ const config = {
       },
     ],
 
-
-
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -322,7 +320,7 @@ const config = {
               "/develop/koii-task-101/what-are-tasks/runtime-environment",
             ],
           },
-          
+
           {
             to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
             from: "/develop/microservices-and-tasks/run-a-task-node",
@@ -467,7 +465,7 @@ const config = {
           },
           {
             to: "/faq/questions",
-            from: "/koii/faq",
+            from: ["/koii/faq", "/faq/getting-started"],
           },
 
           {
@@ -760,78 +758,84 @@ const config = {
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           {
-            to:"/develop/write-a-koii-task/task-development-guide/",
-            from:["/quickstart/hello-world/introduction",
-            "/quickstart/hello-world/understand-the-template",
-            "/quickstart/hello-world/task",
-            "/quickstart/hello-world/audit",
-            "/quickstart/hello-world/audit",
-            "/quickstart/hello-world/distribution",
-            "/quickstart/hello-world/local-test",
-            "/quickstart/hello-world/get-request",
-            "/quickstart/hello-world/deployment",
-            "/quickstart/hello-world/update",
-            "/quickstart/hello-world/run-your-task",
-            "/quickstart/hello-world/what-is-next",
-            "/quickstart/migrate-apps/web-crawler",
-            "/quickstart/crawler/introduction",
-            "/quickstart/hello-world/intro", "/develop/build-on-koii",
-            "/quickstart/hello-world/task-tutorial",
-            "/quickstart/hello-world/task-description",
-            "/quickstart/hello-world/deploy",
-          ],
+            to: "/develop/write-a-koii-task/task-development-guide/",
+            from: [
+              "/quickstart/hello-world/introduction",
+              "/quickstart/hello-world/understand-the-template",
+              "/quickstart/hello-world/task",
+              "/quickstart/hello-world/audit",
+              "/quickstart/hello-world/distribution",
+              "/quickstart/hello-world/local-test",
+              "/quickstart/hello-world/get-request",
+              "/quickstart/hello-world/deployment",
+              "/quickstart/hello-world/update",
+              "/quickstart/hello-world/run-your-task",
+              "/quickstart/hello-world/what-is-next",
+              "/quickstart/migrate-apps/web-crawler",
+              "/quickstart/crawler/introduction",
+              "/quickstart/hello-world/intro",
+              "/develop/build-on-koii",
+              "/quickstart/hello-world/task-tutorial",
+              "/quickstart/hello-world/task-description",
+              "/quickstart/hello-world/deploy",
+            ],
           },
           {
             to: "/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure",
-            from: ["/quickstart/scaling-tasks/network-options",
-            "/quickstart/scaling-tasks/spheron-infrastructure",
-          ],
+            from: [
+              "/quickstart/scaling-tasks/network-options",
+              "/quickstart/scaling-tasks/spheron-infrastructure",
+            ],
           },
           {
             to: "/develop/introduction",
-            from:["/quickstart/introduction"],
+            from: ["/quickstart/introduction"],
           },
           {
             to: "/develop/linktree/intro",
-            from: ["/quickstart/linktree/intro",
-            "/quickstart/linktree/data-storage",
-            "/quickstart/linktree/data-sharing",
-            "/quickstart/linktree/rest-apis",
-            "/quickstart/linktree/user-authentication",
-            "/quickstart/linktree/frontend",
-            "/develop/microservices-and-tasks/linktree-task/intro",
-            "/develop/microservices-and-tasks/linktree-task/data-storage",
-            "/develop/microservices-and-tasks/linktree-task/data-sharing",
-            "/develop/microservices-and-tasks/linktree-task/rest-api",
-            "/develop/microservices-and-tasks/linktree-task/auth-list",
-           "/develop/task-tutorials/linktree-task/intro",
-            "/develop/task-tutorials/linktree-task/data-storage",
-             "/develop/task-tutorials/linktree-task/data-sharing",
-           "/develop/task-tutorials/linktree-task/rest-api",
-            "/develop/task-tutorials/linktree-task/auth-list",
-          ],
+            from: [
+              "/quickstart/linktree/intro",
+              "/quickstart/linktree/data-storage",
+              "/quickstart/linktree/data-sharing",
+              "/quickstart/linktree/rest-apis",
+              "/quickstart/linktree/user-authentication",
+              "/quickstart/linktree/frontend",
+              "/develop/microservices-and-tasks/linktree-task/intro",
+              "/develop/microservices-and-tasks/linktree-task/data-storage",
+              "/develop/microservices-and-tasks/linktree-task/data-sharing",
+              "/develop/microservices-and-tasks/linktree-task/rest-api",
+              "/develop/microservices-and-tasks/linktree-task/auth-list",
+              "/develop/task-tutorials/linktree-task/intro",
+              "/develop/task-tutorials/linktree-task/data-storage",
+              "/develop/task-tutorials/linktree-task/data-sharing",
+              "/develop/task-tutorials/linktree-task/rest-api",
+              "/develop/task-tutorials/linktree-task/auth-list",
+            ],
           },
           {
             to: "/develop/extractor/introduction",
-            from: ["/quickstart/extractor/introduction",
-           "/quickstart/extractor/using",
-           "/quickstart/extractor/adapter",
-          "/quickstart/extractor/task-structure",
-          "/quickstart/extractor/testing",
-        ]
+            from: [
+              "/quickstart/extractor/introduction",
+              "/quickstart/extractor/using",
+              "/quickstart/extractor/adapter",
+              "/quickstart/extractor/task-structure",
+              "/quickstart/extractor/testing",
+            ],
           },
 
-          { to: "/develop/erc20-reward/introduction",
-            from: ["/quickstart/erc20-reward/introduction",
-                "/quickstart/erc20-reward/smart-contract",
-                "/quickstart/erc20-reward/getting-started",
-                "/quickstart/erc20-reward/task",
-                "/quickstart/erc20-reward/distribution",
-              ]
+          {
+            to: "/develop/erc20-reward/introduction",
+            from: [
+              "/quickstart/erc20-reward/introduction",
+              "/quickstart/erc20-reward/smart-contract",
+              "/quickstart/erc20-reward/getting-started",
+              "/quickstart/erc20-reward/task",
+              "/quickstart/erc20-reward/distribution",
+            ],
           },
           {
             to: "/faq/community-contributions",
-            from: "/faq/pagefive"
+            from: "/faq/pagefive",
           },
           {
             to: "/faq/comics",
@@ -843,8 +847,8 @@ const config = {
           },
           {
             to: "/faq/tutorial",
-            from: "/faq/pagetwo"
-          }
+            from: "/faq/pagetwo",
+          },
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
