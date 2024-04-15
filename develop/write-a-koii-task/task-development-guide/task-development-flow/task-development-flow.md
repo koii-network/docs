@@ -10,7 +10,8 @@ import ContentLink from "@site/src/components/contentLink";
 # Task Development Flow
 
 Here are articles in this section:
-
+<ContentLink title="Compile Task" link="./compile-task" iconType="copy"/>
+<br />
 <ContentLink title="Create Task" link="./create-task" iconType="copy"/>
 <br />
 <ContentLink title="Whitelist Task" link="./whitelist-task" iconType="copy"/>
