@@ -7,11 +7,18 @@ sidebar_label: Task Structure
 
 import Tooltip from "@site/src/components/tooltip";
 
-To begin, clone the task template:
+To get started, execute the command `npx @_koii/create-task-cli@latest`. Then, choose the first option, `Create a new local repository`.
 
 ```bash
- git clone https://github.com/koii-network/task-template.git hello-world
- cd hello-world
+? Select operation › - Use arrow-keys. Return to submit.
+❯   Create a new local repository
+    Deploy a new task
+    update existing task
+    Activate/Deactivate task
+    Claim reward
+    Fund task with more KOII
+    Withdraw staked funds from task
+    upload assets to IPFS(metadata/local vars)
 ```
 
 Make sure you have [node](https://nodejs.org/en/) and [npm](https://docs.npmjs.com/cli/v8/commands/npm-install/) installed before moving forward.
