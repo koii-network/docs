@@ -2,7 +2,7 @@
 title: Using unitTest
 description: unitTest.js helps you to test your task steps separately.
 image: img/thumbnail.png
-sidebar_label: Using unitTest
+sidebar_label: Unit tests
 ---
 
 # Using unitTest
