@@ -17,7 +17,7 @@ If you are running a K2 Node and are having a hard time making ends meet, the Ko
 ### Process for Receiving Support
 1. **Setup Your K2 Validator**: Follow our detailed documentation to set up your K2 validator.
 2. **Engage with the Community**: Post in the `#k2-validator` channel on our [Discord](https://discord.gg/koii-network) to seek community support.
-3. **Submit the Application Form**: Fill out the [Application Form](https://discord.gg/koii-network) with your Discord handle included.
+3. **Submit the Application Form**: Fill out the [Application Form](https://docs.google.com/forms/d/e/1FAIpQLSdbkcD5kddmo-ir_LC1eNdqRdrzmHTf5oS9HKaYowhDE67SXw/viewform) with your Discord handle included.
 4. **Complete KYC Requirements**: Verify your identity and/or your business to comply with regulatory standards.
 5. **Schedule an Introductory Call**: Wait to be contacted for an introductory call with a member of the Koii Foundation team.
 6. **Receive Delegated Stake**: Upon successful review, receive delegated stake and commence running your node.
