@@ -3,9 +3,9 @@ title: Testing in the Node
 image: img/thumbnail.png
 sidebar_label: Testing in the Node
 ---
-# **Testing Your Task with Eazy Testing**
+# **Testing Your Task with Easy Testing**
 
-Congratulations on completing the basic Jest tests and unit tests! This shows that your task is functioning correctly. Next, you will learn how to use our custom-designed **Eazy Testing v0.1** to simulate how your task operates on other users' koii Nodes.
+Congratulations on completing the basic Jest tests and unit tests! This shows that your task is functioning correctly. Next, you will learn how to use our custom-designed **Easy Testing v0.1** to simulate how your task operates on other users' koii Nodes.
 
 ## **Process Overview**
 
@@ -64,7 +64,7 @@ The easy testing task we provided does not include audit and distribution functi
 
 ## Filtering Logs w/ Keywords
 
-You’ve now successfully debugged the Eazy Testing task in real time directly on Koii Node! Next, you’ll see you can easily filter logs with specific keywords!
+You’ve now successfully debugged the Easy Testing task in real time directly on Koii Node! Next, you’ll see you can easily filter logs with specific keywords!
 
 ### **Step 1: Navigate to debugger.js**
 
@@ -99,7 +99,7 @@ module.exports = Debugger;
 
 ### Step 2: Configure specific keywords
 
-Deugger.js contains all the different variables required to facilitate the live debugging process possible! As you can see in the list of keywords to filter by, the default is ‘TEST’. You modify and add as many filters as you choose to, with an example shown below:
+Debugger.js contains all the different variables required to facilitate the live debugging process possible! As you can see in the list of keywords to filter by, the default is ‘TEST’. You modify and add as many filters as you choose to, with an example shown below:
 
 ```jsx
   static keywords = ['TEST', 'ERROR', 'WARNING'];
