@@ -73,7 +73,7 @@ koii-keygen new --outfile ~/authorized-withdrawer-keypair.json
     - Copy this to the remote validator server at `/home/koii/vote-account-keypair.json`
 - **stake-account-keypair.json** : Keypair for your staking wallet
     - Keep this secure since this will hold the wallet that you delegate stake from
-- **authorized-withdrawer-keypair.json** : Authorized withdrawer keypair, allowd to withdraw funds from your validator vote account ****
+- **authorized-withdrawer-keypair.json** : Authorized withdrawer keypair, allowed to withdraw funds from your validator vote account ****
 
 :::danger
 The **authorized withdrawer keypair** is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.

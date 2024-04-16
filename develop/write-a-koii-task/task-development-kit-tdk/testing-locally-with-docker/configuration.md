@@ -1,8 +1,8 @@
 ---
-title: Testing Configuration
+title: Jest Configuration
 description: Depending on the types of tasks you are developing, you may require custom configuration of your jest testing file.
 image: img/thumbnail.png
-sidebar_label: Testing Configuration
+sidebar_label: Jest Configuration
 ---
 
 # Testing Configuration
