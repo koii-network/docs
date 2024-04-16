@@ -9,7 +9,7 @@ Congratulations on completing the basic Jest tests and unit tests! This shows th
 
 ## **Process Overview**
 
-Here's a step-by-step guide to using Eazy Testing:
+Here's a step-by-step guide to using Easy Testing:
 
 ### Step 1: Set up .env (optional)
 
