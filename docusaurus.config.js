@@ -299,13 +299,6 @@ const config = {
             ],
           },
           {
-            to: "/run-a-node/k2-validators/system-requirements",
-            from: [
-              "/develop/settlement-layer/running-a-k2-node/system-requirements",
-              "/settlement-layer/running-a-k2-node/setup-process",
-            ],
-          },
-          {
             to: "/run-a-node/k2-validators/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
@@ -868,6 +861,14 @@ const config = {
           {
             to: "/faq/questions/",
             from: "/faq",
+          },
+          {
+            to: "/run-a-node/k2-validators/validator-requirements",
+            from: [
+              "/develop/settlement-layer/running-a-k2-node/system-requirements",
+              "/settlement-layer/running-a-k2-node/setup-process",
+              "/run-a-node/k2-validators/system-requirements"
+            ],
           },
         ],
         createRedirects(existingPath) {

@@ -10,72 +10,116 @@ import Tooltip from "@site/src/components/tooltip";
 
 # System Setup
 
-:::warning
+> **All following steps need to be run on the validator server, unless mentioned otherwise.**
+> 
 
-Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
+## 1. Ensure system is up-to-date
 
-:::
-
-<Description
-  text="This section provides a guide on how to configure your Ubuntu system"
-/>
-
-Before continuing with this section you should ensure that your environment is up to date
+Ensure your Ubuntu system is up-to-date and has all the base packages required
 
 ```bash
-sudo apt update
-sudo apt upgrade
-```
-
-After updating your environment you will need to install the required packages
-
-```bash
+sudo apt update && sudo apt upgrade
 sudo apt install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang
 ```
 
-## Step 1: Create a new user
-
-We recommend running the validator under a user that is not `root` for security reasons. Create a user to run the validator
+## 2. User setup
 
 ```bash
 sudo adduser koii
 sudo usermod -aG sudo koii
-```
-
-Elevate the user
-
-```bash
 sudo su koii
 cd ~
 ```
 
-:::tip
-Please make sure you are in the home directory of the user you created before continuing to
-check by running `pwd` and it should return `/home/koii`
-:::
+<aside>
+⚠️ Please ensure that all the **following steps** happen within the home directory (/home/koii) of the `koii` user
 
+</aside>
 
-## Step 2: Install the Koii software
+## 3. Koii cli setup
 
-We host an install script that will install and configure the Koii validator software. Run it with the following command
+* Required both on your secure computer for keypair generation and on the validator
 
 ```bash
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.14.19.sh)"
-```
-
-:::tip
-You may need to update the PATH environment variable. You can do this by running 
-```bash
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.0.sh)"
+# You may need to update PATH variable for the cli to be available
 echo 'export PATH="/home/koii/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+# Set the koii config to point to the testnet
+koii config set --url https://testnet.koii.network
+
 ```
+
+## 4. Key pairs creation
+
+> Run commands for **only this step** on a **secure computer** **separate from the validator server**
+You need to **install Koii cli on this secure computer** as well, to be able to use the  commands below
+> 
+
+We will be creating the following 4 key pairs:
+
+```bash
+koii-keygen new --outfile ~/validator-keypair.json
+koii-keygen new --outfile ~/vote-account-keypair.json
+koii-keygen new --outfile ~/stake-account-keypair.json
+koii-keygen new --outfile ~/authorized-withdrawer-keypair.json
+# To print your Public key(i.e. Wallet address) for any keypairs
+# koii-keygen pubkey <Path to Keypair>
+```
+
+- **validator-keypair.json :** Identity of the validator on the network
+    - Copy this to the remote validator server at `/home/koii/validator-keypair.json`
+- **vote-account-keypair.json** : Voting account on the network
+    - Copy this to the remote validator server at `/home/koii/vote-account-keypair.json`
+- **stake-account-keypair.json** : Keypair for your staking wallet
+    - Keep this secure since this will hold the wallet that you delegate stake from
+- **authorized-withdrawer-keypair.json** : Authorized withdrawer keypair, allowd to withdraw funds from your validator vote account ****
+
+:::danger
+The **authorized withdrawer keypair** is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
+*Anyone in possession of it can permanently take control of your vote account and make any changes as they please.*
 :::
 
-This script will install and configure the validator software with an identity key and the `koii` cli configured for `testnet`. It is important to note that this identity key created **is not** your validator identity. If you have a private key that is funded for staking with a validator you can replace the one generated with this script.
 
-## Step 3: Allow traffic on ports
+:::tip
+**`stake-account-keypair.json`**  and **`authorized-withdrawer-keypair.json`** must be stored in a secure location **NOT on the validator.**
+:::
+
+
+## 5. Network configuration
 
 If you have firewall software installed you will need to allow traffic on the following ports:
 
-**TCP and UDP for ports 10000-10500**
+```bash
+sudo ufw allow 10000:10500/udp
+sudo ufw allow 10000:10500/tcp
+sudo ufw allow 10899/tcp
+sudo ufw allow 10900/tcp
+```
 
-**TCP for port 10899**
+## 6. Systuning setup
+
+- Create a file at `/etc/systemd/system/systuner.service` :
+    
+    ```bash
+    [Unit]
+    Description=Koii System Tuner 
+    After=network.target 
+    [Service]
+    Type=simple 
+    Restart=on-failure 
+    RestartSec=1 
+    ExecStart=/home/koii/.local/share/koii/install/active_release/bin/koii-sys-tuner --user koii
+    [Install]
+    WantedBy=multi-user.target
+    
+    ```
+    
+- Start and Enable the service to automatically start
+    
+    ```bash
+    sudo systemctl start systuner
+    sudo systemctl enable systuner
+    ```
+    
+---

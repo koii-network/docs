@@ -31,15 +31,8 @@ At this time we only support Ubuntu 20.04 LTS.
 
 :::
 
-## Staking
-
-There is no minimum amount of KOII required to stake and participate in the voting process.
-
-To participate in the voting process you must configure your system, start a validator, and configure your voting and stake accounts. This guide will show you how to do this.
-
 ## Quick Links
 
-1. [System Requirements](./system-requirements)
+1. [Validator Requirements](./validator-requirements)
 2. [System Setup](./system-setup)
 3. [Validator Setup](./validator-setup)
-4. [K2 Releases](https://github.com/koii-network/k2-release)
