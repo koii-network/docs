@@ -58,12 +58,11 @@ const sidebars = {
       className: "sidebar-title",
     },
     "k2-validators/how-to-run-a-k2-validator",
-    "k2-validators/system-requirements",
+    "k2-validators/validator-requirements",
     "k2-validators/system-setup",
     "k2-validators/validator-setup",
-    "k2-validators/validator-start",
-    "k2-validators/validator-stake",
     "k2-validators/rewards",
+    "k2-validators/k2-staking-support",
   ],
 };
 

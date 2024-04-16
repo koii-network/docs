@@ -299,13 +299,6 @@ const config = {
             ],
           },
           {
-            to: "/run-a-node/k2-validators/system-requirements",
-            from: [
-              "/develop/settlement-layer/running-a-k2-node/system-requirements",
-              "/settlement-layer/running-a-k2-node/setup-process",
-            ],
-          },
-          {
             to: "/run-a-node/k2-validators/system-setup",
             from: "/develop/settlement-layer/running-a-k2-node/setup-process",
           },
@@ -464,7 +457,7 @@ const config = {
             from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
           },
           {
-            to: "/faq/questions",
+            to: "/faq/questions/",
             from: ["/koii/faq", "/faq/getting-started"],
           },
 
@@ -846,8 +839,36 @@ const config = {
             from: "/faq/pagethree",
           },
           {
-            to: "/faq/tutorial",
-            from: "/faq/pagetwo",
+            to: "/concepts/introduction/welcome",
+            from: "/koii",
+          },
+          {
+            to: "/run-a-node/introduction/types-of-nodes",
+            from: "/nodes",
+          },
+          {
+            to: "/develop/onboarding/welcome-to-koii/",
+            from: "/developers",
+          },
+          {
+            to: "/compute/introduction",
+            from: "/getcompute",
+          },
+          {
+            to: "/koii/the-koii-token/network-economics",
+            from: "/token",
+          },
+          {
+            to: "/faq/questions/",
+            from: "/faq",
+          },
+          {
+            to: "/run-a-node/k2-validators/validator-requirements",
+            from: [
+              "/develop/settlement-layer/running-a-k2-node/system-requirements",
+              "/settlement-layer/running-a-k2-node/setup-process",
+              "/run-a-node/k2-validators/system-requirements"
+            ],
           },
         ],
         createRedirects(existingPath) {
