@@ -846,8 +846,28 @@ const config = {
             from: "/faq/pagethree",
           },
           {
-            to: "/faq/tutorial",
-            from: "/faq/pagetwo",
+            to: "/concepts/introduction/welcome",
+            from: "/koii",
+          },
+          {
+            to: "/run-a-node/introduction/types-of-nodes",
+            from: "/nodes",
+          },
+          {
+            to: "/develop/onboarding/welcome-to-koii/",
+            from: "/developers",
+          },
+          {
+            to: "/compute/introduction",
+            from: "/getcompute",
+          },
+          {
+            to: "/koii/the-koii-token/network-economics",
+            from: "/token",
+          },
+          {
+            to: "/faq/questions/",
+            from: "/faq",
           },
         ],
         createRedirects(existingPath) {

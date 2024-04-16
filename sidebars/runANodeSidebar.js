@@ -64,6 +64,7 @@ const sidebars = {
     "k2-validators/validator-start",
     "k2-validators/validator-stake",
     "k2-validators/rewards",
+    "k2-validators/k2-staking-support",
   ],
 };
 
