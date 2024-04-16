@@ -2,7 +2,7 @@
 title: Testing Locally Using Jest
 description: We provide a testing suite that makes task development very seamless and straightforward. We chose to use Jest in order to provide all the required task development resources in a consistent and isolated environment.
 image: img/thumbnail.png
-sidebar_label: Testing Locally Using Jest
+sidebar_label: Jest
 ---
 
 import ContentLink from "@site/src/components/contentLink";
