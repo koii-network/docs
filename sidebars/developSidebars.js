@@ -102,6 +102,22 @@ const sidebars = {
         "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
       ],
     },
+    {
+      type: "category",
+      label: "Testing",
+      link: {
+        type: "doc",
+        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing",
+      },
+      collapsed: true,
+      items: [
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
+        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing",
+      ],
+    },
+    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
    
     // {
     //   type: "category",
@@ -135,22 +151,6 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
     "write-a-koii-task/task-development-guide/scaling-tasks/network-options",
     "write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure",
-    {
-      type: "category",
-      label: "Testing",
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing",
-      },
-      collapsed: true,
-      items: [
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing",
-      ],
-    },
-    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
 
     {
       type: "html",

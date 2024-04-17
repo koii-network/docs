@@ -30,7 +30,9 @@ Here's an example of using task extension variables in the your `.env`:
 TASK_ID = "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
 TWITTER_USERNAME = "testuser123";
 ```
-
+:::danger
+To deploy your task, please use yarn webpack again to avoid leaking your environmental variables.
+:::
 ### **Step 2: Modify Your Code**
 
 Insert testing scripts of your code into the task script and use **`console.log("TEST",value)`** to output important values for testing. For example, in `submission.js` you can add:
