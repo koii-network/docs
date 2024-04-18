@@ -21,7 +21,9 @@ docker-compose up
 ```
 
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
-
+:::tip
+If you need to upgrade your task node, run `docker-compose pull` before executing `docker-compose up`. Remember to clean up unused images with `docker image prune -a` to save space.
+:::
 :::tip
 If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify Docker version!
 ```bash
