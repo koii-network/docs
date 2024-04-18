@@ -14,16 +14,28 @@ sudo apt install docker-compose
 ```
 
 ## Run the Docker Compose in order to launch your node
-
+Instructions for First-Time Runners:
 ```bash
+# Change to the VPS-task directory
 cd VPS-task
+
+# Start the containers using docker-compose
 docker-compose up
 ```
-
+Instructions for Users Who Want to Upgrade:
+```bash
+# Navigate to the VPS-task working directory
+cd VPS-task
+# Stop all running containers
+docker-compose down
+# Remove all unused Docker images to free up space
+docker image prune -af
+# Download the latest versions of your Docker images
+docker-compose pull
+# Start the containers in detached mode
+docker-compose up -d
+```
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
-:::tip
-If you need to upgrade your task node, run `docker-compose pull` before executing `docker-compose up`. Remember to clean up unused images with `docker image prune -a` to save space.
-:::
 :::tip
 If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify Docker version!
 ```bash
