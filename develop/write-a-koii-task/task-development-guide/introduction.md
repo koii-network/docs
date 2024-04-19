@@ -1,8 +1,8 @@
 ---
-title: "Quick Start"
+title: Zero to Hero with Koii Tasks
 description: Informal Introduction
 image: img/thumbnail.png
-sidebar_label: Introduction
+sidebar_label: QuickStart 
 ---
 
 The objective of our platform is to break down a task into several steps. The most critical aspect that you need to define is the task function. This refers to the purpose of the task. Here are the key components to consider:
