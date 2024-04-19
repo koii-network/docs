@@ -49,10 +49,10 @@ Calling ClaimReward
 Success
 ```
 
-- 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is represents the Task ID
-- stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ represents the Stake Pot Account
-- HERE_YOUR_WALLET_PUBLIC_ADDRESS represents the Wallet that will receive the claimed Coins
-- /home/koii/koii-node/namespace/staking_wallet.json represents the default path to your staking wallet
+- `4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is` represents the Task ID
+- `stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ` represents the Stake Pot Account
+- `HERE_YOUR_WALLET_PUBLIC_ADDRESS` represents the Wallet that will receive the claimed Coins
+- `/home/koii/koii-node/namespace/staking_wallet.json` represents the default path to your staking wallet
 
 ## Example of how to Unstake from the "Free Token Task!"
 
