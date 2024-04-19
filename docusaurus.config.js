@@ -751,7 +751,7 @@ const config = {
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/",
+            to: "/develop/write-a-koii-task/task-development-guide/introduction",
             from: [
               "/quickstart/hello-world/introduction",
               "/quickstart/hello-world/understand-the-template",
