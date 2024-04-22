@@ -38,6 +38,22 @@ const sidebars = {
       items: [],
     },
     {
+      type: "category",
+      label: "Koii Command Line Tool",
+      link: {
+        type: "generated-index",
+        description:
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
+      },
+      collapsed: true,
+      items: [
+        "quickstart/command-line-tool/koii-cli/install-cli",
+        "quickstart/command-line-tool/koii-cli/create-wallet",
+        "quickstart/command-line-tool/koii-cli/send-and-receive-tokens",
+        "quickstart/command-line-tool/koii-cli/connect-cluster",
+      ],
+    },
+    {
       type: "html",
       value: "Deep Dive: How Koii Works",
       className: "sidebar-title top-margin",
