@@ -52,6 +52,7 @@ const sidebars = {
         "task-nodes/Running-on-VPS-Interact",
       ],
     },
+    "task-nodes/Running-on-Raspberry",
     {
       type: "html",
       value: "K2 Validator",
