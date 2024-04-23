@@ -1,13 +1,13 @@
 ---
-title: Task Development Guide
+title: Task Structure
 description: More details on task deployments coming soon!
 image: img/Task_Design_Guide.png
-sidebar_label: Introduction
+sidebar_label: Task Structure
 ---
 
 import Description from "@site/src/components/description";
 
-# Task Development Guide
+# Task Structure
 
 ![banner](../img/Task%20Development%20Guide.svg)
 
