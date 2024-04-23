@@ -1,9 +1,8 @@
----
-title: Running on Raspberry
-description: Running on Raspberry
-sidebar_label: Running on Raspberry Pi
----
-Raspberry Pi OS has a Desktop version and a Lite version. Reference the steps to install the Raspberry Pi OS [here](https://www.raspberrypi.com/documentation/computers/getting-started.html#install-an-operating-system). 
+# Raspberry Node Tutorial
+
+Raspberry Pi OS is divided into several versions, including a **full version with a** **desktop environment(#1)**, a version with **a desktop but no recommended software(#2)**, and a **"Lite" version with a command line interface(#3)**.
+
+In this tutorial, I'll go over the installation options for all three versions in detail.
 
 ## **Set Up Your Raspberry Pi**
 
@@ -11,47 +10,57 @@ Raspberry Pi OS has a Desktop version and a Lite version. Reference the steps to
 - Insert the SD card with Raspbian OS into the Raspberry Pi.
 - Power up the Raspberry Pi and complete the initial setup, including connecting to the internet.
 
-## **Raspberry Pi OS with desktop**
+## **#1 Raspberry Pi OS with desktop (Full Version)**
+
+### **Step 1: Download the `.deb` File**
+
+1. Open your browser and go to [https://www.koii.network/](https://www.koii.network/).
+2. Click on the "Pay Me" button to download the **`.deb`** installation package.
+
+### **Step 2: Install the `.deb` File**
+
+1. Open a terminal window.
+2. Change to the **`Downloads`** directory by typing **`cd ~/Downloads`**.
+3. Install the downloaded **`.deb`** file using the command: `sudo dpkg -i filename.deb`
+
+### Step 3: Running the node
+
+Please refer to our [node](https://docs.koii.network/faq/questions/managing-node/#q-how-to-run-the-task) tutorial.
+
+## **#2 Raspberry Pi OS with desktop (**no recommended software installed)
 
 ### **Step 1: Update Your System**
 
 - Open a terminal window and type the following commands to update your system:
-    
-    ```bash
-    sudo apt update
-    sudo apt upgrade
-    ```
-    
+  ```bash
+  sudo apt update
+  sudo apt upgrade
+  ```
 
 ### **Step 2: Install a Web Browser**
 
 - If your Raspberry Pi does not already have a web browser like Chromium installed, you can install it by running:
-    
-    ```bash
-    sudo apt install chromium-browser
-    ```
-    
+  ```bash
+
+  sudo apt install chromium-browser
+  ```
 
 ### **Step 3: Open a Tab**
 
 - Once the browser is installed, you can start it from the terminal by typing:
-    
-    ```bash
-    chromium-browser
-    ```
-    
+  ```bash
 
-### **Step 4: Download the `.deb` File**
+  chromium-browser
+  ```
 
-1. Open your browser and go to https://www.koii.network/.
-2. Click on the "Pay Me" button to download the **`.deb`** installation package.
+### Step 4: follow the steps in “#1 **Raspberry Pi OS with desktop (Full Version)”**
 
-### **Step 5: Install the `.deb` File**
+## **#3 Raspberry Pi OS without desktop (Lite Version)**
 
-1. Open a terminal window.
-2. Change to the **`Downloads`** directory by typing **`cd ~/Downloads`**.
-3. Install the downloaded **`.deb`** file using the command: `sudo dpkg -i <Downloaded Koii Node>.deb`
+### Step 1: install the **Raspberry Pi OS**
 
-## **Raspberry Pi OS Lite**
+Reference the steps to install the Raspberry Pi OS [here](https://www.raspberrypi.com/documentation/computers/getting-started.html#install-an-operating-system).
 
-Please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
+### Step 2: follow the steps in “#2 **Raspberry Pi OS with desktop (**no recommended software installed)**”**
+
+If you wish not to install the **Raspberry Pi OS,** Please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
