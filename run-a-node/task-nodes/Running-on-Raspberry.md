@@ -57,4 +57,4 @@ Please refer to our [node](https://docs.koii.network/faq/questions/managing-node
 
 ## **#3 Raspberry Pi OS without desktop (Lite Version)**
 
-Lite version can not install the **Raspberry Pi OS**, so that it will not be able to run the Koii Desktop Node, if you wish to run the node, please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
+For Lite Version, it can't run the Koii Desktop Node, but you can run the Koii Node in VPS. If you wish to run the node, please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
