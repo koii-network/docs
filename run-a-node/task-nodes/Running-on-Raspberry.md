@@ -57,10 +57,4 @@ Please refer to our [node](https://docs.koii.network/faq/questions/managing-node
 
 ## **#3 Raspberry Pi OS without desktop (Lite Version)**
 
-### Step 1: install the **Raspberry Pi OS**
-
-Reference the steps to install the Raspberry Pi OS [here](https://www.raspberrypi.com/documentation/computers/getting-started.html#install-an-operating-system).
-
-### Step 2: follow the steps in “#2 **Raspberry Pi OS with desktop (**no recommended software installed)**”**
-
-If you wish not to install the **Raspberry Pi OS,** Please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
+For Lite Version, it can't run the Koii Desktop Node, but you can run the Koii Node in VPS. If you wish to run the node, please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial.
