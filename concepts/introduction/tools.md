@@ -36,7 +36,7 @@ That's why we've built industry-leading tools to secure your assets, trade your 
 
 </Cards>
 
-## Videos
+<!-- ## Videos
 
 <Cards>
   <Card
@@ -47,4 +47,4 @@ That's why we've built industry-leading tools to secure your assets, trade your 
     cardPerRow="2"
   />
 
-</Cards>
+</Cards> -->

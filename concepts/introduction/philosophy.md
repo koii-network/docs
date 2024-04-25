@@ -46,7 +46,7 @@ Take an active role in shaping Koii Network's future. Your involvement is vital,
   />
 </Cards>
 
-## Videos
+<!-- ## Videos
 
 <Cards>
   <Card
@@ -91,7 +91,7 @@ Take an active role in shaping Koii Network's future. Your involvement is vital,
     svgName="carpVideo"
     cardPerRow="3"
   />
-</Cards>
+</Cards> -->
 
 <!-- ## Reading
 
