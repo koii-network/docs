@@ -7,7 +7,7 @@ sidebar_label: How the Network Creates Value
 
 import Tooltip from "@site/src/components/tooltip";
 
-![Banner](./img/value.svg)
+![Banner](./img/value_new.svg)
 
 ## Value through practical demand
 
