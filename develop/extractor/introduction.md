@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-![banner](./img/taskstemplate.svg)
+![banner](./img/Introductionthumbnail.svg)
 
 With Koii, you have the power of hundreds of CPUs that belong to real users at your fingertips. By utilizing this power, you can build **extractors that are more powerful than ever before.**
 

@@ -14,4 +14,13 @@ export const cardImages = {
   tools2:
     require(`@site/develop/img/Tools.svg`)
     .default,
+  finnie:
+    require(`@site/concepts/introduction/img/get_finnie_wallet.svg`)
+    .default,
+  koiinode:
+  require(`@site/concepts/introduction/img/start_running_koii_node.svg`)
+  .default,
+  discord:
+  require(`@site/faq/questions/img/discord.svg`)
+  .default,
 };
