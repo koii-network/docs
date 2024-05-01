@@ -1,7 +1,7 @@
-# getLeaderSchedule RPC Method | Solana
+# getLeaderSchedule RPC Method 
 Returns the leader schedule for an epoch
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Fetch the leader schedule for the epoch that corresponds to the provided slot.
 
@@ -13,14 +13,14 @@ Configuration object containing the following fields:
 
 Only return results for this validator identity (base-58 encoded)
 
-### Result #
+### Result [#](#result)
 
 Returns a result with one of the two following values:
 
 *   `<null>` - if requested epoch is not found, or
 *   `<object>` - the result field will be a dictionary of validator identities, as base-58 encoded strings, and their corresponding leader slot indices as values (indices are relative to the first slot in the requested epoch)
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -39,7 +39,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

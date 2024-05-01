@@ -1,7 +1,7 @@
-# getLargestAccounts RPC Method | Solana
+# getLargestAccounts RPC Method 
 Returns the 20 largest accounts, by lamport balance (results may be cached up to two hours)
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
@@ -9,14 +9,14 @@ filter results by account type
 
 Values: `circulating``nonCirculating`
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to an array of `<object>` containing:
 
 *   `address: <string>` - base-58 encoded address of the account
 *   `lamports: <u64>` - number of lamports in the account, as a u64
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -25,7 +25,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

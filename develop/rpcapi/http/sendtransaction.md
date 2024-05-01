@@ -1,4 +1,4 @@
-# sendTransaction RPC Method | Solana
+# sendTransaction RPC Method 
 Submits a signed transaction to the cluster for processing.
 
 This method does not alter the transaction in any way; it relays the transaction created by clients to the node as-is.
@@ -7,16 +7,16 @@ If the node's rpc service receives the transaction, this method immediately succ
 
 While the rpc service will reasonably retry to submit it, the transaction could be rejected if transaction's `recent_blockhash` expires before it lands.
 
-Use `getSignatureStatuses` to ensure a transaction is processed and confirmed.
+Use [`getSignatureStatuses`](https://solana.com/docs/rpc/http/sendtransaction#getsignaturestatuses) to ensure a transaction is processed and confirmed.
 
 Before submitting, the following preflight checks are performed:
 
 1.  The transaction signatures are verified
 2.  The transaction is simulated against the bank slot specified by the preflight commitment. On failure an error will be returned. Preflight checks may be disabled if desired. It is recommended to specify the same commitment and preflight commitment to avoid confusing behavior.
 
-The returned signature is the first signature in the transaction, which is used to identify the transaction (transaction id). This identifier can be easily extracted from the transaction data before submission.
+The returned signature is the first signature in the transaction, which is used to identify the transaction ([transaction id](https://solana.com/docs/terminology#transaction-id)). This identifier can be easily extracted from the transaction data before submission.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Fully-signed Transaction, as encoded string.
 
@@ -40,11 +40,11 @@ Maximum number of times for the RPC node to retry sending the transaction to the
 
 set the minimum slot at which to perform preflight transaction checks
 
-### Result #
+### Result [#](#result)
 
-`<string>` - First Transaction Signature embedded in the transaction, as base-58 encoded string (transaction id)
+`<string>` - First Transaction Signature embedded in the transaction, as base-58 encoded string ([transaction id](https://solana.com/docs/terminology#transaction-id))
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -60,7 +60,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

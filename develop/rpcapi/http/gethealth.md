@@ -1,17 +1,17 @@
-# getHealth RPC Method | Solana
+# getHealth RPC Method 
 Returns the current health of the node. A healthy node is one that is within `HEALTH_CHECK_SLOT_DISTANCE` slots of the latest cluster confirmed slot.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 If the node is healthy: "ok"
 
 If the node is unhealthy, a JSON RPC error response is returned. The specifics of the error response are **UNSTABLE** and may change in the future
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -20,7 +20,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 Healthy Result:
 

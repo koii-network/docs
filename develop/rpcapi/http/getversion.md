@@ -1,18 +1,18 @@
-# getVersion RPC Method | Solana
+# getVersion RPC Method 
 Returns the current Solana version running on the node
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 The result field will be a JSON object with the following fields:
 
 *   `solana-core` - software version of solana-core as a `string`
 *   `feature-set` - unique identifier of the current software's feature set as a `u32`
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -21,7 +21,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

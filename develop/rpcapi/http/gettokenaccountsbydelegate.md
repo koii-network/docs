@@ -1,7 +1,7 @@
-# getTokenAccountsByDelegate RPC Method | Solana
+# getTokenAccountsByDelegate RPC Method 
 Returns all SPL Token accounts by approved Delegate.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of account delegate to query, as base-58 encoded string
 
@@ -29,11 +29,11 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 *   `base58` is slow and limited to less than 129 bytes of Account data.
 *   `base64` will return base64 encoded data for Account data of any size.
-*   `base64+zstd` compresses the Account data using Zstandard and base64-encodes the result.
+*   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
 *   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
 *   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `string`.
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to an array of JSON objects, which will contain:
 
@@ -46,9 +46,9 @@ The result will be an RpcResponse JSON object with `value` equal to an array of 
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `size: <u64>` - the data size of the account
 
-When the data is requested with the `jsonParsed` encoding a format similar to that of the Token Balances Structure can be expected inside the structure, both for the `tokenAmount` and the `delegatedAmount` - with the latter being an optional object.
+When the data is requested with the `jsonParsed` encoding a format similar to that of the [Token Balances Structure](https://solana.com/docs/rpc/json-structures#token-balances) can be expected inside the structure, both for the `tokenAmount` and the `delegatedAmount` - with the latter being an optional object.
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -70,7 +70,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

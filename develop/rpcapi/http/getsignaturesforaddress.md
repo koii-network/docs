@@ -1,7 +1,7 @@
-# getSignaturesForAddress RPC Method | Solana
+# getSignaturesForAddress RPC Method 
 Returns signatures for confirmed transactions that include the given address in their `accountKeys` list. Returns signatures backwards in time from the provided signature or most recent confirmed block
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Account address as base-58 encoded string
 
@@ -17,18 +17,18 @@ start searching backwards from this transaction signature. If not provided the s
 
 search until this transaction signature, if found before limit reached
 
-### Result #
+### Result [#](#result)
 
 An array of `<object>`, ordered from **newest** to **oldest** transaction, containing transaction signature information with the following fields:
 
 *   `signature: <string>` - transaction signature as base-58 encoded string
 *   `slot: <u64>` - The slot that contains the block with the transaction
-*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See TransactionError definitions for more info.
+*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13) for more info.
 *   `memo: <string|null>` - Memo associated with the transaction, null if no memo is present
 *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch) of when transaction was processed. null if not available.
-*   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See Commitment for more on optimistic confirmation.
+*   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See [Commitment](https://solana.com/docs/rpc#configuring-state-commitment) for more on optimistic confirmation.
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -47,7 +47,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

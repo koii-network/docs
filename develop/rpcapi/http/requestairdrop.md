@@ -1,7 +1,7 @@
-# requestAirdrop RPC Method | Solana
+# requestAirdrop RPC Method 
 Requests an airdrop of lamports to a Pubkey
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of account to receive lamports, as a base-58 encoded string
 
@@ -9,11 +9,11 @@ lamports to airdrop, as a "u64"
 
 Configuration object containing the following fields:
 
-### Result #
+### Result [#](#result)
 
 `<string>` - Transaction Signature of the airdrop, as a base-58 encoded string
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -29,7 +29,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

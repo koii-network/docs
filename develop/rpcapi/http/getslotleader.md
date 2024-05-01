@@ -1,25 +1,25 @@
-# getSlotLeader RPC Method | Solana
-![Solana](https://solana.com/)
+# getSlotLeader RPC Method 
+[![Solana](https://solana.com/_next/static/media/logotype.e4df684f.svg)](https://solana.com/)
 
 Returns the current slot leader
 
-### Parameters #
+### Parameters [#](#parameters)
 
 `object` optional
 
 Configuration object containing the following fields:
 
-commitment `string` optional
+[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
 
 minContextSlot `number` optional
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 `<string>` - Node identity Pubkey as base-58 encoded string
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -28,7 +28,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

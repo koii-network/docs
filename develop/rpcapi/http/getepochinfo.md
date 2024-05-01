@@ -1,13 +1,13 @@
-# getEpochInfo RPC Method | Solana
+# getEpochInfo RPC Method 
 Returns information about the current epoch
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 The result field will be an object with the following fields:
 
@@ -18,7 +18,7 @@ The result field will be an object with the following fields:
 *   `slotsInEpoch: <u64>` - the number of slots in this epoch
 *   `transactionCount: <u64|null>` - total number of transactions processed without error since genesis
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -27,7 +27,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

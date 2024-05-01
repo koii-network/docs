@@ -1,15 +1,15 @@
-# getGenesisHash RPC Method | Solana
+# getGenesisHash RPC Method 
 Returns the genesis hash
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 *   `<string>` - a Hash as base-58 encoded string
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -18,7 +18,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

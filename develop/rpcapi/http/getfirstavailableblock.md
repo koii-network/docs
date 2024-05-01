@@ -1,15 +1,15 @@
-# getFirstAvailableBlock RPC Method | Solana
+# getFirstAvailableBlock RPC Method 
 Returns the slot of the lowest confirmed block that has not been purged from the ledger
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 *   `<u64>` - Slot
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -21,7 +21,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 { "jsonrpc": "2.0", "result": 250000, "id": 1 }

@@ -1,11 +1,9 @@
-# isBlockhashValid RPC Method | Solana
+# isBlockhashValid RPC Method 
 Returns whether a blockhash is still valid or not
 
 Version Restriction
 
-This method is only available in `solana-core` v1.9 or newer. Please use getFeeCalculatorForBlockhash for `solana-core` v1.8 and below.
-
-### Parameters #
+### Parameters [#](#parameters)
 
 the blockhash of the block to evaluate, as base-58 encoded string
 
@@ -13,11 +11,11 @@ Configuration object containing the following fields:
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 `<bool>` - `true` if the blockhash is still valid
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -34,7 +32,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

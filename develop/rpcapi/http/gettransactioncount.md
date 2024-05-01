@@ -1,25 +1,25 @@
-# getTransactionCount RPC Method | Solana
-![Solana](https://solana.com/)
+# getTransactionCount RPC Method 
+[![Solana](https://solana.com/_next/static/media/logotype.e4df684f.svg)](https://solana.com/)
 
 Returns the current Transaction count from the ledger
 
-### Parameters #
+### Parameters [#](#parameters)
 
 `object` optional
 
 Configuration object containing the following fields:
 
-commitment `string` optional
+[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
 
 minContextSlot `number` optional
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 `<u64>` - the current Transaction count from the ledger
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -28,7 +28,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 { "jsonrpc": "2.0", "result": 268, "id": 1 }

@@ -1,13 +1,13 @@
-# getTokenLargestAccounts RPC Method | Solana
+# getTokenLargestAccounts RPC Method 
 Returns the 20 largest accounts of a particular SPL Token type.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of the token Mint to query, as base-58 encoded string
 
 Configuration object containing the following fields:
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to an array of JSON objects containing:
 
@@ -17,7 +17,7 @@ The result will be an RpcResponse JSON object with `value` equal to an array of 
 *   `uiAmount: <number|null>` - the token account balance, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the token account balance as a string, using mint-prescribed decimals
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -32,7 +32,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

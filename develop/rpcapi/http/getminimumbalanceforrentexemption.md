@@ -1,9 +1,9 @@
-# getMinimumBalanceForRentExemption RPC Method | Solana
-![Solana](https://solana.com/)
+# getMinimumBalanceForRentExemption RPC Method 
+[![Solana](https://solana.com/_next/static/media/logotype.e4df684f.svg)](https://solana.com/)
 
 Returns minimum balance required to make account rent exempt.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 `usize` optional
 
@@ -13,13 +13,13 @@ the Account's data length
 
 Configuration object containing the following fields:
 
-commitment `string` optional
+[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
 
-### Result #
+### Result [#](#result)
 
 `<u64>` - minimum lamports required in the Account to remain rent free
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -32,7 +32,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 { "jsonrpc": "2.0", "result": 500, "id": 1 }

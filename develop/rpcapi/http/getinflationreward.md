@@ -1,7 +1,7 @@
-# getInflationReward RPC Method | Solana
+# getInflationReward RPC Method 
 Returns the inflation / staking reward for a list of addresses for an epoch
 
-### Parameters #
+### Parameters [#](#parameters)
 
 An array of addresses to query, as base-58 encoded strings
 
@@ -11,7 +11,7 @@ An epoch for which the reward occurs. If omitted, the previous epoch will be use
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 The result field will be a JSON array with the following fields:
 
@@ -21,7 +21,7 @@ The result field will be a JSON array with the following fields:
 *   `postBalance: <u64>` - post balance of the account in lamports
 *   `commission: <u8|undefined>` - vote account commission when the reward was credited
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -41,7 +41,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

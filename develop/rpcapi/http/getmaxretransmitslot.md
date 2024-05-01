@@ -1,15 +1,15 @@
-# getMaxRetransmitSlot RPC Method | Solana
+# getMaxRetransmitSlot RPC Method 
 Get the max slot seen from retransmit stage.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 `<u64>` - Slot number
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -18,7 +18,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 { "jsonrpc": "2.0", "result": 1234, "id": 1 }

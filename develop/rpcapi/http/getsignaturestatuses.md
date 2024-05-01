@@ -1,11 +1,11 @@
-# getSignatureStatuses RPC Method | Solana
-Returns the statuses of a list of signatures. Each signature must be a txid, the first signature of a transaction.
+# getSignatureStatuses RPC Method 
+Returns the statuses of a list of signatures. Each signature must be a [txid](https://solana.com/docs/terminology#transaction-id), the first signature of a transaction.
 
 Info
 
 Unless the `searchTransactionHistory` configuration parameter is included, this method only searches the recent status cache of signatures, which retains statuses for all active slots plus `MAX_RECENT_BLOCKHASHES` rooted slots.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 An array of transaction signatures to confirm, as base-58 encoded strings (up to a maximum of 256)
 
@@ -13,7 +13,7 @@ Configuration object containing the following fields:
 
 if `true` - a Solana node will search its ledger cache for any signatures not found in the recent status cache
 
-### Result #
+### Result [#](#result)
 
 An array of `RpcResponse<object>` consisting of either:
 
@@ -21,13 +21,13 @@ An array of `RpcResponse<object>` consisting of either:
 *   `<object>`
     *   `slot: <u64>` - The slot the transaction was processed
     *   `confirmations: <usize|null>` - Number of blocks since signature confirmation, null if rooted, as well as finalized by a supermajority of the cluster
-    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See TransactionError definitions
-    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See Commitment for more on optimistic confirmation.
+    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13)
+    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See [Commitment](https://solana.com/docs/rpc#configuring-state-commitment) for more on optimistic confirmation.
     *   DEPRECATED: `status: <object>` - Transaction status
         *   `"Ok": <null>` - Transaction was successful
         *   `"Err": <ERR>` - Transaction failed with TransactionError
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -48,7 +48,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

@@ -1,7 +1,7 @@
-# getMultipleAccounts RPC Method | Solana
+# getMultipleAccounts RPC Method 
 Returns the account information for a list of Pubkeys.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 An array of Pubkeys to query, as base-58 encoded strings (up to a maximum of 100)
 
@@ -26,11 +26,11 @@ Values: `jsonParsed``base58``base64``base64+zstd`
 
 *   `base58` is slow and limited to less than 129 bytes of Account data.
 *   `base64` will return base64 encoded data for Account data of any size.
-*   `base64+zstd` compresses the Account data using Zstandard and base64-encodes the result.
+*   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
 *   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
 *   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
 
-### Result #
+### Result [#](#result)
 
 The result will be a JSON object with `value` equal to an array of:
 
@@ -43,7 +43,7 @@ The result will be a JSON object with `value` equal to an array of:
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `space: <u64>` - the data size of the account
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -65,7 +65,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

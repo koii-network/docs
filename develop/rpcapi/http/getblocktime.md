@@ -1,19 +1,19 @@
-# getBlockTime RPC Method | Solana
+# getBlockTime RPC Method 
 Returns the estimated production time of a block.
 
 Info
 
 Each validator reports their UTC time to the ledger on a regular interval by intermittently adding a timestamp to a Vote for a particular block. A requested block's time is calculated from the stake-weighted mean of the Vote timestamps in a set of recent blocks recorded on the ledger.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 block number, identified by Slot
 
-### Result #
+### Result [#](#result)
 
 *   `<i64>` - estimated production time, as Unix timestamp (seconds since the Unix epoch)
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -26,7 +26,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 When a block time is available:
 

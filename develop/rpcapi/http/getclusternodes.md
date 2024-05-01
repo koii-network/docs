@@ -1,11 +1,11 @@
-# getClusterNodes RPC Method | Solana
+# getClusterNodes RPC Method 
 Returns information about all the nodes participating in the cluster
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 The result field will be an array of JSON objects, each with the following sub fields:
 
@@ -17,7 +17,7 @@ The result field will be an array of JSON objects, each with the following sub f
 *   `featureSet: <u32|null >` - The unique identifier of the node's feature set
 *   `shredVersion: <u16|null>` - The shred version the node has been configured to use
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -29,7 +29,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

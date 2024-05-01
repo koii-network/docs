@@ -1,11 +1,11 @@
-# getInflationRate RPC Method | Solana
+# getInflationRate RPC Method 
 Returns the specific inflation values for the current epoch
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 The result field will be a JSON object with the following fields:
 
@@ -14,7 +14,7 @@ The result field will be a JSON object with the following fields:
 *   `foundation: <f64>` - inflation allocated to the foundation
 *   `epoch: <u64>` - epoch for which these values are valid
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -23,7 +23,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

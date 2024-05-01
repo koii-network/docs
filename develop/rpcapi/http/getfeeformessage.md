@@ -1,11 +1,10 @@
-# getFeeForMessage RPC Method | Solana
+# getFeeForMessage RPC Method 
 Get the fee the network will charge for a particular Message
 
 Version Restriction
 
-This method is only available in `solana-core` v1.9 or newer. Please use getFees for `solana-core` v1.8 and below.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Base-64 encoded Message
 
@@ -13,11 +12,11 @@ Configuration object containing the following fields:
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 *   `<u64|null>` - Fee corresponding to the message at the specified blockhash
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -36,7 +35,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

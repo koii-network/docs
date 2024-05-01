@@ -1,17 +1,17 @@
-# getIdentity RPC Method | Solana
+# getIdentity RPC Method 
 Returns the identity pubkey for the current node
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 The result field will be a JSON object with the following fields:
 
 *   `identity` - the identity pubkey of the current node (as a base-58 encoded string)
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -20,7 +20,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

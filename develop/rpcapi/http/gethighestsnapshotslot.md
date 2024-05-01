@@ -1,24 +1,23 @@
-# getHighestSnapshotSlot RPC Method | Solana
+# getHighestSnapshotSlot RPC Method 
 Returns the highest slot information that the node has snapshots for.
 
 This will find the highest full snapshot slot, and the highest incremental snapshot slot _based on_ the full snapshot slot, if there is one.
 
 Version Restriction
 
-This method is only available in `solana-core` v1.9 or newer. Please use getSnapshotSlot for `solana-core` v1.8 and below.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 **None**
 
-### Result #
+### Result [#](#result)
 
 When the node has a snapshot, this returns a JSON object with the following fields:
 
 *   `full: <u64>` - Highest full snapshot slot
 *   `incremental: <u64|null>` - Highest incremental snapshot slot _based on_ `full`
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -27,7 +26,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 Result when the node has a snapshot:
 

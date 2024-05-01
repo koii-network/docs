@@ -1,13 +1,13 @@
-# getTokenAccountBalance RPC Method | Solana
+# getTokenAccountBalance RPC Method 
 Returns the token balance of an SPL Token account.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of Token account to query, as base-58 encoded string
 
 Configuration object containing the following fields:
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -16,9 +16,9 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `uiAmount: <number|null>` - the balance, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the balance as a string, using mint-prescribed decimals
 
-For more details on returned data, the Token Balances Structure response from getBlock follows a similar structure.
+For more details on returned data, the [Token Balances Structure](https://solana.com/docs/rpc/json-structures#token-balances) response from [getBlock](https://solana.com/docs/rpc/http/getblock) follows a similar structure.
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -33,7 +33,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

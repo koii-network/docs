@@ -1,17 +1,17 @@
-# getStakeMinimumDelegation RPC Method | Solana
+# getStakeMinimumDelegation RPC Method 
 Returns the stake minimum delegation, in lamports.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to:
 
 *   `<u64>` - The stake minimum delegation, in lamports
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -23,7 +23,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

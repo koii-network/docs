@@ -1,7 +1,7 @@
-# getVoteAccounts RPC Method | Solana
+# getVoteAccounts RPC Method 
 Returns the account info and associated stake for all the voting accounts in the current bank.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
@@ -11,7 +11,7 @@ Do not filter out delinquent validators with no stake
 
 Specify the number of slots behind the tip that a validator must fall to be considered delinquent. **NOTE:** For the sake of consistency between ecosystem products, _it is **not** recommended that this argument be specified._
 
-### Result #
+### Result [#](#result)
 
 The result field will be a JSON object of `current` and `delinquent` accounts, each containing an array of JSON objects with the following sub fields:
 
@@ -24,7 +24,7 @@ The result field will be a JSON object of `current` and `delinquent` accounts, e
 *   `epochCredits: <array>` - Latest history of earned credits for up to five epochs, as an array of arrays containing: `[epoch, credits, previousCredits]`.
 *   `rootSlot: <u64>` - Current root slot for this vote account
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 Restrict results to a single validator vote account:
 
@@ -44,7 +44,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

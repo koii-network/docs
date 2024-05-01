@@ -1,7 +1,7 @@
-# getStakeActivation RPC Method | Solana
+# getStakeActivation RPC Method 
 Returns epoch activation information for a stake account
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of stake Account to query, as base-58 encoded string
 
@@ -11,7 +11,7 @@ The minimum slot that the request can be evaluated at
 
 epoch for which to calculate activation details. If parameter not provided, defaults to current epoch. **DEPRECATED**, inputs other than the current epoch return an error.
 
-### Result #
+### Result [#](#result)
 
 The result will be a JSON object with the following fields:
 
@@ -19,7 +19,7 @@ The result will be a JSON object with the following fields:
 *   `active: <u64>` - stake active during the epoch
 *   `inactive: <u64>` - stake inactive during the epoch
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -38,7 +38,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

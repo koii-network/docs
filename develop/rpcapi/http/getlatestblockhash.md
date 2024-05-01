@@ -1,24 +1,23 @@
-# getLatestBlockhash RPC Method | Solana
+# getLatestBlockhash RPC Method 
 Returns the latest blockhash
 
 Version Restriction
 
-This method is only available in `solana-core` v1.9 or newer. Please use getRecentBlockhash for `solana-core` v1.8 and below.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 `RpcResponse<object>` - RpcResponse JSON object with `value` field set to a JSON object including:
 
 *   `blockhash: <string>` - a Hash as base-58 encoded string
-*   `lastValidBlockHeight: <u64>` - last block height at which the blockhash will be valid
+*   `lastValidBlockHeight: <u64>` - last [block height](https://solana.com/docs/terminology#block-height) at which the blockhash will be valid
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -36,7 +35,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

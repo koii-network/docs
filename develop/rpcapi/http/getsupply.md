@@ -1,13 +1,13 @@
-# getSupply RPC Method | Solana
+# getSupply RPC Method 
 Returns information about the current supply.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
 exclude non circulating accounts list from response
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -16,7 +16,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `nonCirculating: <u64>` - Non-circulating supply in lamports
 *   `nonCirculatingAccounts: <array>` - an array of account addresses of non-circulating accounts, as strings. If `excludeNonCirculatingAccountsList` is enabled, the returned array will be empty.
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -25,7 +25,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

@@ -1,7 +1,7 @@
-# getProgramAccounts RPC Method | Solana
+# getProgramAccounts RPC Method 
 Returns all accounts owned by the provided program Pubkey
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of program, as base-58 encoded string
 
@@ -19,7 +19,7 @@ Values: `jsonParsed``base58``base64``base64+zstd`
 
 *   `base58` is slow and limited to less than 129 bytes of Account data.
 *   `base64` will return base64 encoded data for Account data of any size.
-*   `base64+zstd` compresses the Account data using Zstandard and base64-encodes the result.
+*   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
 *   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
 *   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
 
@@ -38,7 +38,7 @@ Info
 
 The resultant account(s) must meet **ALL** filter criteria to be included in the returned results
 
-### Result #
+### Result [#](#result)
 
 By default, the result field will be an array of JSON objects.
 
@@ -57,7 +57,7 @@ The resultant response array will contain:
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `size: <u64>` - the data size of the account
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -86,7 +86,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

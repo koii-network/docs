@@ -1,7 +1,7 @@
-# getBlockProduction RPC Method | Solana
+# getBlockProduction RPC Method 
 Returns recent block production information from the current or previous epoch.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Configuration object containing the following fields:
 
@@ -12,7 +12,7 @@ Slot range to return block production for. If parameter not provided, defaults t
 *   `firstSlot: <u64>` - first slot to return block production information for (inclusive)
 *   (optional) `lastSlot: <u64>` - last slot to return block production information for (inclusive). If parameter not provided, defaults to the highest slot
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to:
 
@@ -22,7 +22,7 @@ The result will be an RpcResponse JSON object with `value` equal to:
         *   `firstSlot: <u64>` - first slot of the block production information (inclusive)
         *   `lastSlot: <u64>` - last slot of block production information (inclusive)
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

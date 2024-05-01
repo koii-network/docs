@@ -1,7 +1,7 @@
-# getBalance RPC Method | Solana
+# getBalance RPC Method 
 Returns the lamport balance of the account of provided Pubkey
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of account to query, as base-58 encoded string
 
@@ -9,11 +9,11 @@ Configuration object containing the following fields:
 
 The minimum slot that the request can be evaluated at
 
-### Result #
+### Result [#](#result)
 
 `RpcResponse<u64>` - RpcResponse JSON object with `value` field set to the balance
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -28,7 +28,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

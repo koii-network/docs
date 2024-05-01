@@ -1,11 +1,11 @@
-# getRecentPerformanceSamples RPC Method | Solana
+# getRecentPerformanceSamples RPC Method 
 Returns a list of recent performance samples, in reverse slot order. Performance samples are taken every 60 seconds and include the number of transactions and slots that occur in a given time window.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 number of samples to return (maximum 720)
 
-### Result #
+### Result [#](#result)
 
 An array of `RpcPerfSample<object>` with the following fields:
 
@@ -21,7 +21,7 @@ Info
 
 `numTransactions - numNonVoteTransaction`
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -33,7 +33,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

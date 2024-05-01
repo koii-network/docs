@@ -1,13 +1,13 @@
-# getTokenSupply RPC Method | Solana
+# getTokenSupply RPC Method 
 Returns the total supply of an SPL Token type.
 
-### Parameters #
+### Parameters [#](#parameters)
 
 Pubkey of the token Mint to query, as base-58 encoded string
 
 Configuration object containing the following fields:
 
-### Result #
+### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -16,7 +16,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `uiAmount: <number|null>` - the total token supply, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the total token supply as a string, using mint-prescribed decimals
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {

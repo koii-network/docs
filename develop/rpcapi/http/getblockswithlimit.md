@@ -1,7 +1,7 @@
-# getBlocksWithLimit RPC Method | Solana
+# getBlocksWithLimit RPC Method 
 Returns a list of confirmed blocks starting at the given slot
 
-### Parameters #
+### Parameters [#](#parameters)
 
 start\_slot, as `u64` integer
 
@@ -13,11 +13,11 @@ Default: `finalized`
 
 *   "processed" is not supported
 
-### Result #
+### Result [#](#result)
 
 The result field will be an array of u64 integers listing confirmed blocks starting at `start_slot` for up to `limit` blocks, inclusive.
 
-### Code sample #
+### Code sample [#](#code-sample)
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response #
+### Response [#](#response)
 
 ```
 {
