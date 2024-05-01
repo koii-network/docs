@@ -892,6 +892,30 @@ const config = {
           {
             to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
             from: "/develop/write-a-koii-task/task-development-guide/task-development-guide",
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/configuration",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration"
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest"
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing"
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/using-unittest",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest"
+          },
+          {
+            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
+            from: "/develop/write-a-koii-task/task-development-kit-tdk/simulating-a-round"
           }
         ],
         createRedirects(existingPath) {
