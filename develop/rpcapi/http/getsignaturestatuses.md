@@ -1,5 +1,5 @@
 # getSignatureStatuses RPC Method 
-Returns the statuses of a list of signatures. Each signature must be a [txid](https://solana.com/docs/terminology#transaction-id), the first signature of a transaction.
+Returns the statuses of a list of signatures. Each signature must be a txid, the first signature of a transaction.
 
 Info
 
@@ -21,8 +21,8 @@ An array of `RpcResponse<object>` consisting of either:
 *   `<object>`
     *   `slot: <u64>` - The slot the transaction was processed
     *   `confirmations: <usize|null>` - Number of blocks since signature confirmation, null if rooted, as well as finalized by a supermajority of the cluster
-    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13)
-    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See [Commitment](https://solana.com/docs/rpc#configuring-state-commitment) for more on optimistic confirmation.
+    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
+    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. 
     *   DEPRECATED: `status: <object>` - Transaction status
         *   `"Ok": <null>` - Transaction was successful
         *   `"Err": <ERR>` - Transaction failed with TransactionError

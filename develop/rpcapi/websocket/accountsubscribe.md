@@ -46,7 +46,7 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 #### Notification Format: [#](#notification-format)
 
-The notification format is the same as seen in the [getAccountInfo](https://solana.com/docs/rpc/http/getaccountinfo) RPC HTTP method.
+The notification format is the same as seen in the [getAccountInfo](/develop/rpcapi/intro/http/getaccountinfo) RPC HTTP method.
 
 Base58 encoding:
 

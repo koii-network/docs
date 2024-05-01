@@ -79,7 +79,7 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 #### Notification format [#](#notification-format)
 
-The notification format is a **single** program account object as seen in the [getProgramAccounts](https://solana.com/docs/rpc/http/getprogramaccounts) RPC HTTP method.
+The notification format is a **single** program account object as seen in the [getProgramAccounts](/develop/rpcapi/intro/http/getprogramaccounts) RPC HTTP method.
 
 Base58 encoding:
 

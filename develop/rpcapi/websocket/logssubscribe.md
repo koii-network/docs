@@ -14,7 +14,7 @@ An object with the following field:
 
 *   `mentions: [ <string> ]` - array containing a single Pubkey (as base-58 encoded string); if present, subscribe to only transactions mentioning this address
 
-The `mentions` field currently [only supports one](https://github.com/solana-labs/solana/blob/master/rpc/src/rpc_pubsub.rs#L481) Pubkey string per method call. Listing additional addresses will result in an error.
+The `mentions` field currently only supports one Pubkey string per method call. Listing additional addresses will result in an error.
 
 Configuration object containing the following fields:
 
@@ -59,7 +59,7 @@ Configuration object containing the following fields:
 The notification will be an RpcResponse JSON object with value equal to:
 
 *   `signature: <string>` - The transaction signature base58 encoded.
-*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13)
+*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
 *   `logs: <array|null>` - Array of log messages the transaction instructions output during execution, null if simulation failed before the transaction was able to execute (for example due to an invalid blockhash or signature verification failure)
 
 Example:

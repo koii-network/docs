@@ -1,5 +1,5 @@
 # getVersion RPC Method 
-Returns the current Solana version running on the node
+Returns the current Koii version running on the node
 
 ### Parameters [#](#parameters)
 

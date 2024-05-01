@@ -23,10 +23,10 @@ An array of `<object>`, ordered from **newest** to **oldest** transaction, conta
 
 *   `signature: <string>` - transaction signature as base-58 encoded string
 *   `slot: <u64>` - The slot that contains the block with the transaction
-*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13) for more info.
+*   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. See TransactionError definitions for more info.
 *   `memo: <string|null>` - Memo associated with the transaction, null if no memo is present
 *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch) of when transaction was processed. null if not available.
-*   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See [Commitment](https://solana.com/docs/rpc#configuring-state-commitment) for more on optimistic confirmation.
+*   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. See [Commitment](/develop/rpcapi/intro#configuring-state-commitment) for more on optimistic confirmation.
 
 ### Code sample [#](#code-sample)
 

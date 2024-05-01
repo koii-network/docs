@@ -12,7 +12,7 @@ the Account's data length
 
 Configuration object containing the following fields:
 
-[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
+[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
 
 ### Result [#](#result)
 

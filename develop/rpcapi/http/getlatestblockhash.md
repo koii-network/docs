@@ -15,7 +15,7 @@ The minimum slot that the request can be evaluated at
 `RpcResponse<object>` - RpcResponse JSON object with `value` field set to a JSON object including:
 
 *   `blockhash: <string>` - a Hash as base-58 encoded string
-*   `lastValidBlockHeight: <u64>` - last [block height](https://solana.com/docs/terminology#block-height) at which the blockhash will be valid
+*   `lastValidBlockHeight: <u64>` - last block height at which the blockhash will be valid
 
 ### Code sample [#](#code-sample)
 

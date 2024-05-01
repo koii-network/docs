@@ -1,5 +1,5 @@
 # getSlotLeader RPC Method 
-[![Solana](https://solana.com/_next/static/media/logotype.e4df684f.svg)](https://solana.com/)
+[
 
 Returns the current slot leader
 
@@ -9,7 +9,7 @@ Returns the current slot leader
 
 Configuration object containing the following fields:
 
-[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
+[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
 
 minContextSlot `number` optional
 

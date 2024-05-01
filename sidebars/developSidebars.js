@@ -207,10 +207,11 @@ const sidebars = {
       value: "RPC",
       className: "sidebar-title top-margin",
     },
+    "rpcapi/intro",
     "rpcapi/json-structures",
     {
       type: "category",
-      label: "RPC",
+      label: "RPC HTTP API",
       link: {
         type: "doc",
         id: "rpcapi/http/http",
@@ -274,7 +275,7 @@ const sidebars = {
       label: "Websocket",
       link: {
         type: "doc",
-        id: "rpcapi/http/http",
+        id: "rpcapi/websocket/websocket",
       },
       collapsed: true,
       items: 

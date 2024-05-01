@@ -1,5 +1,5 @@
 # getSlot RPC Method 
-Returns the slot that has reached the [given or default commitment level](https://solana.com/docs/rpc#configuring-state-commitment)
+Returns the slot that has reached the [given or default commitment level](/develop/rpcapi/intro#configuring-state-commitment)
 
 ### Parameters [#](#parameters)
 
@@ -7,7 +7,7 @@ Returns the slot that has reached the [given or default commitment level](https:
 
 Configuration object containing the following fields:
 
-[commitment](https://solana.com/docs/rpc#configuring-state-commitment) `string` optional
+[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
 
 minContextSlot `number` optional
 

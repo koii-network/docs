@@ -16,7 +16,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `uiAmount: <number|null>` - the balance, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the balance as a string, using mint-prescribed decimals
 
-For more details on returned data, the [Token Balances Structure](/develop/rpcapi/json-structures#token-balances) response from [getBlock](https://solana.com/docs/rpc/http/getblock) follows a similar structure.
+For more details on returned data, the [Token Balances Structure](/develop/rpcapi/json-structures#token-balances) response from [getBlock](/develop/rpcapi/intro/http/getblock) follows a similar structure.
 
 ### Code sample [#](#code-sample)
 

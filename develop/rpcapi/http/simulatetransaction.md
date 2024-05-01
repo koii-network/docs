@@ -40,13 +40,13 @@ encoding for returned Account data
 Values: `base64``base58``base64+zstd``jsonParsed`
 
 *   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
-*   If `jsonParsed` is requested but a [parser cannot be found](https://github.com/solana-labs/solana/blob/cfd0a00ae2ba85a6d76757df8b4fa38ed242d185/account-decoder/src/parse_account_data.rs#L98-L100), the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.
+*   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.
 
 ### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` set to a JSON object with the following fields:
 
-*   `err: <object|string|null>` - Error if transaction failed, null if transaction succeeded. [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13)
+*   `err: <object|string|null>` - Error if transaction failed, null if transaction succeeded. 
 *   `logs: <array|null>` - Array of log messages the transaction instructions output during execution, null if simulation failed before the transaction was able to execute (for example due to an invalid blockhash or signature verification failure)
 *   `accounts: <array|null>` - array of accounts with the same length as the `accounts.addresses` array in the request
     *   `<null>` - if the account doesn't exist or if `err` is not null

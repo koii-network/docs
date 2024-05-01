@@ -11,7 +11,7 @@ transaction signature, as base-58 encoded string
 
 Info
 
-The transaction signature must be the first signature from the transaction (see [transaction id](https://solana.com/docs/terminology#transaction-id) for more details).
+The transaction signature must be the first signature from the transaction (see transaction id for more details).
 
 Configuration object containing the following fields:
 
@@ -51,11 +51,11 @@ Whether or not to subscribe for notifications when signatures are received by th
 The notification will be an RpcResponse JSON object with value containing an object with:
 
 *   `slot: <u64>` - The corresponding slot.
-*   `value: <object|string>` - a notification value of [`RpcSignatureResult`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/rpc-client-api/src/response.rs#L265-L268), resulting in either:
-    *   when `enableReceivedNotification` is `true` and the signature is received: the literal string [`"receivedSignature"`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/rpc-client-api/src/response.rs#L286-L288), or
+*   `value: <object|string>` - a notification value of `RpcSignatureResult`, resulting in either:
+    *   when `enableReceivedNotification` is `true` and the signature is received: the literal string `"receivedSignature"`, or
     *   when the signature is processed: `err: <object|null>`:
         *   `null` if the transaction succeeded in being processed at the specified commitment level, or
-        *   a [`TransactionError`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/sdk/src/transaction/error.rs#L15-L164), if the transaction failed
+        *   a `TransactionError`, if the transaction failed
 
 #### Example responses: [#](#example-responses)
 
