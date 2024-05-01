@@ -68,7 +68,8 @@
       "merkle",
       "hiddentreasure",
       "hubspot",
-       "JSAPI"
+       "JSAPI",
+       "koiinode"
   ],
   "caseSensitive": false,
   "flagWords": [
