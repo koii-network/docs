@@ -46,15 +46,15 @@ The result field will be an object with the following fields:
     *   `previousBlockhash: <string>` - the blockhash of this block's parent, as base-58 encoded string; if the parent block is not available due to ledger cleanup, this field will return "11111111111111111111111111111111"
     *   `parentSlot: <u64>` - the slot index of this block's parent
     *   `transactions: <array>` - present if "full" transaction details are requested; an array of JSON objects containing:
-        *   `transaction: <object|[string,encoding]>` - [Transaction](https://solana.com/docs/rpc/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
+        *   `transaction: <object|[string,encoding]>` - [Transaction](/develop/rpcapi/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
         *   `meta: <object>` - transaction status metadata object, containing `null` or:
-            *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. [TransactionError definitions](https://github.com/solana-labs/solana/blob/c0c60386544ec9a9ec7119229f37386d9f070523/sdk/src/transaction/error.rs#L13)
+            *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
             *   `fee: <u64>` - fee this transaction was charged, as u64 integer
             *   `preBalances: <array>` - array of u64 account balances from before the transaction was processed
             *   `postBalances: <array>` - array of u64 account balances after the transaction was processed
-            *   `innerInstructions: <array|null>` - List of [inner instructions](https://solana.com/docs/rpc/json-structures#inner-instructions) or `null` if inner instruction recording was not enabled during this transaction
-            *   `preTokenBalances: <array|undefined>` - List of [token balances](https://solana.com/docs/rpc/json-structures#token-balances) from before the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
-            *   `postTokenBalances: <array|undefined>` - List of [token balances](https://solana.com/docs/rpc/json-structures#token-balances) from after the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
+            *   `innerInstructions: <array|null>` - List of [inner instructions](/develop/rpcapi/json-structures#inner-instructions) or `null` if inner instruction recording was not enabled during this transaction
+            *   `preTokenBalances: <array|undefined>` - List of [token balances](/develop/rpcapi/json-structures#token-balances) from before the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
+            *   `postTokenBalances: <array|undefined>` - List of [token balances](/develop/rpcapi/json-structures#token-balances) from after the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
             *   `logMessages: <array|null>` - array of string log messages or `null` if log message recording was not enabled during this transaction
             *   `rewards: <array|null>` - transaction-level rewards, populated if rewards are requested; an array of JSON objects containing:
                 *   `pubkey: <string>` - The public key, as base-58 encoded string, of the account that received the reward

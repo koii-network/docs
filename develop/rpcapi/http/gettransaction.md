@@ -25,16 +25,16 @@ Values: `json``jsonParsed``base64``base58`
 *   `<null>` - if transaction is not found or not confirmed
 *   `<object>` - if transaction is confirmed, an object with the following fields:
     *   `slot: <u64>` - the slot this transaction was processed in
-    *   `transaction: <object|[string,encoding]>` - [Transaction](https://solana.com/docs/rpc/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
+    *   `transaction: <object|[string,encoding]>` - [Transaction](/develop/rpcapi/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
     *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch) of when the transaction was processed. null if not available
     *   `meta: <object|null>` - transaction status metadata object:
         *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. [TransactionError definitions](https://docs.rs/solana-sdk/latest/solana_sdk/transaction/enum.TransactionError.html)
         *   `fee: <u64>` - fee this transaction was charged, as u64 integer
         *   `preBalances: <array>` - array of u64 account balances from before the transaction was processed
         *   `postBalances: <array>` - array of u64 account balances after the transaction was processed
-        *   `innerInstructions: <array|null>` - List of [inner instructions](https://solana.com/docs/rpc/json-structures#inner-instructions) or `null` if inner instruction recording was not enabled during this transaction
-        *   `preTokenBalances: <array|undefined>` - List of [token balances](https://solana.com/docs/rpc/json-structures#token-balances) from before the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
-        *   `postTokenBalances: <array|undefined>` - List of [token balances](https://solana.com/docs/rpc/json-structures#token-balances) from after the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
+        *   `innerInstructions: <array|null>` - List of [inner instructions](/develop/rpcapi/json-structures#inner-instructions) or `null` if inner instruction recording was not enabled during this transaction
+        *   `preTokenBalances: <array|undefined>` - List of [token balances](/develop/rpcapi/json-structures#token-balances) from before the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
+        *   `postTokenBalances: <array|undefined>` - List of [token balances](/develop/rpcapi/json-structures#token-balances) from after the transaction was processed or omitted if token balance recording was not yet enabled during this transaction
         *   `logMessages: <array|null>` - array of string log messages or `null` if log message recording was not enabled during this transaction
         *   DEPRECATED: `status: <object>` - Transaction status
             *   `"Ok": <null>` - Transaction was successful

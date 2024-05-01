@@ -46,7 +46,7 @@ The result will be an RpcResponse JSON object with `value` equal to an array of 
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `size: <u64>` - the data size of the account
 
-When the data is requested with the `jsonParsed` encoding a format similar to that of the [Token Balances Structure](https://solana.com/docs/rpc/json-structures#token-balances) can be expected inside the structure, both for the `tokenAmount` and the `delegatedAmount` - with the latter being an optional object.
+When the data is requested with the `jsonParsed` encoding a format similar to that of the [Token Balances Structure](/develop/rpcapi/json-structures#token-balances) can be expected inside the structure, both for the `tokenAmount` and the `delegatedAmount` - with the latter being an optional object.
 
 ### Code sample [#](#code-sample)
 

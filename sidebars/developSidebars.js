@@ -210,7 +210,7 @@ const sidebars = {
     "rpcapi/json-structures",
     {
       type: "category",
-      label: "RPC HTTP API",
+      label: "RPC",
       link: {
         type: "doc",
         id: "rpcapi/http/http",
@@ -268,6 +268,18 @@ const sidebars = {
     "rpcapi/http/sendtransaction",
         "rpcapi/http/simulatetransaction",
       ],
+    },
+    {
+      type: "category",
+      label: "Websocket",
+      link: {
+        type: "doc",
+        id: "rpcapi/http/http",
+      },
+      collapsed: true,
+      items: 
+        ['rpcapi/websocket/accountsubscribe', 'rpcapi/websocket/accountunsubscribe', 'rpcapi/websocket/blocksubscribe', 'rpcapi/websocket/blockunsubscribe', 'rpcapi/websocket/logssubscribe', 'rpcapi/websocket/logsunsubscribe', 'rpcapi/websocket/programsubscribe', 'rpcapi/websocket/programunsubscribe', 'rpcapi/websocket/rootsubscribe', 'rpcapi/websocket/rootunsubscribe', 'rpcapi/websocket/signaturesubscribe', 'rpcapi/websocket/signatureunsubscribe', 'rpcapi/websocket/slotsubscribe', 'rpcapi/websocket/slotunsubscribe', 'rpcapi/websocket/slotsupdatessubscribe', 'rpcapi/websocket/slotsupdatesunsubscribe', 'rpcapi/websocket/votesubscribe', 'rpcapi/websocket/voteunsubscribe']
+      ,
     }
   ],  
 };

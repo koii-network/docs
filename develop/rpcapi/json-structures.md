@@ -1,20 +1,20 @@
-# Common JSON Data Structures for Solana RPC Methods | Solana
-Various Solana RPC methods will return more complex responses as structured JSON objects, filled with specific keyed values.
+# Common JSON Data Structures for Koii RPC Methods 
+Various Koii RPC methods will return more complex responses as structured JSON objects, filled with specific keyed values.
 
 The most common of these JSON data structures include:
 
-*   [transactions](https://solana.com/docs/rpc/json-structures#transactions)
-*   [inner instructions](https://solana.com/docs/rpc/json-structures#inner-instructions)
-*   [token balances](https://solana.com/docs/rpc/json-structures#token-balances)
+*   [transactions](/develop/rpcapi/json-structures#transactions)
+*   [inner instructions](/develop/rpcapi/json-structures#inner-instructions)
+*   [token balances](/develop/rpcapi/json-structures#token-balances)
 
 Transactions [#](#transactions)
 -------------------------------
 
-Transactions are quite different from those on other blockchains. Be sure to review [Anatomy of a Transaction](https://solana.com/docs/core/transactions) to learn about transactions on Solana.
+Transactions are quite different from those on other blockchains. 
 
 The JSON structure of a transaction is defined as follows:
 
-*   `signatures: <array[string]>` - A list of base-58 encoded signatures applied to the transaction. The list is always of length `message.header.numRequiredSignatures` and not empty. The signature at index `i` corresponds to the public key at index `i` in `message.accountKeys`. The first one is used as the [transaction id](https://solana.com/docs/terminology#transaction-id).
+*   `signatures: <array[string]>` - A list of base-58 encoded signatures applied to the transaction. The list is always of length `message.header.numRequiredSignatures` and not empty. The signature at index `i` corresponds to the public key at index `i` in `message.accountKeys`. The first one is used as the transaction id
 *   `message: <object>` - Defines the content of the transaction.
     *   `accountKeys: <array[string]>` - List of base-58 encoded public keys used by the transaction, including by the instructions and for signatures. The first `message.header.numRequiredSignatures` public keys must sign the transaction.
     *   `header: <object>` - Details the account types and signatures required by the transaction.
@@ -34,7 +34,7 @@ The JSON structure of a transaction is defined as follows:
 Inner Instructions [#](#inner-instructions)
 -------------------------------------------
 
-The Solana runtime records the cross-program instructions that are invoked during transaction processing and makes these available for greater transparency of what was executed on-chain per transaction instruction. Invoked instructions are grouped by the originating transaction instruction and are listed in order of processing.
+The Koii runtime records the cross-program instructions that are invoked during transaction processing and makes these available for greater transparency of what was executed on-chain per transaction instruction. Invoked instructions are grouped by the originating transaction instruction and are listed in order of processing.
 
 The JSON structure of inner instructions is defined as a list of objects in the following structure:
 

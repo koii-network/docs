@@ -11,7 +11,7 @@ An array of transaction signatures to confirm, as base-58 encoded strings (up to
 
 Configuration object containing the following fields:
 
-if `true` - a Solana node will search its ledger cache for any signatures not found in the recent status cache
+if `true` - a Koii Validator node will search its ledger cache for any signatures not found in the recent status cache
 
 ### Result [#](#result)
 

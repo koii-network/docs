@@ -1,5 +1,4 @@
 # getMinimumBalanceForRentExemption RPC Method 
-[![Solana](https://solana.com/_next/static/media/logotype.e4df684f.svg)](https://solana.com/)
 
 Returns minimum balance required to make account rent exempt.
 

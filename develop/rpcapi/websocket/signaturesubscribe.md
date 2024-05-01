@@ -1,0 +1,99 @@
+# signatureSubscribe RPC Method 
+Subscribe to receive a notification when the transaction with the given signature reaches the specified commitment level.
+
+Caution
+
+This is a subscription to a single notification. It is automatically cancelled by the server once the notification, `signatureNotification`, is sent by the RPC.
+
+### Parameters [#](#parameters)
+
+transaction signature, as base-58 encoded string
+
+Info
+
+The transaction signature must be the first signature from the transaction (see [transaction id](https://solana.com/docs/terminology#transaction-id) for more details).
+
+Configuration object containing the following fields:
+
+Whether or not to subscribe for notifications when signatures are received by the RPC, in addition to when they are processed.
+
+### Result [#](#result)
+
+`<integer>` - subscription id (needed to unsubscribe)
+
+### Code sample [#](#code-sample)
+
+```
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "signatureSubscribe",
+  "params": [
+    "2EBVM6cB8vAAD93Ktr6Vd8p67XPbQzCJX47MpReuiCXJAtcjaxpvWpcg9Ege1Nr5Tk3a2GFrByT7WPBjdsTycY9b",
+    {
+      "commitment": "finalized",
+      "enableReceivedNotification": false
+    }
+  ]
+}
+```
+
+
+### Response [#](#response)
+
+```
+{ "jsonrpc": "2.0", "result": 0, "id": 1 }
+```
+
+
+#### Notification Format: [#](#notification-format)
+
+The notification will be an RpcResponse JSON object with value containing an object with:
+
+*   `slot: <u64>` - The corresponding slot.
+*   `value: <object|string>` - a notification value of [`RpcSignatureResult`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/rpc-client-api/src/response.rs#L265-L268), resulting in either:
+    *   when `enableReceivedNotification` is `true` and the signature is received: the literal string [`"receivedSignature"`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/rpc-client-api/src/response.rs#L286-L288), or
+    *   when the signature is processed: `err: <object|null>`:
+        *   `null` if the transaction succeeded in being processed at the specified commitment level, or
+        *   a [`TransactionError`](https://github.com/solana-labs/solana/blob/6d28fd455b07e3557fc6c0c3ddf3ba03e3fe8482/sdk/src/transaction/error.rs#L15-L164), if the transaction failed
+
+#### Example responses: [#](#example-responses)
+
+The following is an example response of a notification from a successfully **processed** transactions:
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "signatureNotification",
+  "params": {
+    "result": {
+      "context": {
+        "slot": 5207624
+      },
+      "value": {
+        "err": null
+      }
+    },
+    "subscription": 24006
+  }
+}
+```
+
+
+The following is an example response of a notification from a successfully **recieved** transaction signature:
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "signatureNotification",
+  "params": {
+    "result": {
+      "context": {
+        "slot": 5207624
+      },
+      "value": "receivedSignature"
+    },
+    "subscription": 24006
+  }
+}
+```

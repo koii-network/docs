@@ -69,7 +69,11 @@
       "hiddentreasure",
       "hubspot",
        "JSAPI",
-       "koiinode"
+       "koiinode",
+       "Pubkeys",
+       "blockhash",
+       "Zstandard",
+       "supermajority"
   ],
   "caseSensitive": false,
   "flagWords": [
