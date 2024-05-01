@@ -871,19 +871,25 @@ const config = {
             ],
           },
           {
+            to: "/develop/write-a-koii-task/task-development-guide/introduction",
+            from: [
+              "/develop/microservices-and-tasks/task-development-guide"
+            ]
+          },
+          {
             to: "/develop/write-a-koii-task/task-development-guide/template-structure/execute-task",
             from: "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
-   
+
           },
-          { 
+          {
             to: "/develop/write-a-koii-task/task-development-guide/template-structure/audit-submissions",
             from: "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-     
+
           },
           {
             to: "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
             from: "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-      
+
           },
           {
             to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
