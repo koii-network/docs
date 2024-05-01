@@ -108,17 +108,18 @@ const sidebars = {
       label: "Testing",
       link: {
         type: "doc",
-        id: "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing",
+        id: "write-a-koii-task/task-development-kit-tdk/test/testing",
       },
       collapsed: true,
       items: [
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest",
-        "write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing",
+        "write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
+        "write-a-koii-task/task-development-kit-tdk/test/configuration",
+        "write-a-koii-task/task-development-kit-tdk/test/using-unittest",
+        "write-a-koii-task/task-development-kit-tdk/test/easy-testing",
+        "write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
+        "write-a-koii-task/task-development-kit-tdk/test/docker-test",
       ],
     },
-    "write-a-koii-task/task-development-kit-tdk/simulating-a-round",
    
     // {
     //   type: "category",
