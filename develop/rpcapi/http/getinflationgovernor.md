@@ -1,11 +1,11 @@
 # getInflationGovernor RPC Method 
 Returns the current inflation governor
 
-### Parameters [#](#parameters)
-
+### Parameters 
+`object` **optional**
 Configuration object containing the following fields:
-
-### Result [#](#result)
+- commitment `string` **optional**
+### Result 
 
 The result field will be a JSON object with the following fields:
 
@@ -15,7 +15,7 @@ The result field will be a JSON object with the following fields:
 *   `foundation: <f64>` - percentage of total inflation allocated to the foundation
 *   `foundationTerm: <f64>` - duration of foundation pool inflation in years
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -24,7 +24,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

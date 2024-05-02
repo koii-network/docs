@@ -2,14 +2,15 @@
 Returns the inflation / staking reward for a list of addresses for an epoch
 
 ### Parameters [#](#parameters)
-
+`array` **optional**
 An array of addresses to query, as base-58 encoded strings
 
+`object` **optional**
 Configuration object containing the following fields:
-
-An epoch for which the reward occurs. If omitted, the previous epoch will be used
-
-The minimum slot that the request can be evaluated at
+- commitment `string` **optional**  
+  An epoch for which the reward occurs. If omitted, the previous epoch will be used  
+- minContextSlot `number` **optional**  
+  The minimum slot that the request can be evaluated at  
 
 ### Result [#](#result)
 

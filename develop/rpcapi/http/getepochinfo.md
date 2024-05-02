@@ -2,10 +2,11 @@
 Returns information about the current epoch
 
 ### Parameters [#](#parameters)
-
-Configuration object containing the following fields:
-
-The minimum slot that the request can be evaluated at
+`object` **optional**  
+Configuration object containing the following fields:  
+  - commitment `string` **optional**  
+  - minContextSlot `number` **optional**  
+    The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
 

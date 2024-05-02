@@ -2,14 +2,15 @@
 Returns the leader schedule for an epoch
 
 ### Parameters [#](#parameters)
-
+`u64` **optional**
 Fetch the leader schedule for the epoch that corresponds to the provided slot.
 
 :::info
 If unspecified, the leader schedule for the current epoch is fetched
 :::
+`object` optional
 Configuration object containing the following fields:
-
+- commitment `string` **optional**  
 Only return results for this validator identity (base-58 encoded)
 
 ### Result [#](#result)

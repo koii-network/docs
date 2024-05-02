@@ -1,23 +1,22 @@
 # getSlot RPC Method 
 Returns the slot that has reached the [given or default commitment level](/develop/rpcapi/intro#configuring-state-commitment)
 
-### Parameters [#](#parameters)
+### Parameters
 
 `object` optional
 
 Configuration object containing the following fields:
 
-[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
 
-minContextSlot `number` optional
-
+- minContextSlot `number` optional  
 The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result 
 
 `<u64>` - Current slot
 
-### Code sample [#](#code-sample)
+### Code sample 
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '

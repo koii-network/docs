@@ -2,16 +2,17 @@
 Returns a list of confirmed blocks starting at the given slot
 
 ### Parameters [#](#parameters)
+`u64` **required**  
+start\_slot, as `u64` integer 
 
-start\_slot, as `u64` integer
-
+`u64` **required**  
 limit, as `u64` integer (must be no more than 500,000 blocks higher than the `start_slot`)
-
+   
+`object` **optional** 
 Configuration object containing the following field:
-
-Default: `finalized`
-
-*   "processed" is not supported
+  - commitment `string` **optional**  
+      Default: `finalized`
+      - "processed" is not supported
 
 ### Result [#](#result)
 

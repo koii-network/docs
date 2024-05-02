@@ -2,19 +2,20 @@
 Returns signatures for confirmed transactions that include the given address in their `accountKeys` list. Returns signatures backwards in time from the provided signature or most recent confirmed block
 
 ### Parameters [#](#parameters)
+`string` **required**  
+Account address as base-58 encoded string  
 
-Account address as base-58 encoded string
-
-Configuration object containing the following fields:
-
-The minimum slot that the request can be evaluated at
-
-Default: `1000`
-
-maximum transaction signatures to return (between 1 and 1,000).
-
-start searching backwards from this transaction signature. If not provided the search starts from the top of the highest max confirmed block.
-
+`object` **optional**  
+Configuration object containing the following fields:  
+- commitment `string` **optional**   
+- minContextSlot `number` **optional**  
+The minimum slot that the request can be evaluated at  
+- limit `number` **optional**    
+  Default: `1000`
+  maximum transaction signatures to return (between 1 and 1,000).
+- before `string` **optional**  
+  start searching backwards from this transaction signature. If not provided the search starts from the top of the highest max confirmed block.  
+- until `string` **optional**  
 search until this transaction signature, if found before limit reached
 
 ### Result [#](#result)

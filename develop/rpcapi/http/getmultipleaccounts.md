@@ -2,32 +2,31 @@
 Returns the account information for a list of Pubkeys.
 
 ### Parameters [#](#parameters)
-
+`array` **required**  
 An array of Pubkeys to query, as base-58 encoded strings (up to a maximum of 100)
 
-Configuration object containing the following fields:
-
+`object` **optional**  
+Configuration object containing the following fields:   
+- commitment `string` **optional**  
+- minContextSlot `number` **optional**  
 The minimum slot that the request can be evaluated at
-
-Request a slice of the account's data.
-
-*   `length: <usize>` - number of bytes to return
-*   `offset: <usize>` - byte offset from which to start reading
-
+- dataSlice `object` **optional**
+  Request a slice of the account's data.
+  - `length: <usize>` - number of bytes to return
+  - `offset: <usize>` - byte offset from which to start reading
 :::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
 :::
-Default: `base64`
+  - encoding `string` **optional**  
+    Default: `base64`  
+    encoding format for the returned Account data
+    Values: `jsonParsed` `base58` `base64` `base64+zstd`
 
-encoding format for the returned Account data
-
-Values: `jsonParsed``base58``base64``base64+zstd`
-
-*   `base58` is slow and limited to less than 129 bytes of Account data.
-*   `base64` will return base64 encoded data for Account data of any size.
-*   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
-*   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
-*   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
+      - `base58` is slow and limited to less than 129 bytes of Account data.
+      - `base64` will return base64 encoded data for Account data of any size.
+      - `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
+      - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
+      - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
 
 ### Result [#](#result)
 

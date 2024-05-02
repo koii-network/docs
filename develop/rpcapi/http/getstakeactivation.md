@@ -2,14 +2,16 @@
 Returns epoch activation information for a stake account
 
 ### Parameters [#](#parameters)
+`string` **required**  
+Pubkey of stake Account to query, as base-58 encoded string  
 
-Pubkey of stake Account to query, as base-58 encoded string
-
-Configuration object containing the following fields:
-
-The minimum slot that the request can be evaluated at
-
-epoch for which to calculate activation details. If parameter not provided, defaults to current epoch. **DEPRECATED**, inputs other than the current epoch return an error.
+`object` **optional**  
+Configuration object containing the following fields:    
+- commitment `string` **optional**  
+- minContextSlot `number` **optional** 
+  The minimum slot that the request can be evaluated at   
+- epoch `u64` **optional**  
+  epoch for which to calculate activation details. If parameter not provided, defaults to current epoch. **DEPRECATED**, inputs other than the current epoch return an error.
 
 ### Result [#](#result)
 

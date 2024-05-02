@@ -4,15 +4,15 @@ Returns minimum balance required to make account rent exempt.
 
 ### Parameters [#](#parameters)
 
-`usize` optional
+`usize` **optional**
 
 the Account's data length
 
-`object` optional
+`object` **optional**
 
 Configuration object containing the following fields:
 
-[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
+[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
 ### Result [#](#result)
 

@@ -2,14 +2,11 @@
 Returns identity and transaction information about a confirmed block in the ledger
 
 ### Parameters [#](#parameters)
-u64 **required**
-
+u64 **required**  
 slot number, as `u64` integer
 
-object **optional**
-
-Configuration object containing the following fields:
-
+object **optional**  
+Configuration object containing the following fields:  
   - commitment `string` **optional**
       - Default: `finalized`  
         - `processed` is not supported.
@@ -22,8 +19,7 @@ Configuration object containing the following fields:
           *   If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
   - transactionDetails `string` **optional**  
     Default: `full`  
-    level of transaction detail to return
-
+    level of transaction detail to return  
     Values: `full` `accounts` `signatures` `none`
 
       *   If `accounts` are requested, transaction details only include signatures and an annotated list of accounts in each transaction.

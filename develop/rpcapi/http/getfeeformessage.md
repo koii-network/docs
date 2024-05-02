@@ -1,16 +1,15 @@
 # getFeeForMessage RPC Method 
 Get the fee the network will charge for a particular Message
 
-Version Restriction
-
 
 ### Parameters [#](#parameters)
-
+`string` **required**  
 Base-64 encoded Message
-
+`object` **optional**  
 Configuration object containing the following fields:
-
-The minimum slot that the request can be evaluated at
+- commitment `string` **optional**
+- minContextSlot `number` **optional**
+  - The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
 

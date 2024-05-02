@@ -1,9 +1,10 @@
 # getStakeMinimumDelegation RPC Method 
 Returns the stake minimum delegation, in lamports.
 
-### Parameters [#](#parameters)
-
-Configuration object containing the following fields:
+### Parameters [#](#parameters)  
+`object` **optional**    
+Configuration object containing the following fields:  
+- commitment `string` **optional**  
 
 ### Result [#](#result)
 

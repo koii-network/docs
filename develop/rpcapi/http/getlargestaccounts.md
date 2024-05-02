@@ -2,12 +2,12 @@
 Returns the 20 largest accounts, by lamport balance (results may be cached up to two hours)
 
 ### Parameters [#](#parameters)
-
+`object` **optional**
 Configuration object containing the following fields:
-
-filter results by account type
-
-Values: `circulating``nonCirculating`
+- commitment `string` **optional**
+- filter `string` **optional**   
+  filter results by account type  
+  Values:  `circulating` `nonCirculating`
 
 ### Result [#](#result)
 

@@ -2,7 +2,7 @@
 Returns a list of recent performance samples, in reverse slot order. Performance samples are taken every 60 seconds and include the number of transactions and slots that occur in a given time window.
 
 ### Parameters [#](#parameters)
-
+limit `usize` **optional**  
 number of samples to return (maximum 720)
 
 ### Result [#](#result)
@@ -17,9 +17,8 @@ An array of `RpcPerfSample<object>` with the following fields:
 
 :::info
 `numNonVoteTransaction` is present starting with v1.15. To get a number of voting transactions compute:
-:::
 `numTransactions - numNonVoteTransaction`
-
+:::
 ### Code sample [#](#code-sample)
 
 ```

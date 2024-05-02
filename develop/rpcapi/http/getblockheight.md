@@ -4,15 +4,13 @@ Returns the current block height of the node
 
 ### Parameters 
 
-`object` optional
-
+`object` **optional**  
 Configuration object containing the following fields:
 
-commitment`string` optional
+- commitment`string` **optional**
 
-minContextSlot `number` optional
-
-The minimum slot that the request can be evaluated at
+- minContextSlot `number` **optional**
+    The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
 
