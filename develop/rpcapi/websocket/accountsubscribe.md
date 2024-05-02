@@ -2,18 +2,17 @@
 Subscribe to an account to receive notifications when the lamports or data for a given account public key changes
 
 ### Parameters [#](#parameters)
-
+`string` **required**  
 Account Pubkey, as base-58 encoded string
-
+`object` **optional**  
 Configuration object containing the following fields:
-
-Encoding format for Account data
-
-Values: `base58``base64``base64+zstd``jsonParsed`
-
-*   `base58` is slow.
-*   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data
-*   If `jsonParsed` is requested but a parser cannot be found, the field falls back to binary encoding, detectable when the `data`field is type`string`.
+- commitment `string` **optional**  
+- encoding `string` **optional**  
+Encoding format for Account data  
+Values: `base58``base64``base64+zstd``jsonParsed`  
+  - `base58` is slow.
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data
+  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to binary encoding, detectable when the `data`field is type`string`.
 
 ### Result [#](#result)
 

@@ -3,8 +3,7 @@ Unsubscribe from account change notifications
 
 ### Parameters [#](#parameters)
 
-`number` required
-
+`number` required  
 id of the account Subscription to cancel
 
 ### Result [#](#result)

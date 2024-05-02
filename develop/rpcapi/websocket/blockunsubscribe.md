@@ -1,17 +1,17 @@
 # blockUnsubscribe RPC Method 
 Unsubscribe from block notifications
 
-### Parameters [#](#parameters)
+### Parameters 
 
-`integer` required
+`integer` required  
 
 subscription id to cancel
 
-### Result [#](#result)
+### Result 
 
 `<bool>` - unsubscribe success message
 
-### Code sample [#](#code-sample)
+### Code sample 
 
 ```
 {
@@ -23,7 +23,7 @@ subscription id to cancel
 ```
 
 
-### Response [#](#response)
+### Response 
 
 ```
 { "jsonrpc": "2.0", "result": true, "id": 1 }
