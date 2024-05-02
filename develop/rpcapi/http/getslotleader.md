@@ -1,10 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getSlotLeader RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getSlotLeader
 ---  
-getSlotLeader RPC Method 
-[
+
 
 Returns the current slot leader
 

@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getStakeActivation RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getStakeActivation
 ---  
-getStakeActivation RPC Method 
+
 Returns epoch activation information for a stake account
 
 ### Parameters [#](#parameters)
