@@ -2,7 +2,7 @@
 Returns commitment for particular block
 
 ### Parameters 
-`u64` required  
+`u64` **required**  
 block number, identified by Slot
 
 ### Result 

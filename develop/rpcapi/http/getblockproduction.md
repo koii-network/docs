@@ -2,15 +2,15 @@
 Returns recent block production information from the current or previous epoch.
 
 ### Parameters [#](#parameters)
-
+`object` **optional**
 Configuration object containing the following fields:
-
-Only return results for this validator identity (base-58 encoded)
-
-Slot range to return block production for. If parameter not provided, defaults to current epoch.
-
-*   `firstSlot: <u64>` - first slot to return block production information for (inclusive)
-*   (optional) `lastSlot: <u64>` - last slot to return block production information for (inclusive). If parameter not provided, defaults to the highest slot
+  - commitment `string` **optional**
+  - identity `string` **optional**
+    Only return results for this validator identity (base-58 encoded)
+  - range `object` **optional**
+    Slot range to return block production for. If parameter not provided, defaults to current epoch.
+      *   `firstSlot: <u64>` - first slot to return block production information for (inclusive)
+      *   (optional) `lastSlot: <u64>` - last slot to return block production information for (inclusive). If parameter not provided, defaults to the highest slot
 
 ### Result [#](#result)
 
