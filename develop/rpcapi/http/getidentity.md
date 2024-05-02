@@ -1,4 +1,9 @@
-# getIdentity RPC Method 
+--- 
+title: getIdentity RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+
 Returns the identity pubkey for the current node
 
 ### Parameters [#](#parameters)

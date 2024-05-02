@@ -1,4 +1,8 @@
-# getFirstAvailableBlock RPC Method 
+---
+title: getFirstAvailableBlock RPC Method
+image: img/thumbnail.png
+sidebar_label: getFirstAvailableBlock
+---   
 Returns the slot of the lowest confirmed block that has not been purged from the ledger
 
 ### Parameters [#](#parameters)

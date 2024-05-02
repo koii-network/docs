@@ -1,4 +1,9 @@
-# getProgramAccounts RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getProgramAccounts RPC Method 
 Returns all accounts owned by the provided program Pubkey
 
 ### Parameters [#](#parameters)

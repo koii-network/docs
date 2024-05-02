@@ -1,4 +1,9 @@
-# getAccountInfo RPC Method 
+---
+title: getAccountInfo RPC Method 
+image: img/thumbnail.png
+sidebar_label: getAccountInfo
+---
+
 Returns all information associated with the account of provided Pubkey
 
 ### Parameters [#](#parameters)

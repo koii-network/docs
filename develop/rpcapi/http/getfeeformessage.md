@@ -1,4 +1,8 @@
-# getFeeForMessage RPC Method 
+---
+title: getFeeForMessage RPC Method  
+image: img/thumbnail.png
+sidebar_label: getFeeForMessage
+---  
 Get the fee the network will charge for a particular Message
 
 

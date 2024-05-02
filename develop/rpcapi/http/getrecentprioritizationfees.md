@@ -1,4 +1,9 @@
-# getRecentPrioritizationFees RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getRecentPrioritizationFees RPC Method 
 Returns a list of prioritization fees from recent blocks.
 
 :::info

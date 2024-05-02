@@ -1,4 +1,14 @@
-# getBlock RPC Method 
+---
+title: getBlock RPC Method  
+image: img/thumbnail.png
+sidebar_label: getBlock
+--- 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getBlock RPC Method 
 Returns identity and transaction information about a confirmed block in the ledger
 
 ### Parameters [#](#parameters)

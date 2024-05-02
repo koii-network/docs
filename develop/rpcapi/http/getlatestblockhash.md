@@ -1,4 +1,9 @@
-# getLatestBlockhash RPC Method 
+--- 
+title: getLatestBlockhash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getLatestBlockhash RPC Method 
+---  
+
 Returns the latest blockhash
 
 Version Restriction

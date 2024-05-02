@@ -1,4 +1,9 @@
-# getLargestAccounts RPC Method 
+--- 
+title: getLargestAccounts RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getLargestAccounts
+---  
+
 Returns the 20 largest accounts, by lamport balance (results may be cached up to two hours)
 
 ### Parameters [#](#parameters)

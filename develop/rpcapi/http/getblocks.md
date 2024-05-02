@@ -1,4 +1,9 @@
-# getBlocks RPC Method 
+---
+title: getBlocks RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBlocks
+--- 
+
 Returns a list of confirmed blocks between two slots
 
 ### Parameters [#](#parameters)

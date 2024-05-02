@@ -1,4 +1,9 @@
-# getBlockTime RPC Method 
+---
+title: getBlockTime RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBlockTime
+--- 
+ 
 Returns the estimated production time of a block.
 
 

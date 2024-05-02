@@ -1,4 +1,9 @@
-# getBlockCommitment RPC Method 
+---
+title: getBlockCommitment RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBlockCommitment
+--- 
+
 Returns commitment for particular block
 
 ### Parameters 

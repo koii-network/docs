@@ -1,4 +1,9 @@
-# getMinimumBalanceForRentExemption RPC Method 
+--- 
+title: getMinimumBalanceForRentExemption RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getMinimumBalanceForRentExemption
+---  
+
 
 Returns minimum balance required to make account rent exempt.
 

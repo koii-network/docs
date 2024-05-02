@@ -1,4 +1,9 @@
-# getRecentPerformanceSamples RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getRecentPerformanceSamples RPC Method 
 Returns a list of recent performance samples, in reverse slot order. Performance samples are taken every 60 seconds and include the number of transactions and slots that occur in a given time window.
 
 ### Parameters [#](#parameters)

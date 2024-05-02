@@ -1,4 +1,8 @@
-# getBalance RPC Method 
+---
+title: getBalance RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBalance
+--- 
 Returns the lamport balance of the account of provided Pubkey
 
 ### Parameters [#](#parameters)

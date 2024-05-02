@@ -1,4 +1,9 @@
-# getMaxShredInsertSlot RPC Method 
+--- 
+title: getMaxShredInsertSlot RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getMaxShredInsertSlot
+---  
+
 Get the max slot seen from after shred insert.
 
 ### Parameters [#](#parameters)

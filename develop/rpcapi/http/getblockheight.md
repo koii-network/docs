@@ -1,4 +1,9 @@
-# getBlockHeight RPC Method 
+---
+title: getBlockHeight RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBlockHeight 
+--- 
+
 
 Returns the current block height of the node
 

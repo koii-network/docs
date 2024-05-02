@@ -1,5 +1,10 @@
 # requestAirdrop RPC Method 
+
 Requests an airdrop of lamports to a Pubkey
+
+:::warning 
+This function only works for local test validator. 
+::: 
 
 ### Parameters [#](#parameters)
 `string` **required** 

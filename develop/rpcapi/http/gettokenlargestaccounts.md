@@ -1,4 +1,9 @@
-# getTokenLargestAccounts RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getTokenLargestAccounts RPC Method 
 Returns the 20 largest accounts of a particular SPL Token type.
 
 ### Parameters [#](#parameters)

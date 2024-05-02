@@ -1,4 +1,9 @@
-# getHighestSnapshotSlot RPC Method 
+--- 
+title: getHighestSnapshotSlot RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getHighestSnapshotSlot
+---  
+
 Returns the highest slot information that the node has snapshots for.
 
 This will find the highest full snapshot slot, and the highest incremental snapshot slot _based on_ the full snapshot slot, if there is one.

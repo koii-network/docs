@@ -1,4 +1,9 @@
-# getBlockProduction RPC Method 
+---
+title: getBlockProduction RPC Method 
+image: img/thumbnail.png
+sidebar_label: getBlockProduction
+--- 
+
 Returns recent block production information from the current or previous epoch.
 
 ### Parameters

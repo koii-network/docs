@@ -1,4 +1,9 @@
-# getHealth RPC Method 
+--- 
+title: getHealth RPC Method
+image: img/thumbnail.png 
+sidebar_label: getHealth 
+---  
+ 
 Returns the current health of the node. A healthy node is one that is within `HEALTH_CHECK_SLOT_DISTANCE` slots of the latest cluster confirmed slot.
 
 ### Parameters [#](#parameters)

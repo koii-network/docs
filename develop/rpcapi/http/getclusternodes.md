@@ -1,4 +1,9 @@
-# getClusterNodes RPC Method 
+---
+title: getClusterNodes RPC Method 
+image: img/thumbnail.png
+sidebar_label: getClusterNodes
+--- 
+  
 Returns information about all the nodes participating in the cluster
 
 ### Parameters [#](#parameters)

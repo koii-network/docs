@@ -1,4 +1,9 @@
-# getSlot RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getSlot RPC Method 
 Returns the slot that has reached the [given or default commitment level](/develop/rpcapi/intro#configuring-state-commitment)
 
 ### Parameters

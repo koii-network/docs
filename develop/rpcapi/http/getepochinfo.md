@@ -1,4 +1,8 @@
-# getEpochInfo RPC Method 
+---
+title: getEpochInfo RPC Method 
+image: img/thumbnail.png
+sidebar_label: getEpochInfo
+--- 
 Returns information about the current epoch
 
 ### Parameters [#](#parameters)

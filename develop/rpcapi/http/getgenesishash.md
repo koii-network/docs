@@ -1,4 +1,8 @@
-# getGenesisHash RPC Method 
+---
+title: getGenesisHash RPC Method 
+image: img/thumbnail.png
+sidebar_label: getGenesisHash
+---   
 Returns the genesis hash
 
 ### Parameters [#](#parameters)

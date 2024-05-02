@@ -1,4 +1,9 @@
-# getSupply RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getSupply RPC Method 
 Returns information about the current supply.
 
 ### Parameters [#](#parameters)  

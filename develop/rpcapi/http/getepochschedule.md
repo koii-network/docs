@@ -1,4 +1,8 @@
-# getEpochSchedule RPC Method 
+---
+title: getEpochSchedule RPC Method 
+image: img/thumbnail.png
+sidebar_label: getEpochSchedule
+---  
 Returns the epoch schedule information from this cluster's genesis config
 
 ### Parameters [#](#parameters)

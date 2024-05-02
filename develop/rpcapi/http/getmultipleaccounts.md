@@ -1,4 +1,9 @@
-# getMultipleAccounts RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getMultipleAccounts RPC Method 
 Returns the account information for a list of Pubkeys.
 
 ### Parameters [#](#parameters)

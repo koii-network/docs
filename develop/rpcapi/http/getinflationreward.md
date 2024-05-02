@@ -1,4 +1,9 @@
-# getInflationReward RPC Method 
+--- 
+title: getInflationReward RPC Method
+image: img/thumbnail.png 
+sidebar_label: getInflationReward 
+---  
+ 
 Returns the inflation / staking reward for a list of addresses for an epoch
 
 ### Parameters [#](#parameters)

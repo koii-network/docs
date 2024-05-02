@@ -1,4 +1,9 @@
-# getInflationGovernor RPC Method 
+--- 
+title: getInflationGovernor RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getInflationGovernor
+---  
+
 Returns the current inflation governor
 
 ### Parameters 

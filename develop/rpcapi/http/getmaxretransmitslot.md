@@ -1,4 +1,9 @@
-# getMaxRetransmitSlot RPC Method 
+--- 
+title: getMaxRetransmitSlot RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getMaxRetransmitSlot
+---  
+
 Get the max slot seen from retransmit stage.
 
 ### Parameters [#](#parameters)

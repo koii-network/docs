@@ -1,4 +1,9 @@
-# getInflationRate RPC Method 
+--- 
+title: getInflationRate RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getInflationRate
+---  
+
 Returns the specific inflation values for the current epoch
 
 ### Parameters [#](#parameters)

@@ -1,4 +1,9 @@
-# getTokenAccountsByOwner RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getTokenAccountsByOwner RPC Method 
 Returns all SPL Token accounts by token owner.
 
 ### Parameters [#](#parameters)

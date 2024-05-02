@@ -1,4 +1,9 @@
-# getStakeMinimumDelegation RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getStakeMinimumDelegation RPC Method 
 Returns the stake minimum delegation, in lamports.
 
 ### Parameters [#](#parameters)  

@@ -1,4 +1,9 @@
-# getTransactionCount RPC Method 
+--- 
+title: getGenesisHash RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getGenesisHash 
+---  
+getTransactionCount RPC Method 
 
 
 Returns the current Transaction count from the ledger

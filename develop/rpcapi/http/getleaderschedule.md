@@ -1,4 +1,9 @@
-# getLeaderSchedule RPC Method 
+--- 
+title: getLeaderSchedule RPC Method  
+image: img/thumbnail.png 
+sidebar_label: getLeaderSchedule RPC Method  
+---  
+
 Returns the leader schedule for an epoch
 
 ### Parameters [#](#parameters)
