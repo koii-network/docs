@@ -4,8 +4,8 @@ description: For too long, power has been concentrated to just a small part of t
 image: img/thumbnail.png
 sidebar_label: Philosophy
 ---
+import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 
-import Card, { Cards } from "@site/src/components/card";
 import Description from "@site/src/components/description";
 
 ![img alt](img/Philosophy.svg)
@@ -19,32 +19,32 @@ We champion user empowerment, advocating for individuals to have control over th
 ## Get Involved
 Take an active role in shaping Koii Network's future. Your involvement is vital, whether you're contributing as a token holder, developer, or content creator. By participating in governance, supporting network security, or engaging with our platform, you become a key player in advancing our decentralized ecosystem. Join us in forging a more transparent and equitable digital landscape.
 
-<Cards>
-  <Card
+<CardsSpecial>
+  <CardSpecial
     title="<p><strong>Join the Discord</strong></p>"
     description=" <p>Koii's discord is where the community comes to discuss new ideas and recent updates.</p>"
     link="https://discord.com/invite/koii-network"
     linkText="Sign in Here"
-    svgName="discord"
+    svgName="discordsmall"
     cardPerRow="3"
   />
-  <Card
+  <CardSpecial
     title="<p><strong>Read Community Posts</strong></p>"
     description="<p>The Telegram forum provides a place for long term answers and lasting discussions.</p>"
     link="https://t.me/koiinetwork"
     linkText="Check it Out"
-    svgName="telegram"
+    svgName="community"
     cardPerRow="3"
   />
-  <Card
+  <CardSpecial
     title="<p><strong>Follow Koii on Twitter</strong></p>"
     description=" <p>Join us on Twitter to stay tuned on ecosystem updates, and what people are saying daily.</p>"
     link="https://twitter.com/KoiiFoundation"
-    linkText="See Recent Posts"
+    linkText="twitter"
     svgName="twitter"
     cardPerRow="3"
   />
-</Cards>
+</CardsSpecial>
 
 <!-- ## Videos
 

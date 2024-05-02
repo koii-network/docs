@@ -69,7 +69,8 @@
       "hiddentreasure",
       "hubspot",
        "JSAPI",
-       "koiinode"
+       "koiinode",
+       "discordsmall"
   ],
   "caseSensitive": false,
   "flagWords": [
