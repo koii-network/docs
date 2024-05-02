@@ -24,7 +24,7 @@ Configuration object containing the following fields:
 ### Code sample [#](#code-sample)
 
 ```
-curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '
+curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc":"2.0","id":1,
     "method":"getBlockHeight"
