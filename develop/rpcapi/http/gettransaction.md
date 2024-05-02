@@ -2,23 +2,19 @@
 Returns transaction details for a confirmed transaction
 
 ### Parameters [#](#parameters)
-
-Transaction signature, as base-58 encoded string
-
-Configuration object containing the following fields:
-
-*   `processed` is not supported.
-
-Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.
-
-Default: `json`
-
-Encoding for the returned Transaction
-
-Values: `json``jsonParsed``base64``base58`
-
-*   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
-*   If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
+`string` **required**  
+Transaction signature, as base-58 encoded string  
+`object` **optional**  
+Configuration object containing the following fields:    
+- commitment `string` **optional**    
+  - `processed` is not supported.  
+    Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.  
+- encoding `string` **optional**  
+  Default: `json`  
+  Encoding for the returned Transaction  
+  Values: `json` `jsonParsed` `base64` `base58`  
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.  
+  - If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
 
 ### Result [#](#result)
 

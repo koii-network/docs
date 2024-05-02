@@ -2,10 +2,12 @@
 Returns the total supply of an SPL Token type.
 
 ### Parameters [#](#parameters)
+`string` **required**  
+Pubkey of account delegate to query, as base-58 encoded string
 
-Pubkey of the token Mint to query, as base-58 encoded string
-
-Configuration object containing the following fields:
+`object` **optional**  
+Configuration object containing the following fields:  
+- commitment `string` **optional**  
 
 ### Result [#](#result)
 

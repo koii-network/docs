@@ -1,10 +1,11 @@
 # getSupply RPC Method 
 Returns information about the current supply.
 
-### Parameters [#](#parameters)
-
-Configuration object containing the following fields:
-
+### Parameters [#](#parameters)  
+`object` **optional**  
+Configuration object containing the following fields:  
+- commitment `string` **optional**  
+- excludeNonCirculatingAccountsList `bool` **optional**  
 exclude non circulating accounts list from response
 
 ### Result [#](#result)

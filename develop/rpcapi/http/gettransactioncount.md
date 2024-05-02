@@ -5,15 +5,13 @@ Returns the current Transaction count from the ledger
 
 ### Parameters [#](#parameters)
 
-`object` optional
-
+`object` **optional**  
 Configuration object containing the following fields:
 
-[commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
-minContextSlot `number` optional
-
-The minimum slot that the request can be evaluated at
+- minContextSlot `number` **optional**  
+The minimum slot that the request can be evaluated at  
 
 ### Result [#](#result)
 
