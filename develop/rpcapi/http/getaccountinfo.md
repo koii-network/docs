@@ -2,29 +2,31 @@
 Returns all information associated with the account of provided Pubkey
 
 ### Parameters [#](#parameters)
-`string` (required): Pubkey of account to query, as base-58 encoded string
-`object` optional
+`string` (required): 
+
+Pubkey of account to query, as base-58 encoded string
+
+`object` (optional): 
+
 Configuration object containing the following fields:
-`commitment`
-Encoding format for Account data
-`encoding`
-Values: `base58``base64``base64+zstd``jsonParsed`
 
-*   `base58` is slow and limited to less than 129 bytes of Account data.
-*   `base64` will return base64 encoded data for Account data of any size.
-*   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
-*   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
-*   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `string`.
+- commitment string` **optional** 
+- `encoding`(string, optional): Encoding format for Account data
+  - `Values`: `base58` `base64` `base64+zstd` `jsonParsed`
+      *   `base58` is slow and limited to less than 129 bytes of Account data.
+      *   `base64` will return base64 encoded data for Account data of any size.
+      *   `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
+      *   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
+      *   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `string`.
+- dataSlice `object` **optional**
+  Request a slice of the account's data.
+    *   `length: <usize>` - number of bytes to return
+    *   `offset: <usize>` - byte offset from which to start reading
 
-Request a slice of the account's data.
-
-*   `length: <usize>` - number of bytes to return
-*   `offset: <usize>` - byte offset from which to start reading
-
-Info
-
+:::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
-
+:::
+- minContextSlot `number` **optional**
 The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
