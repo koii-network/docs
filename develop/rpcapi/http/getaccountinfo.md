@@ -2,13 +2,12 @@
 Returns all information associated with the account of provided Pubkey
 
 ### Parameters [#](#parameters)
-
-Pubkey of account to query, as base-58 encoded string
-
+`string` (required): Pubkey of account to query, as base-58 encoded string
+`object` optional
 Configuration object containing the following fields:
-
+`commitment`
 Encoding format for Account data
-
+`encoding`
 Values: `base58``base64``base64+zstd``jsonParsed`
 
 *   `base58` is slow and limited to less than 129 bytes of Account data.
