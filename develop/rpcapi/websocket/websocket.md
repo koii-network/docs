@@ -1,4 +1,8 @@
-# Koii RPC Websocket Methods 
+--- 
+title: Koii RPC Websocket Methods 
+image: img/thumbnail.png 
+sidebar_label: Koii RPC Websocket
+---   
 
 
 After connecting to the RPC PubSub websocket at `ws://<ADDRESS>/`:

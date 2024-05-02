@@ -1,4 +1,8 @@
-# signatureUnsubscribe RPC Method 
+--- 
+title: signatureUnsubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: signatureUnsubscribe 
+---  
 Unsubscribe from signature confirmation notification
 
 ### Parameters [#](#parameters)

@@ -1,4 +1,8 @@
-# slotsUpdatesUnsubscribe RPC Method 
+--- 
+title: slotsUpdatesUnsubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: slotsUpdatesUnsubscribe
+--- 
 Unsubscribe from slot-update notifications
 
 ### Parameters [#](#parameters)

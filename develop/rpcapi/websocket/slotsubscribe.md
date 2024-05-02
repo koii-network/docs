@@ -1,4 +1,8 @@
-# slotSubscribe RPC Method 
+--- 
+title: slotSubscribe  RPC Method
+image: img/thumbnail.png 
+sidebar_label: slotSubscribe 
+---  
 Subscribe to receive notification anytime a slot is processed by the validator
 
 ### Parameters [#](#parameters)

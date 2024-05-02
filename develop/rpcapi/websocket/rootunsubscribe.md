@@ -1,4 +1,8 @@
-# rootUnsubscribe RPC Method 
+--- 
+title: rootUnsubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: rootUnsubscribe
+---   
 Unsubscribe from root notifications
 
 ### Parameters [#](#parameters)

@@ -1,4 +1,8 @@
-# rootSubscribe RPC Method 
+--- 
+title: rootSubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: rootSubscribe 
+---  
 Subscribe to receive notification anytime a new root is set by the validator.
 
 ### Parameters [#](#parameters)

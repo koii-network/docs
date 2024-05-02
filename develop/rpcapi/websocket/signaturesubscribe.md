@@ -1,4 +1,8 @@
-# signatureSubscribe RPC Method 
+--- 
+title: signatureSubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: signatureSubscribe 
+---  
 Subscribe to receive a notification when the transaction with the given signature reaches the specified commitment level.
 
 :::warning

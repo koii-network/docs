@@ -1,4 +1,8 @@
-# slotUnsubscribe RPC Method 
+--- 
+title: slotUnsubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: slotUnsubscribe
+---   
 Unsubscribe from slot notifications
 
 ### Parameters [#](#parameters)

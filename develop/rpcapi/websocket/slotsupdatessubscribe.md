@@ -1,4 +1,8 @@
-# slotsUpdatesSubscribe RPC Method 
+--- 
+title: slotsUpdatesSubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: slotsUpdatesSubscribe 
+--- 
 Subscribe to receive a notification from the validator on a variety of updates on every slot
 
 :::warning

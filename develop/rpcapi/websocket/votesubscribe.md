@@ -1,4 +1,8 @@
-# voteSubscribe RPC Method 
+--- 
+title: voteSubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: voteSubscribe
+---    
 Subscribe to receive notification anytime a new vote is observed in gossip. These votes are pre-consensus therefore there is no guarantee these votes will enter the ledger.
 
 Unstable Method

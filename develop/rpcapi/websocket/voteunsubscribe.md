@@ -1,4 +1,8 @@
-# voteUnsubscribe RPC Method 
+--- 
+title: voteUnsubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: voteUnsubscribe
+---    
 Unsubscribe from vote notifications
 
 ### Parameters [#](#parameters)
