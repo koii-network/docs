@@ -1,5 +1,5 @@
 # minimumLedgerSlot RPC Method 
-Returns the lowest slot that the node has information about in its ledger.
+Returns the lowest slot that the node has information about in its ledger.  
 
 :::info
 This value may increase over time if the node is configured to purge older ledger data

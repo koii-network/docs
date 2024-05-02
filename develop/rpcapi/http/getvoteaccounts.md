@@ -2,13 +2,14 @@
 Returns the account info and associated stake for all the voting accounts in the current bank.
 
 ### Parameters [#](#parameters)
-
+`object` **optional**  
 Configuration object containing the following fields:
-
+- commitment `string` **optional**  
+- votePubkey `string` **optional** 
 Only return results for this validator vote address (base-58 encoded)
-
+- keepUnstakedDelinquents `bool` **optional**  
 Do not filter out delinquent validators with no stake
-
+- delinquentSlotDistance `u64` **optional**   
 Specify the number of slots behind the tip that a validator must fall to be considered delinquent. **NOTE:** For the sake of consistency between ecosystem products, _it is **not** recommended that this argument be specified._
 
 ### Result [#](#result)

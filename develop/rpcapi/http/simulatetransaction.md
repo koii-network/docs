@@ -2,45 +2,39 @@
 Simulate sending a transaction
 
 ### Parameters [#](#parameters)
-
+`string` **required**  
 Transaction, as an encoded string.
 
 :::info
 The transaction must have a valid blockhash, but is not required to be signed.
 :::
-
+`object` **optional**  
 Configuration object containing the following fields:
-
-Default: `finalized`
-
+- commitment `string` **optional**  
+Default: `finalized`  
 Commitment level to simulate the transaction at
-
-if `true` the transaction signatures will be verified (conflicts with `replaceRecentBlockhash`)
-
+- sigVerify `bool` **optional**  
+if `true` the transaction signatures will be verified (conflicts with `replaceRecentBlockhash`)  
+- replaceRecentBlockhash `bool` **optional**  
 if `true` the transaction recent blockhash will be replaced with the most recent blockhash. (conflicts with `sigVerify`)
-
+- minContextSlot `number` **optional**  
 the minimum slot that the request can be evaluated at
-
-Default: `base58`
-
-Encoding used for the transaction data.
-
-Values: `base58` (_slow_, **DEPRECATED**), or `base64`.
-
-If `true` the response will include [inner instructions](/develop/rpcapi/json-structures#inner-instructions). These inner instructions will be `jsonParsed` where possible, otherwise `json`.
-
-Accounts configuration object containing the following fields:
-
-An `array` of accounts to return, as base-58 encoded strings
-
-Default: `base64`
-
-encoding for returned Account data
-
-Values: `base64``base58``base64+zstd``jsonParsed`
-
-*   `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
-*   If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.
+- encoding `string` **optional**  
+Default: `base58`  
+Encoding used for the transaction data.   
+Values: `base58` (_slow_, **DEPRECATED**), or `base64`.  
+- innerInstructions `bool` **optional** 
+If `true` the response will include [inner instructions](/develop/rpcapi/json-structures#inner-instructions). These inner instructions will be `jsonParsed` where possible, otherwise `json`.  
+- accounts `object` **optional**  
+Accounts configuration object containing the following fields:  
+  - addresses `array`
+  An `array` of accounts to return, as base-58 encoded strings  
+  - encoding `string`  
+  Default: `base64`  
+  encoding for returned Account data  
+  Values: `base64` `base58` `base64+zstd` `jsonParsed`  
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.  
+  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.  
 
 ### Result [#](#result)
 

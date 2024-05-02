@@ -17,27 +17,24 @@ Before submitting, the following preflight checks are performed:
 The returned signature is the first signature in the transaction, which is used to identify the transaction (transaction id). This identifier can be easily extracted from the transaction data before submission.
 
 ### Parameters [#](#parameters)
-
+`string` **required**  
 Fully-signed Transaction, as encoded string.
 
+`object` **optional**  
 Configuration object containing the following optional fields:
-
-Default: `base58`
-
-Encoding used for the transaction data.
-
-Values: `base58` (_slow_, **DEPRECATED**), or `base64`.
-
-Default: `false`
-
-when `true`, skip the preflight transaction checks
-
-Default: `finalized`
-
-Commitment level to use for preflight.
-
+- `encoding` **string**  
+Default: `base58`  
+Encoding used for the transaction data.  
+Values: `base58` (_slow_, **DEPRECATED**), or `base64`.  
+- `skipPreflight` **bool**
+Default: `false`  
+when `true`, skip the preflight transaction checks  
+- `preflightCommitment` **string**  
+Default: `finalized`  
+Commitment level to use for preflight.  
+- `maxRetries` **usize**  
 Maximum number of times for the RPC node to retry sending the transaction to the leader. If this parameter not provided, the RPC node will retry the transaction until it is finalized or until the blockhash expires.
-
+- `minContextSlot` **number**  
 set the minimum slot at which to perform preflight transaction checks
 
 ### Result [#](#result)

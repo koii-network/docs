@@ -1,15 +1,17 @@
 # isBlockhashValid RPC Method 
 Returns whether a blockhash is still valid or not
 
-Version Restriction
+
 
 ### Parameters [#](#parameters)
+`string` **required**  
+the blockhash of the block to evaluate, as base-58 encoded string  
 
-the blockhash of the block to evaluate, as base-58 encoded string
-
+`object` **optional**  
 Configuration object containing the following fields:
-
-The minimum slot that the request can be evaluated at
+- commitment `string` **optional** 
+- minContextSlot `number` **optional**  
+The minimum slot that the request can be evaluated at  
 
 ### Result [#](#result)
 

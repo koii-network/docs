@@ -1,5 +1,5 @@
 # getTransactionCount RPC Method 
-[
+
 
 Returns the current Transaction count from the ledger
 

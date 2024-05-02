@@ -2,12 +2,15 @@
 Requests an airdrop of lamports to a Pubkey
 
 ### Parameters [#](#parameters)
+`string` **required** 
+Pubkey of account to receive lamports, as a base-58 encoded string  
 
-Pubkey of account to receive lamports, as a base-58 encoded string
-
+`integer` **required**  
 lamports to airdrop, as a "u64"
 
+`object` **optional**  
 Configuration object containing the following fields:
+- commitment `string` **optional**  
 
 ### Result [#](#result)
 
