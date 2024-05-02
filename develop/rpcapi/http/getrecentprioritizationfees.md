@@ -1,18 +1,16 @@
 # getRecentPrioritizationFees RPC Method 
 Returns a list of prioritization fees from recent blocks.
 
-Info
-
+:::info
 Currently, a node's prioritization-fee cache stores data from up to 150 blocks.
-
+:::
 ### Parameters [#](#parameters)
 
 An array of Account addresses (up to a maximum of 128 addresses), as base-58 encoded strings
 
-Info
-
+:::info
 If this parameter is provided, the response will reflect a fee to land a transaction locking all of the provided accounts as writable.
-
+:::
 ### Result [#](#result)
 
 An array of `RpcPrioritizationFee<object>` with the following fields:

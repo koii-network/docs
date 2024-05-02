@@ -28,24 +28,22 @@ Request a slice of the account's data.
 *   `length: <usize>` - number of bytes to return
 *   `offset: <usize>` - byte offset from which to start reading
 
-Info
-
+:::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
+:::
 
 filter results using up to 4 filter objects
 
-Info
-
+:::info
 The resultant account(s) must meet **ALL** filter criteria to be included in the returned results
-
+:::
 ### Result [#](#result)
 
 By default, the result field will be an array of JSON objects.
 
-Info
-
+:::info
 If the `withContext` flag is set, the array will be wrapped in an `RpcResponse` JSON object.
-
+:::
 The resultant response array will contain:
 
 *   `pubkey: <string>` - the account Pubkey as base-58 encoded string

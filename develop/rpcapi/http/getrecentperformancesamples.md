@@ -15,10 +15,9 @@ An array of `RpcPerfSample<object>` with the following fields:
 *   `samplePeriodSecs: <u16>` - Number of seconds in a sample window
 *   `numNonVoteTransaction: <u64>` - Number of non-vote transactions processed during the sample period.
 
-Info
-
+:::info
 `numNonVoteTransaction` is present starting with v1.15. To get a number of voting transactions compute:
-
+:::
 `numTransactions - numNonVoteTransaction`
 
 ### Code sample [#](#code-sample)

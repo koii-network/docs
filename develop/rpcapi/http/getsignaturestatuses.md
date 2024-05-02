@@ -1,10 +1,9 @@
 # getSignatureStatuses RPC Method 
 Returns the statuses of a list of signatures. Each signature must be a txid, the first signature of a transaction.
 
-Info
-
+:::info
 Unless the `searchTransactionHistory` configuration parameter is included, this method only searches the recent status cache of signatures, which retains statuses for all active slots plus `MAX_RECENT_BLOCKHASHES` rooted slots.
-
+:::
 ### Parameters [#](#parameters)
 
 An array of transaction signatures to confirm, as base-58 encoded strings (up to a maximum of 256)

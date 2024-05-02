@@ -9,10 +9,9 @@ This is a subscription to a single notification. It is automatically cancelled b
 
 transaction signature, as base-58 encoded string
 
-Info
-
+:::info
 The transaction signature must be the first signature from the transaction (see transaction id for more details).
-
+:::
 Configuration object containing the following fields:
 
 Whether or not to subscribe for notifications when signatures are received by the RPC, in addition to when they are processed.

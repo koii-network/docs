@@ -9,10 +9,9 @@ Configuration object containing the following fields:
 
 filter results using various filter objects
 
-Info
-
+:::info
 The resultant account must meet **ALL** filter criteria to be included in the returned results
-
+:::
 Encoding format for Account data
 
 Values: `base58``base64``base64+zstd``jsonParsed`

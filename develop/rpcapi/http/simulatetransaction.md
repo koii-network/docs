@@ -5,9 +5,9 @@ Simulate sending a transaction
 
 Transaction, as an encoded string.
 
-Info
-
+:::info
 The transaction must have a valid blockhash, but is not required to be signed.
+:::
 
 Configuration object containing the following fields:
 

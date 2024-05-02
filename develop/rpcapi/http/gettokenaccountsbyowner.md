@@ -19,10 +19,9 @@ Request a slice of the account's data.
 *   `length: <usize>` - number of bytes to return
 *   `offset: <usize>` - byte offset from which to start reading
 
-Info
-
+:::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
-
+:::
 Encoding format for Account data
 
 Values: `base58``base64``base64+zstd``jsonParsed`

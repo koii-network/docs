@@ -5,10 +5,9 @@ Returns the leader schedule for an epoch
 
 Fetch the leader schedule for the epoch that corresponds to the provided slot.
 
-Info
-
+:::info
 If unspecified, the leader schedule for the current epoch is fetched
-
+:::
 Configuration object containing the following fields:
 
 Only return results for this validator identity (base-58 encoded)
