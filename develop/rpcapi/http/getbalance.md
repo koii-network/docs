@@ -3,11 +3,17 @@ Returns the lamport balance of the account of provided Pubkey
 
 ### Parameters [#](#parameters)
 
-`string`(required): Pubkey of account to query, as base-58 encoded string
+`string` **required**
 
-`object`(optional): Configuration object containing the following fields:
-- `commitment`(string, optional)
-- `minContextSlot`(number, optional): The minimum slot that the request can be evaluated at
+Pubkey of account to query, as base-58 encoded string
+
+`object` **optional**
+
+Configuration object containing the following fields:
+- commitment `string` **optional**
+- minContextSlot `number` **optional**
+  
+  The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
 
