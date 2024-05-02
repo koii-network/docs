@@ -2,39 +2,38 @@
 Returns identity and transaction information about a confirmed block in the ledger
 
 ### Parameters [#](#parameters)
+u64 **required**
 
 slot number, as `u64` integer
 
+object **optional**
+
 Configuration object containing the following fields:
 
-Default: `finalized`
+  - commitment `string` **optional**
+      - Default: `finalized`  
+        - `processed` is not supported.
+  - encoding `string` **optional**
+      - Default: `json`  
+        encoding format for each returned ransaction
+      - `json``jsonParsed``base58``base64`
 
-*   `processed` is not supported.
+          *   `jsonParsed` attempts to use program-specific instruction parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
+          *   If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
+  - transactionDetails `string` **optional**  
+    Default: `full`  
+    level of transaction detail to return
 
-Default: `json`
+    Values: `full` `accounts` `signatures` `none`
 
-encoding format for each returned Transaction
-
-Values: `json``jsonParsed``base58``base64`
-
-*   `jsonParsed` attempts to use program-specific instruction parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
-*   If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
-
-Default: `full`
-
-level of transaction detail to return
-
-Values: `full``accounts``signatures``none`
-
-*   If `accounts` are requested, transaction details only include signatures and an annotated list of accounts in each transaction.
-*   Transaction metadata is limited to only: fee, err, pre\_balances, post\_balances, pre\_token\_balances, and post\_token\_balances.
-
-the max transaction version to return in responses.
-
-*   If the requested block contains a transaction with a higher version, an error will be returned.
-*   If this parameter is omitted, only legacy transactions will be returned, and a block containing any versioned transaction will prompt the error.
-
-whether to populate the `rewards` array. If parameter not provided, the default includes rewards.
+      *   If `accounts` are requested, transaction details only include signatures and an annotated list of accounts in each transaction.
+      *   Transaction metadata is limited to only: fee, err, pre\_balances, post\_balances, pre\_token\_balances, and post\_token\_balances.
+  - maxSupportedTransactionVersion `number` **optional**  
+    the max transaction version to return in responses.
+      *   If the requested block contains a transaction with a higher version, an error will be returned.
+      *   If this parameter is omitted, only legacy transactions will be returned, and a block containing any versioned transaction will prompt the error.
+  - rewards `bool` **optional** 
+      whether to populate the `rewards` array. If parameter not provided, the default includes rewards.
 
 ### Result [#](#result)
 
