@@ -73,7 +73,11 @@
        "Pubkeys",
        "blockhash",
        "Zstandard",
-       "supermajority"
+       "supermajority",
+       "usize",
+       "zstd",
+       "ransaction",
+       "Unstaked"
   ],
   "caseSensitive": false,
   "flagWords": [
