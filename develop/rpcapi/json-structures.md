@@ -1,4 +1,8 @@
-# Common JSON Data Structures for Koii RPC Methods 
+---
+title: Common JSON Data Structures for Koii RPC Methods 
+image: img/thumbnail.png
+sidebar_label: JSON Structures
+---
 Various Koii RPC methods will return more complex responses as structured JSON objects, filled with specific keyed values.
 
 The most common of these JSON data structures include:

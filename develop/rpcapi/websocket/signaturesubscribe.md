@@ -80,7 +80,7 @@ The following is an example response of a notification from a successfully **pro
 ```
 
 
-The following is an example response of a notification from a successfully **recieved** transaction signature:
+The following is an example response of a notification from a successfully **received** transaction signature:
 
 ```
 {

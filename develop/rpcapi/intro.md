@@ -1,4 +1,8 @@
-# Koii RPC Methods & Documentation 
+---
+title: Koii RPC Methods & Documentation 
+image: img/thumbnail.png
+sidebar_label: Introduction
+---
 Interact with Koii nodes directly with the JSON RPC API via the HTTP and Websocket methods.
 
 Configuring State Commitment [#](#configuring-state-commitment)
