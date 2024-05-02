@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getTokenSupply RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getTokenSupply
 ---  
-getTokenSupply RPC Method 
+
 Returns the total supply of an SPL Token type.
 
 ### Parameters [#](#parameters)

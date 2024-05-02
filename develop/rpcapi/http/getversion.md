@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getVersion RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getVersion
 ---  
-getVersion RPC Method 
+
 Returns the current Koii version running on the node
 
 ### Parameters [#](#parameters)

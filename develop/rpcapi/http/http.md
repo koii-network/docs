@@ -1,4 +1,8 @@
-# Koii RPC HTTP Methods 
+--- 
+title: HTTP Methods
+image: img/thumbnail.png 
+sidebar_label: HTTP Methods
+---  
 Koii nodes accept HTTP requests using the [JSON-RPC 2.0](https://www.jsonrpc.org/specification) specification.
 
 :::info

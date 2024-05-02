@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getVoteAccounts RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getVoteAccounts
 ---  
-getVoteAccounts RPC Method 
+
 Returns the account info and associated stake for all the voting accounts in the current bank.
 
 ### Parameters [#](#parameters)

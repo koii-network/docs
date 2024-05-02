@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getTokenAccountsByDelegate RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getTokenAccountsByDelegate
 ---  
-getTokenAccountsByDelegate RPC Method 
+
 Returns all SPL Token accounts by approved Delegate.
 
 ### Parameters [#](#parameters)

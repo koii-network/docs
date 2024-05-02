@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getSignatureStatuses RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getSignatureStatuses
 ---  
-getSignatureStatuses RPC Method 
+
 Returns the statuses of a list of signatures. Each signature must be a txid, the first signature of a transaction.
 
 :::info

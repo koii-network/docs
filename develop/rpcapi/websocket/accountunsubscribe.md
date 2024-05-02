@@ -1,4 +1,8 @@
-# accountUnsubscribe RPC Method 
+--- 
+title: accountUnsubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: accountUnsubscribe 
+---  
 Unsubscribe from account change notifications
 
 ### Parameters [#](#parameters)

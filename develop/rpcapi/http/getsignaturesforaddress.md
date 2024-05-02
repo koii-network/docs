@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getSignaturesForAddress RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getSignaturesForAddress
 ---  
-getSignaturesForAddress RPC Method 
+
 Returns signatures for confirmed transactions that include the given address in their `accountKeys` list. Returns signatures backwards in time from the provided signature or most recent confirmed block
 
 ### Parameters [#](#parameters)

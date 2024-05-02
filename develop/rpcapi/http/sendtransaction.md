@@ -1,4 +1,9 @@
-# sendTransaction RPC Method 
+--- 
+title: sendTransaction RPC Method 
+image: img/thumbnail.png 
+sidebar_label: sendTransaction 
+---  
+
 Submits a signed transaction to the cluster for processing.
 
 This method does not alter the transaction in any way; it relays the transaction created by clients to the node as-is.

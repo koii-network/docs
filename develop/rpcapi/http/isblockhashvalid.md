@@ -1,4 +1,9 @@
-# isBlockhashValid RPC Method 
+--- 
+title: isBlockhashValid RPC Method 
+image: img/thumbnail.png 
+sidebar_label: isBlockhashValid 
+---  
+
 Returns whether a blockhash is still valid or not
 
 

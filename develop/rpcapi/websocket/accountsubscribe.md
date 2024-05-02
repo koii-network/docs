@@ -1,4 +1,8 @@
-# accountSubscribe RPC Method 
+--- 
+title: accountSubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: accountSubscribe 
+---  
 Subscribe to an account to receive notifications when the lamports or data for a given account public key changes
 
 ### Parameters [#](#parameters)

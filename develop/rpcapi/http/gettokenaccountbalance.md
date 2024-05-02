@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getTokenAccountBalance RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getTokenAccountBalance
 ---  
-getTokenAccountBalance RPC Method 
+
 Returns the token balance of an SPL Token account.
 
 ### Parameters [#](#parameters)

@@ -1,9 +1,9 @@
 --- 
-title: getGenesisHash RPC Method  
+title: getTransaction RPC Method 
 image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
+sidebar_label: getTransaction 
 ---  
-getTransaction RPC Method 
+
 Returns transaction details for a confirmed transaction
 
 ### Parameters [#](#parameters)

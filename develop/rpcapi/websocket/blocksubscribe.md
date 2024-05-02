@@ -1,4 +1,8 @@
-# blockSubscribe RPC Method 
+--- 
+title: blockSubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: blockSubscribe
+---  
 Subscribe to receive notification anytime a new block is `confirmed` or `finalized`.
 
 Unstable Method

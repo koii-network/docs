@@ -1,4 +1,9 @@
-# minimumLedgerSlot RPC Method 
+--- 
+title: minimumLedgerSlot RPC Method 
+image: img/thumbnail.png 
+sidebar_label: minimumLedgerSlot  
+---  
+
 Returns the lowest slot that the node has information about in its ledger.  
 
 :::info

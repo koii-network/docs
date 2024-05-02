@@ -1,4 +1,8 @@
-# logsUnsubscribe RPC Method 
+--- 
+title: logsUnsubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: logsUnsubscribe
+---  
 Unsubscribe from transaction logging
 
 ### Parameters [#](#parameters)

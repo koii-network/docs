@@ -1,4 +1,8 @@
-# blockUnsubscribe RPC Method 
+--- 
+title: blockUnsubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: blockUnsubscribe
+---  
 Unsubscribe from block notifications
 
 ### Parameters 

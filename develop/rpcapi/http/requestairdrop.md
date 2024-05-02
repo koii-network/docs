@@ -1,4 +1,9 @@
-# requestAirdrop RPC Method 
+--- 
+title: requestAirdrop RPC Method 
+image: img/thumbnail.png 
+sidebar_label: requestAirdrop 
+---  
+
 
 Requests an airdrop of lamports to a Pubkey
 

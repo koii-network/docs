@@ -1,4 +1,8 @@
-# programSubscribe RPC Method 
+--- 
+title: programSubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: programSubscribe
+---  
 Subscribe to a program to receive notifications when the lamports or data for an account owned by the given program changes
 
 ### Parameters [#](#parameters)

@@ -1,4 +1,8 @@
-# programUnsubscribe RPC Method 
+--- 
+title: programUnsubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: programUnsubscribe
+---  
 Unsubscribe from program-owned account change notifications
 
 ### Parameters [#](#parameters)

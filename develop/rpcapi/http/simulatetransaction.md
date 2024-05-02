@@ -1,4 +1,8 @@
-# simulateTransaction RPC Method 
+--- 
+title: simulateTransaction RPC Method 
+image: img/thumbnail.png 
+sidebar_label: simulateTransaction
+---  
 Simulate sending a transaction
 
 ### Parameters [#](#parameters)

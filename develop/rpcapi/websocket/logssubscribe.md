@@ -1,4 +1,8 @@
-# logsSubscribe RPC Method 
+--- 
+title: logsSubscribe RPC Method 
+image: img/thumbnail.png 
+sidebar_label: logsSubscribe
+---  
 Subscribe to transaction logging
 
 ### Parameters [#](#parameters)
