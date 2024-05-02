@@ -1,9 +1,9 @@
 # slotsUpdatesSubscribe RPC Method 
 Subscribe to receive a notification from the validator on a variety of updates on every slot
 
-Caution
-
+:::warning
 This subscription is unstable. The format of this subscription may change in the future, and may not always be supported.
+::: 
 
 ### Parameters [#](#parameters)
 

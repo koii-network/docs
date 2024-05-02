@@ -1,19 +1,20 @@
 # signatureSubscribe RPC Method 
 Subscribe to receive a notification when the transaction with the given signature reaches the specified commitment level.
 
-Caution
-
+:::warning
 This is a subscription to a single notification. It is automatically cancelled by the server once the notification, `signatureNotification`, is sent by the RPC.
-
+:::
 ### Parameters [#](#parameters)
-
+`string` **required**  
 transaction signature, as base-58 encoded string
 
 :::info
 The transaction signature must be the first signature from the transaction (see transaction id for more details).
 :::
+`object` **optional**    
 Configuration object containing the following fields:
-
+- commitment `string` **optional** 
+- enableReceivedNotification `bool` **optional**  
 Whether or not to subscribe for notifications when signatures are received by the RPC, in addition to when they are processed.
 
 ### Result [#](#result)
