@@ -221,6 +221,7 @@ const sidebars = {
         "rpcapi/http/getbalance",
         "rpcapi/http/getaccountinfo",
         "rpcapi/http/getblock",
+        "rpcapi/http/getblockcommitment",
         "rpcapi/http/getblockproduction",
         "rpcapi/http/getblocktime",
         "rpcapi/http/getblocks",
