@@ -23,4 +23,13 @@ export const cardImages = {
   discord:
   require(`@site/faq/questions/img/discord.svg`)
   .default,
+  discordsmall:
+  require(`@site/concepts/introduction/img/discord.svg`)
+  .default,
+  community:
+  require(`@site/concepts/introduction/img/community.svg`)
+  .default,
+  twitter:
+  require(`@site/concepts/introduction/img/twitter.svg`)
+  .default,
 };

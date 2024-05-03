@@ -70,6 +70,7 @@
       "hubspot",
        "JSAPI",
        "koiinode",
+
        "Pubkeys",
        "blockhash",
        "Zstandard",
@@ -77,7 +78,8 @@
        "usize",
        "zstd",
        "ransaction",
-       "Unstaked"
+       "Unstaked",
+       "discordsmall"
   ],
   "caseSensitive": false,
   "flagWords": [
