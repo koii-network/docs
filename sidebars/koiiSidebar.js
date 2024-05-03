@@ -57,6 +57,16 @@ const sidebars = {
     },
     "early-adopters/ambassador-program",
     "ways-to-get-koii/grants-program",
+    {
+      type: "html",
+      value: "Add $KOII to an Exchange",
+      className: "sidebar-title top-margin",
+    },
+    "the-koii-token/add-koii-to-exchange/validator-setup",
+    "the-koii-token/add-koii-to-exchange/managing-transactions",
+    "the-koii-token/add-koii-to-exchange/prioritization-fees",
+    "the-koii-token/add-koii-to-exchange/spl-tokens",
+    "the-koii-token/add-koii-to-exchange/testing",
   ],
 };
 

@@ -15,7 +15,7 @@
     "filetypes",
     "en_GB"
   ],
-  
+
   "words": [
       "koii",
       "ipfs",
@@ -23,6 +23,7 @@
       "finnie",
       "spheron",
       "pubkey",
+      "pubkeys",
       "keypair",
       "devnet",
       "arweave",
@@ -69,7 +70,11 @@
       "hiddentreasure",
       "hubspot",
        "JSAPI",
-       "koiinode"
+       "koiinode",
+       "blockhash",
+       "rustup",
+       "stablecoins",
+       "Twillio"
   ],
   "caseSensitive": false,
   "flagWords": [
