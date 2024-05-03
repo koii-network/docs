@@ -132,7 +132,7 @@ const TasksComponent = () => {
           ))}
         </ul>
       ) : (
-        <p>No tasks found.</p>
+        <p>Error. Please Retry! Thank you! </p>
       )}
     </div>
   );
