@@ -70,6 +70,15 @@
       "hubspot",
        "JSAPI",
        "koiinode",
+
+       "Pubkeys",
+       "blockhash",
+       "Zstandard",
+       "supermajority",
+       "usize",
+       "zstd",
+       "ransaction",
+       "Unstaked",
        "discordsmall"
   ],
   "caseSensitive": false,
