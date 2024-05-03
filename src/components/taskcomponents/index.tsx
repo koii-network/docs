@@ -109,8 +109,14 @@ const TasksComponent = () => {
   };
 
   if (isLoading) {
-    return <p>Loading tasks... Please stay in this page for a while...
-    </p>;
+    return (
+        <div>
+        <h1>Task List</h1>
+    
+    <p>Loading tasks from remote RPC...It may take several minutes...</p>
+    <p>You can also download the node to retrieve the task IDs. </p>
+    </div>
+    );
   }
 
   return (
