@@ -1,0 +1,57 @@
+--- 
+title: voteSubscribe RPC Method
+image: img/thumbnail.png 
+sidebar_label: voteSubscribe
+---    
+Subscribe to receive notification anytime a new vote is observed in gossip. These votes are pre-consensus therefore there is no guarantee these votes will enter the ledger.
+
+Unstable Method
+
+This subscription is unstable and only available if the validator was started with the `--rpc-pubsub-enable-vote-subscription` flag. The format of this subscription may change in the future.
+
+### Parameters [#](#parameters)
+
+**None**
+
+### Result [#](#result)
+
+`<integer>` - subscription id (needed to unsubscribe)
+
+### Code sample [#](#code-sample)
+
+```
+{ "jsonrpc": "2.0", "id": 1, "method": "voteSubscribe" }
+```
+
+
+### Response [#](#response)
+
+```
+{ "jsonrpc": "2.0", "result": 0, "id": 1 }
+```
+
+
+#### Notification Format: [#](#notification-format)
+
+The notification will be an object with the following fields:
+
+*   `hash: <string>` - The vote hash
+*   `slots: <array>` - The slots covered by the vote, as an array of u64 integers
+*   `timestamp: <i64|null>` - The timestamp of the vote
+*   `signature: <string>` - The signature of the transaction that contained this vote
+*   `votePubkey: <string>` - The public key of the vote account, as base-58 encoded string
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "voteNotification",
+  "params": {
+    "result": {
+      "hash": "8Rshv2oMkPu5E4opXTRyuyBeZBqQ4S477VG26wUTFxUM",
+      "slots": [1, 2],
+      "timestamp": null
+    },
+    "subscription": 0
+  }
+}
+```
