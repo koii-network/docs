@@ -121,7 +121,7 @@ const TasksComponent = () => {
         <div>
         <h1>Task List</h1>
     
-    <p>Loading tasks from remote RPC...It may take several minutes...</p>
+    <p>Loading tasks from Koii K2-Validator chain...</p>
     <p>You can also download the node to retrieve the task IDs. </p>
     </div>
     );
@@ -135,12 +135,13 @@ const TasksComponent = () => {
           {tasks.map((task, index) => (
             <li key={index}>
               <strong>Task Name:</strong> {task.data.taskName} <br />
-              <strong>Task ID:</strong> {task.publicKey}
+              <strong>Task ID:</strong> {task.publicKey}<br />
+              <strong>Task Minimum Stake Amount: </strong> {task.data.minimumStakeAmount/1000000000} KOII
             </li>
           ))}
         </ul>
       ) : (
-        <p>Error. Please Retry! Thank you! </p>
+        <p>Error. Please Retry. </p>
       )}
     </div>
   );
