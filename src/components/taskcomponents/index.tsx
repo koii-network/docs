@@ -136,6 +136,7 @@ const TasksComponent = () => {
             <li key={index}>
               <strong>Task Name:</strong> {task.data.taskName} <br />
               <strong>Task ID:</strong> {task.publicKey}
+              <strong>Task Minimum Stake Amount: task.data.minimumStakeAmount </strong>
             </li>
           ))}
         </ul>
