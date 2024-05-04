@@ -68,8 +68,16 @@ const TasksComponent = () => {
 
   async function fetchAllTasks(): Promise<any> {
     console.log("Fetching start time:", new Date());
-    let taskAccountInfo = await connection.getProgramAccounts(
-      new PublicKey("Koiitask22222222222222222222222222222222222"),
+    const taskAccountInfo = await connection.getProgramAccounts(
+      new PublicKey("Koiitask22222222222222222222222222222222222")
+      , {
+        filters: [{
+          memcmp: {
+            offset: 0, // offset where the whitelisted bytes start
+            bytes: 'aRN1MbEZhbr2W97MTP3RhQjjqHgoZN' // Your byte string needs to be base58 or hex encoded
+          }
+        }]
+      }
     );
     console.log("Fetching time:", new Date());
     console.log(taskAccountInfo);
