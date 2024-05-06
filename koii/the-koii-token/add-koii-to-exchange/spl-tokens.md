@@ -12,7 +12,7 @@ sidebar_label: SPL Tokens
 
 [SPL Token](https://spl.solana.com/token) is the standard for wrapped/synthetic token creation and exchange on the Solana blockchain.
 
-The SPL Token workflow is similar to that of native SOL tokens, but there are a few differences which will be discussed in this section.
+The SPL Token workflow is similar to that of native KOII tokens, but there are a few differences which will be discussed in this section.
 
 ## Token Mints
 
@@ -25,19 +25,19 @@ SPL Token accounts are queried and modified using the `spl-token` command line u
 
 `spl-token` is distributed from Rust [crates.io](https://crates.io/crates/spl-token) via the Rust `cargo` command line utility. The latest version of `cargo` can be installed using a handy one-liner for your platform at [rustup.rs](https://rustup.rs). Once `cargo` is installed, `spl-token` can be obtained with the following command:
 
-```console
+```bash
     cargo install spl-token-cli
 ```
 
 You can then check the installed version to verify.
 
-```console
+```bash
     spl-token --version
 ```
 
 Which should result in something like
 
-```console
+```bash
     spl-token-cli 2.0.1
 ```
 
@@ -47,7 +47,7 @@ SPL Token accounts carry additional requirements that native System Program acco
 
 <!-- TODO: WHAT IS THE RENT EXEMPT REQUIREMENT FOR SPL TOKENS? -->
 1. SPL Token accounts must be created before an amount of tokens can be deposited. Token accounts can be created explicitly with the `spl-token create-account` command, or implicitly by the `spl-token transfer --fund-recipient ...` command.
-2. SPL Token accounts must remain [rent-exempt](/concepts/glossary#rent-exemption) for the duration of their existence and therefore require a small amount of native SOL tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 SOL (2,039,280 lamports).
+2. SPL Token accounts must remain [rent-exempt](/concepts/glossary#rent-exemption) for the duration of their existence and therefore require a small amount of native KOII tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 KOII (2,039,280 Roe).
 
 ### Command Line
 
@@ -56,19 +56,19 @@ To create an SPL Token account with the following properties:
 1. Associated with the given mint
 2. Owned by the funding account's keypair
 
-```console
+```bash
     spl-token create-account <TOKEN_MINT_ADDRESS>
 ```
 
 ### Example
 
-```console
+```bash
     spl-token create-account AkUFCWTXb3w9nY2n6SFJvBV6VwvFUCe4KBMCcgLsa2ir
 ```
 
 Giving an output similar to:
 
-```console
+```bash
     Creating account 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Signature: 4JsqZEPra2eDTHtHpB4FMWSfk3UgcCVmkKkP7zESZeMrKmFFkDkNd91pKP3vPVVZZPiu5XxyJwS73Vi5WsZL88D7
 ```
@@ -79,13 +79,13 @@ Or to create an SPL Token account with a specific keypair:
     solana-keygen new -o token-account.json
 ```
 
-```console
+```bash
     spl-token create-account AkUFCWTXb3w9nY2n6SFJvBV6VwvFUCe4KBMCcgLsa2ir token-account.json
 ```
 
 Giving an output similar to:
 
-```console
+```bash
     Creating account 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Signature: 4JsqZEPra2eDTHtHpB4FMWSfk3UgcCVmkKkP7zESZeMrKmFFkDkNd91pKP3vPVVZZPiu5XxyJwS73Vi5WsZL88D7
 ```
@@ -94,19 +94,19 @@ Giving an output similar to:
 
 ### Command Line
 
-```console
+```bash
     spl-token balance <TOKEN_ACCOUNT_ADDRESS>
 ```
 
 ### Example
 
-```console
+```bash
     spl-token balance 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
 ```
 
 Giving an output similar to:
 
-```console
+```bash
     0
 ```
 
@@ -118,19 +118,19 @@ The recipient address however can be a normal wallet account. If an associated t
 
 ### Command Line
 
-```console
+```bash
     spl-token transfer <SENDER_ACCOUNT_ADDRESS> <AMOUNT> <RECIPIENT_WALLET_ADDRESS> --fund-recipient
 ```
 
 ### Example
 
-```console
+```bash
     spl-token transfer 6B199xxzw3PkAm25hGJpjj3Wj3WNYNHzDAnt1tEqg5BN 1
 ```
 
 Giving an output similar to:
 
-```console
+```bash
     6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Transfer 1 tokens
       Sender: 6B199xxzw3PkAm25hGJpjj3Wj3WNYNHzDAnt1tEqg5BN
@@ -142,7 +142,7 @@ Giving an output similar to:
 
 <!-- TODO: NO DOCS ON ASSOCIATED TOKEN ACCOUNT -->
 <!-- TODO: REPLACE ALL INTERNAL LINKS TO /docs/more/exchange -->
-Since each `(wallet, mint)` pair requires a separate account on chain. It is recommended that the addresses for these accounts be derived from SOL deposit wallets using the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) scheme and that _only_ deposits from ATA addresses be accepted.
+Since each `(wallet, mint)` pair requires a separate account on chain. It is recommended that the addresses for these accounts be derived from KOII deposit wallets using the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) scheme and that _only_ deposits from ATA addresses be accepted.
 
 Monitoring for deposit transactions should follow the [block polling](/docs/more/exchange#poll-for-blocks) method described above. Each new block should be scanned for successful transactions referencing user token-account derived addresses. The `preTokenBalance` and `postTokenBalance` fields from the transaction's metadata must then be used to determine the effective balance change. These fields will identify the token mint and account owner (main wallet address) of the affected account.
 
@@ -150,15 +150,15 @@ Note that if a receiving account is created during the transaction, it will have
 
 ## Withdrawing
 
-The withdrawal address a user provides must be that of their SOL wallet.
+The withdrawal address a user provides must be that of their KOII wallet.
 
-Before executing a withdrawal [transfer](/docs/more/exchange#token-transfers), the exchange should check the address as [described above](/docs/more/exchange#validating-user-supplied-account-addresses-for-withdrawals). Additionally this address must be owned by the System Program and have no account data. If the address has no SOL balance, user confirmation should be obtained before proceeding with the withdrawal. All other withdrawal addresses must be rejected.
+Before executing a withdrawal [transfer](/docs/more/exchange#token-transfers), the exchange should check the address as [described above](/docs/more/exchange#validating-user-supplied-account-addresses-for-withdrawals). Additionally this address must be owned by the System Program and have no account data. If the address has no KOII balance, user confirmation should be obtained before proceeding with the withdrawal. All other withdrawal addresses must be rejected.
 
-From the withdrawal address, the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) for the correct mint is derived and the transfer issued to that account via a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. Note that it is possible that the ATA address does not yet exist, at which point the exchange should fund the account on behalf of the user. For SPL Token accounts, funding the withdrawal account will require 0.00203928 SOL (2,039,280 lamports).
+From the withdrawal address, the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) for the correct mint is derived and the transfer issued to that account via a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. Note that it is possible that the ATA address does not yet exist, at which point the exchange should fund the account on behalf of the user. For SPL Token accounts, funding the withdrawal account will require 0.00203928 KOII (2,039,280 Roe).
 
 Template `spl-token transfer` command for a withdrawal:
 
-```console
+```bash
     spl-token transfer --fund-recipient <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
@@ -183,12 +183,12 @@ If your exchange supports SPL Token, there isn't a lot more work required to sup
 <!-- TODO: PROGRAM ID? -->
 - RPC indexes SPL Token-2022 accounts, but they must be queried separately with program id `TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb`
 
-The Associated Token Account works the same way, and properly calculates the required deposit amount of SOL for the new account.
+The Associated Token Account works the same way, and properly calculates the required deposit amount of KOII for the new account.
 
 <!-- TODO: CORRECT RENT EXEMPTION AMOUNTS? -->
-Because of extensions, however, accounts may be larger than 165 bytes, so they may require more than 0.00203928 SOL to fund.
+Because of extensions, however, accounts may be larger than 165 bytes, so they may require more than 0.00203928 KOII to fund.
 
-For example, the Associated Token Account program always includes the "immutable owner" extension, so accounts take a minimum of 170 bytes, which requires 0.00207408 SOL.
+For example, the Associated Token Account program always includes the "immutable owner" extension, so accounts take a minimum of 170 bytes, which requires 0.00207408 KOII.
 
 ## Extension-Specific Considerations
 
@@ -196,7 +196,7 @@ The previous section outlines the most basic support for SPL Token-2022. Since t
 
 It is possible to see all extensions on a mint or token account:
 
-```console
+```bash
     spl-token display <account address>
 ```
 
@@ -208,7 +208,7 @@ If your exchange transfers these tokens, beware that they may not all arrive at 
 
 It is possible to specify the expected fee during a transfer to avoid any surprises:
 
-```console
+```bash
     spl-token transfer --expected-fee <fee amount> --fund-recipient <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
@@ -220,7 +220,7 @@ When a mint is closed, there may still be empty token accounts in existence, and
 
 It is safe to simply close these token accounts:
 
-```console
+```bash
     spl-token close --address <account address>
 ```
 
@@ -232,19 +232,19 @@ Exchanges may configure token accounts to send and receive confidential transfer
 
 To enable confidential transfers, the account must be configured for it:
 
-```console
+```bash
     spl-token configure-confidential-transfer-account --address <account address>
 ```
 
 And to transfer:
 
-```console
+```bash
     spl-token transfer --confidential <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
 During a confidential transfer, the `preTokenBalance` and `postTokenBalance` fields will show no change. In order to sweep deposit accounts, you must decrypt the new balance to withdraw the tokens:
 
-```console
+```bash
     spl-token apply-pending-balance --address <account address>
     spl-token withdraw-confidential-tokens --address <account address> <amount or ALL>
 ```
@@ -273,7 +273,7 @@ Since the Solana runtime requires all accounts to be explicitly passed to a prog
 
 The CLI and instruction creators such as `createTransferCheckedWithTransferHookInstruction` add the extra accounts automatically, but the additional accounts may also be specified explicitly:
 
-```console
+```bash
     spl-token transfer --transfer-hook-account <pubkey:role> --transfer-hook-account <pubkey:role> ...
 ```
 
@@ -283,6 +283,6 @@ Users may configure their token accounts to require a memo on transfer.
 
 Exchanges may need to prepend a memo instruction before transferring tokens back to users, or they may require users to prepend a memo instruction before sending to the exchange:
 
-```console
+```bash
     spl-token transfer --with-memo <memo text> <exchange token account> <withdrawal amount> <withdrawal address>
 ```

@@ -6,17 +6,17 @@ sidebar_label: Prioritization Fees
 ---
 <!-- TODO: write description -->
 
-<!-- TODO: NO DOCS ON PRIORITIZATION FEES -->
+:::warning
+Failure to implement these instructions may result in network disruptions and dropped transactions. It is strongly recommended that every exchange supporting Koii make use of priority fees to avoid disruption.
+:::
+
+<!-- TODO: NO DOCS ON PRIORITIZATION FEES https://solana.com/developers/guides/advanced/how-to-use-priority-fees -->
 In periods of high demand, it’s possible for a transaction to expire before a validator has included such transactions in their block because they chose other transactions with higher economic value. Valid Transactions on Solana may be delayed or dropped if Prioritization Fees are not implemented properly.
 
 <!-- TODO: DOESN'T SEEM TO BE ANYTHING ON BASE TRANSACTION FEES -->
 [Prioritization Fees](/docs/terminology#prioritization-fee) are additional fees that can be added on top of the [base Transaction Fee](/docs/core/fees#transaction-fees) to ensure transaction inclusion within blocks and in these situations and help ensure deliverability.
 
 These priority fees are added to transaction by adding a special Compute Budget instruction that sets the desired priority fee to be paid.
-
-#### Important Note
-
-Failure to implement these instructions may result in network disruptions and dropped transactions. It is strongly recommended that every exchange supporting Solana make use of priority fees to avoid disruption.
 
 ## What is a Prioritization Fee?
 
@@ -97,7 +97,7 @@ You can get the CU consumed by a transaction by sending the transaction on a dif
 ```
 
 ## Prioritization Fees And Durable Nonces
-<!-- TODO: WHAT IS A NONCE ACCOUNT AND WHAT IS A DURABLE NONCE? -->
+
 If your setup uses Durable Nonce Transactions, it is important to properly implement Prioritization Fees in combination with Durable Transaction Nonces to ensure successful transactions. Failure to do so will cause intended Durable Nonce transactions not to be detected as such.
 
 If you ARE using Durable Transaction Nonces, the `AdvanceNonceAccount` instruction MUST be specified FIRST in the instructions list, even when the compute budget instructions are used to specify priority fees.

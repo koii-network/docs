@@ -1,18 +1,17 @@
 ---
 title: Managing Transactions
-description: WRITE THIS
+description: Learn how to manage deposits and withdrawals of KOII on a cryptocurrency exchange.
 image: img/thumbnail.png
 sidebar_label: Managing Transactions
 ---
-<!-- TODO: write description -->
 
 ## Setting up Deposit Accounts
 
-Solana accounts do not require any on-chain initialization; once they contain some SOL, they exist. To set up a deposit account for your exchange, simply generate a Solana keypair using any of our [wallet tools](/develop/command-line-tool/koii-cli/create-wallet).
+Koii accounts do not require any on-chain initialization; once they contain some KOII, they exist. To set up a deposit account for your exchange, simply generate a Koii keypair using any of our [wallet tools](/develop/command-line-tool/koii-cli/create-wallet).
 
 We recommend using a unique deposit account for each of your users.
 
-Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/concepts/settlement-layer/rent) in SOL. In order to find the minimum rent-exempt balance for your deposit accounts, query the [`getMinimumBalanceForRentExemption` endpoint](/develop/rpcapi/http/getminimumbalanceforrentexemption)
+Koii accounts must be made rent-exempt by containing 2-years worth of [rent](/concepts/settlement-layer/rent) in KOII. In order to find the minimum rent-exempt balance for your deposit accounts, query the [`getMinimumBalanceForRentExemption` endpoint](/develop/rpcapi/http/getminimumbalanceforrentexemption)
 
 ### Request
 
@@ -34,11 +33,11 @@ Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/
 ## Offline Accounts
 
 <!-- TODO: NO DOCS ON OFFLINE SIGNING  -->
-You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move SOL to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing).
+You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move KOII to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing).
 
 ## Listening for Deposits
 
-When a user wants to deposit SOL into your exchange, instruct them to send a transfer to the appropriate deposit address.
+When a user wants to deposit KOII into your exchange, instruct them to send a transfer to the appropriate deposit address.
 
 ## Versioned Transaction Migration
 
@@ -169,7 +168,7 @@ For each block, request its contents with a [`getBlock`](/develop/rpcapi/http/ge
     }
 ```
 <!-- TODO: ADD ROE TO GLOSSARY -->
-The `preBalances` and `postBalances` fields allow you to track the balance changes in every account without having to parse the entire transaction. They list the starting and ending balances of each account in [lamports](/docs/terminology#lamport), indexed to the `accountKeys` list. For example, if the deposit address of interest is `G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o`, this transaction represents a transfer of 1040000000 - 1030000000 = 10,000,000 lamports = 0.01 SOL
+The `preBalances` and `postBalances` fields allow you to track the balance changes in every account without having to parse the entire transaction. They list the starting and ending balances of each account in [lamports](/docs/terminology#lamport), indexed to the `accountKeys` list. For example, if the deposit address of interest is `G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o`, this transaction represents a transfer of 1040000000 - 1030000000 = 10,000,000 Roe = 0.01 KOII
 
 If you need more information about the transaction type or other specifics, you can request the block from RPC in binary format, and parse it using either our [Rust SDK](https://github.com/solana-labs/solana) or [Javascript SDK](https://github.com/solana-labs/solana-web3.js).
 
@@ -359,7 +358,7 @@ For greater flexibility, you can submit withdrawal transfers asynchronously. In 
 <!-- TODO: DON'T SEE ANYTHING ABOUT RECENT BLOCKHASH. WE DON'T SEEM TO HAVE AN EQUIVALENT TO SOLANA'S TRANSACTIONS PAGE -->
 **Note:** Each transaction contains a [recent blockhash](/docs/core/transactions#recent-blockhash) to indicate its liveness. It is **critical** to wait until this blockhash expires before retrying a withdrawal transfer that does not appear to have been confirmed or finalized by the cluster. Otherwise, you risk a double spend. See more on [blockhash expiration](/docs/more/exchange#blockhash-expiration) below.
 
-<!-- TODO: THE SOLANA DOCS ARE MAKING REFERENCE TO A DEPRECATED FUNCTION (IT APPEARS TO BE DEPRECATED IN KOII TOO), DOES IT NEED TO BE UPDATED TO SOMETHING NEW? -->
+<!-- TODO: THE SOLANA DOCS ARE MAKING REFERENCE TO A DEPRECATED ENDPOINT (IT APPEARS TO BE DEPRECATED IN KOII TOO), DOES IT NEED TO BE UPDATED TO SOMETHING NEW? -->
 First, get a recent blockhash using the [`getFees`](/docs/rpc/deprecated/getfees) endpoint or the CLI command:
 
 ```bash
@@ -376,7 +375,7 @@ You can also build, sign, and serialize the transaction manually, and fire it of
 
 ## Transaction Confirmations & Finality
 
-<!-- TODO: WE DON'T HAVE DEFINITIONS FOR A LOT OF THE TERMINOLOGY IN THE SOLANA DOCS. WOULD BE A GOOD USE OF THE DOCUSAURUS TERMINOLOGY PLUGIN -->
+<!-- TODO: WE DON'T HAVE DEFINITIONS FOR A LOT OF THE TERMINOLOGY IN THE SOLANA DOCS.   WOULD BE REALLY GOOD TO HAVE AUTOMATIC TOOLTIPS -->
 Get the status of a batch of transactions using the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatuses) JSON-RPC endpoint. The `confirmations` field reports how many [confirmed blocks](/docs/terminology#confirmed-block) have elapsed since the transaction was processed. If `confirmations: null`, it is [finalized](/docs/terminology#finality).
 
 ### Request
@@ -428,7 +427,7 @@ Get the status of a batch of transactions using the [`getSignatureStatuses`](/de
 ```
 
 ### Blockhash Expiration
-<!-- TODO: ANOTHER DEPRECATED FUNCTION -->
+<!-- TODO: ANOTHER DEPRECATED ENDPOINT -->
 You can check whether a particular blockhash is still valid by sending a [`getFeeCalculatorForBlockhash`](/docs/rpc/deprecated/getfeecalculatorforblockhash) request with the blockhash as a parameter. If the response value is `null`, the blockhash is expired, and the withdrawal transaction using that blockhash should never succeed.
 
 ## Validating User-supplied Account Addresses for Withdrawals
@@ -511,7 +510,7 @@ The following code sample assumes you're using the Maven.
 
 ## Minimum Deposit & Withdrawal Amounts
 
-Every deposit and withdrawal of SOL must be greater or equal to the minimum rent-exempt balance for the account at the wallet address (a basic SOL account holding no data), currently: 0.000890880 SOL
+Every deposit and withdrawal of KOII must be greater or equal to the minimum rent-exempt balance for the account at the wallet address (a basic KOII account holding no data), currently: 0.000890880 KOII
 
 Similarly, every deposit account must contain at least this balance.
 
