@@ -1,9 +1,9 @@
---- 
+---
 title: getInflationReward RPC Method
-image: img/thumbnail.png 
-sidebar_label: getInflationReward 
----  
- 
+image: img/thumbnail.png
+sidebar_label: getInflationReward
+---
+
 Returns the inflation / staking reward for a list of addresses for an epoch
 
 ### Parameters [#](#parameters)
@@ -12,10 +12,10 @@ An array of addresses to query, as base-58 encoded strings
 
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-  An epoch for which the reward occurs. If omitted, the previous epoch will be used  
-- minContextSlot `number` **optional**  
-  The minimum slot that the request can be evaluated at  
+- commitment `string` **optional**
+  An epoch for which the reward occurs. If omitted, the previous epoch will be used
+- minContextSlot `number` **optional**
+  The minimum slot that the request can be evaluated at
 
 ### Result [#](#result)
 
@@ -23,8 +23,8 @@ The result field will be a JSON array with the following fields:
 
 *   `epoch: <u64>` - epoch for which reward occurred
 *   `effectiveSlot: <u64>` - the slot in which the rewards are effective
-*   `amount: <u64>` - reward amount in lamports
-*   `postBalance: <u64>` - post balance of the account in lamports
+*   `amount: <u64>` - reward amount in roe
+*   `postBalance: <u64>` - post balance of the account in roe
 *   `commission: <u8|undefined>` - vote account commission when the reward was credited
 
 ### Code sample [#](#code-sample)

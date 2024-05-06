@@ -1,19 +1,19 @@
---- 
-title: accountSubscribe RPC Method 
-image: img/thumbnail.png 
-sidebar_label: accountSubscribe 
----  
-Subscribe to an account to receive notifications when the lamports or data for a given account public key changes
+---
+title: accountSubscribe RPC Method
+image: img/thumbnail.png
+sidebar_label: accountSubscribe
+---
+Subscribe to an account to receive notifications when the roe or data for a given account public key changes
 
 ### Parameters [#](#parameters)
-`string` **required**  
+`string` **required**
 Account Pubkey, as base-58 encoded string
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-- encoding `string` **optional**  
-Encoding format for Account data  
-Values: `base58``base64``base64+zstd``jsonParsed`  
+- commitment `string` **optional**
+- encoding `string` **optional**
+Encoding format for Account data
+Values: `base58``base64``base64+zstd``jsonParsed`
   - `base58` is slow.
   - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data
   - If `jsonParsed` is requested but a parser cannot be found, the field falls back to binary encoding, detectable when the `data`field is type`string`.
@@ -68,7 +68,7 @@ Base58 encoding:
           "base58"
         ],
         "executable": false,
-        "lamports": 33594,
+        "roe": 33594,
         "owner": "11111111111111111111111111111111",
         "rentEpoch": 635,
         "space": 80
@@ -100,13 +100,13 @@ Parsed-JSON encoding:
               "authority": "Bbqg1M4YVVfbhEzwA9SpC9FhsaG83YMTYoR4a8oTDLX",
               "blockhash": "LUaQTmM7WbMRiATdMMHaRGakPtCkc2GHtH57STKXs6k",
               "feeCalculator": {
-                "lamportsPerSignature": 5000
+                "roePerSignature": 5000
               }
             }
           }
         },
         "executable": false,
-        "lamports": 33594,
+        "roe": 33594,
         "owner": "11111111111111111111111111111111",
         "rentEpoch": 635,
         "space": 80

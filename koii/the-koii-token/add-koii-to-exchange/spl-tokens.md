@@ -47,7 +47,7 @@ SPL Token accounts carry additional requirements that native System Program acco
 
 <!-- TODO: WHAT IS THE RENT EXEMPT REQUIREMENT FOR SPL TOKENS? -->
 1. SPL Token accounts must be created before an amount of tokens can be deposited. Token accounts can be created explicitly with the `spl-token create-account` command, or implicitly by the `spl-token transfer --fund-recipient ...` command.
-2. SPL Token accounts must remain [rent-exempt](/concepts/glossary#rent-exemption) for the duration of their existence and therefore require a small amount of native SOL tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 SOL (2,039,280 lamports).
+2. SPL Token accounts must remain [rent-exempt](/concepts/glossary#rent-exemption) for the duration of their existence and therefore require a small amount of native SOL tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 SOL (2,039,280 roe).
 
 ### Command Line
 
@@ -154,7 +154,7 @@ The withdrawal address a user provides must be that of their SOL wallet.
 
 Before executing a withdrawal [transfer](/docs/more/exchange#token-transfers), the exchange should check the address as [described above](/docs/more/exchange#validating-user-supplied-account-addresses-for-withdrawals). Additionally this address must be owned by the System Program and have no account data. If the address has no SOL balance, user confirmation should be obtained before proceeding with the withdrawal. All other withdrawal addresses must be rejected.
 
-From the withdrawal address, the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) for the correct mint is derived and the transfer issued to that account via a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. Note that it is possible that the ATA address does not yet exist, at which point the exchange should fund the account on behalf of the user. For SPL Token accounts, funding the withdrawal account will require 0.00203928 SOL (2,039,280 lamports).
+From the withdrawal address, the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) for the correct mint is derived and the transfer issued to that account via a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. Note that it is possible that the ATA address does not yet exist, at which point the exchange should fund the account on behalf of the user. For SPL Token accounts, funding the withdrawal account will require 0.00203928 SOL (2,039,280 roe).
 
 Template `spl-token transfer` command for a withdrawal:
 

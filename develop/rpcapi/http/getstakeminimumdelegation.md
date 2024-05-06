@@ -1,21 +1,21 @@
---- 
-title: getStakeMinimumDelegation RPC Method 
-image: img/thumbnail.png 
-sidebar_label: getStakeMinimumDelegation 
----  
+---
+title: getStakeMinimumDelegation RPC Method
+image: img/thumbnail.png
+sidebar_label: getStakeMinimumDelegation
+---
 
-Returns the stake minimum delegation, in lamports.
+Returns the stake minimum delegation, in roe.
 
-### Parameters [#](#parameters)  
-`object` **optional**    
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
+### Parameters [#](#parameters)
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
 
 ### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to:
 
-*   `<u64>` - The stake minimum delegation, in lamports
+*   `<u64>` - The stake minimum delegation, in roe
 
 ### Code sample [#](#code-sample)
 

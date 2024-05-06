@@ -1,25 +1,25 @@
---- 
-title: getSupply RPC Method 
-image: img/thumbnail.png 
+---
+title: getSupply RPC Method
+image: img/thumbnail.png
 sidebar_label: getSupply
----  
+---
 
 Returns information about the current supply.
 
-### Parameters [#](#parameters)  
-`object` **optional**  
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
-- excludeNonCirculatingAccountsList `bool` **optional**  
+### Parameters [#](#parameters)
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
+- excludeNonCirculatingAccountsList `bool` **optional**
 exclude non circulating accounts list from response
 
 ### Result [#](#result)
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
-*   `total: <u64>` - Total supply in lamports
-*   `circulating: <u64>` - Circulating supply in lamports
-*   `nonCirculating: <u64>` - Non-circulating supply in lamports
+*   `total: <u64>` - Total supply in roe
+*   `circulating: <u64>` - Circulating supply in roe
+*   `nonCirculating: <u64>` - Non-circulating supply in roe
 *   `nonCirculatingAccounts: <array>` - an array of account addresses of non-circulating accounts, as strings. If `excludeNonCirculatingAccountsList` is enabled, the returned array will be empty.
 
 ### Code sample [#](#code-sample)

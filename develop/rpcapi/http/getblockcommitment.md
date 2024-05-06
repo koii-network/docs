@@ -1,25 +1,25 @@
 ---
-title: getBlockCommitment RPC Method 
+title: getBlockCommitment RPC Method
 image: img/thumbnail.png
 sidebar_label: getBlockCommitment
---- 
+---
 
 Returns commitment for particular block
 
-### Parameters 
-`u64` **required**  
+### Parameters
+`u64` **required**
 block number, identified by Slot
 
-### Result 
+### Result
 
 The result field will be a JSON object containing:
 
 *   `commitment` - commitment, comprising either:
     *   `<null>` - Unknown block
-    *   `<array>` - commitment, array of u64 integers logging the amount of cluster stake in lamports that has voted on the block at each depth from 0 to `MAX_LOCKOUT_HISTORY` + 1
-*   `totalStake` - total active stake, in lamports, of the current epoch
+    *   `<array>` - commitment, array of u64 integers logging the amount of cluster stake in roe that has voted on the block at each depth from 0 to `MAX_LOCKOUT_HISTORY` + 1
+*   `totalStake` - total active stake, in roe, of the current epoch
 
-### Code sample 
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -32,7 +32,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response 
+### Response
 
 ```
 {

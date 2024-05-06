@@ -20,7 +20,7 @@ Failure to implement these instructions may result in network disruptions and dr
 
 ## What is a Prioritization Fee?
 
-Prioritization Fees are priced in micro-lamports per Compute Unit (e.g. small amounts of SOL) prepended to transactions to make them economically compelling for validator nodes to include within blocks on the network.
+Prioritization Fees are priced in micro-roe per Compute Unit (e.g. small amounts of SOL) prepended to transactions to make them economically compelling for validator nodes to include within blocks on the network.
 
 ## How much should the Prioritization Fee be?
 
@@ -48,14 +48,14 @@ Adding priority fees on a transaction consists of prepending two Compute Budget 
 
 Here, you can also find a more detailed developer [guide on how to use priority fees](/developers/guides/advanced/how-to-use-priority-fees) which includes more information about implementing priority fees.
 
-Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the Base Transaction Fee (5,000 Lamports).
+Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the Base Transaction Fee (5,000 roe).
 
 ```js
     // import { ComputeBudgetProgram } from "@solana/web3.js"
-    ComputeBudgetProgram.setComputeUnitPrice({ microLamports: number });
+    ComputeBudgetProgram.setComputeUnitPrice({ microroe: number });
 ```
 
-The value provided in micro-lamports will be multiplied by the Compute Unit (CU) budget to determine the Prioritization Fee in Lamports. For example, if your CU budget is 1M CU, and you add `1 microLamport/CU`, the Prioritization Fee will be 1 lamport (1M \* 0. 000001). The total fee will then be 5001 lamports.
+The value provided in micro-roe will be multiplied by the Compute Unit (CU) budget to determine the Prioritization Fee in roe. For example, if your CU budget is 1M CU, and you add `1 microLamport/CU`, the Prioritization Fee will be 1 lamport (1M \* 0. 000001). The total fee will then be 5001 roe.
 
 To set a new compute unit budget for the transaction, create a `setComputeUnitLimit` instruction
 
@@ -81,7 +81,7 @@ You can get the CU consumed by a transaction by sending the transaction on a dif
     });
 
     const addPriorityFee = ComputeBudgetProgram.setComputeUnitPrice({
-      microLamports: 1,
+      microroe: 1,
     });
 
     const transaction = new Transaction()
@@ -91,7 +91,7 @@ You can get the CU consumed by a transaction by sending the transaction on a dif
         SystemProgram.transfer({
           fromPubkey: payer.publicKey,
           toPubkey: toAccount,
-          lamports: 10000000,
+          roe: 10000000,
         }),
       );
 ```

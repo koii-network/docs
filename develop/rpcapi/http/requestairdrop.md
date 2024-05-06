@@ -1,26 +1,26 @@
---- 
-title: requestAirdrop RPC Method 
-image: img/thumbnail.png 
-sidebar_label: requestAirdrop 
----  
+---
+title: requestAirdrop RPC Method
+image: img/thumbnail.png
+sidebar_label: requestAirdrop
+---
 
 
-Requests an airdrop of lamports to a Pubkey
+Requests an airdrop of roe to a Pubkey
 
-:::warning 
-This function only works for local test validator. 
-::: 
+:::warning
+This function only works for local test validator.
+:::
 
 ### Parameters [#](#parameters)
-`string` **required** 
-Pubkey of account to receive lamports, as a base-58 encoded string  
+`string` **required**
+Pubkey of account to receive roe, as a base-58 encoded string
 
-`integer` **required**  
-lamports to airdrop, as a "u64"
+`integer` **required**
+roe to airdrop, as a "u64"
 
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
+- commitment `string` **optional**
 
 ### Result [#](#result)
 

@@ -10,7 +10,7 @@ sidebar_label: Starting a Validator
 The Koii cli includes `get` and `set` configuration commands to automatically set the `--url` argument for cli commands. For example:
 
 ```bash
-koii config set --url https://testnet.koii.network 
+koii config set --url https://testnet.koii.network
 ```
 
 While this section demonstrates how to connect to the Devnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
@@ -101,7 +101,7 @@ The identity public key can now be viewed by running:
 koii-keygen pubkey ~/validator-keypair.json
 ```
 
-:::note 
+:::note
 The "validator-keypair.json” file is also your (ed25519) private key.
 :::
 
@@ -131,10 +131,10 @@ You should see the following output:
 
 ```bash
 Config File: /home/koii/.config/koii/cli/config.yml
-RPC URL: https://testnet.koii.network 
+RPC URL: https://testnet.koii.network
 WebSocket URL: wss://testnet.koii.network/ (computed)
 Keypair Path: /home/koii/validator-keypair.json
-Commitment: confirmed 
+Commitment: confirmed
 ```
 
 ## Airdrop & Check Validator Balance
@@ -155,7 +155,7 @@ koii balance
 Or to see in finer detail:
 
 ```bash
-koii balance --lamports
+koii balance --roe
 ```
 
 :::note
@@ -202,12 +202,12 @@ exec koii-validator \
   --identity /home/koii/validator-keypair.json \
   --vote-account vote-account-keypair.json \
   --ledger /home/koii/validator-ledger \
-  --accounts /home/koii/validator-accounts \ 
+  --accounts /home/koii/validator-accounts \
   --rpc-bind-address 0.0.0.0 \
   --dynamic-port-range 10000-10500 \
   --rpc-port 10899 --gossip-port 10001 \
   --log /home/koii/koii-validator.log \
-  --limit-ledger-size \ 
+  --limit-ledger-size \
   --only-known-rpc \
   --entrypoint testnet-validator-1.koii.network:10001 \
   --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \

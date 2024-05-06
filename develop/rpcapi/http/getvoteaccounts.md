@@ -1,20 +1,20 @@
---- 
-title: getVoteAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getVoteAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getVoteAccounts
----  
+---
 
 Returns the account info and associated stake for all the voting accounts in the current bank.
 
 ### Parameters [#](#parameters)
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-- votePubkey `string` **optional** 
+- commitment `string` **optional**
+- votePubkey `string` **optional**
 Only return results for this validator vote address (base-58 encoded)
-- keepUnstakedDelinquents `bool` **optional**  
+- keepUnstakedDelinquents `bool` **optional**
 Do not filter out delinquent validators with no stake
-- delinquentSlotDistance `u64` **optional**   
+- delinquentSlotDistance `u64` **optional**
 Specify the number of slots behind the tip that a validator must fall to be considered delinquent. **NOTE:** For the sake of consistency between ecosystem products, _it is **not** recommended that this argument be specified._
 
 ### Result [#](#result)
@@ -23,7 +23,7 @@ The result field will be a JSON object of `current` and `delinquent` accounts, e
 
 *   `votePubkey: <string>` - Vote account address, as base-58 encoded string
 *   `nodePubkey: <string>` - Validator identity, as base-58 encoded string
-*   `activatedStake: <u64>` - the stake, in lamports, delegated to this vote account and active in this epoch
+*   `activatedStake: <u64>` - the stake, in roe, delegated to this vote account and active in this epoch
 *   `epochVoteAccount: <bool>` - bool, whether the vote account is staked for this epoch
 *   `commission: <number>` - percentage (0-100) of rewards payout owed to the vote account
 *   `lastVote: <u64>` - Most recent slot voted on by this vote account
