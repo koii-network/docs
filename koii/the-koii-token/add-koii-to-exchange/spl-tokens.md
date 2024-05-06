@@ -6,6 +6,10 @@ sidebar_label: SPL Tokens
 ---
 <!-- TODO: write description -->
 
+<!-- TODO: WE DO NOT APPEAR TO HAVE DOCS ON SPL TOKENS -->
+
+<!-- TODO: SPL STANDS FOR 'SOLANA TOKEN LIBRARY' - ARE WE CHANGING THE NAME? -->
+
 [SPL Token](https://spl.solana.com/token) is the standard for wrapped/synthetic token creation and exchange on the Solana blockchain.
 
 The SPL Token workflow is similar to that of native SOL tokens, but there are a few differences which will be discussed in this section.
@@ -16,6 +20,7 @@ Each _type_ of SPL Token is declared by creating a _mint_ account. This account 
 
 ## Installing the `spl-token` CLI Tool
 
+<!-- TODO: DO WE HAVE A CLI TOOL FOR SPL TOKENS? -->
 SPL Token accounts are queried and modified using the `spl-token` command line utility. The examples provided in this section depend upon having it installed on the local system.
 
 `spl-token` is distributed from Rust [crates.io](https://crates.io/crates/spl-token) via the Rust `cargo` command line utility. The latest version of `cargo` can be installed using a handy one-liner for your platform at [rustup.rs](https://rustup.rs). Once `cargo` is installed, `spl-token` can be obtained with the following command:
@@ -40,8 +45,9 @@ Which should result in something like
 
 SPL Token accounts carry additional requirements that native System Program accounts do not:
 
+<!-- TODO: WHAT IS THE RENT EXEMPT REQUIREMENT FOR SPL TOKENS? -->
 1. SPL Token accounts must be created before an amount of tokens can be deposited. Token accounts can be created explicitly with the `spl-token create-account` command, or implicitly by the `spl-token transfer --fund-recipient ...` command.
-2. SPL Token accounts must remain [rent-exempt](/docs/core/fees#rent-exempt) for the duration of their existence and therefore require a small amount of native SOL tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 SOL (2,039,280 lamports).
+2. SPL Token accounts must remain [rent-exempt](/concepts/glossary#rent-exemption) for the duration of their existence and therefore require a small amount of native SOL tokens be deposited at account creation. For SPL Token accounts, this amount is 0.00203928 SOL (2,039,280 lamports).
 
 ### Command Line
 
@@ -134,6 +140,8 @@ Giving an output similar to:
 
 ## Depositing
 
+<!-- TODO: NO DOCS ON ASSOCIATED TOKEN ACCOUNT -->
+<!-- TODO: REPLACE ALL INTERNAL LINKS TO /docs/more/exchange -->
 Since each `(wallet, mint)` pair requires a separate account on chain. It is recommended that the addresses for these accounts be derived from SOL deposit wallets using the [Associated Token Account](https://spl.solana.com/associated-token-account) (ATA) scheme and that _only_ deposits from ATA addresses be accepted.
 
 Monitoring for deposit transactions should follow the [block polling](/docs/more/exchange#poll-for-blocks) method described above. Each new block should be scanned for successful transactions referencing user token-account derived addresses. The `preTokenBalance` and `postTokenBalance` fields from the transaction's metadata must then be used to determine the effective balance change. These fields will identify the token mint and account owner (main wallet address) of the affected account.
@@ -158,10 +166,12 @@ Template `spl-token transfer` command for a withdrawal:
 
 ### Freeze Authority
 
+<!-- TODO: NO DOCS ON FREEZING ACCOUNTS -->
 For regulatory compliance reasons, an SPL Token issuing entity may optionally choose to hold "Freeze Authority" over all accounts created in association with its mint. This allows them to [freeze](https://spl.solana.com/token#freezing-accounts) the assets in a given account at will, rendering the account unusable until thawed. If this feature is in use, the freeze authority's pubkey will be registered in the SPL Token's mint account.
 
 ## Basic Support for the SPL Token-2022 (Token-Extensions) Standard
 
+<!-- TODO: NO DOCS ON TOKEN-2022 -->
 [SPL Token-2022](https://spl.solana.com/token-2022) is the newest standard for wrapped/synthetic token creation and exchange on the Solana blockchain.
 
 Also known as "Token Extensions", the standard contains many new features that token creators and account holders may optionally enable. These features include confidential transfers, fees on transfer, closing mints, metadata, permanent delegates, immutable ownership, and much more. Please see the [extension guide](https://spl.solana.com/token-2022/extensions) for more information.
@@ -170,10 +180,12 @@ If your exchange supports SPL Token, there isn't a lot more work required to sup
 
 - the CLI tool works seamlessly with both programs starting with version 3.0.0.
 - `preTokenBalances` and `postTokenBalances` include SPL Token-2022 balances
+<!-- TODO: PROGRAM ID? -->
 - RPC indexes SPL Token-2022 accounts, but they must be queried separately with program id `TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb`
 
 The Associated Token Account works the same way, and properly calculates the required deposit amount of SOL for the new account.
 
+<!-- TODO: CORRECT RENT EXEMPTION AMOUNTS? -->
 Because of extensions, however, accounts may be larger than 165 bytes, so they may require more than 0.00203928 SOL to fund.
 
 For example, the Associated Token Account program always includes the "immutable owner" extension, so accounts take a minimum of 170 bytes, which requires 0.00207408 SOL.

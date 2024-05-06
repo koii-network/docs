@@ -8,16 +8,16 @@ sidebar_label: Managing Transactions
 
 ## Setting up Deposit Accounts
 
-Solana accounts do not require any on-chain initialization; once they contain some SOL, they exist. To set up a deposit account for your exchange, simply generate a Solana keypair using any of our [wallet tools](https://docs.solanalabs.com/cli/wallets).
+Solana accounts do not require any on-chain initialization; once they contain some SOL, they exist. To set up a deposit account for your exchange, simply generate a Solana keypair using any of our [wallet tools](/develop/command-line-tool/koii-cli/create-wallet).
 
 We recommend using a unique deposit account for each of your users.
 
-Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/docs/core/fees#rent) in SOL. In order to find the minimum rent-exempt balance for your deposit accounts, query the [`getMinimumBalanceForRentExemption` endpoint](/docs/rpc/http/getminimumbalanceforrentexemption)
+Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/concepts/settlement-layer/rent) in SOL. In order to find the minimum rent-exempt balance for your deposit accounts, query the [`getMinimumBalanceForRentExemption` endpoint](/develop/rpcapi/http/getminimumbalanceforrentexemption)
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '{
+    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getMinimumBalanceForRentExemption",
@@ -33,6 +33,7 @@ Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/
 
 ## Offline Accounts
 
+<!-- TODO: NO DOCS ON OFFLINE SIGNING  -->
 You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move SOL to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing).
 
 ## Listening for Deposits
@@ -53,12 +54,12 @@ It's important to understand that versioned transactions allow users to create t
 
 To track all the deposit accounts for your exchange, poll for each confirmed block and inspect for addresses of interest, using the JSON-RPC service of your Solana API node.
 
--To identify which blocks are available, send a [`getBlocks`](/docs/rpc/http/getblocks) request, passing the last block you have already processed as the start-slot parameter.
+-To identify which blocks are available, send a [`getBlocks`](/develop/rpcapi/http/getblocks) request, passing the last block you have already processed as the start-slot parameter.
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '{
+    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getBlocks",
@@ -80,12 +81,12 @@ To track all the deposit accounts for your exchange, poll for each confirmed blo
 
 Not every slot produces a block, so there may be gaps in the sequence of integers.
 
-For each block, request its contents with a [`getBlock`](/docs/rpc/http/getblock) request.
+For each block, request its contents with a [`getBlock`](/develop/rpcapi/http/getblock) request.
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H 'Content-Type: application/json' -d '{
+    curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getBlock",
@@ -167,7 +168,7 @@ For each block, request its contents with a [`getBlock`](/docs/rpc/http/getblock
       "id": 1
     }
 ```
-
+<!-- TODO: ADD ROE TO GLOSSARY -->
 The `preBalances` and `postBalances` fields allow you to track the balance changes in every account without having to parse the entire transaction. They list the starting and ending balances of each account in [lamports](/docs/terminology#lamport), indexed to the `accountKeys` list. For example, if the deposit address of interest is `G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o`, this transaction represents a transfer of 1040000000 - 1030000000 = 10,000,000 lamports = 0.01 SOL
 
 If you need more information about the transaction type or other specifics, you can request the block from RPC in binary format, and parse it using either our [Rust SDK](https://github.com/solana-labs/solana) or [Javascript SDK](https://github.com/solana-labs/solana-web3.js).
@@ -182,12 +183,12 @@ If you need more information about the transaction type or other specifics, you 
 
 You can also query the transaction history of a specific address. This is generally _not_ a viable method for tracking all your deposit addresses over all slots, but may be useful for examining a few accounts for a specific period of time.
 
-- Send a [`getSignaturesForAddress`](/docs/rpc/http/getsignaturesforaddress) request to the api node.
+- Send a [`getSignaturesForAddress`](/develop/rpcapi/http/getsignaturesforaddress) request to the api node.
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '{
+    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getSignaturesForAddress",
@@ -235,12 +236,12 @@ You can also query the transaction history of a specific address. This is genera
     }
 ```
 
-- For each signature returned, get the transaction details by sending a [`getTransaction`](/docs/rpc/http/gettransaction) request.
+- For each signature returned, get the transaction details by sending a [`getTransaction`](/develop/rpcapi/http/gettransaction) request.
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H 'Content-Type: application/json' -d '{
+    curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc":"2.0",
       "id":1,
       "method":"getTransaction",
@@ -345,39 +346,43 @@ Sending a synchronous transfer to the Solana cluster allows you to easily ensure
 Solana's command-line tool offers a simple command, `solana transfer`, to generate, submit, and confirm transfer transactions. By default, this method will wait and track progress on stderr until the transaction has been finalized by the cluster. If the transaction fails, it will report any transaction errors.
 
 ```console
-    solana transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:8899
+    koii transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:8899
 ```
 
-The [Solana Javascript SDK](https://github.com/solana-labs/solana-web3.js) offers a similar approach for the JS ecosystem. Use the `SystemProgram` to build a transfer transaction, and submit it using the `sendAndConfirmTransaction` method.
+<!-- TODO: GET CORRECT LINK FOR KOII JAVASCRIPT SDK -->
+The [Koii Javascript SDK](https://github.com/solana-labs/solana-web3.js) offers a similar approach for the JS ecosystem. Use the `SystemProgram` to build a transfer transaction, and submit it using the `sendAndConfirmTransaction` method.
 
 ### Asynchronous
 
 For greater flexibility, you can submit withdrawal transfers asynchronously. In these cases, it is your responsibility to verify that the transaction succeeded and was finalized by the cluster.
 
+<!-- TODO: DON'T SEE ANYTHING AOBUT RECENT BLOCKHAS. WE DON'T SEEM TO HAVE AN EQUIVALENT TO SOLANA'S TRANSACTIONS PAGE -->
 **Note:** Each transaction contains a [recent blockhash](/docs/core/transactions#recent-blockhash) to indicate its liveness. It is **critical** to wait until this blockhash expires before retrying a withdrawal transfer that does not appear to have been confirmed or finalized by the cluster. Otherwise, you risk a double spend. See more on [blockhash expiration](/docs/more/exchange#blockhash-expiration) below.
 
+<!-- TODO: THE SOLANA DOCS ARE MAKING REFERENCE TO A DEPRECATED FUNCTION (IT APPEARS TO BE DEPRECATED IN KOII TOO), DOES IT NEED TO BE UPDATED TO SOMETHING NEW? -->
 First, get a recent blockhash using the [`getFees`](/docs/rpc/deprecated/getfees) endpoint or the CLI command:
 
 ```console
-    solana fees --url http://localhost:8899
+    koii fees --url http://localhost:8899
 ```
 
 In the command-line tool, pass the `--no-wait` argument to send a transfer asynchronously, and include your recent blockhash with the `--blockhash` argument:
 
 ```console
-    solana transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:8899
+    koii transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:8899
 ```
 
-You can also build, sign, and serialize the transaction manually, and fire it off to the cluster using the JSON-RPC [`sendTransaction`](/docs/rpc/http/sendtransaction) endpoint.
+You can also build, sign, and serialize the transaction manually, and fire it off to the cluster using the JSON-RPC [`sendTransaction`](/develop/rpcapi/http/sendtransaction) endpoint.
 
 ## Transaction Confirmations & Finality
 
-Get the status of a batch of transactions using the [`getSignatureStatuses`](/docs/rpc/http/getsignaturestatuses) JSON-RPC endpoint. The `confirmations` field reports how many [confirmed blocks](/docs/terminology#confirmed-block) have elapsed since the transaction was processed. If `confirmations: null`, it is [finalized](/docs/terminology#finality).
+<!-- TODO: WE DON'T HAVE DEFINITIONS FOR A LOT OF THE TERMINOLOGY IN THE SOLANA DOCS. WOULD BE A GOOD USE OF THE DOCUSAURUS TERMINOLOGY PLUGIN -->
+Get the status of a batch of transactions using the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatuses) JSON-RPC endpoint. The `confirmations` field reports how many [confirmed blocks](/docs/terminology#confirmed-block) have elapsed since the transaction was processed. If `confirmations: null`, it is [finalized](/docs/terminology#finality).
 
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '{
+    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc":"2.0",
       "id":1,
       "method":"getSignatureStatuses",
@@ -423,7 +428,7 @@ Get the status of a batch of transactions using the [`getSignatureStatuses`](/do
 ```
 
 ### Blockhash Expiration
-
+<!-- TODO: ANOTHER DEPRECATED FUNCTION -->
 You can check whether a particular blockhash is still valid by sending a [`getFeeCalculatorForBlockhash`](/docs/rpc/deprecated/getfeecalculatorforblockhash) request with the blockhash as a parameter. If the response value is `null`, the blockhash is expired, and the withdrawal transaction using that blockhash should never succeed.
 
 ## Validating User-supplied Account Addresses for Withdrawals
@@ -437,8 +442,8 @@ Solana addresses a 32-byte array, encoded with the bitcoin base58 alphabet. This
 ```regex
     [1-9A-HJ-NP-Za-km-z]{32,44}
 ```
-
-This check is insufficient on its own as Solana addresses are not checksummed, so typos cannot be detected. To further validate the user's input, the string can be decoded and the resulting byte array's length confirmed to be 32. However, there are some addresses that can decode to 32 bytes despite a typo such as a single missing character, reversed characters and ignored case
+<!-- TODO: WHY AREN'T THEY CHECKSUMMED? -->
+This check is insufficient on its own as Solana addresses are not checksummed, so typos cannot be detected. To further validate the user's input, the string can be decoded and the resulting byte array's length confirmed to be 32. However, there are some addresses that can decode to 32 bytes despite a typo such as a single missing character, reversed characters and ignored case.
 
 ### Advanced verification
 
@@ -450,6 +455,7 @@ The address of a normal account in Solana is a Base58-encoded string of a 256-bi
 
 #### Java
 
+<!-- TODO: WHY IS THIS JAVA? -->
 Here is a Java example of validating a user-supplied address as a valid ed25519 public key:
 
 The following code sample assumes you're using the Maven.
@@ -512,7 +518,7 @@ Similarly, every deposit account must contain at least this balance.
 ### Request
 
 ```console
-    curl https://api.devnet.solana.com -X POST -H "Content-Type: application/json" -d '{
+    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getMinimumBalanceForRentExemption",

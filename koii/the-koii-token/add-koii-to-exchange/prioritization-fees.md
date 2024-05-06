@@ -6,8 +6,10 @@ sidebar_label: Prioritization Fees
 ---
 <!-- TODO: write description -->
 
+<!-- TODO: NO DOCS ON PRIORITIZATION FEES -->
 In periods of high demand, it’s possible for a transaction to expire before a validator has included such transactions in their block because they chose other transactions with higher economic value. Valid Transactions on Solana may be delayed or dropped if Prioritization Fees are not implemented properly.
 
+<!-- TODO: DOESN'T SEEM TO BE ANYTHING ON BASE TRANSACTION FEES -->
 [Prioritization Fees](/docs/terminology#prioritization-fee) are additional fees that can be added on top of the [base Transaction Fee](/docs/core/fees#transaction-fees) to ensure transaction inclusion within blocks and in these situations and help ensure deliverability.
 
 These priority fees are added to transaction by adding a special Compute Budget instruction that sets the desired priority fee to be paid.
@@ -22,7 +24,7 @@ Prioritization Fees are priced in micro-lamports per Compute Unit (e.g. small am
 
 ## How much should the Prioritization Fee be?
 
-The method for setting your prioritization fee should involve querying recent prioritization fees to set a fee which is likely to be compelling for the network. Using the [`getRecentPrioritizationFees`](/docs/rpc/http/getrecentprioritizationfees) RPC method, you can query for the prioritization fees required to land a transaction in a recent block.
+The method for setting your prioritization fee should involve querying recent prioritization fees to set a fee which is likely to be compelling for the network. Using the [`getRecentPrioritizationFees`](/develop/rpcapi/http/getrecentprioritizationfees) RPC method, you can query for the prioritization fees required to land a transaction in a recent block.
 
 Pricing strategy for these priority fees will vary based on your use case. There is no canonical way to do so. One strategy for setting your Prioritization Fees might be to calculate your transaction success rate and then increase your Prioritization Fee against a query to the recent transaction fees API and adjust accordingly. Pricing for Prioritization Fees will be dynamic based on the activity on the network and bids placed by other participants, only knowable after the fact.
 
@@ -32,6 +34,7 @@ The `getRecentPrioritizationFees` API takes accounts’ pubkeys as parameters, a
 
 Exchanges and applications should query the RPC endpoint with the accounts that a transaction is going to write-lock. The RPC endpoint will return the `max(account_1_min_fee, account_2_min_fee, ... account_n_min_fee)`, which should be the base point for the user to set the prioritization fee for that transaction.
 
+<!-- TODO: DOES THIS APPLY TO US? -->
 There are different approaches to setting Prioritization Fees and some [third-party APIs](https://docs.helius.dev/solana-rpc-nodes/alpha-priority-fee-api) are available to determine the best fee to apply. Given the dynamic nature of the network, there will not be a “perfect” way to go about pricing your Prioritization fees and careful analysis should be applied before choosing a path forward.
 
 ## How to Implement Prioritization Fees
@@ -94,7 +97,7 @@ You can get the CU consumed by a transaction by sending the transaction on a dif
 ```
 
 ## Prioritization Fees And Durable Nonces
-
+<!-- TODO: WHAT IS A NONCE ACCOUNT AND WHAT IS A DURABLE NONCE? -->
 If your setup uses Durable Nonce Transactions, it is important to properly implement Prioritization Fees in combination with Durable Transaction Nonces to ensure successful transactions. Failure to do so will cause intended Durable Nonce transactions not to be detected as such.
 
 If you ARE using Durable Transaction Nonces, the `AdvanceNonceAccount` instruction MUST be specified FIRST in the instructions list, even when the compute budget instructions are used to specify priority fees.

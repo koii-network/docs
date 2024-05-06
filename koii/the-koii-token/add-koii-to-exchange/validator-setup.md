@@ -10,19 +10,21 @@ We highly recommend setting up at least two nodes on high-grade computers/cloud 
 
 This setup enables you:
 
--to have a self-administered gateway to the Solana mainnet-beta cluster to get data and submit withdrawal transactions
--to have full control over how much historical block data is retained
--to maintain your service availability even if one node fails
+<!-- TODO: IS THIS RIGHT FOR KOII? is it called the mainnet beta cluster? -->
+- to have a self-administered gateway to the Koii mainnet-beta cluster to get data and submit withdrawal transactions
+- to have full control over how much historical block data is retained
+- to maintain your service availability even if one node fails
 
-Solana nodes demand relatively high computing power to handle our fast blocks and high TPS. For specific requirements, please see [hardware recommendations](https://docs.solanalabs.com/operations/requirements).
+Koii nodes demand relatively high computing power to handle our fast blocks and high TPS. For specific requirements, please see [hardware recommendations](https://docs.koii.network/run-a-node/k2-validators/validator-requirements#hardware-requirements).
 
 To run an api node:
 
-1. [Install the Solana command-line tool suite](https://docs.solanalabs.com/cli/install)
+1. [Install the Koii command-line tool suite](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
 2. Start the validator with at least the following parameters:
 
+<!-- TODO: ARE THESE PARAMETERS CORRECT? -->
 ```console
-    solana-validator \
+    koii-validator \
       --ledger <LEDGER_PATH> \
       --identity <VALIDATOR_IDENTITY_KEYPAIR> \
       --entrypoint <CLUSTER_ENTRYPOINT> \
@@ -37,11 +39,13 @@ To run an api node:
 
 Customize `--ledger` to your desired ledger storage location, and `--rpc-port` to the port you want to expose.
 
+<!-- TODO: IS THIS CORRECT/RELEVANT? -->
 The `--entrypoint` and `--expected-genesis-hash` parameters are all specific to the cluster you are joining. [Current parameters for Mainnet Beta](https://docs.solanalabs.com/clusters/available#example-solana-validator-command-line-2)
 
-The `--limit-ledger-size` parameter allows you to specify how many ledger [shreds](/docs/terminology#shred) your node retains on disk. If you do not include this parameter, the validator will keep the entire ledger until it runs out of disk space. The default value attempts to keep the ledger disk usage under 500GB. More or less disk usage may be requested by adding an argument to `--limit-ledger-size` if desired. Check `solana-validator --help` for the default limit value used by `--limit-ledger-size`. More information about selecting a custom limit value is [available here](https://github.com/solana-labs/solana/blob/583cec922b6107e0f85c7e14cb5e642bc7dfb340/core/src/ledger_cleanup_service.rs#L15-L26).
+The `--limit-ledger-size` parameter allows you to specify how many ledger [shreds](/docs/terminology#shred) your node retains on disk. If you do not include this parameter, the validator will keep the entire ledger until it runs out of disk space. The default value attempts to keep the ledger disk usage under 500GB. More or less disk usage may be requested by adding an argument to `--limit-ledger-size` if desired. Check `koii-validator --help` for the default limit value used by `--limit-ledger-size`. More information about selecting a custom limit value is [available here](https://github.com/solana-labs/solana/blob/583cec922b6107e0f85c7e14cb5e642bc7dfb340/core/src/ledger_cleanup_service.rs#L15-L26).
+<!-- TODO: THE ABOVE LINK IS TO SOURCE CODE - CHECK AND SEE WHAT WE HAVE -->
 
-Specifying one or more `--known-validator` parameters can protect you from booting from a malicious snapshot. [More on the value of booting with known validators](https://docs.solanalabs.com/operations/guides/validator-start#known-validators)
+Specifying one or more `--known-validator` parameters can protect you from booting from a malicious snapshot. [More on the value of booting with known validators](https://docs.koii.network/run-a-node/k2-validators/validator-start#known-validators)
 
 Optional parameters to consider:
 
@@ -52,16 +56,18 @@ Optional parameters to consider:
 
 We recommend configuring each of your nodes to restart automatically on exit, to ensure you miss as little data as possible. Running the solana software as a systemd service is one great option.
 
-For monitoring, we provide [`solana-watchtower`](https://github.com/solana-labs/solana/blob/master/watchtower/README.md), which can monitor your validator and detect with the `solana-validator` process is unhealthy. It can directly be configured to alert you via Slack, Telegram, Discord, or Twillio. For details, run `solana-watchtower --help`.
+<!-- TODO: WHERE IS THIS FOR KOII? DOES IT HAVE THE SAME INTEGRATIONS? -->
+For monitoring, we provide [`koii-watchtower`](https://github.com/solana-labs/solana/blob/master/watchtower/README.md), which can monitor your validator and detect with the `solana-validator` process is unhealthy. It can directly be configured to alert you via Slack, Telegram, Discord, or Twillio. For details, run `solana-watchtower --help`.
 
 ```console
-    solana-watchtower --validator-identity <YOUR VALIDATOR IDENTITY>
+    koii-watchtower --validator-identity <YOUR VALIDATOR IDENTITY>
 ```
 
 Info
 
 You can find more information about the [best practices for Solana Watchtower](https://docs.solanalabs.com/operations/best-practices/monitoring#solana-watchtower) here in the docs.
 
+<!-- TODO: IS THIS TRUE FOR US? -->
 ### New Software Release Announcements
 
 We release new software frequently (around 1 release / week). Sometimes newer versions include incompatible protocol changes, which necessitate timely software update to avoid errors in processing blocks.
@@ -78,6 +84,7 @@ Do not pass the `--no-snapshot-fetch` parameter on your initial boot as it's not
 
 It is important to note that the amount of historical ledger available to your nodes from the rest of the network is limited at any point in time. Once operational if your validators experience significant downtime they may not be able to catch up to the network and will need to download a new snapshot from a known validator. In doing so your validators will now have a gap in its historical ledger data that cannot be filled.
 
+<!-- TODO: ARE THESE PORTS CORRECT/DO THEY HAVE THE SAME NAMES? -->
 ## Minimizing Validator Port Exposure
 
 The validator requires that various UDP and TCP ports be open for inbound traffic from all other Solana validators. While this is the most efficient mode of operation, and is strongly recommended, it is possible to restrict the validator to only require inbound traffic from one other Solana validator.
