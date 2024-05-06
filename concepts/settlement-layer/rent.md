@@ -30,7 +30,7 @@ USAGE:
 
 FLAGS:
     -h, --help                           Prints help information
-        --roe                       Display rent in roe instead of KOII
+        --lamports                       Display rent in lamports instead of KOII
         --no-address-labels              Do not use address labels in the output
         --skip-seed-phrase-validation    Skip validation of seed phrases. Use this if your phrase does not use the BIP39
                                          official English word list

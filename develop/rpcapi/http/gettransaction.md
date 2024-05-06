@@ -1,24 +1,24 @@
----
-title: getTransaction RPC Method
-image: img/thumbnail.png
-sidebar_label: getTransaction
----
+--- 
+title: getTransaction RPC Method 
+image: img/thumbnail.png 
+sidebar_label: getTransaction 
+---  
 
 Returns transaction details for a confirmed transaction
 
 ### Parameters [#](#parameters)
-`string` **required**
-Transaction signature, as base-58 encoded string
-`object` **optional**
-Configuration object containing the following fields:
-- commitment `string` **optional**
-  - `processed` is not supported.
-    Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.
-- encoding `string` **optional**
-  Default: `json`
-  Encoding for the returned Transaction
-  Values: `json` `jsonParsed` `base64` `base58`
-  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
+`string` **required**  
+Transaction signature, as base-58 encoded string  
+`object` **optional**  
+Configuration object containing the following fields:    
+- commitment `string` **optional**    
+  - `processed` is not supported.  
+    Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.  
+- encoding `string` **optional**  
+  Default: `json`  
+  Encoding for the returned Transaction  
+  Values: `json` `jsonParsed` `base64` `base58`  
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.  
   - If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
 
 ### Result [#](#result)
@@ -29,7 +29,7 @@ Configuration object containing the following fields:
     *   `transaction: <object|[string,encoding]>` - [Transaction](/develop/rpcapi/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
     *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch) of when the transaction was processed. null if not available
     *   `meta: <object|null>` - transaction status metadata object:
-        *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded.
+        *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
         *   `fee: <u64>` - fee this transaction was charged, as u64 integer
         *   `preBalances: <array>` - array of u64 account balances from before the transaction was processed
         *   `postBalances: <array>` - array of u64 account balances after the transaction was processed
@@ -42,8 +42,8 @@ Configuration object containing the following fields:
             *   `"Err": <ERR>` - Transaction failed with TransactionError
         *   `rewards: <array|null>` - transaction-level rewards, populated if rewards are requested; an array of JSON objects containing:
             *   `pubkey: <string>` - The public key, as base-58 encoded string, of the account that received the reward
-            *   `roe: <i64>`\- number of reward roe credited or debited by the account, as a i64
-            *   `postBalance: <u64>` - account balance in roe after the reward was applied
+            *   `lamports: <i64>`\- number of reward lamports credited or debited by the account, as a i64
+            *   `postBalance: <u64>` - account balance in lamports after the reward was applied
             *   `rewardType: <string>` - type of reward: currently only "rent", other types may be added in the future
             *   `commission: <u8|undefined>` - vote account commission when the reward was credited, only present for voting and staking rewards
         *   `loadedAddresses: <object|undefined>` - Transaction addresses loaded from address lookup tables. Undefined if `maxSupportedTransactionVersion` is not set in request params, or if `jsonParsed` encoding is set in request params.

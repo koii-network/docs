@@ -50,7 +50,7 @@ const transferTransaction = transaction.add(
   SystemProgram.transfer({
     fromPubkey: fromKeypair.publicKey, // Sender account
     toPubkey: toKeypair.publicKey, // Recipient account
-    roe: 100000000, // Amount to send (0.1 KOII)
+    lamports: 100000000, // Amount to send (0.1 KOII)
   })
 );
 
@@ -72,7 +72,7 @@ const createTransaction = new Transaction().add(
   SystemProgram.createAccount({
     fromPubkey: mainSystemAccountPubkey, // Sender account
     newAccountPubkey: uploadAccount.publicKey, // Public key of the created account
-    roe: 1000000, // Amount to be transfered
+    lamports: 1000000, // Amount to be transfered
     programId: new PublicKey("32xatJZj7XLfKueB5UUiho5Rhx5iQe4Ryp4ckrqFpCQS"), // Publickey of the program to assign as the owner of the created account
     space: 5242880, // Amount of space in bytes to allocate to the created account
   })

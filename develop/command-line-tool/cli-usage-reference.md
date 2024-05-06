@@ -161,7 +161,7 @@ SUBCOMMANDS:
     vote-update-validator                Update the vote account's validator identity
     wait-for-max-stake                   Wait for the max stake of any one node to drop below a percentage of total.
     withdraw-from-nonce-account          Withdraw KOII from the nonce account
-    withdraw-from-vote-account           Withdraw roe from a vote account into a specified account
+    withdraw-from-vote-account           Withdraw lamports from a vote account into a specified account
     withdraw-stake                       Withdraw the unstaked KOII from the stake account
 ```
 
@@ -176,7 +176,7 @@ USAGE:
 
 FLAGS:
     -h, --help                           Prints help information
-        --roe                       Display balance in roe instead of SOL
+        --lamports                       Display balance in lamports instead of SOL
         --no-address-labels              Do not use address labels in the output
         --skip-seed-phrase-validation    Skip validation of seed phrases. Use this if your phrase does not use the BIP39
                                          official English word list
@@ -332,7 +332,7 @@ OPTIONS:
             Return information at the selected commitment level [possible values: processed, confirmed, finalized]
 
         --with-compute-unit-price <COMPUTE-UNIT-PRICE>
-            Set compute unit price for transaction, in increments of 0.000001 roe per compute unit.
+            Set compute unit price for transaction, in increments of 0.000001 lamports per compute unit.
 
     -C, --config <FILEPATH>
             Configuration file to use [default: ~/.config/koii/cli/config.yml]
@@ -376,7 +376,7 @@ USAGE:
 
 FLAGS:
     -h, --help                           Prints help information
-        --roe                       Display balance in roe instead of SOL
+        --lamports                       Display balance in lamports instead of SOL
         --no-address-labels              Do not use address labels in the output
         --skip-seed-phrase-validation    Skip validation of seed phrases. Use this if your phrase does not use the BIP39
                                          official English word list
@@ -593,7 +593,7 @@ OPTIONS:
             Return information at the selected commitment level [possible values: processed, confirmed, finalized]
 
         --with-compute-unit-price <COMPUTE-UNIT-PRICE>
-            Set compute unit price for transaction, in increments of 0.000001 roe per compute unit.
+            Set compute unit price for transaction, in increments of 0.000001 lamports per compute unit.
 
     -C, --config <FILEPATH>
             Configuration file to use [default: ~/.config/koii/cli/config.yml]

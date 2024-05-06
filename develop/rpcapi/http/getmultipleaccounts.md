@@ -1,19 +1,19 @@
----
-title: getMultipleAccounts RPC Method
-image: img/thumbnail.png
+--- 
+title: getMultipleAccounts RPC Method 
+image: img/thumbnail.png 
 sidebar_label: getMultipleAccounts
----
+---  
 
 Returns the account information for a list of Pubkeys.
 
 ### Parameters [#](#parameters)
-`array` **required**
+`array` **required**  
 An array of Pubkeys to query, as base-58 encoded strings (up to a maximum of 100)
 
-`object` **optional**
-Configuration object containing the following fields:
-- commitment `string` **optional**
-- minContextSlot `number` **optional**
+`object` **optional**  
+Configuration object containing the following fields:   
+- commitment `string` **optional**  
+- minContextSlot `number` **optional**  
 The minimum slot that the request can be evaluated at
 - dataSlice `object` **optional**
   Request a slice of the account's data.
@@ -22,8 +22,8 @@ The minimum slot that the request can be evaluated at
 :::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
 :::
-  - encoding `string` **optional**
-    Default: `base64`
+  - encoding `string` **optional**  
+    Default: `base64`  
     encoding format for the returned Account data
     Values: `jsonParsed` `base58` `base64` `base64+zstd`
 
@@ -39,7 +39,7 @@ The result will be a JSON object with `value` equal to an array of:
 
 *   `<null>` - if the account at that Pubkey doesn't exist, or
 *   `<object>` - a JSON object containing:
-    *   `roe: <u64>` - number of roe assigned to this account, as a u64
+    *   `lamports: <u64>` - number of lamports assigned to this account, as a u64
     *   `owner: <string>` - base-58 encoded Pubkey of the program this account has been assigned to
     *   `data: <[string, encoding]|object>` - data associated with the account, either as encoded binary data or JSON format `{<program>: <state>}` - depending on encoding parameter
     *   `executable: <bool>` - boolean indicating if the account contains a program (and is strictly read-only)
@@ -81,7 +81,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
       {
         "data": ["", "base64"],
         "executable": false,
-        "roe": 1000000000,
+        "lamports": 1000000000,
         "owner": "11111111111111111111111111111111",
         "rentEpoch": 2,
         "space": 16
@@ -89,7 +89,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
       {
         "data": ["", "base64"],
         "executable": false,
-        "roe": 5000000000,
+        "lamports": 5000000000,
         "owner": "11111111111111111111111111111111",
         "rentEpoch": 2,
         "space": 0

@@ -62,9 +62,9 @@ Monitor a validator's stake during warmup by:
 
 Once your stake is warmed up, and assuming the node is voting, you will now be generating validator rewards. Rewards are paid automatically on epoch boundaries.
 
-The rewards roe earned are split between your stake account and the vote account according to the commission rate set in the vote account. Rewards can only be earned while the validator is up and running. Further, once staked, the validator becomes an important part of the network. In order to safely remove a validator from the network, first deactivate its stake.
+The rewards lamports earned are split between your stake account and the vote account according to the commission rate set in the vote account. Rewards can only be earned while the validator is up and running. Further, once staked, the validator becomes an important part of the network. In order to safely remove a validator from the network, first deactivate its stake.
 
-At the end of each slot, a validator is expected to send a vote transaction. These vote transactions are paid for by roe from a validator's identity account.
+At the end of each slot, a validator is expected to send a vote transaction. These vote transactions are paid for by lamports from a validator's identity account.
 
 This is a normal transaction so the standard transaction fee will apply. The transaction fee range is defined by the genesis block. The actual fee will fluctuate based on transaction load.
 
@@ -99,4 +99,4 @@ koii deactivate-stake ~/validator-stake-keypair.json
 
 Stake is not deactivated immediately and instead cools down in a similar fashion as stake warm up. Your validator should remain attached to the cluster while the stake is cooling down. While cooling down, your stake will continue to earn rewards. Only after stake cooldown is it safe to turn off your validator or withdraw it from the network. Cooldown may take several epochs to complete, depending on active stake and the size of your stake.
 
-Note that a stake account may only be used once, so after deactivation, use the cli's `withdraw-stake` command to recover the previously staked roe.
+Note that a stake account may only be used once, so after deactivation, use the cli's `withdraw-stake` command to recover the previously staked lamports.

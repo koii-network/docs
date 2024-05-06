@@ -169,7 +169,7 @@ For each block, request its contents with a [`getBlock`](/develop/rpcapi/http/ge
     }
 ```
 <!-- TODO: ADD ROE TO GLOSSARY -->
-The `preBalances` and `postBalances` fields allow you to track the balance changes in every account without having to parse the entire transaction. They list the starting and ending balances of each account in [roe](/docs/terminology#lamport), indexed to the `accountKeys` list. For example, if the deposit address of interest is `G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o`, this transaction represents a transfer of 1040000000 - 1030000000 = 10,000,000 roe = 0.01 SOL
+The `preBalances` and `postBalances` fields allow you to track the balance changes in every account without having to parse the entire transaction. They list the starting and ending balances of each account in [lamports](/docs/terminology#lamport), indexed to the `accountKeys` list. For example, if the deposit address of interest is `G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o`, this transaction represents a transfer of 1040000000 - 1030000000 = 10,000,000 lamports = 0.01 SOL
 
 If you need more information about the transaction type or other specifics, you can request the block from RPC in binary format, and parse it using either our [Rust SDK](https://github.com/solana-labs/solana) or [Javascript SDK](https://github.com/solana-labs/solana-web3.js).
 
@@ -314,7 +314,7 @@ You can also query the transaction history of a specific address. This is genera
                 "parsed": {
                   "info": {
                     "destination": "G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o",
-                    "roe": 10000000,
+                    "lamports": 10000000,
                     "source": "9aE476sH92Vz7DMPyq5WLPkrKWivxeuTKEFKd2sZZcde"
                   },
                   "type": "transfer"

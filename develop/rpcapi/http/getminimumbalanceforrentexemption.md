@@ -1,8 +1,8 @@
----
-title: getMinimumBalanceForRentExemption RPC Method
-image: img/thumbnail.png
+--- 
+title: getMinimumBalanceForRentExemption RPC Method 
+image: img/thumbnail.png 
 sidebar_label: getMinimumBalanceForRentExemption
----
+---  
 
 
 Returns minimum balance required to make account rent exempt.
@@ -21,7 +21,7 @@ Configuration object containing the following fields:
 
 ### Result [#](#result)
 
-`<u64>` - minimum roe required in the Account to remain rent free
+`<u64>` - minimum lamports required in the Account to remain rent free
 
 ### Code sample [#](#code-sample)
 

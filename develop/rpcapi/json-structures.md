@@ -1,5 +1,5 @@
 ---
-title: Common JSON Data Structures for Koii RPC Methods
+title: Common JSON Data Structures for Koii RPC Methods 
 image: img/thumbnail.png
 sidebar_label: JSON Structures
 ---
@@ -14,7 +14,7 @@ The most common of these JSON data structures include:
 Transactions [#](#transactions)
 -------------------------------
 
-Transactions are quite different from those on other blockchains.
+Transactions are quite different from those on other blockchains. 
 
 The JSON structure of a transaction is defined as follows:
 
@@ -23,7 +23,7 @@ The JSON structure of a transaction is defined as follows:
     *   `accountKeys: <array[string]>` - List of base-58 encoded public keys used by the transaction, including by the instructions and for signatures. The first `message.header.numRequiredSignatures` public keys must sign the transaction.
     *   `header: <object>` - Details the account types and signatures required by the transaction.
         *   `numRequiredSignatures: <number>` - The total number of signatures required to make the transaction valid. The signatures must match the first `numRequiredSignatures` of `message.accountKeys`.
-        *   `numReadonlySignedAccounts: <number>` - The last `numReadonlySignedAccounts` of the signed keys are read-only accounts. Programs may process multiple transactions that load read-only accounts within a single PoH entry, but are not permitted to credit or debit roe or modify account data. Transactions targeting the same read-write account are evaluated sequentially.
+        *   `numReadonlySignedAccounts: <number>` - The last `numReadonlySignedAccounts` of the signed keys are read-only accounts. Programs may process multiple transactions that load read-only accounts within a single PoH entry, but are not permitted to credit or debit lamports or modify account data. Transactions targeting the same read-write account are evaluated sequentially.
         *   `numReadonlyUnsignedAccounts: <number>` - The last `numReadonlyUnsignedAccounts` of the unsigned keys are read-only accounts.
     *   `recentBlockhash: <string>` - A base-58 encoded hash of a recent block in the ledger used to prevent transaction duplication and to give transactions lifetimes.
     *   `instructions: <array[object]>` - List of program instructions that will be executed in sequence and committed in one atomic transaction if all succeed.
