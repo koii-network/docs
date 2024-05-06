@@ -16,7 +16,7 @@ Solana accounts must be made rent-exempt by containing 2-years worth of [rent](/
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -58,7 +58,7 @@ To track all the deposit accounts for your exchange, poll for each confirmed blo
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -85,7 +85,7 @@ For each block, request its contents with a [`getBlock`](/develop/rpcapi/http/ge
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -187,7 +187,7 @@ You can also query the transaction history of a specific address. This is genera
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -240,7 +240,7 @@ You can also query the transaction history of a specific address. This is genera
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc":"2.0",
       "id":1,
@@ -345,7 +345,7 @@ Sending a synchronous transfer to the Solana cluster allows you to easily ensure
 
 Solana's command-line tool offers a simple command, `solana transfer`, to generate, submit, and confirm transfer transactions. By default, this method will wait and track progress on stderr until the transaction has been finalized by the cluster. If the transaction fails, it will report any transaction errors.
 
-```console
+```bash
     koii transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:8899
 ```
 
@@ -356,19 +356,19 @@ The [Koii Javascript SDK](https://github.com/solana-labs/solana-web3.js) offers 
 
 For greater flexibility, you can submit withdrawal transfers asynchronously. In these cases, it is your responsibility to verify that the transaction succeeded and was finalized by the cluster.
 
-<!-- TODO: DON'T SEE ANYTHING AOBUT RECENT BLOCKHAS. WE DON'T SEEM TO HAVE AN EQUIVALENT TO SOLANA'S TRANSACTIONS PAGE -->
+<!-- TODO: DON'T SEE ANYTHING ABOUT RECENT BLOCKHASH. WE DON'T SEEM TO HAVE AN EQUIVALENT TO SOLANA'S TRANSACTIONS PAGE -->
 **Note:** Each transaction contains a [recent blockhash](/docs/core/transactions#recent-blockhash) to indicate its liveness. It is **critical** to wait until this blockhash expires before retrying a withdrawal transfer that does not appear to have been confirmed or finalized by the cluster. Otherwise, you risk a double spend. See more on [blockhash expiration](/docs/more/exchange#blockhash-expiration) below.
 
 <!-- TODO: THE SOLANA DOCS ARE MAKING REFERENCE TO A DEPRECATED FUNCTION (IT APPEARS TO BE DEPRECATED IN KOII TOO), DOES IT NEED TO BE UPDATED TO SOMETHING NEW? -->
 First, get a recent blockhash using the [`getFees`](/docs/rpc/deprecated/getfees) endpoint or the CLI command:
 
-```console
+```bash
     koii fees --url http://localhost:8899
 ```
 
 In the command-line tool, pass the `--no-wait` argument to send a transfer asynchronously, and include your recent blockhash with the `--blockhash` argument:
 
-```console
+```bash
     koii transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:8899
 ```
 
@@ -381,7 +381,7 @@ Get the status of a batch of transactions using the [`getSignatureStatuses`](/de
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc":"2.0",
       "id":1,
@@ -517,7 +517,7 @@ Similarly, every deposit account must contain at least this balance.
 
 ### Request
 
-```console
+```bash
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,

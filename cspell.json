@@ -80,7 +80,8 @@
        "usize",
        "zstd",
        "Unstaked",
-       "discordsmall"
+       "discordsmall",
+       "checksummed"
   ],
   "caseSensitive": false,
   "flagWords": [
