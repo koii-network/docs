@@ -86,6 +86,7 @@ const sidebars = {
         "write-a-koii-task/task-development-guide/template-structure/audit-submissions",
         "write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
         "write-a-koii-task/task-development-guide/template-structure/setup",
+        "write-a-koii-task/task-development-guide/template-structure/upnp-structure"
       ],
     },
     {
