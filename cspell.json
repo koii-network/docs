@@ -79,7 +79,9 @@
        "zstd",
        "ransaction",
        "Unstaked",
-       "discordsmall"
+       "discordsmall",
+       "quickstart",
+       "Rustup"
   ],
   "caseSensitive": false,
   "flagWords": [

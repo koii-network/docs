@@ -205,6 +205,12 @@ const sidebars = {
     },
     {
       type: "html",
+      value: "Smart Contract",
+      className: "sidebar-title top-margin",
+    },
+    "smart-contract/helloworld",
+    {
+      type: "html",
       value: "RPC",
       className: "sidebar-title top-margin",
     },
