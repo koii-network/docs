@@ -43,6 +43,8 @@ The computational efficiency of a compute network defines the overall cost. If a
 
 In order for reputation to provide a significant advantage, it is necessary to ensure that hosting purchasers can give priority to honest providers. This, perhaps for the first time, necessitates a blockchain and decentralized storage architecture, where all information is public, transparent, and immutable. In a CARP, transparent money is the key to long term growth, not just a fad or a grift.&#x20;
 
+![CARP](./img/CARP.png)
+
 ## Network Growth
 
 Under a model where honesty and reliability are the most valuable property, consistently honest participants become the de-facto distributors of all resources. As a result, we expect that there will arise competitive markets to provide up-stream hosting capacity to these providers, ensuring that they are able to access as many resources as necessary to satisfy demand for their services.&#x20;
