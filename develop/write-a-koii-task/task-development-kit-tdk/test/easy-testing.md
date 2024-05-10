@@ -14,11 +14,7 @@ Here's a step-by-step guide to using Easy Testing:
 
 ### Step 1: Set up .env (optional)
 
-To configure your environment, follow the steps below. These will guide you on how to set up your own `.env` file. You can do this by renaming and modifying the existing `.env.example` file with your specific configuration values OR simply creating your own `.env`.
-
-Rename the file `.env.example` to `.env`. This change allows the application to recognize and use this file for environment variables. Make the `TASK_ID` to be the latest one we provided below. The `TASK_ID` will help the debugger program to find the corresponding JavaScript folder, and replace the JavaScript file to your project.
-
-Remember also include your own environmental variables, such as `Spheron_Storage` and other keys that you used in your project.
+![Easy Testing Step 1](./img/easy_testing1.png)
 
 ```jsx
 TASK_ID = "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
@@ -30,12 +26,14 @@ Here's an example of using task extension variables in the your `.env`:
 TASK_ID = "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
 TWITTER_USERNAME = "testuser123";
 ```
+
 :::danger
 To deploy your task, please use yarn webpack again to avoid leaking your environmental variables.
 :::
+
 ### **Step 2: Modify Your Code**
 
-Insert testing scripts of your code into the task script and use **`console.log("TEST",value)`** to output important values for testing. For example, in `submission.js` you can add:
+![Easy Testing Step 2](./img//easy_testing2.png)
 
 ```jsx
 ...
@@ -52,7 +50,7 @@ This setup enables our program to capture logs related to testing and provide yo
 
 ### **Step 3: Monitor and Push Updates**
 
-Run the following command to monitor your code changes in real-time and push the latest updates to the Task folder:
+![Easy Testing Step 3](./img/easy_testing3.png)
 
 ```jsx
 npm run prod-debug
@@ -62,9 +60,7 @@ This command facilitates continuous monitoring and updating, ensuring that any c
 
 ### **Step 4: Run the Testing Task**
 
-Run your testing task with the task ID above in Desktop node.
-
----
+## ![Easy Testing Step 4](./img/easy_testing4.png)
 
 Now, you should be able to observe the output in your task.
 
@@ -76,18 +72,19 @@ The easy testing task we provided does not include audit and distribution functi
 
 You’ve now successfully debugged the Easy Testing task in real time directly on Koii Node! Next, you’ll see you can easily filter logs with specific keywords!
 
+![Easy Testing Step 5](./img/easy_testing5.png)
+
 ### **Step 1: Navigate to debugger.js**
 
 To configure specific keyword filters for live debugging, first find debugger.js, which contains the following code:
 
 ```jsx
 class Debugger {
-
   static taskID =
-    process.env.TASK_ID || '3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV';
-  static webpackedFilePath = process.env.WEBPACKED_FILE_PATH || 'dist/main.js';
-  static keywords = process.env.TEST_KEYWORDS || ['TEST'];
-  static nodeDir = process.env.NODE_DIR || '';
+    process.env.TASK_ID || "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
+  static webpackedFilePath = process.env.WEBPACKED_FILE_PATH || "dist/main.js";
+  static keywords = process.env.TEST_KEYWORDS || ["TEST"];
+  static nodeDir = process.env.NODE_DIR || "";
 }
 ```
 
