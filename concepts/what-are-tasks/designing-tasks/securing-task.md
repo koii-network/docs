@@ -17,9 +17,11 @@ import Description from "@site/src/components/description";
 
 In a decentralized system, it's important not to "trust" any particular party. This not only ensures stability but also increases transparency within the system by sharing the burden of truth broadly across the community.<br />
 
-While it would immediately appear that writing audits might take an expert designer or be altogether impossible in some applications, there are now NPM libraries for just about anything! including for example [Verifiable Randomness functions](https://github.com/idena-network/vrf-js). We will have more information coming regularly about standardized tasks and audit templates, but in the meantime, here are some possible ways to check your work.&#x20; 
+While it would immediately appear that writing audits might take an expert designer or be altogether impossible in some applications, there are now NPM libraries for just about anything! including for example [Verifiable Randomness functions](https://github.com/idena-network/vrf-js). We will have more information coming regularly about standardized tasks and audit templates, but in the meantime, here are some possible ways to check your work.&#x20;
 
 ## **How do Audits Work?**
+
+![audit scheme](./img/Audit_Sceme.png)
 
 Any time a task payload is submitted by a participating node, an audit can be called by any other node that has a stake in that task. During an audit, any participating nodes will automatically check the work of the suspect node, and vote to slash their stake if a majority of participating nodes agree that the submitted payload does not match the expected result.<br />
 
