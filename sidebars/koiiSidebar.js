@@ -62,7 +62,7 @@ const sidebars = {
       value: "Add $KOII to an Exchange",
       className: "sidebar-title top-margin",
     },
-    "the-koii-token/add-koii-to-exchange/validator-setup",
+    "the-koii-token/add-koii-to-exchange/node-setup",
     "the-koii-token/add-koii-to-exchange/managing-transactions",
     "the-koii-token/add-koii-to-exchange/prioritization-fees",
     "the-koii-token/add-koii-to-exchange/spl-tokens",
