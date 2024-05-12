@@ -916,6 +916,10 @@ const config = {
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/simulating-a-round"
+          },
+          {
+            to:"/develop/write-a-koii-task/task-development-guide/introduction",
+            from:"/develop/write-a-koii-task/task-development-guide/"
           }
         ],
         createRedirects(existingPath) {
