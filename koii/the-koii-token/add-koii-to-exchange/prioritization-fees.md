@@ -1,87 +1,75 @@
 ---
 title: Prioritization Fees and Compute Unit
-description: WRITE THIS
+description: Instructions for implementing Koii priority fees on an cryptocurrency exchange.
 image: img/thumbnail.png
 sidebar_label: Prioritization Fees
 ---
-<!-- TODO: write description -->
 
 :::warning
-Failure to implement these instructions may result in network disruptions and dropped transactions. It is strongly recommended that every exchange supporting Koii make use of priority fees to avoid disruption.
+Priority fees help avoid dropped transactions and network disruptions. It is **highly** recommended to to implement prioritization fees.
 :::
-
-<!-- TODO: NO DOCS ON PRIORITIZATION FEES https://solana.com/developers/guides/advanced/how-to-use-priority-fees -->
-In periods of high demand, it’s possible for a transaction to expire before a validator has included such transactions in their block because they chose other transactions with higher economic value. Valid Transactions on Solana may be delayed or dropped if Prioritization Fees are not implemented properly.
-
-<!-- TODO: DOESN'T SEEM TO BE ANYTHING ON BASE TRANSACTION FEES -->
-[Prioritization Fees](/docs/terminology#prioritization-fee) are additional fees that can be added on top of the [base Transaction Fee](/docs/core/fees#transaction-fees) to ensure transaction inclusion within blocks and in these situations and help ensure deliverability.
-
-These priority fees are added to transaction by adding a special Compute Budget instruction that sets the desired priority fee to be paid.
 
 ## What is a Prioritization Fee?
 
-Prioritization Fees are priced in micro-lamports per Compute Unit (e.g. small amounts of SOL) prepended to transactions to make them economically compelling for validator nodes to include within blocks on the network.
+It is possible for valid transactions on Koii to be delayed or dropped when demand is high if prioritization fees are not implemented. This is because a transaction may expire before a validator adds it to their block because other transactions have a higher value. It is therefore vital to implement prioritization fees correctly.
+
+Every transaction is charged a base transaction fee of 500,000 Roe. Prioritization fees are an additional fee that can be added on top of this base fee to ensure a transaction is included in a block, helping to ensure deliverability.
+
+Priority fees are priced in micro-Roe per Compute Unit and added to transactions to make them more attractive to validators.
 
 ## How much should the Prioritization Fee be?
 
-The method for setting your prioritization fee should involve querying recent prioritization fees to set a fee which is likely to be compelling for the network. Using the [`getRecentPrioritizationFees`](/develop/rpcapi/http/getrecentprioritizationfees) RPC method, you can query for the prioritization fees required to land a transaction in a recent block.
+:::info
+The optimal prioritization fee can only be known after the fact, because it is determined dynamically by network activity and the bids placed by all participants.
+:::
 
-Pricing strategy for these priority fees will vary based on your use case. There is no canonical way to do so. One strategy for setting your Prioritization Fees might be to calculate your transaction success rate and then increase your Prioritization Fee against a query to the recent transaction fees API and adjust accordingly. Pricing for Prioritization Fees will be dynamic based on the activity on the network and bids placed by other participants, only knowable after the fact.
+There is no one way to determine the prioritization fees you wish to charge, but a good first step is to get recent fee amounts by querying the [`getRecentPrioritizationFees`](/develop/rpcapi/http/getrecentprioritizationfees) RPC method. You can use this information along with your pricing strategy to calculate the priority fee.
 
-One challenge with using the `getRecentPrioritizationFees` API call is that it may only return the lowest fee for each block. This will often be zero, which is not a fully useful approximation of what Prioritization Fee to use in order to avoid being rejected by validator nodes.
+For example, you might decide to set a target transaction success rate and then adjust fees based on recent pricing.
 
-The `getRecentPrioritizationFees` API takes accounts’ pubkeys as parameters, and then returns the highest of the minimum prioritization fees for these accounts. When no account is specified, the API will return the lowest fee to land to block, which is usually zero (unless the block is full).
-
-Exchanges and applications should query the RPC endpoint with the accounts that a transaction is going to write-lock. The RPC endpoint will return the `max(account_1_min_fee, account_2_min_fee, ... account_n_min_fee)`, which should be the base point for the user to set the prioritization fee for that transaction.
-
-<!-- TODO: DOES THIS APPLY TO US? -->
-There are different approaches to setting Prioritization Fees and some [third-party APIs](https://docs.helius.dev/solana-rpc-nodes/alpha-priority-fee-api) are available to determine the best fee to apply. Given the dynamic nature of the network, there will not be a “perfect” way to go about pricing your Prioritization fees and careful analysis should be applied before choosing a path forward.
+The `getRecentPrioritizationFees` uses account pubkeys as parameters, gets the minimum prioritization fees for these accounts, and returns the largest fee found. However, if no account is specified, the API will return the lowest fee theoretically needed to have the transaction included. This is usually zero, unless the block is full. This may not always be a useful approximation of the current prioritization fee to use. In order to avoid this, query the RPC endpoint with the accounts that the transaction is going to write-lock.
 
 ## How to Implement Prioritization Fees
 
-Adding priority fees on a transaction consists of prepending two Compute Budget instructions on a given transaction:
+To add a priority fee, two Compute Budget instructions must be prepended to the transaction. The first sets the compute unit price, and the second sets the compute unit limit.
 
-- one to set the compute unit price, and
-- another to set the compute unit limit
+<!-- #### Info
 
-#### Info
+Here, you can also find a more detailed developer [guide on how to use priority fees](/developers/guides/advanced/how-to-use-priority-fees) which includes more information about implementing priority fees. -->
 
-Here, you can also find a more detailed developer [guide on how to use priority fees](/developers/guides/advanced/how-to-use-priority-fees) which includes more information about implementing priority fees.
+Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the Base Transaction Fee (500,000 Roe).
 
-Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the Base Transaction Fee (5,000 Lamports).
+<!--     // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
-    // import { ComputeBudgetProgram } from "@solana/web3.js"
-    ComputeBudgetProgram.setComputeUnitPrice({ microLamports: number });
+    ComputeBudgetProgram.setComputeUnitPrice({ microRoes: number });
 ```
 
-The value provided in micro-lamports will be multiplied by the Compute Unit (CU) budget to determine the Prioritization Fee in Lamports. For example, if your CU budget is 1M CU, and you add `1 microLamport/CU`, the Prioritization Fee will be 1 lamport (1M \* 0. 000001). The total fee will then be 5001 lamports.
+To get the prioritization fee, the Compute Unit (CU) budget will be multiplied by the supplied value in micro-Roe. For example, a CU budget of 5M with `microRoes` set to 1000 would set the prioritization fee to 5000 Roe. Added to the base transaction fee of 500,000 Roe, the total fee would be 505,000 Roe.
 
-To set a new compute unit budget for the transaction, create a `setComputeUnitLimit` instruction
+To set the CU budget, you can use `setComputeUnitLimit`. The `units` value will replace the default compute budget:
+
+<!-- // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
-    // import { ComputeBudgetProgram } from "@solana/web3.js"
     ComputeBudgetProgram.setComputeUnitLimit({ units: number });
 ```
 
-The `units` value provided will replace the Solana runtime's default compute budget value.
+:::info
+In order to minimize prioritization fees, you should set the lowest CU required for execution. To determine the CU needed, you can send the transaction on testnet.
+:::
 
-Set the lowest CU required for the transaction
-
-Transactions should request the minimum amount of compute units (CU) required for execution to maximize throughput and minimize overall fees.
-
-You can get the CU consumed by a transaction by sending the transaction on a different Solana cluster, like devnet. For example, a [simple token transfer](https://explorer.solana.com/tx/5scDyuiiEbLxjLUww3APE9X7i8LE3H63unzonUwMG7s2htpoAGG17sgRsNAhR1zVs6NQAnZeRVemVbkAct5myi17) takes 300 CU.
+<!-- // import { ... } from "@solana/web3.js" -->
 
 ```js
-    // import { ... } from "@solana/web3.js"
-
     const modifyComputeUnits = ComputeBudgetProgram.setComputeUnitLimit({
-      // note: set this to be the lowest actual CU consumed by the transaction
-      units: 300,
+      // set this to the lowest CU needed
+      units: 150,
     });
 
     const addPriorityFee = ComputeBudgetProgram.setComputeUnitPrice({
-      microLamports: 1,
+      // set this to the priority fee you want to charge
+      microRoes: 10,
     });
 
     const transaction = new Transaction()
@@ -89,17 +77,15 @@ You can get the CU consumed by a transaction by sending the transaction on a dif
       .add(addPriorityFee)
       .add(
         SystemProgram.transfer({
-          fromPubkey: payer.publicKey,
-          toPubkey: toAccount,
-          lamports: 10000000,
-        }),
+            // details of transfer
+          }),
       );
 ```
 
 ## Prioritization Fees And Durable Nonces
 
-If your setup uses Durable Nonce Transactions, it is important to properly implement Prioritization Fees in combination with Durable Transaction Nonces to ensure successful transactions. Failure to do so will cause intended Durable Nonce transactions not to be detected as such.
+:::warning
+If prioritization fees are not correctly configured in combination with durable nonce transactions, transactions will not be recognized as durable nonce.
+:::
 
-If you ARE using Durable Transaction Nonces, the `AdvanceNonceAccount` instruction MUST be specified FIRST in the instructions list, even when the compute budget instructions are used to specify priority fees.
-
-You can find a specific code example [using durable nonces and priority fees together](/developers/guides/advanced/how-to-use-priority-fees#special-considerations) in this developer guide.
+When using durable nonce transaction with prioritization fees, the first instruction **must** be the `AdvanceNonceAccount` instruction, ahead of any compute budget instructions.
