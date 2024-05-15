@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: getTokenSupply
 ---  
 
-Returns the total supply of an SPL Token type.
+Returns the total supply of an KPL Token type.
 
 ### Parameters [#](#parameters)
 `string` **required**  

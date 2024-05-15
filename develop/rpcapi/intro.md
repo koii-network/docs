@@ -38,7 +38,7 @@ Many methods that take a commitment parameter return an RpcResponse JSON object 
 Parsed Responses [#](#parsed-responses)
 ---------------------------------------
 
-Some methods support an `encoding` parameter, and can return account or instruction data in parsed JSON format if `"encoding":"jsonParsed"` is requested and the node has a parser for the owning program. Koii Validator nodes currently support JSON parsing for the following native and SPL programs:
+Some methods support an `encoding` parameter, and can return account or instruction data in parsed JSON format if `"encoding":"jsonParsed"` is requested and the node has a parser for the owning program. Koii Validator nodes currently support JSON parsing for the following native and KPL programs:
 
 
 |Program                     |Account State|Instructions|
