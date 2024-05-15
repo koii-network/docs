@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: getTokenAccountsByDelegate
 ---  
 
-Returns all SPL Token accounts by approved Delegate.
+Returns all KPL Token accounts by approved Delegate.
 
 ### Parameters [#](#parameters)
 `string` **required**    

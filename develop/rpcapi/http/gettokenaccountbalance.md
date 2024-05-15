@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: getTokenAccountBalance
 ---  
 
-Returns the token balance of an SPL Token account.
+Returns the token balance of an KPL Token account.
 
 ### Parameters [#](#parameters)
 `string` **required**    

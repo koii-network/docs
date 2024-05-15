@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: getTokenAccountsByOwner
 ---  
 
-Returns all SPL Token accounts by token owner.
+Returns all KPL Token accounts by token owner.
 
 ### Parameters [#](#parameters)
 `string` **required**  
