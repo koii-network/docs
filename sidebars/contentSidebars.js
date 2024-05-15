@@ -39,7 +39,7 @@ const sidebars = {
     "what-are-koii-nodes/introduction",
     "what-are-koii-nodes/koii-node-app",
     "what-are-koii-nodes/get-started",
-
+    "what-are-koii-nodes/what-is-an-rpc-node",
     {
       type: "html",
       value: "What are Tasks?",
