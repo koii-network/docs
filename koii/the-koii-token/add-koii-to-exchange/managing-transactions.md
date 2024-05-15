@@ -442,6 +442,8 @@ By passing a blockhash to the [`getFeeCalculatorForBlockhash`](/docs/rpc/depreca
 Withdrawals are irreversible. To avoid accidental loss of a user's funds, we recommend validating all user-supplied account addresses.
 :::
 
+## Validating User-supplied Account Addresses for Withdrawals
+
 ### Basic verification
 
 Koii addresses are generated as 32-byte arrays, encoded with the bitcoin base58 alphabet. The following regex describes the ASCII text string that is generated:
@@ -532,6 +534,7 @@ Similarly, every deposit account must contain at least this balance.
 
 ### Response
 
+<!-- TODO: Should update this to the correct amount for Koii -->
 ```json
     { "jsonrpc": "2.0", "result": 890880, "id": 1 }
 ```
