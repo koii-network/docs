@@ -71,7 +71,7 @@ The KOII CLI can be installed in various ways based on your operating system:
 1. Open your terminal and execute the following command:
 
 ```
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.1.sh)"
 ```
 
 This command will download and install the necessary Koii tools.

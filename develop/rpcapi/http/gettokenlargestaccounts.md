@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: getTokenLargestAccounts
 ---  
 
-Returns the 20 largest accounts of a particular SPL Token type.
+Returns the 20 largest accounts of a particular KPL Token type.
 
 ### Parameters [#](#parameters)
 `string` **required**  

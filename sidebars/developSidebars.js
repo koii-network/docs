@@ -86,6 +86,7 @@ const sidebars = {
         "write-a-koii-task/task-development-guide/template-structure/audit-submissions",
         "write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
         "write-a-koii-task/task-development-guide/template-structure/setup",
+        "write-a-koii-task/task-development-guide/template-structure/upnp-structure"
       ],
     },
     {
@@ -202,6 +203,12 @@ const sidebars = {
         "erc20-reward/distribution",
       ],
     },
+    {
+      type: "html",
+      value: "Smart Contract",
+      className: "sidebar-title top-margin",
+    },
+    "smart-contract/helloworld",
     {
       type: "html",
       value: "RPC",

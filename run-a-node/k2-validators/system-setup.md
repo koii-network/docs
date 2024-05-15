@@ -41,7 +41,7 @@ cd ~
 * Required both on your secure computer for keypair generation and on the validator
 
 ```bash
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.0.sh)"
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.1.sh)"
 # You may need to update PATH variable for the cli to be available
 echo 'export PATH="/home/koii/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
