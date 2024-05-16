@@ -37,18 +37,19 @@ NOTE: The total number of KOII tokens to be distributed should not exceed the bo
 Only one selected node will call the `submitDistributionList` function to submit the distribution list. The `submitDistributionList` function is responsible for generating a distribution list and submitting it to K2. Here is an example of a `submitDistributionList` function:
 
 ```javascript
-async submitDistributionList(round) {
+  submitDistributionList = async round => {
+    console.log('SUBMIT DISTRIBUTION LIST CALLED WITH ROUND', round);
     try {
-      // generate distribution list
       const distributionList = await this.generateDistributionList(round);
-
-      // Decuder is a boolean flag to indicate the uploadDistributionList was successful
+      if (Object.keys(distributionList).length === 0) {
+        console.log('NO DISTRIBUTION LIST GENERATED');
+        return;
+      }
       const decider = await namespaceWrapper.uploadDistributionList(
         distributionList,
         round,
       );
       console.log('DECIDER', decider);
-
       if (decider) {
         const response =
           await namespaceWrapper.distributionListSubmissionOnChain(round);
@@ -57,7 +58,7 @@ async submitDistributionList(round) {
     } catch (err) {
       console.log('ERROR IN SUBMIT DISTRIBUTION', err);
     }
-  }
+  };
 ```
 
 In this flow, `submitDistributionList` function will be called in each round to submit the distribution list. The `generateDistributionList` function is called to generate the distribution list and then it is submitted to K2.
@@ -67,26 +68,49 @@ In this flow, `submitDistributionList` function will be called in each round to 
 For other nodes, the `auditDistribution` function will be called to audit the distribution list. The nodes will call `generateDistributionList` function as well to compare if the selected node distribution list correct or not. Here is an example of a `auditDistribution` function:
 
 ```javascript
-async auditDistribution(roundNumber) {
+  async auditDistribution(roundNumber) {
+    console.log('AUDIT DISTRIBUTION CALLED WITHIN ROUND: ', roundNumber);
     await namespaceWrapper.validateAndVoteOnDistributionList(
       this.validateDistribution,
       roundNumber,
     );
-}
+  }
 
- validateDistribution = async (distributionListSubmitter, round) => {
+  validateDistribution = async (
+    distributionListSubmitter,
+    round,
+    _dummyDistributionList,
+    _dummyTaskState,
+  ) => {
     try {
-      // fetch distribution list from K2
+      console.log('DISTRIBUTION LIST SUBMITTER', distributionListSubmitter);
       const rawDistributionList = await namespaceWrapper.getDistributionList(
-        distributionListSubmitter,round);
-      let fetchedDistributionList = JSON.parse(rawDistributionList);
+        distributionListSubmitter,
+        round,
+      );
+      let fetchedDistributionList;
+      if (rawDistributionList == null) {
+        return true;
+      } else {
+        fetchedDistributionList = JSON.parse(rawDistributionList);
+      }
       console.log('FETCHED DISTRIBUTION LIST', fetchedDistributionList);
+      const generateDistributionList = await this.generateDistributionList(
+        round,
+        _dummyTaskState,
+      );
 
-      // generate distribution list
-      const generateDistributionList = await this.generateDistributionList(round);
-
-      // compare distribution list
+      if(Object.keys(generateDistributionList).length === 0) {
+        console.log('UNABLE TO GENERATE DISTRIBUTION LIST');
+        return true;
+      }
+      // Compare distribution list
       const parsed = fetchedDistributionList;
+      console.log(
+        'COMPARE DISTRIBUTION LIST',
+        parsed,
+        generateDistributionList,
+      );
       const result = await this.shallowEqual(parsed, generateDistributionList);
       console.log('RESULT', result);
       return result;
