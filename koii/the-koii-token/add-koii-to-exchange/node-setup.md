@@ -14,13 +14,13 @@ This setup is recommended because:
 - you can control how much historical block data you store
 - you can maintain availability if one node fails
 
-Please see our [hardware recommendations](https://docs.koii.network/run-a-node/k2-validators/validator-requirements#hardware-requirements) before getting started.
+Please see our [hardware recommendations](/run-a-node/k2-validators/validator-requirements#hardware-requirements) before getting started.
 
 :::
 
 To run an RPC Node:
 
-1. [Install the Koii command-line tool suite](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli)
+1. [Install the Koii command-line tool suite](/develop/command-line-tool/koii-cli/install-cli)
 2. Start the validator with at least the following parameters:
 
 ```bash
@@ -39,15 +39,15 @@ To run an RPC Node:
 
 Customize `--ledger` to your desired ledger storage location, and `--rpc-port` to the port you want to expose.
 
-<!-- TODO: IS THIS CORRECT/RELEVANT? -->
+<!-- TODO: IS THIS CORRECT/RELEVANT? IF YES, NEED OUR MAINNET PARAMETERS -->
 <!-- The `--entrypoint` and `--expected-genesis-hash` parameters are all specific to the cluster you are joining. [Current parameters for Mainnet Beta](https://docs.solanalabs.com/clusters/available#example-solana-validator-command-line-2) -->
 
 To specify the number of ledger shreds your node stores, you can specify the `--limit-ledger-size` parameter. Its default value is 200,000,000 shreds, which will limit the disk usage to 400GB.
 
  More information about selecting a custom limit value is [available here](https://github.com/solana-labs/solana/blob/583cec922b6107e0f85c7e14cb5e642bc7dfb340/core/src/ledger_cleanup_service.rs#L15-L26).
 
-:::info
-It is recommended to use [known validators](https://docs.koii.network/run-a-node/k2-validators/validator-start#known-validators) when booting from a snapshot. This can be specified with the `--known-validators` parameter.
+:::warning
+It is recommended to use [known validators](/run-a-node/k2-validators/validator-start#known-validators) when booting from a snapshot. This can be specified with the `--known-validators` parameter.
 :::
 
 Optional parameters to consider:
@@ -71,7 +71,7 @@ You can monitor your node's health using `koii-watchtower`, and can configure it
 <!-- Info
 You can find more information about the [best practices for Koii Watchtower](https://docs.solanalabs.com/operations/best-practices/monitoring#solana-watchtower) here in the docs. -->
 
-### New Software Releases
+### New Releases
 
 New software releases will be announced on the [K2 releases Github repository](https://github.com/koii-network/k2-release).
 
@@ -79,7 +79,7 @@ New software releases will be announced on the [K2 releases Github repository](h
 We expect RPC nodes to be updated within 1-2 business days of a new release; sooner if it's a security update.
 :::
 
-## Ledger Continuity
+## Maintaining Ledger Continuity
 
 When a node boots, it will use a snapshot provided by a known validator. Snapshots do not contain the entire history record of transactions, so when a node reboots it may load from a new snapshot that creates a gap in the ledger. You can add the `--no-snapshot-fetch` flag to `koii-validator` to get the entire ledger.
 
@@ -89,7 +89,7 @@ On initial boot of your node, boot from a snapshot. Only use `--no-snapshot-fetc
 
 Please note that the historical data available may not be complete. If your node is down for an extended period, you may need to download a new snapshot, which will create a gap in the ledger that cannot be filled.
 
-## Minimizing Validator Port Exposure
+## Optional: Reducing Port Exposure
 
 It is recommended to keep open the UDP and TCP ports needed for receiving inbound traffic from all other validators, but it is possible to restrict the traffic.
 

@@ -128,7 +128,7 @@ When transferring tokens, the source account must be the actual token account co
 It is recommended to derive the accounts associated with each `wallet,mint` pair from KOII deposit accounts using associated token accounts and only accept deposits from ATA addresses.
 :::
 
-To monitor for deposit transactions, you can use the same [block polling](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#poll-for-blocks) method described for KOII deposits, scanning for transactions referencing the token-account derived addresses. The `preTokenBalance` and `postTokenBalance` fields from the transaction metadata will provide information on the token mint and the main wallet address to which the token account belongs.
+To monitor for deposit transactions, you can use the same [block polling](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#polling-for-blocks) method described for KOII deposits, scanning for transactions referencing the token-account derived addresses. The `preTokenBalance` and `postTokenBalance` fields from the transaction metadata will provide information on the token mint and the main wallet address to which the token account belongs.
 
 :::info
 Because token accounts can be created during a transaction, it is possible that a transaction will not have a `preTokenBalance` entry. In this case, you can assume the starting balance will be zero.
@@ -136,7 +136,7 @@ Because token accounts can be created during a transaction, it is possible that 
 
 ## Withdrawing
 
-When a user wishes to withdraw tokens, they should provide the address of their KOII wallet. The exchange should check the address [as described here](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#validating-user-supplied-account-addresses-for-withdrawals) before executing the withdrawal. The account must be owned by the System Program and have no account data. Reject addresses that do not meet these conditions.
+When a user wishes to withdraw tokens, they should provide the address of their KOII wallet. The exchange should check the address [as described here](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#validating-user-supplied-account-addresses) before executing the withdrawal. The account must be owned by the System Program and have no account data. Reject addresses that do not meet these conditions.
 
 If the address supplied has no KOII balance, obtain the user's confirmation before initiating the withdrawal.
 
@@ -236,7 +236,7 @@ Non-transferable tokens can be burned and their accounts can be closed.
 Stablecoins in certain jurisdictions may have a legal requirement to set a permanent delegate. This delegate has full control to transfer or burn tokens from any account. While it may be a legal requirement in some cases, it can also be abused to steal funds.
 
 :::warning
-If a token has as permanent delegate, tokens may be transferred without your knoweldge.
+If a token has as permanent delegate, tokens may be transferred without your knowledge.
 :::
 
 ### Transfer Hook

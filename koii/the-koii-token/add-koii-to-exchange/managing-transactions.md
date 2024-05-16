@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Managing Transactions
 ---
 
-## Setting up Deposit Accounts
+## Deposit Accounts
 
 A Koii account exists as soon as it has a balance, so setting up a deposit account is as simple as generating a keypair using our [wallet tools](/develop/command-line-tool/koii-cli/create-wallet).
 
@@ -13,9 +13,11 @@ A Koii account exists as soon as it has a balance, so setting up a deposit accou
 We recommend using a unique deposit account for each of your users.
 :::
 
+Direct users to the appropriate deposit address when they want to deposit KOII into your exchange.
+
 Deposit accounts must be rent-exempt. This is done by making sure their balance is at least 2 years worth of [rent](/concepts/settlement-layer/rent) in KOII.
 
-To find the minimum rent-exempt amount you need for your deposit accounts, query the [`getMinimumBalanceForRentExemption` endpoint](/develop/rpcapi/http/getminimumbalanceforrentexemption) or use the `koii rent 0` command via the CLI.
+To find the minimum rent-exempt amount you need for your deposit accounts, query [`getMinimumBalanceForRentExemption`](/develop/rpcapi/http/getminimumbalanceforrentexemption) or use the `koii rent 0` command via the CLI.
 
 ### Request
 
@@ -34,15 +36,13 @@ To find the minimum rent-exempt amount you need for your deposit accounts, query
     { "jsonrpc": "2.0", "result": 890880, "id": 1 }
 ```
 
-## Offline Accounts
-
 <!-- TODO: WE REALLY SHOULD HAVE SOMETHING ON OFFLINE ACCOUNTS  -->
-You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move KOII to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing).
+<!-- ## Offline Accounts
 
-## Listening for Deposits
+You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move KOII to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing). -->
 
-Direct users to the appropriate deposit address when they want to deposit KOII into your exchange.
 
+<!-- NOTE: This is the unwritten content on versioned transactions from Solana. At the time of writing, we aren't supporting versioned transactions, so I'm leaving this here for future reference. -->
 <!-- ## Versioned Transaction Migration
 
 When the Mainnet Beta network starts processing versioned transactions, exchanges **MUST** make changes. If no changes are made, deposit detection will no longer work properly because fetching a versioned transaction or a block containing versioned transactions will return an error.
@@ -53,7 +53,7 @@ It's important to understand that versioned transactions allow users to create t
 
 -`{"encoding": "jsonParsed"}` When fetching blocks and transactions, it's now recommended to use the `"jsonParsed"` encoding because it includes all transaction account keys (including those from lookup tables) in the message `"accountKeys"` list. This makes it straightforward to resolve balance changes detailed in `preBalances` / `postBalances` and `preTokenBalances` / `postTokenBalances`. If the `"json"` encoding is used instead, entries in `preBalances` / `postBalances` and `preTokenBalances` / `postTokenBalances` may refer to account keys that are **NOT** in the `"accountKeys"` list and need to be resolved using `"loadedAddresses"` entries in the transaction metadata. -->
 
-## Poll for Blocks
+## Polling for Blocks
 
 In order to track deposit accounts, you should poll for each confirmed block and inspect it for the necessary addresses. This can be done by sending a [`getBlocks`](/develop/rpcapi/http/getblocks) request to the RPC API, setting the `start-slot` parameter to the last block you processed.
 
@@ -176,13 +176,15 @@ We provide the `preBalances` and `postBalances` fields so that the balance chang
 
 If you need additional information about transactions that's unavailable through this endpoint, you can fetch the block in binary format and parse it with the [Javascript SDK](https://github.com/koii-network/k2-web3.js).
 
-## Block Fetching Tips
+:::info
 
 - If you don't need information about the validator fees on each block, you can disable this information with `{"rewards": false}`.
 
 - If you're just tracking balances and don't need metadata or detailed transaction information, you can disable it by setting `{"transactionDetails": "accounts"}`. This will speed up block fetching.
 
-## Address History
+:::
+
+## Fetching Address History
 
 :::warning
 Querying the transaction history of a specific address can be useful for inspecting individual accounts for a period of time, but it should not be used for tracking all deposit addresses over all slots.
@@ -342,11 +344,11 @@ To query an address:
     }
 ```
 
-## Sending Withdrawals
+## Handling Withdrawals
 
 When a user wishes to withdraw KOII, generate a Koii transfer transaction and send it to your RPC node for forwarding to the cluster.
 
-### Synchronous
+### Synchronous Withdrawals
 
 You can easily ensure that a transfer is successful by sending a synchronous transfer to the Koii cluster.
 
@@ -358,18 +360,18 @@ The Koii CLI tool offers the command `koii transfer`, which allows you manage an
 
 You can also accomplish this with the [Koii Javascript SDK](https://github.com/koii-network/k2-web3.js). You can build a transaction with `SystemProgram` and submit it with `sendAndConfirmTransaction`.
 
-### Asynchronous
+### Asynchronous Withdrawals
 
 :::warning
 If you wish to submit withdrawals asynchronously, it is your responsibility to ensure the transactions succeeded and was finalized.
 :::
 
-:::warning
-To ensure you do not double spend, it is *vital* that you do not retry a withdrawal until the transaction's recent blockhash has expired, even if it does not appear to be confirmed or finalized. Blockhash expiration is explained in more detail [below](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#blockhash-expiration).
-:::
+To ensure you do not double spend, it is *vital* that you do not retry a withdrawal until the transaction's recent blockhash has expired, even if it does not appear to be confirmed or finalized. Blockhash expiration is explained in more detail [below](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#checking-blockhash-expiration).
 
+<!-- TODO: missing -->
 To get the recent blockhash, send a request to [`getFees`](/docs/rpc/deprecated/getfees).
 
+<!-- TODO: confirm port -->
 ```bash
     koii fees --url http://localhost:8899
 ```
@@ -382,7 +384,7 @@ To send a transaction asynchronously, pass the `--no-wait` flag in the Koii CLI 
 
 Alternatively, you can build, sign, and serialize the transfer manually, then sent it to the cluster using the [`sendTransaction`](/develop/rpcapi/http/sendtransaction) endpoint.
 
-## Transaction Confirmations & Finality
+## Checking Transaction Status
 
 You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatuses) JSON-RPC endpoint to get the status of a batch of transactions. You can check the number of confirmed blocks that have elapsed since the transaction was processed by checking the `confirmations` field. If `confirmations` is `null`, the transaction has been finalized.
 
@@ -434,17 +436,22 @@ You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatus
     }
 ```
 
-### Blockhash Expiration
+### Checking Blockhash Expiration
 
+<!-- TODO: missing -->
 By passing a blockhash to the [`getFeeCalculatorForBlockhash`](/docs/rpc/deprecated/getfeecalculatorforblockhash) endpoint with the `blockhash` parameter, you can check whether a given blockhash has expired. The blockhash is expired when the response is `null`, and you can safely retry a failed withdrawal transaction.
 
 :::warning
 Withdrawals are irreversible. To avoid accidental loss of a user's funds, we recommend validating all user-supplied account addresses.
 :::
 
-## Validating User-supplied Account Addresses for Withdrawals
+## Validating User-Supplied Account Addresses
 
-### Basic verification
+### Address Verification
+
+:::warning
+There is no checksum on Koii addresses. It is highly recommended to decode the string and confirm that the length of the byte array is 32. However, it is possible for a mistyped address to decode to 32 bytes, so we also recommend checking the balance of each withdrawal address and asking the user to confirm their intentions when the balance is greater than zero.
+:::
 
 Koii addresses are generated as 32-byte arrays, encoded with the bitcoin base58 alphabet. The following regex describes the ASCII text string that is generated:
 
@@ -452,11 +459,7 @@ Koii addresses are generated as 32-byte arrays, encoded with the bitcoin base58 
     [1-9A-HJ-NP-Za-km-z]{32,44}
 ```
 
-:::warning
-There is no checksum on Koii addresses. It is highly recommended to decode the string and confirm that the length of the byte array is 32. However, it is possible for a mistyped address to decode to 32 bytes, so we also recommend checking the balance of each withdrawal address and asking the user to confirm their intentions when the balance is greater than zero.
-:::
-
-#### Valid ed25519 pubkey check
+### Validating Public Keys
 
 :::info
 A normal Koii account address is a 256-bit ed25519 public key, encoded as a base-58 string. It is recommended to confirm that user-supplied account addresses are valid ed25519 public keys.
@@ -515,7 +518,7 @@ The following code sample assumes you're using the Maven.
     }
 ```
 
-## Minimum Deposit & Withdrawal Amounts
+## Minimum Transaction Amounts
 
 Deposit and withdrawal transactions must be at least equal to the minimum rent-exempt balance for a KOII account holding no data. You can check this via the CLI using `koii rent 0`.
 
@@ -534,7 +537,6 @@ Similarly, every deposit account must contain at least this balance.
 
 ### Response
 
-<!-- TODO: Should update this to the correct amount for Koii -->
 ```json
     { "jsonrpc": "2.0", "result": 890880, "id": 1 }
 ```

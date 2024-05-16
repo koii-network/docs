@@ -39,6 +39,7 @@ Here, you can also find a more detailed developer [guide on how to use priority 
 
 Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the Base Transaction Fee (500,000 Roe).
 
+<!-- TODO: These need to be updated to Koii but at the time of the writing our k2-web3.js doesn't include them -->
 <!--     // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
@@ -49,6 +50,7 @@ To get the prioritization fee, the Compute Unit (CU) budget will be multiplied b
 
 To set the CU budget, you can use `setComputeUnitLimit`. The `units` value will replace the default compute budget:
 
+<!-- TODO: These need to be updated to Koii but at the time of the writing our k2-web3.js doesn't include them -->
 <!-- // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
@@ -59,6 +61,7 @@ To set the CU budget, you can use `setComputeUnitLimit`. The `units` value will 
 In order to minimize prioritization fees, you should set the lowest CU required for execution. To determine the CU needed, you can send the transaction on testnet.
 :::
 
+<!-- TODO: These need to be updated to Koii but at the time of the writing our k2-web3.js doesn't include them -->
 <!-- // import { ... } from "@solana/web3.js" -->
 
 ```js
