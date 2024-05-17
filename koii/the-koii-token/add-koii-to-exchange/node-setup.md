@@ -39,8 +39,8 @@ To run an RPC Node:
 
 Customize `--ledger` to your desired ledger storage location, and `--rpc-port` to the port you want to expose.
 
-<!-- TODO: IS THIS CORRECT/RELEVANT? IF YES, NEED OUR MAINNET PARAMETERS -->
-<!-- The `--entrypoint` and `--expected-genesis-hash` parameters are all specific to the cluster you are joining. [Current parameters for Mainnet Beta](https://docs.solanalabs.com/clusters/available#example-solana-validator-command-line-2) -->
+<!-- TODO: Update when mainnet launched -->
+The `--entrypoint` and `--expected-genesis-hash` parameters are both specific to the cluster you are joining. The parameters for mainnet are coming soon.
 
 To specify the number of ledger shreds your node stores, you can specify the `--limit-ledger-size` parameter. Its default value is 200,000,000 shreds, which will limit the disk usage to 400GB.
 
