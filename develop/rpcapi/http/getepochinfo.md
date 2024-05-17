@@ -8,7 +8,7 @@ Returns information about the current epoch
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-  - commitment `string` **optional**
+  - [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
   - minContextSlot `number` **optional**
     The minimum slot that the request can be evaluated at
 

@@ -9,7 +9,7 @@ Returns the stake minimum delegation, in lamports.
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
 ### Result
 

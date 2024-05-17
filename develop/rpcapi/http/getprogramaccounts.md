@@ -11,7 +11,7 @@ Returns all accounts owned by the provided program Pubkey
 Pubkey of program, as base-58 encoded string
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
   The minimum slot that the request can be evaluated at
 - minContextSlot `number` **optional**
 The minimum slot that the request can be evaluated at

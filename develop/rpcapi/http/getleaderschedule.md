@@ -15,7 +15,7 @@ If unspecified, the leader schedule for the current epoch is fetched
 :::
 `object` optional
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 Only return results for this validator identity (base-58 encoded)
 
 ### Result

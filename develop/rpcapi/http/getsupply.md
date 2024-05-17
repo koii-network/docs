@@ -9,7 +9,7 @@ Returns information about the current supply.
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - excludeNonCirculatingAccountsList `bool` **optional**
 exclude non circulating accounts list from response
 

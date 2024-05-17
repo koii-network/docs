@@ -14,7 +14,7 @@ The transaction must have a valid blockhash, but is not required to be signed.
 :::
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 Default: `finalized`
 Commitment level to simulate the transaction at
 - sigVerify `bool` **optional**

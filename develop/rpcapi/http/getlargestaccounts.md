@@ -9,7 +9,7 @@ Returns the 20 largest accounts, by lamport balance (results may be cached up to
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - filter `string` **optional**
   filter results by account type
   Values:  `circulating` `nonCirculating`

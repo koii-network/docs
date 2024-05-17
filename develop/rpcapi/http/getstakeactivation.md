@@ -12,7 +12,7 @@ Pubkey of stake Account to query, as base-58 encoded string
 
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - minContextSlot `number` **optional**
   The minimum slot that the request can be evaluated at
 - epoch `u64` **optional**

@@ -9,7 +9,7 @@ Returns the account info and associated stake for all the voting accounts in the
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - votePubkey `string` **optional**
 Only return results for this validator vote address (base-58 encoded)
 - keepUnstakedDelinquents `bool` **optional**

@@ -17,7 +17,7 @@ The transaction signature must be the first signature from the transaction (see 
 :::
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - enableReceivedNotification `bool` **optional**
 Whether or not to subscribe for notifications when signatures are received by the RPC, in addition to when they are processed.
 

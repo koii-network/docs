@@ -11,7 +11,7 @@ Returns the token balance of an KPL Token account.
 Pubkey of Token account to query, as base-58 encoded string
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 ### Result
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:

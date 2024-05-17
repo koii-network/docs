@@ -12,7 +12,7 @@ Pubkey of account delegate to query, as base-58 encoded string
 
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
 ### Result
 

@@ -1,15 +1,15 @@
 ---
-title: getBlockProduction RPC Method 
+title: getBlockProduction RPC Method
 image: img/thumbnail.png
 sidebar_label: getBlockProduction
---- 
+---
 
 Returns recent block production information from the current or previous epoch.
 
 ### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-  - commitment `string` **optional**
+  - [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
   - identity `string` **optional**
     Only return results for this validator identity (base-58 encoded)
   - range `object` **optional**
@@ -36,7 +36,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response 
+### Response
 
 ```
 {

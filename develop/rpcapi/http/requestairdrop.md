@@ -20,7 +20,7 @@ lamports to airdrop, as a "u64"
 
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
 ### Result
 

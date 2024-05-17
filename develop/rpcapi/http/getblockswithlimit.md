@@ -14,7 +14,7 @@ limit, as `u64` integer (must be no more than 500,000 blocks higher than the `st
 
 `object` **optional**
 Configuration object containing the following field:
-  - commitment `string` **optional**
+  - [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
       Default: `finalized`
       - "processed" is not supported
 

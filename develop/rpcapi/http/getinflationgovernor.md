@@ -1,16 +1,16 @@
---- 
-title: getInflationGovernor RPC Method 
-image: img/thumbnail.png 
+---
+title: getInflationGovernor RPC Method
+image: img/thumbnail.png
 sidebar_label: getInflationGovernor
----  
+---
 
 Returns the current inflation governor
 
-### Parameters 
+### Parameters
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
-### Result 
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+### Result
 
 The result field will be a JSON object with the following fields:
 
