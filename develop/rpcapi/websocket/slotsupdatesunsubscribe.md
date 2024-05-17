@@ -1,23 +1,23 @@
---- 
-title: slotsUpdatesUnsubscribe RPC Method 
-image: img/thumbnail.png 
+---
+title: slotsUpdatesUnsubscribe RPC Method
+image: img/thumbnail.png
 sidebar_label: slotsUpdatesUnsubscribe
---- 
+---
 Unsubscribe from slot-update notifications
 
-### Parameters [#](#parameters)
+### Parameters
 
 `number` required
 
 subscription id to cancel
 
-### Result [#](#result)
+### Result
 
 `<bool>` - unsubscribe success message
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -27,8 +27,8 @@ subscription id to cancel
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": true, "id": 1 }
 ```

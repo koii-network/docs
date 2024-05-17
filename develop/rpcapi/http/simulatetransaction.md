@@ -1,50 +1,50 @@
---- 
-title: simulateTransaction RPC Method 
-image: img/thumbnail.png 
+---
+title: simulateTransaction RPC Method
+image: img/thumbnail.png
 sidebar_label: simulateTransaction
----  
+---
 Simulate sending a transaction
 
-### Parameters [#](#parameters)
-`string` **required**  
+### Parameters
+`string` **required**
 Transaction, as an encoded string.
 
 :::info
 The transaction must have a valid blockhash, but is not required to be signed.
 :::
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-Default: `finalized`  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+Default: `finalized`
 Commitment level to simulate the transaction at
-- sigVerify `bool` **optional**  
-if `true` the transaction signatures will be verified (conflicts with `replaceRecentBlockhash`)  
-- replaceRecentBlockhash `bool` **optional**  
+- sigVerify `bool` **optional**
+if `true` the transaction signatures will be verified (conflicts with `replaceRecentBlockhash`)
+- replaceRecentBlockhash `bool` **optional**
 if `true` the transaction recent blockhash will be replaced with the most recent blockhash. (conflicts with `sigVerify`)
-- minContextSlot `number` **optional**  
+- minContextSlot `number` **optional**
 the minimum slot that the request can be evaluated at
-- encoding `string` **optional**  
-Default: `base58`  
-Encoding used for the transaction data.   
-Values: `base58` (_slow_, **DEPRECATED**), or `base64`.  
-- innerInstructions `bool` **optional** 
-If `true` the response will include [inner instructions](/develop/rpcapi/json-structures#inner-instructions). These inner instructions will be `jsonParsed` where possible, otherwise `json`.  
-- accounts `object` **optional**  
-Accounts configuration object containing the following fields:  
+- encoding `string` **optional**
+Default: `base58`
+Encoding used for the transaction data.
+Values: `base58` (_slow_, **DEPRECATED**), or `base64`.
+- innerInstructions `bool` **optional**
+If `true` the response will include [inner instructions](/develop/rpcapi/json-structures#inner-instructions). These inner instructions will be `jsonParsed` where possible, otherwise `json`.
+- accounts `object` **optional**
+Accounts configuration object containing the following fields:
   - addresses `array`
-  An `array` of accounts to return, as base-58 encoded strings  
-  - encoding `string`  
-  Default: `base64`  
-  encoding for returned Account data  
-  Values: `base64` `base58` `base64+zstd` `jsonParsed`  
-  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.  
-  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.  
+  An `array` of accounts to return, as base-58 encoded strings
+  - encoding `string`
+  Default: `base64`
+  encoding for returned Account data
+  Values: `base64` `base58` `base64+zstd` `jsonParsed`
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
+  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the returned `accounts.data` field is type `string`.
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` set to a JSON object with the following fields:
 
-*   `err: <object|string|null>` - Error if transaction failed, null if transaction succeeded. 
+*   `err: <object|string|null>` - Error if transaction failed, null if transaction succeeded.
 *   `logs: <array|null>` - Array of log messages the transaction instructions output during execution, null if simulation failed before the transaction was able to execute (for example due to an invalid blockhash or signature verification failure)
 *   `accounts: <array|null>` - array of accounts with the same length as the `accounts.addresses` array in the request
     *   `<null>` - if the account doesn't exist or if `err` is not null
@@ -60,9 +60,9 @@ The result will be an RpcResponse JSON object with `value` set to a JSON object 
     *   `data: <[string, encoding]>` - the return data itself, as base-64 encoded binary data
 *   `innerInstructions: <object | undefined>` - Defined only if `innerInstructions` was set to `true`. The value is a list of [inner instructions](/develop/rpcapi/json-structures#inner-instructions).
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -79,9 +79,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

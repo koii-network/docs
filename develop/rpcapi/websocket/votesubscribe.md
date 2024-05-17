@@ -1,37 +1,37 @@
---- 
+---
 title: voteSubscribe RPC Method
-image: img/thumbnail.png 
+image: img/thumbnail.png
 sidebar_label: voteSubscribe
----    
+---
 Subscribe to receive notification anytime a new vote is observed in gossip. These votes are pre-consensus therefore there is no guarantee these votes will enter the ledger.
 
 Unstable Method
 
 This subscription is unstable and only available if the validator was started with the `--rpc-pubsub-enable-vote-subscription` flag. The format of this subscription may change in the future.
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 `<integer>` - subscription id (needed to unsubscribe)
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 { "jsonrpc": "2.0", "id": 1, "method": "voteSubscribe" }
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 
 
-#### Notification Format: [#](#notification-format)
+#### Notification Format:
 
 The notification will be an object with the following fields:
 

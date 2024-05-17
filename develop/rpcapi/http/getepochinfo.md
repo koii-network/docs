@@ -1,18 +1,18 @@
 ---
-title: getEpochInfo RPC Method 
+title: getEpochInfo RPC Method
 image: img/thumbnail.png
 sidebar_label: getEpochInfo
---- 
+---
 Returns information about the current epoch
 
-### Parameters [#](#parameters)
-`object` **optional**  
-Configuration object containing the following fields:  
-  - commitment `string` **optional**  
-  - minContextSlot `number` **optional**  
+### Parameters
+`object` **optional**
+Configuration object containing the following fields:
+  - [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+  - minContextSlot `number` **optional**
     The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 The result field will be an object with the following fields:
 
@@ -23,18 +23,18 @@ The result field will be an object with the following fields:
 *   `slotsInEpoch: <u64>` - the number of slots in this epoch
 *   `transactionCount: <u64|null>` - total number of transactions processed without error since genesis
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}
 '
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

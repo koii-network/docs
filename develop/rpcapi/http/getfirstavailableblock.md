@@ -2,20 +2,20 @@
 title: getFirstAvailableBlock RPC Method
 image: img/thumbnail.png
 sidebar_label: getFirstAvailableBlock
----   
+---
 Returns the slot of the lowest confirmed block that has not been purged from the ledger
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 *   `<u64>` - Slot
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc":"2.0","id":1,
@@ -25,8 +25,8 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 250000, "id": 1 }
 ```

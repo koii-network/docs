@@ -1,19 +1,19 @@
---- 
-title: getMultipleAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getMultipleAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getMultipleAccounts
----  
+---
 
 Returns the account information for a list of Pubkeys.
 
-### Parameters [#](#parameters)
-`array` **required**  
+### Parameters
+`array` **required**
 An array of Pubkeys to query, as base-58 encoded strings (up to a maximum of 100)
 
-`object` **optional**  
-Configuration object containing the following fields:   
-- commitment `string` **optional**  
-- minContextSlot `number` **optional**  
+`object` **optional**
+Configuration object containing the following fields:
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+- minContextSlot `number` **optional**
 The minimum slot that the request can be evaluated at
 - dataSlice `object` **optional**
   Request a slice of the account's data.
@@ -22,8 +22,8 @@ The minimum slot that the request can be evaluated at
 :::info
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
 :::
-  - encoding `string` **optional**  
-    Default: `base64`  
+  - encoding `string` **optional**
+    Default: `base64`
     encoding format for the returned Account data
     Values: `jsonParsed` `base58` `base64` `base64+zstd`
 
@@ -33,7 +33,7 @@ Data slicing is only available for `base58`, `base64`, or `base64+zstd` encoding
       - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
       - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
 
-### Result [#](#result)
+### Result
 
 The result will be a JSON object with `value` equal to an array of:
 
@@ -46,9 +46,9 @@ The result will be a JSON object with `value` equal to an array of:
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `space: <u64>` - the data size of the account
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -68,9 +68,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

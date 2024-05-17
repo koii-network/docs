@@ -1,22 +1,22 @@
---- 
+---
 title: HTTP Methods
-image: img/thumbnail.png 
+image: img/thumbnail.png
 sidebar_label: HTTP Methods
----  
+---
 Koii nodes accept HTTP requests using the [JSON-RPC 2.0](https://www.jsonrpc.org/specification) specification.
 
 :::info
-For JavaScript applications, use the [@_koi/web3.js](https://github.com/koii-network/k2-web3.js) library as a convenient interface for the RPC methods to interact with a Koii node. 
+For JavaScript applications, use the [@_koi/web3.js](https://github.com/koii-network/k2-web3.js) library as a convenient interface for the RPC methods to interact with a Koii node.
 :::
-RPC HTTP Endpoint 
+RPC HTTP Endpoint
 -----------------------------------------
 
-Default port: `8899`
+Default port: `10899`
 
-*   [http://localhost:8899](http://localhost:8899/)
-*   [http://192.168.1.88:8899](http://192.168.1.88:8899/)
+*   [http://localhost:10899](http://localhost:10899/)
+*   [http://192.168.1.88:10899](http://192.168.1.88:10899/)
 
-Request Formatting 
+Request Formatting
 -------------------------------------------
 
 To make a JSON-RPC request, send an HTTP POST request with a `Content-Type: application/json` header. The JSON request data should contain 4 fields:
@@ -50,7 +50,7 @@ The response output will be a JSON object with the following fields:
 
 Requests can be sent in batches by sending an array of JSON-RPC request objects as the data for a single POST.
 
-### Example Request 
+### Example Request
 
 The commitment parameter should be included as the last element in the `params` array:
 
@@ -71,7 +71,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-Definitions 
+Definitions
 -----------------------------
 
 *   Hash: A SHA-256 hash of a chunk of data.
@@ -79,7 +79,7 @@ Definitions
 *   Transaction: A list of Koii instructions signed by a client keypair to authorize those actions.
 *   Signature: An Ed25519 signature of transaction's payload data including instructions. This can be used to identify transactions.
 
-Health Check 
+Health Check
 -------------------------------
 
 Although not a JSON RPC API, a `GET /health` at the RPC HTTP Endpoint provides a health-check mechanism for use by load balancers or other network infrastructure. This request will always return a HTTP 200 OK response with a body of "ok", "behind" or "unknown":

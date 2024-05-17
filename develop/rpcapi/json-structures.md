@@ -1,5 +1,5 @@
 ---
-title: Common JSON Data Structures for Koii RPC Methods 
+title: Common JSON Data Structures for Koii RPC Methods
 image: img/thumbnail.png
 sidebar_label: JSON Structures
 ---
@@ -11,10 +11,10 @@ The most common of these JSON data structures include:
 *   [inner instructions](/develop/rpcapi/json-structures#inner-instructions)
 *   [token balances](/develop/rpcapi/json-structures#token-balances)
 
-Transactions [#](#transactions)
+Transactions
 -------------------------------
 
-Transactions are quite different from those on other blockchains. 
+Transactions are quite different from those on other blockchains.
 
 The JSON structure of a transaction is defined as follows:
 
@@ -35,7 +35,7 @@ The JSON structure of a transaction is defined as follows:
         *   `writableIndexes: <array[number]>` - List of indices used to load addresses of writable accounts from a lookup table.
         *   `readonlyIndexes: <array[number]>` - List of indices used to load addresses of readonly accounts from a lookup table.
 
-Inner Instructions [#](#inner-instructions)
+Inner Instructions
 -------------------------------------------
 
 The Koii runtime records the cross-program instructions that are invoked during transaction processing and makes these available for greater transparency of what was executed on-chain per transaction instruction. Invoked instructions are grouped by the originating transaction instruction and are listed in order of processing.
@@ -48,7 +48,7 @@ The JSON structure of inner instructions is defined as a list of objects in the 
     *   `accounts: <array[number]>` - List of ordered indices into the `message.accountKeys` array indicating which accounts to pass to the program.
     *   `data: <string>` - The program input data encoded in a base-58 string.
 
-Token Balances [#](#token-balances)
+Token Balances
 -----------------------------------
 
 The JSON structure of token balances is defined as a list of objects in the following structure:

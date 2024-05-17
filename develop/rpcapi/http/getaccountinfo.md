@@ -1,21 +1,21 @@
 ---
-title: getAccountInfo RPC Method 
+title: getAccountInfo RPC Method
 image: img/thumbnail.png
 sidebar_label: getAccountInfo
 ---
 
 Returns all information associated with the account of provided Pubkey
 
-### Parameters [#](#parameters)
-`string` (required): 
+### Parameters
+`string` (required):
 
 Pubkey of account to query, as base-58 encoded string
 
-`object` (optional): 
+`object` (optional):
 
 Configuration object containing the following fields:
 
-- commitment string` **optional** 
+- commitment string` **optional**
 - `encoding`(string, optional): Encoding format for Account data
   - `Values`: `base58` `base64` `base64+zstd` `jsonParsed`
       *   `base58` is slow and limited to less than 129 bytes of Account data.
@@ -34,7 +34,7 @@ Data slicing is only available for `base58`, `base64`, or `base64+zstd` encoding
 - minContextSlot `number` **optional**
 The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to:
 
@@ -47,9 +47,9 @@ The result will be an RpcResponse JSON object with `value` equal to:
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `size: <u64>` - the data size of the account
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -66,9 +66,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

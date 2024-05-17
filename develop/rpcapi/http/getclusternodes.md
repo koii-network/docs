@@ -1,16 +1,16 @@
 ---
-title: getClusterNodes RPC Method 
+title: getClusterNodes RPC Method
 image: img/thumbnail.png
 sidebar_label: getClusterNodes
---- 
-  
+---
+
 Returns information about all the nodes participating in the cluster
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 The result field will be an array of JSON objects, each with the following sub fields:
 
@@ -22,9 +22,9 @@ The result field will be an array of JSON objects, each with the following sub f
 *   `featureSet: <u32|null >` - The unique identifier of the node's feature set
 *   `shredVersion: <u16|null>` - The shred version the node has been configured to use
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,
@@ -34,16 +34,16 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": [
     {
       "gossip": "10.239.6.48:8001",
       "pubkey": "9QzsJf7LPLj8GkXbYT3LFDKqsj2hHG7TA3xinJHu8epQ",
-      "rpc": "10.239.6.48:8899",
+      "rpc": "10.239.6.48:10899",
       "tpu": "10.239.6.48:8856",
       "version": "1.0.0 c375ce1f"
     }

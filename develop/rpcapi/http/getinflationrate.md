@@ -1,16 +1,16 @@
---- 
-title: getInflationRate RPC Method 
-image: img/thumbnail.png 
+---
+title: getInflationRate RPC Method
+image: img/thumbnail.png
 sidebar_label: getInflationRate
----  
+---
 
 Returns the specific inflation values for the current epoch
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 The result field will be a JSON object with the following fields:
 
@@ -19,18 +19,18 @@ The result field will be a JSON object with the following fields:
 *   `foundation: <f64>` - inflation allocated to the foundation
 *   `epoch: <u64>` - epoch for which these values are valid
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {"jsonrpc":"2.0","id":1, "method":"getInflationRate"}
 '
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

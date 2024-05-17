@@ -1,22 +1,22 @@
---- 
-title: accountUnsubscribe RPC Method 
-image: img/thumbnail.png 
-sidebar_label: accountUnsubscribe 
----  
+---
+title: accountUnsubscribe RPC Method
+image: img/thumbnail.png
+sidebar_label: accountUnsubscribe
+---
 Unsubscribe from account change notifications
 
-### Parameters [#](#parameters)
+### Parameters
 
-`number` required  
+`number` required
 id of the account Subscription to cancel
 
-### Result [#](#result)
+### Result
 
 `<bool>` - unsubscribe success message
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -26,8 +26,8 @@ id of the account Subscription to cancel
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": true, "id": 1 }
 ```

@@ -1,27 +1,27 @@
 ---
-title: getFeeForMessage RPC Method  
+title: getFeeForMessage RPC Method
 image: img/thumbnail.png
 sidebar_label: getFeeForMessage
----  
+---
 Get the fee the network will charge for a particular Message
 
 
-### Parameters [#](#parameters)
-`string` **required**  
+### Parameters
+`string` **required**
 Base-64 encoded Message
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 - minContextSlot `number` **optional**
   - The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 *   `<u64|null>` - Fee corresponding to the message at the specified blockhash
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
 {
   "id":1,
@@ -38,9 +38,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": { "context": { "slot": 5068 }, "value": 5000 },

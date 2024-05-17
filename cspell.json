@@ -15,7 +15,7 @@
     "filetypes",
     "en_GB"
   ],
-  
+
   "words": [
       "koii",
       "ipfs",
@@ -23,6 +23,7 @@
       "finnie",
       "spheron",
       "pubkey",
+      "pubkeys",
       "keypair",
       "devnet",
       "arweave",
@@ -73,15 +74,18 @@
        "upnp",
        "Pubkeys",
        "blockhash",
+       "rustup",
+       "stablecoins",
+       "Twillio",
        "Zstandard",
        "supermajority",
        "usize",
        "zstd",
-       "ransaction",
        "Unstaked",
        "discordsmall",
        "quickstart",
-       "Rustup"
+       "Rustup",
+       "checksummed"
   ],
   "caseSensitive": false,
   "flagWords": [

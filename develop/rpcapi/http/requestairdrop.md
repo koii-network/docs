@@ -1,34 +1,34 @@
---- 
-title: requestAirdrop RPC Method 
-image: img/thumbnail.png 
-sidebar_label: requestAirdrop 
----  
+---
+title: requestAirdrop RPC Method
+image: img/thumbnail.png
+sidebar_label: requestAirdrop
+---
 
 
 Requests an airdrop of lamports to a Pubkey
 
-:::warning 
-This function only works for local test validator. 
-::: 
+:::warning
+This function only works for local test validator.
+:::
 
-### Parameters [#](#parameters)
-`string` **required** 
-Pubkey of account to receive lamports, as a base-58 encoded string  
+### Parameters
+`string` **required**
+Pubkey of account to receive lamports, as a base-58 encoded string
 
-`integer` **required**  
+`integer` **required**
 lamports to airdrop, as a "u64"
 
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
-### Result [#](#result)
+### Result
 
 `<string>` - Transaction Signature of the airdrop, as a base-58 encoded string
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,
@@ -42,9 +42,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": "5VERv8NMvzbJMEkV8xnrLkEaWRtSz9CosKDYjCJjBRnbJLgp8uirBgmQpjKhoR4tjF3ZpRzrFmBV6UjKdiSZkQUW",

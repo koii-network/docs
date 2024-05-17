@@ -1,6 +1,6 @@
 ---
 title: Glossary
-description: The discord is a great place to meet community members, and can also be useful for discussing development issues with other ecosystem partners.
+description: A glossary of terminology for Koii.
 image: img/thumbnail.png
 sidebar_label: Glossary
 ---
@@ -280,3 +280,39 @@ The main public version of a blockchain that is fully developed
 ## Bytecode
 
 A form of instruction set designed for efficient execution by a software interpreter
+
+## Ledger
+
+## Shreds
+
+## Roe
+
+The smallest unit of KOII. 1,000,000,000 Roe = 1 KOII
+
+## Confirmed Block
+
+A block that has been verified and added to the blockchain.
+
+## Finality
+
+The point at which a transaction has been finalized. This means the transaction is irreversible.
+
+## Base Transaction Fee
+
+The minimum fee needed to send a transaction. The base transaction fee is 500,000 Roe.
+
+## Prioritization Fee
+
+An additional fee added on top of the base transaction fee. This prioritization fee is added by exchanges at times of high network activity to help ensure transactions are not dropped before they are finalized.
+
+## Nonce
+
+A number sent with a transaction to ensure it is unique.
+
+## Durable Nonce
+
+A nonce that can be used over multiple blocks. This helps with offline signing and transactions that need to be prepared in advance.
+
+## Offline signing
+
+Signing a transaction with a private key, using an offline method like a hardware wallet to protect private keys from theft. The transaction is prepared online, transferred offline and signed, then transferred back online.

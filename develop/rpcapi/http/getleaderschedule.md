@@ -1,12 +1,12 @@
---- 
-title: getLeaderSchedule RPC Method  
-image: img/thumbnail.png 
-sidebar_label: getLeaderSchedule RPC Method  
----  
+---
+title: getLeaderSchedule RPC Method
+image: img/thumbnail.png
+sidebar_label: getLeaderSchedule RPC Method
+---
 
 Returns the leader schedule for an epoch
 
-### Parameters [#](#parameters)
+### Parameters
 `u64` **optional**
 Fetch the leader schedule for the epoch that corresponds to the provided slot.
 
@@ -15,19 +15,19 @@ If unspecified, the leader schedule for the current epoch is fetched
 :::
 `object` optional
 Configuration object containing the following fields:
-- commitment `string` **optional**  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 Only return results for this validator identity (base-58 encoded)
 
-### Result [#](#result)
+### Result
 
 Returns a result with one of the two following values:
 
 *   `<null>` - if requested epoch is not found, or
 *   `<object>` - the result field will be a dictionary of validator identities, as base-58 encoded strings, and their corresponding leader slot indices as values (indices are relative to the first slot in the requested epoch)
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -44,9 +44,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

@@ -1,30 +1,30 @@
---- 
-title: isBlockhashValid RPC Method 
-image: img/thumbnail.png 
-sidebar_label: isBlockhashValid 
----  
+---
+title: isBlockhashValid RPC Method
+image: img/thumbnail.png
+sidebar_label: isBlockhashValid
+---
 
 Returns whether a blockhash is still valid or not
 
 
 
-### Parameters [#](#parameters)
-`string` **required**  
-the blockhash of the block to evaluate, as base-58 encoded string  
+### Parameters
+`string` **required**
+the blockhash of the block to evaluate, as base-58 encoded string
 
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional** 
-- minContextSlot `number` **optional**  
-The minimum slot that the request can be evaluated at  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+- minContextSlot `number` **optional**
+The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 `<bool>` - `true` if the blockhash is still valid
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "id":45,
@@ -39,9 +39,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

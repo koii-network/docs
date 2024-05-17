@@ -1,20 +1,20 @@
---- 
-title: getTokenLargestAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getTokenLargestAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getTokenLargestAccounts
----  
+---
 
 Returns the 20 largest accounts of a particular KPL Token type.
 
-### Parameters [#](#parameters)
-`string` **required**  
+### Parameters
+`string` **required**
 Pubkey of account delegate to query, as base-58 encoded string
 
-`object` **optional**  
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
+`object` **optional**
+Configuration object containing the following fields:
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to an array of JSON objects containing:
 
@@ -24,9 +24,9 @@ The result will be an RpcResponse JSON object with `value` equal to an array of 
 *   `uiAmount: <number|null>` - the token account balance, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the token account balance as a string, using mint-prescribed decimals
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,
@@ -39,9 +39,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

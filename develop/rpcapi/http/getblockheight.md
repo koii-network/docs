@@ -1,15 +1,15 @@
 ---
-title: getBlockHeight RPC Method 
+title: getBlockHeight RPC Method
 image: img/thumbnail.png
-sidebar_label: getBlockHeight 
---- 
+sidebar_label: getBlockHeight
+---
 
 
 Returns the current block height of the node
 
-### Parameters 
+### Parameters
 
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following fields:
 
 - commitment`string` **optional**
@@ -17,13 +17,13 @@ Configuration object containing the following fields:
 - minContextSlot `number` **optional**
     The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 *   `<u64>` - Current block height
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc":"2.0","id":1,
@@ -35,9 +35,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 Result:
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": 1233,

@@ -555,7 +555,7 @@ OPTIONS:
                                            testnet, devnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --our-localhost <PORT>             Guess Identity pubkey and validator rpc node assuming local (possibly
-                                           private) validator [default: 8899]
+                                           private) validator [default: 10899]
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
         --ws <URL>                         WebSocket URL for the koii cluster

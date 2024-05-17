@@ -1,23 +1,23 @@
---- 
+---
 title: getInflationReward RPC Method
-image: img/thumbnail.png 
-sidebar_label: getInflationReward 
----  
- 
+image: img/thumbnail.png
+sidebar_label: getInflationReward
+---
+
 Returns the inflation / staking reward for a list of addresses for an epoch
 
-### Parameters [#](#parameters)
+### Parameters
 `array` **optional**
 An array of addresses to query, as base-58 encoded strings
 
 `object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-  An epoch for which the reward occurs. If omitted, the previous epoch will be used  
-- minContextSlot `number` **optional**  
-  The minimum slot that the request can be evaluated at  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` **optional**
+  An epoch for which the reward occurs. If omitted, the previous epoch will be used
+- minContextSlot `number` **optional**
+  The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 The result field will be a JSON array with the following fields:
 
@@ -27,9 +27,9 @@ The result field will be a JSON array with the following fields:
 *   `postBalance: <u64>` - post balance of the account in lamports
 *   `commission: <u8|undefined>` - vote account commission when the reward was credited
 
-### Code sample [#](#code-sample)
+### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -47,9 +47,9 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": [
