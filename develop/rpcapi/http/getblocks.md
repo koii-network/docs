@@ -25,7 +25,7 @@ The result field will be an array of u64 integers listing confirmed blocks betwe
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,
@@ -40,7 +40,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 ### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": [5, 6, 7, 8, 9, 10],

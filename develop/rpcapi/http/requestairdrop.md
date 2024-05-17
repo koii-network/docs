@@ -28,7 +28,7 @@ Configuration object containing the following fields:
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,
@@ -44,7 +44,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 ### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": "5VERv8NMvzbJMEkV8xnrLkEaWRtSz9CosKDYjCJjBRnbJLgp8uirBgmQpjKhoR4tjF3ZpRzrFmBV6UjKdiSZkQUW",

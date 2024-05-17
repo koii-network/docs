@@ -30,7 +30,7 @@ The resultant account must meet **ALL** filter criteria to be included in the re
 
 ### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -75,7 +75,7 @@ The resultant account must meet **ALL** filter criteria to be included in the re
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 24040, "id": 1 }
 ```
 

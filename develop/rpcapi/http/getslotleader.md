@@ -24,7 +24,7 @@ The minimum slot that the request can be evaluated at
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {"jsonrpc":"2.0","id":1, "method":"getSlotLeader"}
 '
@@ -33,7 +33,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 ### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": "ENvAW7JScgYq6o4zKZwewtkzzJgDzuJAFxYasvmEQdpS",

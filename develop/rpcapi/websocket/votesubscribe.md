@@ -19,14 +19,14 @@ This subscription is unstable and only available if the validator was started wi
 
 ### Code sample
 
-```
+```bash
 { "jsonrpc": "2.0", "id": 1, "method": "voteSubscribe" }
 ```
 
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 

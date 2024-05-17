@@ -62,7 +62,7 @@ The result will be an RpcResponse JSON object with `value` set to a JSON object 
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -81,7 +81,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 ### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": {

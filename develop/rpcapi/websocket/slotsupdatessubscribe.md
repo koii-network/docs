@@ -19,14 +19,14 @@ This subscription is unstable. The format of this subscription may change in the
 
 ### Code sample
 
-```
+```bash
 { "jsonrpc": "2.0", "id": 1, "method": "slotsUpdatesSubscribe" }
 ```
 
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 

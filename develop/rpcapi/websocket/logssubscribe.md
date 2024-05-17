@@ -27,7 +27,7 @@ Configuration object containing the following fields:
 
 ### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -52,7 +52,7 @@ Configuration object containing the following fields:
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 24040, "id": 1 }
 ```
 

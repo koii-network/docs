@@ -18,7 +18,7 @@ If the node is unhealthy, a JSON RPC error response is returned. The specifics o
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {"jsonrpc":"2.0","id":1, "method":"getHealth"}
 '

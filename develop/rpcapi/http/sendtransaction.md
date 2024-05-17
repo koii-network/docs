@@ -48,7 +48,7 @@ set the minimum slot at which to perform preflight transaction checks
 
 ### Code sample
 
-```
+```bash
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
@@ -64,7 +64,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 
 ### Response
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "result": "2id3YC2jK9G5Wo2phDx4gJVAew8DcY5NAojnVuao8rkxwPYPe8cSwE5GzhEgJA2y8fVjDEo6iR6ykBvDxrTQrtpb",

@@ -16,7 +16,7 @@ id of the account Subscription to cancel
 
 ### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -28,6 +28,6 @@ id of the account Subscription to cancel
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": true, "id": 1 }
 ```

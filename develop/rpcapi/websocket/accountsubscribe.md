@@ -24,7 +24,7 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 ### Code sample
 
-```
+```bash
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -42,7 +42,7 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 ### Response
 
-```
+```json
 { "jsonrpc": "2.0", "result": 23784, "id": 1 }
 ```
 
