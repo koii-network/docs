@@ -1,5 +1,5 @@
 ---
-title: Koii RPC Methods & Documentation 
+title: Koii RPC Methods & Documentation
 image: img/thumbnail.png
 sidebar_label: Introduction
 ---
@@ -47,10 +47,10 @@ Some methods support an `encoding` parameter, and can return account or instruct
 |BPF Loader                  |n/a          |stable      |
 |BPF Upgradeable Loader      |stable       |stable      |
 |Config                      |stable       |            |
-|SPL Associated Token Account|n/a          |stable      |
-|SPL Memo                    |n/a          |stable      |
-|SPL Token                   |stable       |stable      |
-|SPL Token 2022              |stable       |stable      |
+|KPL Associated Token Account|n/a          |stable      |
+|KPL Memo                    |n/a          |stable      |
+|KPL Token                   |stable       |stable      |
+|KPL Token 2022              |stable       |stable      |
 |Stake                       |stable       |stable      |
 |Vote                        |stable       |stable      |
 
@@ -63,8 +63,8 @@ Filter criteria [#](#filter-criteria)
 Some methods support providing a `filters` object to enable pre-filtering the data returned within the RpcResponse JSON object. The following filters exist:
 
 *   `memcmp: object` - compares a provided series of bytes with program account data at a particular offset. Fields:
-    
+
     *   `offset: usize` - offset into program account data to start comparison
     *   `bytes: string` - data to match, as encoded string
-    *   `encoding: string` - encoding for filter `bytes` data, either "base58" or "base64". Data is limited in size to 128 or fewer decoded bytes.  
+    *   `encoding: string` - encoding for filter `bytes` data, either "base58" or "base64". Data is limited in size to 128 or fewer decoded bytes.
 *   `dataSize: u64` - compares the program account data length with the provided data size

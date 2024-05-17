@@ -1,15 +1,15 @@
 ---
-title: Supporting the SPL Token Standard
-description: Instructions for supporting the SPL token standard on a cryptocurrency exchange.
+title: Supporting the KPL Token Standard
+description: Instructions for supporting the KPL token standard on a cryptocurrency exchange.
 image: img/thumbnail.png
-sidebar_label: SPL Tokens
+sidebar_label: KPL Tokens
 ---
 
-The K2 blockchain uses the SPL token standard for creating and exchanging synthetic tokens. There are some difference between the workflow for KOII tokens and SPL tokens.
+The K2 blockchain uses the KPL token standard for creating and exchanging synthetic tokens. There are some difference between the workflow for KOII tokens and KPL tokens.
 
 ## Token Mints
 
-An SPL token is declared by first creating a mint account, storing metadata about the token. Each mint account is associated with only one SPL token.
+An KPL token is declared by first creating a mint account, storing metadata about the token. Each mint account is associated with only one KPL token.
 
 ## Installing the `spl-token` CLI Tool
 
@@ -33,13 +33,13 @@ Result:
 
 ## Account Creation
 
-Unlike Koii accounts, SPL token accounts must be created before tokens are deposited. This can be done either with `spl-token create-account` or (implicitly) `spl-token transfer --fund-recipient ...`.
+Unlike Koii accounts, KPL token accounts must be created before tokens are deposited. This can be done either with `spl-token create-account` or (implicitly) `spl-token transfer --fund-recipient ...`.
 
-Additionally, SPL token accounts must be kept rent-exempt by depositing a small amount of KOII when the account is created. This amount can be checked by running the `koii rent 165` CLI command.
+Additionally, KPL token accounts must be kept rent-exempt by depositing a small amount of KOII when the account is created. This amount can be checked by running the `koii rent 165` CLI command.
 
 ### Command Line
 
-To create an SPL token account associated with the correct mint and owned by the keypair of the funding account, you can run the following command:
+To create an KPL token account associated with the correct mint and owned by the keypair of the funding account, you can run the following command:
 
 ```bash
     spl-token create-account <TOKEN_MINT_ADDRESS>
@@ -140,7 +140,7 @@ When a user wishes to withdraw tokens, they should provide the address of their 
 
 If the address supplied has no KOII balance, obtain the user's confirmation before initiating the withdrawal.
 
-The associated token account for the mint is derived from the withdrawal address, then the transfer is issued with a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. If the ATA is created during the transfer, the exchange should fund it on the user's behalf. For SPL tokens, the required funding is 0.00203928 KOII (2,039,280 Roe).
+The associated token account for the mint is derived from the withdrawal address, then the transfer is issued with a [TransferChecked](https://github.com/solana-labs/solana-program-library/blob/fc0d6a2db79bd6499f04b9be7ead0c400283845e/token/program/src/instruction.rs#L268) instruction. If the ATA is created during the transfer, the exchange should fund it on the user's behalf. For KPL tokens, the required funding is 0.00203928 KOII (2,039,280 Roe).
 
 Template `spl-token transfer` command for a withdrawal:
 
@@ -152,16 +152,16 @@ Template `spl-token transfer` command for a withdrawal:
 
 ### Freeze Authority
 
-It may be necessary, for regulatory compliance, for an SPL token issuer to hold freeze authority over accounts associated with its mint, allowing them to freeze assets in any of these accounts. Assets in a frozen account cannot be used until the account is thawed. The freeze authority's public key will be registered in the SPL token's mint account.
+It may be necessary, for regulatory compliance, for an KPL token issuer to hold freeze authority over accounts associated with its mint, allowing them to freeze assets in any of these accounts. Assets in a frozen account cannot be used until the account is thawed. The freeze authority's public key will be registered in the KPL token's mint account.
 
-## Basic Support for the SPL Token-2022 (Token-Extensions) Standard
+## Basic Support for the KPL Token-2022 (Token-Extensions) Standard
 
-SPL Token-2022, aka Token Extensions, is the most recent standard for creating synthetic tokens and adds many new optional features. If you already support SPL tokens, adding support for token extensions is relatively easy. The CLI tool will work for both, the `preTokenBalances` and `postTokenBalances` fields include Token-2022 balances, and associated token accounts work the same way.
+KPL Token-2022, aka Token Extensions, is the most recent standard for creating synthetic tokens and adds many new optional features. If you already support KPL tokens, adding support for token extensions is relatively easy. The CLI tool will work for both, the `preTokenBalances` and `postTokenBalances` fields include Token-2022 balances, and associated token accounts work the same way.
 
 Two changes you should note:
 
 1. Querying RPCs for Token-2022 accounts must be done separately using the `TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb` program ID.
-2. Normal SPL token accounts require 165 bytes, however extensions can increase this amount. As an example, the immutable owner extension would add an additional 5 bytes. This extension is always added to the ATA program, so Token-2022 account will have a minimum size of 170 bytes.
+2. Normal KPL token accounts require 165 bytes, however extensions can increase this amount. As an example, the immutable owner extension would add an additional 5 bytes. This extension is always added to the ATA program, so Token-2022 account will have a minimum size of 170 bytes.
 
 ## Extension-Specific Considerations
 
