@@ -368,10 +368,8 @@ If you wish to submit withdrawals asynchronously, it is your responsibility to e
 
 To ensure you do not double spend, it is *vital* that you do not retry a withdrawal until the transaction's recent blockhash has expired, even if it does not appear to be confirmed or finalized. Blockhash expiration is explained in more detail [below](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#checking-blockhash-expiration).
 
-<!-- TODO: missing -->
 To get the recent blockhash, send a request to [`getFees`](/docs/rpc/deprecated/getfees).
 
-<!-- TODO: confirm port -->
 ```bash
     koii fees --url http://localhost:10899
 ```
@@ -438,7 +436,6 @@ You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatus
 
 ### Checking Blockhash Expiration
 
-<!-- TODO: missing -->
 By passing a blockhash to the [`getFeeCalculatorForBlockhash`](/docs/rpc/deprecated/getfeecalculatorforblockhash) endpoint with the `blockhash` parameter, you can check whether a given blockhash has expired. The blockhash is expired when the response is `null`, and you can safely retry a failed withdrawal transaction.
 
 :::warning
