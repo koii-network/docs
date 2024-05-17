@@ -355,7 +355,7 @@ You can easily ensure that a transfer is successful by sending a synchronous tra
 The Koii CLI tool offers the command `koii transfer`, which allows you manage and confirm transfer transactions. This method is synchronous, so it continue to track progress until the transfer has been finalized. It will also report any errors in the event the transfer fails.
 
 ```bash
-    koii transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:8899
+    koii transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:10899
 ```
 
 You can also accomplish this with the [Koii Javascript SDK](https://github.com/koii-network/k2-web3.js). You can build a transaction with `SystemProgram` and submit it with `sendAndConfirmTransaction`.
@@ -373,13 +373,13 @@ To get the recent blockhash, send a request to [`getFees`](/docs/rpc/deprecated/
 
 <!-- TODO: confirm port -->
 ```bash
-    koii fees --url http://localhost:8899
+    koii fees --url http://localhost:10899
 ```
 
 To send a transaction asynchronously, pass the `--no-wait` flag in the Koii CLI tool and include the recent blockhash with the `--blockhash` argument.
 
 ```bash
-    koii transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:8899
+    koii transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:10899
 ```
 
 Alternatively, you can build, sign, and serialize the transfer manually, then sent it to the cluster using the [`sendTransaction`](/develop/rpcapi/http/sendtransaction) endpoint.

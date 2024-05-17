@@ -1,9 +1,9 @@
 ---
-title: getClusterNodes RPC Method 
+title: getClusterNodes RPC Method
 image: img/thumbnail.png
 sidebar_label: getClusterNodes
---- 
-  
+---
+
 Returns information about all the nodes participating in the cluster
 
 ### Parameters [#](#parameters)
@@ -43,7 +43,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
     {
       "gossip": "10.239.6.48:8001",
       "pubkey": "9QzsJf7LPLj8GkXbYT3LFDKqsj2hHG7TA3xinJHu8epQ",
-      "rpc": "10.239.6.48:8899",
+      "rpc": "10.239.6.48:10899",
       "tpu": "10.239.6.48:8856",
       "version": "1.0.0 c375ce1f"
     }

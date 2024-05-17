@@ -29,7 +29,7 @@ To run an RPC Node:
       --identity <VALIDATOR_IDENTITY_KEYPAIR> \
       --entrypoint <CLUSTER_ENTRYPOINT> \
       --expected-genesis-hash <EXPECTED_GENESIS_HASH> \
-      --rpc-port 8899 \
+      --rpc-port 10899 \
       --no-voting \
       --enable-rpc-transaction-history \
       --limit-ledger-size \
