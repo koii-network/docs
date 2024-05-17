@@ -1,25 +1,25 @@
---- 
-title: getHighestSnapshotSlot RPC Method 
-image: img/thumbnail.png 
+---
+title: getHighestSnapshotSlot RPC Method
+image: img/thumbnail.png
 sidebar_label: getHighestSnapshotSlot
----  
+---
 
 Returns the highest slot information that the node has snapshots for.
 
 This will find the highest full snapshot slot, and the highest incremental snapshot slot _based on_ the full snapshot slot, if there is one.
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 When the node has a snapshot, this returns a JSON object with the following fields:
 
 *   `full: <u64>` - Highest full snapshot slot
 *   `incremental: <u64|null>` - Highest incremental snapshot slot _based on_ `full`
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -28,7 +28,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 Result when the node has a snapshot:
 

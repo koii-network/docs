@@ -1,19 +1,19 @@
 ---
-title: getGenesisHash RPC Method 
+title: getGenesisHash RPC Method
 image: img/thumbnail.png
 sidebar_label: getGenesisHash
----   
+---
 Returns the genesis hash
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 *   `<string>` - a Hash as base-58 encoded string
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -22,7 +22,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

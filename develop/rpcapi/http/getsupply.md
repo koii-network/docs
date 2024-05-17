@@ -1,19 +1,19 @@
---- 
-title: getSupply RPC Method 
-image: img/thumbnail.png 
+---
+title: getSupply RPC Method
+image: img/thumbnail.png
 sidebar_label: getSupply
----  
+---
 
 Returns information about the current supply.
 
-### Parameters [#](#parameters)  
-`object` **optional**  
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
-- excludeNonCirculatingAccountsList `bool` **optional**  
+### Parameters
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
+- excludeNonCirculatingAccountsList `bool` **optional**
 exclude non circulating accounts list from response
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -22,7 +22,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `nonCirculating: <u64>` - Non-circulating supply in lamports
 *   `nonCirculatingAccounts: <array>` - an array of account addresses of non-circulating accounts, as strings. If `excludeNonCirculatingAccountsList` is enabled, the returned array will be empty.
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

@@ -1,29 +1,29 @@
---- 
-title: getLatestBlockhash RPC Method  
-image: img/thumbnail.png 
-sidebar_label: getLatestBlockhash RPC Method 
----  
+---
+title: getLatestBlockhash RPC Method
+image: img/thumbnail.png
+sidebar_label: getLatestBlockhash RPC Method
+---
 
 Returns the latest blockhash
 
 Version Restriction
 
 
-### Parameters [#](#parameters)
-`object` **optional**  
+### Parameters
+`object` **optional**
 Configuration object containing the following fields:
 - commitment `string` **optional**
-- minContextSlot `number` **optional**  
+- minContextSlot `number` **optional**
   The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 `RpcResponse<object>` - RpcResponse JSON object with `value` field set to a JSON object including:
 
 *   `blockhash: <string>` - a Hash as base-58 encoded string
 *   `lastValidBlockHeight: <u64>` - last block height at which the blockhash will be valid
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -41,7 +41,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

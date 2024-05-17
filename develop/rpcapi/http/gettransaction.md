@@ -1,27 +1,27 @@
---- 
-title: getTransaction RPC Method 
-image: img/thumbnail.png 
-sidebar_label: getTransaction 
----  
+---
+title: getTransaction RPC Method
+image: img/thumbnail.png
+sidebar_label: getTransaction
+---
 
 Returns transaction details for a confirmed transaction
 
-### Parameters [#](#parameters)
-`string` **required**  
-Transaction signature, as base-58 encoded string  
-`object` **optional**  
-Configuration object containing the following fields:    
-- commitment `string` **optional**    
-  - `processed` is not supported.  
-    Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.  
-- encoding `string` **optional**  
-  Default: `json`  
-  Encoding for the returned Transaction  
-  Values: `json` `jsonParsed` `base64` `base58`  
-  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.  
+### Parameters
+`string` **required**
+Transaction signature, as base-58 encoded string
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
+  - `processed` is not supported.
+    Set the max transaction version to return in responses. If the requested transaction is a higher version, an error will be returned. If this parameter is omitted, only legacy transactions will be returned, and any versioned transaction will prompt the error.
+- encoding `string` **optional**
+  Default: `json`
+  Encoding for the returned Transaction
+  Values: `json` `jsonParsed` `base64` `base58`
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
   - If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
 
-### Result [#](#result)
+### Result
 
 *   `<null>` - if transaction is not found or not confirmed
 *   `<object>` - if transaction is confirmed, an object with the following fields:
@@ -29,7 +29,7 @@ Configuration object containing the following fields:
     *   `transaction: <object|[string,encoding]>` - [Transaction](/develop/rpcapi/json-structures#transactions) object, either in JSON format or encoded binary data, depending on encoding parameter
     *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch) of when the transaction was processed. null if not available
     *   `meta: <object|null>` - transaction status metadata object:
-        *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
+        *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded.
         *   `fee: <u64>` - fee this transaction was charged, as u64 integer
         *   `preBalances: <array>` - array of u64 account balances from before the transaction was processed
         *   `postBalances: <array>` - array of u64 account balances after the transaction was processed
@@ -55,7 +55,7 @@ Configuration object containing the following fields:
         *   `computeUnitsConsumed: <u64|undefined>` - number of [compute units](http://localhost:3000/compute/introduction) consumed by the transaction
     *   `version: <"legacy"|number|undefined>` - Transaction version. Undefined if `maxSupportedTransactionVersion` is not set in request params.
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -72,7 +72,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

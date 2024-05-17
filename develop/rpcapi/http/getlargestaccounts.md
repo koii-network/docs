@@ -1,27 +1,27 @@
---- 
-title: getLargestAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getLargestAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getLargestAccounts
----  
+---
 
 Returns the 20 largest accounts, by lamport balance (results may be cached up to two hours)
 
-### Parameters [#](#parameters)
+### Parameters
 `object` **optional**
 Configuration object containing the following fields:
 - commitment `string` **optional**
-- filter `string` **optional**   
-  filter results by account type  
+- filter `string` **optional**
+  filter results by account type
   Values:  `circulating` `nonCirculating`
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to an array of `<object>` containing:
 
 *   `address: <string>` - base-58 encoded address of the account
 *   `lamports: <u64>` - number of lamports in the account, as a u64
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -30,7 +30,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

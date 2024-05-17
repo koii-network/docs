@@ -5,7 +5,7 @@ sidebar_label: Introduction
 ---
 Interact with Koii nodes directly with the JSON RPC API via the HTTP and Websocket methods.
 
-Configuring State Commitment [#](#configuring-state-commitment)
+Configuring State Commitment
 ---------------------------------------------------------------
 
 For preflight checks and transaction processing, Koii Validator nodes choose which bank state to query based on a commitment requirement set by the client. The commitment describes how finalized a block is at that point in time. When querying the ledger state, it's recommended to use lower levels of commitment to report progress and higher levels to ensure the state will not be rolled back.
@@ -21,13 +21,13 @@ In descending order of commitment (most finalized to least finalized), clients m
 
 For processing many dependent transactions in series, it's recommended to use `confirmed` commitment, which balances speed with rollback safety. For total safety, it's recommended to use `finalized` commitment.
 
-### Default Commitment [#](#default-commitment)
+### Default Commitment
 
 If commitment configuration is not provided, the node will [default to `finalized` commitment](https://github.com/anza-xyz/agave/blob/aa0922d6845e119ba466f88497e8209d1c82febc/sdk/src/commitment_config.rs#L199-L203)
 
 Only methods that query bank state accept the commitment parameter. They are indicated in the API Reference below.
 
-RpcResponse Structure [#](#rpcresponse-structure)
+RpcResponse Structure
 -------------------------------------------------
 
 Many methods that take a commitment parameter return an RpcResponse JSON object comprised of two parts:
@@ -35,7 +35,7 @@ Many methods that take a commitment parameter return an RpcResponse JSON object 
 *   `context` : An RpcResponseContext JSON structure including a `slot` field at which the operation was evaluated.
 *   `value` : The value returned by the operation itself.
 
-Parsed Responses [#](#parsed-responses)
+Parsed Responses
 ---------------------------------------
 
 Some methods support an `encoding` parameter, and can return account or instruction data in parsed JSON format if `"encoding":"jsonParsed"` is requested and the node has a parser for the owning program. Koii Validator nodes currently support JSON parsing for the following native and KPL programs:
@@ -57,7 +57,7 @@ Some methods support an `encoding` parameter, and can return account or instruct
 
 The list of account parsers can be found [here](https://github.com/solana-labs/solana/blob/master/account-decoder/src/parse_account_data.rs), and instruction parsers [here](https://github.com/solana-labs/solana/blob/master/transaction-status/src/parse_instruction.rs).
 
-Filter criteria [#](#filter-criteria)
+Filter criteria
 -------------------------------------
 
 Some methods support providing a `filters` object to enable pre-filtering the data returned within the RpcResponse JSON object. The following filters exist:

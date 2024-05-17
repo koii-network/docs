@@ -1,22 +1,22 @@
---- 
-title: getIdentity RPC Method 
-image: img/thumbnail.png 
-sidebar_label: getGenesisHash 
----  
+---
+title: getIdentity RPC Method
+image: img/thumbnail.png
+sidebar_label: getGenesisHash
+---
 
 Returns the identity pubkey for the current node
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 The result field will be a JSON object with the following fields:
 
 *   `identity` - the identity pubkey of the current node (as a base-58 encoded string)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -25,7 +25,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

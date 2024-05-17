@@ -1,26 +1,26 @@
---- 
-title: getTokenAccountsByDelegate RPC Method 
-image: img/thumbnail.png 
+---
+title: getTokenAccountsByDelegate RPC Method
+image: img/thumbnail.png
 sidebar_label: getTokenAccountsByDelegate
----  
+---
 
 Returns all KPL Token accounts by approved Delegate.
 
-### Parameters [#](#parameters)
-`string` **required**    
-Pubkey of Token account to query, as base-58 encoded string 
+### Parameters
+`string` **required**
+Pubkey of Token account to query, as base-58 encoded string
 
-`object` optional  
-A JSON object with one of the following fields:  
+`object` optional
+A JSON object with one of the following fields:
 *   `mint: <string>` - Pubkey of the specific token Mint to limit accounts to, as base-58 encoded string; or
 *   `programId: <string>` - Pubkey of the Token program that owns the accounts, as base-58 encoded string
 
-`object` **optional** 
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
-- minContextSlot `number` **optional**  
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
+- minContextSlot `number` **optional**
 The minimum slot that the request can be evaluated at
-- dataSlice `object` **optional**  
+- dataSlice `object` **optional**
   Request a slice of the account's data.
 
   - `length: <usize>` - number of bytes to return
@@ -30,16 +30,16 @@ The minimum slot that the request can be evaluated at
 Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
 :::
 
-- encoding `string` **optional**   
-Encoding format for Account data  
-Values: `base58` `base64` `base64+zstd` `jsonParsed` 
+- encoding `string` **optional**
+Encoding format for Account data
+Values: `base58` `base64` `base64+zstd` `jsonParsed`
   - `base58` is slow and limited to less than 129 bytes of Account data.
   - `base64` will return base64 encoded data for Account data of any size.
-  - `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.  
-  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.  
-  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `string`. 
+  - `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
+  - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
+  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `string`.
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to an array of JSON objects, which will contain:
 
@@ -54,7 +54,7 @@ The result will be an RpcResponse JSON object with `value` equal to an array of 
 
 When the data is requested with the `jsonParsed` encoding a format similar to that of the [Token Balances Structure](/develop/rpcapi/json-structures#token-balances) can be expected inside the structure, both for the `tokenAmount` and the `delegatedAmount` - with the latter being an optional object.
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -76,7 +76,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

@@ -1,15 +1,15 @@
 ---
-title: getEpochSchedule RPC Method 
+title: getEpochSchedule RPC Method
 image: img/thumbnail.png
 sidebar_label: getEpochSchedule
----  
+---
 Returns the epoch schedule information from this cluster's genesis config
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 The result field will be an object with the following fields:
 
@@ -19,7 +19,7 @@ The result field will be an object with the following fields:
 *   `firstNormalEpoch: <u64>` - first normal-length epoch, log2(slotsPerEpoch) - log2(MINIMUM\_SLOTS\_PER\_EPOCH)
 *   `firstNormalSlot: <u64>` - MINIMUM\_SLOTS\_PER\_EPOCH \* (2.pow(firstNormalEpoch) - 1)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

@@ -1,11 +1,11 @@
-# Setup, build, and deploy a Koii program locally in Rust 
-Koii is a fork of Solana, so we are still keeping smart contracts in our chain. This quickstart guide will demonstrate how to quickly setup, build, and deploy your first Rust based Koii program to the blockchain. 
+# Setup, build, and deploy a Koii program locally in Rust
+Koii is a fork of Solana, so we are still keeping smart contracts in our chain. This quickstart guide will demonstrate how to quickly setup, build, and deploy your first Rust based Koii program to the blockchain.
 
 Do you have the Koii CLI installed?
 
-This guide uses the Koii CLI and assumes you have setup your local development environment. 
+This guide uses the Koii CLI and assumes you have setup your local development environment.
 
-What you will learn 
+What you will learn
 ---------------------------------------------
 
 *   how to install the Rust language locally
@@ -13,7 +13,7 @@ What you will learn
 *   how to code a basic Koii program in Rust
 *   how to build and deploy your Rust program
 
-Install Rust and Cargo 
+Install Rust and Cargo
 ---------------------------------------------------
 
 To be able to compile Rust based Koii programs, install the Rust language and Cargo (the Rust package manager) using [Rustup](https://rustup.rs/):
@@ -23,7 +23,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 
-Run your localhost validator [#](#run-your-localhost-validator)
+Run your localhost validator
 ---------------------------------------------------------------
 
 The Koii CLI comes with the test validator built in. This command line tool will allow you to run a full blockchain cluster on your machine.
@@ -39,7 +39,7 @@ koii config set --url localhost
 ```
 
 
-Create a new Rust library with Cargo [#](#create-a-new-rust-library-with-cargo)
+Create a new Rust library with Cargo
 -------------------------------------------------------------------------------
 
 Koii programs written in Rust are _libraries_ which are compiled to BPF bytecode and saved in the `.so` format.
@@ -63,7 +63,7 @@ cargo add solana-program@"=1.16.1"
 ```
 
 
-This will ensure your crate uses only `1.16.1` and nothing else. 
+This will ensure your crate uses only `1.16.1` and nothing else.
 
 Open your `Cargo.toml` file and add these required Rust library configuration settings, updating your project name as appropriate:
 
@@ -74,7 +74,7 @@ crate-type = ["cdylib", "lib"]
 ```
 
 
-Create your first Koii program 
+Create your first Koii program
 -----------------------------------------------------------------------
 
 The code for your Rust based Koii program will live in your `src/lib.rs` file. Inside `src/lib.rs` you will be able to import your Rust crates and define your logic. Open your `src/lib.rs` file in your favorite editor.
@@ -97,7 +97,7 @@ Every Koii program must define an `entrypoint` that tells the Koii runtime where
 ```
 // declare and export the program's entrypoint
 entrypoint!(process_instruction);
- 
+
 // program entrypoint's implementation
 pub fn process_instruction(
     program_id: &Pubkey,
@@ -106,7 +106,7 @@ pub fn process_instruction(
 ) -> ProgramResult {
     // log a message to the blockchain
     msg!("Hello, world!");
- 
+
     // gracefully exit the program
     Ok(())
 }
@@ -117,7 +117,7 @@ Every onchain program should return the `Ok` [result enum](https://doc.rust-lang
 
 This program above will simply [log a message](https://docs.solana.com/developing/on-chain-programs/debugging#logging) of "_Hello, world!_" to the blockchain cluster, then gracefully exit with `Ok(())`.
 
-Build your Rust program [#](#build-your-rust-program)
+Build your Rust program
 -----------------------------------------------------
 
 Inside a terminal window, you can build your Koii Rust program by running in the root of your project (i.e. the directory with your `Cargo.toml` file):
@@ -126,7 +126,7 @@ Info
 
 After each time you build your Koii program, the above command will output the build path of your compiled program's `.so` file and the default keyfile that will be used for the program's address. `cargo build-bpf` installs the toolchain from the currently installed Koii CLI tools. You may need to upgrade those tools if you encounter any version incompatibilities.
 
-Deploy your Koii program 
+Deploy your Koii program
 -----------------------------------------------------------
 
 Using the Koii CLI, you can deploy your program to your currently selected cluster:
@@ -144,11 +144,10 @@ Program Id: EFH95fWg49vkFNbAdw9vy75tM7sWZ2hQbTTUmuACGip3
 ```
 
 
-#### Congratulations! 
+#### Congratulations!
 
 You have successfully setup, built, and deployed a Koii program using the Rust language.
 
 Check your wallet balance!
 
 Check your Koii wallet's balance again after you deployed. See how much KOII it cost to deploy your simple program?
-

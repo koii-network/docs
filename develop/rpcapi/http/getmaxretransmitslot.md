@@ -1,20 +1,20 @@
---- 
-title: getMaxRetransmitSlot RPC Method 
-image: img/thumbnail.png 
+---
+title: getMaxRetransmitSlot RPC Method
+image: img/thumbnail.png
 sidebar_label: getMaxRetransmitSlot
----  
+---
 
 Get the max slot seen from retransmit stage.
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 `<u64>` - Slot number
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -23,7 +23,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": 1234, "id": 1 }

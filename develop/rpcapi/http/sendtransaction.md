@@ -1,8 +1,8 @@
---- 
-title: sendTransaction RPC Method 
-image: img/thumbnail.png 
-sidebar_label: sendTransaction 
----  
+---
+title: sendTransaction RPC Method
+image: img/thumbnail.png
+sidebar_label: sendTransaction
+---
 
 Submits a signed transaction to the cluster for processing.
 
@@ -21,32 +21,32 @@ Before submitting, the following preflight checks are performed:
 
 The returned signature is the first signature in the transaction, which is used to identify the transaction (transaction id). This identifier can be easily extracted from the transaction data before submission.
 
-### Parameters [#](#parameters)
-`string` **required**  
+### Parameters
+`string` **required**
 Fully-signed Transaction, as encoded string.
 
-`object` **optional**  
+`object` **optional**
 Configuration object containing the following optional fields:
-- `encoding` **string**  
-Default: `base58`  
-Encoding used for the transaction data.  
-Values: `base58` (_slow_, **DEPRECATED**), or `base64`.  
+- `encoding` **string**
+Default: `base58`
+Encoding used for the transaction data.
+Values: `base58` (_slow_, **DEPRECATED**), or `base64`.
 - `skipPreflight` **bool**
-Default: `false`  
-when `true`, skip the preflight transaction checks  
-- `preflightCommitment` **string**  
-Default: `finalized`  
-Commitment level to use for preflight.  
-- `maxRetries` **usize**  
+Default: `false`
+when `true`, skip the preflight transaction checks
+- `preflightCommitment` **string**
+Default: `finalized`
+Commitment level to use for preflight.
+- `maxRetries` **usize**
 Maximum number of times for the RPC node to retry sending the transaction to the leader. If this parameter not provided, the RPC node will retry the transaction until it is finalized or until the blockhash expires.
-- `minContextSlot` **number**  
+- `minContextSlot` **number**
 set the minimum slot at which to perform preflight transaction checks
 
-### Result [#](#result)
+### Result
 
 `<string>` - First Transaction Signature embedded in the transaction, as base-58 encoded string (transaction id)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -62,7 +62,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

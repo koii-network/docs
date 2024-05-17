@@ -1,34 +1,34 @@
---- 
-title: programSubscribe RPC Method 
-image: img/thumbnail.png 
+---
+title: programSubscribe RPC Method
+image: img/thumbnail.png
 sidebar_label: programSubscribe
----  
+---
 Subscribe to a program to receive notifications when the lamports or data for an account owned by the given program changes
 
-### Parameters [#](#parameters)
-`string` **required**   
-Pubkey of the `program_id`, as base-58 encoded string   
+### Parameters
+`string` **required**
+Pubkey of the `program_id`, as base-58 encoded string
 
-`object` **optional**  
-Configuration object containing the following fields:   
-- filters `array` **optional**   
+`object` **optional**
+Configuration object containing the following fields:
+- filters `array` **optional**
 filter results using various filter objects
 
 :::info
 The resultant account must meet **ALL** filter criteria to be included in the returned results
 :::
-- encoding `string` **optional**   
-  Encoding format for Account data  
-  Values: `base58``base64``base64+zstd``jsonParsed`  
+- encoding `string` **optional**
+  Encoding format for Account data
+  Values: `base58``base64``base64+zstd``jsonParsed`
     - `base58` is slow.
     - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data
     - If `jsonParsed` is requested but a parser cannot be found, the field falls back to binary encoding, detectable when the `data`field is type`string`.
 
-### Result [#](#result)
+### Result
 
 `<integer>` - Subscription id (needed to unsubscribe)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 {
@@ -73,14 +73,14 @@ The resultant account must meet **ALL** filter criteria to be included in the re
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": 24040, "id": 1 }
 ```
 
 
-#### Notification format [#](#notification-format)
+#### Notification format
 
 The notification format is a **single** program account object as seen in the [getProgramAccounts](/develop/rpcapi/intro/http/getprogramaccounts) RPC HTTP method.
 

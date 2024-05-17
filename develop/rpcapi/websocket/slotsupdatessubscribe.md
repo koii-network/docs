@@ -1,37 +1,37 @@
---- 
+---
 title: slotsUpdatesSubscribe RPC Method
-image: img/thumbnail.png 
-sidebar_label: slotsUpdatesSubscribe 
---- 
+image: img/thumbnail.png
+sidebar_label: slotsUpdatesSubscribe
+---
 Subscribe to receive a notification from the validator on a variety of updates on every slot
 
 :::warning
 This subscription is unstable. The format of this subscription may change in the future, and may not always be supported.
-::: 
+:::
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 `<integer>` - Subscription id (needed to unsubscribe)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 { "jsonrpc": "2.0", "id": 1, "method": "slotsUpdatesSubscribe" }
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 
 
-### Notification Format [#](#notification-format)
+### Notification Format
 
 The notification will be an object with the following fields:
 

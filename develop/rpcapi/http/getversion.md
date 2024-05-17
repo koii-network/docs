@@ -1,23 +1,23 @@
---- 
-title: getVersion RPC Method 
-image: img/thumbnail.png 
+---
+title: getVersion RPC Method
+image: img/thumbnail.png
 sidebar_label: getVersion
----  
+---
 
 Returns the current Koii version running on the node
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 The result field will be a JSON object with the following fields:
 
 *   `solana-core` - software version of solana-core as a `string`
 *   `feature-set` - unique identifier of the current software's feature set as a `u32`
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -26,7 +26,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

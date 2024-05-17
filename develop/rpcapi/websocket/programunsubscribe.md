@@ -1,21 +1,21 @@
---- 
-title: programUnsubscribe RPC Method 
-image: img/thumbnail.png 
+---
+title: programUnsubscribe RPC Method
+image: img/thumbnail.png
 sidebar_label: programUnsubscribe
----  
+---
 Unsubscribe from program-owned account change notifications
 
-### Parameters [#](#parameters)
+### Parameters
 
-`number` **required**  
+`number` **required**
 
 id of account Subscription to cancel
 
-### Result [#](#result)
+### Result
 
 `<bool>` - unsubscribe success message
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 {
@@ -27,7 +27,7 @@ id of account Subscription to cancel
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": true, "id": 1 }

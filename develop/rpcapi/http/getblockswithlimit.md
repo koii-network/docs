@@ -1,28 +1,28 @@
 ---
-title: getBlocksWithLimit RPC Method 
+title: getBlocksWithLimit RPC Method
 image: img/thumbnail.png
 sidebar_label: getBlocksWithLimit
---- 
+---
 Returns a list of confirmed blocks starting at the given slot
 
-### Parameters [#](#parameters)
-`u64` **required**  
-start\_slot, as `u64` integer 
+### Parameters
+`u64` **required**
+start\_slot, as `u64` integer
 
-`u64` **required**  
+`u64` **required**
 limit, as `u64` integer (must be no more than 500,000 blocks higher than the `start_slot`)
 
-`object` **optional** 
+`object` **optional**
 Configuration object containing the following field:
-  - commitment `string` **optional**  
+  - commitment `string` **optional**
       Default: `finalized`
       - "processed" is not supported
 
-### Result [#](#result)
+### Result
 
 The result field will be an array of u64 integers listing confirmed blocks starting at `start_slot` for up to `limit` blocks, inclusive.
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -36,7 +36,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

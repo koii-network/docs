@@ -1,23 +1,23 @@
---- 
-title: getVoteAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getVoteAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getVoteAccounts
----  
+---
 
 Returns the account info and associated stake for all the voting accounts in the current bank.
 
-### Parameters [#](#parameters)
-`object` **optional**  
+### Parameters
+`object` **optional**
 Configuration object containing the following fields:
-- commitment `string` **optional**  
-- votePubkey `string` **optional** 
+- commitment `string` **optional**
+- votePubkey `string` **optional**
 Only return results for this validator vote address (base-58 encoded)
-- keepUnstakedDelinquents `bool` **optional**  
+- keepUnstakedDelinquents `bool` **optional**
 Do not filter out delinquent validators with no stake
-- delinquentSlotDistance `u64` **optional**   
+- delinquentSlotDistance `u64` **optional**
 Specify the number of slots behind the tip that a validator must fall to be considered delinquent. **NOTE:** For the sake of consistency between ecosystem products, _it is **not** recommended that this argument be specified._
 
-### Result [#](#result)
+### Result
 
 The result field will be a JSON object of `current` and `delinquent` accounts, each containing an array of JSON objects with the following sub fields:
 
@@ -30,7 +30,7 @@ The result field will be a JSON object of `current` and `delinquent` accounts, e
 *   `epochCredits: <array>` - Latest history of earned credits for up to five epochs, as an array of arrays containing: `[epoch, credits, previousCredits]`.
 *   `rootSlot: <u64>` - Current root slot for this vote account
 
-### Code sample [#](#code-sample)
+### Code sample
 
 Restrict results to a single validator vote account:
 
@@ -50,7 +50,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

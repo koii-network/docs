@@ -1,48 +1,48 @@
---- 
-title: getProgramAccounts RPC Method 
-image: img/thumbnail.png 
+---
+title: getProgramAccounts RPC Method
+image: img/thumbnail.png
 sidebar_label: getProgramAccounts
----  
+---
 
 Returns all accounts owned by the provided program Pubkey
 
-### Parameters [#](#parameters)
-`string` **required**  
-Pubkey of program, as base-58 encoded string  
-`object` **optional**  
-Configuration object containing the following fields:    
-- commitment `string` **optional**  
+### Parameters
+`string` **required**
+Pubkey of program, as base-58 encoded string
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
   The minimum slot that the request can be evaluated at
-- minContextSlot `number` **optional**  
-The minimum slot that the request can be evaluated at  
-- withContext `bool` **optional**  
-wrap the result in an RpcResponse JSON object  
-- encoding `string` **optional**  
-  Default: `json`  
-  encoding format for the returned Account data  
+- minContextSlot `number` **optional**
+The minimum slot that the request can be evaluated at
+- withContext `bool` **optional**
+wrap the result in an RpcResponse JSON object
+- encoding `string` **optional**
+  Default: `json`
+  encoding format for the returned Account data
   Values: `jsonParsed` `base58` `base64` `base64+zstd`
 
   - `base58` is slow and limited to less than 129 bytes of Account data.
   - `base64` will return base64 encoded data for Account data of any size.
   - `base64+zstd` compresses the Account data using [Zstandard](https://facebook.github.io/zstd/) and base64-encodes the result.
   - `jsonParsed` encoding attempts to use program-specific state parsers to return more human-readable and explicit account state data.
-  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.  
-- dataSlice `object` **optional**  
+  - If `jsonParsed` is requested but a parser cannot be found, the field falls back to `base64` encoding, detectable when the `data` field is type `<string>`.
+- dataSlice `object` **optional**
   Request a slice of the account's data.
   - `length: <usize>` - number of bytes to return
-  - `offset: <usize>` - byte offset from which to start reading  
+  - `offset: <usize>` - byte offset from which to start reading
 :::info
-Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.  
+Data slicing is only available for `base58`, `base64`, or `base64+zstd` encodings.
 :::
 
-- filters `array` **optional**   
+- filters `array` **optional**
 filter results using up to 4 filter objects
 
 :::info
 The resultant account(s) must meet **ALL** filter criteria to be included in the returned results
 :::
 
-### Result [#](#result)
+### Result
 
 By default, the result field will be an array of JSON objects.
 
@@ -60,7 +60,7 @@ The resultant response array will contain:
     *   `rentEpoch: <u64>` - the epoch at which this account will next owe rent, as u64
     *   `size: <u64>` - the data size of the account
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -89,7 +89,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

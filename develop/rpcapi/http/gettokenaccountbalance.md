@@ -1,18 +1,18 @@
---- 
-title: getTokenAccountBalance RPC Method 
-image: img/thumbnail.png 
+---
+title: getTokenAccountBalance RPC Method
+image: img/thumbnail.png
 sidebar_label: getTokenAccountBalance
----  
+---
 
 Returns the token balance of an KPL Token account.
 
-### Parameters [#](#parameters)
-`string` **required**    
-Pubkey of Token account to query, as base-58 encoded string  
-`object` **optional**  
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
-### Result [#](#result)
+### Parameters
+`string` **required**
+Pubkey of Token account to query, as base-58 encoded string
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -23,7 +23,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 
 For more details on returned data, the [Token Balances Structure](/develop/rpcapi/json-structures#token-balances) response from [getBlock](/develop/rpcapi/intro/http/getblock) follows a similar structure.
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -38,7 +38,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

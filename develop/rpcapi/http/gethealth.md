@@ -1,22 +1,22 @@
---- 
+---
 title: getHealth RPC Method
-image: img/thumbnail.png 
-sidebar_label: getHealth 
----  
- 
+image: img/thumbnail.png
+sidebar_label: getHealth
+---
+
 Returns the current health of the node. A healthy node is one that is within `HEALTH_CHECK_SLOT_DISTANCE` slots of the latest cluster confirmed slot.
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 If the node is healthy: "ok"
 
 If the node is unhealthy, a JSON RPC error response is returned. The specifics of the error response are **UNSTABLE** and may change in the future
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -25,7 +25,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 Healthy Result:
 

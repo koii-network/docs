@@ -11,7 +11,7 @@ sidebar_label: getGenesisHash
 getBlock RPC Method
 Returns identity and transaction information about a confirmed block in the ledger
 
-### Parameters [#](#parameters)
+### Parameters
 u64 **required**
 slot number, as `u64` integer
 
@@ -41,7 +41,7 @@ Configuration object containing the following fields:
   - rewards `bool` **optional**
       whether to populate the `rewards` array. If parameter not provided, the default includes rewards.
 
-### Result [#](#result)
+### Result
 
 The result field will be an object with the following fields:
 
@@ -88,7 +88,7 @@ The result field will be an object with the following fields:
     *   `blockTime: <i64|null>` - estimated production time, as Unix timestamp (seconds since the Unix epoch). null if not available
     *   `blockHeight: <u64|null>` - the number of blocks beneath this block
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -109,7 +109,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

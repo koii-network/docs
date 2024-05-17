@@ -1,54 +1,54 @@
---- 
-title: blockSubscribe RPC Method 
-image: img/thumbnail.png 
+---
+title: blockSubscribe RPC Method
+image: img/thumbnail.png
 sidebar_label: blockSubscribe
----  
+---
 Subscribe to receive notification anytime a new block is `confirmed` or `finalized`.
 
 Unstable Method
 
 This subscription is considered **unstable** and is only available if the validator was started with the `--rpc-pubsub-enable-block-subscription` flag. The format of this subscription may change in the future.
 
-### Parameters [#](#parameters)
-filter `string | object` **required**  
-filter criteria for the logs to receive results by account type; currently supported:  
-- `string`  
-  `all` - include all transactions in block  
-- `object`  
+### Parameters
+filter `string | object` **required**
+filter criteria for the logs to receive results by account type; currently supported:
+- `string`
+  `all` - include all transactions in block
+- `object`
   A JSON object with the following field:
-  - `mentionsAccountOrProgram: <string>` - return only transactions that mention the provided public key (as base-58 encoded string). If no mentions in a given block, then no notification will be sent.  
-`object` **optional**  
+  - `mentionsAccountOrProgram: <string>` - return only transactions that mention the provided public key (as base-58 encoded string). If no mentions in a given block, then no notification will be sent.
+`object` **optional**
 
-Configuration object containing the following fields:  
-- commitment `string` optional  
+Configuration object containing the following fields:
+- commitment `string` optional
   Default: `finalized`
   - `processed` is not supported.
 - encoding string optional
-Default: `json`  
-encoding format for each returned Transaction  
-Values: `json` `jsonParsed` `base58` `base64`  
+Default: `json`
+encoding format for each returned Transaction
+Values: `json` `jsonParsed` `base58` `base64`
 
   - `jsonParsed` attempts to use program-specific instruction parsers to return more human-readable and explicit data in the `transaction.message.instructions` list.
   - If `jsonParsed` is requested but a parser cannot be found, the instruction falls back to regular JSON encoding (`accounts`, `data`, and `programIdIndex` fields).
-- transactionDetails `string` **optional**    
-Default: `full`  
-level of transaction detail to return  
-Values: `full` `accounts` `signatures` `none`  
+- transactionDetails `string` **optional**
+Default: `full`
+level of transaction detail to return
+Values: `full` `accounts` `signatures` `none`
 
   - If `accounts` are requested, transaction details only include signatures and an annotated list of accounts in each transaction.
   - Transaction metadata is limited to only: fee, err, pre\_balances, post\_balances, pre\_token\_balances, and post\_token\_balances.
-- maxSupportedTransactionVersion `number` **optional**  
+- maxSupportedTransactionVersion `number` **optional**
 the max transaction version to return in responses.
   - If the requested block contains a transaction with a higher version, an error will be returned.
   - If this parameter is omitted, only legacy transactions will be returned, and a block containing any versioned transaction will prompt the error.
-- showRewards `bool` **optional**  
+- showRewards `bool` **optional**
 whether to populate the `rewards` array. If parameter not provided, the default includes rewards.
 
-### Result [#](#result)
+### Result
 
 `integer` - subscription id (needed to unsubscribe)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 {
@@ -80,14 +80,14 @@ whether to populate the `rewards` array. If parameter not provided, the default 
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 
 
-#### Notification Format: [#](#notification-format)
+#### Notification Format:
 
 The notification will be an object with the following fields:
 

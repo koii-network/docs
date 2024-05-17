@@ -1,14 +1,14 @@
---- 
-title: getSlotLeaders RPC Method 
-image: img/thumbnail.png 
+---
+title: getSlotLeaders RPC Method
+image: img/thumbnail.png
 sidebar_label: getSlotLeaders
----  
+---
 
 Returns the slot leaders for a given slot range
 
 ### Parameters
-`u64` **optional**  
-Start slot, as u64 integer  
+`u64` **optional**
+Start slot, as u64 integer
 
 `u64` **optional**
 Limit, as u64 integer (between 1 and 5,000)
@@ -32,7 +32,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 The first leader returned is the leader for slot `#100`:
 

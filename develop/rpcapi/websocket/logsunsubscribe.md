@@ -1,21 +1,21 @@
---- 
-title: logsUnsubscribe RPC Method 
-image: img/thumbnail.png 
+---
+title: logsUnsubscribe RPC Method
+image: img/thumbnail.png
 sidebar_label: logsUnsubscribe
----  
+---
 Unsubscribe from transaction logging
 
-### Parameters [#](#parameters)
+### Parameters
 
 `integer` required
 
 subscription id to cancel
 
-### Result [#](#result)
+### Result
 
 `<bool>` - unsubscribe success message
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 {
@@ -27,7 +27,7 @@ subscription id to cancel
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": true, "id": 1 }

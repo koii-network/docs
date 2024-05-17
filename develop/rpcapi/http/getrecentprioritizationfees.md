@@ -1,29 +1,29 @@
---- 
-title: getRecentPrioritizationFees RPC Method 
-image: img/thumbnail.png 
-sidebar_label: getRecentPrioritizationFees 
----  
+---
+title: getRecentPrioritizationFees RPC Method
+image: img/thumbnail.png
+sidebar_label: getRecentPrioritizationFees
+---
 
 Returns a list of prioritization fees from recent blocks.
 
 :::info
 Currently, a node's prioritization-fee cache stores data from up to 150 blocks.
 :::
-### Parameters [#](#parameters)  
-`array` **optional**  
+### Parameters
+`array` **optional**
 An array of Account addresses (up to a maximum of 128 addresses), as base-58 encoded strings
 
 :::info
 If this parameter is provided, the response will reflect a fee to land a transaction locking all of the provided accounts as writable.
-:::  
-### Result [#](#result)
+:::
+### Result
 
 An array of `RpcPrioritizationFee<object>` with the following fields:
 
 *   `slot: <u64>` - slot in which the fee was observed
 *   `prioritizationFee: <u64>` - the per-compute-unit fee paid by at least one successfully landed transaction, specified in increments of micro-lamports (0.000001 lamports)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -38,7 +38,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

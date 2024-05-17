@@ -1,33 +1,33 @@
---- 
+---
 title: slotSubscribe  RPC Method
-image: img/thumbnail.png 
-sidebar_label: slotSubscribe 
----  
+image: img/thumbnail.png
+sidebar_label: slotSubscribe
+---
 Subscribe to receive notification anytime a slot is processed by the validator
 
-### Parameters [#](#parameters)
+### Parameters
 
 **None**
 
-### Result [#](#result)
+### Result
 
 `<integer>` - Subscription id (needed to unsubscribe)
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 { "jsonrpc": "2.0", "id": 1, "method": "slotSubscribe" }
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 { "jsonrpc": "2.0", "result": 0, "id": 1 }
 ```
 
 
-#### Notification Format: [#](#notification-format)
+#### Notification Format:
 
 The notification will be an object with the following fields:
 

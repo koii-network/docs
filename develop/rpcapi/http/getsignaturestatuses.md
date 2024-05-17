@@ -1,24 +1,24 @@
---- 
-title: getSignatureStatuses RPC Method 
-image: img/thumbnail.png 
+---
+title: getSignatureStatuses RPC Method
+image: img/thumbnail.png
 sidebar_label: getSignatureStatuses
----  
+---
 
 Returns the statuses of a list of signatures. Each signature must be a txid, the first signature of a transaction.
 
 :::info
 Unless the `searchTransactionHistory` configuration parameter is included, this method only searches the recent status cache of signatures, which retains statuses for all active slots plus `MAX_RECENT_BLOCKHASHES` rooted slots.
 :::
-### Parameters [#](#parameters)
-`array` **required**  
-An array of transaction signatures to confirm, as base-58 encoded strings (up to a maximum of 256)  
+### Parameters
+`array` **required**
+An array of transaction signatures to confirm, as base-58 encoded strings (up to a maximum of 256)
 
-`object` **optional**  
-Configuration object containing the following fields:  
-- searchTransactionHistory `bool` **optional**  
+`object` **optional**
+Configuration object containing the following fields:
+- searchTransactionHistory `bool` **optional**
 - if `true` - a Koii Validator node will search its ledger cache for any signatures not found in the recent status cache
 
-### Result [#](#result)
+### Result
 
 An array of `RpcResponse<object>` consisting of either:
 
@@ -26,13 +26,13 @@ An array of `RpcResponse<object>` consisting of either:
 *   `<object>`
     *   `slot: <u64>` - The slot the transaction was processed
     *   `confirmations: <usize|null>` - Number of blocks since signature confirmation, null if rooted, as well as finalized by a supermajority of the cluster
-    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded. 
-    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`. 
+    *   `err: <object|null>` - Error if transaction failed, null if transaction succeeded.
+    *   `confirmationStatus: <string|null>` - The transaction's cluster confirmation status; Either `processed`, `confirmed`, or `finalized`.
     *   DEPRECATED: `status: <object>` - Transaction status
         *   `"Ok": <null>` - Transaction was successful
         *   `"Err": <ERR>` - Transaction failed with TransactionError
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -53,7 +53,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

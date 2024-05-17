@@ -1,11 +1,11 @@
 ---
-title: getBalance RPC Method 
+title: getBalance RPC Method
 image: img/thumbnail.png
 sidebar_label: getBalance
---- 
+---
 Returns the lamport balance of the account of provided Pubkey
 
-### Parameters [#](#parameters)
+### Parameters
 
 `string` **required**
 
@@ -16,14 +16,14 @@ Pubkey of account to query, as base-58 encoded string
 Configuration object containing the following fields:
 - commitment `string` **optional**
 - minContextSlot `number` **optional**
-  
+
   The minimum slot that the request can be evaluated at
 
-### Result [#](#result)
+### Result
 
 `RpcResponse<u64>` - RpcResponse JSON object with `value` field set to the balance
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -38,7 +38,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

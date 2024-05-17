@@ -1,28 +1,28 @@
---- 
-title: getSlotLeader RPC Method 
-image: img/thumbnail.png 
+---
+title: getSlotLeader RPC Method
+image: img/thumbnail.png
 sidebar_label: getSlotLeader
----  
+---
 
 
 Returns the current slot leader
 
-### Parameters 
+### Parameters
 
-`object` optional  
+`object` optional
 
 Configuration object containing the following fields:
 
-- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional  
+- [commitment](/develop/rpcapi/intro#configuring-state-commitment) `string` optional
 
-- minContextSlot `number` optional  
+- minContextSlot `number` optional
 The minimum slot that the request can be evaluated at
 
-### Result 
+### Result
 
 `<string>` - Node identity Pubkey as base-58 encoded string
 
-### Code sample 
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -31,7 +31,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {

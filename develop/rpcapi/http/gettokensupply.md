@@ -1,20 +1,20 @@
---- 
-title: getTokenSupply RPC Method 
-image: img/thumbnail.png 
+---
+title: getTokenSupply RPC Method
+image: img/thumbnail.png
 sidebar_label: getTokenSupply
----  
+---
 
 Returns the total supply of an KPL Token type.
 
-### Parameters [#](#parameters)
-`string` **required**  
+### Parameters
+`string` **required**
 Pubkey of account delegate to query, as base-58 encoded string
 
-`object` **optional**  
-Configuration object containing the following fields:  
-- commitment `string` **optional**  
+`object` **optional**
+Configuration object containing the following fields:
+- commitment `string` **optional**
 
-### Result [#](#result)
+### Result
 
 The result will be an RpcResponse JSON object with `value` equal to a JSON object containing:
 
@@ -23,7 +23,7 @@ The result will be an RpcResponse JSON object with `value` equal to a JSON objec
 *   `uiAmount: <number|null>` - the total token supply, using mint-prescribed decimals **DEPRECATED**
 *   `uiAmountString: <string>` - the total token supply as a string, using mint-prescribed decimals
 
-### Code sample [#](#code-sample)
+### Code sample
 
 ```
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
@@ -38,7 +38,7 @@ curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d
 ```
 
 
-### Response [#](#response)
+### Response
 
 ```
 {
