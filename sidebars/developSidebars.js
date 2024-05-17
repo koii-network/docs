@@ -121,7 +121,7 @@ const sidebars = {
         "write-a-koii-task/task-development-kit-tdk/test/docker-test",
       ],
     },
-   
+
     // {
     //   type: "category",
     //   label: "K2 Task Template",
@@ -236,7 +236,9 @@ const sidebars = {
         "rpcapi/http/getclusternodes",
         "rpcapi/http/getepochinfo",
         "rpcapi/http/getepochschedule",
+        "rpcapi/http/getfees",
         "rpcapi/http/getfeeformessage",
+        "rpcapi/http/getfeecalculatorforblockhash",
         "rpcapi/http/getfirstavailableblock",
         "rpcapi/http/getgenesishash",
         "rpcapi/http/gethealth",
@@ -286,11 +288,11 @@ const sidebars = {
         id: "rpcapi/websocket/websocket",
       },
       collapsed: true,
-      items: 
+      items:
         ['rpcapi/websocket/accountsubscribe', 'rpcapi/websocket/accountunsubscribe', 'rpcapi/websocket/blocksubscribe', 'rpcapi/websocket/blockunsubscribe', 'rpcapi/websocket/logssubscribe', 'rpcapi/websocket/logsunsubscribe', 'rpcapi/websocket/programsubscribe', 'rpcapi/websocket/programunsubscribe', 'rpcapi/websocket/rootsubscribe', 'rpcapi/websocket/rootunsubscribe', 'rpcapi/websocket/signaturesubscribe', 'rpcapi/websocket/signatureunsubscribe', 'rpcapi/websocket/slotsubscribe', 'rpcapi/websocket/slotunsubscribe', 'rpcapi/websocket/slotsupdatessubscribe', 'rpcapi/websocket/slotsupdatesunsubscribe', 'rpcapi/websocket/votesubscribe', 'rpcapi/websocket/voteunsubscribe']
       ,
     }
-  ],  
+  ],
 };
 
 module.exports = sidebars;
