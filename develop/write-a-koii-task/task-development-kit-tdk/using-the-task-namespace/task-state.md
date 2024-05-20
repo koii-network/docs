@@ -6,8 +6,37 @@ sidebar_label: Task State
 ---
 
 # Task State
+A task's state can be retrieved using the namespace methods. 
 
-## getTaskState()
+### getTaskState
+
+| Parameter | Type   | Description                        |
+|-----------|--------|------------------------------------|
+| options   | object | Options for the `getTaskState` call|
+
+| Return Value | Type    | Description                                  |
+|--------------|---------|----------------------------------------------|
+| response     | object  | The response from `getTaskState` call or null|
+
+### getTaskSubmissionInfo
+
+| Parameter | Type   | Description                   |
+|-----------|--------|-------------------------------|
+| round     | number    | The round for task submission |
+
+| Return Value        | Type    | Description                                    |
+|---------------------|---------|------------------------------------------------|
+| taskSubmissionInfo  | object  | The task submission information or null        |
+
+### getTaskDistributionInfo
+
+| Parameter | Type   | Description                      |
+|-----------|--------|----------------------------------|
+| round     | number   | The round for task distribution  |
+
+| Return Value          | Type    | Description                                       |
+|-----------------------|---------|---------------------------------------------------|
+| taskDistributionInfo  | object  | The task distribution information or null         |
 
 A task's state can be retrieved using the `getTaskState()` namespace method. It returns an object containing information about the task. <br />
 
