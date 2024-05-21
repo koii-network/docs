@@ -15,15 +15,6 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   content: [
-    // {
-    //   type: "html",
-    //   value: "What is Koii?",
-    //   className: "sidebar-title",
-    // },
-    // "introduction/welcome",
-    // "introduction/tools",
-    // "introduction/philosophy",
-
     {
       type: "html",
       value: "The $KOII Token",

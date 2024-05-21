@@ -3,6 +3,9 @@ title: Technical Overview
 image: img/thumbnail.png
 sidebar_label: Technical Overview
 ---
+:::Warning
+This is a deprecated page. 
+:::
 
 # Technical Overview
 
