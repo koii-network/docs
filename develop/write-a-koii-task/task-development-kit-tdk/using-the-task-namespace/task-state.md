@@ -17,13 +17,15 @@ A task's state can be retrieved using the namespace methods.
 | Return Value | Type    | Description                                  |
 |--------------|---------|----------------------------------------------|
 | response     | object  | The response from `getTaskState` call or null|
+Example:
 ```
-TaskStateOptions {
-  is_submission_required?: boolean;
-  is_distribution_required?: boolean;
-  is_available_balances_required?: boolean;
-  is_stake_list_required?: boolean;
+options = {
+        is_submission_required: true,
+        is_distribution_required: true,
+        is_available_balances_required: true,
+        is_stake_list_required: true
 }
+namespaceWrapper.getTaskState(options);
 ```
 
 ### getTaskSubmissionInfo
@@ -35,7 +37,10 @@ TaskStateOptions {
 | Return Value        | Type    | Description                                    |
 |---------------------|---------|------------------------------------------------|
 | taskSubmissionInfo  | object  | The task submission information or null        |
-
+Example:
+```
+namespaceWrapper.getTaskSubmissionInfo(0);
+```
 
 ### getTaskDistributionInfo
 
@@ -46,8 +51,11 @@ TaskStateOptions {
 | Return Value          | Type    | Description                                       |
 |-----------------------|---------|---------------------------------------------------|
 | taskDistributionInfo  | object  | The task distribution information or null         |
-
-A task's state can be retrieved using the `getTaskState()` namespace method. It returns an object containing information about the task. <br />
+Example:
+```
+namespaceWrapper.getTaskDistributionInfo(0);
+```
+A task's state can be retrieved using the namespace methods. It returns an object containing information about the task. <br />
 
 The task state object:
 
