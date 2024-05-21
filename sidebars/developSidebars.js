@@ -142,7 +142,7 @@ const sidebars = {
       value: "Getting Advanced",
       className: "sidebar-title top-margin",
     },
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/develop-an-OrcaPod",
+    
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
