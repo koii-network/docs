@@ -89,6 +89,14 @@ const sidebars = {
     "distributed-cloud/better-data",
     {
       type: "html",
+      value: "Orca",
+      className: "sidebar-title",
+    },
+    "containerized-tasks/orca",
+    "containerized-tasks/develop-an-OrcaPod",
+    
+    {
+      type: "html",
       value: "Finnie Wallet",
       className: "sidebar-title",
     },
