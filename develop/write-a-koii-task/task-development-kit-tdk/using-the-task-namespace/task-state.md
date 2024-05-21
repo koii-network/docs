@@ -6,21 +6,67 @@ sidebar_label: Task State
 ---
 
 # Task State
+A task's state can be retrieved using the namespace methods. 
 
-## getTaskState()
+### getTaskState
 
-A task's state can be retrieved using the `getTaskState()` namespace method. It returns an object containing information about the task. <br />
+| Parameter | Type   | Description                        |
+|-----------|--------|------------------------------------|
+| options   | object | Options for the `getTaskState` call|
+
+| Return Value | Type    | Description                                  |
+|--------------|---------|----------------------------------------------|
+| response     | object  | The response from `getTaskState` call or null|
+Example:
+```
+options = {
+        is_submission_required: true,
+        is_distribution_required: true,
+        is_available_balances_required: true,
+        is_stake_list_required: true
+}
+namespaceWrapper.getTaskState(options);
+```
+
+### getTaskSubmissionInfo
+
+| Parameter | Type   | Description                   |
+|-----------|--------|-------------------------------|
+| round     | number    | The round for task submission |
+
+| Return Value        | Type    | Description                                    |
+|---------------------|---------|------------------------------------------------|
+| taskSubmissionInfo  | object  | The task submission information or null        |
+Example:
+```
+namespaceWrapper.getTaskSubmissionInfo(0);
+```
+
+### getTaskDistributionInfo
+
+| Parameter | Type   | Description                      |
+|-----------|--------|----------------------------------|
+| round     | number   | The round for task distribution  |
+
+| Return Value          | Type    | Description                                       |
+|-----------------------|---------|---------------------------------------------------|
+| taskDistributionInfo  | object  | The task distribution information or null         |
+Example:
+```
+namespaceWrapper.getTaskDistributionInfo(0);
+```
+A task's state can be retrieved using the namespace methods. It returns an object containing information about the task. <br />
 
 The task state object:
 
 | Key                             | Description                                                                                                                                        |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| is_allowlisted                  | Boolean value to show if the task is allowlisted                                                                                                   |
 | task_name                       | The name of the task                                                                                                                               |
 | task_description                | The description of the task                                                                                                                        |
 | task_manager                    | The public key of the task creator in uint8 format                                                                                                 |
-| is_whitelisted                  | Boolean value to show if the task is whitelisted                                                                                                   |
 | is_active                       | Boolean value to show if the task is active                                                                                                        |
-| task_audit_program              | The IPFS CID / Arweave ID pointing to the JavaScript executable file of the task                                                                                     |
+| task_audit_program              | The IPFS CID / Arweave ID pointing to the JavaScript executable file of the task                                                                   |
 | stake_pot_account               | Account to which all the stakes go                                                                                                               |
 | submissions                     | The values submitted to K2; it also includes the round and slots in which a submission was made                                                   |
 | submissions_audit_trigger       | Includes the submission value for a raised audit, also shows who audited it, who submitted the value and the submission value |
@@ -28,7 +74,7 @@ The task state object:
 | bounty_amount_per_round         | KOII to be rewarded per round, this cannot be more than `total_bounty_amount`                                                                        |
 | total_stake_amount              | Sum of all the stakes by the nodes running the task                                                                                               |
 | minimum_stake_amount            | Minimum KOII required to run the task                                                                                                              |
-| available_balances              | List of pending rewards of nodes that are available to be claimed                                                                                      |
+| available_balances              | List of pending rewards of nodes that are available to be claimed                                                                 |
 | stake_list                      | Object of staker `publicKey` mapped with the amount they staked                                                                                     |
 | ip_address_list                 | Static IPs of the nodes that are running the current task                                                                                         |
 | round_time                      | The total number of slots it takes for each period of the current task                                                                            |
@@ -44,56 +90,33 @@ The task state object:
 | koii_vars                       | not used                                                                                                                                           |
 | is_migrated                     | Boolean to show the state of migration, if `true` then `migrated_to` will have the new address                                                      |
 | migrated_to                     | New task Id to which the task is migrated                                                                                                  |
-
+| allowed_failed_distributions       | The number of failed distributions allowed                                                                                                 |
+| task_id       | task_id                                                                                                 |
 Task state sample:
 
 ```javascript
-{
-task_name: 'did-task',
-task_description: 'This task creates decentralized identities',
-task_manager: [
-125, 234, 6, 93, 93, 181, 37, 55,
-231, 207, 193, 21, 58, 4, 163, 80,
-33, 236, 53, 62, 74, 30, 61, 197,
-106, 63, 180, 101, 198, 173, 169, 48
-],
-is_whitelisted: false,
-is_active: true,
-task_audit_program: 'did.js',
-stake_pot_account: [
-13, 9, 93, 69, 120, 6, 193, 51,
-83, 187, 162, 11, 233, 108, 147, 55,
-163, 157, 89, 111, 152, 156, 14, 213,
-165, 233, 165, 91, 4, 203, 199, 201
-],
-submissions: {},
-submissions_audit_trigger: {},
-total_bounty_amount: 1000000000000,
-bounty_amount_per_round: 10000000000,
-total_stake_amount: 0,
-minimum_stake_amount: 100,
-available_balances: {},
-stake_list: {},
-ip_address_list: {},
-round_time: 650,
-starting_slot: 43357,
-audit_window: 240,
-submission_window: 240,
-task_executable_network: 'DEVELOPMENT'
-distribution_rewards_submission: {},
-distributions_audit_trigger: {},
-distributions_audit_record: {},
-task_metadata: "",
-task_vars: "",
-koii_vars: "",
-is_migrated: false,
-migrated_to: ""
-}
+taskName: 'Arweave Verifier',
+taskManager: 'FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d',
+is_allowlisted: true,
+isActive: true,
+taskAuditProgram: 'bafybeihjtsyty2sjmhriyvqlwxdldz2jkoyjr5pnko3t7jyais4kpgcdhm',
+stakePotAccount: 'stakepotaccounti1drd3maNYcUgyohxwjfNVskco5v',
+totalBountyAmount: 43635761521266,
+bountyAmountPerRound: 1000000000000,
+currentRound: undefined,
+availableBalances: [Object],
+stakeList: [Object],
+startingSlot: 7603543,
+isRunning: false,
+hasError: false,
+metadataCID: 'bafybeiek6a3ymp6xa3wluetm6v6qwsays6swhs4hihg4uzn4h2frqmzsui',
+minimumStakeAmount: 1900000000,
+roundTime: 6000,
+submissions: [Object],
+distributionsAuditTrigger: [Object],
+submissionsAuditTrigger: {},
+isMigrated: false,
+migratedTo: '',
+distributionRewardsSubmission: [Object]
 ```
 
-Example showing how to get the number of staked nodes:
-
-```javascript
-const taskAccountDataJSON = await namespaceWrapper.getTaskState();
-const listOfStakedNodes = taskAccountDataJSON.stake_list;
-```

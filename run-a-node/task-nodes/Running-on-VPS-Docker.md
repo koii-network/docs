@@ -26,14 +26,22 @@ Instructions for Users Who Want to Upgrade:
 ```bash
 # Navigate to the VPS-task working directory
 cd VPS-task
+
 # Stop all running containers
 docker-compose down
+
 # Remove all unused Docker images to free up space
 docker image prune -af
-# Download the latest versions of your Docker images
-docker-compose pull
+
+# Remove all stopped containers
+docker container prune -f
+
+# Remove the specific Docker image
+docker image rm public.ecr.aws/koii-network/task_node:latest
+
 # Start the containers in detached mode
 docker-compose up -d
+
 ```
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 ### TypeError [ERR_INVALID_URL]: Invalid URL
