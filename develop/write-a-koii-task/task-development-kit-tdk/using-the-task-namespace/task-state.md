@@ -17,6 +17,14 @@ A task's state can be retrieved using the namespace methods.
 | Return Value | Type    | Description                                  |
 |--------------|---------|----------------------------------------------|
 | response     | object  | The response from `getTaskState` call or null|
+```
+TaskStateOptions {
+  is_submission_required?: boolean;
+  is_distribution_required?: boolean;
+  is_available_balances_required?: boolean;
+  is_stake_list_required?: boolean;
+}
+```
 
 ### getTaskSubmissionInfo
 
@@ -27,6 +35,7 @@ A task's state can be retrieved using the namespace methods.
 | Return Value        | Type    | Description                                    |
 |---------------------|---------|------------------------------------------------|
 | taskSubmissionInfo  | object  | The task submission information or null        |
+
 
 ### getTaskDistributionInfo
 
@@ -48,7 +57,6 @@ The task state object:
 | task_name                       | The name of the task                                                                                                                               |
 | task_description                | The description of the task                                                                                                                        |
 | task_manager                    | The public key of the task creator in uint8 format                                                                                                 |
-| is_whitelisted                  | Boolean value to show if the task is whitelisted                                                                                                   |
 | is_active                       | Boolean value to show if the task is active                                                                                                        |
 | task_audit_program              | The IPFS CID / Arweave ID pointing to the JavaScript executable file of the task                                                                   |
 | stake_pot_account               | Account to which all the stakes go                                                                                                               |
@@ -75,12 +83,13 @@ The task state object:
 | is_migrated                     | Boolean to show the state of migration, if `true` then `migrated_to` will have the new address                                                      |
 | migrated_to                     | New task Id to which the task is migrated                                                                                                  |
 | allowed_failed_distributions       | The number of failed distributions allowed                                                                                                 |
+| task_id       | task_id                                                                                                 |
 Task state sample:
 
 ```javascript
 taskName: 'Arweave Verifier',
 taskManager: 'FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d',
-isWhitelisted: true,
+is_allowlisted: true,
 isActive: true,
 taskAuditProgram: 'bafybeihjtsyty2sjmhriyvqlwxdldz2jkoyjr5pnko3t7jyais4kpgcdhm',
 stakePotAccount: 'stakepotaccounti1drd3maNYcUgyohxwjfNVskco5v',
@@ -101,12 +110,5 @@ submissionsAuditTrigger: {},
 isMigrated: false,
 migratedTo: '',
 distributionRewardsSubmission: [Object]
-
 ```
 
-Example showing how to get the number of staked nodes:
-
-```javascript
-const taskAccountDataJSON = await namespaceWrapper.getTaskState();
-const listOfStakedNodes = taskAccountDataJSON.stake_list;
-```
