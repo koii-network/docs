@@ -21,50 +21,8 @@ const sidebars = {
       className: "sidebar-title top-margin",
     },
     "onboarding/welcome-to-koii",
-    {
-      type: "html",
-      value: "Koii Software Toolkit (SDK)",
-      className: "sidebar-title top-margin",
-    },
-    "koii-software-toolkit-sdk/what-is-the-koii-sdk",
-    "koii-software-toolkit-sdk/koii-javascript-api",
 
-    {
-      type: "category",
-      label: "Koii Command Line Tool",
-      link: {
-        type: "generated-index",
-        description:
-          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
-      },
-      collapsed: true,
-      items: [
-        "command-line-tool/koii-cli/install-cli",
-        "command-line-tool/koii-cli/create-wallet",
-        "command-line-tool/koii-cli/send-and-receive-tokens",
-        "command-line-tool/koii-cli/connect-cluster",
-      ],
-    },
-    {
-      type: "category",
-      label: "Create Task CLI",
-      link: {
-        type: "doc",
-        id: "command-line-tool/create-task-cli/intro",
-      },
-      collapsed: true,
-      items: [
-        "command-line-tool/create-task-cli/install",
-        "command-line-tool/create-task-cli/create-repo",
-        "command-line-tool/create-task-cli/create-task",
-        "command-line-tool/create-task-cli/update-task",
-        "command-line-tool/create-task-cli/activate-task",
-        "command-line-tool/create-task-cli/fund-task",
-      ],
-    },
 
-    // "command-line-tool/create-task-cli",
-    "command-line-tool/cli-usage-reference",
     {
       type: "html",
       value: "Task Development Guide",
@@ -136,6 +94,51 @@ const sidebars = {
     //     "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
     //   ],
     // },
+    {
+      type: "html",
+      value: "Koii Software Toolkit (SDK)",
+      className: "sidebar-title top-margin",
+    },
+    "koii-software-toolkit-sdk/what-is-the-koii-sdk",
+    "koii-software-toolkit-sdk/koii-javascript-api",
+
+    {
+      type: "category",
+      label: "Koii Command Line Tool",
+      link: {
+        type: "generated-index",
+        description:
+          "In this section, we'll go over how to create a wallet, send and receive KOII tokens, and participate in the cluster by delegating stakes using the Koii command-line tools.          Here are the articles in this section:",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/koii-cli/install-cli",
+        "command-line-tool/koii-cli/create-wallet",
+        "command-line-tool/koii-cli/send-and-receive-tokens",
+        "command-line-tool/koii-cli/connect-cluster",
+      ],
+    },
+    {
+      type: "category",
+      label: "Create Task CLI",
+      link: {
+        type: "doc",
+        id: "command-line-tool/create-task-cli/intro",
+      },
+      collapsed: true,
+      items: [
+        "command-line-tool/create-task-cli/install",
+        "command-line-tool/create-task-cli/create-repo",
+        "command-line-tool/create-task-cli/create-task",
+        "command-line-tool/create-task-cli/update-task",
+        "command-line-tool/create-task-cli/activate-task",
+        "command-line-tool/create-task-cli/fund-task",
+      ],
+    },
+
+    // "command-line-tool/create-task-cli",
+    "command-line-tool/cli-usage-reference",
+    
 
     {
       type: "html",
