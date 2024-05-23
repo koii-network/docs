@@ -9,8 +9,8 @@ import Description from "@site/src/components/description";
 
 # How to develop an OrcaPod
 
-​
 ## Objective
+
 The purpose of this guide is to show how to integrate ORCA with Koii Network. Basicallly we will be focusing and simplifying so that devloper can come to this guide, they can start devloping and running KOII-ORCA task.
 
 ## Prerequisites
@@ -20,9 +20,11 @@ The purpose of this guide is to show how to integrate ORCA with Koii Network. Ba
 - [Orca Node](https://docs.orcacompute.com/orcaNode)
 
 ## Install the KOII CLI
+
 To interact with the K2 locally, you need to install the Koii CLI. [Click here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli) to follow the instructions.
 
 ## Create a Koii Wallet
+
 Koii supports a file system wallet that can be used to interface directly with the Koii command-line tools.
 
 :::info
@@ -38,6 +40,7 @@ To generate a file system wallet keypair, use Koii’s command-line tool `koii-k
 ```JavaScript
 koii-keygen new --outfile ~/.config/koii/id.json
 ```
+
 :::warning
 
 This file contains your unencrypted keypair, protect this file as it grants access to all tokens sent to its public key. Do not distribute the file; share only the public key to maintain security.
@@ -59,6 +62,7 @@ It will return a string of characters like:
 Congratulations! You now have a Koii wallet, Next, let’s airdrop some KOII in your wallet. [Click Here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
 
 ## Clone repository
+
 - Clone task-template github repository from the given [Link](https://github.com/koii-network/task-template)
 - Navigate to the `task-template` folder
 - Create a new directory
@@ -75,9 +79,11 @@ sudo cp ~/.config/koii/id.json config/koii
 ```
 
 ## Web3Storage API Token
+
 You’ll be required to add your web3.storage API key, visit [here](https://web3.storage/) to create a web3.storage account. After creating an account, create an API Token for your project, paste the API token on this prompt
 
 ## Edit the config-task.yaml
+
 Replace the value of the given keys
 
 1. task_name - `anything according to you`
@@ -124,7 +130,7 @@ requirementsTags:
     value: "M1"
   - type: OS
     value: "OSX"
-# OPTIONAL variables below 
+# OPTIONAL variables below
 # OPTIONAL Only provide the taskId if you are updating the task otherwise leave blank
 task_id: ""
 # OPTIONAL only Provide your transaction ID in case of ARWEAVE and in case of DEVELOPMENT give your executable name as main otherwise leave blank
@@ -146,15 +152,19 @@ npx @_koii/create-task-cli
 ```
 
 ## Integrate Orca-Pulse with Koii and create Simple task
+
 ​
+
 ### Install Orca-pulse
+
 It is basically JS NPM package. Which used to communicate with ORCA.
 
 ```JS
-npm i orca-pulse 
+npm i orca-pulse
 ```
 
 ### Creating an instance of orca-pulse
+
 Import orca-pulse in the `index.js`
 
 ```JS
@@ -164,7 +174,7 @@ const { OrcaPulse } = require('orca-pulse')
 Create an instance of orca-pulse in the `index.js` inside setup funtion.
 
 ```JS
-const orcaPulse = new OrcaPulse()  
+const orcaPulse = new OrcaPulse()
 await orcaPulse.initialize(
     'userContainerImageUrl',
     'taskId',
@@ -203,8 +213,8 @@ module.exports = SimpleTask
 ```
 
 ### Make change in CoreLogic.js
-Import the simple-task
 
+Import the simple-task
 
 ```JS
 const SimpleTask = require('./simple-task');
@@ -217,12 +227,13 @@ Create instance of the simple task class
 ```
 
 ## Edit .env.local file
+
 Replace the value of the Given keys
 
 1. TASK_ID
 2. SECRET_WEB3_STORAGE_KEY
 
-``` json
+```json
 ######################################################
 ################## DO NOT EDIT BELOW #################
 ######################################################
@@ -234,7 +245,7 @@ NODE_MODE="service"
 SERVICE_URL="http://localhost:8080"
 # For CI/CD purpose to automate the staking wallet creation
 INITIAL_STAKING_WALLET_BALANCE=1
-# Intial balance for the distribution wallet which will be used to hold the distribution list. 
+# Intial balance for the distribution wallet which will be used to hold the distribution list.
 INITIAL_DISTRIBUTION_WALLET_BALANCE=1
 # Global timers which track the round time, submission window and audit window and call those functions
 GLOBAL_TIMERS="true"
@@ -263,16 +274,18 @@ TASK_STAKES=10
 SECRET_WEB3_STORAGE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDc0RDUwZTVlNkNGRDA0NGQyNzkzNTk5YkU3NzNmMDE0YmFkZDI4MDYiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2ODg5OTAyMzA4MjAsIm5hbWUiOiJjZC1kLWMifQ.c9Ufb7tZTgFVcZ8J0RRJdap0rvokWqXeq21eUM5-qVg"
 ```
 
-
 ## Compile the task
+
 After you’ve created a task using the K2 task template as a guide, you’ll need to compile it with Webpack into a single executable file. Open up your terminal, and in the directory of your task:
 
 - Run `yarn` to install all dependencies
 - Run `yarn webpack` to compile code
 - You should see a new directory `/dist`
 - Your compiled executable is located in `/dist/main.js` That’s it! You’ve successfully compiled your task into a single executable file.
-​
+  ​
+
 ## Run the task
+
 Make sure you are in the task-template location Run task-template using docker compose
 
 ```JS
