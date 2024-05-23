@@ -92,9 +92,9 @@ const sidebars = {
       value: "Orca",
       className: "sidebar-title",
     },
-    "containerized-tasks/orca",
+    // "containerized-tasks/orca", // NOTE - Trevor asked to remove this until we have more content
     "containerized-tasks/develop-an-OrcaPod",
-    
+
     {
       type: "html",
       value: "Finnie Wallet",
