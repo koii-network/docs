@@ -111,8 +111,6 @@ space: 1
 # To add more task variables, please refer the type, value, description format shown below
 
 requirementsTags:
-  - type: TASK_VARIABLE
-    
     description: "used to store the data"
   - type: CPU
     value: "4-core"
