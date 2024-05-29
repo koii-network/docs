@@ -152,12 +152,11 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
     "write-a-koii-task/task-development-guide/scaling-tasks/network-options",
-    "write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure",
+    
 
     {
       type: "html",
