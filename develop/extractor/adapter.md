@@ -12,7 +12,7 @@ Let's take a look at our `adapters/twitter.js` file.
 
 ### Modules
 
-We are making use of a database model, Puppeteer for web scraping, Cheerio for DOM parsing, crypto for potential cryptography tasks, and Spheron for decentralized storage.
+We are making use of a database model, Puppeteer for web scraping, Cheerio for DOM parsing, crypto for potential cryptography tasks.
 
 ### Session Management
 
@@ -65,20 +65,15 @@ We are making use of a database model, Puppeteer for web scraping, Cheerio for D
 
 The final portion of our file contains utility functions:
 
-**makeStorageClient:**
-
-- Returns a new instance of Spheron Storage for decentralized storage.
 
 **makeFileFromObjectWithName:**
 
 - Converts an object to a File with a specified name.
 
-**storeFiles:**
 
-- Stores files using the Spheron Storage client and returns the CID.
 
 ### Summary
 
-The Twitter class in the code provides a framework for extracting Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the extracting queue, and can store the extracted data on decentralized storage using Spheron.
+The Twitter class in the code provides a framework for extracting Twitter using Puppeteer. It manages sessions (logging in to Twitter), extracts data from tweets, manages the extracting queue, and can store the extracted data on decentralized storage.
 
 You can use it as a starting point to develop your own Twitter extractor to your own needs, or as a reference to develop a extractor for a different website.

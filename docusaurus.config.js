@@ -773,13 +773,7 @@ const config = {
               "/quickstart/hello-world/deploy",
             ],
           },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure",
-            from: [
-              "/quickstart/scaling-tasks/network-options",
-              "/quickstart/scaling-tasks/spheron-infrastructure",
-            ],
-          },
+      
           {
             to: "/develop/introduction",
             from: ["/quickstart/introduction"],

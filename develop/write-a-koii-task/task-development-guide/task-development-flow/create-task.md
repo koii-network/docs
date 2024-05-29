@@ -32,7 +32,6 @@ Note — The next prompt depends on your answer to the prompt above.
 
 :::
 
-- \[For _IPFS_] **Enter the Spheron API key:** If you choose to store your task executable on IPFS, you’ll be required to add your Spheron API key, Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. Paste the API token on this prompt. e.g: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`
 - \[For _Arweave_] **Enter Arweave id of the deployed Koii task executable program:** If you choose your task executable on [Arweave](https://www.arweave.org/), you have to upload your executable on Arweave and provide the ID to the uploaded file.
 - \[For _DEVELOPMENT_] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
 - \[For _IPFS_ and _ARWEAVE_] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
@@ -49,8 +48,8 @@ Note — The number of slots in the audit window and submission must be lower th
 - **Enter the minimum staking amount in lamports:** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
 - **Enter the total bounty you want to allocate for the task (In KOII)**: Any amount not more than what you have in your wallet though. E.g: `1000` (We suggest the amount could be run at least 4 epochs)
 - **Enter the bounty amount per round**: Total amount would be divided equally for each number until the bounty fund is exhausted. E.g: `10`
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the metadata for your task on IPFS, add the CID here; otherwise, leave it blank. Use your Spheron account. Add the CID for the uploaded file to this prompt. Check out a [metadata example](/develop/koii-task-101/what-are-tasks/key-components/intro#metadata).
-- **Enter CID for environment variables hosted on IPFS (Leave empty for None):** If your task requires environment variables to be run by node runners, upload a JSON file that contains those variables to IPFS using Spheron, see the [Spheron Docs](https://docs.spheron.network/storage/) for more information. Add the uploaded file's CID to this prompt.
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the metadata for your task on IPFS, add the CID here; otherwise, leave it blank. Add the CID for the uploaded file to this prompt. Check out a [metadata example](/develop/koii-task-101/what-are-tasks/key-components/intro#metadata).
+- **Enter CID for environment variables hosted on IPFS (Leave empty for None):** If your task requires environment variables to be run by node runners, upload a JSON file that contains those variables to IPFS, add the uploaded file's CID to this prompt.
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 
 After the final confirmation of `y`, your task would be created along with a `taskStateInfoKeypair.json` which is used to control the task state info.
@@ -84,7 +83,6 @@ Using program Koiitask22222222222222222222222222222222222
 ✔ Enter the name of the task … testing-task-v1
 ✔ Enter a short description of your task … A simple task with very minimal logic
 ✔ Enter the network to be used to upload your executable [IPFS / ARWEAVE / DEVELOPMENT] … IPFS
-✔ Enter the Spheron API key … eyOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTsIm5hbWUiOiJzYXZpbmdIaX
 ✔ Enter the path to your executable webpack … /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 ✔ Enter the round time in slots … 1000

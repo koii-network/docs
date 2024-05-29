@@ -78,7 +78,6 @@ Fetches the JSON data from a CID.
 
 - Adapter (`./adapters/twitter/twitter.js`): To authenticate and crawl the site.
 - Database Helper (`./helpers/db`): To populate the database with crawl results.
-- Spheron (`@spheron/storage`): To retrieve and manage CIDs.
 - Data Model (`./model/data`): Model for the data.
 - dotenv (`dotenv`): To load environment variables.
 - axios (`axios`): To make HTTP requests.

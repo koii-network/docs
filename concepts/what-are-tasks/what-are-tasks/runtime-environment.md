@@ -23,7 +23,7 @@ When a task executes, each task node [submits a proof once per round](/concepts/
 
 Since submissions to the blockchain layer are limited in size, additional supporting information can be bundled into larger files and uploaded to a storage network like IPFS. IPFS uses Content IDs (CIDs), a hash-based key, to represent information uniquely, meaning that once a CID is locked into the blockchain, it cannot be changed.&#x20;
 
-It is the responsibility of node operators to either host each CID themselves, or pay a secondary service such as [Spheron](https://docs.spheron.network/rest-api/#creating-an-access-token) to host the data. In many cases, a task creator may specify where the data must be stored, and participation in a task may require access to a specific storage network.&#x20;
+It is the responsibility of node operators to either host each CID themselves, or pay a secondary service to host the data. In many cases, a task creator may specify where the data must be stored, and participation in a task may require access to a specific storage network.&#x20;
 
 This layer can be thought of as a hard drive, with the longevity of the information being dictated by its purpose in the system. For task proofs, it's recommended that the information is preserved for at least three rounds, as this is the time necessary for all audits to be completed by other nodes.&#x20;
 

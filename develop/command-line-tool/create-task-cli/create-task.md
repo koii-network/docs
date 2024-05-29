@@ -6,11 +6,6 @@ sidebar_label: Deploy a New Task
 ---
 
 
-![Image](../../img/spheron-key.svg)
-
-:::tip
-Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. , copy the token, and paste it on this prompt.
-:::
 # Getting Started:
 
 - To deploy a new task, select the following option:
@@ -87,9 +82,6 @@ space: 1
 # To add more task variables, please refer the type, value, description format shown below
 
 requirementsTags:
-  - type: TASK_VARIABLE
-    value: "SPHERON_KEY"
-    description: "used to store the data"
   - type: CPU
     value: "4-core"
   - type: RAM
@@ -139,9 +131,6 @@ So, if you have more than one environment variable, your `requirementsTags` sect
 ```yml
 requirementsTags:
   - type: TASK_VARIABLE
-    value: "SECRET_SPHERON_STORAGE_KEY"
-    description: "used to connect to Spheron"
-  - type: TASK_VARIABLE
     value: "TWITTER_USER_NAME"
     description: "used to connect twitter"
 ```
@@ -178,11 +167,6 @@ Follow these instructions to input the required details:
 - **Please select the type of network: ** Choose **IPFS** for storage of your executable file, or **DEVELOPMENT** if you want to test in development environment.
   :::note
   The next prompt depends on your answer to the prompt above.
-  :::
-
-- [For IPFS] **Enter the Spheron API key:** Input your Spheron API key to store your task executable on IPFS (e.g., `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....`).
-  :::tip
-  Create a Spheron Key, either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings. , copy the token, and paste it on this prompt.
   :::
 
 - [For DEVELOPMENT] **Enter the name of executable you want to run on task-nodes:** Enter a desired name for your task executable, this will be the same name of the executable file that will exist in the task node's executables folder.
@@ -241,7 +225,6 @@ create-task-cli
 ✔ Enter the name of the task … my-new-task
 ✔ Enter a short description of your task … This is a simple task
 ✔ Please select the type of network › IPFS
-✔ Enter the Spheron API key … eyOiJkaWQ6ZXRocjoweDNhMzJGMjdGZUFENTU0RGRDRDAyRGVFRTZmNzcyRjQxN0MzYzdkMTsIm5hbWUiOiJzYXZpbmdIaX
 ✔ Enter the path to your executable webpack … /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 ✔ Enter the round time in slots … 600

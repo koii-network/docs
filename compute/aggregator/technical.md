@@ -77,7 +77,6 @@ This class manages the Twitter extractor and its associated tasks. The main func
 ## Dependencies
 - **Cheerio**: For parsing HTML content.
 - **Axios**: For making HTTP requests.
-- **Spheron**: For interacting with IPFS.
 - **Adapter** (`./adapters/twitter/twitter.js`): To authenticate and extract the particular source.
 - **Database Helper** (`./helpers/db`): To populate the database with extract results.
 - **Data Model** (`./model/data`): Model for the data.

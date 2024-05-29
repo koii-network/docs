@@ -58,7 +58,7 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
 1. **Clone the Task Template Repository:** Begin by cloning the [Task Template](https://github.com/koii-network/task-template) repository. Then, execute `yarn && yarn add cheerio` to install the required dependencies.
 
-2. **Include Helper Functions:** To assist with various operations throughout the tutorial, we'll be using helper functions that facilitate file manipulation and data retrieval from IPFS using Spheron. To set up these functions, follow these steps:
+2. **Include Helper Functions:** To assist with various operations throughout the tutorial, we'll be using helper functions that facilitate file manipulation and data retrieval from IPFS. To set up these functions, follow these steps:
 
   a. Create a new file named `helpers.js` in the root of the task folder.
 
@@ -68,9 +68,8 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
 
   d. Paste the copied content into the newly created `helpers.js` file in your task folder.
 
-  e. Update the `helpers.js` file to use Spheron as shown in our **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)** tutorial.
 
-3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations, and `@spheron/storage` for IPFS interactions. You should have implemented functions to interact with Spheron in your helpers file.
+3. **Update Dependency Imports:** Navigate to the `task/submission.js` file, which houses the core logic of your Koii Task. You'll need to update the dependency imports to include the necessary libraries. Specifically, import `dotenv` for configuration, `namespaceWrapper` for interaction with Koii's namespace, `axios` and `cheerio` for web scraping, `fs` for file system operations.
 
 ```js title="/task/submission.js"
   require("dotenv").config();
@@ -81,15 +80,8 @@ Now, let's walk through the steps to transform this Node.js web scraper into a K
   const { createFile, deleteFile , makeFileFromObjectWithName, storeFiles} = require("../helpers");
   ```
 
-:::warning   Ensure you have a Spheron Key
+4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
 
-   Either set it up in your Koii Node App, see [tutorial](https://docs.koii.network/koii/faq#tutorial-step-by-step-guide-to-getting-a-spheron-storage-key), or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.  Then store it as an environment variable, specifically `SECRET_SPHERON_STORAGE_KEY`, within a `.env` file.
-
-:::
-
-4. **Update Main Logic:** Replace the default `task()` method with the code below. The web scraper logic remains intact, but now it involves uploading the `latestNews` to IPFS using Spheron and sending the resulting CID to K2 (Koii's Settlement Layer) as proof of the task's execution.
-
-For more details on Spheron see our tutorial on **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)**.
 
 ```js title="/task/submission.js"
   // Existing code...
@@ -172,11 +164,3 @@ Congratulations! You've successfully transformed a Node.js application into a Ko
 For access to the source code of both the original Node.js application and the converted Koii Task, visit the [GitHub repository](https://github.com/Giftea/web-scraper).
 
 By following these steps, you've harnessed the benefits of the Koii network's decentralized hosting and incentivization, making your web scraper more cost-effective and secure.
-
-:::warning Older Project Repos still use web3.storage
-
-The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure) tutorial to update. 
-
-For more information why we moved to using Spheron see our [FAQ](/faq/questions/platform/#q-didnt-koii-use-to-use-web3storage-why-did-we-switch-to-spheron).
-
-:::

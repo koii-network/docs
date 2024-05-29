@@ -9,12 +9,8 @@ sidebar_label: ERC20 Token Task
 
 **1. Clone the Task Template Repository**
 
-Begin by cloning the [Task Template](https://github.com/koii-network/task-template) repository. Once cloned, navigate to the repository directory and execute the following commands to install the required dependencies:
+Begin by cloning the [Task Template](https://github.com/koii-network/task-template) repository.
 
-```bash
-yarn
-yarn add @spheron/storage
-```
 
 **2. Set Environment Variables**
 
@@ -74,12 +70,4 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
 }
 ```
 
-For more details see our tutorial on **[Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure)**
 
-:::warning Older Project Repos still use web3.storage
-
-The standard for IPFS storage on Koii is Spheron. Some older project examples haven't been updated from web3.storage to Spheron, follow the [Spheron Infrastructure](/develop/write-a-koii-task/task-development-guide/scaling-tasks/spheron-infrastructure) tutorial to update. 
-
-For more information why we moved to using Spheron see our [FAQ](/faq/questions/platform/#q-didnt-koii-use-to-use-web3storage-why-did-we-switch-to-spheron).
-
-:::

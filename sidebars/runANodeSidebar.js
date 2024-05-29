@@ -39,6 +39,7 @@ const sidebars = {
     "task-nodes/time-to-node",
     "task-nodes/rewards",
     "task-nodes/choosing-tasks",
+    "task-nodes/Running-IPFS-task",
     {
       type: "category",
       label: "Running on VPS",

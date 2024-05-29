@@ -58,11 +58,6 @@ To offer your query as a task that others can run, you can configure its propert
 
 ---
 
-## Environment Variables
-
-:::info
-The Extractor application requires you to have a requires you to have a personal [Account](https://twitter.com/i/flow/signup) and a Spheron Key, either set it up in your Koii Node App, or if you prefer set it up from CLI using [Spheron API](https://docs.spheron.network/rest-api/#creating-an-access-token). If you already have the key setup in the Koii App you can find it in settings.
-:::
 
 ### Where to Declare
 
@@ -70,11 +65,7 @@ Environment variables should be declared in a `.env` file located at the root of
 
 - **Twitter Username**
 - **Twitter Password**
-- **Spheron storage token**
 
-_A Spheron Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
-
----
 
 ## Creating and Deploying a Task
 
