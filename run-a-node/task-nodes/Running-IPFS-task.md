@@ -30,7 +30,6 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
 
     ```sh
     TASKS=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2,<any other tasks you were running before>
-
     ```
 
 3. **Update the Service URL:**
@@ -38,6 +37,20 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
 
     ```sh
     SERVICE_URL="http://<YOUR_IP_ADDRESS>:30017"
+    ```
+
+4. **Set the Static IP Flag:**
+    Add the `HAVE_STATIC_IP` variable to indicate that your VPS has a static IP:
+
+    ```sh
+    HAVE_STATIC_IP=true
+    ```
+
+5. **Enable Non-Whitelisted Tasks:**
+    Add the `RUN_NON_WHITELISTED_TASKS` variable to allow running non-whitelisted tasks:
+
+    ```sh
+    RUN_NON_WHITELISTED_TASKS=true
     ```
 
 ### Step 3: Verify Task Endpoint Accessibility
