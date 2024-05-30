@@ -29,7 +29,7 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
     Include the `Task` in your environment configuration with your IPFS Task ID, and comma seperated each tasks:
 
     ```sh
-    TASKS=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2,<any other tasks they were running before>
+    TASKS=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2,<any other tasks you were running before>
 
     ```
 
