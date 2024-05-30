@@ -10,26 +10,27 @@ To ensure smooth operation of IPFS tasks on your VPS node, please follow the ste
 
 ### Step 1: Expose Port 30017
 
-Ensure that your VPS has port `30017` exposed. If you prefer to use a different port, set it accordingly in the environment variables.
+Ensure that your VPS has port `30017` exposed. If you prefer to use a different port, set it accordingly in the environment variables. Additionally, ensure that the port is exposed from your cloud provider (e.g., AWS, GCP, Azure).
 
 ### Step 2: Update Environment Variables
 
 1. **Set the Server Port:**
-   Add the `SERVER_PORT` variable to your environment configuration. If you are using port `30017`, it should look like this:
+   If you are using a port **other** than `30017`, add the `SERVER_PORT` variable to your environment configuration. For example, if you are using port `4000`, it should look like this:
    ```sh
-   SERVER_PORT=30017
+   SERVER_PORT=4000
    ```
 
    :::tip
 
-    If you are using a different port, replace `30017` with your chosen port number.
+    If you are using the default port `30017`, there is no need to set the `SERVER_PORT` variable.
     
 
 2. **Add the IPFS Task ID:**
-    Include the `IPFS_Task_ID` in your environment configuration:
+    Include the `Task` in your environment configuration with your IPFS Task ID, and comma seperated each tasks:
 
     ```sh
-    IPFS_TASK_ID=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2
+    TASKS=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2,<any other tasks they were running before>
+
     ```
 
 3. **Update the Service URL:**
