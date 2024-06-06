@@ -118,8 +118,16 @@ sudo ufw allow 10900/tcp
 - Start and Enable the service to automatically start
     
     ```bash
-    sudo systemctl start systuner
+    sudo systemctl daemon-reload
+
     sudo systemctl enable systuner
+    sudo systemctl start systuner
+    ```
+
+- Check logs
+
+    ```bash
+    sudo journalctl -u systuner.service -f
     ```
     
 ---
