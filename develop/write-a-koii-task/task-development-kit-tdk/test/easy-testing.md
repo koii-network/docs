@@ -17,13 +17,13 @@ Here's a step-by-step guide to using Easy Testing:
 ![Easy Testing Step 1](./img/easy_testing1.png)
 
 ```jsx
-TASK_ID = "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
+TASK_ID = "AK2P1L8NWGwWarbHeM7tX2mr4hJA7ZVXGSSSz5PWHBHv";
 ```
 
 Here's an example of using task extension variables in the your `.env`:
 
 ```jsx
-TASK_ID = "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
+TASK_ID = "AK2P1L8NWGwWarbHeM7tX2mr4hJA7ZVXGSSSz5PWHBHv";
 TWITTER_USERNAME = "testuser123";
 ```
 
