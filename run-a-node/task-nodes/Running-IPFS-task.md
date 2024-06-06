@@ -26,7 +26,7 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
     
 
 2. **Add the IPFS Task ID:**
-    Include the `Task` in your environment configuration with your IPFS Task ID, and comma seperated each tasks:
+    Include the `Task` in your environment configuration with your IPFS Task ID, and comma separated each tasks:
 
     ```sh
     TASKS=E2yxYLgVmPDNXxiKsdNZsDV5vnNZDwWSssKFbn24tMu2,<any other tasks you were running before>

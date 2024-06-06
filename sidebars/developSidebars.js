@@ -148,6 +148,7 @@ const sidebars = {
     
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/koii-storage",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
