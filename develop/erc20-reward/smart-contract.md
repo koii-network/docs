@@ -1,5 +1,5 @@
 ---
-title: "Creating an ERC20 Token Smart Contract"
+title: "Creating an ERC20 Token Smart Contract on Ethereum"
 description: Experiment with your Koii task
 image: img/thumbnail.png
 sidebar_label: Smart Contract
@@ -41,4 +41,4 @@ Click the Deploy icon on the left panel, inject your Ethereum browser wallet, an
 
 ![Deploy](./img/deploy.png)
 
-In this guide, we have explored the process of creating an ERC20 token smart contract using the Solidity programming language and Remix IDE. 
+In this guide, we have explored the process of creating an ERC20 token smart contract using the Solidity programming language and Remix IDE.
