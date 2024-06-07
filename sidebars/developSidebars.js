@@ -138,14 +138,14 @@ const sidebars = {
 
     // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
-    
+
 
     {
       type: "html",
       value: "Getting Advanced",
       className: "sidebar-title top-margin",
     },
-    
+
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/koii-storage",
@@ -157,7 +157,7 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
     "write-a-koii-task/task-development-guide/scaling-tasks/network-options",
-    
+
 
     {
       type: "html",
@@ -197,7 +197,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "ERC20 Reward",
+      label: "Cross-Chain Task Rewards",
       items: [
         "erc20-reward/introduction",
         "erc20-reward/smart-contract",

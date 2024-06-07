@@ -5,13 +5,13 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-The ERC20 Reward Task was created to demonstrate how an ERC20 token can be issued as a reward to node runners after successfully running a task. This Koii Task is unique because it interacts with a token smart contract deployed on the Ethereum Goerli testnet. 
+The ERC20 Reward Task was created to demonstrate how an ERC20 token can be issued as a reward to node runners after successfully running a task. This Koii Task is unique because it interacts with a token smart contract deployed on the Ethereum Goerli testnet.
 
 This tutorial will guide you on how to manage rewarding users with ERC20 tokens using a Koii task.
 
 # Prerequisite
 
-- Basic knowledge of Solidity
+- Basic knowledge of Solidity (for deploying the smart contract on Ethereum)
 - An Ethereum browser wallet
 - Ethereum Testnet account and some test tokens
 
