@@ -207,16 +207,16 @@ Fill in the necessary information by following the instructions below:
 
 - [For IPFS] **Enter the path to your executable webpack:** Add the absolute path to your executable file. E.g: `/Users/<YOUR_HOME>/Documents/testing-task/dist/main.js`
 
-- **Enter the round time in slots:** The preferred number of slots per round for the task. E.g: `1000`
+- **Enter the round time in slots:** The preferred number of slots per round for the task. E.g: `3000`
 
-- **Enter the audit window in slots:** The number of slots to be allocated to the audit window. E.g: `500`
+- **Enter the audit window in slots:** The number of slots to be allocated to the audit window. E.g: `1200`
 
-- **Enter the submission window in slots:** The number of slots to be allocated to the submission window. E.g: `300`
+- **Enter the submission window in slots:** The number of slots to be allocated to the submission window. E.g: `1200`
   :::caution
   The number of slots in the audit window and submission must be lower than the number of slots per round.
   :::
 
-- **Enter the minimum staking amount for the task (in KOII):** Add the minimum amount node operators should be able to stake on the task. E.g: `50`
+- **Enter the minimum staking amount for the task (in KOII):** Add the minimum amount node operators should be able to stake on the task. E.g: `1.9`
 
 - **Enter the total bounty you want to allocate for the task (In KOII):** Any amount not more than what you have in your wallet though. E.g: `1000` (We suggest the amount could be run at least 4 epochs)
 
@@ -258,12 +258,12 @@ create-task-cli
 ✔ Please select the type of network › IPFS
 ✔ Enter the path to your executable webpack … /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
 FILEPATH /Users/<YOUR_HOME>/Documents/testing-task/dist/main.js
-✔ Enter the round time in slots … 600
-✔ Enter the audit window in slots … 200
-✔ Enter the submission window in slots … 200
-✔ Enter the minimum staking amount for the task (in KOII) … 5
-✔ Enter the total bounty you want to allocate for the task (In KOII) … 10
-✔ Enter the bounty amount per round (In KOII) … 1
+✔ Enter the round time in slots … 3000
+✔ Enter the audit window in slots … 1200
+✔ Enter the submission window in slots … 1200
+✔ Enter the minimum staking amount for the task (in KOII) … 1.9
+✔ Enter the total bounty you want to allocate for the task (In KOII) … 1000
+✔ Enter the bounty amount per round (In KOII) … 10
 ✔ Enter the number of distribution list submission retry in case it fails … 3
 ✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). …
 ✔ Enter the space, you want to allocate for task account (in MBs) … 5
