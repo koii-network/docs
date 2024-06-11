@@ -17,26 +17,25 @@ We're thrilled to have you on board with Koii, an innovative leader in the realm
 ## You May Be Wondering...
 
 <CardsSpecial>
+  <Card
+      title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
+      link="https://github.com/koii-network/ezsandbox"
+      svgName="createKoiiTask"
+      cardPerRow="3"
+    />
+  <CardSpecial
+      title="<h3><p>⚙️ <strong>Get a Koii wallet</strong></p><h3>"
+      link="/develop/category/koii-command-line-tool"
+      svgName="koiiCLI"
+      cardPerRow="3"
+  />
   <CardSpecial
       title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
       link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
       svgName="koiiJSAPI"
       cardPerRow="3"
     />
-    <CardSpecial
-      title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
-      link="/develop/category/koii-command-line-tool"
-      svgName="koiiCLI"
-      cardPerRow="3"
-    />
-  <Card
-      title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
-      link="/develop/write-a-koii-task/task-development-guide/"
-      svgName="createKoiiTask"
-      cardPerRow="3"
-    />
 </CardsSpecial>
-
 
 ### 🌐 Getting to Know the Basics
 
@@ -137,5 +136,3 @@ Dive in and explore the possibilities that Koii offers. This is your opportunity
 ### 🚀 Embrace Your Journey
 
 As a new member of Koii, you're stepping into a world of innovation and opportunity. We're excited to see your contributions and support your growth in our ecosystem. Welcome to the team—let's make a lasting impact together!
-
-
