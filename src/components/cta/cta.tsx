@@ -9,7 +9,7 @@ export const Cta = () => {
     <div className="w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8">
       <div className="w-full flex flex-col md:flex-row gap-6">
         <a
-          href="/develop/onboarding/welcome-to-koii/"
+          href="/develop/write-a-koii-task/task-development-guide/introduction"
           className={
             "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]" +
             " " +
@@ -29,13 +29,13 @@ export const Cta = () => {
               Become a Web3 Developer
             </p>
             <p className="m-0 text-base">
-              Deploy your first Web3 Application in 5 Minutes
+              Learn Koii Node and Koii Task in 5 Minutes
             </p>
           </button>
         </a>
 
         <a
-          href="https://koii.network/node"
+          href="https://github.com/koii-network/ezsandbox"
           className={
             "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]" +
             " " +
@@ -52,10 +52,10 @@ export const Cta = () => {
           />
           <button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer">
             <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 ">
-              Earn Passive Income
+              Write a Task Now
             </p>
             <p className="m-0 text-base ">
-              Run applications on your computer to earn KOII Tokens
+              Deploy an applications on Koii Node.
             </p>
           </button>
         </a>
