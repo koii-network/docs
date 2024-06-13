@@ -7,13 +7,13 @@ sidebar_label: Introduction
 <!--
 We are just the marketplace for people to do these tasks. Templates are only there to help on how to write these tasks. We can’t be the ones directly doing
 Framing it so its less scary
-So how the template 
-Extractor example but mainly not 
+So how the template
+Extractor example but mainly not
 1. How its executed
 2. How to make it private (encrypt the payload)
-3. Database 
-4. Less warning 
-5. Backlinks relevant sections that explain things 
+3. Database
+4. Less warning
+5. Backlinks relevant sections that explain things
 -->
 ![banner](./img/twittercrawler.svg)
 
@@ -31,12 +31,12 @@ One of our example template tasks is a Extractor that uses nodes to efficiently 
 
 ## **Features**
 
-Koii Network's **community data feeds** uses community devices to efficiently extract tweets with speed and flexibility. While this doesn’t expose private information, it allows crowd sourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
+Koii's **community data feeds** uses community devices to efficiently extract tweets with speed and flexibility. While this doesn’t expose private information, it allows crowd sourced data projects to **bypass the limitations of traditional API rate limits**. Our solution provides data buyers with more granular control, allowing them to **gather large amounts of data specific to their requirements.**
 
 | Feature                                           | Koii Data Aggregator |
 |---------------------------------------------------|:--------------------:|
 | Working Search                                    | ✔️  Yes               |
-| No Proxy Required                                 | ✔️  Yes               | 
+| No Proxy Required                                 | ✔️  Yes               |
 | Reply to Tweets                                   | ✔️  Yes               |
 | Follow Accounts                                   | ✔️  Yes               |
 | Tweets Per Hour                                   | 2000 Queries         |

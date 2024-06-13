@@ -25,7 +25,7 @@ Due to the variations in the ordering process and customer dashboard for each se
 
 
 
-## Koii Node Installation   
+## Koii Node Installation
 **Connect with SSH**
 
 If you are renting a server or need to connect to your home-hosted server remotely, you will require an SSH client or terminal to communicate with your Koii node. If you have a preferred terminal please use that. Otherwise, Windows Command Prompt or the built-in terminal for MacOS and Linux users can be used. Putty is a free SSH client available for Windows users who prefer a graphical interface, it can be downloaded from [Here](https://www.putty.org/). To establish a remote connection to your Koii node, you will utilize SSH, also known as Secure Shell. This enables two computers to communicate over the internet. Initially, you will require your Koii node's IP address: If you are hosting from home, this will be your public IP address. If you are renting a server, your provider will give you an IP address.
@@ -40,7 +40,7 @@ ssh root@11.111.11.11
 Once you have successfully logged in, you will be presented with a command line that appears similar to:
 
 ```bash
-root@servername:~$ 
+root@servername:~$
 ```
 
 ## Setting Up the Environment on VPS
@@ -95,7 +95,7 @@ Set `ENVIRONMENT` to `"production"`
    - Update the `TASK_STAKES` field with the stake amounts corresponding to each task in `TASKS`, separated by commas.
    - Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the staking wallet. This should be greater than the sum of all `TASK_STAKES` plus a buffer of at least 1 KOII for rent.
    - Add any specific task variables required for the tasks at the end of the file.
-   
+
    :::info Example
    After you enter a task Id needs your information, you can add them as environment variables,
    please add them under the SCRAPING_URL=""
@@ -175,17 +175,17 @@ you can find you wallet path in `.env.local`, and looking for `WALLET_LOCATION`
    ```
 **The option will looks like:**
 
- Wallet path:`/your/path/of/wallet/id.json?`  
-  Select operation    
-   - Create a new task  
-   - update existing task  
-   - Activate/Deactivate task  
-   - Claim reward  
-   - Fund task with more KOII  
-   - Withdraw staked funds from task  
+ Wallet path:`/your/path/of/wallet/id.json?`
+  Select operation
+   - Create a new task
+   - update existing task
+   - Activate/Deactivate task
+   - Claim reward
+   - Fund task with more KOII
+   - Withdraw staked funds from task
    - upload assets to IPFS(metadata/local vars) -->
 ## Video Guides
-### How to launch Koii Network Task Node on VPS
+### How to launch a Koii Task Node on VPS
 [by C-Diamond](https://www.youtube.com/@c-diamond/videos)
 <ReactPlayer width="100%" alt="youtube video embed by C-Diamond" controls url="https://youtu.be/fkcl98CYXWU?si=GGBxxkCY9RBVo1X4" />
 

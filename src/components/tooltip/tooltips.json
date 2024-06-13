@@ -1,7 +1,7 @@
 {
   "ipfs": ["test", "hel/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/storage-via-ipfs"],
   "k2 task template": [
-    "Koii Network's Task Template",
+    "Koii's Task Template",
     "https://github.com/koii-network/task-template"
   ],
   "koii leaderboard": [
@@ -199,7 +199,7 @@
     "https://www.google.com/"
   ],
   "finnie": [
-    "Official wallet of Koii Network for managing digital assets",
+    "Koii's official wallet for managing digital assets",
     "https://www.google.com/"
   ],
   "koii sdk": [

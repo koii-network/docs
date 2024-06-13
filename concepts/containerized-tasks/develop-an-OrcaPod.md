@@ -1,6 +1,6 @@
 ---
 title: How to develop an OrcaPod
-description: The purpose of this guide is to show how to integrate ORCA with Koii Network. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
+description: The purpose of this guide is to show how to integrate ORCA with Koii. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
 image: img/thumbnail.png
 sidebar_label: Develop an OrcaPod
 ---
@@ -11,7 +11,7 @@ import Description from "@site/src/components/description";
 
 ## Objective
 
-The purpose of this guide is to show how to integrate ORCA with Koii Network. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
+The purpose of this guide is to show how to integrate ORCA with Koii. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
 
 ## Prerequisites
 

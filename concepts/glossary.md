@@ -79,7 +79,7 @@ Proof of Real Traffic is Koii’s attention-tracking system. This is the way cre
 
 ## Finnie
 
-The official wallet of Koii Network, which enables users to create, store, manage, and share digital assets across different blockchain ecosystems
+Koii's official wallet, which enables users to create, store, manage, and share digital assets across different blockchain ecosystems.
 
 ## Koii SDK
 
@@ -87,29 +87,31 @@ The Software Development Kit that supports the creation of Koii Tasks and Nodes.
 
 ## Koii CLI
 
-The Koii CLI (Command Line Interface) is a software tool provided by the Koii Network that allows developers to interact with the Koii blockchain network via the command line
+The Koii CLI (Command Line Interface) is a software tool provided by Koii that allows developers to interact with the Koii blockchain network via the command line.
 
 ## KOII Faucet
 
-An online KOII token dispenser designed for people to get a small amount of free tokens
+An online KOII token dispenser designed for people to get a small amount of free tokens.
 
 ## KOII Task
 
-- <h3 style={{marginTop: '0px'}}> Task Template </h3>
-  A framework that allows a developer to create tasks easily and quickly
+- ### Task Template
+
+  A framework that allows a developer to create tasks easily and quickly.
 
 - ### Create a Task
 
   Creating a task usually happens when developers use “Create-task-CLI” to package their task code to the task node and upload the task configuration information to IPFS
 
 - ### Deploy a Task
+
   The allow-list process for other people to run that task from their personal devices
 
 <br/>
 
 # General Computing Terms
 
-<h2 style={{marginTop: '0px'}}> An Application Programming Interface (API) </h2>
+## Application Programming Interface (API)
 
 A way for two or more programs to communicate with each other.
 
@@ -281,9 +283,9 @@ The main public version of a blockchain that is fully developed
 
 A form of instruction set designed for efficient execution by a software interpreter
 
-## Ledger
+<!-- TODO: ## Ledger
 
-## Shreds
+TODO: ## Shreds -->
 
 ## Roe
 

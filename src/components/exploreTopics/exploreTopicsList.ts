@@ -7,7 +7,7 @@ export const exploreTopics = [
         link: "/concepts/earning-koii/get-free-tokens",
         icon: "/img/explore-topics-icons/koii-token.svg",
       },
-      
+
 
       {
         title: "Compute Sharing Marketplace",
@@ -31,7 +31,7 @@ export const exploreTopics = [
       },
 
 
- 
+
     ],
   },
 
@@ -130,12 +130,12 @@ export const exploreTopics = [
         icon: "/img/explore-topics-icons/forums.svg",
       },
       {
-        title: "Koii Network on Twitter ",
+        title: "Koii on Twitter ",
         link: "https://twitter.com/KoiiFoundation",
         icon: "/img/explore-topics-icons/twitter.svg",
       },
       {
-        title: "Koii Network on Youtube",
+        title: "Koii on Youtube",
         link: "https://www.youtube.com/@KoiiNetwork",
         icon: "/img/explore-topics-icons/youtube.svg",
       },

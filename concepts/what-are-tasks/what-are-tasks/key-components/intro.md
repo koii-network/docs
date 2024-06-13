@@ -1,6 +1,6 @@
 ---
 title: Key Components
-description: When a task is created, there are two key components that must be uploaded to the Koii Network to initiate the task.
+description: When a task is created, there are two key components that must be uploaded to the Koii network to initiate the task.
 image: img/thumbnail.png
 sidebar_label: Key Components
 ---
@@ -13,7 +13,7 @@ import Description from "@site/src/components/description";
 
 <Description
   text="When a task is created, there are two key components that must be uploaded to
-  the Koii Network to initiate the task."
+  the Koii network to initiate the task."
 />
 
 ## Executable
@@ -56,7 +56,7 @@ Task metadata sample:
     "distribution mechanism": "every node gets fixed amount of reward every round",
     "stake dependence": "rewards do not depend on stake",
     "time dependence": "longer staking does not mean more reward"
- }  
+ }
 }
 ```
 

@@ -9,7 +9,7 @@ sidebar_label: Ambassador Program
 
 ** Become an early adopter, get $KOII & more!**
 
-At Koii Network, we value our community and want to reward those who are dedicated and passionate about our mission to take back the internet for the people who use it.
+At Koii, we value our community and want to reward those who are dedicated and passionate about our mission to take back the internet for the people who use it.
 
 That’s why we’re excited to introduce our new pirate uprising! We would have called you ambassadors, but that is for governments. We are a pirate ship, that is working to revolutionize the world against tech monopolies. 🏴‍☠
 
