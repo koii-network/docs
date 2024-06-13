@@ -1,6 +1,6 @@
 ---
 title: Get Started
-description: To begin participating in the Koii Network as a node, download the Koii Node app from the official website, follow the setup instructions provided in the documentation, and start the app to contribute to network operations and earn potential rewards.
+description: To begin participating in the Koii network as a node, download the Koii Node app from the official website, follow the setup instructions provided in the documentation, and start the app to contribute to network operations and earn potential rewards.
 image: img/thumbnail.png
 sidebar_label: Get Started
 ---

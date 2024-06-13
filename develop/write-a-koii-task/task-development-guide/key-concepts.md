@@ -61,7 +61,7 @@ Task : {
 
 ## How do tasks run?
 
-In the next steps of this tutorial, you'll learn how to create a task and run it on the Koii Network. But first, let's take a look at how tasks run on the Koii Network.
+In the next steps of this tutorial, you'll learn how to create a task and run it on the Koii network. But first, let's take a look at how tasks run on Koii.
 
 When your task runs on Koii nodes, it will have access to three types of data:
 

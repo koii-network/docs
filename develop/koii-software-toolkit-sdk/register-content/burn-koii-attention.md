@@ -1,13 +1,13 @@
 ---
 title: burnKoiAttention
-description: Content creators can earn attention rewards in KOII by registering content with Koii Network. Register once and get rewarded forever.
+description: Content creators can earn attention rewards in KOII by registering content with Koii. Register once and get rewarded forever.
 image: img/thumbnail.png
 sidebar_label: burnKoiAttention
 ---
 
 # burnKoiAttention
 
-Content creators can earn attention rewards in KOII by registering content with Koii Network. Register once and get rewarded forever.
+Content creators can earn attention rewards in KOII by registering content with Koii. Register once and get rewarded forever.
 
 This function enables content to earn attention rewards for anything that has already been uploaded on Arweave.
 

@@ -32,7 +32,7 @@ The Koii Foundation distributes free tokens when new users join. Each new user c
 Visit the faucet below to start building your Koii identity and get some free tokens.
 
 <ContentLink
-  title='Faucet | Koii Network'
+  title='Faucet | Koii'
   link='https://faucet.koii.live/'
   imageLink='https://faucet.koii.live/favicon.ico'
 />
