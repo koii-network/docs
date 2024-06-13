@@ -34,11 +34,11 @@ The KOII CLI can be installed in various ways based on your operating system:
    - Copy and paste the following command into the Command Prompt, then press Enter:
 
      ```
-     cmd /c "curl -L https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
+     cmd /c "curl -L https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
      ```
 
      :::tip
-     - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.15.0/koii-install-init-x86_64-pc-windows-msvc.exe).
+     - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe).
      - Your browser may display a warning about the file being potentially harmful. Please accept to keep the file.
      - After downloading, copy and paste the downloaded file to the location `C:\koii-install-tmp\` and rename it to "koii-install-init.exe."
        :::
@@ -48,7 +48,7 @@ The KOII CLI can be installed in various ways based on your operating system:
    - Copy and paste the following command into the Command Prompt, then press Enter.
 
    ```
-   C:\koii-install-tmp\koii-install-init.exe v1.15.0
+   C:\koii-install-tmp\koii-install-init.exe v1.16.2
    ```
 
    - If your system displays a security pop-up, select "Allow" to run the program.
@@ -63,7 +63,7 @@ The KOII CLI can be installed in various ways based on your operating system:
    ```
    - You should see the version information similar to this:
      ```
-     koii-cli 1.15.0
+     koii-cli 1.16.2
      ```
 
 # MacOS & Linux
@@ -100,7 +100,7 @@ koii --version
 
 - You should see the version information similar to this:
   ```
-  koii-cli 1.15.0
+  koii-cli 1.16.2
   ```
 
 ### **Additional Steps for Mac Users**
