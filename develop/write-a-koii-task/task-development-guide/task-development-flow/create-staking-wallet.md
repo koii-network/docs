@@ -9,7 +9,7 @@ sidebar_label: Create Staking Wallet
 
 The staking CLI can be started by running the command `npm stake` in the root directory of the task node. The steps are:
 
-- Clone the [task node repository](https://github.com/koii-network/task-node) if you haven’t already done it.
+- Clone the [task template repository](https://github.com/koii-network/task-template) if you haven’t already done it.
 - Run `npm build`
 - Run `npm stake` in your terminal
 - Enter the path to your wallet
