@@ -70,13 +70,13 @@ undefined
 √ Select operation » Deploy a New Task
 create-task
 CONFIG {
-  json_rpc_url: 'https://testnet-rpc-1.koii.network',
+  json_rpc_url: 'https://testnet.koii.network',
   websocket_url: '',
   keypair_path: '~/.config/solana/id.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://testnet-rpc-1.koii.network { 'feature-set': 2325450753, 'solana-core': '1.14.19' }
+Connection to cluster established: https://testnet.koii.network { 'feature-set': 2325450753, 'solana-core': '1.14.19' }
 Using account FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d containing 54572.0166631 KOII to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 √ Select operation » using config YML
