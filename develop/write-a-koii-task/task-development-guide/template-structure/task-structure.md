@@ -52,7 +52,7 @@ The task template contains three separate JavaScript files in `task` folder that
 
 - `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more about namespace functions.
+- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more about namespace functions.
 
 **Task Directory**
 
@@ -71,7 +71,7 @@ In the `submission.js` file, there are 3 methods that allow you to define the ac
 | **`task()`**        | The logic for what your task should do goes here.                                                                                                                                                  |
 | `fetchSubmission()` | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored. |
 | `submitTask()`      | This method calls a `namespace` method and submits the task's results/work to K2.                                                                                                                  |
-                  
+
 
 ### The `audit.js`
 
@@ -117,6 +117,6 @@ Confused on how task runs? Check out the [Runtime Flow](/concepts/what-are-tasks
 :::
 
 Next, we will go through each of these functions in detail.
-- [Execute Task](/develop/write-a-koii-task/task-development-guide/task-structure/execute-task)
+- [Execute Task](/develop/write-a-koii-task/task-development-guide/template-structure/execute-task)
 - [Audit Submissions](/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions)
-- [Distribute Rewards](/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards)
+- [Distribute Rewards](/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewardscan)

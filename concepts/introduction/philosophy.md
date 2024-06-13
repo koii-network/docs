@@ -100,7 +100,7 @@ Take an active role in shaping Koii's future. Your involvement is vital, whether
 <Card
     title="<p><strong>Gradual Consensus</strong></p>"
     description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with slow and steady verification of information over time.</p>"
-    link="/develop/koii-task-101/what-are-tasks/gradual-consensus"
+    link="/concepts/gradual-consensus/runtime-flow"
     svgName="consensus"
     cardPerRow="2"
   />

@@ -9,14 +9,14 @@ In this tutorial, I'll go over the installation options for all three versions i
 
 
 
-   
+
 :::info
 
 Raspberry Node Tutorial is coming...
 
 
 :::
-   
+
 
 <!-- ## **Set Up Your Raspberry Pi**
 
@@ -39,7 +39,7 @@ Raspberry Node Tutorial is coming...
 
 ### Step 3: Running the node
 
-Please refer to our [node](https://docs.koii.network/faq/questions/managing-node/#q-how-to-run-the-task) tutorial.
+Please refer to our [node](/faq/questions/managing-node/#q-how-to-run-the-task) tutorial.
 
 ## **#2 Raspberry Pi OS with desktop (**no recommended software installed)
 
@@ -71,4 +71,4 @@ Please refer to our [node](https://docs.koii.network/faq/questions/managing-node
 
 ## **#3 Raspberry Pi OS without desktop (Lite Version)**
 
-For Lite Version, it can't run the Koii Desktop Node, but you can run the Koii Node in VPS. If you wish to run the node, please refer to our [VPS](https://docs.koii.network/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial. -->
+For Lite Version, it can't run the Koii Desktop Node, but you can run the Koii Node in VPS. If you wish to run the node, please refer to our [VPS](/run-a-node/task-nodes/Running-on-VPS-Docker) tutorial. -->

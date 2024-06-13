@@ -18,22 +18,22 @@ export const cardDetails: Cards[] = [
     items: [
       {
         title: "Auth & Security",
-        link: "/develop/koii-task-101/what-are-tasks/key-components/auth-and-security",
+        link: "/concepts/what-are-tasks/what-are-tasks/key-components/auth-and-security",
         image: "/img/Auth Security.svg",
       },
       {
         title: "Database Sharding",
-        link: "/develop/koii-task-101/what-are-tasks/key-components/database-sharding",
+        link: "/concepts/what-are-tasks/what-are-tasks/key-components/database-sharding",
         image: "/img/Datasharding.svg",
       },
       {
         title: "Node to Node Sync",
-        link: "/develop/koii-task-101/what-are-tasks/key-components/node-to-node-sync",
+        link: "/concepts/what-are-tasks/what-are-tasks/key-components/node-to-node-sync",
         image: "/img/Node2nodesync.svg",
       },
       {
         title: "Rest API",
-        link: "/develop/koii-task-101/what-are-tasks/key-components/rest-api",
+        link: "/concepts/what-are-tasks/what-are-tasks/key-components/rest-api",
         image: "/img/Rest APIs.svg",
       },
     ],
@@ -55,7 +55,7 @@ export const cardDetails: Cards[] = [
       },
       {
         title: "Koii Linktree",
-        link: "/develop/task-tutorials/linktree-task/intro",
+        link: "/develop/linktree/intro",
         image: "/img/Koii Linktree (1).svg",
       },
       {
@@ -72,17 +72,17 @@ export const cardDetails: Cards[] = [
     items: [
       {
         title: "Tokenomics",
-        link: "/concepts/the-koii-token/network-economics",
+        link: "/koii/the-koii-token/network-economics",
         image: "/img/Tokenomics.svg",
       },
       {
         title: "Gradual Consensus",
-        link: "/concepts/gradual-consensus/",
+        link: "/concepts/gradual-consensus/runtime-flow",
         image: "/img/Gradual Consensus (3).svg",
       },
       {
         title: "Community",
-        link: "/concepts/community/community-forums",
+        link: "/",
         image: "/img/Community (2).svg",
       },
       {
@@ -109,7 +109,7 @@ export const cardDetails: Cards[] = [
       },
       {
         title: "Attention Mining",
-        link: "/develop/attention-mining/proof-of-real-traffic/",
+        link: "/concepts/web3/proof-of-real-traffic",
         image: "/img/Attention Mining.svg",
       },
       {

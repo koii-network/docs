@@ -25,7 +25,7 @@ Timestamp used in REST API:
 
 ### What is round?
 
-Round is made up for Koii tasks in terms of K2. A **round** represents the entire process of a round of tasks. One round should contain the submission phase, audit phase, and distribution phase. Check [Runtime Flow](/develop/koii-task-101/what-are-tasks/gradual-consensus) for more details.
+Round is made up for Koii tasks in terms of K2. A **round** represents the entire process of a round of tasks. One round should contain the submission phase, audit phase, and distribution phase. Check [Runtime Flow](/concepts/gradual-consensus/runtime-flow) for more details.
 
 ### How to get a slot?
 

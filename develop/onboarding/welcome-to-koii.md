@@ -79,13 +79,13 @@ Finnie stands at the heart of our network, enabling you to manage and transact w
 
 K2 is crucial for transaction speeds, serving as a message hub within our network and leveraging technologies like Solana's Proof of History. It's essential for managing KOII tokens and integrates native programs for off-chain computing and content-centric applications.
 
-[Discover K2's Capabilities](https://docs.koii.network/concepts/settlement-layer/k2-tick-tock-fast-blocks)
+[Discover K2's Capabilities](/concepts/settlement-layer/k2-tick-tock-fast-blocks)
 
 #### **Koii SDK: Develop with Ease**
 
 The Koii SDK is a comprehensive toolkit for developers, enabling access to the functionalities of our K2 network. It's built to facilitate easy integration and interaction with our platform's unique features.
 
-[Explore the Koii SDK](https://docs.koii.network/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk)
+[Explore the Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk)
 
 #### **Koii Node: Powering the Network**
 
@@ -129,7 +129,7 @@ This symbiotic relationship between supply and demand not only fuels the Koii ec
 
 We believe the best way to learn is by doing. That's why we invite you to tackle a small, introductory task. This guided tutorial will walk you through the basics, giving you a solid foundation in the Koii ecosystem and its functionalities.
 
-[Start Your First Koii Task Here](/develop/write-a-koii-task/task-development-guide/)
+[Start Your First Koii Task Here](/develop/write-a-koii-task/task-development-guide/introduction)
 
 Dive in and explore the possibilities that Koii offers. This is your opportunity to put theory into practice and begin shaping the future of decentralized content and computing power distribution. Welcome to the team, and enjoy your journey with Koii!
 

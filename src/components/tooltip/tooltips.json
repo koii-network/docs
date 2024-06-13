@@ -14,7 +14,7 @@
   ],
   "hello world task": [
     "Our task tutorial that explains the basics",
-    "/develop/write-a-koii-task/task-development-guide/"
+    "/develop/write-a-koii-task/task-development-guide/introduction"
   ],
   "tdk": ["Task Development Kit", "https://docs.koii.network/"],
   "memory leakage": [
@@ -51,7 +51,7 @@
   ],
   "attention contract": [
     "Contract that rewards users for real interaction",
-    "/develop/attention-mining/proof-of-real-traffic/attention-mining"
+    "/concepts/web3/attention-mining"
   ],
   "runtime flow": [
     "Koii's blockchain flow logic",
@@ -76,7 +76,7 @@
   ],
   "k2 validators": [
     "Specialized nodes that track the Koii Blockchain Ledger",
-    "/develop/settlement-layer/running-a-k2-node"
+    "/run-a-node/k2-validators/how-to-run-a-k2-validator"
   ],
   "bounty tokens": [
     "Rewards for tasks",

@@ -11,7 +11,7 @@ export const WhereToBegin = () => {
     {
       name: "Earn with Koii",
       image: "/img/earn-with-koii.svg",
-      link: "/concepts/earning-koii/network-economics",
+      link: "/koii/the-koii-token/network-economics",
     },
     // {
     //   name: "Use cases of Koii",
@@ -26,7 +26,7 @@ export const WhereToBegin = () => {
     {
       name: "Koii-X for dApps",
       image: "/img/koii-dapp.svg",
-      link: "/develop/build-dapps-with-koii/welcome-to-koii-x/",
+      link: "/",
     },
   ];
 

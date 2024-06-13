@@ -66,10 +66,10 @@ Your task should pass all the tests. If not, please check the error message and 
 
 To configure your test, check the `/tests` folder and modify the `main.test.js` file. For more information, please check:
 
-<ContentLink title="Test Configuration" link="/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration" iconType="copy"/>
+<ContentLink title="Test Configuration" link="/develop/write-a-koii-task/task-development-kit-tdk/test/configuration" iconType="copy"/>
 
 ## How to test the task with my own data?
 
 To use your data or run each step separately, please check:
 
-<ContentLink title="Using UnitTest" link="/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration" iconType="copy"/>
+<ContentLink title="Using UnitTest" link="/develop/write-a-koii-task/task-development-kit-tdk/test/using-unittest" iconType="copy"/>

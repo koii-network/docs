@@ -111,7 +111,7 @@ Set `ENVIRONMENT` to `"production"`
    :::
 
 3. **Ensure Koii CLI is Installed**:
-   The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli).
+   The task node will use the wallet pointed to in the Koii configuration.  [Click here for the installation steps](/develop/command-line-tool/koii-cli/install-cli).
 
 ---
 
