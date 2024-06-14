@@ -8,7 +8,7 @@ sidebar_label: Solana Encryption
 Solana employs the [Edwards-curve Digital Signature Algorithm (EdDSA)](https://en.wikipedia.org/wiki/EdDSA), an elliptical signature algorithm for cryptography.
 
 :::info
-[K2](/develop/settlement-layer/k2-tick-tock-fast-blocks) is a fork of Solana, so messages can also be encrypted using Koii addresses!
+[K2](/concepts/settlement-layer/k2-tick-tock-fast-blocks) is a fork of Solana, so messages can also be encrypted using Koii addresses!
 :::
 
 ## Helper Functions

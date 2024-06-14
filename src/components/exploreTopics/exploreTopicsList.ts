@@ -4,29 +4,27 @@ export const exploreTopics = [
     items: [
       {
         title: "KOII Token",
-        link: "/concepts/earning-koii/get-free-tokens",
+        link: "/koii/ways-to-get-koii/get-free-tokens",
         icon: "/img/explore-topics-icons/koii-token.svg",
       },
-
-
       {
         title: "Compute Sharing Marketplace",
-        link: "/concepts/earning-koii/compute-sharing-marketplace",
+        link: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
         icon: "/img/explore-topics-icons/laptop.svg",
       },
       {
         title: "Tokenomics",
-        link: "/concepts/earning-koii/network-economics",
+        link: "/koii/the-koii-token/network-economics",
         icon: "/img/explore-topics-icons/economics.svg",
       },
       {
         title: "Attention Mining",
-        link: "/concepts/earning-koii/proof-of-real-traffic/registering-content",
+        link: "/concepts/web3/registering-content",
         icon: "/img/explore-topics-icons/register-content.svg",
       },
       {
         title: "Grants Program",
-        link: "/concepts/earning-koii/grants-program",
+        link: "/koii/ways-to-get-koii/grants-program",
         icon: "/img/explore-topics-icons/grants-program.svg",
       },
 
@@ -45,13 +43,13 @@ export const exploreTopics = [
       },
       {
         title: "Koii Tasks",
-        link: "/develop/koii-task-101/what-are-tasks/",
+        link: "/concepts/what-are-tasks/what-are-tasks",
         icon: "/img/explore-topics-icons/koii-tasks.svg",
       },
 
       {
         title: "Task Nodes",
-        link: "/develop/koii-task-101/what-are-tasks/nodes-vs-servers",
+        link: "/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers",
         icon: "/img/explore-topics-icons/task-nodes.svg",
       },
       {
@@ -61,7 +59,7 @@ export const exploreTopics = [
       },
       {
         title: "Finnie Wallet",
-        link: "/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet",
+        link: "/concepts/finnie-wallet/introduction",
         icon: "/img/explore-topics-icons/finnie-wallet.svg",
       },
 

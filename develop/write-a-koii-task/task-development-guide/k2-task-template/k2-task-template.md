@@ -13,7 +13,7 @@ Tasks run following a periodic structure of "rounds":
 
 Each round is set by a specific time period, and nodes participate by uploading data to IPFS, posting CIDs to the K2 settlement layer, and sending messages across REST APIs and WebSockets.
 
-For more information on how the task flow works, check out the [runtime environment](/develop/koii-task-101/what-are-tasks/gradual-consensus) docs.
+For more information on how the task flow works, check out the [runtime flow](/concepts/gradual-consensus/runtime-flow) docs.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ For more information on how the task flow works, check out the [runtime environm
 
 - `index.js` — is the hub of your app, and ties the other pieces together. This will be the entry point when your task runs on task nodes.
 
-- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](https://docs.koii.network/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more about namespace functions.
+- `_koiiNode` — is a directory that contains `koiiNode.js` which has the interfaces to make API calls to the core of the task node. It contains all the necessary functions required to submit and audit the work, as well as the distribution lists. Check [here](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object) to learn more about namespace functions.
 
 ## Timers
 

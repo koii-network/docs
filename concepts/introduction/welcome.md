@@ -36,7 +36,7 @@ Ethereum and other payment networks have paved the way for decentralized commerc
 
 <Description text="Building your next project on Koii might be cheaper, but it will also be more secure, and our community would love to help." />
 
-Whether you're designing Artificial Intelligence, Social Media apps, or any number of other products, Koii's community cloud can provide [cost and security benefits](/develop/koii-task-101/what-are-tasks/nodes-vs-servers).
+Whether you're designing Artificial Intelligence, Social Media apps, or any number of other products, Koii's community cloud can provide [cost and security benefits](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers).
 
 We designed an open standard called <Tooltip text="Gradual Consensus"/>, and implemented that technology in our revolutionary product, Koii <Tooltip text="Tasks"/>.
 

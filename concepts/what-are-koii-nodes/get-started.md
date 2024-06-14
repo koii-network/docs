@@ -12,5 +12,5 @@ import Description from "@site/src/components/description";
 To get started with the Koii Node app, users typically need to:
 
 1. **Download the App**: Obtain the Koii Node app from the [official website](https://www.koii.network/node).
-2. **Set Up**: Follow the instructions to install and set up the app on your device using [this documentation](https://docs.koii.network/run-a-node/task-nodes/how-to-run-a-koii-node).
+2. **Set Up**: Follow the instructions to install and set up the app on your device using [this documentation](/run-a-node/task-nodes/how-to-run-a-koii-node).
 3. **Run the Node**: Start the app to begin operating as a node, contributing to the network's functions and potentially earning rewards.

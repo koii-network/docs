@@ -21,7 +21,7 @@ The purpose of this guide is to show how to integrate ORCA with Koii. Basically 
 
 ## Install the KOII CLI
 
-To interact with the K2 locally, you need to install the Koii CLI. [Click here](https://docs.koii.network/develop/command-line-tool/koii-cli/install-cli) to follow the instructions.
+To interact with the K2 locally, you need to install the Koii CLI. [Click here](/develop/command-line-tool/koii-cli/install-cli) to follow the instructions.
 
 ## Create a Koii Wallet
 
@@ -59,7 +59,7 @@ It will return a string of characters like:
 2kG7HNGGZHZPhdbHNzvQNQUjNNNNiQvxshLu47UvnpBq
 ```
 
-Congratulations! You now have a Koii wallet, Next, let’s airdrop some KOII in your wallet. [Click Here](https://docs.koii.network/develop/command-line-tool/koii-cli/send-and-receive-tokens)
+Congratulations! You now have a Koii wallet, Next, let’s airdrop some KOII in your wallet. [Click Here](/develop/command-line-tool/koii-cli/send-and-receive-tokens)
 
 ## Clone repository
 

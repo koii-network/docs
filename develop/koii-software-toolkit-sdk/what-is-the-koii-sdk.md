@@ -44,6 +44,6 @@ The Create Task CLI is a powerful tool that allows you to deploy your task in ju
 
 <!-- ### Looking for a quick start?
 
-Head to our [Koii-X docs](/develop/build-dapps-with-koii/welcome-to-koii-x/) to learn how you can deploy a dApp in under 10 minutes today.
+Head to our [Koii-X docs](/) to learn how you can deploy a dApp in under 10 minutes today.
 
-<ContentLink title="👋 Welcome to koii-X" link="/develop/build-dapps-with-koii/welcome-to-koii-x/"/> -->
+<ContentLink title="👋 Welcome to koii-X" link="/"/> -->

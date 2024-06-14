@@ -75,7 +75,7 @@ Commitment: confirmed
 ```
 
 2. **Airdrop Coins**: Issue a command like **`koii airdrop 10000`** to credit your wallet with local tokens.
-3. **Create a Local Repository**: Use the `Create-task-cli` and select the first option to set up a new local repository. You can find details [here](https://docs.koii.network/develop/command-line-tool/create-task-cli/create-repo).
+3. **Create a Local Repository**: Use the `Create-task-cli` and select the first option to set up a new local repository. You can find details [here](/develop/command-line-tool/create-task-cli/create-repo).
 4. **Setup Docker**: Modify the **`docker-compose.yaml`** to match your actual wallet address. Example:
 
 ```jsx
