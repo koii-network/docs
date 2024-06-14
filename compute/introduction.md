@@ -51,4 +51,4 @@ At the heart of Koii's developer toolkit is our [Developer API](/compute/develop
 
 ## FAQ
 
-For anything else please refer to our [Frequently Asked Questions (FAQ) page](/compute/FAQ) for anything else regarding task distribution, handling of requests, and much more.
+For anything else please refer to our [Frequently Asked Questions (FAQ) page](/faq/questions/) for anything else regarding task distribution, handling of requests, and much more.

@@ -49,7 +49,7 @@ Values: `base58``base64``base64+zstd``jsonParsed`
 
 #### Notification Format:
 
-The notification format is the same as seen in the [getAccountInfo](/develop/rpcapi/intro/http/getaccountinfo) RPC HTTP method.
+The notification format is the same as seen in the [getAccountInfo](/develop/rpcapi/http/getaccountinfo) RPC HTTP method.
 
 Base58 encoding:
 
