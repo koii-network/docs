@@ -12,7 +12,7 @@ If the node's rpc service receives the transaction, this method immediately succ
 
 While the rpc service will reasonably retry to submit it, the transaction could be rejected if transaction's `recent_blockhash` expires before it lands.
 
-Use [`getSignatureStatuses`](/develop/rpcapi/intro/http/sendtransaction#getsignaturestatuses) to ensure a transaction is processed and confirmed.
+Use [`getSignatureStatuses`](/develop/rpcapi/http/sendtransaction#getsignaturestatuses) to ensure a transaction is processed and confirmed.
 
 Before submitting, the following preflight checks are performed:
 

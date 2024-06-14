@@ -82,7 +82,7 @@ The resultant account must meet **ALL** filter criteria to be included in the re
 
 #### Notification format
 
-The notification format is a **single** program account object as seen in the [getProgramAccounts](/develop/rpcapi/intro/http/getprogramaccounts) RPC HTTP method.
+The notification format is a **single** program account object as seen in the [getProgramAccounts](/develop/rpcapi/http/getprogramaccounts) RPC HTTP method.
 
 Base58 encoding:
 
