@@ -43,14 +43,14 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
 
 ```
 
-**Create a systemd unit file at `/etc/systemd/system/koii-validator.service`** 
+**Create a systemd unit file at `/etc/systemd/system/koii-validator.service`**
 
 ```bash
 [Unit]
-Description=Koii Validator 
-After=network.target 
-Wants=systuner.service 
-StartLimitIntervalSec=0 
+Description=Koii Validator
+After=network.target
+Wants=systuner.service
+StartLimitIntervalSec=0
 [Service]
 User=koii
 Group=koii
@@ -94,11 +94,11 @@ sudo systemctl status koii-validator.service
 ## Staking KOII in the validator
 
 > Commands in this section are to be run on the computer which has the stake account key pair (**NOT ON VALIDATOR**)
-> 
+>
 
 ### 1. Create a stake account
 
-Run the following command, AFTER replacing <AMOUNT_TO_STAKE>.
+Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>`.
 
 ```bash
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/authorized-withdrawer-keypair.json
