@@ -37,7 +37,7 @@ Source [Solana](https://solana.com/docs/intro/wallets#file-system-wallet)
 
 To generate a file system wallet keypair, use Koii’s command-line tool `koii-keygen`. Run the following command:
 
-```JavaScript
+```bash
 koii-keygen new --outfile ~/.config/koii/id.json
 ```
 
@@ -49,13 +49,13 @@ This file contains your unencrypted keypair, protect this file as it grants acce
 
 The public key of the keypair file is your wallet address. To display your public key, run:
 
-```JavaScript
+```bash
 koii address
 ```
 
 It will return a string of characters like:
 
-```JavaScript
+```bash
 2kG7HNGGZHZPhdbHNzvQNQUjNNNNiQvxshLu47UvnpBq
 ```
 
@@ -67,13 +67,13 @@ Congratulations! You now have a Koii wallet, Next, let’s airdrop some KOII in 
 - Navigate to the `task-template` folder
 - Create a new directory
 
-```JavaScript
+```bash
 sudo mkdir -p config/koiii
 ```
 
 - Copy the `id.json` to the `config/koii`
 
-```JavaScript
+```bash
 sudo cp ~/.config/koii/id.json config/koii
 
 ```
@@ -90,7 +90,7 @@ Replace the value of the given keys
 2. task_execution_network - Should be `DEVELOPMENT`
 3. task_audit_program_id - `main`
 
-```json
+```yaml
 # Name and metadata of your task
 task_name: "cd-demo-task"
 author: "koii"
@@ -147,7 +147,7 @@ Make sure `nodeJS` must be install in your system.
 
 Run the following command to create the task:
 
-```JS
+```bash
 npx @_koii/create-task-cli
 ```
 
@@ -159,7 +159,7 @@ npx @_koii/create-task-cli
 
 It is basically JS NPM package. Which used to communicate with ORCA.
 
-```JS
+```bash
 npm i orca-pulse
 ```
 
@@ -167,13 +167,13 @@ npm i orca-pulse
 
 Import orca-pulse in the `index.js`
 
-```JS
+```javascript
 const { OrcaPulse } = require('orca-pulse')
 ```
 
 Create an instance of orca-pulse in the `index.js` inside setup function.
 
-```JS
+```javascript
 const orcaPulse = new OrcaPulse()
 await orcaPulse.initialize(
     'userContainerImageUrl',
@@ -185,7 +185,7 @@ await orcaPulse.initialize(
 
 ### Create simple-task.js
 
-```json
+```javascript
 class SimpleTask {
     constructor(orcaPulse) {
         this.start(orcaPulse)
@@ -216,13 +216,13 @@ module.exports = SimpleTask
 
 Import the simple-task
 
-```JS
+```javascript
 const SimpleTask = require('./simple-task');
 ```
 
 Create instance of the simple task class
 
-```JS
+```javascript
  const result = await new SimpleTask(orcaPulse)
 ```
 
@@ -233,7 +233,7 @@ Replace the value of the Given keys
 1. TASK_ID
 2. SECRET_WEB3_STORAGE_KEY
 
-```json
+```bash
 ######################################################
 ################## DO NOT EDIT BELOW #################
 ######################################################
@@ -288,6 +288,6 @@ After you’ve created a task using the K2 task template as a guide, you’ll ne
 
 Make sure you are in the task-template location Run task-template using docker compose
 
-```JS
+```bash
 docker compose up
 ```
