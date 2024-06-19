@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-![banner](./img/onboarding.svg)
+![banner](/img/compute/onboarding.svg)
 
 **Get Compute** is the starting point for compute buyers eager to run tasks on the Koii network. Use the information below to determine if Koii is the **right fit for your computational needs.**
 

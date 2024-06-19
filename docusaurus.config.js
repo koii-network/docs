@@ -237,6 +237,7 @@ const config = {
               "/develop/koii-software-toolkit-sdk/create-task-cli",
               "/quickstart/command-line-tool/create-task-cli",
               "/develop/command-line-tool/create-task-cli",
+              "/develop/command-line-tool/create-task-cli-old"
             ],
           },
           {
@@ -636,23 +637,23 @@ const config = {
           },
           {
             to: "/develop/extractor/introduction",
-            from: "/quickstart/extractor/introduction",
+            from: ["/quickstart/extractor/introduction", "/compute/aggregator/introduction", "/develop/migrate-apps/web-crawler"]
           },
           {
             to: "/develop/extractor/using",
-            from: "/quickstart/extractor/using",
+            from: ["/quickstart/extractor/using", "/compute/aggregator/advancedsearch"]
           },
           {
             to: "/develop/extractor/adapter",
-            from: "/quickstart/extractor/adapter",
+            from: ["/quickstart/extractor/adapter", "/compute/aggregator/technical"]
           },
           {
             to: "/develop/extractor/task-structure",
-            from: "/quickstart/extractor/task-structure",
+            from: ["/quickstart/extractor/task-structure", "/compute/aggregator/task"]
           },
           {
             to: "/develop/extractor/testing",
-            from: "/quickstart/extractor/testing",
+            from: ["/quickstart/extractor/testing", "/compute/aggregator/testing"]
           },
           {
             to: "/develop/erc20-reward/introduction",
@@ -767,6 +768,10 @@ const config = {
           {
             to:"/develop/write-a-koii-task/task-development-guide/introduction",
             from:"/develop/write-a-koii-task/task-development-guide"
+          },
+          {
+            to:"/concepts/distributed-cloud/reduced-computing-costs",
+            from:"/concepts/distributed-cloud/community-powered-hosting"
           }
         ],
         createRedirects(existingPath) {

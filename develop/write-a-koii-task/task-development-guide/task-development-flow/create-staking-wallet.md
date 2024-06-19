@@ -13,7 +13,7 @@ The staking CLI can be started by running the command `npm stake` in the root di
 - Run `npm build`
 - Run `npm stake` in your terminal
 - Enter the path to your wallet
-- Next, you will be prompted with four options&#x20;
+- Next, you will be prompted with four options
 
 ```sh
 ? Select operation › - Use arrow-keys. Return to submit.

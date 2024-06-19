@@ -5,20 +5,20 @@ image: img/thumbnail.png
 sidebar_label: The Task Lifecycle
 ---
 
-![banner](./img/Stacking%20Rounds.svg)
+![banner](/img/concepts/gradual-consensus/stacking-rounds.svg)
 
 ### 1. **Submission Phase**
 
 During this phase, the task node(s) submit data to K2 to request rewards for work they've done.
 
-- The first submission phase occurs during the **review period,** each task node submits proofs of work done during the **work period** to K2, and these _proofs_ are in turn audited by other participating nodes still in the review period.&#x20;
+- The first submission phase occurs during the **review period,** each task node submits proofs of work done during the **work period** to K2, and these _proofs_ are in turn audited by other participating nodes still in the review period.
 - The second submission phase occurs during the **distribution period,** where the selected task node submits the distribution list to K2.
 
 ### 2. **Audit** **Phase**
 
 During this phase, the participating nodes verify data submitted to K2.
 
-- The first audit phase occurs during the **review period** after the submission phase. Each participating node audits _proofs_ submitted by other nodes, if there is an invalid submission, an audit is triggered on K2, and the stake can be confiscated from the offending node. While the nodes are verifying data submitted on-chain, they're also checking if an audit has been raised against a node, and they can either vote in favor of or against the audit.&#x20;
+- The first audit phase occurs during the **review period** after the submission phase. Each participating node audits _proofs_ submitted by other nodes, if there is an invalid submission, an audit is triggered on K2, and the stake can be confiscated from the offending node. While the nodes are verifying data submitted on-chain, they're also checking if an audit has been raised against a node, and they can either vote in favor of or against the audit.
 - The second audit phase occurs during the **distribution period** after the selected node submits the distribution list on-chain. Each participating node audits the distribution list submitted by the selected node. After auditing, if the distribution list is invalid, a newly selected node generates a distribution new list and submits it on-chain.
 
 ### 3. **Distribution Phase**

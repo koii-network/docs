@@ -42,7 +42,7 @@ The true parameter on line 4 in the `testGenerateWallet` function is for `use_mn
 
 This will return the contents of the JSON for your newly generated private key.
 
-![Code Sample](../img/key.PNG)
+![Code Sample](/img/develop/koii-sdk/key.png)
 
 ### Returns
 

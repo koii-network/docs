@@ -47,6 +47,7 @@ The task template contains three separate JavaScript files in `task` folder that
  ┗ 📜index.js
 
  ```
+
 ## What's in the template?
 
 **Core files**
@@ -114,8 +115,3 @@ The task function, audit function, and distribution function were mentioned in t
 :::tip
 Confused on how task runs? Check out the [Runtime Flow](/concepts/what-are-tasks/what-are-tasks/gradual-consensus) to understand the task execution flow.
 :::
-
-Next, we will go through each of these functions in detail.
-- [Execute Task](/develop/write-a-koii-task/task-development-guide/template-structure/execute-task)
-- [Audit Submissions](/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions)
-- [Distribute Rewards](/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewardscan)

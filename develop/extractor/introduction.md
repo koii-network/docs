@@ -4,7 +4,7 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-![banner](./img/Introductionthumbnail.svg)
+![banner](/img/develop/extractor/extractor-task.svg)
 
 With Koii, you have the power of hundreds of CPUs that belong to real users at your fingertips. By utilizing this power, you can build **extractors that are more powerful than ever before.**
 
@@ -32,4 +32,4 @@ With Koii, you have the power of hundreds of CPUs that belong to real users at y
 
 Here is a quick overview of the structure of the template:
 
-![banner](./img/structure.png)
+![banner](/img/develop/extractor/structure.png)

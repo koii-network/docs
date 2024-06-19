@@ -25,7 +25,7 @@ These keys and secrets include:
 
 ## How Does This Work?
 
-The NodeJS `child_process.fork()` method is used to spawn a new Node.js process and a [`ChildProcess`](https://nodejs.org/api/child_process.html#class-childprocess) object is returned.&#x20;
+The NodeJS `child_process.fork()` method is used to spawn a new Node.js process and a [`ChildProcess`](https://nodejs.org/api/child_process.html#class-childprocess) object is returned.
 
 The `fork()` method accepts the following three arguments:
 

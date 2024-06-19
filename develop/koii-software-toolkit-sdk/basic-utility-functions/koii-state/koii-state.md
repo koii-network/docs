@@ -66,10 +66,10 @@ testGetKoiiState();
 
 ### Example Code Output
 
-![This will be a large file output.](../../img//attention.PNG)
+![This will be a large file output.](/img/develop/koii-sdk/attention.png)
 
 :::info
-&#x20;You can alternatively also visit [https://mainnet.koii.live/state](https://mainnet.koii.live/state) to check the Koii State.
+You can alternatively also visit [https://mainnet.koii.live/state](https://mainnet.koii.live/state) to check the Koii State.
 :::
 
 ### Returns

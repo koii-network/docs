@@ -20,3 +20,8 @@ This guide will walk you through the various options and functionalities availab
 7. [Fund Task with More KOII](/develop/command-line-tool/create-task-cli/fund-task)
 8. Withdraw Staked Funds from Task
 9. Upload Assets to IPFS (Metadata/Local Variables)
+
+
+:::info Please Note
+Explanations for each option are spread across the next succeeding pages. To learn how to use a specific feature, simply navigate to the corresponding section listed above. Let's get started!
+:::

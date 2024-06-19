@@ -7,7 +7,7 @@ sidebar_label: KOII Faucet
 
 import ContentLink from "@site/src/components/contentLink";
 
-![Banner](./img/Koii%20Faucet.svg)
+![Banner](/img/develop/koii-sdk/koii-faucet.svg)
 
 
 The Koii Foundation distributes free tokens when new users join. Each new user can earn tokens for connecting social media accounts, a phone number, or an email to their Koii ID.

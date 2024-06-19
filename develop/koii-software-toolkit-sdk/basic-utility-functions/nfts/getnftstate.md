@@ -16,7 +16,7 @@ This function returns all the details about a given NFT such as creator's addres
 ### Example Code
 
 :::caution
-In the below code example, change the `targetNft` to the NFT ID for which you want to see the detailed info like creator address, title, description, attention gained, rewards earned, etc.&#x20;
+In the below code example, change the `targetNft` to the NFT ID for which you want to see the detailed info like creator address, title, description, attention gained, rewards earned, etc.
 :::
 
 ```js

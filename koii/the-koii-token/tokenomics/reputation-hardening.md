@@ -21,4 +21,4 @@ In the compute marketplace, a node's reputation allows it to perform more work w
 
 ![Reputation Hardening](./img/Reputation%20Hardening%402x.svg)
 
-As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.&#x20;
+As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.
