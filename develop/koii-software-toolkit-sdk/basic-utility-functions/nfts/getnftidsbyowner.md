@@ -37,7 +37,7 @@ testGetNftIdsByOwner();
 
 ### Example Code Output
 
-```bash
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 [
   'KS2cPkMdex3-EehSh20InyuumshQW0flgSMtNgercPI',

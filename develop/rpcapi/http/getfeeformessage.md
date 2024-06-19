@@ -21,7 +21,7 @@ Configuration object containing the following fields:
 
 ### Code sample
 
-```bash
+```sh
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
 {
   "id":1,

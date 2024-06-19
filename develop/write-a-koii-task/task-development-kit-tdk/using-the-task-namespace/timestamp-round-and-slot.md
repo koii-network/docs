@@ -31,7 +31,7 @@ Round is made up for Koii tasks in terms of K2. A **round** represents the entir
 
 Here's the example code for getting the current slot in Namespace:
 
-```javascript
+```js
 async function getSlot() {
   console.log(
     await namespaceWrapper.getSlot(),
@@ -42,7 +42,7 @@ async function getSlot() {
 
 You can also use this function in the audit or submit process and return the result, which would be the timestamp for your task:
 
-```javascript
+```js
 async function auditTask(roundNumber) {
   console.log("auditTask called with round", roundNumber);
   console.log(

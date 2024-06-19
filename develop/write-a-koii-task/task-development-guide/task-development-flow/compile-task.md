@@ -11,9 +11,18 @@ After you've created a task using the K2 task template as a guide, you'll need t
 
 Open up your terminal and in the directory of your task:
 
-- Run `npm install` to install all dependencies
-- Run `npm run webpack` to compile code
-- You should see a new directory `/dist`
-- Your compiled executable is located in `/dist/main.js`
+- Install all dependencies
+
+```sh
+npm install
+```
+
+- Compile your code
+
+```sh
+npm run webpack
+```
+
+- You should see a new directory `/dist`. Your compiled executable is located in `/dist/main.js`
 
 That's it! You've successfully compiled your task into a single executable file.

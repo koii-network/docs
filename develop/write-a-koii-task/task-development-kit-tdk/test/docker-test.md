@@ -18,22 +18,33 @@ This guide is specifically tested for Linux-based systems and the Ubuntu 22.04 L
 
 1. **Install Koii CLI**: Ensure you're installing the latest version of the Koii CLI with this command:
 
-```jsx
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.1.sh)"
 ```
 
 Modify environment variables as necessary to fit your system's requirements.
 
-1. **Verify Installation**: Check the installed version: `koii --version`  Output should show: **`koii-cli 1.16.1 (src:devbuild; feat:2325450753)`**
+1. **Verify Installation**: Check the installed version:
+
+```sh
+koii --version
+```
+
+Output should show something similar to:
+
+```sh
+koii-cli 1.16.1 (src:devbuild; feat:2325450753)`
+```
+
 2. **Run Local Validator**: Start your local validator with:
 
-```jsx
+```sh
 koii-test-validator
 ```
 
 Expect outputs similar to:
 
-```jsx
+```sh
 $ koii-test-validator
 --faucet-sol argument ignored, ledger already exists
 Ledger location: test-ledger
@@ -59,14 +70,14 @@ Keep this process running.
 
 1. **Configure Koii CLI**: Switch your Koii CLI to localhost:
 
-```jsx
+```sh
 koii config set --url localhost
 koii config get
 ```
 
 Verify the settings:
 
-```jsx
+```sh
 Config File: C:\Users\liang\.config\koii\cli\config.yml
 RPC URL: http://localhost:10899
 WebSocket URL: ws://localhost:10900/ (computed)
@@ -74,20 +85,31 @@ Keypair Path: ~/.config/koii/id.json
 Commitment: confirmed
 ```
 
-2. **Airdrop Coins**: Issue a command like **`koii airdrop 10000`** to credit your wallet with local tokens.
+2. **Airdrop Coins**: Credit your wallet with tokens by running:
+
+```sh
+koii airdrop 100000
+```
+
 3. **Create a Local Repository**: Use the `Create-task-cli` and select the first option to set up a new local repository. You can find details [here](/develop/command-line-tool/create-task-cli/create-repo).
+
 4. **Setup Docker**: Modify the **`docker-compose.yaml`** to match your actual wallet address. Example:
 
-```jsx
+```sh
 ~/.config/koii:/app/config
 ```
 
-5. **Package Files**: Use **`yarn webpack`** for packaging.
+5. **Package Files**:
+
+```sh
+yarn webpack
+```
+
 6. **Run `npx @_koii/create-task-cli@latest`** to deploy a new task using your local validator. Please copy below CID for future renaming.
 
-    ```jsx
-    CID of executable bafybeidumnguxqqcvgxm7fm46vkdeoqec7sxa46gljvsqobrhycsdnowhe
-    ```
+```sh
+CID of executable bafybeidumnguxqqcvgxm7fm46vkdeoqec7sxa46gljvsqobrhycsdnowhe
+```
 
 7. **Setup Environment File**: Rename **`.env.local.example`** to **`.env.local`**. Modify the **`K2_NODE_URL`** depending on your system:
     - Linux: **`http://127.0.0.1:10899`**
@@ -96,9 +118,16 @@ Commitment: confirmed
     Add the generated task ID to **`TASKS=`**, and populate all necessary environment variables for your task.
 
 8. Rename the `dist/main.js` file to `<CID>.js`
-9. **Run Docker**: Execute **`docker compose up`**. Successful execution should log outputs similar to:
 
-```jsx
+9. **Run Docker**:
+
+```sh
+docker compose up
+```
+
+Successful execution should log outputs similar to:
+
+```sh
 task_node  | SUBMISSION Hello, World!
 task_node  | ******/  IN SUBMISSION /******
 task_node  | 113141 inside checkSubmissionAndUpdateRound
@@ -109,7 +138,7 @@ task_node  | Submitting to chain: Hello, World! 6
 
 1.  ECONNREFUSED error
 
-```jsx
+```sh
 task_node  | FetchError: request to http://127.0.0.1:10899/ failed, reason: connect ECONNREFUSED 127.0.0.1:10899
 task_node  |     at ClientRequest.<anonymous> (/app/node_modules/node-fetch/lib/index.js:1505:11)
 task_node  |     at ClientRequest.emit (node:events:517:28)
@@ -124,7 +153,7 @@ task_node  |   code: 'ECONNREFUSED'
 task_node  | }
 ```
 
-```jsx
+```sh
 Error fetching from [https://bafybeibza332dckxtumnvuv6wyvq5a4jnixc7zwmfvqowpvtaep3o4vcg4.ipfs.dweb.link/metadata.json:](https://bafybeibza332dckxtumnvuv6wyvq5a4jnixc7zwmfvqowpvtaep3o4vcg4.ipfs.dweb.link/metadata.json:) Error: Request timed out
 ```
 
@@ -132,7 +161,7 @@ Answer: Please switch to the address that recommended for your current system.
 
 2. Transaction Simulation Failed Error
 
-```jsx
+```sh
 task_node  | Transaction simulation failed: Attempt to debit an account but found no record of a prior credit.
 task_node  |
 task_node  | /app/node_modules/@_koi/web3.js/lib/index.cjs.js:6914
@@ -155,7 +184,7 @@ Answer: Please check the whether the wallet folder has correctly projected to do
 
 3. IPFS Error
 
-```jsx
+```sh
 Error fetching from https://bafybeibza332dckxtumnvuv6wyvq5a4jnixc7zwmfvqowpvtaep3o4vcg4.ipfs.sphn.link/metadata.json: Error: Request timed out
 ```
 

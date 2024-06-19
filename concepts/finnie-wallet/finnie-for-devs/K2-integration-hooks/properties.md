@@ -9,7 +9,7 @@ sidebar_label: Properties
 
 To distinguish Finnie from other wallets.
 
-```javascript
+```js
 await window.k2.isFinnie: Boolean
 ```
 
@@ -17,7 +17,7 @@ await window.k2.isFinnie: Boolean
 
 Get the public key of the connected wallet. The returned value has PublicKey type.
 
-```javascript
+```js
 await window.k2.publicKey: PublicKey
 ```
 
@@ -25,6 +25,6 @@ await window.k2.publicKey: PublicKey
 
 Get `isConnected` state. If the current page is connected to Finnie, it returns true. Otherwise, it returns false.
 
-```javascript
+```js
 await window.k2.isConnected: Boolean
 ```

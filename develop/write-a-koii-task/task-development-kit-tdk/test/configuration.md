@@ -9,11 +9,11 @@ sidebar_label: Jest Configuration
 
 Depending on the types of tasks you are developing, you may require a custom configuration of your jest testing file. There will be an `main.test.js` file which will allow you to custom variables to the jest testing file.
 
-## Long run task
+## Long running task
 
-If you have a long-run task such as web scraping or machine learning, you may need to increase the timeout of the jest testing. You can update it to the following code in the `main.test.js`` file, lines 11 to 14:
+If you have a long-running task such as web scraping or machine learning, you may need to increase the timeout of the jest testing. You can update it to the following code in the `main.test.js`` file, lines 11 to 14:
 
-```javascript
+```js
 it("should performs the core logic task", async () => {
   const result = await coreLogic.task();
   expect(result).not.toContain("ERROR IN EXECUTING TASK");
@@ -26,7 +26,7 @@ The test will wait for at most 2000000 milliseconds (2000 seconds) before it fai
 
 If you have a submission rule that requires a specific format or round of the submission, you can update the `main.test.js` file, lines 21 to 45:
 
-```javascript
+```js
 const round = 1; // the round of the submission
 ...
 Joi.object({

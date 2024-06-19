@@ -20,7 +20,7 @@ For the Linktree task, we will create a `dbSharing.js` module that serves as the
 
 Step 1: Retrieve the list of node URLs associated with a specific task ID.
 
-```javascript
+```js
 const nodesUrl = `${SERVICE_URL}/nodes/${TASK_ID}`;
 const res = await axios.get(nodesUrl);
 
@@ -33,7 +33,7 @@ let nodeUrlList = res.data.map((e) => {
 
 Step 2: Retrieve the list of all Linktrees from the database.
 
-```javascript
+```js
 let allLinktrees = await db.getAllLinktrees();
 allLinktrees = allLinktrees || "[]";
 
@@ -42,7 +42,7 @@ allLinktrees = allLinktrees || "[]";
 
 Step 3: Retrieve the list of Linktrees associated with each node.
 
-```javascript
+```js
 for (let url of nodeUrlList) {
   const res = await axios.get(`${url}/task/${TASK_ID}/linktree/all`);
 
@@ -52,7 +52,7 @@ for (let url of nodeUrlList) {
 
 Step 4: Verify the signature
 
-```javascript
+```js
 if (!payload || payload.length == 0) continue;
 for (let i = 0; i < payload.length; i++) {
     const value = payload[i].value;
@@ -70,7 +70,7 @@ for (let i = 0; i < payload.length; i++) {
 
 Step 5: Update the local copy with new data if needed
 
-```javascript
+```js
 let localExistingLinktree = allLinktrees.find((e) => {
   e.uuid == linktreePayload.data.uuid;
 });

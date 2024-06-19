@@ -21,7 +21,7 @@ This function contains the core logic of how a node's submission should be verif
 
 For the sample task on the template, to validate a node's submission, the first character of its submission value (CID) is checked to see if it falls within the first 23 letters of the alphabet. If it does, the function returns `true`, validating the node's submission; if it does not, the node's submission is deemed invalid, and their stake is slashed
 
-```javascript
+```js
 /**
  * @description Contains logic for the validation of submission value
  *
@@ -50,7 +50,7 @@ As a result, ensure that you write proper logic that verifies each submission va
 
 This function takes the `roundNumber` as a parameter and calls a helper function `validateAndVoteOnNodes` that takes the `validateNode` function and the `roundNumber` as parameters.
 
-```javascript
+```js
 /**
  * @description Submits validateNode function with roundNumber
  *
@@ -80,7 +80,7 @@ Two functions are involved in the validation of the distribution list:
 
 This function contains the core logic of how the distribution list should be verified. It takes the distribution list as a parameter, confirms its validity, and returns a boolean value.
 
-```javascript
+```js
 /**
  * @description Contains logic for the validation of distribution list
  *
@@ -105,7 +105,7 @@ async function validateDistribution(distributionList) {
 
 This function takes the `roundNumber` as a parameter and calls a helper function `validateAndVoteOnDistributionList` which takes the `validateDistribution` function and the `roundNumber` as parameters.
 
-```javascript
+```js
 /*
  * @description Submits validateDistribution function with roundNumber
  *

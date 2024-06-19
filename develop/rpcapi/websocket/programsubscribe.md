@@ -30,7 +30,7 @@ The resultant account must meet **ALL** filter criteria to be included in the re
 
 ### Code sample
 
-```bash
+```json
 {
   "jsonrpc": "2.0",
   "id": 1,
@@ -86,7 +86,7 @@ The notification format is a **single** program account object as seen in the [g
 
 Base58 encoding:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "method": "programNotification",
@@ -115,10 +115,9 @@ Base58 encoding:
 }
 ```
 
-
 Parsed-JSON encoding:
 
-```
+```json
 {
   "jsonrpc": "2.0",
   "method": "programNotification",

@@ -1,5 +1,5 @@
 ---
-title: Koii IPFS Storage SDK 
+title: Koii IPFS Storage SDK
 description: Koii Storage for Tasks
 image: img/thumbnail.png
 sidebar_label: Koii IPFS Storage
@@ -11,17 +11,17 @@ Koii Storage Task SDK provides a convenient interface for interacting with Koii'
 
 # Installation
 Ensure you have the required dependencies installed. You can add the SDK to your project by following the installation instructions provided by Koii.
-```javascript
+```js
 npm install @_koii/storage-task-sdk
 ```
-or 
-```javascript
+or
+```js
 yarn add @_koii/storage-task-sdk
 ```
 # Usage
 ## Uploading a File
 To upload a file to Koii storage, you need to create a KoiiStorageClient instance and provide the staking wallet information.
-```javascript
+```js
 const fs = require('fs');
 const { Keypair } = require('@_koii/web3.js');
 const { KoiiStorageClient } = require('@_koii/storage-task-sdk');
@@ -41,15 +41,15 @@ const filePath = "path/to/your/file"; // replace with your actual file path
   }
 })();
 ```
-When it is used in the task, you can use `namespacewrapper` helper function to retrieve the user staking key. 
-```javascript
+When it is used in the task, you can use `namespacewrapper` helper function to retrieve the user staking key.
+```js
 const userStaking = await namespaceWrapper.getSubmitterAccount();
 const response = await client.uploadFile(filePath,userStaking);
 ```
 ## Retrieving a File
 Once you have the CID of a file, you can retrieve it using the KoiiStorageClient. The following example demonstrates how to get a file, convert it to text, and parse it as JSON.
 
-```javascript
+```js
 const { KoiiStorageClient } = require('@_koii/storage-task-sdk');
 
 const client = new KoiiStorageClient();

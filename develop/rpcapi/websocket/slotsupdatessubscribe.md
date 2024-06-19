@@ -19,7 +19,7 @@ This subscription is unstable. The format of this subscription may change in the
 
 ### Code sample
 
-```bash
+```sh
 { "jsonrpc": "2.0", "id": 1, "method": "slotsUpdatesSubscribe" }
 ```
 

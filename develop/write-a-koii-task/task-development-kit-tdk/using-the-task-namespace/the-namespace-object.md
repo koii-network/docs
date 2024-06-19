@@ -15,7 +15,7 @@ This JavaScript object is injected into a Koii task by the task node running the
 
 Here's an example demonstrating how you can store a key-value pair in the local NeDB database using the `namespace` object:
 
-```javascript
+```js
 const { namespaceWrapper } = require("../_koiiNode/koiiNode");
 
 async function task() {

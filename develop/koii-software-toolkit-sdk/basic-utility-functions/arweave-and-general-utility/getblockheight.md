@@ -15,7 +15,7 @@ This function returns the current block height of the Arweave blockchain.
 
 ### Example Code
 
-```jsx
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetBlockHeight() {
@@ -28,7 +28,7 @@ testGetBlockHeight();
 
 ### Example Code Output
 
-```
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 870697
 ```

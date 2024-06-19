@@ -18,7 +18,13 @@ We need a Koii account and network setup first. We provide the Koii CLI tool to 
 <br/>
 Now that we have our account and the network setup, let's move on to creating a task and registering it with the network.
 
-Install the [create-koii-task-cli from NPM](https://www.npmjs.com/package/@_koii/create-task-cli) and run the tool by running `npx @_koii/create-task-cli` in your terminal; it prompts for your wallet path. Use the path to your Koii account `id.json` that we mentioned as input.
+Install the [create-koii-task-cli from NPM](https://www.npmjs.com/package/@_koii/create-task-cli) and run the tool:
+
+```sh
+npx @_koii/create-task-cli
+```
+
+This will prompt for your wallet path. Use the path to your Koii account `id.json` that we mentioned as input.
 
 After successful input for the wallet path, the following are the prompts for the creation of the task.
 
@@ -62,7 +68,7 @@ Strong measures should be taken to protect this JSON file.
 
 The output of the command should be similar to the following.
 
-```bash
+```sh
 (base) PS D:\gitD\Koii\k2-task-examples-1\hello-world> create-task-cli
 (node:31956) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
@@ -102,7 +108,7 @@ TASK DATA {
 }
 Metadata {
   author: 'Soma',
-  description: "This task submits 'Hello World' to confirm that your node is online. You will earn up to 50 KOII in one day. This task will use around 1.5gb of your RAM.",       
+  description: "This task submits 'Hello World' to confirm that your node is online. You will earn up to 50 KOII in one day. This task will use around 1.5gb of your RAM.",
   repositoryUrl: 'https://github.com/koii-network/task-examples',
   createdAt: 1718289852003,
   imageUrl: 'https://bafybeiaxjv3wnyeuakhvpeah5aiuomswegn2qfk47w6hrd475gkibflhvy.ipfs.w3s.link/image.png',

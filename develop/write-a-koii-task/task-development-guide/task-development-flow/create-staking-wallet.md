@@ -15,7 +15,7 @@ The staking CLI can be started by running the command `npm stake` in the root di
 - Enter the path to your wallet
 - Next, you will be prompted with four options&#x20;
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a task staking wallet
     Create a task distribution wallet
@@ -25,7 +25,7 @@ The staking CLI can be started by running the command `npm stake` in the root di
 
 To create a staking wallet, select the "Create a task staking wallet" option and add the amount of KOII tokens you want to fund the wallet with.
 
-```bash
+```sh
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 /Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a task staking wallet

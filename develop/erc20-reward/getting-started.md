@@ -16,7 +16,7 @@ Begin by cloning the [Task Template](https://github.com/koii-network/task-templa
 
 Create a `.env` file in the root of the repository and populate it with the following environment variables and their respective values:
 
-```
+```sh
 # Your Infura ID
 INFURA_ID = ""
 
@@ -44,7 +44,7 @@ Create a new file named `KToken.json` in the root directory of the project. Copy
 
 We'll need a helper function to retrieve data from CID, create a new file named `helpers.js` in the root of the task folder write a code snippet to retrieve data from the CID.
 
-```
+```js
 const axios = require('axios');
 
 const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) => {
@@ -69,5 +69,3 @@ const getJSONFromCID = async (cid, fileName, maxRetries = 3, retryDelay = 3000) 
   }
 }
 ```
-
-

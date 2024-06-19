@@ -24,7 +24,7 @@ The result field will be an array of JSON objects, each with the following sub f
 
 ### Code sample
 
-```bash
+```sh
 curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0", "id": 1,

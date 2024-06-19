@@ -27,7 +27,7 @@ Whether or not to subscribe for notifications when signatures are received by th
 
 ### Code sample
 
-```bash
+```sh
 {
   "jsonrpc": "2.0",
   "id": 1,

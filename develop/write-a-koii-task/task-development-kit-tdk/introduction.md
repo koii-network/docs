@@ -7,7 +7,7 @@ sidebar_label: Introduction
 
 We built the Koii Task Development Kit as a ready-to-develop template, which simplifies and streamlines the process of developing custom tasks. To use the task template for your own needs, follow the steps below:
 
-```bash
+```sh
  git clone https://github.com/koii-network/task-template.git
  cd task-template
 ```

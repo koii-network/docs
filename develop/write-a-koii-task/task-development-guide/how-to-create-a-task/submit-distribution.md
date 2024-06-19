@@ -8,7 +8,7 @@ A distribution list is a JSON object containing a key-value pair, where the `key
 
 Distribution list example:
 
-```javascript
+```js
  const distributionList = {
    "29SSj6EQARvATESSQbBcmSE3A1iaWwqXFunzAEDoV7Xj": 100,
    "3KUfsjpjCSCjwCBm4TraM5cGx6YzEUo9rrq2hrSsJw3x": 200,
@@ -20,7 +20,7 @@ In the `submitDistribution` function below, an empty array is initialized, and t
 
 Finally, the `distributionList` is submitted on-chain.
 
-```javascript
+```js
 async function generateAndSubmitDistributionList(round) {
   console.log("generateAndSubmitDistributionList called");
 
@@ -52,15 +52,15 @@ async function generateAndSubmitDistributionList(round) {
           if(numOfVotes < 0)
             continue;
         }
-        distributionList[candidatePublicKey] = 1;  
+        distributionList[candidatePublicKey] = 1;
       }
     }
-    
+
     const decider = await namespaceWrapper.uploadDistributionList(
       distributionList, round
     );
     console.log("DECIDER", decider);
-  
+
     if (decider) {
       const response = await namespaceWrapper.distributionListSubmissionOnChain(round);
       console.log("RESPONSE FROM DISTRIBUTION LIST", response);

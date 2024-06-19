@@ -17,7 +17,7 @@ This function is responsible for generating the distribution list and decide the
 :::tip
 If you wanna change the distribution rules, you can modify the `generateDistributionList` function to decide the distribution rules. This example shows how to distribute the rewards equally to all nodes:
 
-```javascript
+```js
     const reward = Math.floor(
     taskAccountDataJSON.bounty_amount_per_round /
         distributionCandidates.length,
@@ -36,7 +36,7 @@ NOTE: The total number of KOII tokens to be distributed should not exceed the bo
 
 Only one selected node will call the `submitDistributionList` function to submit the distribution list. The `submitDistributionList` function is responsible for generating a distribution list and submitting it to K2. Here is an example of a `submitDistributionList` function:
 
-```javascript
+```js
   submitDistributionList = async round => {
     console.log('SUBMIT DISTRIBUTION LIST CALLED WITH ROUND', round);
     try {
@@ -67,7 +67,7 @@ In this flow, `submitDistributionList` function will be called in each round to 
 
 For other nodes, the `auditDistribution` function will be called to audit the distribution list. The nodes will call `generateDistributionList` function as well to compare if the selected node distribution list correct or not. Here is an example of a `auditDistribution` function:
 
-```javascript
+```js
   async auditDistribution(roundNumber) {
     console.log('AUDIT DISTRIBUTION CALLED WITHIN ROUND: ', roundNumber);
     await namespaceWrapper.validateAndVoteOnDistributionList(

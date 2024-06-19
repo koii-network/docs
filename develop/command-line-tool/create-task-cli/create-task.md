@@ -10,7 +10,7 @@ sidebar_label: Deploy a New Task
 
 - To deploy a new task, select the following option:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new local repository
 ❯   Deploy a new task
@@ -24,7 +24,7 @@ sidebar_label: Deploy a New Task
 
 - There are two options to deploy a new task, the next prompt asks you to select how you want to deploy your task:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   using CLI
     using config YML
@@ -106,7 +106,7 @@ Please make sure all of your environment variables are included in the `requirem
 For example:
 If you have something like:
 
-```javascript
+```js
 const username = process.env.TWITTER_USER_NAME;
 ```
 
@@ -128,7 +128,7 @@ User will setup their key of the `value` in the Koii Node's `Settings -> Task Se
 
 So, if you have more than one environment variable, your `requirementsTags` section should look like this:
 
-```yml
+```yaml
 requirementsTags:
   - type: TASK_VARIABLE
     value: "TWITTER_USER_NAME"
@@ -139,10 +139,17 @@ With each environment variable having their `type` set as `TASK_VARIABLE`, a uni
 
 :::
 
-- After updating the config file, run `npx @_koii/create-task-cli@latest` again and choose "using config YML".
+- After updating the config file, run:
+
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+again and choose "using config YML".
+
 - If an error occurs, follow the provided instructions for correction. If successful, your terminal will display an output similar to this:
 
-```bash
+```sh
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
 Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
@@ -206,7 +213,7 @@ Strong measures should be taken to protect this JSON file.
 
 The output of the command should be similar to the following.
 
-```bash
+```sh
 ✔ Select operation › Deploy a new task
 create-task
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json

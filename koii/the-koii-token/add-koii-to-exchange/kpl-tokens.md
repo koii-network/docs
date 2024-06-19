@@ -15,45 +15,59 @@ An KPL token is declared by first creating a mint account, storing metadata abou
 
 The [`spl-token` cli tool](https://crates.io/crates/spl-token) is distributed with the Rust `cargo` tool. You can get instructions on installing `cargo` from [rustup.rs](https://rustup.rs). You can install `spl-token` with:
 
-```bash
+```sh
     cargo install spl-token-cli
 ```
 
 And check the version with:
 
-```bash
+```sh
     spl-token --version
 ```
 
 Result:
 
-```bash
+```sh
     spl-token-cli 2.0.1
 ```
 
 ## Account Creation
 
-Unlike Koii accounts, KPL token accounts must be created before tokens are deposited. This can be done either with `spl-token create-account` or (implicitly) `spl-token transfer --fund-recipient ...`.
+Unlike Koii accounts, KPL token accounts must be created before tokens are deposited. This can be done either with
 
-Additionally, KPL token accounts must be kept rent-exempt by depositing a small amount of KOII when the account is created. This amount can be checked by running the `koii rent 165` CLI command.
+```sh
+spl-token create-account
+```
+
+or (implicitly)
+
+```sh
+spl-token transfer --fund-recipient ...
+```
+
+Additionally, KPL token accounts must be kept rent-exempt by depositing a small amount of KOII when the account is created. This amount can be checked by running:
+
+```sh
+koii rent 165
+```
 
 ### Command Line
 
 To create an KPL token account associated with the correct mint and owned by the keypair of the funding account, you can run the following command:
 
-```bash
+```sh
     spl-token create-account <TOKEN_MINT_ADDRESS>
 ```
 
 ### Example
 
-```bash
+```sh
     spl-token create-account AkUFCWTXb3w9nY2n6SFJvBV6VwvFUCe4KBMCcgLsa2ir
 ```
 
 ### Output
 
-```bash
+```sh
     Creating account 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Signature: 4JsqZEPra2eDTHtHpB4FMWSfk3UgcCVmkKkP7zESZeMrKmFFkDkNd91pKP3vPVVZZPiu5XxyJwS73Vi5WsZL88D7
 ```
@@ -62,7 +76,7 @@ If you need to create an account with a specific keypair:
 
 ### Example
 
-```bash
+```sh
     koii-keygen new -o token-account.json
 
     spl-token create-account AkUFCWTXb3w9nY2n6SFJvBV6VwvFUCe4KBMCcgLsa2ir token-account.json
@@ -70,7 +84,7 @@ If you need to create an account with a specific keypair:
 
 ### Output
 
-```bash
+```sh
     Creating account 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Signature: 4JsqZEPra2eDTHtHpB4FMWSfk3UgcCVmkKkP7zESZeMrKmFFkDkNd91pKP3vPVVZZPiu5XxyJwS73Vi5WsZL88D7
 ```
@@ -79,19 +93,19 @@ If you need to create an account with a specific keypair:
 
 ### Command Line
 
-```bash
+```sh
     spl-token balance <TOKEN_ACCOUNT_ADDRESS>
 ```
 
 ### Example
 
-```bash
+```sh
     spl-token balance 6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
 ```
 
 ### Output
 
-```bash
+```sh
     0
 ```
 
@@ -102,19 +116,19 @@ When transferring tokens, the source account must be the actual token account co
 
 ### Command Line
 
-```bash
+```sh
     spl-token transfer <SENDER_ACCOUNT_ADDRESS> <AMOUNT> <RECIPIENT_WALLET_ADDRESS> --fund-recipient
 ```
 
 ### Example
 
-```bash
+```sh
     spl-token transfer 6B199xxzw3PkAm25hGJpjj3Wj3WNYNHzDAnt1tEqg5BN 1
 ```
 
 ### Output
 
-```bash
+```sh
     6VzWGL51jLebvnDifvcuEDec17sK6Wupi4gYhm5RzfkV
     Transfer 1 tokens
       Sender: 6B199xxzw3PkAm25hGJpjj3Wj3WNYNHzDAnt1tEqg5BN
@@ -144,7 +158,7 @@ The associated token account for the mint is derived from the withdrawal address
 
 Template `spl-token transfer` command for a withdrawal:
 
-```bash
+```sh
     spl-token transfer --fund-recipient <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
@@ -169,7 +183,7 @@ Because extensions modify how tokens work, you may need to change how you handle
 
 To see all extensions on a mint or token account:
 
-```bash
+```sh
     spl-token display <account address>
 ```
 
@@ -182,7 +196,7 @@ Keep in mind that if you are processing transfers with these tokens, the withhel
 
 We recommend specifying the expected fee during the transfer:
 
-```bash
+```sh
     spl-token transfer --expected-fee <fee amount> --fund-recipient <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
@@ -194,7 +208,7 @@ The mint close authority extensions simply allows a token creator to close their
 
 To close these token accounts:
 
-```bash
+```sh
     spl-token close --address <account address>
 ```
 
@@ -206,19 +220,19 @@ Exchanges may choose to support confidential transfers but it is not required; y
 
 To enable confidential transfers, first configure the account for it:
 
-```bash
+```sh
     spl-token configure-confidential-transfer-account --address <account address>
 ```
 
 And then transfer:
 
-```bash
+```sh
     spl-token transfer --confidential <exchange token account> <withdrawal amount> <withdrawal address>
 ```
 
 Because token amounts are encrypted, the `preTokenBalance` and `postTokenBalance` fields cannot be used. Instead, you must decrypt the new balance:
 
-```bash
+```sh
     spl-token apply-pending-balance --address <account address>
     spl-token withdraw-confidential-tokens --address <account address> <amount or ALL>
 ```
@@ -245,7 +259,7 @@ Tokens may have a hook: an additional program called during transfer. Because th
 
 The CLI and instruction creators such as `createTransferCheckedWithTransferHookInstruction` add the extra accounts automatically, but the additional accounts may also be specified explicitly:
 
-```bash
+```sh
     spl-token transfer --transfer-hook-account <pubkey:role> --transfer-hook-account <pubkey:role> ...
 ```
 
@@ -255,6 +269,6 @@ Individual users have the option to require a memo on token transfer. This requi
 
 Exchanges have the option of either prepending the instruction themselves before transferring tokens to the users, or requiring users to prepend the instruction before sending to the exchange.
 
-```bash
+```sh
     spl-token transfer --with-memo <memo text> <exchange token account> <withdrawal amount> <withdrawal address>
 ```

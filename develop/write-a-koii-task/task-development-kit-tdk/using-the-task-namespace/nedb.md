@@ -15,7 +15,7 @@ The `namespaceWrapper` class provides some methods that use NeDB's `insert(key,v
 
 This code is setting up a wrapper class for a NeDB database using the nedb-promises library. The nedb-promises library is a version of NeDB with Promises support, which makes it easier to work with asynchronous operations.
 
-```javascript
+```js
   db;
 
   constructor() {
@@ -53,7 +53,7 @@ const db = await namespaceWrapper.getDB();
 
 This is the namespace wrapper call for NeDB `insert` method
 
-```javascript
+```js
 async storeGet(key) {
  try {
       console.log({ [key]: value, key });
@@ -67,7 +67,7 @@ async storeGet(key) {
 
 Usage example:
 
-```javascript
+```js
 await namespaceWrapper.storeSet("round", "-1"); // store data
 const round_task = await namespaceWrapper.storeGet("round"); // retrieve data with key
 console.log("ROUND OF TASK SET TO", round_task);
@@ -76,7 +76,7 @@ console.log("ROUND OF TASK SET TO", round_task);
 :::info
 You can prevent duplicate entries in NeDB by creating a unique index on the field(s) that should be unique. Here's a simple example:
 
-```javascript
+```js
 const db = await namespaceWrapper.getDB();
 
 // Ensure index
@@ -91,7 +91,7 @@ db.ensureIndex({ fieldName: "uniqueField", unique: true }, function (err) {
 
 This is the namespace wrapper call for levelDB `findOne` method
 
-```javascript
+```js
 async storeGet(key): Promise<string> {
    try {
       const resp = await this.db.findOne({ key: key });
@@ -109,7 +109,7 @@ async storeGet(key): Promise<string> {
 
 Usage example:
 
-```javascript
+```js
 async function execute() {
   console.log("ROUND", await namespaceWrapper.storeGet("round"));
 }
@@ -119,7 +119,7 @@ async function execute() {
 
 You can add more functions to your task by adding them to the `namespaceWrapper` class or create your `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
 
-```javascript
+```js
 const { namespaceWrapper } = require("./_koiiNode/koiiNode");
 
 const db = await namespaceWrapper.getDB();
@@ -132,7 +132,7 @@ const db = await namespaceWrapper.getDB();
 
 Example:
 
-```javascript
+```js
 const datadb = require("./db-model");
 
 let testlist = await datadb.getList();

@@ -84,7 +84,8 @@
        "discordsmall",
        "quickstart",
        "Rustup",
-       "checksummed"
+       "checksummed",
+       "preBalances"
   ],
   "caseSensitive": false,
   "flagWords": [

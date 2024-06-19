@@ -23,7 +23,7 @@ To run an RPC Node:
 1. [Install the Koii command-line tool suite](/develop/command-line-tool/koii-cli/install-cli)
 2. Start the validator with at least the following parameters:
 
-```bash
+```sh
     koii-validator \
       --ledger <LEDGER_PATH> \
       --identity <VALIDATOR_IDENTITY_KEYPAIR> \
@@ -63,7 +63,7 @@ We recommend configuring each of your nodes to restart automatically on exit, to
 
 You can monitor your node's health using `koii-watchtower`, and can configure it to send you alerts via Slack, Discord, Telegram, or Twillio. For details on usage, run `koii-watchtower --help`.
 
-```bash
+```sh
     koii-watchtower --validator-identity <YOUR VALIDATOR IDENTITY>
 ```
 

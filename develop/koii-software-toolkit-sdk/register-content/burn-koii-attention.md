@@ -18,7 +18,7 @@ This function enables content to earn attention rewards for anything that has al
 
 ### Example Code
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 const walletKeyLocation = "arweaveWallet.json";

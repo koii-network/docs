@@ -31,7 +31,7 @@ Task metadata is essential structured data that provides valuable information ab
 
 Task metadata sample:
 
-```javascript
+```js
 {
   name: 'Sample Task',
   description: 'This a demo task',
@@ -56,7 +56,7 @@ Task metadata sample:
     "distribution mechanism": "every node gets fixed amount of reward every round",
     "stake dependence": "rewards do not depend on stake",
     "time dependence": "longer staking does not mean more reward"
- }
+  }
 }
 ```
 

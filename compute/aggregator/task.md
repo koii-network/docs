@@ -16,7 +16,7 @@ Lets learn how to create a **Extractor Task**. This powerful tool allows you to 
 
 The `query` object is your key to customizing the data you receive from the source website. Here's a basic example:
 
-```javascript
+```js
 let searchTerm = "#koii";
 let query = {
     limit: 100, // total number of records to return
@@ -39,11 +39,11 @@ let query = {
 - `updateRound`: A function that returns the current round.
 - `round`: The current round.
 
-In the context of web scraping or data collection, a `round` refers to one complete cycle of the task or operation that you're performing. So if you want to collect tweets every hour. Each one-hour session would be considered a `round` of data collection. 
+In the context of web scraping or data collection, a `round` refers to one complete cycle of the task or operation that you're performing. So if you want to collect tweets every hour. Each one-hour session would be considered a `round` of data collection.
 
 `Rounds` are key to managing rate limits and segmenting the data in a way that makes it easier to analyze later.
 
-If you're looking to scrape only the most recent 50 tweets regarding a particular hashtag, you'd adjust the `limit` and `searchTerm` parameters accordingly. 
+If you're looking to scrape only the most recent 50 tweets regarding a particular hashtag, you'd adjust the `limit` and `searchTerm` parameters accordingly.
 
 To modify the extractor query, or change how it uses the local database, check out the [`twitter-task.js`](https://github.com/somali0128/X-scraper/blob/e0cfff8421fb95dd4fdc123bde38a7293aee5098/twitter-task.js#L33).
 
@@ -73,19 +73,17 @@ To ensure your Extractor task is deployment-ready, follow the steps below:
 
 ### 1. **Preparation: Webpack Conversion**
 
-Before deployment, your application needs to be converted into webpack format. This optimizes your code and ensures compatibility. To do this:
+Before deployment, your application needs to be converted into webpack format. This optimizes your code and ensures compatibility. Run this command in your terminal:
 
-```bash
+```sh
 yarn webpack
 ```
-
-Run the above command in your terminal.
 
 ### 2. **Deployment to IPFS**
 
 Once webpacked, you're ready for deployment. We utilize the `create-task-cli` package to help with this:
 
-```bash
+```sh
 npx @_koii/create-task-cli@latest
 ```
 
@@ -96,6 +94,7 @@ Executing the above command deploys your webpacked application to IPFS.
 Congratulations! Your customized **Extractor Task** is now deployed on Koii. A task id will be returned upon successful deployment — make sure to save it as it's essential to execute in Koii Node.
 
 To start your task:
+
 - Go to Koii Node and navigate to `My Node`.
 - Click on the `Advanced` option, located at the bottom of the interface.
 - Paste your saved Task Id and initiate your task.

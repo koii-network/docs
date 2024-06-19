@@ -10,7 +10,7 @@ To ensure the smooth operation of your task, it's crucial to prevent it from run
 **Funding a Task:**
 1. Select the `Fund task with more KOII` option as shown below:
 
-    ```bash
+    ```sh
     ? Select operation › - Use arrow-keys. Return to submit.
         Create a new local repository
         Deploy a new task
@@ -23,17 +23,17 @@ To ensure the smooth operation of your task, it's crucial to prevent it from run
     ```
 
 2. Enter your task ID:
-    ```bash
+    ```sh
     ✔ Enter the task id … WcZ1B93Nvxf1qXsNqA4msfnsdiPQ5GDbgrKYgcDhm9Q
     ```
 
 3.  Enter the amount you want to fund your task with:
-    ```bash
+    ```sh
     ✔ Enter the amount(in KOII) to fund … 5
     ```
 
 Upon successful completion, you should see an output similar to this:
-```bash
+```sh
 Calling FundTask
 ✔ Enter the task id … WcZ1B93Nvxf1qXsNqA4msfnsdiPQ5GDbgrKYgcDhm9Q
 ✔ Enter the amount(in KOII) to fund … 5

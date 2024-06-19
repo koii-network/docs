@@ -27,7 +27,7 @@ Configuration object containing the following fields:
 
 ### Code sample
 
-```bash
+```sh
 {
   "jsonrpc": "2.0",
   "id": 1,

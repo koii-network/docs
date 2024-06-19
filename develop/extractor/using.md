@@ -10,7 +10,7 @@ To modify the extractor query, or change how it uses the local database, check o
 
 The `query` object passes the fundamental instructions to our extractor.
 
-```javascript
+```js
 let searchTerm = "#koii";
 let query = {
     limit: 100, // total number of records to return
@@ -31,7 +31,9 @@ One of the files that you will find useful is the `test-one-round.js`. This test
 
 You can run it with:
 
-`node test/test-one-round.js`
+```sh
+node test/test-one-round.js
+```
 
 ## Interacting with Task Runners
 

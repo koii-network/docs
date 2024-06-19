@@ -16,13 +16,13 @@ Here's a step-by-step guide to using Easy Testing:
 
 ![Easy Testing Step 1](./img/easy_testing1.png)
 
-```jsx
+```sh
 TASK_ID = "AK2P1L8NWGwWarbHeM7tX2mr4hJA7ZVXGSSSz5PWHBHv";
 ```
 
 Here's an example of using task extension variables in the your `.env`:
 
-```jsx
+```sh
 TASK_ID = "AK2P1L8NWGwWarbHeM7tX2mr4hJA7ZVXGSSSz5PWHBHv";
 TWITTER_USERNAME = "testuser123";
 ```
@@ -35,7 +35,7 @@ To deploy your task, please use yarn webpack again to avoid leaking your environ
 
 ![Easy Testing Step 2](./img//easy_testing2.png)
 
-```jsx
+```sh
 ...
 console.log('ROUND', round);
 const value = 'Hello, World!';
@@ -52,7 +52,7 @@ This setup enables our program to capture logs related to testing and provide yo
 
 ![Easy Testing Step 3](./img/easy_testing3.png)
 
-```jsx
+```sh
 npm run prod-debug
 ```
 
@@ -78,7 +78,7 @@ You’ve now successfully debugged the Easy Testing task in real time directly o
 
 To configure specific keyword filters for live debugging, first find debugger.js, which contains the following code:
 
-```jsx
+```js
 class Debugger {
   static taskID =
     process.env.TASK_ID || "3sFhZoxfze7RQJqMGSR3L3gtg8AeiYZ6D42QwFc3nuEV";
@@ -92,7 +92,7 @@ class Debugger {
 
 Debugger.js contains all the different variables required to facilitate the live debugging process possible! As you can see in the list of keywords to filter by, the default is ‘TEST’. You modify and add as many filters as you choose to, with an example shown below:
 
-```jsx
+```js
   static keywords = ['TEST', 'ERROR', 'WARNING'];
 ```
 
