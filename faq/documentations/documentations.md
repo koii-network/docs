@@ -4,6 +4,7 @@ description: Concise Documentations page providing quick answers to tech words r
 image: img/thumbnail.png
 sidebar_label: Documentations
 ---
+
 import TasksComponent from '@site/src/components/taskcomponents';
 
 <TasksComponent />
@@ -12,12 +13,12 @@ import TasksComponent from '@site/src/components/taskcomponents';
 Please be patient if you see a loading sentence.
 :::
 
-## Tech Words:
+## Tech Words
 
 **Namespace**: In programming, a namespace is a container that holds a set of identifiers, such as variable and function names
 , and allows them to be distinguished from others that might have the same name but are in a different namespace. In this context, it refers to a specific set of functions or methods within the task-node that are used for managing the distribution list.
 
-## Error Code:
+## Error Code
 
 **Code 429**: Error code 429 typically indicates that the user has exceeded the rate limit, which is often encountered in scenarios where an API or service is **accessed too frequently within a given time frame**. It's not typically associated with a low internet connection. In the context of Twitter, this error suggests that the user's actions are being temporarily restricted due to an excessive number of requests or submissions in a short period.
 

@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Registering Content
 
-![banner](./img/Registering%20Content.svg)
+![banner](/img/concepts/web3/registering-content.svg)
 
 **$KOII can be earned on any content where Proofs of Real Traffic are submitted.**
 
@@ -29,7 +29,7 @@ Need some KOII? Check <a href="https://faucet.koii.network/" target="_blank">her
 
 **Content Types**
 
-The network is designed to track content from any source and can be configured to credit app developers by specifying an application key. If no application key is specified, the registrar of the content ID receives all rewards. &#x20;
+The network is designed to track content from any source and can be configured to credit app developers by specifying an application key. If no application key is specified, the registrar of the content ID receives all rewards.
 
 :::tip
 Any piece of content can be registered for attention mining by constructing a URI like the one above, where the network key, application key, and content id contain valid data.

@@ -38,7 +38,7 @@ If you have Windows, <DownloadLinks os="Windows" />.
 
 Some Windows computers have different settings, so you may see different warning messages after you download the file like “The publisher could not be verified. Are you sure you want to run this software?”
 
-If it doesn’t give you the option to “Run Anyway,” you may need to click an arrow or “Learn More” to get that button. If you trust us, click “Run Anyway” then jump down to [Time to Node](#time-to-node).
+If it doesn’t give you the option to “Run Anyway,” you may need to click an arrow or “Learn More” to get that button. If you trust us, click “Run Anyway” then jump down to [Time to Node](/run-a-node/task-nodes/time-to-node).
 
 ### Mac Download
 

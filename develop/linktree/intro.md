@@ -11,7 +11,7 @@ import Description from "@site/src/components/description";
 
 <Description text="After mastering the development and deployment of the basic task, we will take a deeper dive into web3 concepts. This will be achieved by implementing these concepts through a practical example of Linktree. Get ready for an enriching learning experience!" />
 
-![banner](./Example%20Task_%20Linktree.svg)
+![banner](/img/develop/linktree/linktree-banner.svg)
 
 :::warning
 This project was developed on the legacy testnet. If you have any questions about this project, please don't hesitate to contact us on Discord.
@@ -23,16 +23,15 @@ This Koii task is the second task in our series of explaining Koii tasks. The <T
 
 A **Linktree** is a customized profile page that contains all your important links.
 
-
 :::info
 
-You can explore the deployed application [here](https://Linktree.koii.network) and the [source code](https://github.com/koii-network/Linktree-app).
+You can explore the deployed application [here](https://linktree.koii.network) and the [source code](https://github.com/koii-network/linktree-app).
 
 :::
 
 ### Getting started
 
-You can clone the project [here](https://github.com/koii-network/Linktree-app), and navigate to the task-template-Linktree folder
+You can clone the project [here](https://github.com/koii-network/linktree-app), and navigate to the task-template-Linktree folder
 
 ```sh
 cd task-template-Linktree

@@ -10,7 +10,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Runtime Flow
 
-![banner](<./img/Gradual%20Consensus%20(1).png>)
+![img](/img/concepts/gradual-consensus/runtime-flow.svg)
 
 <Description text="Gradual Consensus - Act quickly, react faster, and reward slowly." />
 
@@ -20,11 +20,9 @@ While the task standard supports a wide range of possible applications, the most
 
 One of the major limitations of stake-based games is the potential for an actor with a large number of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
-![img](./img/runtime_flow.svg)
-
 ## **How does it work?**
 
-The key to building community-based products is to regularly appraise contributions through a commonly agreed-upon set of rules. Under the Koii model, this system runs in [regularly timed rounds](#the-task-lifecycle), during which each participating device participates as much as it can, and rewards or penalties are regularly deployed to correct the course of the system towards a desired outcome.
+The key to building community-based products is to regularly appraise contributions through a commonly agreed-upon set of rules. Under the Koii model, this system runs in regularly timed rounds, during which each participating device participates as much as it can, and rewards or penalties are regularly deployed to correct the course of the system towards a desired outcome.
 
 In each task cycle, there must be:
 
@@ -45,6 +43,6 @@ For help designing your task, you might want to try using the task organizer, wh
 
 Note: In most cases, the actual management of (3) and (4) above depends on tracking digital signatures from participating nodes, community members, or outside Oracle services. Reviewing these signatures is usually referred to as an audit.
 
-![banner](./img/Gradual%20Consensus.svg)
+![Gradual consensus](/img/concepts/gradual-consensus/gradual-consensus.svg)
 
 In Gradual Consensus, a process involving multiple rounds, nodes first execute a task and subsequently vote on how to distribute rewards. It's essential to note that although the entire process spans three rounds, each cycle within these rounds functions independently. This means that in every round, a new cycle begins and concludes, ensuring continuous and overlapping activity.
