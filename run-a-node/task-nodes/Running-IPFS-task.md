@@ -16,6 +16,7 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
 
 1. **Set the Server Port:**
    If you are using a port **other** than `30017`, add the `SERVER_PORT` variable to your environment configuration. For example, if you are using port `4000`, it should look like this:
+
    ```sh
    SERVER_PORT=4000
    ```
@@ -23,7 +24,6 @@ Ensure that your VPS has port `30017` exposed. If you prefer to use a different 
    :::tip
 
     If you are using the default port `30017`, there is no need to set the `SERVER_PORT` variable.
-    
 
 2. **Add the IPFS Task ID:**
     Include the `Task` in your environment configuration with your IPFS Task ID, and comma separated each tasks:
@@ -61,7 +61,7 @@ After updating your environment variables and starting your service, ensure that
 ```sh
 http://<YOUR_IP_ADDRESS>:30017/tasks
 ```
+
 2. **Check that the IPFS task appears in the list displayed at this endpoint.**
 
 If you follow these steps, your IPFS task should be correctly configured and accessible from the internet.
-

@@ -31,7 +31,9 @@ One of the files that you will find useful is the `test-one-round.js`. This test
 
 You can run it with:
 
-`node test/test-one-round.js`
+```sh
+node test/test-one-round.js
+```
 
 ## Interacting with Task Runners
 

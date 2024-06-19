@@ -33,7 +33,7 @@ testGetAttentionId();
 
 ### Example Code Output
 
-```
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 attentionContractID : NwaSMGCdz6Yu5vNjlMtCNBmfEkjYfT-dfYkbQQDGn5s
 ```
@@ -52,7 +52,7 @@ This endpoint returns the state of Koii. Balances, stakes, Koii tasks and all th
 
 ### Example Code
 
-```jsx
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
@@ -94,7 +94,7 @@ This wallet's private key needs to be loaded to retrieve the balance. This funct
 In the below code example, replace `<walletKeyLocation>` on line 4 with the local path to your wallet key file.
 :::
 
-```jsx
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetKoiiBalance() {
@@ -109,7 +109,7 @@ testGetKoiiBalance();
 
 ### Example Code Output
 
-```
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 KOII balance of the given address is  7459.149283222933
 ```

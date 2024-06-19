@@ -115,7 +115,11 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 
 1. After installing the Koii CLI, copy the `PATH` value.
 
-2. In your terminal, run the command `vi ~/.zshrc`.
+2. In your terminal, run the command
+
+```sh
+vi ~/.zshrc
+```
 
 3. This will open the `~/.zshrc` file in the vi text editor. Insert the following line, replacing `<path>` with the copied `PATH` value:
 

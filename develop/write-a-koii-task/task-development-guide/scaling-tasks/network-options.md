@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 While developing your first task, you have probably noticed the following variable in the `config-task.yml` file.
 
-```json
+```yaml
   "task_executable_network": "IPFS"
 ```
 
@@ -17,7 +17,7 @@ Let's take a step back, and understand what exactly is a **task executable netwo
 
 Our default option IPFS, which stands for **InterPlanetary File System**. It is a peer-to-peer network that allows one to store and share data in a distributed file system.
 
-:::tip Why?
+:::info
 
 Instead of storing the data directly in the blockchain, we store it in IPFS, and then store the hash in the blockchain. This allows us to store data in our blockchain in a very efficient way.
 

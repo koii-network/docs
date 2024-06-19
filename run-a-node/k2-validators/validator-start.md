@@ -109,6 +109,7 @@ The "validator-keypair.json” file is also your (ed25519) private key.
 :::
 
 ### Paper Wallet identity
+
 You can create a paper wallet for your identity file instead of writing the keypair file to disk with:
 
 ```sh
@@ -124,6 +125,7 @@ koii-keygen pubkey ASK
 and then entering your seed phrase.
 
 ## More Koii CLI Configuration
+
 Now that you have a keypair, set the koii configuration to use your validator keypair for all following commands:
 
 ```sh
@@ -141,6 +143,7 @@ Commitment: confirmed
 ```
 
 ## Airdrop & Check Validator Balance
+
 Airdrop yourself some KOII to get started:
 
 ```sh

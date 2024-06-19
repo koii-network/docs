@@ -56,7 +56,7 @@ Task metadata sample:
     "distribution mechanism": "every node gets fixed amount of reward every round",
     "stake dependence": "rewards do not depend on stake",
     "time dependence": "longer staking does not mean more reward"
- }
+  }
 }
 ```
 

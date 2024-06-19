@@ -73,13 +73,11 @@ To ensure your Extractor task is deployment-ready, follow the steps below:
 
 ### 1. **Preparation: Webpack Conversion**
 
-Before deployment, your application needs to be converted into webpack format. This optimizes your code and ensures compatibility. To do this:
+Before deployment, your application needs to be converted into webpack format. This optimizes your code and ensures compatibility. Run this command in your terminal:
 
 ```sh
 yarn webpack
 ```
-
-Run the above command in your terminal.
 
 ### 2. **Deployment to IPFS**
 
@@ -96,6 +94,7 @@ Executing the above command deploys your webpacked application to IPFS.
 Congratulations! Your customized **Extractor Task** is now deployed on Koii. A task id will be returned upon successful deployment — make sure to save it as it's essential to execute in Koii Node.
 
 To start your task:
+
 - Go to Koii Node and navigate to `My Node`.
 - Click on the `Advanced` option, located at the bottom of the interface.
 - Paste your saved Task Id and initiate your task.

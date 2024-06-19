@@ -37,7 +37,7 @@ Source [Solana](https://solana.com/docs/intro/wallets#file-system-wallet)
 
 To generate a file system wallet keypair, use Koii’s command-line tool `koii-keygen`. Run the following command:
 
-```js
+```sh
 koii-keygen new --outfile ~/.config/koii/id.json
 ```
 

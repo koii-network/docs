@@ -139,7 +139,14 @@ With each environment variable having their `type` set as `TASK_VARIABLE`, a uni
 
 :::
 
-- After updating the config file, run `npx @_koii/create-task-cli@latest` again and choose "using config YML".
+- After updating the config file, run:
+
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+again and choose "using config YML".
+
 - If an error occurs, follow the provided instructions for correction. If successful, your terminal will display an output similar to this:
 
 ```sh

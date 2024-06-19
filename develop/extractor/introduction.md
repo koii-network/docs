@@ -10,7 +10,7 @@ With Koii, you have the power of hundreds of CPUs that belong to real users at y
 
 [The Extractor Template](https://github.com/koii-network/X-scraper) provides a simple extractor that uses headless browsers to gather data from public websites.
 
-** It is designed to be used as a template for building your extractors, ** exclusively for theoretical use in public archival projects, and is not intended to be used for for-profit activities.
+**It is designed to be used as a template for building your extractors,** exclusively for theoretical use in public archival projects, and is not intended to be used for for-profit activities.
 
 :::tip Example use cases:
 
@@ -26,7 +26,7 @@ With Koii, you have the power of hundreds of CPUs that belong to real users at y
 
 :::
 
-** Important Note: ** Depending on your legal jurisdiction, running a web extractor might require certain permissions. Please consult with a legal professional before engaging in any form of web-crawling or data-gathering activities.
+**Important Note:** Depending on your legal jurisdiction, running a web extractor might require certain permissions. Please consult with a legal professional before engaging in any form of web-crawling or data-gathering activities.
 
 ## The Structure
 

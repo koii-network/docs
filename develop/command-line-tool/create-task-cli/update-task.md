@@ -60,7 +60,7 @@ When using this option to update a task, you will be prompted to provide the tas
 
 - The first information to provide is the task's ID:
 
-```
+```sh
 ✔ Enter the ID of the task you want to edit >
 ```
 

@@ -176,7 +176,7 @@ Once you have the blocks to be processed, you can request each block's contents 
     }
 ```
 
-We provide the `preBalances` and `postBalances` fields so that the balance changes can be tracked without the need for parsing the entire transaction. The starting and ending balances are listed in Roe. The index position of the balances and the `accountKeys` entries will match. For example, if you want to obtain the information for the first account listed in `accountKeys` (index position 0), you can find the information at `prebalances[0]` and `postBalances[0]`.
+We provide the `preBalances` and `postBalances` fields so that the balance changes can be tracked without the need for parsing the entire transaction. The starting and ending balances are listed in Roe. The index position of the balances and the `accountKeys` entries will match. For example, if you want to obtain the information for the first account listed in `accountKeys` (index position 0), you can find the information at `[0]` and `postBalances[0]`.
 
 If you need additional information about transactions that's unavailable through this endpoint, you can fetch the block in binary format and parse it with the [Javascript SDK](https://github.com/koii-network/k2-web3.js).
 

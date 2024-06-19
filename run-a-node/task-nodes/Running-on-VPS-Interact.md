@@ -20,13 +20,12 @@ sudo npm install -g npm@latest
 
 Execute the command 'create-task-cli' and you will see an interactive menu
 
-
 ```sh
 npx @_koii/create-task-cli@latest
 
 ```
 
-```
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new local repository
     Deploy a new task
@@ -40,7 +39,7 @@ npx @_koii/create-task-cli@latest
 
 ## Example of how to claim rewards from the "Free Token Task!"
 
-```
+```sh
 Calling ClaimReward
 ✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the stakePotAccount address … stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ
@@ -56,7 +55,7 @@ Success
 
 ## Example of how to Unstake from the "Free Token Task!"
 
-```
+```sh
 1. Calling Withdraw staked funds from task
 ✔ Enter the task id … 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 ✔ Enter the submitter wallet path address … /home/koii/koii-node/namespace/staking_wallet.json
@@ -76,8 +75,7 @@ Success
 - `HERE_YOUR_WALLET_PUBLIC_ADDRESS` represents the Wallet that will receive the claimed Coins
 - `/home/koii/koii-node/namespace/staking_wallet.json` represents the default path to your staking wallet
 
-
-## Additional way to claim rewards using Koii_claimer:
+## Additional way to claim rewards using Koii_claimer
 
 In order to have a semi-automatic way to claim $KOII rewards, you first need to get prerequisites which have to be stored in your server for Koii CLaimer to function.
 
@@ -86,6 +84,7 @@ git clone https://github.com/eviangel/Koii_claimer
 ```
 
 Then we enter that exact directory where the installation files can be found.
+
 ```sh
 cd Koii_claimer
 ```
@@ -99,13 +98,12 @@ nano params.json
 This will create a .json file now you need to fill in some information for example:
 
 ```json
-{ "taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
-
-"stakePotAccount": "stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ",
-
-"beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
-
-"claimerKeypairPath": "VPS-task/namespace/staking_wallet.json" }
+{
+    "taskStateInfoAddress": "4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is",
+    "stakePotAccount": "stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ",
+    "beneficiaryAccount": "HERE_YOUR_WALLET_PUBLIC_ADDRESS",
+    "claimerKeypairPath": "VPS-task/namespace/staking_wallet.json"
+}
 ```
 
 Please change the beneficiaryAccount here to make it your wallet public address.

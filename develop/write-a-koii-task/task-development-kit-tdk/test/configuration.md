@@ -9,9 +9,9 @@ sidebar_label: Jest Configuration
 
 Depending on the types of tasks you are developing, you may require a custom configuration of your jest testing file. There will be an `main.test.js` file which will allow you to custom variables to the jest testing file.
 
-## Long run task
+## Long running task
 
-If you have a long-run task such as web scraping or machine learning, you may need to increase the timeout of the jest testing. You can update it to the following code in the `main.test.js`` file, lines 11 to 14:
+If you have a long-running task such as web scraping or machine learning, you may need to increase the timeout of the jest testing. You can update it to the following code in the `main.test.js`` file, lines 11 to 14:
 
 ```js
 it("should performs the core logic task", async () => {

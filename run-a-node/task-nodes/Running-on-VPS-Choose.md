@@ -24,10 +24,12 @@ Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staki
    ---
 
    :::tip Multi-task example
+
       ```sh
    TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
    TASK_STAKES= 5, 2
    ```
+
    :::
 
 Remember this must be less than 1 KOII of what you will have in your Main wallet (i.e. you set `TASK_STAKES=2,2` and `INITIAL_STAKING_WALLET_BALANCE= 5` then you must have in your main wallet 6 KOII so there is enough for covering gas)
@@ -36,6 +38,7 @@ Remember this must be less than 1 KOII of what you will have in your Main wallet
 Ctrl/Command +S = Save
 Ctrl/Command +X = Exit
 ```
+
 ---
 
 **Install dependencies**

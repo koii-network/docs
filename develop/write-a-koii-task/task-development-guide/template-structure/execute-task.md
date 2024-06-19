@@ -5,13 +5,11 @@ image: img/thumbnail.png
 sidebar_label: Execute Task
 ---
 
-# Execute Task
-
 Execute task, `task/submission.js` contains the main job function that is responsible for processing the user's submission and returning the result.
 
 ## Task Main Job Function
 
-The `task` function is the main function that is called when a user run a task. This function is responsible for preparing the user's submission and returning the result.
+The `task` function is the main function that is called when a user runs a task. This function is responsible for preparing the user's submission and returning the result.
 
 For example, following is a simple `task` function that stores a value in the database and returns a string:
 
@@ -25,6 +23,7 @@ async task(round) {
   return result;
 }
 ```
+
 ## Submission Function
 
 Then in next round, the `submitTask` function will be called with the round number as the parameter. The `submitTask` function is responsible for get user's submission value and upload to K2. Here is an example of a `submitTask` function:

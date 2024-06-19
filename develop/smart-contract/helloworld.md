@@ -53,13 +53,11 @@ cd hello_world
 
 ## Add the `solana-program` crate to your new Rust library
 
-
 It is highly recommended to keep your `solana-program` and other Solana Rust dependencies in-line with your installed version of the Koii CLI. For example, if you are running Koii CLI `1.16.1`, you can instead run:
 
 ```sh
 cargo add solana-program@"=1.16.1"
 ```
-
 
 This will ensure your crate uses only `1.16.1` and nothing else.
 
@@ -126,7 +124,6 @@ Using the Koii CLI, you can deploy your program to your currently selected clust
 ```sh
 koii program deploy ./target/deploy/hello_world.so
 ```
-
 
 Once your Koii program has been deployed (and the transaction finalized), the above command will output your program's public address (aka its "program id").
 

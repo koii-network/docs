@@ -18,7 +18,13 @@ We need a Koii account and network setup first. We provide the Koii CLI tool to 
 <br/>
 Now that we have our account and the network setup, let's move on to creating a task and registering it with the network.
 
-Install the [create-koii-task-cli from NPM](https://www.npmjs.com/package/@_koii/create-task-cli) and run the tool by running `npx @_koii/create-task-cli` in your terminal; it prompts for your wallet path. Use the path to your Koii account `id.json` that we mentioned as input.
+Install the [create-koii-task-cli from NPM](https://www.npmjs.com/package/@_koii/create-task-cli) and run the tool:
+
+```sh
+npx @_koii/create-task-cli
+```
+
+This will prompt for your wallet path. Use the path to your Koii account `id.json` that we mentioned as input.
 
 After successful input for the wallet path, the following are the prompts for the creation of the task.
 

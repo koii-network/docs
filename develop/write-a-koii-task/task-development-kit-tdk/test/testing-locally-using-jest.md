@@ -28,14 +28,6 @@ If your task is cloned from our [K2 Task Template](/develop/write-a-koii-task/ta
 ```sh
 npm install
 npm run webpack
-npm run test
-```
-
-or
-
-```sh
-npm install
-npm run webpack
 npm test
 ```
 

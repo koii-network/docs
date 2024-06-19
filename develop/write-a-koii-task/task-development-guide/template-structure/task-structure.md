@@ -25,13 +25,14 @@ Make sure you have [node](https://nodejs.org/en/) and [npm](https://docs.npmjs.c
 
 Next from inside the hello-world folder install the packages using npm or yarn:
 
-```
+```sh
 npm install
 ```
+
 The task template contains three separate JavaScript files in `task` folder that contain all of the functions for a Koii task to function properly.
 
 
-```js
+```sh
 📦K2-TASK-TEMPLATE
  ┣ 📂_koiiNode
  ┃ ┗ 📜koiiNode.js // Contain all the components that task connect to K2.
@@ -107,8 +108,6 @@ If you encounter any difficulties, feel free to contact us on [Discord](https://
 
 [^1]: **Namespace**: In programming, a namespace is a container that holds a set of identifiers, such as variable and function names, and allows them to be distinguished from others that might have the same name but are in a different namespace. In this context, it likely refers to a specific set of functions or methods within the task node that are used for managing the distribution list.
 :::
-
-
 
 The task function, audit function, and distribution function were mentioned in the previous section; you can find `task/submission.js`, `task/audit.js`, and `task/distribution.js` in the task template that contains the functions for each of these steps.
 

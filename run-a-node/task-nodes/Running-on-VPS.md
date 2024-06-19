@@ -15,17 +15,18 @@ Make sure your hardware and internet speeds meet the minimum requirements for a 
 If you decide running a node on VPS isn't for you there are other options available, like the Desktop version. Go to our website where you will be able to download the [Desktop Node](https://www.koii.network/node)
 
 ## Operating System
+
 Using **Ubuntu Server 20.04.xx LTS** is highly recommended for running Koii Nodes due to its stability and compatibility. The acronym LTS stands for "Long Term Support" which signifies that Ubuntu will provide updates and patches for this operating system until 2030.
 
 
 ## Rented VPS Node or Rented Dedicated Server
+
 A Virtual Private Server (VPS) is a type of hosting service that simulates a dedicated server environment but with shared hardware resources among multiple users. A dedicated server (DS) is a type of physical server that offers complete control over its hardware resources. This allows you to utilize all of the CPU, RAM, and storage available on the server without having to share it with other users. If your dedicated server has the necessary hardware to satisfy the combined requirements of multiple Koii Nodes, you may operate them on a single dedicated server.
 
 Due to the variations in the ordering process and customer dashboard for each server provider, we cannot provide detailed instructions for each one. We suggest installing Ubuntu 20.04 as your operating system, but if you prefer to use a different operating system then you do that at your own risk.
 
-
-
 ## Koii Node Installation
+
 **Connect with SSH**
 
 If you are renting a server or need to connect to your home-hosted server remotely, you will require an SSH client or terminal to communicate with your Koii node. If you have a preferred terminal please use that. Otherwise, Windows Command Prompt or the built-in terminal for MacOS and Linux users can be used. Putty is a free SSH client available for Windows users who prefer a graphical interface, it can be downloaded from [Here](https://www.putty.org/). To establish a remote connection to your Koii node, you will utilize SSH, also known as Secure Shell. This enables two computers to communicate over the internet. Initially, you will require your Koii node's IP address: If you are hosting from home, this will be your public IP address. If you are renting a server, your provider will give you an IP address.

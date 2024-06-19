@@ -8,9 +8,13 @@ sidebar_label: Create a repository
 
 The `create-task-cli` tool allows you to create a local repository, register and deploy a new Koii task. In this section, we'll walk you through the process of creating a new task.
 
+Run:
 
-- After running the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options.
-- To create a new local repository, select the following option:
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+and you will be presented with a set of options. To create a new local repository, select the following option:
 
 ```sh
 ? Select operation › - Use arrow-keys. Return to submit.
@@ -24,4 +28,4 @@ The `create-task-cli` tool allows you to create a local repository, register and
     upload assets to IPFS(metadata/local vars)
 ```
 
-- Then, the CLI will create a repository within the folder where you execute the command.
+The CLI will create a repository within the folder where you executed the command.

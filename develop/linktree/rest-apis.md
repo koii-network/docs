@@ -33,7 +33,7 @@ For all types of information you might need or generate in your task, it's essen
 
 To test your APIs, run:
 
-```js
+```sh
 npm start
 ```
 

@@ -5,10 +5,9 @@ image: img/thumbnail.png
 sidebar_label: Task State
 ---
 
-# Task State
 A task's state can be retrieved using the namespace methods.
 
-### getTaskState
+## getTaskState
 
 | Parameter | Type   | Description                        |
 |-----------|--------|------------------------------------|
@@ -17,8 +16,10 @@ A task's state can be retrieved using the namespace methods.
 | Return Value | Type    | Description                                  |
 |--------------|---------|----------------------------------------------|
 | response     | object  | The response from `getTaskState` call or null|
+
 Example:
-```
+
+```js
 options = {
         is_submission_required: true,
         is_distribution_required: true,
@@ -28,7 +29,7 @@ options = {
 namespaceWrapper.getTaskState(options);
 ```
 
-### getTaskSubmissionInfo
+## getTaskSubmissionInfo
 
 | Parameter | Type   | Description                   |
 |-----------|--------|-------------------------------|
@@ -37,12 +38,14 @@ namespaceWrapper.getTaskState(options);
 | Return Value        | Type    | Description                                    |
 |---------------------|---------|------------------------------------------------|
 | taskSubmissionInfo  | object  | The task submission information or null        |
+
 Example:
-```
+
+```js
 namespaceWrapper.getTaskSubmissionInfo(0);
 ```
 
-### getTaskDistributionInfo
+## getTaskDistributionInfo
 
 | Parameter | Type   | Description                      |
 |-----------|--------|----------------------------------|
@@ -51,10 +54,13 @@ namespaceWrapper.getTaskSubmissionInfo(0);
 | Return Value          | Type    | Description                                       |
 |-----------------------|---------|---------------------------------------------------|
 | taskDistributionInfo  | object  | The task distribution information or null         |
+
 Example:
-```
+
+```js
 namespaceWrapper.getTaskDistributionInfo(0);
 ```
+
 A task's state can be retrieved using the namespace methods. It returns an object containing information about the task. <br />
 
 The task state object:
@@ -92,30 +98,33 @@ The task state object:
 | migrated_to                     | New task Id to which the task is migrated                                                                                                  |
 | allowed_failed_distributions       | The number of failed distributions allowed                                                                                                 |
 | task_id       | task_id                                                                                                 |
+
 Task state sample:
 
 ```js
-taskName: 'Arweave Verifier',
-taskManager: 'FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d',
-is_allowlisted: true,
-isActive: true,
-taskAuditProgram: 'bafybeihjtsyty2sjmhriyvqlwxdldz2jkoyjr5pnko3t7jyais4kpgcdhm',
-stakePotAccount: 'stakepotaccounti1drd3maNYcUgyohxwjfNVskco5v',
-totalBountyAmount: 43635761521266,
-bountyAmountPerRound: 1000000000000,
-currentRound: undefined,
-availableBalances: [Object],
-stakeList: [Object],
-startingSlot: 7603543,
-isRunning: false,
-hasError: false,
-metadataCID: 'bafybeiek6a3ymp6xa3wluetm6v6qwsays6swhs4hihg4uzn4h2frqmzsui',
-minimumStakeAmount: 1900000000,
-roundTime: 6000,
-submissions: [Object],
-distributionsAuditTrigger: [Object],
-submissionsAuditTrigger: {},
-isMigrated: false,
-migratedTo: '',
-distributionRewardsSubmission: [Object]
+{
+  taskName: 'Arweave Verifier',
+  taskManager: 'FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d',
+  is_allowlisted: true,
+  isActive: true,
+  taskAuditProgram: 'bafybeihjtsyty2sjmhriyvqlwxdldz2jkoyjr5pnko3t7jyais4kpgcdhm',
+  stakePotAccount: 'stakepotaccounti1drd3maNYcUgyohxwjfNVskco5v',
+  totalBountyAmount: 43635761521266,
+  bountyAmountPerRound: 1000000000000,
+  currentRound: undefined,
+  availableBalances: [Object],
+  stakeList: [Object],
+  startingSlot: 7603543,
+  isRunning: false,
+  hasError: false,
+  metadataCID: 'bafybeiek6a3ymp6xa3wluetm6v6qwsays6swhs4hihg4uzn4h2frqmzsui',
+  minimumStakeAmount: 1900000000,
+  roundTime: 6000,
+  submissions: [Object],
+  distributionsAuditTrigger: [Object],
+  submissionsAuditTrigger: {},
+  isMigrated: false,
+  migratedTo: '',
+  distributionRewardsSubmission: [Object]
+}
 ```
