@@ -56,7 +56,7 @@ Version: 1.16.1
 Shred Version: 37129
 Gossip Address: 127.0.0.1:1024
 TPU Address: 127.0.0.1:1027
-JSON RPC URL: http://127.0.0.1:10899
+JSON RPC URL: http://127.0.0.1:8899
 ⠤ 00:00:06 | Processed Slot: 116529 | Confirmed Slot: 116529 | Finalized Slot: 116496 | Full Snapshot Slot: 116405 | Inc
 ```
 
@@ -79,8 +79,8 @@ Verify the settings:
 
 ```sh
 Config File: C:\Users\liang\.config\koii\cli\config.yml
-RPC URL: http://localhost:10899
-WebSocket URL: ws://localhost:10900/ (computed)
+RPC URL: http://localhost:8899
+WebSocket URL: ws://localhost:8900/ (computed)
 Keypair Path: ~/.config/koii/id.json
 Commitment: confirmed
 ```
@@ -112,8 +112,8 @@ CID of executable bafybeidumnguxqqcvgxm7fm46vkdeoqec7sxa46gljvsqobrhycsdnowhe
 ```
 
 7. **Setup Environment File**: Rename **`.env.local.example`** to **`.env.local`**. Modify the **`K2_NODE_URL`** depending on your system:
-    - Linux: **`http://127.0.0.1:10899`**
-    - Windows: **`http://host.docker.internal:10899`**
+    - Linux: **`http://127.0.0.1:8899`**
+    - Windows: **`http://host.docker.internal:8899`**
 
     Add the generated task ID to **`TASKS=`**, and populate all necessary environment variables for your task.
 
@@ -139,7 +139,7 @@ task_node  | Submitting to chain: Hello, World! 6
 1.  ECONNREFUSED error
 
 ```sh
-task_node  | FetchError: request to http://127.0.0.1:10899/ failed, reason: connect ECONNREFUSED 127.0.0.1:10899
+task_node  | FetchError: request to http://127.0.0.1:8899/ failed, reason: connect ECONNREFUSED 127.0.0.1:8899
 task_node  |     at ClientRequest.<anonymous> (/app/node_modules/node-fetch/lib/index.js:1505:11)
 task_node  |     at ClientRequest.emit (node:events:517:28)
 task_node  |     at Socket.socketErrorListener (node:_http_client:501:9)
