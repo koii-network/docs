@@ -1,1 +1,0 @@
-export { WhereToStart } from "./whereTostart";
