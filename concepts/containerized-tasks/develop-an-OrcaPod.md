@@ -49,13 +49,13 @@ This file contains your unencrypted keypair, protect this file as it grants acce
 
 The public key of the keypair file is your wallet address. To display your public key, run:
 
-```JavaScript
+```sh
 koii address
 ```
 
 It will return a string of characters like:
 
-```JavaScript
+```sh
 2kG7HNGGZHZPhdbHNzvQNQUjNNNNiQvxshLu47UvnpBq
 ```
 
@@ -67,15 +67,14 @@ Congratulations! You now have a Koii wallet, Next, let’s airdrop some KOII in 
 - Navigate to the `task-template` folder
 - Create a new directory
 
-```JavaScript
+```sh
 sudo mkdir -p config/koiii
 ```
 
 - Copy the `id.json` to the `config/koii`
 
-```JavaScript
+```sh
 sudo cp ~/.config/koii/id.json config/koii
-
 ```
 
 ## Web3Storage API Token
@@ -90,7 +89,7 @@ Replace the value of the given keys
 2. task_execution_network - Should be `DEVELOPMENT`
 3. task_audit_program_id - `main`
 
-```json
+```yaml
 # Name and metadata of your task
 task_name: "cd-demo-task"
 author: "koii"
@@ -147,7 +146,7 @@ Make sure `nodeJS` must be install in your system.
 
 Run the following command to create the task:
 
-```JS
+```sh
 npx @_koii/create-task-cli
 ```
 
@@ -159,7 +158,7 @@ npx @_koii/create-task-cli
 
 It is basically JS NPM package. Which used to communicate with ORCA.
 
-```JS
+```sh
 npm i orca-pulse
 ```
 
@@ -167,13 +166,13 @@ npm i orca-pulse
 
 Import orca-pulse in the `index.js`
 
-```JS
+```js
 const { OrcaPulse } = require('orca-pulse')
 ```
 
 Create an instance of orca-pulse in the `index.js` inside setup function.
 
-```JS
+```js
 const orcaPulse = new OrcaPulse()
 await orcaPulse.initialize(
     'userContainerImageUrl',
@@ -185,7 +184,7 @@ await orcaPulse.initialize(
 
 ### Create simple-task.js
 
-```json
+```js
 class SimpleTask {
     constructor(orcaPulse) {
         this.start(orcaPulse)
@@ -209,20 +208,19 @@ class SimpleTask {
     }
 }
 module.exports = SimpleTask
-
 ```
 
 ### Make change in CoreLogic.js
 
 Import the simple-task
 
-```JS
+```js
 const SimpleTask = require('./simple-task');
 ```
 
 Create instance of the simple task class
 
-```JS
+```js
  const result = await new SimpleTask(orcaPulse)
 ```
 
@@ -233,7 +231,7 @@ Replace the value of the Given keys
 1. TASK_ID
 2. SECRET_WEB3_STORAGE_KEY
 
-```json
+```sh
 ######################################################
 ################## DO NOT EDIT BELOW #################
 ######################################################
@@ -278,16 +276,27 @@ SECRET_WEB3_STORAGE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZX
 
 After you’ve created a task using the K2 task template as a guide, you’ll need to compile it with Webpack into a single executable file. Open up your terminal, and in the directory of your task:
 
-- Run `yarn` to install all dependencies
-- Run `yarn webpack` to compile code
-- You should see a new directory `/dist`
-- Your compiled executable is located in `/dist/main.js` That’s it! You’ve successfully compiled your task into a single executable file.
+- Install all dependencies
+
+```sh
+yarn
+```
+
+- Compile code
+
+```sh
+yarn webpack
+```
+
+- You should see a new directory `/dist`. Your compiled executable is located in `/dist/main.js`
+
+That’s it! You’ve successfully compiled your task into a single executable file.
   ​
 
 ## Run the task
 
 Make sure you are in the task-template location Run task-template using docker compose
 
-```JS
+```sh
 docker compose up
 ```
