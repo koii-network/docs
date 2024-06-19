@@ -15,7 +15,7 @@ Subscribe to receive notification anytime a slot is processed by the validator
 
 ### Code sample
 
-```bash
+```sh
 { "jsonrpc": "2.0", "id": 1, "method": "slotSubscribe" }
 ```
 

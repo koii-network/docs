@@ -31,7 +31,7 @@ Task metadata is essential structured data that provides valuable information ab
 
 Task metadata sample:
 
-```javascript
+```js
 {
   name: 'Sample Task',
   description: 'This a demo task',

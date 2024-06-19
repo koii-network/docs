@@ -62,7 +62,7 @@ Strong measures should be taken to protect this JSON file.
 
 The output of the command should be similar to the following.
 
-```bash
+```sh
 (base) PS D:\gitD\Koii\k2-task-examples-1\hello-world> create-task-cli
 (node:31956) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
@@ -102,7 +102,7 @@ TASK DATA {
 }
 Metadata {
   author: 'Soma',
-  description: "This task submits 'Hello World' to confirm that your node is online. You will earn up to 50 KOII in one day. This task will use around 1.5gb of your RAM.",       
+  description: "This task submits 'Hello World' to confirm that your node is online. You will earn up to 50 KOII in one day. This task will use around 1.5gb of your RAM.",
   repositoryUrl: 'https://github.com/koii-network/task-examples',
   createdAt: 1718289852003,
   imageUrl: 'https://bafybeiaxjv3wnyeuakhvpeah5aiuomswegn2qfk47w6hrd475gkibflhvy.ipfs.w3s.link/image.png',

@@ -6,7 +6,7 @@ sidebar_label: Task State
 ---
 
 # Task State
-A task's state can be retrieved using the namespace methods. 
+A task's state can be retrieved using the namespace methods.
 
 ### getTaskState
 
@@ -94,7 +94,7 @@ The task state object:
 | task_id       | task_id                                                                                                 |
 Task state sample:
 
-```javascript
+```js
 taskName: 'Arweave Verifier',
 taskManager: 'FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d',
 is_allowlisted: true,
@@ -119,4 +119,3 @@ isMigrated: false,
 migratedTo: '',
 distributionRewardsSubmission: [Object]
 ```
-

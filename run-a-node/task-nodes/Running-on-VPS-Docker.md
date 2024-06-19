@@ -6,16 +6,16 @@ sidebar_label: Docker Setup
 
 ## **Installing Docker**
 
-```bash
+```sh
 sudo apt install docker
 ```
-```bash
+```sh
 sudo apt install docker-compose
 ```
 
 ## Run the Docker Compose in order to launch your node
 Instructions for First-Time Runners:
-```bash
+```sh
 # Change to the VPS-task directory
 cd VPS-task
 
@@ -23,7 +23,7 @@ cd VPS-task
 docker-compose up
 ```
 Instructions for Users Who Want to Upgrade:
-```bash
+```sh
 # Navigate to the VPS-task working directory
 cd VPS-task
 
@@ -46,31 +46,31 @@ docker-compose up -d
 This command creates a staking wallet, stakes on the tasks, and then runs the tasks.
 ### TypeError [ERR_INVALID_URL]: Invalid URL
 If you encounter "TypeError [ERR_INVALID_URL]: Invalid URL" error, please verify Docker version!
-```bash
+```sh
 docker-compose --version
 ```
 ### Docker Compose Version below 1.29
 If you have a version below 1.29, please execute the next commands:
 
-```bash
-which docker-compose 
+```sh
+which docker-compose
 ```
 
 
 Update the docker-compose library. Make sure that the path in the end is the same as you retrieved from the previous command.
 
-```bash
+```sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 Give the system the permission
 
-```bash
+```sh
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 Run the Docker Compose again in order to launch your node successfully
 
-```bash
+```sh
 cd VPS-task
 docker-compose up
 ```
@@ -80,13 +80,13 @@ docker-compose up
 ## Verify
 In order to verify this:
 
-```bash
+```sh
 docker logs -f --tail 100 task_node
 ```
 
 If the logs return, something like i.e.
 
-```bash
+```sh
 task_node    | [ '4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is' ] [ '2' ]
 task_node    | Staking wallet already exists
 task_node    | { isStakingWalletExists: true }

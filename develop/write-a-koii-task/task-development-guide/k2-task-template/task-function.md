@@ -13,7 +13,7 @@ The `task` function contains the core logic of a Koii task, so when developing a
 
 The core logic for the sample task on the template is straightforward: a random number is generated, then it is converted to a string, and then a hash (or CID). The hash is a node's result, sent to K2 for auditing.
 
-```javascript
+```js
 /**
  * @description Contains the logic to do the work required
  * for submitting the values and optionally storing the result on NeDB
@@ -33,7 +33,7 @@ async function task() {
 
 The `fetchSubmission` function retrieves a node's submission value(CID) from NeDB.
 
-```javascript
+```js
 /**
  * @description Fetch's submission from NeDB
  * @returns {string} The CID
@@ -49,7 +49,7 @@ async function fetchSubmission() {
 The `submitTask` function calls the `fetchSubmission` function to retrieve the CID and submits it to K2.
 To submit results on-chain, it calls the `checkSubmissionAndUpdateRound` helper function from `namespace` and adds the CID and current round number as parameters.
 
-```javascript
+```js
 /**
  * @description Submits a node's result to K2
  * @param {number} roundNumber Current round number of the task

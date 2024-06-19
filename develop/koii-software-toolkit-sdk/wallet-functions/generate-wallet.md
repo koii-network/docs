@@ -19,7 +19,7 @@ This function creates a new Arweave wallet, but it does not return the private k
 
 ### Example Code
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 

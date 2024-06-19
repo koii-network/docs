@@ -11,7 +11,7 @@ In some cases, it may be necessary to customize the namespace object to add defa
 
 Using the K2-task template to create a new task, this `namespaceWrapper` class can be found in the `koiiNode.js` file of the `_koiiNode` directory, located in the root of the folder.&#x20;
 
-```javascript
+```js
 import { Connection } from "@_koi/web3.js";
 
 class NamespaceWrapper {

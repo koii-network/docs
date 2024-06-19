@@ -11,7 +11,7 @@ This section provides clear instructions on how to activate and deactivate a Koi
 
 1. To activate a task, select the `Activate/Deactivate task` option as shown below:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new local repository
     Deploy a new task
@@ -25,20 +25,20 @@ This section provides clear instructions on how to activate and deactivate a Koi
 
 2. Enter your task ID:
 
-    ```bash
+    ```sh
     ? Enter the task id › 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
     ```
 
 3. Select `Active`:
 
-    ```bash
+    ```sh
     ? Do you want to set the task to Active or Inactive? › - Use arrow-keys. Return to submit.
     ❯   Active - Set the task active
         Inactive
     ```
 
 Upon successful activation, you should see an output similar to this:
-```bash
+```sh
 Calling SetActive
 ✔ Enter the task id … 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
 ✔ Do you want to set the task to Active or Inactive? › Active
@@ -49,7 +49,7 @@ Success
 
 1. To deactivate a task, select the `Activate/Deactivate task` option as shown below:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new local repository
     Deploy a new task
@@ -63,20 +63,20 @@ Success
 
 2. Enter your task ID:
 
-    ```bash
+    ```sh
     ? Enter the task id › 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
     ```
 
 3. Select `Inactive`:
 
-    ```bash
+    ```sh
     ? Do you want to set the task to Active or Inactive? › - Use arrow-keys. Return to submit.
     ❯   Active - Set the task active
         Inactive
     ```
 
 Upon successful deactivation, you should see an output similar to this:
-```bash
+```sh
 Calling SetActive
 ✔ Enter the task id … 5ZsWFdZhwaQ2PA5mq92z8aeozxYHHsnYSTSkSTWcnmfS
 ✔ Do you want to set the task to Active or Inactive? › Inactive

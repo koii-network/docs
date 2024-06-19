@@ -15,17 +15,17 @@ import Description from "@site/src/components/description";
 
 ### Install ethers.js to interact with Ethereum
 
-With our Finnie wallet properly set and initialized, it's time to create our `collectiblesContract`  
-&#8211; an exemplary contract that can be used to mint NFTs.  
+With our Finnie wallet properly set and initialized, it's time to create our `collectiblesContract`
+&#8211; an exemplary contract that can be used to mint NFTs.
 In the following example, we will use `ethers.js` library to interact with the `Ethereum` blockchain. You can install it by running:
 
-```bash
+```sh
 npm install --save ethers
 ```
 
 Check their [documentation ](https://docs.ethers.io/v5/getting-started/)for more details.
 
-```javascript
+```js
 // First, lets import the ethers.js
 import { ethers } from "ethers";
 

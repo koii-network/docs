@@ -17,7 +17,7 @@ A distribution list is a JSON object that contains a key-value pair, where the _
 
 Distribution list example:
 
-```javascript
+```js
 const distributionList = {
   "29SSj6EQARvATESSQbBcmSE3A1iaWwqXFunzAEDoV7Xj": 100,
   "3KUfsjpjCSCjwCBm4TraM5cGx6YzEUo9rrq2hrSsJw3x": 200,
@@ -37,7 +37,7 @@ For the example on the template:
 - The `submissions_audit_trigger` is also retrieved from the task's data; this object contains information about the audited submissions
 - If `submissions` is null, an empty distribution list is returned. Otherwise, the keys and values of the `submissions` are grouped separately and in a loop, it calculates the audits on each submission and how many votes on the audit, and based on that it makes a decision.
 
-```javascript
+```js
 /**
  * @description Generates a distribution list that contains the key:value pair
  * of participating nodes' public keys and amount of KOII to be rewarded.
@@ -98,7 +98,7 @@ For the example on the template:
 - The `generateDistributionList()` is called to retrieve the distribution list
 - The distribution list is submitted on-chain
 
-```javascript
+```js
 /**
  * @description Submits distribution list to K2 including the current round
  *

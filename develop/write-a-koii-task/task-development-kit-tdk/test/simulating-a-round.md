@@ -9,7 +9,7 @@ You can also simulate a round by calling the task functions in a separate javasc
 
 Here is an example code that you can use in your tests folder:
 
-```javascript
+```js
 const { coreLogic } = require("../coreLogic");
 
 const run = async () => {

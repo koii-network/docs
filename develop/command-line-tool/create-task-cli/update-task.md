@@ -11,7 +11,7 @@ Now that we have covered creating a task, let's explore the process of updating 
 
 - After executing the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To update an existing task, select the following option:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
     Create a new local repository
     Deploy a new task
@@ -25,7 +25,7 @@ Now that we have covered creating a task, let's explore the process of updating 
 
 - Similar to creating a task, there are two options available for updating a task:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   using CLI
     using config YML
@@ -61,12 +61,12 @@ When using this option to update a task, you will be prompted to provide the tas
 - The first information to provide is the task's ID:
 
 ```
-✔ Enter the ID of the task you want to edit > 
+✔ Enter the ID of the task you want to edit >
 ```
 
 - Next, you'll be prompted to provide the new information you want to update the task with:
 
-```bash
+```sh
 ✔ Enter the name of the task … Updated task name
 ✔ Enter a short description of your task … Updated task description
 ✔ Please select the type of network › DEVELOPMENT
@@ -77,7 +77,7 @@ When using this option to update a task, you will be prompted to provide the tas
 ✔ Enter the minimum staking amount for the task (in KOII) … 2
 ✔ Enter the bounty amount per round (In KOII) … 10
 ✔ Enter the number of distribution list submission retry in case it fails … 3
-✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). … 
+✔ Enter TaskMetadata CID hosted on IPFS (Leave empty for None). …
 ✔ Enter the space, you want to allocate for task account (in MBs) … 10
 ? Your account will be deducted 69.60090088 KOII for creating the task, which includes the rent exemption (69.60090088 KOII) and bounty amount fees is taken from the last task › (y/N)
 ```

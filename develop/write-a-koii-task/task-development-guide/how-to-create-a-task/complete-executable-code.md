@@ -2,7 +2,7 @@
 
 Putting all of the pieces together, this is the full executable:
 
-```javascript
+```js
 const { namespaceWrapper } = require("./namespaceWrapper");
 const crypto = require("crypto");
 

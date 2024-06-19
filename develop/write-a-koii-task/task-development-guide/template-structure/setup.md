@@ -20,7 +20,7 @@ The `defaultTaskSetup` function does the following:
 
 The `setup` function:
 
-```javascript
+```js
 async function setup() {
   console.log("setup function called");
   // Run default setup

@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 To get started, execute the command `npx @_koii/create-task-cli@latest`. Then, choose the first option, `Create a new local repository`.
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new local repository
     Deploy a new task
@@ -31,7 +31,7 @@ npm install
 The task template contains three separate JavaScript files in `task` folder that contain all of the functions for a Koii task to function properly.
 
 
-```javascript
+```js
 📦K2-TASK-TEMPLATE
  ┣ 📂_koiiNode
  ┃ ┗ 📜koiiNode.js // Contain all the components that task connect to K2.

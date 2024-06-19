@@ -19,7 +19,7 @@ API functions serve the purpose of sending HTTP requests and interacting with th
 
 Here is an example illustrating how the **POST** request method is implemented in the [Linktree project](https://github.com/koii-network/linktree-app/blob/main/src/api.js#L143):
 
-```javascript
+```js
 async function setLinktree(data, publicKey, nodeList, username) {
     let result;
     while (!result && nodeList[nodeListIndex]) {

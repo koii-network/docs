@@ -9,7 +9,7 @@ sidebar_label: Unit tests
 
 In the `/tests` folder, we also provide a unitTest.js file. It helps you to test your task steps separately. You can run the unitTest.js file by:
 
-```bash
+```sh
 node tests/unitTest.js
 ```
 
@@ -19,13 +19,13 @@ In this file, we provide a simple example of how to use the unitTest.js file. Yo
 
 This function is the main loop function of your task. It should contain all the core logic of your task. First, we run `coreLogic.task()`
 
-```javascript
+```js
 await coreLogic.task();
 ```
 
 This function usually creates the cid or proof and stores it in the database. Then we check and fetch the result of the cid. In the next function, we should upload the cid to k2.
 
-```javascript
+```js
 const submission = await coreLogic.fetchSubmission();
 ```
 

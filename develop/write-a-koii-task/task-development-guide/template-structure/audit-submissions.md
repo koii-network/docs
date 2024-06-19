@@ -12,7 +12,7 @@ Audit submissions, `task/audit.js` contains the main job function that is respon
 
 In the past executed rounds, we have a example that user submit a string "Hello, World!" in the `submitTask` function. In the `auditTask` function, we can check if the user's submission is valid or not. Here is an example of a `auditTask` function:
 
-```javascript
+```js
 async auditTask(roundNumber) {
     await namespaceWrapper.validateAndVoteOnNodes(
         this.validateNode,
@@ -23,7 +23,7 @@ async auditTask(roundNumber) {
 
 In this flow, `auditTask` function will be called in each round to audit the user's submission. The `validateNode` function is passed to a helper function called `validateAndVoteOnNodes` where it will be run for each node that has submitted. The `validateNode` function should return true/false to vote the node's submissions. The `validateNode` function will be given the following params to validate a node:
 
-```javascript
+```js
 async validateNode(submission_value, round) {
     // Write your logic for the validation of submission value here and return a boolean value in response
     // The sample logic can be something like mentioned below to validate the submission

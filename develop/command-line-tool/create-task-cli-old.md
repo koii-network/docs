@@ -49,7 +49,7 @@ Don't have a Koii wallet yet? Check [here](/develop/command-line-tool/koii-cli/c
 
 - Next, you will be prompted with seven options, select `Create a new task` to create a new task:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   Create a new task
     update existing task
@@ -62,7 +62,7 @@ Don't have a Koii wallet yet? Check [here](/develop/command-line-tool/koii-cli/c
 
 - There are two options to create a new task, the next prompt asks you to select how you want to create your task:
 
-```bash
+```sh
 ? Select operation › - Use arrow-keys. Return to submit.
 ❯   using CLI
     using config YML

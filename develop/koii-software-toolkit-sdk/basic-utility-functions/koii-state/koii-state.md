@@ -19,7 +19,7 @@ This function gets the attention contract ID running on the bundler.
 
 ### Example Code
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 

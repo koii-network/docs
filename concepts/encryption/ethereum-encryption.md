@@ -42,7 +42,7 @@ Compress the `publicKey` and use the `EthCrypto.encryptWithPublicKey` method to 
 
 Return a smaller string representation of the encrypted data.
 
-```javascript
+```js
 async function encryptMessage(publicKey, message) {
   // Compress publicKey
   const compressedPublicKey = EthCrypto.publicKey.compress(publicKey);
@@ -99,4 +99,3 @@ async function main() {
 ## Conclusion
 
 Using Solana and Ethereum keys to encrypt and decrypt messages provides a powerful solution for secure communication in decentralized environments. Users can ensure confidentiality, integrity, and privacy in their digital interactions by leveraging these platforms' cryptographic capabilities.
-

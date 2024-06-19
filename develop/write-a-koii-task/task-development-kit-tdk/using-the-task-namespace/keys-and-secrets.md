@@ -33,13 +33,13 @@ The `fork()` method accepts the following three arguments:
 - `args` — An `array`of `string` to pass as the child process arguments
 - `options` — An `object` that you want to pass to the child process
 
-```javascript
+```js
 fork("file.js", ["argument"], options);
 ```
 
 The second argument passed to the `fork()` method will be accepted by the child process as command-line arguments, which you can retrieve in a Koii task using the `process.argv()` property:
 
-```javascript
+```js
 const TASK_NAME = process.argv[2];
 const TASK_ID = process.argv[3];
 const EXPRESS_PORT = process.argv[4];
@@ -53,7 +53,7 @@ const STAKE = Number(process.argv[10]);
 
 If you're using the k2-task-template to create a task, you should see the keys and secrets already retrieved in the `init.js` file:
 
-```javascript
+```js
 const express = require("express");
 const TASK_NAME = process.argv[2];
 const TASK_ID = process.argv[3];

@@ -31,7 +31,7 @@ npm i crypto
 
 Import package:
 
-```javascript
+```js
 const { namespaceWrapper } = require("./namespaceWrapper");
 const crypto = require("crypto");
 ```

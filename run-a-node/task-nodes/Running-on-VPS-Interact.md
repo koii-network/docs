@@ -8,11 +8,11 @@ sidebar_label: Interact with Running Nodes
 
 1. Install dependencies (NodeJS + NPM)
 
-```bash
+```sh
 sudo apt install npm
 ```
 
-```bash
+```sh
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install -g npm@latest
@@ -21,7 +21,7 @@ sudo npm install -g npm@latest
 Execute the command 'create-task-cli' and you will see an interactive menu
 
 
-```bash
+```sh
 npx @_koii/create-task-cli@latest
 
 ```
@@ -81,18 +81,18 @@ Success
 
 In order to have a semi-automatic way to claim $KOII rewards, you first need to get prerequisites which have to be stored in your server for Koii CLaimer to function.
 
-```bash
+```sh
 git clone https://github.com/eviangel/Koii_claimer
 ```
 
 Then we enter that exact directory where the installation files can be found.
-```bash
+```sh
 cd Koii_claimer
 ```
 
 Then we need to create a .json file that contains the task configurations in order to claim rewards correctly
 
-```bash
+```sh
 nano params.json
 ```
 
