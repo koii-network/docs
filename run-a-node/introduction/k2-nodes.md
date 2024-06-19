@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: K2 Validators
 ---
 
-![Banner](./img/Running%20a%20K2%20Node.svg)
+![Banner](/img/run-a-node/run-k2-node.svg)
 
 ## K2 Validators
 

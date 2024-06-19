@@ -9,7 +9,7 @@ sidebar_label: K2 Task Template
 
 Tasks run following a periodic structure of "rounds":
 
-![execute task](../../img/execute_task.png)
+![execute task](/img/develop/write-task/execute-task.png)
 
 Each round is set by a specific time period, and nodes participate by uploading data to IPFS, posting CIDs to the K2 settlement layer, and sending messages across REST APIs and WebSockets.
 
@@ -88,7 +88,7 @@ koii config get
 
 This should return something similar to the following:
 
-![execute task](../../img/k2-wallet-key.png)
+![execute task](/img/develop/write-task/k2-wallet-key.png)
 
 ```sh
 Config File: /home/<user>/.config/koii/cli/config.yml

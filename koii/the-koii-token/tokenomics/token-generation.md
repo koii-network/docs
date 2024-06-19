@@ -11,11 +11,10 @@ At <Tooltip text='Mainnet launch'/>, the network will have a supply of 10,000,00
 
 :::info In Practice
 Every 12 hours, 500,000 new tokens (0.005% of the total supply) are minted for the community.
-
 :::
 
 The newly generated tokens are split between <Tooltip text='Attention Mining'/>, <Tooltip text='K2 Validators'/> and <Tooltip text='Task Nodes'/> that run the attention game.
 
-![Token Generation](img/TokenGeneration.svg)
+![Token Generation](/img/koii/tokenomics/token-generation.svg)
 
 Attention mining receives **50%** of new tokens, K2 settlement layer nodes receive **50%**. This ensures that content creators who use Koii are rewarded fairly.

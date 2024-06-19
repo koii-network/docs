@@ -11,7 +11,7 @@ import { DownloadLinks } from "@site/src/lib/DesktopNodeDownload";
 
 A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
-![Time to Node](./img/1.%20welcome.png)
+![Time to Node](/img/run-a-node/task-node/welcome.png)
 
 ## PIN & Secret Phrase
 
@@ -27,7 +27,7 @@ Click “Create a New Account”.
 
 If you’ve already been through this flow and want to use an account or Koii Key you already have, you can import it here instead of using your secret phrase.
 
-![Secret phrase](./img/2.%20Create%20New%20account.png)
+![Secret phrase](/img/run-a-node/task-node/create-new-account.png)
 
 ## Funding your account
 
@@ -48,13 +48,13 @@ Right now, three tokens will be enough to run your first task and cover any tran
 Suppose you’re new and don’t have any KOII yet, welcome! We’re thrilled to have you.
 The “Get My Free Tokens” button will open a browser tab and take you to the KOII faucet. There you can get up to 16 tokens for proving you exist—verifying your email, Twitter, etc.
 
-![Faucet](./img/faucet%201.png)
+![Faucet](/img/run-a-node/task-node/faucet.png)
 
 Verifying two methods will give you enough tokens to get started, but the more tokens you have the more you can earn, so verify all four!
 
 After verifying each method, head back to the Node window. Click the refresh button to tell your node you’ve received the tokens.
 
-![Fund Refresh](./img/3.%20Fund%20refresh.png)
+![Fund Refresh](/img/run-a-node/task-node/fund-refresh.png)
 
 ## Run your first task
 
@@ -64,7 +64,7 @@ These tokens serve as a promise to run the task properly. As long as your comput
 
 On this screen, there is one task to run. You’ll see the name of this onboarding task, “I’m a Task. Free Tokens!” the creator address, and a staking entry.
 
-![Stake and Run](./img/4.%20stake%20and%20run.png)
+![Stake and Run](/img/run-a-node/task-node/stake-and-run.png)
 
 So enter at least 2 tokens in the staking box, and click “Run Tasks.” The next screen is a quick confirmation.
 
@@ -76,7 +76,7 @@ As mentioned above, the reason to stake on a Task is to make sure everyone plays
 
 You can learn more about how this works [in the documentation here](/concepts/gradual-consensus/runtime-flow).
 
-![Confirm Task](./img/5.%20confirm.png)
+![Confirm Task](/img/run-a-node/task-node/confirm.png)
 
 That said, if you participate in the _execution_ stage of a task, you must remain staked until after the _reward distribution_ for that round. So your stake will be locked for up to three rounds after you stop that task.
 
@@ -86,7 +86,7 @@ After a few seconds, you’ll see the “My Node” page. This is where you can 
 
 For many tasks, all you have to do is enter the minimum stake amount (or more) in the staking box, then click the “Run Task” play button.
 
-![Available Task](./img/Available%20Task.png)
+![Available Task](/img/run-a-node/task-node/available-task.png)
 
 Some tasks will require configuring _task settings_, which includes things like API token so your node can store files on IPFS, or an Ethereum key to bridge data between chains. If a task requires additional settings, the gear icon in the settings column will turn orange to let you know you need to configure those.
 

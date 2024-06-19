@@ -48,7 +48,7 @@ Once the file has been fully downloaded, open it. Your computer will warn you th
 
 A small finder window will pop up. Drag the Koii Node icon on top of the Applications folder icon. Then you can double-click the Koii Node icon to open it.
 
-![drag and drop](./img/drag%20and%20drop.png)
+![drag and drop](/img/run-a-node/task-node/drag-and-drop.png)
 
 ### Linux Download
 

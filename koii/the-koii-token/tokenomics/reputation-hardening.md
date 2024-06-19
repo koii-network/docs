@@ -19,6 +19,6 @@ In attention mining, reputation prevents spam and rewards high-value contributio
 
 In the compute marketplace, a node's reputation allows it to perform more work with less stake and earn more rewards because it is less likely to behave badly.
 
-![Reputation Hardening](./img/Reputation%20Hardening%402x.svg)
+![Reputation Hardening](/img/koii/tokenomics/reputation-hardening.svg)
 
 As the network grows, we expect to see rewards go disproportionately to participants with high reputations, and build a strong core group of committed community members who will hold these tokens for the long term, further reducing supply.

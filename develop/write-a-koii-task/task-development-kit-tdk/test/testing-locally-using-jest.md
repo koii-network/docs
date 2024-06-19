@@ -9,7 +9,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Testing Locally Using Jest
 
-![banner](../../img/Developing%20Locally%20with%20Docker.svg)
+![banner](/img/develop/write-task/developing-locally-with-docker.svg)
 
 We provide a testing suite that makes task development very seamless and straightforward. We chose to use Jest in order to provide all the required task development resources in a consistent and isolated environment.
 
@@ -52,7 +52,7 @@ It will check that your task should:
 
 Your task should pass all the tests. If not, please check the error message and fix it. The task that passes the jest test looks like this:
 
-![Test Pass](../../img/testpass.png)
+![Test Pass](/img/develop/write-task/tests-passed.png)
 
 ## How to configure your test?
 

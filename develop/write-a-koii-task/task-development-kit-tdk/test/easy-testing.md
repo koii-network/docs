@@ -14,7 +14,7 @@ Here's a step-by-step guide to using Easy Testing:
 
 ### Step 1: Set up .env (optional)
 
-![Easy Testing Step 1](./img/easy_testing1.png)
+![Easy Testing Step 1](/img/develop/write-task/easy-testing/setup-env.png)
 
 ```sh
 TASK_ID = "AK2P1L8NWGwWarbHeM7tX2mr4hJA7ZVXGSSSz5PWHBHv";
@@ -33,7 +33,7 @@ To deploy your task, please use yarn webpack again to avoid leaking your environ
 
 ### **Step 2: Modify Your Code**
 
-![Easy Testing Step 2](./img//easy_testing2.png)
+![Easy Testing Step 2](/img/develop/write-task/easy-testing/modify-code.png)
 
 ```sh
 ...
@@ -50,7 +50,7 @@ This setup enables our program to capture logs related to testing and provide yo
 
 ### **Step 3: Monitor and Push Updates**
 
-![Easy Testing Step 3](./img/easy_testing3.png)
+![Easy Testing Step 3](/img/develop/write-task/easy-testing/push-updates.png)
 
 ```sh
 npm run prod-debug
@@ -60,7 +60,7 @@ This command facilitates continuous monitoring and updating, ensuring that any c
 
 ### **Step 4: Run the Testing Task**
 
-## ![Easy Testing Step 4](./img/easy_testing4.png)
+![Easy Testing Step 4](/img/develop/write-task/easy-testing/testing-task.png)
 
 Now, you should be able to observe the output in your task.
 
@@ -72,7 +72,7 @@ The easy testing task we provided does not include audit and distribution functi
 
 You’ve now successfully debugged the Easy Testing task in real time directly on Koii Node! Next, you’ll see you can easily filter logs with specific keywords!
 
-![Easy Testing Step 5](./img/easy_testing5.png)
+![Easy Testing Step 5](/img/develop/write-task/easy-testing/filter-logs.png)
 
 ### **Step 1: Navigate to debugger.js**
 
