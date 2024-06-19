@@ -80,11 +80,17 @@ Complete the following to deploy your task on the k2 testnet and test it locally
 
 ### Find or create a k2 wallet key
 
-If you have already generated a Koii wallet on your filesystem you can obtain the path to it by running `koii config get` which should return something similar to the following:
+If you have already generated a Koii wallet on your filesystem you can obtain the path to it by running:
+
+```sh
+koii config get
+```
+
+This should return something similar to the following:
 
 ![execute task](../../img/k2-wallet-key.png)
 
-```bash
+```sh
 Config File: /home/<user>/.config/koii/cli/config.yml
 RPC URL: https://testnet.koii.network/
 WebSocket URL: wss://testnet.koii.network/ (computed)

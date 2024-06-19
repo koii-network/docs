@@ -17,11 +17,15 @@ Direct users to the appropriate deposit address when they want to deposit KOII i
 
 Deposit accounts must be rent-exempt. This is done by making sure their balance is at least 2 years worth of [rent](/concepts/settlement-layer/rent) in KOII.
 
-To find the minimum rent-exempt amount you need for your deposit accounts, query [`getMinimumBalanceForRentExemption`](/develop/rpcapi/http/getminimumbalanceforrentexemption) or use the `koii rent 0` command via the CLI.
+To find the minimum rent-exempt amount you need for your deposit accounts, query [`getMinimumBalanceForRentExemption`](/develop/rpcapi/http/getminimumbalanceforrentexemption) or run the CLI command:
+
+```sh
+koii rent 0
+````
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -59,7 +63,7 @@ In order to track deposit accounts, you should poll for each confirmed block and
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -88,7 +92,7 @@ Once you have the blocks to be processed, you can request each block's contents 
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -196,7 +200,7 @@ To query an address:
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
@@ -249,7 +253,7 @@ To query an address:
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc":"2.0",
       "id":1,
@@ -354,7 +358,7 @@ You can easily ensure that a transfer is successful by sending a synchronous tra
 
 The Koii CLI tool offers the command `koii transfer`, which allows you manage and confirm transfer transactions. This method is synchronous, so it continue to track progress until the transfer has been finalized. It will also report any errors in the event the transfer fails.
 
-```bash
+```sh
     koii transfer <USER_ADDRESS> <AMOUNT> --allow-unfunded-recipient --keypair <KEYPAIR> --url http://localhost:10899
 ```
 
@@ -370,13 +374,13 @@ To ensure you do not double spend, it is *vital* that you do not retry a withdra
 
 To get the recent blockhash, send a request to [`getFees`](/develop/rpcapi/http/getfees).
 
-```bash
+```sh
     koii fees --url http://localhost:10899
 ```
 
 To send a transaction asynchronously, pass the `--no-wait` flag in the Koii CLI tool and include the recent blockhash with the `--blockhash` argument.
 
-```bash
+```sh
     koii transfer <USER_ADDRESS> <AMOUNT> --no-wait --allow-unfunded-recipient --blockhash <RECENT_BLOCKHASH> --keypair <KEYPAIR> --url http://localhost:10899
 ```
 
@@ -388,7 +392,7 @@ You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatus
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc":"2.0",
       "id":1,
@@ -523,7 +527,7 @@ Similarly, every deposit account must contain at least this balance.
 
 ### Request
 
-```bash
+```sh
     curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,

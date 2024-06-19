@@ -112,14 +112,13 @@ Please change the beneficiaryAccount here to make it your wallet public address.
 
 Then all you need is to call :
 
-
-```bash
+```sh
 npx koii_claimrewards@latest params.json
 ```
 
 ## Additional helpful commands you should know
 
-```bash
+```sh
 koii -u https://testnet.koii.network balance
 koii --version
 koii address
@@ -128,13 +127,10 @@ koii-keygen pubkey staking_wallet.json /or/ id.json
 
 If you encounter after server restart that your "koii" commands are not working, you should set PATH again in order to fully function KOII CLI!
 
-```bash
+```sh
 export PATH="/root/.local/share/koii/install/active_release/bin:$PATH" --check to verify what is your correct path in the certain server!
 ```
 
 Feel free to reach out to us in [Discord](https://discord.gg/koii-network) if you have any further questions or need assistance.
 
 The thing to note: You should always have to keep your Staking_Public_Key balance filled.
-
-
-

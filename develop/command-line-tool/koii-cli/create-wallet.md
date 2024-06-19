@@ -11,7 +11,8 @@ Koii supports a file system wallet that can be used to interface directly with t
 >_Source_ [_Solana_](https://docs.solana.com/wallet-guide/cli#file-system-wallet)
 
 To generate a file system wallet keypair, use Koii's command-line tool `koii-keygen`. Run the following command:
-```bash
+
+```sh
 koii-keygen new --outfile ~/.config/koii/id.json
 ```
 
@@ -20,11 +21,14 @@ This file contains your **unencrypted keypair**, protect this file as it grants 
 :::
 
 The public key of the keypair file is your wallet address. To display your public key, run:
-```
+
+```sh
 koii address
 ```
-It will return a string of characters like:
-```
+
+It will return a public key, which is a string of characters like this:
+
+```sh
 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBq
 ```
 

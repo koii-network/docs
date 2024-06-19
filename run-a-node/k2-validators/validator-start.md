@@ -9,8 +9,8 @@ sidebar_label: Starting a Validator
 
 The Koii cli includes `get` and `set` configuration commands to automatically set the `--url` argument for cli commands. For example:
 
-```bash
-koii config set --url https://testnet.koii.network 
+```sh
+koii config set --url https://testnet.koii.network
 ```
 
 While this section demonstrates how to connect to the Devnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
@@ -19,7 +19,7 @@ While this section demonstrates how to connect to the Devnet cluster, the steps 
 
 Before attaching a validator node, sanity check that the cluster is accessible to your machine by fetching the transaction count:
 
-```bash
+```sh
 koii transaction-count
 ```
 
@@ -31,7 +31,7 @@ If you would prefer to manage system settings on your own, you may do so with th
 
 #### Optimize sysctl knobs
 
-```bash
+```sh
 sudo bash -c "cat >/etc/sysctl.d/21-koii-validator.conf <<EOF
 # Increase UDP buffer sizes
 net.core.rmem_default = 134217728
@@ -46,7 +46,8 @@ vm.max_map_count = 1000000
 fs.nr_open = 1000000
 EOF"
 ```
-```bash
+
+```sh
 sudo sysctl -p /etc/sysctl.d/21-koii-validator.conf
 ```
 
@@ -54,67 +55,69 @@ sudo sysctl -p /etc/sysctl.d/21-koii-validator.conf
 
 Add
 
-```bash
+```sh
 LimitNOFILE=1000000
 ```
+
 to the `[Service]` section of your systemd service file, if you use one, otherwise add
 
-```bash
+```sh
 DefaultLimitNOFILE=1000000
 ```
 
 to the `[Manager]` section of `/etc/systemd/system.conf`.
 
-```bash
+```sh
 sudo systemctl daemon-reload
 ```
-```bash
+
+```sh
 sudo bash -c "cat >/etc/security/limits.d/90-koii-nofiles.conf <<EOF
 # Increase process file descriptor count limit
 * - nofile 1000000
 EOF"
 ```
-```bash
-### Close all open sessions (log out then, in again) ###
-```
+
+Close all open sessions (log out then, in again)
 
 #### System Clock
 
 Large system clock drift can prevent a node from properly participating in Koii's gossip protocol. Ensure that your system clock is accurate. To check the current system clock, use:
 
-```bash
+```sh
 timedatectl
 ```
+
 Operators commonly use an ntp server to maintain an accurate system clock.
 
 ## Generate identity
 
 Create an identity keypair for your validator by running:
 
-```bash
+```sh
 koii-keygen new -o ~/validator-keypair.json
 ```
 
 The identity public key can now be viewed by running:
 
-```bash
+```sh
 koii-keygen pubkey ~/validator-keypair.json
 ```
 
-:::note 
+:::note
 The "validator-keypair.json” file is also your (ed25519) private key.
 :::
 
 ### Paper Wallet identity
 You can create a paper wallet for your identity file instead of writing the keypair file to disk with:
 
-```bash
+```sh
 koii-keygen new --no-outfile
 ```
 
 The corresponding identity public key can now be viewed by running:
 
-```bash
+```sh
 koii-keygen pubkey ASK
 ```
 
@@ -123,24 +126,24 @@ and then entering your seed phrase.
 ## More Koii CLI Configuration
 Now that you have a keypair, set the koii configuration to use your validator keypair for all following commands:
 
-```bash
+```sh
 koii config set --keypair ~/validator-keypair.json
 ```
 
 You should see the following output:
 
-```bash
+```sh
 Config File: /home/koii/.config/koii/cli/config.yml
-RPC URL: https://testnet.koii.network 
+RPC URL: https://testnet.koii.network
 WebSocket URL: wss://testnet.koii.network/ (computed)
 Keypair Path: /home/koii/validator-keypair.json
-Commitment: confirmed 
+Commitment: confirmed
 ```
 
 ## Airdrop & Check Validator Balance
 Airdrop yourself some KOII to get started:
 
-```bash
+```sh
 koii airdrop 1
 ```
 
@@ -148,25 +151,25 @@ Note that airdrops are only available on Devnet and Testnet. Both are limited to
 
 To view your current balance:
 
-```bash
+```sh
 koii balance
 ```
 
 Or to see in finer detail:
 
-```bash
-koii balance --lamports
+```sh
+koii balance --roe
 ```
 
-:::note
-If the air drop fails, you may need to wait a few minutes and try again. If you still don't receive the air drop, please reach out to the Koii team on [Discord](https://discord.gg/koii-network).
+:::info
+If the airdrop fails, you may need to wait a few minutes and try again. If you still don't receive the air drop, please reach out to the Koii team on [Discord](https://discord.gg/koii-network).
 :::
 
 ## Create Authorized Withdrawer Account
 
 If you haven't already done so, create an authorized-withdrawer keypair to be used as the ultimate authority over your validator. This keypair will have the authority to withdraw from your vote account, and will have the additional authority to change all other aspects of your vote account. Needless to say, this is a very important keypair as anyone who possesses it can make any changes to your vote account, including taking ownership of it permanently. So it is very important to keep your authorized-withdrawer keypair in a safe location. It does not need to be stored on your validator, and should not be stored anywhere from where it could be accessed by unauthorized parties. To create your authorized-withdrawer keypair:
 
-```bash
+```sh
 koii-keygen new -o ~/authorized-withdrawer-keypair.json
 ```
 
@@ -174,12 +177,13 @@ koii-keygen new -o ~/authorized-withdrawer-keypair.json
 
 If you haven’t already done so, create a vote-account keypair and create the vote account on the network. If you have completed this step, you should see the “vote-account-keypair.json” in your Koii runtime directory:
 
-```bash
+```sh
 koii-keygen new -o ~/vote-account-keypair.json
 ```
 
 The following command can be used to create your vote account on the blockchain with all the default options:
-```bash
+
+```sh
 koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/authorized-withdrawer-keypair.json
 ```
 
@@ -195,19 +199,19 @@ It is highly recommended you use these options to prevent malicious snapshot sta
 
 Connect to the cluster by running:
 
-```bash
+```sh
 #!/usr/bin/env bash
 
 exec koii-validator \
   --identity /home/koii/validator-keypair.json \
   --vote-account vote-account-keypair.json \
   --ledger /home/koii/validator-ledger \
-  --accounts /home/koii/validator-accounts \ 
+  --accounts /home/koii/validator-accounts \
   --rpc-bind-address 0.0.0.0 \
   --dynamic-port-range 10000-10500 \
   --rpc-port 10899 --gossip-port 10001 \
   --log /home/koii/koii-validator.log \
-  --limit-ledger-size \ 
+  --limit-ledger-size \
   --only-known-rpc \
   --entrypoint testnet-validator-1.koii.network:10001 \
   --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \
@@ -225,13 +229,15 @@ You can use a paper wallet seed phrase for your `--identity` and/or `--authorize
 
 Confirm your validator is connected to the network by opening a new terminal and running:
 
-`koii gossip`
+```sh
+koii gossip
+```
 
 If your validator is connected, its public key and IP address will appear in the list.
 
 ### Controlling local network port allocation
 
-By default the validator will dynamically select available network ports in the 10000-10500 range, and may be overridden with `--dynamic-port-range`. For example, koii-validator `--dynamic-port-range 10000-10500 ...` will restrict the validator to ports 10000-10500.
+By default the validator will dynamically select available network ports in the 10000-10500 range, and may be overridden with `--dynamic-port-range`. For example, `koii-validator --dynamic-port-range 10000-10500 ...` will restrict the validator to ports 10000-10500.
 
 ### Limiting ledger size to conserve disk space
 
@@ -251,7 +257,7 @@ Running the validator as a systemd unit is one easy way to manage running in the
 
 Assuming you have a user called `koii` on your machine, create the file `/etc/systemd/system/koii.service` with the following:
 
-```bash
+```sh
 [Unit]
 Description=Koii Validator
 After=network.target
@@ -277,7 +283,7 @@ Ensure that running `/home/koii/bin/validator.sh` manually starts the validator 
 
 Start the service with:
 
-```bash
+```sh
 sudo systemctl enable --now koii
 ```
 
@@ -301,7 +307,7 @@ If the validator is being started by a wrapper shell script, it is important to 
 
 An example setup for the `logrotate`, which assumes that the validator is running as a systemd service called `koii.service` and writes a log file at `/home/koii/koii-validator.log`:
 
-```bash
+```sh
 # Setup log rotation
 
 cat > logrotate.koii <<EOF

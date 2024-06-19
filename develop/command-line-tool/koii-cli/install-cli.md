@@ -33,9 +33,11 @@ The KOII CLI can be installed in various ways based on your operating system:
 
    - Copy and paste the following command into the Command Prompt, then press Enter:
 
-     ```
+     ```sh
      cmd /c "curl -L https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
      ```
+
+     <!-- TODO: Can we use a URL redirect so we don't need to keep updating the version in the docs? -->
 
      :::tip
      - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe).
@@ -58,11 +60,14 @@ The KOII CLI can be installed in various ways based on your operating system:
 5. Close the Command Prompt window and open a new one as a normal user.
 
 6. To confirm that the Koii CLI was successfully installed, run the following command:
-   ```
+
+   ```sh
    koii --version
    ```
+
    - You should see the version information similar to this:
-     ```
+
+     ```sh
      koii-cli 1.16.2
      ```
 
@@ -70,7 +75,7 @@ The KOII CLI can be installed in various ways based on your operating system:
 
 1. Open your terminal and execute the following command:
 
-```
+```sh
 sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
 ```
 
@@ -78,7 +83,7 @@ This command will download and install the necessary Koii tools.
 
 2. Depending on your operating system, you may receive the following prompt:
 
-```
+```sh
 Please update your PATH environment variable to include the koii programs:
 ```
 
@@ -88,20 +93,21 @@ If you encounter this message, proceed to the next step. Otherwise, move on to s
 
 4. To confirm that your `PATH` environment variable has been successfully updated, run the following command:
 
-   ```
-   echo $PATH
-   ```
+```sh
+echo $PATH
+```
 
 5. To confirm that the Koii CLI was successfully installed, run the following command:
 
-```
+```sh
 koii --version
 ```
 
-- You should see the version information similar to this:
-  ```
-  koii-cli 1.16.2
-  ```
+You should see the version information similar to this:
+
+```sh
+koii-cli 1.16.2
+```
 
 ### **Additional Steps for Mac Users**
 
@@ -111,10 +117,10 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 
 2. In your terminal, run the command `vi ~/.zshrc`.
 
-3. This will open the `~/.zshrc` file in the vi text editor. Insert the following line, replacing `<_paste your path here>_` with the copied `PATH` value:
+3. This will open the `~/.zshrc` file in the vi text editor. Insert the following line, replacing `<path>` with the copied `PATH` value:
 
-   ```
-   export <_paste your path here>_
+   ```sh
+   export <path>
    ```
 
    This line will add the Koii CLI path to your shell configuration.
@@ -123,10 +129,11 @@ Mac users may encounter issues with the Koii CLI not working in a new terminal s
 
 5. Now, the Koii CLI should work correctly in any new terminal session.
 
-## After installing the cli 
-Set the **testnet rpc endpoint** correctly  
-Run this command 
-```
+## After installing the cli
+Set the **testnet rpc endpoint** correctly
+Run this command:
+
+```sh
 koii config set --url https://testnet.koii.network
 ```
 

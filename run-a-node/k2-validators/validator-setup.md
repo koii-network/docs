@@ -13,7 +13,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 **Copy the following file to `/home/koii/validator.sh` and make it executable**
 
-```bash
+```sh
 #!/bin/sh
 exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --identity /home/koii/validator-keypair.json  \
@@ -45,7 +45,7 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
 
 **Create a systemd unit file at `/etc/systemd/system/koii-validator.service`**
 
-```bash
+```sh
 [Unit]
 Description=Koii Validator
 After=network.target
@@ -67,23 +67,27 @@ WantedBy=multi-user.target
 ### 2. Create a vote account
 
 :::info
-🚧 You will need your validator keypair account to be funded with KOII tokens before continuing
+You will need your validator keypair account to be funded with KOII tokens before continuing
 :::
 
 :::info
 Please make sure your Koii CLI is configured for `testnet.koii.network` and using your validator identity before continuing:
-`koii config set --url [https://testnet.koii.network](https://testnet.koii.network/) --keypair ~/validator-keypair.json`
+
+```sh
+koii config set --url [https://testnet.koii.network](https://testnet.koii.network/) --keypair ~/validator-keypair.json
+```
+
 :::
 
 Run the following command to create a vote-account on the network:
 
-```bash
+```sh
 koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/authorized-withdrawer-keypair.json
 ```
 
 ### 3. Enable and Start the Koii validator
 
-```bash
+```sh
 sudo systemctl enable koii-validator.service
 sudo systemctl start koii-validator.service
 sudo systemctl status koii-validator.service
@@ -100,13 +104,13 @@ sudo systemctl status koii-validator.service
 
 Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>`.
 
-```bash
+```sh
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/authorized-withdrawer-keypair.json
 ```
 
 ### 2. Delegate the stake to your validator
 
-```bash
+```sh
 koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
 ```
 
@@ -114,13 +118,13 @@ koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --s
 
 Your validator will not show up in the koii validators list for 12 to 24 hours, you can check your stake to make sure it is properly delegated by running the following command
 
-```bash
+```sh
 koii stake-account ~/stake-account-keypair.json
 ```
 
 Expected output:
 
-```bash
+```sh
 Balance: <Amount of KOII>
 Rent Exempt Reserve: <Amount of KOII>
 Delegated Stake: <Amount of KOII>

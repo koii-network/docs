@@ -19,25 +19,30 @@ We provide `create-task-cli` tool for task creators to easily:
 - Withdraw staked funds from a task
 - Upload assets to IPFS
 
-
 To get started with the installation process and its usage, follow the steps provided below:
 
 ## Install Create-Task-CLI
 
 - Run the command below in your terminal within the task directory to install and run the create-task-cli:
 
-```bash
+```sh
 npx @_koii/create-task-cli@latest
 ```
 
 - It prompts for your wallet path:
 
-```bash
+```sh
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 ```
 
 :::tip
-Run `koii config get` in another terminal, the “**Keypair Path**” is your wallet path.
+Don't know your wallet path? Run
+
+```sh
+koii config get
+```
+
+The “**Keypair Path**” is your wallet path.
 
 Don't have a Koii wallet yet? Check [here](/develop/command-line-tool/koii-cli/create-wallet) and generate one quickly.
 :::
@@ -136,7 +141,7 @@ Please make sure all of your environment variables are included in the `requirem
 For example:
 If you have something like:
 
-```javascript
+```js
 const username = process.env.TWITTER_USER_NAME;
 ```
 
@@ -158,7 +163,7 @@ User will set their key of the `value` in the Koii Node's `Settings -> Task Sett
 
 So, if you have more than one environment variable, your `requirementsTags` section should look like this:
 
-```yml
+```yaml
 requirementsTags:
   - type: TASK_VARIABLE
     value: "TWITTER_USER_NAME"
@@ -172,7 +177,7 @@ Each environment variable has its `type` set as `TASK_VARIABLE`, a unique `value
 - After updating the config file, run `npx @_koii/create-task-cli@latest` again and choose "using config YML".
 - If there is an error, follow the instructions to correct it. If it was successful, your terminal should display an output similar to this:
 
-```bash
+```sh
 Your MetaData CID is bafybeibjbtiendwzxq3ou5hsgauyym4wcg4gtodbhssh4cxhxdipqibrrm/metadata.json
 
 Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) ›
@@ -224,7 +229,7 @@ Fill in the necessary information by following the instructions below:
 
 - **Enter the number of distribution list submission retry in case it fails:** Enter the number of accepted trials to resubmit the distribution list if the first attempt to submit it fails.
 
-- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty. 
+- **Enter TaskMetadata CID hosted on IPFS (Leave empty for None):** If you've hosted the task's metadata on IPFS, enter the CID here; otherwise, leave this field empty.
 
 - **Enter the space, you want to allocate for task account (in MBs):** Each task would need some storage for persistence, in general in MBs. E.g: `10`
 - **Your account will be deducted 16.96090088 KOII for creating the task, which includes the rent exemption(6.96090088 KOII) and bounty amount fees (10 KOII) › ** y/n
@@ -237,7 +242,7 @@ Strong measures should be taken to protect this JSON file.
 
 The output of the command should be similar to the following.
 
-```bash
+```sh
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 ✔ Select operation › Create a new task
 create-task

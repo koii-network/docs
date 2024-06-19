@@ -26,18 +26,22 @@ Somehow your task ended in the available tasks, but you still have some KOII sta
 Please open an **incognito** window, go to twitter login page and use your username(not email or phone number), and password to log in to Twitter. You might face a reCAPTCHA from Twitter. After any verification such as email or phone number and you can log in without the verification, use Koii Node and try to run the task again.
 
 ## Q: What should I do if I facing  an RPC request error shows like this?
-```
+
+```sh
 Error: RPC request error: cluster version query failed: error sending request for url (https://k2-testnet.koii.network/): error trying to connect: tcp connect error: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060)
 ```
 
-**Solution:** please type in this:  
-```koii config set -- url https://testnet.koii.network```
+**Solution:** please type in this:
+
+```sh
+koii config set -- url https://testnet.koii.network
+```
 
 ## Q: What should I do if I meet this Javascript error?
 
 ![k1](../imageFaq/JSerror1.png)
 
-**For Mac**: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json 
+**For Mac**: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
 
 **For Linux/Windows**: Delete this file and start the node ~/.config/desktop-node/config.json
 
@@ -46,7 +50,7 @@ Error: RPC request error: cluster version query failed: error sending request fo
 <!--Keep this section in the very last please-->
 
 
-## Q: Metamask not detected. I tried to connect Metamask in Faucet it says it's not installed but it is installed. 
+## Q: Metamask not detected. I tried to connect Metamask in Faucet it says it's not installed but it is installed.
 
 This is an issue with other wallet extensions like Phantom interfering with Metamask. You have to make sure it's not enabled for faucet.koii.network you can do this:
 
