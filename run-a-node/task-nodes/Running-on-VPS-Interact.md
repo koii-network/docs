@@ -22,7 +22,6 @@ Execute the command 'create-task-cli' and you will see an interactive menu
 
 ```sh
 npx @_koii/create-task-cli@latest
-
 ```
 
 ```sh

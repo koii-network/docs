@@ -48,4 +48,4 @@ Loaded wallet with address a0nRz4EBcQAcewqVEfecIxqU5JDP63cXUh08Ipwdvxk
 
 ### Returns
 
-**Promise `<String>`** - Wallet Address&#x20;
+**Promise `<String>`** - Wallet Address

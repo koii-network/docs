@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Key Components
 
-![banner](../../img/Key%20components.svg)
+![banner](/img/concepts/tasks/key-components.svg)
 
 <Description
   text="When a task is created, there are two key components that must be uploaded to
@@ -27,7 +27,7 @@ Every task is compiled into a single JavaScript executable file that contains al
 ## Metadata
 
 
-Task metadata is essential structured data that provides valuable information about a Koii task. By examining the metadata, node operators can gain a comprehensive understanding of a specific task. It is highly recommended to include key details such as the minimum computer specifications and reward structure within the metadata. This inclusion allows node operators to have a clear understanding of how rewards will be distributed, minimizing any potential confusion or uncertainty when executing your task. &#x20;
+Task metadata is essential structured data that provides valuable information about a Koii task. By examining the metadata, node operators can gain a comprehensive understanding of a specific task. It is highly recommended to include key details such as the minimum computer specifications and reward structure within the metadata. This inclusion allows node operators to have a clear understanding of how rewards will be distributed, minimizing any potential confusion or uncertainty when executing your task.
 
 Task metadata sample:
 

@@ -11,11 +11,11 @@ import ContentLink from "@site/src/components/contentLink";
 
 ![PoRT](./img/Get%20Free%20Tokens.svg)
 
-While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.&#x20;
+While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.
 
 ### Testnet Airdop
 
-If you're a developer hoping to build on Koii, you can use the [CLI](/develop/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
+If you're a developer hoping to build on Koii, you can use the [CLI](/develop/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.
 
 **Note:** These tokens will not be transferred to mainnet after launch, but are great for trying things out!
 

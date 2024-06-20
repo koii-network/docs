@@ -46,7 +46,7 @@ The JSON structure of inner instructions is defined as a list of objects in the 
     * `accounts: <array[number]>` - List of ordered indices into the `message.accountKeys` array indicating which accounts to pass to the program.
     * `data: <string>` - The program input data encoded in a base-58 string.
 
-Token Balances
+## Token Balances
 
 The JSON structure of token balances is defined as a list of objects in the following structure:
 

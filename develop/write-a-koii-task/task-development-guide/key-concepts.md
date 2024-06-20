@@ -12,23 +12,7 @@ import Tooltip from "@site/src/components/tooltip";
 Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the ORCA container manager.
 
 
-![banner](../img/buildingonkoii.svg)
-
-<!-- There are many reasons to build on Koii, but here are  two of the big ones:
-
-1.  **Reduce existing hosting costs and increase uptime**
-
-    Building community-powered apps on Koii can [reduce costs](/concepts/distributed-cloud/reduced-computing-costs) and [increase reliability](/concepts/distributed-cloud/better-data).
-    Our market-based, on-demand compute can streamline existing applications and reduce dev-ops headaches. Having a **100% uptime** is now possible with Koii, as whenever one of the nodes goes down, another one will take its place.
-
-2.  **Develop revolutionary applications**
-
-    Our community cloud allows you to create products that would be simply impossible to create with Web2 solutions. As an example, you can create a social network hosted by its users, unstoppable web crawlers and next-generation neural networks trained with hard-to-obtain data, and much more. -->
-
-<!-- add line break below -->
-
-<!-- We accomplish all these by utilizing <Tooltip text="Koii Nodes"/>.
- -->
+![banner](/img/develop/write-task/building-on-koii.svg)
 
 ## What is a Node?
 
@@ -36,11 +20,11 @@ Nodes are people using their computers to create a worldwide network of servers.
 
 In order to host your application, you can use the already existing pool of task runners, or recruit people who would volunteer to help host your application You can communicate with them, by using the <Tooltip text="Koii SDK"/>.
 
-![banner](../img/nodesandtasks.svg)
+![banner](/img/develop/write-task/nodes-and-tasks.svg)
 
 ## What is a Task?
 
-![banner](../img/whataretaskssimplified.svg)
+![banner](/img/develop/write-task/what-are-tasks.svg)
 A task is a piece of code that you want to run on someone else's computer.
 
 To prepare your project as a task, we'll build two main components, a task program and a metadata file.
@@ -93,5 +77,3 @@ Node : {
     }
 }
 ```
-
-<!-- line break -->

@@ -5,8 +5,7 @@ sidebar_label: Introduction
 ---
 Interact with Koii nodes directly with the JSON RPC API via the HTTP and Websocket methods.
 
-Configuring State Commitment
----------------------------------------------------------------
+## Configuring State Commitment
 
 For preflight checks and transaction processing, Koii Validator nodes choose which bank state to query based on a commitment requirement set by the client. The commitment describes how finalized a block is at that point in time. When querying the ledger state, it's recommended to use lower levels of commitment to report progress and higher levels to ensure the state will not be rolled back.
 
@@ -27,19 +26,16 @@ If commitment configuration is not provided, the node will [default to `finalize
 
 Only methods that query bank state accept the commitment parameter. They are indicated in the API Reference below.
 
-RpcResponse Structure
--------------------------------------------------
+### RpcResponse Structure
 
 Many methods that take a commitment parameter return an RpcResponse JSON object comprised of two parts:
 
 *   `context` : An RpcResponseContext JSON structure including a `slot` field at which the operation was evaluated.
 *   `value` : The value returned by the operation itself.
 
-Parsed Responses
----------------------------------------
+### Parsed Responses
 
 Some methods support an `encoding` parameter, and can return account or instruction data in parsed JSON format if `"encoding":"jsonParsed"` is requested and the node has a parser for the owning program. Koii Validator nodes currently support JSON parsing for the following native and KPL programs:
-
 
 |Program                     |Account State|Instructions|
 |----------------------------|-------------|------------|

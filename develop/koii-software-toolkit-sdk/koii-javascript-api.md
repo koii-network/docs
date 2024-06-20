@@ -17,21 +17,14 @@ To get started with the installation process and understand how to use the KOII 
 
 You can install the API using one of the following methods:
 
-#### npm
-
-```
-$ npm install --save @_koi/web3.js
+```sh
+npm install --save @_koi/web3.js
 ```
 
-#### Yarn
-
-```
-$ yarn add @_koi/web3.js
-```
 
 #### Browser bundle
 
-```jsx
+```html
 <!-- Development (un-minified) -->
 <script src="https://unpkg.com/@_koi/web3.js@latest/lib/index.iife.js"></script>
 
@@ -45,21 +38,21 @@ The KOII JavaScript API can be used in various ways based on your development en
 
 #### JavaScript
 
-```jsx
+```js
 const koiiWeb3 = require("@_koi/web3.js");
 console.log(koiiWeb3);
 ```
 
 #### ES6
 
-```jsx
+```js
 import * as koiiWeb3 from "@_koi/web3.js";
 console.log(koiiWeb3);
 ```
 
 #### Browser bundle
 
-```jsx
+```js
 // `koiiWeb3` is provided in the global namespace by the `koiiWeb3.min.js` script bundle.
 console.log(koiiWeb3);
 ```

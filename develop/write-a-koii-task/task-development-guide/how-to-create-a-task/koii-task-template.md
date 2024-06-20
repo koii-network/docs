@@ -25,7 +25,7 @@ For our task example, we need the `crypto` library to convert the string to a ha
 
 Install package:
 
-```
+```sh
 npm i crypto
 ```
 

@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Using Reputation
 
-![banner](./img/Using%20Reputation.svg)
+![banner](/img/concepts/tasks/using-reputation.svg)
 
 Koii stands for
 ** Knowledgeable Open and Infinite Internet **, and it's our first attempt at
@@ -17,7 +17,7 @@ building a ** Compute, Attribution, and Reputation Protocol _(CARP)_** .
 
 Since the origins of the decentralized web, there has been an ongoing battle between trust and accountability, and the need to provide services and tools to billions of people, at a minimum cost.
 
-Many services have attempted to create global machines, that hope to encompass all possible scenarios in a singular data model, but this has so far been inadequate, and we've been waiting a long time for the supposed "web3" to come to fruition.&#x20;
+Many services have attempted to create global machines, that hope to encompass all possible scenarios in a singular data model, but this has so far been inadequate, and we've been waiting a long time for the supposed "web3" to come to fruition.
 
 A **CARP**, blends together the benefits of a "collateralized" (a.k.a. "Proof of Stake") model with the benefits of trust that are common in the current internet.
 
@@ -25,7 +25,7 @@ When we think of hosting applications, we usually imagine paying someone else to
 
 Typically, these exist because of the reputation of the hosting provider, and the technology that these providers can build to entrench their relationship with customers.
 
-With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their hosting to the network.&#x20;
+With Koii, we hope to build an initial prototype of a new model, where the technology lives in a public commons, and anyone can build reputation towards providing their hosting to the network.
 
 ## Definition of CARP
 
@@ -41,26 +41,26 @@ The computational efficiency of a compute network defines the overall cost. If a
 
 **3. Tasks Can Prioritize High-Reputation Providers**
 
-In order for reputation to provide a significant advantage, it is necessary to ensure that hosting purchasers can give priority to honest providers. This, perhaps for the first time, necessitates a blockchain and decentralized storage architecture, where all information is public, transparent, and immutable. In a CARP, transparent money is the key to long term growth, not just a fad or a grift.&#x20;
+In order for reputation to provide a significant advantage, it is necessary to ensure that hosting purchasers can give priority to honest providers. This, perhaps for the first time, necessitates a blockchain and decentralized storage architecture, where all information is public, transparent, and immutable. In a CARP, transparent money is the key to long term growth, not just a fad or a grift.
 
-![CARP](./img/CARP.png)
+![CARP](/img/concepts/tasks/CARP.png)
 
 ## Network Growth
 
-Under a model where honesty and reliability are the most valuable property, consistently honest participants become the de-facto distributors of all resources. As a result, we expect that there will arise competitive markets to provide up-stream hosting capacity to these providers, ensuring that they are able to access as many resources as necessary to satisfy demand for their services.&#x20;
+Under a model where honesty and reliability are the most valuable property, consistently honest participants become the de-facto distributors of all resources. As a result, we expect that there will arise competitive markets to provide up-stream hosting capacity to these providers, ensuring that they are able to access as many resources as necessary to satisfy demand for their services.
 
-As a parallel, a reliable business typically receives more credit, allowing it to grow. We hope to see hosting providers use their reputation and their past earnings to receive priority treatment as re-sellers of existing hosting, as well as new hardware.&#x20;
+As a parallel, a reliable business typically receives more credit, allowing it to grow. We hope to see hosting providers use their reputation and their past earnings to receive priority treatment as re-sellers of existing hosting, as well as new hardware.
 
 ## Koii is a CARP
 
-Consumer hardware is now widespread globally, with billions of personal devices in use, spread closely around the active internet user population. These devices, under the current model, act as readers, pulling information from a central repository, but could also be employed to host much of this information as well. With the introduction of proper reputation models, new members of the community can easily join, provide hosting, and grow their reputation, before expanding their offerings with new hardware or cloud hosting capacity that they acquire through the profits of their previous activities or via promotions from external vendors.&#x20;
+Consumer hardware is now widespread globally, with billions of personal devices in use, spread closely around the active internet user population. These devices, under the current model, act as readers, pulling information from a central repository, but could also be employed to host much of this information as well. With the introduction of proper reputation models, new members of the community can easily join, provide hosting, and grow their reputation, before expanding their offerings with new hardware or cloud hosting capacity that they acquire through the profits of their previous activities or via promotions from external vendors.
 
-Over time, our mission is to give each individual the opportunity to build reputation and act as a steward of the worldwide knowledge database, and in so doing, to earn their share of the value that it creates.&#x20;
+Over time, our mission is to give each individual the opportunity to build reputation and act as a steward of the worldwide knowledge database, and in so doing, to earn their share of the value that it creates.
 
-In Koii, we focus on building reputation first from content, and attention, because we believe this will help the network grow. As new participants join, they can then use the tokens earned from the attention economy as collateral to provide hosting, and continue to grow their share.&#x20;
+In Koii, we focus on building reputation first from content, and attention, because we believe this will help the network grow. As new participants join, they can then use the tokens earned from the attention economy as collateral to provide hosting, and continue to grow their share.
 
 ## Building a CARP
 
-Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.&#x20;
+Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.
 
 Check-out our [Task Template](/develop/write-a-koii-task/task-development-guide/task-structure/) tutorial to start building on Koii!

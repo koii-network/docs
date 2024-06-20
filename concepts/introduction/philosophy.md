@@ -8,7 +8,7 @@ import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 
 import Description from "@site/src/components/description";
 
-![img alt](img/Philosophy.svg)
+![img alt](/img/concepts/philosophy.svg)
 
 For too long, power has been concentrated in the hands of a small segment of the world's population, leading to significant imbalances in access to information, resources, and decision-making. The advent of the internet promised a shift towards greater equality, but traditional centralized models have perpetuated old power dynamics.
 
@@ -25,7 +25,7 @@ Take an active role in shaping Koii's future. Your involvement is vital, whether
     description=" <p>Koii's discord is where the community comes to discuss new ideas and recent updates.</p>"
     link="https://discord.com/invite/koii-network"
     linkText="Sign in Here"
-    svgName="discordsmall"
+    svgName="discord"
     cardPerRow="3"
   />
   <CardSpecial
@@ -45,63 +45,3 @@ Take an active role in shaping Koii's future. Your involvement is vital, whether
     cardPerRow="3"
   />
 </CardsSpecial>
-
-<!-- ## Videos
-
-<Cards>
-  <Card
-    title="<p>User Governance of Social Media Platforms</p>"
-    link="https://www.youtube.com/watch?v=dc_vaBvUMHE&ab_channel=KoiiNetwork"
-    linkText="Watch Video"
-    svgName="userGovernanceVideo"
-    cardPerRow="3"
-  />
-  <Card
-    title="<p>To smart contract & beyond- a brief history of decentralization</p>"
-    link="https://www.youtube.com/watch?v=4PMFIlujv3Y&t=612s&ab_channel=TheDAOist"
-    linkText="Watch Video"
-    svgName="decentralizationVideo"
-    cardPerRow="3"
-  />
-  <Card
-    title="<p>Internet could be owned by people</p>"
-    link="https://youtu.be/zoxAW6R9NEM"
-    linkText="Watch Video"
-    svgName="internetVideo"
-    cardPerRow="3"
-  />
-  <Card
-    title="<p>DecentralCon Miami Talk</p>"
-    link="https://www.youtube.com/watch?v=QCcGpw2j34Q&t=94s"
-    linkText="Watch Video"
-    svgName="decentralConVideo"
-    cardPerRow="3"
-  />
-    <Card
-    title="<p>Koii's Decentralized Protocol</p>"
-    link="	https://www.youtube.com/watch?v=Q5iHzjwj_ko&ab_channel=Cardstack"
-    linkText="Watch Video"
-    svgName="protocolVideo"
-    cardPerRow="3"
-  />
-  <Card
-    title="<p>CARP at Compute Over Data Summit in Lisbon</p>"
-    link="https://www.youtube.com/watch?v=mEzo0xRXh68"
-    linkText="Watch Video"
-    svgName="carpVideo"
-    cardPerRow="3"
-  />
-</Cards> -->
-
-<!-- ## Reading
-
-<Cards>
-
-<Card
-    title="<p><strong>Gradual Consensus</strong></p>"
-    description="<p>Nothing happens immediately - Koii combines instant transaction speeds for payments with slow and steady verification of information over time.</p>"
-    link="/concepts/gradual-consensus/runtime-flow"
-    svgName="consensus"
-    cardPerRow="2"
-  />
-</Cards> -->

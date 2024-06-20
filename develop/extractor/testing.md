@@ -8,5 +8,7 @@ Within the tests folder, you can find multiple tests. One of the more important 
 
 You can run a test with:
 
+```sh
 yarn
 node test/test-one-round.js
+```

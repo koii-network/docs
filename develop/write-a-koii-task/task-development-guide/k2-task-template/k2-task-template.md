@@ -9,7 +9,7 @@ sidebar_label: K2 Task Template
 
 Tasks run following a periodic structure of "rounds":
 
-![execute task](../../img/execute_task.png)
+![execute task](/img/develop/write-task/execute-task.png)
 
 Each round is set by a specific time period, and nodes participate by uploading data to IPFS, posting CIDs to the K2 settlement layer, and sending messages across REST APIs and WebSockets.
 
@@ -71,7 +71,11 @@ Before you begin this process, be sure to check your code and write unit tests w
 
 ## Build
 
-Before deploying a task, you'll need to build it into a single file executable by running `npm run webpack`.
+Before deploying a task, you'll need to build it into a single file executable by running:
+
+```sh
+npm run webpack
+```
 
 ## Deploy your bundle
 
@@ -88,7 +92,7 @@ koii config get
 
 This should return something similar to the following:
 
-![execute task](../../img/k2-wallet-key.png)
+![execute task](/img/develop/write-task/k2-wallet-key.png)
 
 ```sh
 Config File: /home/<user>/.config/koii/cli/config.yml
@@ -106,7 +110,11 @@ If you need to create a Koii wallet you can follow the instructions [here](/deve
 
 To test the task with the [K2 settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks) you'll need to deploy it.
 
-We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/develop/category/koii-command-line-tool). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running `npm run webpack`.
+We have included our CLI for creating and publish tasks to the K2 network in this repo. Tips on this flow can be found [here](/develop/category/koii-command-line-tool). One important thing to note is when you're presented with the choice of ARWEAVE, IPFS, or DEVELOPMENT you can select DEVELOPMENT and enter `main` in the following prompt. This will tell the task node to look for a `main.js` file in the `dist` folder. You can create this locally by running
+
+```sh
+npm run webpack
+```
 
 ## Run a node locally
 

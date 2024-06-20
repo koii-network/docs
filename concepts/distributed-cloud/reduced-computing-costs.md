@@ -7,14 +7,14 @@ sidebar_label: Reduced Computing Costs
 
 import Description from "@site/src/components/description";
 
-![banner](./img/distributed_cloud.png)
+![banner](/img/concepts/distributed-cloud.png)
 
 Marketplace dynamics can ensure that compute costs stay low as networks scale. When hosting is decentralized, projects can dynamically reprice and ensure competition for the lowest cost.
 
 ## Pay for Compute, not Device
 
 
-Koii uses a 'pay per compute' model instead of a 'pay per device' model. This model enables cost optimization, as users only pay for the resources they actually consume. This eliminates the need to invest in expensive infrastructure and allows businesses and individuals to scale their computing power on demand, effectively reducing operational costs. 
+Koii uses a 'pay per compute' model instead of a 'pay per device' model. This model enables cost optimization, as users only pay for the resources they actually consume. This eliminates the need to invest in expensive infrastructure and allows businesses and individuals to scale their computing power on demand, effectively reducing operational costs.
 
 ## Capitalizing on Idle Computing Power
 

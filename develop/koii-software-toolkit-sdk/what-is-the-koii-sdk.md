@@ -9,11 +9,9 @@ import Tooltip from "@site/src/components/tooltip";
 import Description from "@site/src/components/description";
 import ContentLink from "@site/src/components/contentLink";
 
-# 🛠 What is the Koii SDK?
+![Banner](/img/develop/koii-sdk/what-is-koii-sdk.svg)
 
-![Banner](./img/What%20is%20the%20Koii%20SDK_.svg)
-
-Our mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.&#x20;
+Our mission is to empower developers by providing extensive support options for building new applications. Our objective is to streamline your development process and equip you with the necessary tools to thrive in this ever-evolving landscape.
 
 Supported networks:
 
@@ -25,11 +23,11 @@ We have curated a comprehensive Tool Kit to offer robust support for Koii task a
 
 Koii provides a diverse range of tools and resources to support you throughout your development journey. Here are some of the essential offerings:
 
-### Koii SDK
+## Koii SDK
 
 The Koii SDK is the Koii (K2) JavaScript API, built on the Koii platform. With this SDK, users can access various functionalities such as checking status and fetching information from the K2 network. To explore its usage, you can find more details [here.](./koii-javascript-api)
 
-### Koii CLI
+## Koii CLI
 
 The Koii CLI provides a set of valuable features, including:
 
@@ -38,12 +36,6 @@ The Koii CLI provides a set of valuable features, including:
 
 To learn more about the Koii CLI and its functionalities, you can find additional information [here](/develop/category/koii-command-line-tool)
 
-### Create Task CLI
+## Create Task CLI
 
 The Create Task CLI is a powerful tool that allows you to deploy your task in just under 5 minutes! To get started, try out the Create Task CLI [here.](/develop/command-line-tool/create-task-cli/intro)
-
-<!-- ### Looking for a quick start?
-
-Head to our [Koii-X docs](/) to learn how you can deploy a dApp in under 10 minutes today.
-
-<ContentLink title="👋 Welcome to koii-X" link="/"/> -->

@@ -7,7 +7,7 @@ sidebar_label: Rewards
 
 import Tooltip from "@site/src/components/tooltip";
 
-![Banner](./img/Rent.svg)
+![Banner](/img/run-a-node/rent.svg)
 
 When a Koii task is registered, the task registrant determines the amount of tokens that will be allocated to the bounty pool. Additionally, all task nodes participating in the task are required to stake a specific amount of tokens, as set by the task registrant.
 

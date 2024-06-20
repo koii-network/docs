@@ -10,7 +10,7 @@ const DesktopNodeButton = () => {
       className="cursor-pointer"
     >
       <img
-        src={isHovered ? "/img/buttonhover.svg" : "/img/buttondefault.svg"}
+        src={isHovered ? "/img/download-node-hover.svg" : "/img/download-node.svg"}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="hoverAnimation"

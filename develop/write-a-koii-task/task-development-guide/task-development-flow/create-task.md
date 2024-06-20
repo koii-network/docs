@@ -9,9 +9,9 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Deploy Task
 
-![img](../../img/DEV%20koii%20task.png)
+![img](/img/develop/write-task/koii-task.png)
 
-We need a Koii account and network setup first. We provide the Koii CLI tool to easily set up K2 locally and generate a wallet; check here.&#x20;
+We need a Koii account and network setup first. We provide the Koii CLI tool to easily set up K2 locally and generate a wallet; check here.
 
 <ContentLink title="Using the Koii CLI" link="/develop/category/koii-command-line-tool" iconType="copy"/>
 

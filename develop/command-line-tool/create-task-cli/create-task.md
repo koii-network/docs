@@ -124,7 +124,7 @@ The `value` name should be the same as your environment variable name. The vital
 
 User will setup their key of the `value` in the Koii Node's `Settings -> Task Settings`
 
-![Code Sample](../../img/setting_env_key.png)
+![Code Sample](/img/develop/setting-env-key.png)
 
 So, if you have more than one environment variable, your `requirementsTags` section should look like this:
 

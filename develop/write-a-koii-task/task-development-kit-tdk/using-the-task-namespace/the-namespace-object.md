@@ -35,7 +35,7 @@ async function task() {
 
 This line of code utilizes the `storeSet()` method from the namespace object to store the key-value pair "key" and "value" in the local NeDB database. The task can then retrieve and use this stored data as needed. The namespace object provides a convenient and unified way to interact with various utilities within a Koii task.
 
-## Why is The Namespace Object Important?&#x20;
+## Why is The Namespace Object Important?
 
 The Namespace object is important for several reasons, some of which are:
 

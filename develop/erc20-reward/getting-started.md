@@ -38,7 +38,7 @@ RECIPIENT_ADDRESS = ""
 
 Create a new file named `KToken.json` in the root directory of the project. Copy and paste the contract's ABI (Application Binary Interface) into this file. You can obtain the ABI by following the arrow in the image below:
 
-![ABI](./img/abi.png)
+![ABI](/img/develop/erc20/abi.png)
 
 **4. Helper Function**
 

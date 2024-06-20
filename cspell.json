@@ -81,11 +81,12 @@
        "usize",
        "zstd",
        "Unstaked",
-       "discordsmall",
        "quickstart",
        "Rustup",
        "checksummed",
-       "preBalances"
+       "preBalances",
+       "Wenger",
+       "taskcomponents"
   ],
   "caseSensitive": false,
   "flagWords": [
