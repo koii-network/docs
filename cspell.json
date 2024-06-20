@@ -86,7 +86,10 @@
        "checksummed",
        "preBalances",
        "Wenger",
-       "taskcomponents"
+       "taskcomponents",
+       "Pewds",
+       "unstaking",
+       "appdata"
   ],
   "caseSensitive": false,
   "flagWords": [

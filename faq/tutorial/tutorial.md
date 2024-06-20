@@ -12,7 +12,7 @@ import ReactPlayer from "react-player";
 **Road map for how to Re-Onboarding**
 
 - save the old passphrase (Settings-->Security-->key icon)
-- save the old storage key (Settings-->Task Extensions-->eye icon) 
+- save the old storage key (Settings-->Task Extensions-->eye icon)
 - import your old account to Finnie wallet (skip if you are already done)
 - find the Koii-Desktop-Node, desktop-node folder and delete it
 
@@ -33,7 +33,7 @@ import ReactPlayer from "react-player";
 
 <ReactPlayer width="100%" controls url="https://youtu.be/YvtPFUIQQFk" />
 
-## Tutorial: How to Transfer funds between System and Staking 
+## Tutorial: How to Transfer funds between System and Staking
 
 <ReactPlayer width="100%" controls url="https://youtu.be/SXjC5LMlV_s" />
 
@@ -99,7 +99,7 @@ Always ensure the security of your secret phrase and double-check all details be
 
 1. Open your browser.
 
-2. Login your email webpage in this tutoriual, using Gmail for example.
+2. Login your email webpage in this tutorial, using Gmail for example.
 
 3. Click block "X"
 ![block](./imageFaq/Xemail.png)

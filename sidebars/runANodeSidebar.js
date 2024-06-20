@@ -37,6 +37,7 @@ const sidebars = {
     },
     "task-nodes/how-to-run-a-koii-node",
     "task-nodes/time-to-node",
+    "task-nodes/task-extensions",
     "task-nodes/rewards",
     "task-nodes/choosing-tasks",
     "task-nodes/Running-IPFS-task",

@@ -9,7 +9,7 @@ sidebar_label: Troubleshooting & Technical Issues
 ## Q: My task failed at: Start task/Upgrade task/accidentally close the Koii Node and lead to stake token gone. Where should I find them?
 
 If you believe that your KOII is lost, it would be a good idea to check your staking balance first. If your KOII is there you can follow the instructions on the image to send those KOII back to your main wallet.
-![stakewallet](../imageFaq/stakeWallet.png)
+![staking wallet](../imageFaq/stakeWallet.png)
 
 ## Q: Why don’t I have permission to check the main.log when an error occurred in my task? How to fix it?
 
