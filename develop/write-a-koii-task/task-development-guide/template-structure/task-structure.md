@@ -7,7 +7,13 @@ sidebar_label: Task Structure
 
 import Tooltip from "@site/src/components/tooltip";
 
-To get started, execute the command `npx @_koii/create-task-cli@latest`. Then, choose the first option, `Create a new local repository`.
+To get started, execute the following command:
+
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+Then, choose the first option, `Create a new local repository`.
 
 ```sh
 ? Select operation › - Use arrow-keys. Return to submit.
@@ -31,7 +37,6 @@ npm install
 
 The task template contains three separate JavaScript files in `task` folder that contain all of the functions for a Koii task to function properly.
 
-
 ```sh
 📦K2-TASK-TEMPLATE
  ┣ 📂_koiiNode
@@ -45,7 +50,6 @@ The task template contains three separate JavaScript files in `task` folder that
  ┣ 📜config-task.yml
  ┣ 📜coreLogic.js
  ┗ 📜index.js
-
  ```
 
 ## What's in the template?
@@ -73,7 +77,6 @@ In the `submission.js` file, there are 3 methods that allow you to define the ac
 | **`task()`**        | The logic for what your task should do goes here.                                                                                                                                                  |
 | `fetchSubmission()` | After completing the task, the results/work will be stored either on [IPFS](https://ipfs.tech/) or [NeDB](https://dbdb.io/db/nedb). This method fetches the results/work from where it was stored. |
 | `submitTask()`      | This method calls a `namespace` method and submits the task's results/work to K2.                                                                                                                  |
-
 
 ### The `audit.js`
 

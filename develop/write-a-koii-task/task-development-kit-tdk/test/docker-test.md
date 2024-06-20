@@ -105,7 +105,13 @@ koii airdrop 100000
 yarn webpack
 ```
 
-6. **Run `npx @_koii/create-task-cli@latest`** to deploy a new task using your local validator. Please copy below CID for future renaming.
+6. **Deploy a new task**:
+
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+Follow the instructions to deploy a new task using your local validator. Please copy below CID for future renaming.
 
 ```sh
 CID of executable bafybeidumnguxqqcvgxm7fm46vkdeoqec7sxa46gljvsqobrhycsdnowhe

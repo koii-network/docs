@@ -9,7 +9,13 @@ Now that we have covered creating a task, let's explore the process of updating 
 
 # Getting Started
 
-- After executing the `npx @_koii/create-task-cli@latest` command, you will be presented with a set of options. To update an existing task, select the following option:
+- Run the following command:
+
+```sh
+npx @_koii/create-task-cli@latest
+```
+
+- After executing the command, you will be presented with a set of options. To update an existing task, select the following option:
 
 ```sh
 ? Select operation › - Use arrow-keys. Return to submit.

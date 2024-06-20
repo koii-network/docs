@@ -41,11 +41,9 @@ We provide an SDK tool to help you easily register your content. Follow the step
 
 First, create a new Node.js project and install `@_koii/k2-recipient-sdk`
 
-`npm i @_koii/k2-recipient-sdk`
-
-or
-
-`yarn add @_koii/k2-recipient-sdk`
+```sh
+npm i @_koii/k2-recipient-sdk
+```
 
 Then get a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
 

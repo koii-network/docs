@@ -32,6 +32,7 @@ For instance, if the task involves users collecting relevant information from th
 **Distribution**: You could choose to distribute a certain amount of KOII tokens to each user, or divide a predetermined sum of KOII equally among all participants. The distribution method is up to you to decide!
 
 ### Deployment
+
 Once you have outlined your task steps and planned the audit and distribution strategies, you can package your files using npm run webpack or Yarn webpack. Finally, deploy your task to our K2 platform using create-task-cli. This generates a task ID, allowing any user with this ID to execute the task.
 
 ### Try it out
