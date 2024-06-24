@@ -5,12 +5,6 @@ image: img/thumbnail.png
 sidebar_label: Develop an OrcaPod
 ---
 
-import Description from "@site/src/components/description";
-
-# How to develop an OrcaPod
-
-## Objective
-
 The purpose of this guide is to show how to integrate ORCA with Koii. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
 
 ## Prerequisites
@@ -27,12 +21,8 @@ To interact with the K2 locally, you need to install the Koii CLI. [Click here](
 
 Koii supports a file system wallet that can be used to interface directly with the Koii command-line tools.
 
-:::info
-
-A file system wallet, aka an FS wallet, is a directory in your computer’s file system. Each file in the directory holds a keypair.
-
-Source [Solana](https://solana.com/docs/intro/wallets#file-system-wallet)
-
+:::info What is a file system wallet?
+A file system (FS) wallet is a directory in your computer’s file system, with each file in the directory holding a keypair.
 :::
 
 To generate a file system wallet keypair, use Koii’s command-line tool `koii-keygen`. Run the following command:
@@ -42,9 +32,7 @@ koii-keygen new --outfile ~/.config/koii/id.json
 ```
 
 :::warning
-
 This file contains your unencrypted keypair, protect this file as it grants access to all tokens sent to its public key. Do not distribute the file; share only the public key to maintain security.
-
 :::
 
 The public key of the keypair file is your wallet address. To display your public key, run:

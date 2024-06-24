@@ -113,7 +113,13 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
 
-
+    {
+      type: "html",
+      value: "Orca",
+      className: "sidebar-title",
+    },
+    "containerized-tasks/orca",
+    "containerized-tasks/develop-an-OrcaPod",
     {
       type: "html",
       value: "Template Applications",

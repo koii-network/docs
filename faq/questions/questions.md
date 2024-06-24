@@ -4,7 +4,7 @@ description: FAQ Introduction
 image: img/thumbnail.png
 sidebar_label: Frequently Asked Questions
 ---
-import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
+import {CardSpecial, CardsSpecial} from '@site/src/components/image_link';
 
 We divided the questions into categories so it is easier for you!
 
