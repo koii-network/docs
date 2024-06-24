@@ -7,9 +7,7 @@ sidebar_label: K2 Validators
 
 ![Banner](/img/run-a-node/run-k2-node.svg)
 
-## K2 Validators
-
-The K2 Settlement Layer is the core of Koii's network.
+The [K2 Settlement Layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks.md) is the core of Koii's network.
 
 K2 Validators play a critical role in the consensus mechanism of Koii's blockchain network and contribute to the validation and verification of transactions, ensuring the integrity and security of the network.
 
@@ -19,4 +17,4 @@ In addition to providing fast and secure micro-payments for Koii's compute econo
 
 Because of this important role, and the responsibility of securing the network, K2 Validators require significantly more powerful hardware, along with considerable collateral deposits to ensure security.
 
-[Click here to learn more about running a K2 Validator.](/run-a-node/k2-validators/how-to-run-a-k2-validator)
+[Click here](/run-a-node/k2-validators/how-to-run-a-k2-validator) to learn more about running a K2 Validator.
