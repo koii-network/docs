@@ -5,10 +5,10 @@ image: img/thumbnail.png
 sidebar_label: Tools
 ---
 
-import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
+import {CardSpecial, CardsSpecial} from '@site/src/components/image_link';
 import Description from "@site/src/components/description";
 
-![banner](/img/concepts/tools.svg)
+![decorative banner](/img/concepts/tools.svg)
 
 Building something great is a waste of time if no one can use it.
 

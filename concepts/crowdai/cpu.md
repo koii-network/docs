@@ -5,14 +5,13 @@ image: img/thumbnail.png
 sidebar_label: CPU's vs GPU's
 ---
 
-## The big GPU problem
+## The Big GPU Problem
 
-The "big GPU
-problem" in Machine Learning (ML) and Artificial Intelligence (AI) is the difficulty of meeting the escalating demand for GPU resources to support the training of deep learning models and large-scale AI Workloads.
+The "big GPU problem" in Machine Learning (ML) and Artificial Intelligence (AI) is the difficulty of meeting the escalating demand for GPU resources to support the training of deep learning models and large-scale AI Workloads.
 
 GPUs have become the preferred hardware for accelerating ML training due to their capacity for parallel processing and matrix operations, which are essential for neural network computations. However, as ML and AI applications become more intricate and investment in this field rises significantly, the availability of GPUs becomes a major constraint.
 
-## Can CPU's emulate GPU's
+## Can CPU's Emulate GPU's?
 
 While CPUs can handle machine learning tasks, they are typically less efficient than GPUs for training deep learning models due to architectural distinctions. GPUs possess numerous cores optimized for parallel processing, making them more adept at matrix operations and computations commonly used in neural networks.
 

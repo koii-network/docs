@@ -7,8 +7,6 @@ sidebar_label: Federated Learning
 
 import VideoPlayer from "@site/src/components/videoPlayer";
 
-## Introduction
-
 Federated Learning is a decentralized machine learning approach that enables the training of models across multiple devices or servers while keeping the data localized, without the need to centralize the data in one location.
 
 The main idea behind federated learning is to improve data privacy and security, as well as reduce communication overhead and dependence on a centralized data storage system.

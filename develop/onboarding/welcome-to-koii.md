@@ -8,7 +8,7 @@ sidebar_label: Onboarding
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
-import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
+import {CardSpecial, CardsSpecial} from '@site/src/components/image_link';
 
 We're thrilled to have you on board with Koii, an innovative leader in the realm of open-source AI Infrastructure. As a startup, we're on a fast-paced journey, driven by the dedication of our global team. Together, we're democratizing access to reliable and cost-effective computing power. Our platform not only empowers enterprises and startups but also rewards individuals worldwide for contributing their computing resources. The Koii ecosystem is built to foster development, offering grants to developers who integrate verified data and content into their products using our tools. This initiative supports the creation of new, fair content monetization models.
 

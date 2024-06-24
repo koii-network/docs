@@ -15,7 +15,7 @@ Data is the lifeblood of AI, and access to high-quality datasets can be a major 
 
 ## Leveraging Open-Source AI Models
 
-Open source models, like [Hugging Face](https://huggingface.co/) and [TensorFlow](https://www.tensorflow.org/) are revolutionizing the AI landscape. Koii aims to bring this openness to the next level by integrating such models into its platform.
+Open source models, like [Llama 3](https://llama.meta.com/llama3/) and [BLOOM](https://bigscience.huggingface.co/blog/bloom) are revolutionizing the AI landscape. Koii aims to bring this openness to the next level by integrating such models into its platform.
 
 With the inclusion of widely recognized pre-trained models, developers will have immediate access to state-of-the-art AI technologies for natural language processing and a cost-effective way to train them via the Koii network.
 

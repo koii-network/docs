@@ -5,11 +5,9 @@ image: img/thumbnail.png
 sidebar_label: Better Data
 ---
 
-# Better Data
-
 Koii is a network of people, not computers. This means that you can get access to account-only and premium data. This enables you to bypass paywalls and get unrestricted access.
 
-# Koii’s Global Network: Your Gateway to Data-Driven Success
+## Koii’s Global Network: Your Gateway to Data-Driven Success
 
 Koii’s Global Network, powered by thousands of real people worldwide, is your comprehensive resource for critical data access, enabling you to train better AI models, unlock otherwise inaccessible data, maintain your competitive edge, and verify the authenticity of people, projects, and processes.
 

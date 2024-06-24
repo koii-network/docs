@@ -7,7 +7,7 @@ sidebar_label: Welcome to the New Internet
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
-import {CardSpecial,Card, CardsSpecial} from '@site/src/components/image_link';
+import {CardSpecial, CardsSpecial} from '@site/src/components/image_link';
 
 
 ![banner](</img/concepts/welcome-to-koii.svg>)

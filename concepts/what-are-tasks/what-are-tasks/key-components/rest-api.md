@@ -11,4 +11,4 @@ Regardless of the specific task being undertaken, the implementation of REST API
 
 By creating well-defined APIs, developers can ensure a structured and efficient flow of information between the client and server. This approach promotes modularity, scalability, and ease of maintenance, making it a crucial component of various projects within the Koii ecosystem.
 
-This concept is implemented in our [Hello World](/develop/write-a-koii-task/task-development-guide/task-structure/) and [Linktree tutorial](/develop/linktree/intro).
+This concept is implemented in [EZSandbox Lesson 2](https://github.com/koii-network/ezsandbox/blob/main/Lesson%202/PartII.md).
