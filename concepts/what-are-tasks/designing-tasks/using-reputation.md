@@ -60,4 +60,4 @@ In Koii, we focus on building reputation first from content, and attention, beca
 
 Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.
 
-Check-out our [Task Template](/develop/write-a-koii-task/task-development-guide/task-structure/) tutorial to start building on Koii!
+Check-out our [EZSandbox](https://github.com/koii-network/ezsandbox) task development tutorial to start building on Koii!
