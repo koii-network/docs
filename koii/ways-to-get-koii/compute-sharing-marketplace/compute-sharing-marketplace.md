@@ -47,7 +47,7 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 <ContentLink
   title='What are tasks?'
-  link='/develop/write-a-koii-task/task-development-guide/introduction'
+  link='https://github.com/koii-network/ezsandbox'
   iconType='copy'
 />
 

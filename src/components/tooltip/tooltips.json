@@ -14,7 +14,7 @@
   ],
   "hello world task": [
     "Our task tutorial that explains the basics",
-    "/develop/write-a-koii-task/task-development-guide/introduction"
+    "https://github.com/koii-network/ezsandbox"
   ],
   "tdk": ["Task Development Kit", "https://docs.koii.network/"],
   "memory leakage": [
