@@ -38,7 +38,6 @@ const sidebars = {
     },
     "what-are-koii-nodes/introduction",
     "what-are-koii-nodes/koii-node-app",
-    "what-are-koii-nodes/get-started",
     "what-are-koii-nodes/what-is-an-rpc-node",
     {
       type: "html",
@@ -92,7 +91,7 @@ const sidebars = {
       value: "Orca",
       className: "sidebar-title",
     },
-    "containerized-tasks/orca", 
+    "containerized-tasks/orca",
     "containerized-tasks/develop-an-OrcaPod",
 
     {

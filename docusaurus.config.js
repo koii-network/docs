@@ -800,6 +800,11 @@ const config = {
               "/run-a-node/k2-validators/system-requirements"
             ],
           },
+          {
+            to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
+            from: "/concepts/what-are-koii-nodes/get-started",
+          },
+
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
