@@ -7,13 +7,10 @@ sidebar_label: Using Reputation
 
 import Description from "@site/src/components/description";
 
-# Using Reputation
-
 ![banner](/img/concepts/tasks/using-reputation.svg)
 
 Koii stands for
-** Knowledgeable Open and Infinite Internet **, and it's our first attempt at
-building a ** Compute, Attribution, and Reputation Protocol _(CARP)_** .
+**Knowledgeable Open and Infinite Internet**, and it's our first attempt at building a **Compute, Attribution, and Reputation Protocol _(CARP)_** .
 
 Since the origins of the decentralized web, there has been an ongoing battle between trust and accountability, and the need to provide services and tools to billions of people, at a minimum cost.
 
@@ -31,15 +28,15 @@ With Koii, we hope to build an initial prototype of a new model, where the techn
 
 Under a CARP model, a community member must have some initial way to build reputation through low-risk activities, after which they can be trusted to run computation tasks. To this end, we propose three primary objectives of any truly decentralized network.
 
-**1. Reputation Can Be Earned Without Up-Front Investment**
+### Reputation Can Be Earned Without Up-Front Investment
 
 For such a system to trend away from centralization, it must be possible for new entrants to join and contribute value without access to hosting resources or other personal assets. This ensures that the most honest providers can always rise to the top, without prioritizing those that would attempt to buy out the network.
 
-**2. Reputation Reduces Work Replication**
+### Reputation Reduces Work Replication
 
 The computational efficiency of a compute network defines the overall cost. If a hosting provider is not well-trusted by the community, their work must be audited by other nodes to verify its authenticity, which wastes valuable network cycles and increases the unit cost of each task proportionately. As a result, if reputation systems can be employed to reduce overall audits, it is possible to implement potentially lower-cost alternatives.
 
-**3. Tasks Can Prioritize High-Reputation Providers**
+### Tasks Can Prioritize High-Reputation Providers
 
 In order for reputation to provide a significant advantage, it is necessary to ensure that hosting purchasers can give priority to honest providers. This, perhaps for the first time, necessitates a blockchain and decentralized storage architecture, where all information is public, transparent, and immutable. In a CARP, transparent money is the key to long term growth, not just a fad or a grift.
 

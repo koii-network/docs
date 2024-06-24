@@ -55,7 +55,7 @@ During this phase, the task node(s) submit data to K2 to request rewards for wor
 - The first submission phase occurs during the **review period,** each task node submits proofs of work done during the **work period** to K2, and these _proofs_ are in turn audited by other participating nodes still in the review period.
 - The second submission phase occurs during the **distribution period,** where the selected task node submits the distribution list to K2.
 
-### 2. **Audit** **Phase**
+### 2. **Audit Phase**
 
 During this phase, the participating nodes verify data submitted to K2.
 
