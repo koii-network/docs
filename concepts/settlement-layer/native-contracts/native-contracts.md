@@ -7,9 +7,7 @@ sidebar_label: Native Contracts
 
 import ContentLink from "@site/src/components/contentLink";
 
-# Native Contracts
-
-![img](/img/concepts/settlement-layer/native-contracts.svg)
+![decorative banner](/img/concepts/settlement-layer/native-contracts.svg)
 
 Here are the articles in this section:
 

@@ -7,14 +7,12 @@ sidebar_label: The Attention Game
 
 import ContentLink from "@site/src/components/contentLink";
 
-# The Attention Game
-
 ## Playing the Game
 
-To start mining Koii via the attention game, you need to download the Finnie browser extension. [Get Finnie by clicking here.](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj)
+To start mining Koii via the attention game, you need to download the [Finnie browser extension](https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj).
 
 ## Register Web Content Programmatically
 
 If you have existing content online, such as a blog, website, or app, you can use the developer kit to track attention on your content and mine KOII for every view.
 
-[Learn more here.](/concepts/web3/attention-mining)
+[Learn more here](/concepts/web3/attention-mining)

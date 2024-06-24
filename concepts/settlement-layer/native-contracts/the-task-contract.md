@@ -5,8 +5,6 @@ image: img/thumbnail.png
 sidebar_label: The Task Contract
 ---
 
-# The Task Contract
-
 The Task Contract maintains the [Koii Compute Marketplace](/koii/ways-to-get-koii/compute-sharing-marketplace/).
 
-You can use it to deploy, audit, and incentivize new tasks for the network. Learn how to write your own tasks and share them [here!](https://github.com/koii-network/ezsandbox)
+You can use it to deploy, audit, and incentivize new tasks for the network. Learn how to write your own tasks and share them [here](https://github.com/koii-network/ezsandbox)!

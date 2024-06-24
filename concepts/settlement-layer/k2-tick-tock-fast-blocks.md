@@ -9,9 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 import Description from "@site/src/components/description";
 
-# K2 - Tick, Tock, Fast Blocks
-
-![K2](/img/concepts/settlement-layer/k2-fast-blocks.svg)
+![decorative banner](/img/concepts/settlement-layer/k2-fast-blocks.svg)
 
 <Description
   text="Fast transaction settlement and timestamps."
@@ -23,7 +21,9 @@ Thanks to the incredible work of the Solana Labs team, K2 can use [Proof of Hist
 
 The settlement layer holds the KOII tokens, as well as an immutable ledger of transaction history, an active registry of open compute operations, and all compute task metadata.
 
-**Heads up!** To use K2, you'll need to install the [Koii CLI](/develop/category/koii-command-line-tool) or try the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
+:::info Heads up!
+To use K2, you'll need to install the [Koii CLI](/develop/category/koii-command-line-tool) or try the [Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk), which provides vital functions such as creating wallets, sending transactions, and signing data.
+:::
 
 ## Native Programs
 

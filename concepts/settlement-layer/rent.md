@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 Rent is the fee paid by accounts and programs to store their data on K2.
 
-As the blockchain cluster needs to actively maintain data to process any upcoming transactions, all K2 Accounts and Programs must keep their [balances](https://docs.solana.com/developing/intro/rent) high enough to qualify for rent exemption and to stay on the K2 blockchain.
+As the blockchain cluster needs to actively maintain data to process any upcoming transactions, all K2 Accounts and Programs must keep their balances high enough to qualify for rent exemption and to stay on the K2 blockchain.
 
 ## What is Rent Exemption?
 
