@@ -440,13 +440,6 @@ const config = {
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/introduction",
-            from: [
-              "/microservices-and-tasks/task-development-guide",
-              "/develop/write-a-koii-task/task-development-kit-tdk",
-            ],
-          },
-          {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace",
           },
@@ -587,8 +580,19 @@ const config = {
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/introduction",
+            to: "/develop/task-development/write-a-task",
             from: [
+              "/develop/write-a-koii-task/task-development-guide/introduction",
+              "/develop/write-a-koii-task/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide/task-structure",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/task-structure",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/execute-task",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/upnp-structure",
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
               "/quickstart/hello-world/introduction",
               "/quickstart/hello-world/understand-the-template",
               "/quickstart/hello-world/task",
@@ -607,9 +611,87 @@ const config = {
               "/quickstart/hello-world/task-tutorial",
               "/quickstart/hello-world/task-description",
               "/quickstart/hello-world/deploy",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
             ],
           },
-
+          {
+            to: "/develop/task-development/key-concepts",
+            from: [
+              "/develop/write-a-koii-task/task-development-guide/key-concepts",
+            ],
+          },
+          {
+            to: "/develop/task-development/task-development-flow",
+            from: [
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet"
+            ],
+          },
+          {
+            to: "/develop/task-development/whitelist-task",
+            from: [
+              "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
+            ],
+          },
+          {
+            to: "/develop/category/testing",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/testing",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/testing-locally-using-jest",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/configuration",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/configuration",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/using-unittest",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/using-unittest",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/easy-testing",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/simulating-a-round",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/simulating-a-round"
+            ]
+          },
+          {
+            to: "/develop/task-development/testing/docker-test",
+            from: [
+              "/develop/write-a-koii-task/task-development-kit-tdk/test/docker-test",
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/docker-test"
+            ]
+          },
+          {
+            to:"/concepts/distributed-cloud/reduced-computing-costs",
+            from:"/concepts/distributed-cloud/community-powered-hosting"
+          },
           {
             to: "/develop/introduction",
             from: ["/quickstart/introduction"],
@@ -718,61 +800,6 @@ const config = {
               "/run-a-node/k2-validators/system-requirements"
             ],
           },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/execute-task",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/audit-submissions",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/setup"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-guide",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/configuration",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/using-unittest",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/simulating-a-round"
-          },
-          {
-            to:"/develop/write-a-koii-task/task-development-guide/introduction",
-            from:"/develop/write-a-koii-task/task-development-guide"
-          },
-          {
-            to:"/concepts/distributed-cloud/reduced-computing-costs",
-            from:"/concepts/distributed-cloud/community-powered-hosting"
-          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {
