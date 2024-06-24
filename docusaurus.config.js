@@ -804,6 +804,15 @@ const config = {
             to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
             from: "/concepts/what-are-koii-nodes/get-started",
           },
+          {
+            to: "/develop/containerized-tasks/orca",
+            from: "/concepts/containerized-tasks/orca",
+          },
+          {
+            to: "/develop/containerized-tasks/develop-an-OrcaPod",
+            from: "/concepts/containerized-tasks/develop-an-OrcaPod",
+          },
+
 
         ],
         createRedirects(existingPath) {
