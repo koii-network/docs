@@ -93,12 +93,12 @@ const sidebars = {
     },
     "gradual-consensus/runtime-flow",
     "gradual-consensus/task-lifecycle",
-    {
-      type: "html",
-      value: "Large Compute Providers",
-      className: "sidebar-title",
-    },
-    "large-compute/large-compute",
+    // {
+    //   type: "html",
+    //   value: "Large Compute Providers",
+    //   className: "sidebar-title",
+    // },
+    // "large-compute/large-compute",
 
     {
       type: "html",
