@@ -852,6 +852,18 @@ const config = {
             to: "/develop/finnie-wallet/other-evm-chains",
             from: "/concepts/finnie-wallet/other-evm-chains",
           },
+          {
+            to: "/develop/encryption/intro",
+            from: "/concepts/encryption/intro",
+          },
+          {
+            to: "/develop/encryption/ethereum-encryption",
+            from: "/concepts/encryption/ethereum-encryption",
+          },
+          {
+            to: "/develop/encryption/solana-encryption",
+            from: "/concepts/encryption/solana-encryption",
+          },
 
 
         ],

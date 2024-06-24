@@ -95,15 +95,6 @@ const sidebars = {
     "gradual-consensus/task-lifecycle",
     {
       type: "html",
-      value: "Encryption",
-      className: "sidebar-title",
-    },
-    "encryption/intro",
-    "encryption/ethereum-encryption",
-    "encryption/solana-encryption",
-
-    {
-      type: "html",
       value: "Large Compute Providers",
       className: "sidebar-title",
     },

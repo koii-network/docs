@@ -112,7 +112,14 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-
+    {
+      type: "html",
+      value: "Encryption",
+      className: "sidebar-title",
+    },
+    "encryption/intro",
+    "encryption/ethereum-encryption",
+    "encryption/solana-encryption",
     {
       type: "html",
       value: "Orca",

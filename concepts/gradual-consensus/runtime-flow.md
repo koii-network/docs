@@ -10,17 +10,17 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Runtime Flow
 
-![img](/img/concepts/gradual-consensus/runtime-flow.svg)
+![decorative banner](/img/concepts/gradual-consensus/runtime-flow.svg)
 
 <Description text="Gradual Consensus - Act quickly, react faster, and reward slowly." />
 
 While the task standard supports a wide range of possible applications, the most straightforward approach is to follow a multi-round confirmation process, which we refer to as **Gradual Consensus**.
 
-## **Why is it gradual?**
+## Why is it gradual?
 
 One of the major limitations of stake-based games is the potential for an actor with a large number of tokens to temporarily take over the system and potentially even extract rewards unfairly. Koii tasks naturally avoid this issue by slowing down reward distributions and using proportionately high numbers of audit nodes compared to task executors.
 
-## **How does it work?**
+## How does it work?
 
 The key to building community-based products is to regularly appraise contributions through a commonly agreed-upon set of rules. Under the Koii model, this system runs in regularly timed rounds, during which each participating device participates as much as it can, and rewards or penalties are regularly deployed to correct the course of the system towards a desired outcome.
 
