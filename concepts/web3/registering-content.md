@@ -7,27 +7,23 @@ sidebar_label: Registering Content
 
 import Description from "@site/src/components/description";
 
-# Registering Content
+![decorative banner](/img/concepts/web3/registering-content.svg)
 
-![banner](/img/concepts/web3/registering-content.svg)
-
-**$KOII can be earned on any content where Proofs of Real Traffic are submitted.**
+<Description text="$KOII can be earned on any content where Proofs of Real Traffic are submitted." />
 
 To mine new KOII tokens, each piece of content must be registered by paying a small fee in KOII. The fee can either be paid upfront, which costs less, or it can be paid after KOII has already been earned, in which case the fee will scale to the total earned.
 
-**Registration Fees**
+## Registration Fees
 
-_Upfront -_ Small fee, fixed price, but must be paid in advance of any Proof of Real Traffic
+**Upfront**: Small fee, fixed price, but must be paid in advance of any Proof of Real Traffic
 
-_Lazy_ - Larger Fee, scales to the total attention the content has received so far
+**Lazy:**: Larger Fee, scales to the total attention the content has received so far
 
-:::info
-
-Need some KOII? Check <a href="https://faucet.koii.network/" target="_blank">here </a> to airdrop some KOII into your wallet.
-
+:::info Need some KOII?
+Visit the <a href="https://faucet.koii.network/" target="_blank">faucet</a> to airdrop some KOII into your wallet.
 :::
 
-**Content Types**
+## Content Types
 
 The network is designed to track content from any source and can be configured to credit app developers by specifying an application key. If no application key is specified, the registrar of the content ID receives all rewards.
 
@@ -47,13 +43,13 @@ npm i @_koii/k2-recipient-sdk
 
 Then get a Koii wallet and some KOII in your wallet, which the attention reward will be collected. Check about the [Koii CLI tool](/) to quickly generate one and airdrop some KOII.
 
-## Example
+### Example
 
-#### For IPFS content:
+#### For IPFS content
 
 Please provide a `metadata.json` file and put it at the root:
 
-```jsx title="metadata.json"
+```json title="metadata.json"
 {
   "name": "<Content-name>",
   "description": "<Content description >",
@@ -67,7 +63,7 @@ Then provide an image as the thumbnail of your content.
 
 Prepare your Koii wallet and check the sample code:
 
-```jsx title="registerIPFS.js"
+```js title="registerIPFS.js"
 const { registerIpfsNFT } = require("@_koii/k2-recipient-sdk");
 async function main() {
   //  IPFS recipient Signing
