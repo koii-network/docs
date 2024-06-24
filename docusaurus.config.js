@@ -812,6 +812,46 @@ const config = {
             to: "/develop/containerized-tasks/develop-an-OrcaPod",
             from: "/concepts/containerized-tasks/develop-an-OrcaPod",
           },
+          {
+            to: "/develop/finnie-wallet/introduction",
+            from: "/concepts/finnie-wallet/introduction",
+          },
+          {
+            to: "/develop/finnie-wallet/k2-integration-hooks",
+            from: "/concepts/finnie-wallet/k2-integration-hooks",
+          },
+          {
+            to: "/develop/finnie-wallet/K2-integration-hooks/properties",
+            from: "/concepts/finnie-wallet/K2-integration-hooks/properties",
+          },
+          {
+            to: "/develop/finnie-wallet/K2-integration-hooks/methods",
+            from: "/concepts/finnie-wallet/K2-integration-hooks/methods",
+          },
+          {
+            to: "/develop/finnie-wallet/K2-integration-hooks/events",
+            from: "/concepts/finnie-wallet/K2-integration-hooks/events",
+          },
+          {
+            to: "/develop/finnie-wallet/ethereum-network",
+            from: "/concepts/finnie-wallet/ethereum-network",
+          },
+          {
+            to: "/develop/finnie-wallet/ethereum-network/send-eth",
+            from: "/concepts/finnie-wallet/ethereum-network/send-eth",
+          },
+          {
+            to: "/develop/finnie-wallet/ethereum-network/send-eth-eip-1559",
+            from: "/concepts/finnie-wallet/ethereum-network/send-eth-eip-1559",
+          },
+          {
+            to: "/develop/finnie-wallet/ethereum-network/contract-deployment",
+            from: "/concepts/finnie-wallet/ethereum-network/contract-deployment",
+          },
+          {
+            to: "/develop/finnie-wallet/other-evm-chains",
+            from: "/concepts/finnie-wallet/other-evm-chains",
+          },
 
 
         ],

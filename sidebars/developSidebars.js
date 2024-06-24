@@ -122,6 +122,42 @@ const sidebars = {
     "containerized-tasks/develop-an-OrcaPod",
     {
       type: "html",
+      value: "Finnie for Developers",
+      className: "sidebar-title",
+    },
+    "finnie-for-devs/introduction",
+    {
+      type: "category",
+      label: "K2 Integration Hooks",
+      link: {
+        type: "generated-index",
+        description: "Here are the articles in this section",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/K2-integration-hooks/properties",
+        "finnie-for-devs/K2-integration-hooks/methods",
+        "finnie-for-devs/K2-integration-hooks/events",
+      ],
+    },
+    {
+      type: "category",
+      label: "Ethereum Network",
+      link: {
+        type: "generated-index",
+        description:
+          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
+      },
+      collapsed: true,
+      items: [
+        "finnie-for-devs/ethereum-network/send-eth",
+        "finnie-for-devs/ethereum-network/send-eth-eip-1559",
+        "finnie-for-devs/ethereum-network/contract-deployment",
+      ],
+    },
+    "finnie-for-devs/other-evm-chains",
+    {
+      type: "html",
       value: "Template Applications",
       className: "sidebar-title",
     },

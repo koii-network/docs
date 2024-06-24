@@ -88,44 +88,6 @@ const sidebars = {
     "distributed-cloud/better-data",
     {
       type: "html",
-      value: "Finnie Wallet",
-      className: "sidebar-title",
-    },
-    "finnie-wallet/introduction",
-    // "finnie-wallet/finnie-for-devs/welcome-to-finnie",
-    {
-      type: "category",
-      label: "K2 integration hooks",
-      link: {
-        type: "generated-index",
-        description: "Here are the articles in this section",
-      },
-      collapsed: true,
-      items: [
-        "finnie-wallet/finnie-for-devs/K2-integration-hooks/properties",
-        "finnie-wallet/finnie-for-devs/K2-integration-hooks/methods",
-        "finnie-wallet/finnie-for-devs/K2-integration-hooks/events",
-      ],
-    },
-    {
-      type: "category",
-      label: "Ethereum Network",
-      link: {
-        type: "generated-index",
-        description:
-          "The following chapters will show you how you can use your Finnie wallet to interact with the Ethereum blockchain.",
-      },
-      collapsed: true,
-      items: [
-        "finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
-        "finnie-wallet/finnie-for-devs/ethereum-network/send-eth-eip-1559",
-        "finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
-      ],
-    },
-    "finnie-wallet/finnie-for-devs/other-evm-chains",
-
-    {
-      type: "html",
       value: "Gradual Consensus",
       className: "sidebar-title",
     },
