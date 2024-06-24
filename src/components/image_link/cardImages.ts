@@ -1,4 +1,7 @@
 export const cardImages = {
+  createKoiiTask:
+    require(`/img/cards/create-a-koii-task.svg`)
+    .default,
   koiiCLI:
     require(`/img/cards/koii-cli.svg`)
     .default,
