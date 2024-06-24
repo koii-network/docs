@@ -25,75 +25,31 @@ const sidebars = {
 
     {
       type: "html",
-      value: "Task Development Guide",
+      value: "Task Development",
       className: "sidebar-title top-margin",
     },
-    "write-a-koii-task/task-development-guide/introduction",
-    "write-a-koii-task/task-development-guide/key-concepts",
-    "write-a-koii-task/task-development-guide/task-structure",
-    {
-      type: "category",
-      label: "Template Structure",
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-guide/template-structure/task-structure",
-      },
-      collapsed: true,
-      items: [
-        "write-a-koii-task/task-development-guide/template-structure/execute-task",
-        "write-a-koii-task/task-development-guide/template-structure/audit-submissions",
-        "write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
-        "write-a-koii-task/task-development-guide/template-structure/setup",
-        "write-a-koii-task/task-development-guide/template-structure/upnp-structure"
-      ],
-    },
-    {
-      type: "category",
-      label: "Task Development Flow",
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-guide/task-development-flow/task-development-flow",
-      },
-      items: [
-        "write-a-koii-task/task-development-guide/task-development-flow/compile-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/create-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/whitelist-task",
-        "write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
-      ],
-    },
-    {
+    "task-development/write-a-task",
+    "task-development/key-concepts",
+    "task-development/task-development-flow",
+    "task-development/whitelist-task",
+        {
       type: "category",
       label: "Testing",
       link: {
-        type: "doc",
-        id: "write-a-koii-task/task-development-kit-tdk/test/testing",
+        type: "generated-index",
+        description:
+          "Learn how to test your task.",
       },
       collapsed: true,
       items: [
-        "write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
-        "write-a-koii-task/task-development-kit-tdk/test/configuration",
-        "write-a-koii-task/task-development-kit-tdk/test/using-unittest",
-        "write-a-koii-task/task-development-kit-tdk/test/easy-testing",
-        "write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
-        "write-a-koii-task/task-development-kit-tdk/test/docker-test",
+        "task-development/testing/testing-locally-using-jest",
+        "task-development/testing/configuration",
+        "task-development/testing/using-unittest",
+        "task-development/testing/easy-testing",
+        "task-development/testing/simulating-a-round",
+        "task-development/testing/docker-test"
       ],
     },
-
-    // {
-    //   type: "category",
-    //   label: "K2 Task Template",
-    //   link: {
-    //     type: "doc",
-    //     id: "write-a-koii-task/task-development-guide/k2-task-template/k2-task-template",
-    //   },
-    //   collapsed: true,
-    //   items: [
-    //     "write-a-koii-task/task-development-guide/k2-task-template/task-function",
-    //     "write-a-koii-task/task-development-guide/k2-task-template/audit-function",
-    //     "write-a-koii-task/task-development-guide/k2-task-template/distribution-functions",
-    //   ],
-    // },
     {
       type: "html",
       value: "Koii Software Toolkit (SDK)",
@@ -156,7 +112,6 @@ const sidebars = {
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
     "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-    "write-a-koii-task/task-development-guide/scaling-tasks/network-options",
 
 
     {
