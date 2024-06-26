@@ -790,7 +790,7 @@ const config = {
             from: "/token",
           },
           {
-            to: "/faq/questions/",
+            to: "/faq/questions",
             from: "/faq",
           },
           {
@@ -799,6 +799,14 @@ const config = {
               "/develop/settlement-layer/running-a-k2-node/system-requirements",
               "/run-a-node/k2-validators/system-requirements"
             ],
+          },
+          {
+            to: "/run-a-node/task-nodes/concepts/what-is-an-rpc-node",
+            from: "/concepts/what-are-koii-nodes/what-is-an-rpc-node",
+          },
+          {
+            to: "/run-a-node/task-nodes/concepts/rewards",
+            from: "/run-a-node/task-nodes/rewards",
           },
         ],
         createRedirects(existingPath) {
