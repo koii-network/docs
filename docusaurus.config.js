@@ -422,7 +422,8 @@ const config = {
             to: "/faq/questions/",
             from: [
               "/koii/faq",
-              "/faq/getting-started"
+              "/faq/getting-started",
+              "/faq"
             ],
           },
 
@@ -788,10 +789,6 @@ const config = {
           {
             to: "/koii/the-koii-token/network-economics",
             from: "/token",
-          },
-          {
-            to: "/faq/questions",
-            from: "/faq",
           },
           {
             to: "/run-a-node/k2-validators/validator-requirements",
