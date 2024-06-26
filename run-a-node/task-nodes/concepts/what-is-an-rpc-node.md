@@ -7,11 +7,11 @@ sidebar_label: RPC Nodes
 
 RPC nodes are a vital part of Koii, because they connect your desktop node to the Koii blockchain. They're used for getting your account data and running tasks.
 
-## Your account data
+## Your Account Data
 
 Your KOII tokens are stored permanently on the Koii blockchain, not on the desktop node. In order to display your account balance, your node must request the information from the blockchain. Your node sends a request to the RPC node, which then gets your balance from the blockchain and sends it back to your node to be displayed. When RPCs are experiencing a high load, they may not be able to get your balance information, but your tokens are always secure on the blockchain.
 
-## Running tasks
+## Running Tasks
 
 Koii tasks are work that your computer can do to earn rewards. It involves several steps:
 

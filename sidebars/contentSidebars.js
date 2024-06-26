@@ -37,9 +37,12 @@ const sidebars = {
       className: "sidebar-title",
     },
     "what-are-koii-nodes/introduction",
+    // TODO: rename to task-nodes
     "what-are-koii-nodes/koii-node-app",
     "what-are-koii-nodes/get-started",
-    "what-are-koii-nodes/what-is-an-rpc-node",
+    // TODO: make these pages
+    // "what-are-koii-nodes/validator-nodes",
+    // "what-are-koii-nodes/rpc-nodes",
     {
       type: "html",
       value: "What are Tasks?",
@@ -92,7 +95,7 @@ const sidebars = {
       value: "Orca",
       className: "sidebar-title",
     },
-    "containerized-tasks/orca", 
+    "containerized-tasks/orca",
     "containerized-tasks/develop-an-OrcaPod",
 
     {
