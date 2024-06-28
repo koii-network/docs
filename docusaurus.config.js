@@ -203,7 +203,7 @@ const config = {
             ]
           },
           {
-            to: "/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
+            to: "/concepts/what-are-tasks/what-are-tasks/gradual-consensus",
             from: [
               "/microservices-and-tasks/gradual-consensus",
               "/develop/koii-task-101/what-are-tasks/gradual-consensus",
