@@ -203,12 +203,13 @@ const config = {
             ]
           },
           {
-            to: "/concepts/gradual-consensus/runtime-flow",
+            to: "/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
             from: [
               "/microservices-and-tasks/gradual-consensus",
               "/develop/koii-task-101/what-are-tasks/gradual-consensus",
               "/concepts/gradual-consensus",
               "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+              "/concepts/gradual-consensus/runtime-flow",
             ],
           },
           {

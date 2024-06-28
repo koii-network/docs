@@ -135,14 +135,6 @@ const sidebars = {
       ],
     },
     "finnie-wallet/finnie-for-devs/other-evm-chains",
-
-    {
-      type: "html",
-      value: "Gradual Consensus",
-      className: "sidebar-title",
-    },
-    "gradual-consensus/runtime-flow",
-    "gradual-consensus/task-lifecycle",
     {
       type: "html",
       value: "Encryption",
