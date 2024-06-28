@@ -664,7 +664,7 @@ const config = {
             to: "/develop/task-development/testing/easy-testing",
             from: [
               "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
-              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing",
             ]
           },
           {
@@ -781,26 +781,6 @@ const config = {
             to: "/run-a-node/task-nodes/concepts/what-is-an-rpc-node",
             from: "/concepts/what-are-koii-nodes/what-is-an-rpc-node",
           },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing-locally-using-jest",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing-locally-using-jest"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/testing",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/testing"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/using-unittest",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/using-unittest"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/simulating-a-round"
-          }
         ],
         createRedirects(existingPath) {
           if (existingPath.includes("/concepts/introduction")) {

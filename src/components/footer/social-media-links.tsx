@@ -3,7 +3,7 @@ import React from "react";
 export const SocialMediaLinks = () => {
   return (
     <div className="flex justify-evenly md:justify-between gap-2 md:mt-[0.5rem] laptop-sm:mt-0 laptop-sm:gap-4 laptop-sm:pt-[1rem] md:mb-0 my-6">
-      <a href="https://twitter.com/KoiiFoundation">
+      <a href="https://x.com/KoiiFoundation">
         <img
           src="/img/media/twitter.svg"
           alt="Twitter logo"
@@ -30,7 +30,7 @@ export const SocialMediaLinks = () => {
       <a href="https://github.com/koii-network/">
         <img src="/img/media/github.svg" alt="Github logo" width={32} height={32} />
       </a>
-      <a href="https://www.linkedin.com/company/open-koi/">
+      <a href="https://www.linkedin.com/company/koii-network/">
         <img src="/img/media/linkedin.svg" alt="linkedin" width={32} height={32} />
       </a>
       <a href="https://www.youtube.com/c/KoiiNetwork">

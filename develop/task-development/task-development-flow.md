@@ -13,7 +13,7 @@ Here are articles in this section:
 
 ## Fund Task
 
-We offer a [grant program](https://www.koii.network/founders) to help with the initial funding of your task.
+We offer a [grant program](https://www.koii.network/grants) to help with the initial funding of your task.
 
 ## Write Task
 

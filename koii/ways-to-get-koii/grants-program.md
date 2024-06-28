@@ -17,6 +17,6 @@ Grants are given for helping build core technology, proofs of concept for novel 
 
 **Note:** Koii grants can be in our native compute credits, KOII or USD. They can only be redeemed to use the network, not sold to fund operations.
 
-[Learn more about our Founders program!](https://www.koii.network/founders)
+[Learn more about our Founders program!](https://www.koii.network/grants)
 
 [Send us an email](mailto:hello@koii.network) for more information.

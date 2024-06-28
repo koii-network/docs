@@ -126,7 +126,7 @@
   ],
   "grants": [
     "We are offering Koii Developers $USD and $KOII via our Founders program.",
-    "https://www.koii.network/founders"
+    "https://www.koii.network/grants"
   ],
   "bounty": ["Bounty", "https://www.google.com/"],
   "compute marketplace": [
@@ -151,7 +151,7 @@
   ],
   "Koii Node": [
     "Our easy-to-use app for running compute jobs and earning tokens",
-    "https://www.koii.network/node"
+    "https://www.koii.network/nodes"
   ],
   "gradual consensus": [
     "Koii's method for achieving consensus through delayed reward distribution",

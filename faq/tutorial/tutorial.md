@@ -22,7 +22,7 @@ import ReactPlayer from "react-player";
 
 **For Mac**: Go to Finder, click `command+shift+G`, type in `/Users/<user_name>/Library/Application Support/`
 
-- download the Koii node [here](https://www.koii.network/node)
+- download the Koii node [here](https://www.koii.network/nodes)
 - create a new account
 - remember the new passphrase (12-secret-phrase)
 - **skip** the faucet
@@ -62,7 +62,7 @@ Register Finnie Wallet:
 
 Install Koii Node:
 
-- Download the latest version of the Koii Node software from [HERE](https://www.KOII.network/node).
+- Download the latest version of the Koii Node software from [HERE](https://www.KOII.network/nodes).
 - Launch Koii Node, and if it's your first time, follow the initial setup prompts.
   Prepare Wallet Details:
 - Have your 12-word secret phrase from Finnie wallet ready for the import process.

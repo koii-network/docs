@@ -41,7 +41,7 @@ Each task contains an executable, an <Tooltip text="audit function"/>, and a <To
 
 Once staked, your node must remain online to fulfill task executions according to the rules of the **audit function** and will operate in the background on your devices to provide microservices to developers.
 
-If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://www.koii.network/founders) to cover hardware and hosting.
+If you want to upgrade your existing systems and don't have the resources, contact us here for a [grant](https://www.koii.network/grants) to cover hardware and hosting.
 
 #### Start writing your first task today!
 
@@ -55,4 +55,4 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 While the network is still in its early stages, our community has tens of thousands of node runners and applicants, providing a global network of personal computers.
 
-[Click here to download our Koii Node](https://www.koii.network/node)
+[Click here to download our Koii Node](https://www.koii.network/nodes)

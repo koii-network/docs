@@ -24,7 +24,7 @@ export const GrantArea = () => {
           <ReactPlayer className="react-player" url={url} width="100%" />
         </div>
         <a
-          href="https://www.koii.network/founders"
+          href="https://www.koii.network/grants"
           className="w-full max-w-[240px] hover:opacity-90 mt-5"
           target="_blank"
         >
