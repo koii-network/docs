@@ -7,7 +7,7 @@ sidebar_label: Introduction
 **Contact Us** task is a simple project which includes a single contact form that has fields for filling in name, email address and a message with the purpose of providing an immediate, convenient way for users to ask the company questions.
 
 :::note
-If you're new to creating tasks, it is advisable to go through our [Hello World](/develop/write-a-koii-task/task-development-guide/introduction) tutorial, as it was written as an introductory tutorial for beginners to learn how to create Koii tasks.
+If you're new to creating tasks, it is advisable to go through our [Hello World](https://github.com/koii-network/ezsandbox) tutorial, as it was written as an introductory tutorial for beginners to learn how to create Koii tasks.
 :::
 
 # The Task Logic

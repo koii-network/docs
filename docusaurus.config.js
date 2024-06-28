@@ -439,13 +439,6 @@ const config = {
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/introduction",
-            from: [
-              "/microservices-and-tasks/task-development-guide",
-              "/develop/write-a-koii-task/task-development-kit-tdk",
-            ],
-          },
-          {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace",
           },
@@ -611,7 +604,9 @@ const config = {
               "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
               "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
               "/develop/write-a-koii-task/task-development-guide/task-development-guide",
-
+              "/develop/write-a-koii-task/task-development-guide",
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
             ],
           },
           {
@@ -846,10 +841,6 @@ const config = {
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/test/simulating-a-round",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/simulating-a-round"
-          },
-          {
-            to:"/develop/write-a-koii-task/task-development-guide/introduction",
-            from:"/develop/write-a-koii-task/task-development-guide"
           }
         ],
         createRedirects(existingPath) {

@@ -23,7 +23,7 @@ For more information, please check [Jest's official website](https://jestjs.io/)
 
 ## How to use Jest?
 
-If your task is cloned from our [K2 Task Template](/develop/write-a-koii-task/task-development-guide/k2-task-template/), you can directly run:
+If your task is cloned from our [K2 Task Template](https://github.com/koii-network/task-template), you can directly run:
 
 ```bash
 npm install

@@ -31,14 +31,14 @@ In each task cycle, there must be:
 
 1. Work to do
 2. A mechanism to review work done by other participants
-3. [Rewards for good behavior](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions)
-4. [Penalties for bad behavior](/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function)
+3. Rewards for good behavior
+4. Penalties for bad behavior
 
 For help designing your task, you might want to try using the task organizer, which provides a simple whiteboard for brainstorming your product.
 
 <ContentLink title="Task Outline" link="https://www.figma.com/community/file/1220194939977550205" imageLink="https://static.figma.com/uploads/1a667ef53b7c4837049399d0593ffca39e0bec9e" description="Figma" bottomText="Copy this whiteboard to start brainstorming how your task will work." />
 
-Note: In most cases, the actual management of (3) and (4) above depends on [tracking digital signatures](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures) from participating nodes, community members, or outside Oracle services. Reviewing these signatures is usually referred to as an [_audit_](/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function).
+Note: In most cases, the actual management of (3) and (4) above depends on [tracking digital signatures](/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures) from participating nodes, community members, or outside Oracle services. Reviewing these signatures is usually referred to as an [_audit_](/develop/task-development/key-concepts).
 
 ![banner](../img/Gradual%20Consensus.svg)
 

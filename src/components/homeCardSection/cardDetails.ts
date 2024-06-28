@@ -45,7 +45,7 @@ export const cardDetails: Cards[] = [
     items: [
       {
         title: "The Task Template",
-        link: "/develop/write-a-koii-task/task-development-guide/k2-task-template/",
+        link: "https://github.com/koii-network/task-template",
         image: "/img/Task template.svg",
       },
       {
