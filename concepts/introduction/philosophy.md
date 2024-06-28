@@ -39,7 +39,7 @@ Take an active role in shaping Koii's future. Your involvement is vital, whether
   <CardSpecial
     title="<p><strong>Follow Koii on Twitter</strong></p>"
     description=" <p>Join us on Twitter to stay tuned on ecosystem updates, and what people are saying daily.</p>"
-    link="https://twitter.com/KoiiFoundation"
+    link="https://x.com/KoiiFoundation"
     linkText="twitter"
     svgName="twitter"
     cardPerRow="3"

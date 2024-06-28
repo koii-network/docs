@@ -140,6 +140,7 @@ const config = {
               "/develop/encryption/intro",
               "/develop/encryption/solana-encryption",
               "/develop/encryption/ethereum-encryption",
+              "/koii",
             ],
           },
           {
@@ -183,6 +184,8 @@ const config = {
             from: [
               "/concepts/earning-koii/proof-of-real-traffic/registering-content",
               "/develop/attention-mining/proof-of-real-traffic/registering-content",
+              "/quickstart/koii-software-toolkit-sdk/register-content",
+              "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
             ],
           },
           {
@@ -194,15 +197,19 @@ const config = {
           },
           {
             to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
-            from: "/earning-koii/running-task-nodes",
+            from: [
+              "/earning-koii/running-task-nodes",
+              "/develop/microservices-and-tasks/run-a-task-node",
+            ]
           },
           {
-            to: "/concepts/gradual-consensus/runtime-flow",
+            to: "/concepts/what-are-tasks/what-are-tasks/gradual-consensus",
             from: [
               "/microservices-and-tasks/gradual-consensus",
               "/develop/koii-task-101/what-are-tasks/gradual-consensus",
               "/concepts/gradual-consensus",
               "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
+              "/concepts/gradual-consensus/runtime-flow",
             ],
           },
           {
@@ -228,6 +235,8 @@ const config = {
             from: [
               "/earning-koii/network-economics",
               "/concepts/earning-koii/network-economics",
+              "/concepts/the-koii-token/network-economics",
+              "/token",
             ],
           },
           {
@@ -241,8 +250,11 @@ const config = {
             ],
           },
           {
-            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
-            from: "/earning-koii/compute-sharing-marketplace",
+            to: "/koii/ways-to-get-koii/compute-sharing-marketplace",
+            from: [
+              "/earning-koii/compute-sharing-marketplace",
+              "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
+            ]
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
@@ -253,6 +265,7 @@ const config = {
             from: [
               "/earning-koii/grants-program",
               "/concepts/earning-koii/grants-program",
+              "/concepts/ways-to-get-koii/grants-program",
             ],
           },
           {
@@ -291,20 +304,11 @@ const config = {
             ],
           },
           {
-            to: "/concepts/what-are-tasks/what-are-tasks",
-            from: "/develop/microservices-and-tasks/what-are-tasks",
-          },
-          {
             to: "/concepts/what-are-tasks/what-are-tasks/runtime-environment",
             from: [
               "/develop/microservices-and-tasks/what-are-tasks/runtime-environment",
               "/develop/koii-task-101/what-are-tasks/runtime-environment",
             ],
-          },
-
-          {
-            to: "/run-a-node/task-nodes/how-to-run-a-koii-node",
-            from: "/develop/microservices-and-tasks/run-a-task-node",
           },
           {
             to: "/concepts/what-are-tasks/designing-tasks/using-reputation",
@@ -327,6 +331,7 @@ const config = {
               "/task",
               "/microservices-and-tasks/what-are-tasks",
               "/develop/koii-task-101/what-are-tasks",
+              "/develop/microservices-and-tasks/what-are-tasks",
             ],
           },
           {
@@ -356,10 +361,6 @@ const config = {
             to: "/koii/the-koii-token/tokenomics/token-generation",
             from: "/concepts/the-koii-token/tokenomics/token-generation",
           },
-          {
-            to: "/koii/ways-to-get-koii/grants-program",
-            from: "/concepts/ways-to-get-koii/grants-program",
-          },
           // {
           //   to: "/koii/koii-wallet-finnie/using-finnie",
           //   from: "/concepts/koii-wallet-finnie/connecting-finnie",
@@ -388,10 +389,6 @@ const config = {
             ],
           },
           {
-            to: "/koii/the-koii-token/network-economics",
-            from: "/concepts/the-koii-token/network-economics",
-          },
-          {
             to: "/koii/the-koii-token/tokenomics/supply-reduction",
             from: "/concepts/the-koii-token/tokenomics/supply-reduction",
           },
@@ -415,10 +412,6 @@ const config = {
             ]
           },
           {
-            to: "/koii/ways-to-get-koii/compute-sharing-marketplace/",
-            from: "/concepts/ways-to-get-koii/compute-sharing-marketplace/",
-          },
-          {
             to: "/faq/questions/",
             from: [
               "/koii/faq",
@@ -438,6 +431,7 @@ const config = {
               "/concepts/koii-wallet-finnie/using-finnie",
               "/develop/finnie-for-devs/welcome-to-finnie",
               "/finnie-wallet/welcome-to-finnie/content-collectives",
+              "/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet",
             ],
           },
           {
@@ -462,7 +456,10 @@ const config = {
           },
           {
             to: "/concepts/category/ethereum-network",
-            from: "/develop/category/ethereum-network",
+            from: [
+              "/develop/category/ethereum-network",
+              "/develop/finnie-for-devs/ethereum-network/mint-nft",
+            ]
           },
           {
             to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/send-eth",
@@ -475,11 +472,6 @@ const config = {
           {
             to: "/concepts/finnie-wallet/finnie-for-devs/ethereum-network/contract-deployment",
             from: "/develop/finnie-for-devs/ethereum-network/contract-deployment",
-          },
-
-          {
-            to: "/concepts/category/ethereum-network",
-            from: "/develop/finnie-for-devs/ethereum-network/mint-nft",
           },
           {
             to: "/concepts/finnie-wallet/finnie-for-devs/other-evm-chains",
@@ -500,10 +492,6 @@ const config = {
           {
             to: "/concepts/settlement-layer/native-contracts",
             from: "/develop/settlement-layer/native-contracts",
-          },
-          {
-            to: "/concepts/finnie-wallet/introduction",
-            from: "/develop/build-dapps-with-koii/integrating-wallets/finnie-wallet",
           },
           {
             to: "/compute/introduction",
@@ -542,6 +530,7 @@ const config = {
               "/develop/build-dapps-with-koii/template-library/customization",
               "/develop/build-dapps-with-koii/template-library/currencies-and-wallets",
               "/develop/build-dapps-with-koii/template-library/deploy",
+              "/getcompute",
             ]
           },
           {
@@ -571,14 +560,6 @@ const config = {
           {
             to: "/develop/koii-software-toolkit-sdk/koii-javascript-api",
             from: "/quickstart/koii-software-toolkit-sdk/koii-javascript-api",
-          },
-          {
-            to: "/concepts/web3/registering-content",
-            from: "/quickstart/koii-software-toolkit-sdk/register-content",
-          },
-          {
-            to: "/concepts/web3/registering-content",
-            from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           {
             to: "/develop/task-development/write-a-task",
@@ -617,12 +598,24 @@ const config = {
               "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
               "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
               "/develop/write-a-koii-task/task-development-guide/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide",
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
             ],
           },
           {
             to: "/develop/task-development/key-concepts",
             from: [
               "/develop/write-a-koii-task/task-development-guide/key-concepts",
+              "/develop/write-a-koii-task/k2-task-template/distribution-functions",
+              "/develop/write-a-koii-task/k2-task-template/audit-function",
+              "/develop/write-a-koii-task/k2-task-template/task-function",
+              "/develop/write-a-koii-task/task-development-guide/k2-task-template/"
             ],
           },
           {
@@ -672,7 +665,7 @@ const config = {
             to: "/develop/task-development/testing/easy-testing",
             from: [
               "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",
-              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing"
+              "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/easy-testing",
             ]
           },
           {
@@ -771,24 +764,12 @@ const config = {
             from: "/faq/pagethree",
           },
           {
-            to: "/concepts/introduction/welcome",
-            from: "/koii",
-          },
-          {
             to: "/run-a-node/introduction/types-of-nodes",
             from: "/nodes",
           },
           {
-            to: "/develop/onboarding/welcome-to-koii/",
+            to: "/develop/onboarding/welcome-to-koii",
             from: "/developers",
-          },
-          {
-            to: "/compute/introduction",
-            from: "/getcompute",
-          },
-          {
-            to: "/koii/the-koii-token/network-economics",
-            from: "/token",
           },
           {
             to: "/run-a-node/k2-validators/validator-requirements",
@@ -800,10 +781,6 @@ const config = {
           {
             to: "/run-a-node/task-nodes/concepts/what-is-an-rpc-node",
             from: "/concepts/what-are-koii-nodes/what-is-an-rpc-node",
-          },
-          {
-            to: "/run-a-node/task-nodes/concepts/rewards",
-            from: "/run-a-node/task-nodes/rewards",
           },
         ],
         createRedirects(existingPath) {
@@ -951,7 +928,7 @@ const config = {
           },
           {
             label: "</> Developers",
-            to: "/develop/onboarding/welcome-to-koii/",
+            to: "/develop/onboarding/welcome-to-koii",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",

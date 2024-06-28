@@ -19,7 +19,7 @@ export const getInvolvedLinks = [
   { label: "Founders Program", url: "/koii/ways-to-get-koii/grants-program" },
   {
     label: "Download Koii Node",
-    url: "https://www.koii.network/node",
+    url: "https://www.koii.network/nodes",
     target: "_blank",
   },
   {

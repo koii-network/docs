@@ -5,7 +5,7 @@ const DesktopNodeButton = () => {
 
   return (
     <a
-      href="https://www.koii.network/node"
+      href="https://www.koii.network/nodes"
       target="_blank"
       className="cursor-pointer"
     >

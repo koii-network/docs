@@ -12,7 +12,7 @@ Setting up and maintaining a Koii Node requires a basic level of technical knowl
 
 Make sure your hardware and internet speeds meet the minimum requirements for a Koii Node which are very minimal (similar to the Desktop version) but at least 2GB RAM and >1GHz processor and stable internet.
 
-If you decide running a node on VPS isn't for you there are other options available, like the Desktop version. Go to our website where you will be able to download the [Desktop Node](https://www.koii.network/node)
+If you decide running a node on VPS isn't for you there are other options available, like the Desktop version. Go to our website where you will be able to download the [Desktop Node](https://www.koii.network/nodes)
 
 ## Operating System
 

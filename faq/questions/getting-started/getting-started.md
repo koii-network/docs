@@ -9,7 +9,7 @@ import ReactPlayer from "react-player";
 
 ## Q: How to download/update Koii Node?
 
-Please visit [Koii Node](https://www.koii.network/node) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.com/invite/koii-network).
+Please visit [Koii Node](https://www.koii.network/nodes) and click "Download Now" to download the latest version of Koii Node. Koii Node will auto update when a new version is available. For Linux users, please download the latest version and replace the old one. If you have trouble updating, please contact us on [Discord](https://discord.com/invite/koii-network).
 
 <ReactPlayer width="100%" controls url="https://www.youtube.com/watch?v=qyp7g4MBlJo" />
 
@@ -22,4 +22,3 @@ After downloading Koii Node, please **follow the instructions** to create a Koii
 You can get KOII tokens by visiting our **faucet page** or **running the tasks**. After logging in to Koii Node, please click the **"Add funds"** button at the bottom left corner. You will be directed to our faucet page. Please follow the instructions to get some KOII tokens.
 
 <ReactPlayer width="100%" controls url="https://www.youtube.com/watch?v=jFjg_A9vTek" />
-
