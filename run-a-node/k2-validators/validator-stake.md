@@ -10,7 +10,9 @@ sidebar_label: Staking
 ## Monitoring Catch Up
 To delegate stake, first make sure your validator is running and has caught up to the cluster. It may take some time to catch up after your validator boots. Use the catchup command to monitor your validator through this process:
 
-`koii catchup ~/validator-keypair.json`
+```sh
+koii catchup ~/validator-keypair.json
+```
 
 Until your validator has caught up, it will not be able to vote successfully and stake cannot be delegated to it.
 
@@ -19,29 +21,31 @@ Also if you find the cluster's slot advancing faster than yours, you will likely
 ## Create Stake Keypair
 If you haven’t already done so, create a staking keypair. If you have completed this step, you should see the “validator-stake-keypair.json” in your koii runtime directory.
 
-`koii-keygen new -o ~/validator-stake-keypair.json`
+```sh
+koii-keygen new -o ~/validator-stake-keypair.json
+```
 
 ## Delegate Stake
 
 Now delegate 1 KOII to your validator by first creating your stake account:
 
-```bash
+```sh
 koii create-stake-account ~/validator-stake-keypair.json 1
 ```
 
 and then delegating that stake to your validator:
 
-```bash
+```sh
 koii delegate-stake ~/validator-stake-keypair.json ~/vote-account-keypair.json
 ```
 
-:::note
+:::warning
 Don’t delegate your remaining KOII, as your validator will use those tokens to vote.
 :::
 
 Stakes can be re-delegated to another node at any time with the same command, but only one re-delegation is permitted per epoch:
 
-```bash
+```sh
 koii delegate-stake ~/validator-stake-keypair.json ~/some-other-vote-account-keypair.json
 ```
 
@@ -75,11 +79,15 @@ Confirm your validator becomes a leader
 - After your validator is caught up, use the `koii balance` command to monitor the earnings as your validator is selected as leader and collects transaction fees
 - Koii nodes offer a number of useful JSON-RPC methods to return information about the network and your validator's participation. Make a request by using curl (or another http client of your choosing), specifying the desired method in JSON-RPC-formatted data. For example:
 
-```bash
-// Request
-curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}' http://localhost:10899
+### Request:
 
-// Result
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1, "method":"getEpochInfo"}' http://localhost:10899
+```
+
+### Result:
+
+```sh
 {"jsonrpc":"2.0","result":{"epoch":3,"slotIndex":126,"slotsInEpoch":256},"id":1}
 ```
 
@@ -93,7 +101,7 @@ Helpful JSON-RPC methods:
 
 Before detaching your validator from the cluster, you should deactivate the stake that was previously delegated by running:
 
-```bash
+```sh
 koii deactivate-stake ~/validator-stake-keypair.json
 ```
 

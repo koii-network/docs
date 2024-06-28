@@ -7,7 +7,7 @@ sidebar_label: How the Network Creates Value
 
 import Tooltip from "@site/src/components/tooltip";
 
-![Banner](./img/value_new.svg)
+![Banner](/img/koii/tokenomics/value.svg)
 
 ## Value through practical demand
 
@@ -21,7 +21,7 @@ And due to its nature, as we don't have any middlemen (you directly pay your hos
 
 ## Value through staking
 
-When a Koii task is run, node operators are required to stake tokens, which locks up the tokens for a specific period.
+When a node operator runs a Koii task, they are required to stake tokens, which locks up the tokens for a specific period.
 
 This staking mechanism serves two purposes: it enhances the security and integrity of the network by ensuring that <Tooltip text="validators"/> have a stake in maintaining the network's consensus, and it reduces the available token supply in circulation.
 

@@ -15,7 +15,7 @@ Subscribe to receive notification anytime a new root is set by the validator.
 
 ### Code sample
 
-```bash
+```sh
 { "jsonrpc": "2.0", "id": 1, "method": "rootSubscribe" }
 ```
 

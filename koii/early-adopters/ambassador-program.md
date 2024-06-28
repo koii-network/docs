@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Ambassador Program
 ---
 
-![Banner](img/nodeheader.svg)
+![Banner](/img/koii/ambassador-program.svg)
 
 ** Become an early adopter, get $KOII & more!**
 

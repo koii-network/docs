@@ -1,35 +1,32 @@
 export const cardImages = {
   createKoiiTask:
-    require(`@site/develop/img/Create_a_koii_task.png`)
-      .default,
+    require(`/img/cards/create-a-koii-task.svg`)
+    .default,
   koiiCLI:
-    require(`@site/develop/img/Koii_CLI.svg`)
+    require(`/img/cards/koii-cli.svg`)
     .default,
   koiiJSAPI:
-    require(`@site/develop/img/Koii_JavaScript_API.svg`)
+    require(`/img/cards/koii-javascript-api.svg`)
     .default,
-  Philosophy:
-    require(`@site/develop/img/Philosophy_1.svg`)
+  philosophy:
+    require(`/img/cards/philosophy.svg`)
     .default,
-  tools2:
-    require(`@site/develop/img/Tools.svg`)
+  tools:
+    require(`/img/cards/tools.svg`)
     .default,
   finnie:
-    require(`@site/concepts/introduction/img/get_finnie_wallet.svg`)
+    require(`/img/cards/get-finnie-wallet.svg`)
     .default,
   koiinode:
-  require(`@site/concepts/introduction/img/start_running_koii_node.svg`)
+  require(`/img/cards/run-koii-node.svg`)
   .default,
   discord:
-  require(`@site/faq/questions/img/discord.svg`)
-  .default,
-  discordsmall:
-  require(`@site/concepts/introduction/img/discord.svg`)
+  require(`/img/cards/discord.svg`)
   .default,
   community:
-  require(`@site/concepts/introduction/img/community.svg`)
+  require(`/img/cards/community.svg`)
   .default,
   twitter:
-  require(`@site/concepts/introduction/img/twitter.svg`)
+  require(`/img/cards/twitter.svg`)
   .default,
 };

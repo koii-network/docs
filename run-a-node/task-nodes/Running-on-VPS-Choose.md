@@ -8,7 +8,7 @@ sidebar_label: Choose Your Tasks
 
 Update the `TASKS` field with the task IDs you want to run, **separated by commas, no space between!** A full list of Tasks and their details (i.e. min stakes) is found here.
 
-**A full list of Tasks can be found [HERE](/faq/documentations/#full-list-of-tasks-for-vps)**
+**A full list of Tasks can be found [HERE](/faq/documentations/)**
 
 Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, separated by commas.
 
@@ -24,18 +24,21 @@ Set `INITIAL_STAKING_WALLET_BALANCE` to the amount of KOII you want in the Staki
    ---
 
    :::tip Multi-task example
-      ```bash
+
+      ```sh
    TASKS="AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3, AXcd6MctmDUQo3XDeBNa4NBAi4tfBYDpt4Adxyai3Do3"
    TASK_STAKES= 5, 2
    ```
+
    :::
 
 Remember this must be less than 1 KOII of what you will have in your Main wallet (i.e. you set `TASK_STAKES=2,2` and `INITIAL_STAKING_WALLET_BALANCE= 5` then you must have in your main wallet 6 KOII so there is enough for covering gas)
 
-```bash
+```sh
 Ctrl/Command +S = Save
 Ctrl/Command +X = Exit
 ```
+
 ---
 
 **Install dependencies**
@@ -45,30 +48,28 @@ Ctrl/Command +X = Exit
 
 :::tip
 Don't forget to run this after installing CLI
-```bash
+
+```sh
 koii config set --url https://testnet.koii.network
 ```
+
 :::
 
-
-
-
-```bath
+```sh
 koii balance
 ```
 
-It will show: "Error: Dynamic program error: No default signer found, run "koii-keygen new -o ....." to create a new one" Please copy the command from the "" which is automatically generated path, as that will set the wallet keys in the correct place.
+It will show: "Error: Dynamic program error: No default signer found, run "koii-keygen new -o ....." to create a new one" Please copy the command from the "" which is automatically generated path, as that will set the wallet keys in the correct place. It will usually look like this:
 
-```bath
+```sh
 koii-keygen new -o /YOUR-USER/.config/koii/id.json
 ```
 
 To improve security, the system wants you to set up BIP39 Passphrase - an additional layer for securing your account, please fill it in. **SAVE the generated SEED PHRASE in order for you to recover your funds later!**
 
-
 Check what is your Wallet address and Transfer some KOII in it! at least 4 KOII to launch your first Free Token Task
 
-```bash
+```sh
 koii address
 ```
 

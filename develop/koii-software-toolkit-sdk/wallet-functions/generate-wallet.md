@@ -19,7 +19,7 @@ This function creates a new Arweave wallet, but it does not return the private k
 
 ### Example Code
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
@@ -42,7 +42,7 @@ The true parameter on line 4 in the `testGenerateWallet` function is for `use_mn
 
 This will return the contents of the JSON for your newly generated private key.
 
-![Code Sample](../img/key.PNG)
+![Code Sample](/img/develop/koii-sdk/key.png)
 
 ### Returns
 

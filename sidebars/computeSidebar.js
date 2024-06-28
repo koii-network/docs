@@ -22,27 +22,10 @@ const sidebars = {
     },
     "introduction",
     "metrics",
-    "supported",     
+    "supported",
     "developerapi",
     "usecase",
     "faq",
-    // {
-    //   type: "html",
-    //   value: "Contact Us",
-    //   className: "sidebar-title",
-    // },
-    // "contact-us/introduction",
-    // "contact-us/encryption",
-    // "contact-us/frontend",
-    {
-      type: "html",
-      value: "Koii Data Aggregator",
-      className: "sidebar-title",
-    },
-    "aggregator/introduction",
-    "aggregator/task",
-    "aggregator/advancedsearch",
-    // "aggregator/technical",
   ],
 };
 

@@ -13,11 +13,11 @@ The Token Smart Contract is a crucial component in the world of blockchain, faci
 
 To begin, access the Remix IDE by visiting [Remix Ethereum IDE](https://remix.ethereum.org/). Once there, navigate to the left sidebar and locate "default_workspace." Create a new workspace by selecting this option. To streamline the process, choose the **"ERC20"** template under *OpenZeppelin* and check the "Mintable" box, as depicted in the image below:
 
-![Remix IDE](./img/ERC.png)
+![Remix IDE](/img/develop/erc20/ERC.png)
 
 Upon completing these steps, you will find the smart contract you generated at `/contracts/MyToken.sol`.
 
-![Token Smart Contract](./img/token.png)
+![Token Smart Contract](/img/develop/erc20/token.png)
 
 **2. ERC20 Token Configuration**
 
@@ -33,12 +33,12 @@ constructor() ERC20("KToken", "KTK") {
 
 Efficiently compile your smart contract by clicking the Solidity compiler icon in the left panel. Initiate the compilation process by clicking the **"Compile MyToken.sol"** button.
 
-![Compile](./img/compile.png)
+![Compile](/img/develop/erc20/compile.png)
 
 **4. Deploying the Contract**
 
 Click the Deploy icon on the left panel, inject your Ethereum browser wallet, and click the "Deploy" button to deploy the contract. You'll be redirected to sign the transaction with your Ethereum browser wallet.
 
-![Deploy](./img/deploy.png)
+![Deploy](/img/develop/erc20/deploy.png)
 
 In this guide, we have explored the process of creating an ERC20 token smart contract using the Solidity programming language and Remix IDE.

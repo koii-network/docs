@@ -50,7 +50,7 @@ whether to populate the `rewards` array. If parameter not provided, the default 
 
 ### Code sample
 
-```bash
+```sh
 {
   "jsonrpc": "2.0",
   "id": "1",

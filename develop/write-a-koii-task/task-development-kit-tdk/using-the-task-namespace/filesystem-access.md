@@ -34,7 +34,7 @@ async fs(method, path, ...args) {
 
 Example usage of the `fs` function is demonstrated below, showcasing the creation of a new directory, copying a file, and creating a new file:
 
-```javascript
+```js
 const { namespaceWrapper } = require("../_koiiNode/koiiNode");
 
 // CREATE NEW DIRECTORY
@@ -57,7 +57,7 @@ The `fsStaking` method takes in three arguments:
 - `path`: The path for the express call
 - `...args`: Any remaining parameters for the FS call
 
-```javascript
+```js
 async fsStaking(method, path, ...args) {
   // return Promise<any>
 }
@@ -69,7 +69,7 @@ The `fsWriteStream` method accepts one argument:
 
 - `imagepath`: A `string` representing the image path.
 
-```javascript
+```js
   async fsWriteStream(imagepath: string) {
     const basePath = 'namespace/' + this.taskTxId;
     await fsPromises.mkdir(basePath, { recursive: true }).catch(console.error);
@@ -85,7 +85,7 @@ The `fsReadStream` method accepts one argument:
 
 - `imagepath`: A `string` to the image path
 
-```javascript
+```js
   async fsReadStream(imagepath: string) {
     const basePath = 'namespace/' + this.taskTxId;
     await fsPromises.mkdir(basePath, { recursive: true }).catch(console.error);

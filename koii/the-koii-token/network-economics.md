@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 # Tokenomics
 
-![banner](tokenomics/img/NETWORK%20ECONOMICS.svg)
+![banner](/img/koii/tokenomics/network-economics.svg)
 
 Koii is a decentralized protocol, meaning that anyone can create a fork to build their version for a specific purpose.
 

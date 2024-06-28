@@ -9,7 +9,7 @@ import Description from "@site/src/components/description";
 
 # Introduction to Nodes
 
-![banner](./img/node.svg)
+![banner](/img/concepts/node.svg)
 
 Koii Nodes are part of the Koii network, a decentralized platform designed to reward creators for the attention their content generates.
 

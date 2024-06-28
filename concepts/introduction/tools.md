@@ -8,7 +8,7 @@ sidebar_label: Tools
 import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 import Description from "@site/src/components/description";
 
-![banner](img/Tools.svg)
+![banner](/img/concepts/tools.svg)
 
 Building something great is a waste of time if no one can use it.
 
@@ -35,16 +35,3 @@ That's why we've built industry-leading tools to secure your assets, trade your 
   />
 
 </CardsSpecial>
-
-<!-- ## Videos
-
-<Cards>
-  <Card
-    title="<p>Twitter Space - What's new with Finnie?</p>"
-    link="https://youtu.be/IgJ5HesnVjA"
-    linkText="Watch the Video"
-    svgName="finnieVideo"
-    cardPerRow="2"
-  />
-
-</Cards> -->

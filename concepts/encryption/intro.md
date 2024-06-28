@@ -7,7 +7,7 @@ sidebar_label: Encryption
 
 import Description from "@site/src/components/description";
 
-![Banner](./img/encryption.png)
+![Banner](/img/concepts/encryption.png)
 
 <Description
   text="Encrypting and Decrypting Messages Using Solana and Ethereum Keys"

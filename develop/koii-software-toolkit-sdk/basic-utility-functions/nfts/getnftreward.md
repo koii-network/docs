@@ -23,7 +23,7 @@ This function returns attention rewards earned from an NFT in KOII.
 In the below code example, change the `targetNft` to the NFT ID for which you want to see the attention rewards gained.
 :::
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetNftReward() {
@@ -37,7 +37,7 @@ testGetNftReward();
 
 ### Example Code Output
 
-```bash
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 Attention rewards for the NFT gZIRmwBIL5nnkAxaFQbGICcUdrOOmBLzqd1LFhd3vSA
 0.03898202652777241

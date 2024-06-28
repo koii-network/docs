@@ -7,7 +7,7 @@ sidebar_label: getNftIdsByOwner
 
 # NFTs
 
-You can get information on each NFT that is registered on Koii by using the functions in this section.&#x20;
+You can get information on each NFT that is registered on Koii by using the functions in this section.
 
 # getNftIdsByOwner
 
@@ -37,7 +37,7 @@ testGetNftIdsByOwner();
 
 ### Example Code Output
 
-```bash
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 [
   'KS2cPkMdex3-EehSh20InyuumshQW0flgSMtNgercPI',

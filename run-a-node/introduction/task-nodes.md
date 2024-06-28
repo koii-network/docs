@@ -7,7 +7,7 @@ sidebar_label: Task Nodes
 
 import Tooltip from "@site/src/components/tooltip";
 
-![Banner](./img/Run%20a%20Task%20Node.svg)
+![Banner](/img/run-a-node/run-task-node.svg)
 
 ## Task Nodes
 

@@ -81,10 +81,15 @@
        "usize",
        "zstd",
        "Unstaked",
-       "discordsmall",
        "quickstart",
        "Rustup",
-       "checksummed"
+       "checksummed",
+       "preBalances",
+       "Wenger",
+       "taskcomponents",
+       "Pewds",
+       "unstaking",
+       "appdata"
   ],
   "caseSensitive": false,
   "flagWords": [

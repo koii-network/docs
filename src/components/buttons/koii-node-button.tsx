@@ -9,12 +9,12 @@ const DesktopNodeButton = () => {
       target="_blank"
       className="cursor-pointer"
     >
-      <img
-        src={isHovered ? "/img/buttonhover.svg" : "/img/buttondefault.svg"}
+      <em><img
+        src={isHovered ? "/img/download-node-hover.svg" : "/img/download-node.svg"}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="hoverAnimation"
-      />
+      /></em>
     </a>
   );
 };

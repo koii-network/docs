@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -237,6 +237,7 @@ const config = {
               "/develop/koii-software-toolkit-sdk/create-task-cli",
               "/quickstart/command-line-tool/create-task-cli",
               "/develop/command-line-tool/create-task-cli",
+              "/develop/command-line-tool/create-task-cli-old"
             ],
           },
           {
@@ -421,7 +422,8 @@ const config = {
             to: "/faq/questions/",
             from: [
               "/koii/faq",
-              "/faq/getting-started"
+              "/faq/getting-started",
+              "/faq"
             ],
           },
 
@@ -579,8 +581,19 @@ const config = {
             from: "/quickstart/koii-software-toolkit-sdk/register-content/burn-koii-attention",
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/introduction",
+            to: "/develop/task-development/write-a-task",
             from: [
+              "/develop/write-a-koii-task/task-development-guide/introduction",
+              "/develop/write-a-koii-task/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide/task-structure",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/task-structure",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/execute-task",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/template-structure/upnp-structure",
+              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-kit-tdk",
               "/quickstart/hello-world/introduction",
               "/quickstart/hello-world/understand-the-template",
               "/quickstart/hello-world/task",
@@ -599,6 +612,11 @@ const config = {
               "/quickstart/hello-world/task-tutorial",
               "/quickstart/hello-world/task-description",
               "/quickstart/hello-world/deploy",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
+              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
               "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
               "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
               "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
@@ -714,23 +732,23 @@ const config = {
           },
           {
             to: "/develop/extractor/introduction",
-            from: "/quickstart/extractor/introduction",
+            from: ["/quickstart/extractor/introduction", "/compute/aggregator/introduction", "/develop/migrate-apps/web-crawler"]
           },
           {
             to: "/develop/extractor/using",
-            from: "/quickstart/extractor/using",
+            from: ["/quickstart/extractor/using", "/compute/aggregator/advancedsearch"]
           },
           {
             to: "/develop/extractor/adapter",
-            from: "/quickstart/extractor/adapter",
+            from: ["/quickstart/extractor/adapter", "/compute/aggregator/technical"]
           },
           {
             to: "/develop/extractor/task-structure",
-            from: "/quickstart/extractor/task-structure",
+            from: ["/quickstart/extractor/task-structure", "/compute/aggregator/task"]
           },
           {
             to: "/develop/extractor/testing",
-            from: "/quickstart/extractor/testing",
+            from: ["/quickstart/extractor/testing", "/compute/aggregator/testing"]
           },
           {
             to: "/develop/erc20-reward/introduction",
@@ -785,10 +803,6 @@ const config = {
             from: "/token",
           },
           {
-            to: "/faq/questions/",
-            from: "/faq",
-          },
-          {
             to: "/run-a-node/k2-validators/validator-requirements",
             from: [
               "/develop/settlement-layer/running-a-k2-node/system-requirements",
@@ -796,31 +810,8 @@ const config = {
             ],
           },
           {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/execute-task",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/audit-submissions",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
-            from: "/develop/write-a-koii-task/task-development-guide/task-structure/setup"
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
-            from: "/develop/write-a-koii-task/task-development-guide/task-development-guide",
-          },
-          {
-            to: "/develop/write-a-koii-task/task-development-kit-tdk/test/configuration",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/testing-locally-with-docker/configuration"
+            to: "/run-a-node/task-nodes/concepts/what-is-an-rpc-node",
+            from: "/concepts/what-are-koii-nodes/what-is-an-rpc-node",
           },
           {
             to: "/develop/write-a-koii-task/task-development-kit-tdk/test/easy-testing",

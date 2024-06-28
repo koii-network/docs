@@ -17,7 +17,7 @@ sidebar_label: REST APIs
 The `koiiNode.js` under the `_koiNode` directory provides an `app` object for creating the REST APIs. Its usage can be demonstrated as below.
 
 <!--
-```javascript
+```js
 if (app) {
   // Express app for configuration
   // Write your Express Endpoints here.
@@ -34,7 +34,7 @@ if (app) {
 
 Example:
 
-```javascript
+```js
 app.post("/accept-cid", async (req, res) => {
   try {
     const cid = req.body.cid;
@@ -50,7 +50,7 @@ app.post("/accept-cid", async (req, res) => {
 
 Express endpoints can be defined in the `index.js` file of your task-template
 
-```javascript
+```js
 // import app from koiiNode.js file
 const { app, namespaceWrapper } = require("../_koiiNode/koiiNode");
 

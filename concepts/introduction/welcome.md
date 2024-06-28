@@ -10,7 +10,7 @@ import HiddenTreasure from "@site/src/components/hiddentreasure";
 import {CardSpecial,Card, CardsSpecial} from '@site/src/components/image_link';
 
 
-![banner](<./img/Welcome to Koii-X.svg>)
+![banner](</img/concepts/welcome-to-koii.svg>)
 
 :::info Why did we build Koii?
 
@@ -40,7 +40,7 @@ Whether you're designing Artificial Intelligence, Social Media apps, or any numb
 
 We designed an open standard called <Tooltip text="Gradual Consensus"/>, and implemented that technology in our revolutionary product, Koii <Tooltip text="Tasks"/>.
 
-Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover initial KOII tokens to pay for early bounties.&#x20;
+Depending on the size of the community, volunteer task operators may be sufficient to power the product, or a [grant can be requested](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg) to cover initial KOII tokens to pay for early bounties.
 
 <HiddenTreasure />
 
@@ -51,7 +51,7 @@ Depending on the size of the community, volunteer task operators may be sufficie
     description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal computing power, and onboard your community.</p>"
     link="tools"
     linkText="Try out the Koii Tools"
-    svgName="tools2"
+    svgName="tools"
     cardPerRow="2"
   />
 <CardSpecial
@@ -59,7 +59,7 @@ Depending on the size of the community, volunteer task operators may be sufficie
     description=" <p>For too long, power has been concentrated on just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.</p>"
     link="philosophy"
     linkText="Learn more about why Koii was built"
-    svgName="Philosophy"
+    svgName="philosophy"
     cardPerRow="2"
   />
 </CardsSpecial>

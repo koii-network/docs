@@ -12,7 +12,7 @@ Let’s look at the implementation of how to create an API:
 
 To create an API, we first need to create a route using the [Express](https://www.npmjs.com/package/express) Router module. For example, to create a `GET` endpoint that returns specific Linktree data by `publicKey`, we can use the following code:
 
-```javascript
+```js
 router.get("/linktree/get/:publicKey", async (req, res) => {
   const { publicKey } = req.params;
   let linktree = await db.getLinktree(publicKey);
@@ -33,7 +33,7 @@ For all types of information you might need or generate in your task, it's essen
 
 To test your APIs, run:
 
-```javascript
+```sh
 npm start
 ```
 

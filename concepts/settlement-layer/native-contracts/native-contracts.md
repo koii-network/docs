@@ -9,7 +9,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Native Contracts
 
-![img](../img/Native%20Contracts.svg)
+![img](/img/concepts/settlement-layer/native-contracts.svg)
 
 Here are the articles in this section:
 
