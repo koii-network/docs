@@ -14,7 +14,7 @@ export const Cta2 = () => {
             " " +
             styles.card1
           }
-          href="/compute/introduction"
+          href="/koii/the-koii-token/network-economics"
           style={{
             textDecoration: "none",
           }}
@@ -31,7 +31,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-            Compute Buyers
+            How to get token
             </h2>
             <p
               className={
@@ -40,7 +40,7 @@ export const Cta2 = () => {
                 styles.ctaText2
               }
             >
-              Secure Compute on Koii now.
+              Learn how to get token with desktop node
             </p>
           </div>
         </a>
