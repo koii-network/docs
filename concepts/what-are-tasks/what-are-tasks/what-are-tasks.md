@@ -29,12 +29,14 @@ Koii tasks are off-chain computations that are verified and submitted on-chain, 
 
 ![banner](</img/concepts/tasks/what-are-tasks.svg>)
 
-<p>Koii provides a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.</p>
+Koii provides a microservices economy to app developers, where nodes trustlessly complete off-chain executables, and return the results on-chain. Witness nodes track this process, verifying the work, and auditing any malicious parties.
 
 ## Quick Links
 
 There's a lot of material here, so if you're just getting started, you might want to jump to one of the links below:
 
-- [Build your first Full Stack Application on Koii](/develop/write-a-koii-task/task-development-guide/task-structure/)
-- [Why use decentralized nodes when servers seem to work?](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers)<br/>
-- [What is $KOII?](/koii/the-koii-token/network-economics)<br/>
+- [Build your first Full Stack Application on Koii](/develop/task-development/write-a-task)
+
+- [Why use decentralized nodes when servers seem to work?](/concepts/what-are-tasks/what-are-tasks/nodes-vs-servers)
+
+- [What is $KOII?](/koii/the-koii-token/network-economics)
