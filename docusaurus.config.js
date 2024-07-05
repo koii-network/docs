@@ -934,13 +934,6 @@ const config = {
             className: "header-text",
           },
           {
-            label: "📖 Get Compute",
-            to: "/compute/introduction",
-            activeBasePath: "compute",
-            position: "left",
-            className: "header-text",
-          },
-          {
             label: "💰 Token",
             to: "/koii/the-koii-token/network-economics",
             activeBasePath: "koii",
