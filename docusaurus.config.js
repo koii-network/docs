@@ -46,7 +46,7 @@ const config = {
         path: "koii",
         routeBasePath: "koii/",
         sidebarPath: require.resolve("./sidebars/koiiSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
 
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -62,7 +62,7 @@ const config = {
         path: "concepts",
         routeBasePath: "concepts/",
         sidebarPath: require.resolve("./sidebars/contentSidebars.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -76,7 +76,7 @@ const config = {
         path: "develop",
         routeBasePath: "develop/",
         sidebarPath: require.resolve("./sidebars/developSidebars.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -90,7 +90,7 @@ const config = {
         id: "faq",
         path: "faq",
         routeBasePath: "faq/",
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -105,7 +105,7 @@ const config = {
         path: "run-a-node",
         routeBasePath: "run-a-node/",
         sidebarPath: require.resolve("./sidebars/runANodeSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -119,7 +119,7 @@ const config = {
         path: "compute",
         routeBasePath: "compute/",
         sidebarPath: require.resolve("./sidebars/computeSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        editUrl: "https://gitlab.com/koii-network/dev-purple/koii-docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -683,8 +683,8 @@ const config = {
             ]
           },
           {
-            to:"/concepts/distributed-cloud/reduced-computing-costs",
-            from:"/concepts/distributed-cloud/community-powered-hosting"
+            to: "/concepts/distributed-cloud/reduced-computing-costs",
+            from: "/concepts/distributed-cloud/community-powered-hosting"
           },
           {
             to: "/develop/introduction",
@@ -739,15 +739,15 @@ const config = {
             to: "/develop/erc20-reward/smart-contract",
             from: "/quickstart/erc20-reward/smart-contract",
           },
-                    {
+          {
             to: "/develop/erc20-reward/getting-started",
             from: "/quickstart/erc20-reward/getting-started",
           },
-                    {
+          {
             to: "/develop/erc20-reward/task",
             from: "/quickstart/erc20-reward/task",
           },
-                    {
+          {
             to: "/develop/erc20-reward/distribution",
             from: "/quickstart/erc20-reward/distribution",
           },
