@@ -46,7 +46,7 @@ const config = {
         path: "koii",
         routeBasePath: "koii/",
         sidebarPath: require.resolve("./sidebars/koiiSidebar.js"),
-        // editUrl: "https://github.com/koii-network/docs/tree/main",
+        //  editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
