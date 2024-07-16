@@ -46,8 +46,7 @@ const config = {
         path: "koii",
         routeBasePath: "koii/",
         sidebarPath: require.resolve("./sidebars/koiiSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
-
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -62,7 +61,7 @@ const config = {
         path: "concepts",
         routeBasePath: "concepts/",
         sidebarPath: require.resolve("./sidebars/contentSidebars.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -76,7 +75,7 @@ const config = {
         path: "develop",
         routeBasePath: "develop/",
         sidebarPath: require.resolve("./sidebars/developSidebars.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -90,7 +89,7 @@ const config = {
         id: "faq",
         path: "faq",
         routeBasePath: "faq/",
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -105,7 +104,7 @@ const config = {
         path: "run-a-node",
         routeBasePath: "run-a-node/",
         sidebarPath: require.resolve("./sidebars/runANodeSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -119,7 +118,7 @@ const config = {
         path: "compute",
         routeBasePath: "compute/",
         sidebarPath: require.resolve("./sidebars/computeSidebar.js"),
-        editUrl: "https://github.com/koii-network/docs/tree/main",
+        // editUrl: "https://github.com/koii-network/docs/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
@@ -845,13 +844,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://gitlab.com/koii-network/koii-docs",
+          // editUrl: "https://gitlab.com/koii-network/koii-docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://gitlab.com/koii-network/koii-docs",
+          // editUrl: "https://gitlab.com/koii-network/koii-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
