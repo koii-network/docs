@@ -20,7 +20,7 @@ That's why we've built industry-leading tools to secure your assets, trade your 
   <CardSpecial
     title="<p><strong>Start Running a Koii Node</strong></p>"
     description="<p>Rent a personal device to the network and start earning passive income with your existing hardware.</p>"
-    link="/run-a-node/introduction/types-of-nodes"
+    link="/docs/run-a-node/task-nodes/how-to-run-a-koii-node"
     linkText="Start Earning KOII"
     svgName="koiinode"
     cardPerRow="2"

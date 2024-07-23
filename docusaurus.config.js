@@ -9,6 +9,7 @@ const config = {
   title: "Koii Docs",
   tagline: "Koii is Web3, for everyone.",
   favicon: "/img/favicon.png",
+  trailingSlash: false,
 
   // Set the production url of your site here
   url: "https://www.koii.network/",

@@ -29,7 +29,7 @@ If you want to earn KOII while you sleep, you can checkout our **Run a Task Node
 
 <ContentLink
   title='Run a Task Node'
-  link='/run-a-node/introduction/task-nodes'
+  link='/docs/run-a-node/task-nodes/how-to-run-a-koii-node'
   iconType='copy'
 />
 
@@ -47,7 +47,7 @@ If you want to upgrade your existing systems and don't have the resources, conta
 
 <ContentLink
   title='What are tasks?'
-  link='/develop/task-development/key-concepts'
+  link='/docs/develop/task-development/key-concepts'
   iconType='copy'
 />
 

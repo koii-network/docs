@@ -21,7 +21,7 @@ If you're a developer hoping to build on Koii, you can use the [CLI](/develop/ca
 
 <ContentLink
   title='Using the Koii CLI'
-  link='/develop/category/koii-command-line-tool'
+  link='/docs/develop/category/koii-command-line-tool'
   iconType='copy'
 />
 
@@ -33,8 +33,8 @@ Visit the faucet below to start building your Koii identity and get some free to
 
 <ContentLink
   title='Faucet | Koii'
-  link='https://faucet.koii.live/'
-  imageLink='https://faucet.koii.live/favicon.ico'
+  link='https://faucet.koii.network/'
+  imageLink='https://faucet.koii.network/favicon.ico'
 />
 
 ### Community Quests
