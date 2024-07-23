@@ -14,7 +14,7 @@ export const Cta2 = () => {
             " " +
             styles.card1
           }
-          href="/koii/the-koii-token/network-economics"
+          href="/run-a-node/task-nodes/how-to-run-a-koii-node"
           style={{
             textDecoration: "none",
           }}
@@ -31,7 +31,7 @@ export const Cta2 = () => {
                 styles.ctaText1
               }
             >
-            How to get token
+            How to get tokens
             </h2>
             <p
               className={
@@ -40,7 +40,7 @@ export const Cta2 = () => {
                 styles.ctaText2
               }
             >
-              Learn how to get token with desktop node
+              Learn how to get tokens with the desktop node
             </p>
           </div>
         </a>
@@ -50,7 +50,7 @@ export const Cta2 = () => {
             " " +
             styles.card2
           }
-          href="/concepts/introduction/welcome"
+          href="/docs/concepts/introduction/welcome"
           style={{
             textDecoration: "none",
           }}
