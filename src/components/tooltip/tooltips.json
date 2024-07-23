@@ -10,7 +10,7 @@
   ],
   "koii node": [
     "Our easy-to-use application that allows users to run tasks",
-    "/run-a-node/task-nodes/how-to-run-a-koii-node"
+    "/docs/run-a-node/task-nodes/how-to-run-a-koii-node"
   ],
   "hello world task": [
     "Our task tutorial that explains the basics",
@@ -27,7 +27,7 @@
   ],
   "whitelisting process": [
     "Process of approving Koii Tasks",
-    "/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task"
+    "/docs/develop/write-a-koii-task/task-development-guide/task-development-flow/whitelist-task"
   ],
   "task staking wallet": [
     "A wallet for staking Koii task",
@@ -43,7 +43,7 @@
   ],
   "compute task": [
     "Specific task run on computing platform",
-    "/develop/koii-task-101/what-are-tasks/"
+    "/docs/develop/koii-task-101/what-are-tasks/"
   ],
   "timestamp": [
     "Sequence denoting when a certain event occurred",
@@ -51,15 +51,15 @@
   ],
   "attention contract": [
     "Contract that rewards users for real interaction",
-    "/concepts/web3/attention-mining"
+    "/docs/concepts/web3/attention-mining"
   ],
   "runtime flow": [
     "Koii's blockchain flow logic",
-    "/concepts/gradual-consensus/runtime-flow"
+    "/docs/concepts/gradual-consensus/runtime-flow"
   ],
   "rewards": [
     "Incentives in the form of KOII tokens to reward nodes",
-    "/koii/ways-to-get-koii/compute-sharing-marketplace/"
+    "/docs/koii/ways-to-get-koii/compute-sharing-marketplace/"
   ],
   "local databases": [
     "Database stored on local system",
@@ -67,58 +67,58 @@
   ],
   "database sharing": [
     "Koii network allows nodes to share their databases",
-    "/develop/linktree/data-sharing"
+    "/docs/develop/linktree/data-sharing"
   ],
   "nedb": ["JavaScript database for Node.js", "https://dbdb.io/db/nedb"],
   "k2 validator": [
     "A specialized node that tracks the Koii Blockchain Ledger",
-    "/run-a-node/introduction/k2-nodes"
+    "/docs/run-a-node/introduction/k2-nodes"
   ],
   "k2 validators": [
     "Specialized nodes that track the Koii Blockchain Ledger",
-    "/run-a-node/k2-validators/how-to-run-a-k2-validator"
+    "/docs/run-a-node/k2-validators/how-to-run-a-k2-validator"
   ],
   "bounty tokens": [
     "Rewards for tasks",
-    "/develop/koii-task-101/what-are-tasks/"
+    "/docs/develop/koii-task-101/what-are-tasks/"
   ],
   "audit function": [
     "Task submissions are audited by task runners",
-    "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions"
+    "/docs/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions"
   ],
   "rewards model": [
     "Developers will reward task runners with KOII tokens",
-    "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards"
+    "/docs/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards"
   ],
   "validators": [
     "Desktop or/and K2 Validators in this context",
-    "/run-a-node/introduction/types-of-nodes"
+    "/docs/run-a-node/introduction/types-of-nodes"
   ],
   "proofs of real traffic": [
     "Koii's attention tracking system rewarding creators",
-    "/koii/ways-to-get-koii/attention-mining/"
+    "/docs/koii/ways-to-get-koii/attention-mining/"
   ],
   "task node": [
     "A computer that runs Koii Tasks",
-    "/run-a-node/introduction/task-nodes"
+    "/docs/run-a-node/introduction/task-nodes"
   ],
   "task nodes": [
     "Computers that run Koii Tasks",
-    "/run-a-node/introduction/task-nodes"
+    "/docs/run-a-node/introduction/task-nodes"
   ],
   "attention mining": [
     "Content creators can mine Koii with their attention",
-    "/koii/ways-to-get-koii/attention-mining"
+    "/docs/koii/ways-to-get-koii/attention-mining"
   ],
   "mainnet launch": [
     "Koii is currently in its test phase, estimated release date is Q3 2024",
-    "/concepts/web3/attentionmining"
+    "/docs/concepts/web3/attentionmining"
   ],
-  "inflation": ["Inflation", "/concepts/web3/attentionmining"],
-  "utility networks": ["Utility Networks", "/concepts/web3/attentionmining"],
+  "inflation": ["Inflation", "/docs/concepts/web3/attentionmining"],
+  "utility networks": ["Utility Networks", "/docs/concepts/web3/attentionmining"],
   "node operators": [
     "People who run Task Nodes or K2 Validators",
-    "/run-a-node/introduction/types-of-nodes"
+    "/docs/run-a-node/introduction/types-of-nodes"
   ],
   "koii foundation": [
     "Developers of the Koii Network",
@@ -131,7 +131,7 @@
   "bounty": ["Bounty", "https://www.google.com/"],
   "compute marketplace": [
     "Koii allows users to become a part of a hosting network",
-    "/koii/ways-to-get-koii/compute-sharing-marketplace/"
+    "/docs/koii/ways-to-get-koii/compute-sharing-marketplace/"
   ],
   "stake": ["Stake", "https://www.google.com/"],
   "wallet reputation": ["Wallet Reputation", "https://www.google.com/"],
@@ -139,11 +139,11 @@
   "collateral": ["Collateral", "https://www.google.com/"],
   "k2 settlement node": [
     "Validator nodes that run our blockchain",
-    "/run-a-node/introduction/k2-nodes"
+    "/docs/run-a-node/introduction/k2-nodes"
   ],
   "settlement nodes": [
     "K2 Validators",
-    "/concepts/settlement-layer/k2-tick-tock-fast-blocks"
+    "/docs/concepts/settlement-layer/k2-tick-tock-fast-blocks"
   ],
   "compute sharing marketplace": [
     "Service connecting excess computing resources with computational power needs",
@@ -155,7 +155,7 @@
   ],
   "gradual consensus": [
     "Koii's method for achieving consensus through delayed reward distribution",
-    "/concepts/gradual-consensus/runtime-flow"
+    "/docs/concepts/gradual-consensus/runtime-flow"
   ],
   "audit nodes": [
     "Nodes that inspect tasks for malicious intent",
@@ -163,7 +163,7 @@
   ],
   "tasks": [
     "Executable code run on the network",
-    "/concepts/what-are-tasks/what-are-tasks/"
+    "/docs/concepts/what-are-tasks/what-are-tasks/"
   ],
   "slot": [
     "Time for each leader to accept transactions and generate a block",
@@ -188,11 +188,11 @@
   ],
   "k2": [
     "Koii’s high-speed settlement layer processing secure payments",
-    "/concepts/settlement-layer/k2-tick-tock-fast-blocks"
+    "/docs/concepts/settlement-layer/k2-tick-tock-fast-blocks"
   ],
   "koii nodes": [
     "Computers that run the Koii Network",
-    "/run-a-node/introduction/types-of-nodes"
+    "/docs/run-a-node/introduction/types-of-nodes"
   ],
   "proofs of real traffic, aka port": [
     "Koii's attention tracking system rewarding creators",
@@ -204,11 +204,11 @@
   ],
   "koii sdk": [
     "Software Development Kit for creating Koii Tasks, Nodes, and templates",
-    "/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+    "/docs/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
   ],
   "koii cli": [
     "Our Command Line Interface for developers to interact with Koii network via command line",
-    "/develop/category/koii-command-line-tool"
+    "/docs/develop/category/koii-command-line-tool"
   ],
   "koii faucet": [
     "Online KOII token dispenser offering free tokens",
