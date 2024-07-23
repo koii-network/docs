@@ -11,9 +11,7 @@ import Description from "@site/src/components/description";
 
 ![banner](/img/concepts/tasks/using-reputation.svg)
 
-Koii stands for
-** Knowledgeable Open and Infinite Internet **, and it's our first attempt at
-building a ** Compute, Attribution, and Reputation Protocol _(CARP)_** .
+Koii stands for**Knowledgeable Open and Infinite Internet**, and it's our first attempt at building a **Compute, Attribution, and Reputation Protocol _(CARP)_**.
 
 Since the origins of the decentralized web, there has been an ongoing battle between trust and accountability, and the need to provide services and tools to billions of people, at a minimum cost.
 
@@ -63,4 +61,4 @@ In Koii, we focus on building reputation first from content, and attention, beca
 
 Building a CARP with a Koii task is actually pretty simple. All you'll need to do is track the reputation of your node operators and other community members over time, and provide incentives for them to behave as valuable members of your community.
 
-Check-out our [Task Template](/develop/write-a-koii-task/task-development-guide/task-structure/) tutorial to start building on Koii!
+Check-out our [EZSandbox](https://github.com/koii-network/ezsandbox) tutorial to start building on Koii!
