@@ -9,7 +9,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Get Free Tokens
 
-![PoRT](./img/Get%20Free%20Tokens.svg)
+![PoRT](/docs/img/Get%20Free%20Tokens.svg)
 
 While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.
 

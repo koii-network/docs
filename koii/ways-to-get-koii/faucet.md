@@ -9,7 +9,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # KOII Faucet
 
-![Banner](./img/Koii%20Faucet.svg)
+![Banner](/docs/img/Koii%20Faucet.svg)
 
 The faucet lets new users claim free tokens by verifying their accounts.
 Additionally, if you invite someone to Koii, you both will get 5 extra KOII tokens.

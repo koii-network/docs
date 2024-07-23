@@ -21,7 +21,7 @@ export const Cta2 = () => {
           onClick={handleClick}
         >
           <div className={"md:pl-5 pl-3" + " " + styles.img}>
-            <img src={"./img/Group%206.svg"} alt={"window browser with checkmark"} className={"w-full"}/>
+            <img src={"/docs/img/Group%206.svg"} alt={"window browser with checkmark"} className={"w-full"}/>
           </div>
           <div className="pr-3 md:pr-5">
             <h2
@@ -77,7 +77,7 @@ export const Cta2 = () => {
             </p>
           </div>
           <div className={"md:pr-5 pr-3" + " " + styles.img}>
-            <img src={"./img/Group%2032.svg"} alt={"browser window"} className={"w-full"} />
+            <img src={"/docs/img/Group%2032.svg"} alt={"browser window"} className={"w-full"} />
           </div>
         </a>
       </div>
