@@ -10,7 +10,7 @@ import Description from "@site/src/components/description";
 
 # Attention Mining
 
-![banner](/docs/img/Attention%20Mining.svg)
+![banner](/img/koii/ways-to-get-koii/attention-mining.svg)
 
 **Collect Proofs of Real Traffic on your content to mine new KOII tokens each
 day!**

@@ -11,7 +11,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 # Compute Sharing Marketplace
 
-![banner](./docs/img/Compute%20Sharing%20Marketplace.svg)
+![banner](/img/koii/ways-to-get-koii/compute-sharing-marketplace.svg)
 
 Nodes that form the application layer are one of the most-needed commodities in Web3.
 
