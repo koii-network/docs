@@ -12,7 +12,7 @@ const config = {
   trailingSlash: false,
 
   // Set the production url of your site here
-  url: "https://koii-docs-git-update-sobdomain-to-subfolder-koif.vercel.app/",
+  url: "https://www.koii.network/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/docs/",
