@@ -50,7 +50,7 @@
   ],
   "runtime flow": [
     "Koii's blockchain flow logic",
-    "/docs/concepts/gradual-consensus/runtime-flow"
+    "/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
   ],
   "rewards": [
     "Incentives in the form of KOII tokens to reward nodes",

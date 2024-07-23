@@ -74,7 +74,7 @@ As mentioned above, the reason to stake on a Task is to make sure everyone plays
 2. Audit
 3. Reward Distribution
 
-You can learn more about how this works [in the documentation here](/concepts/gradual-consensus/runtime-flow).
+You can learn more about how this works [in the documentation here](/concepts/what-are-tasks/what-are-tasks/gradual-consensus).
 
 ![Confirm Task](/img/run-a-node/task-node/confirm.png)
 

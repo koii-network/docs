@@ -9,7 +9,7 @@ import Tooltip from "@site/src/components/tooltip";
 
 # Wallet Signatures
 
-In certain scenarios, tasks may require access to a Koii node's wallet for writing records to a blockchain or directly to K2 as part of managing [Gradual Consensus](/concepts/gradual-consensus/runtime-flow) flows. Examples include tasks like bridging, minting NFTs, and on-chain asset management.
+In certain scenarios, tasks may require access to a Koii node's wallet for writing records to a blockchain or directly to K2 as part of managing [Gradual Consensus](/concepts/what-are-tasks/what-are-tasks/gradual-consensus) flows. Examples include tasks like bridging, minting NFTs, and on-chain asset management.
 
 To enable this functionality, node operators can choose to allow their wallets to be used by tasks, offering a greater reward. However, tasks of this nature must first undergo a <Tooltip text="whitelisting process"/>, ensuring proper code auditing before being promoted to the community.
 
