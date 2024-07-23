@@ -6,7 +6,7 @@
   ],
   "koii leaderboard": [
     "An incentivized game for early adopters",
-    "https://blog.koii.network/Koii-Leaderboard/"
+    "https://www/koii.com/leaderboard"
   ],
   "koii node": [
     "Our easy-to-use application that allows users to run tasks",
@@ -15,11 +15,6 @@
   "hello world task": [
     "Our task tutorial that explains the basics",
     "https://github.com/koii-network/ezsandbox"
-  ],
-  "tdk": ["Task Development Kit", "https://docs.koii.network/"],
-  "memory leakage": [
-    "Unintentional memory hold by a computer program",
-    "https://docs.koii.network/"
   ],
   "nw.js": [
     "Toolkit for building desktop apps with web technologies",
@@ -72,7 +67,7 @@
   "nedb": ["JavaScript database for Node.js", "https://dbdb.io/db/nedb"],
   "k2 validator": [
     "A specialized node that tracks the Koii Blockchain Ledger",
-    "/docs/run-a-node/introduction/k2-nodes"
+    "/docs/run-a-node/k2-validators/how-to-run-a-k2-validator"
   ],
   "k2 validators": [
     "Specialized nodes that track the Koii Blockchain Ledger",
@@ -96,15 +91,15 @@
   ],
   "proofs of real traffic": [
     "Koii's attention tracking system rewarding creators",
-    "/docs/koii/ways-to-get-koii/attention-mining/"
+    "/docs/koii/ways-to-get-koii/attention-mining"
   ],
   "task node": [
     "A computer that runs Koii Tasks",
-    "/docs/run-a-node/introduction/task-nodes"
+    "/docs/run-a-node/task-nodes/how-to-run-a-koii-node"
   ],
   "task nodes": [
     "Computers that run Koii Tasks",
-    "/docs/run-a-node/introduction/task-nodes"
+    "/docs/run-a-node/task-nodes/how-to-run-a-koii-node"
   ],
   "attention mining": [
     "Content creators can mine Koii with their attention",
@@ -112,13 +107,13 @@
   ],
   "mainnet launch": [
     "Koii is currently in its test phase, estimated release date is Q3 2024",
-    "/docs/concepts/web3/attentionmining"
+    "/docs/koii/ways-to-get-koii/attention-mining"
   ],
-  "inflation": ["Inflation", "/docs/concepts/web3/attentionmining"],
-  "utility networks": ["Utility Networks", "/docs/concepts/web3/attentionmining"],
+  "inflation": ["Inflation", "/docs/koii/ways-to-get-koii/attention-mining"],
+  "utility networks": ["Utility Networks", "/docs/koii/ways-to-get-koii/attention-mining"],
   "node operators": [
     "People who run Task Nodes or K2 Validators",
-    "/docs/run-a-node/introduction/types-of-nodes"
+    "/docs/run-a-node/task-nodes/how-to-run-a-koii-node"
   ],
   "koii foundation": [
     "Developers of the Koii Network",
@@ -131,7 +126,7 @@
   "bounty": ["Bounty", "https://www.google.com/"],
   "compute marketplace": [
     "Koii allows users to become a part of a hosting network",
-    "/docs/koii/ways-to-get-koii/compute-sharing-marketplace/"
+    "/docs/koii/ways-to-get-koii/compute-sharing-marketplace"
   ],
   "stake": ["Stake", "https://www.google.com/"],
   "wallet reputation": ["Wallet Reputation", "https://www.google.com/"],
@@ -155,7 +150,7 @@
   ],
   "gradual consensus": [
     "Koii's method for achieving consensus through delayed reward distribution",
-    "/docs/concepts/gradual-consensus/runtime-flow"
+    "/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
   ],
   "audit nodes": [
     "Nodes that inspect tasks for malicious intent",
