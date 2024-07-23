@@ -56,7 +56,7 @@ sudo apt update && sudo apt dist-upgrade -y
 
 The updates will now begin downloading and installing. This process may take some time, depending on your server hardware and download speed. When the updates are completed, you will be returned to your command line.
 
-2. **Retrieve all the necessary files for thr Koii node on VPS (Cloning Main Repository)**
+2. **Retrieve all the necessary files for the Koii node on VPS (Cloning Main Repository)**
 
 In order to successfully launch a Koii Node there are prerequisites which have to be stored in your server for Koii Node to function.
 
@@ -81,6 +81,14 @@ nano .env-local
 Set `ENVIRONMENT` to `"production"`
 
 ## Video Guides
+
+:::warning Video Updates
+
+The videos below must be updated as follow for your VPS node to work:
+
+- The Testnet URL must be `https://testnet.koii.network/`, not `https://testnet.koii.live`.
+- You must use the most recent Task IDs, which can be found [here](/faq/documentations/).
+:::
 
 ### How to launch a Koii Task Node on VPS
 
