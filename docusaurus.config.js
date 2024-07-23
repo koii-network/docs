@@ -15,7 +15,7 @@ const config = {
   url: "https://koii-docs-git-update-sobdomain-to-subfolder-koif.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/docs/",
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
