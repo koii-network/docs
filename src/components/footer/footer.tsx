@@ -12,7 +12,7 @@ export const KoiiFooter = () => {
           <div className="laptop-sm:flex justify-between gap-6 xl:gap-20">
             <div className="flex font-semibold mb-[1rem] laptop-sm:mb-0 ">
               <img
-                src="/img/finnie-koii-logo-white.svg"
+                src="./img/finnie-koii-logo-white.svg"
                 alt="Koii logo"
                 width={50}
                 height={50}
