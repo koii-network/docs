@@ -1,3 +1,16 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.koii.network/docs/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "docs.koii.network"
+        }
+      ],
+      "permanent": true
+    }
+  ]
 }
