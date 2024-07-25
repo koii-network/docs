@@ -26,7 +26,7 @@ export const Cta2 = () => {
           <div className="pr-3 md:pr-5">
             <h2
               className={
-                "no-underline hover:no-underline text-[#171753] m-0" +
+                "no-underline hover:no-underline text-[#171753] m-0 pl-10" +
                 " " +
                 styles.ctaText1
               }
@@ -35,7 +35,7 @@ export const Cta2 = () => {
             </h2>
             <p
               className={
-                "no-underline hover:no-underline w-full flex items-start font-semibold m-0" +
+                "no-underline hover:no-underline w-full flex items-start font-semibold m-0 px-10" +
                 " " +
                 styles.ctaText2
               }
