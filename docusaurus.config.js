@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Koii Docs",
-  tagline: "Koii is Web3, for everyone.",
+  title: "A Better Internet For Everyone",
+  tagline: "Koii is built to make the internet better for everyone. How will you push the web forward?",
   favicon: "/favicon.png",
   trailingSlash: false,
 
