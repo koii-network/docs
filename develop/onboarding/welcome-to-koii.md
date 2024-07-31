@@ -23,13 +23,13 @@ We're thrilled to have you on board with Koii, an innovative leader in the realm
     />
   <CardSpecial
       title="<h3><p>⚙️ <strong>Get a Koii wallet</strong></p><h3>"
-      link="/docs/develop/category/koii-command-line-tool"
+      link="/develop/category/koii-command-line-tool"
       svgName="koiiCLI"
       cardPerRow="3"
   />
   <CardSpecial
       title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
-      link="/docs/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+      link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
       svgName="koiiJSAPI"
       cardPerRow="3"
     />

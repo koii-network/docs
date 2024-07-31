@@ -1,11 +1,16 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Button } from "../buttons";
 
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export const Discord = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
   return (
     <div className="py-10 lg:pt-20 lg:pb-20 px-4 lg:px-8 flex gap-7 w-full lg:max-w-[1400px] mx-auto">
       <img
-        src="/docs/img/cell-one.svg"
+        src={`${baseUrl}/img/cell-one.svg`}
         alt="Discord logo"
         className="w-full hidden lg:flex max-w-[336px]"
       />
@@ -22,7 +27,7 @@ export const Discord = () => {
         </a>
       </div>
       <img
-        src="/docs/img/cell-two.svg"
+        src={`${baseUrl}/img/cell-two.svg`}
         alt="Discord logo"
         className="w-full hidden lg:flex max-w-[336px]"
       />

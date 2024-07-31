@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./content.module.css";
 import { contentImages } from "./contentImages";
 
+
+const baseUrl = process.env.BASE_URL || "";
+
 type ContentLink = {
   title?: string;
   link?: string;
@@ -26,7 +29,7 @@ function ContentLinks({
   const target = link.includes("https") ? "_blank" : "";
   return (
     <>
-      <a href={link} className={styles.cardContainer} target={target}>
+      <a href={`${link.includes('https') ? '' : baseUrl}${link}`} className={styles.cardContainer} target={target}>
         {Svg && <Svg />}
         {imageLink && (
           <img src={imageLink} alt='logo' className={styles.imageLink} />

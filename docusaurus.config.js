@@ -4,6 +4,10 @@
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "A Better Internet For Everyone",
@@ -15,7 +19,7 @@ const config = {
   url: "https://www.koii.network/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/docs/",
+  baseUrl: process.env.BASE_URL || '/',
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -956,6 +960,9 @@ const config = {
       // },
       //
     }),
+    customFields: {
+      baseUrl: process.env.BASE_URL || "",
+    },
 };
 
 module.exports = config;

@@ -1,7 +1,12 @@
 import React, { ReactNode } from "react";
 import styles from "./cta2.module.css";
 
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export const Cta2 = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
   const handleClick = () => {
     window.gtag("event", "click_run_node");
   };
@@ -14,14 +19,14 @@ export const Cta2 = () => {
             " " +
             styles.card1
           }
-          href="/run-a-node/task-nodes/how-to-run-a-koii-node"
+          href={`${baseUrl}/run-a-node/task-nodes/how-to-run-a-koii-node`}
           style={{
             textDecoration: "none",
           }}
           onClick={handleClick}
         >
           <div className={"md:pl-5 pl-3" + " " + styles.img}>
-            <img src={"/docs/img/Group%206.svg"} alt={"window browser with checkmark"} className={"w-full"}/>
+            <img src={`${baseUrl}/img/Group%206.svg`} alt={"window browser with checkmark"} className={"w-full"}/>
           </div>
           <div className="pr-3 md:pr-5">
             <h2
@@ -50,7 +55,7 @@ export const Cta2 = () => {
             " " +
             styles.card2
           }
-          href="/docs/concepts/introduction/welcome"
+          href={`${baseUrl}/concepts/introduction/welcome`}
           style={{
             textDecoration: "none",
           }}
@@ -77,7 +82,7 @@ export const Cta2 = () => {
             </p>
           </div>
           <div className={"md:pr-5 pr-3" + " " + styles.img}>
-            <img src={"/docs/img/Group%2032.svg"} alt={"browser window"} className={"w-full"} />
+            <img src={`${baseUrl}/img/Group%2032.svg`} alt={"browser window"} className={"w-full"} />
           </div>
         </a>
       </div>

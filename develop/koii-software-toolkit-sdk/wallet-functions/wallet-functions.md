@@ -19,4 +19,4 @@ If you use the Finnie wallet to upload and store NFTs, you already have an Arwea
 
 Learn more about Finnie:
 
-<ContentLink title="Welcome to Finnie" link="/docs/concepts/finnie-wallet/introduction" iconType="copy" />
+<ContentLink title="Welcome to Finnie" link="/concepts/finnie-wallet/introduction" iconType="copy" />
