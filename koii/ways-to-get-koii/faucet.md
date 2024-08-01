@@ -9,7 +9,7 @@ import ContentLink from "@site/src/components/contentLink";
 
 # KOII Faucet
 
-![Banner](./img/Koii%20Faucet.svg)
+![Banner](/img/koii/ways-to-get-koii/koii-faucet.svg)
 
 The faucet lets new users claim free tokens by verifying their accounts.
 Additionally, if you invite someone to Koii, you both will get 5 extra KOII tokens.
@@ -21,7 +21,7 @@ If you found Koii on your own, that is extra cool. We can be your friend! Contac
 
 Visit the Faucet below to start building your Koii Identity and get some free tokens.
 
-<ContentLink title="Faucet | Koii" link="https://faucet.koii.live/" imageLink="https://faucet.koii.live/favicon.ico" />
+<ContentLink title="Faucet | Koii" link="https://faucet.koii.network/" imageLink="https://faucet.koii.network/favicon.ico" />
 
 <br />
 Now you have your wallet and some KOII in it. You can trade them, use them as stakes to earn even more tokens or develop your own Koii Tasks by utilizing them as bounty.

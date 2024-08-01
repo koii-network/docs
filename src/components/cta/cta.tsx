@@ -1,7 +1,12 @@
 import React, { ReactNode } from "react";
 import styles from "./cta.module.css";
-import ReactPlayer from "react-player";
+
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export const Cta = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
   const handleClick = () => {
     window.gtag("event", "click_run_node");
   };
@@ -9,7 +14,7 @@ export const Cta = () => {
     <div className="w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8">
       <div className="w-full flex flex-col md:flex-row gap-6">
         <a
-          href="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
+          href={`${baseUrl}/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk`}
           className={
             "w-full lg:max-w-[50%] bg-white no-underline cursor-pointer border-x-[1px] border-b-[1px] border-solid border-t-0 border-inherit rounded-b-[10px]" +
             " " +
@@ -20,7 +25,7 @@ export const Cta = () => {
           }}
         >
           <img
-            src={"/img/COLOR-%20Built%20the%20impossible.svg"}
+            src={`${baseUrl}/img/COLOR-%20Built%20the%20impossible.svg`}
             alt="Built the impossible: computer and laptop with a crane and windmill"
             className="w-full rounded-t-[10px]"
           />
@@ -47,7 +52,7 @@ export const Cta = () => {
           onClick={handleClick}
         >
           <img
-            src={"/img/COLOR-%20Run%20a%20Task%20Node.svg"}
+          src={`${baseUrl}/img/COLOR-%20Run%20a%20Task%20Node.svg`}
             className="w-full rounded-t-[10px]"
           />
           <button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer">

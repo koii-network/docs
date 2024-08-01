@@ -4,7 +4,11 @@ import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 import { Policy } from "./policy";
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export const KoiiFooter = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
   return (
     <footer className="bg-[#353570] py-[2rem] text-white">
       <div className=" mx-[1.5rem] xl:mx-[6rem] bg-[rd] laptop-sm:pt-[0.5rem]">
@@ -12,7 +16,7 @@ export const KoiiFooter = () => {
           <div className="laptop-sm:flex justify-between gap-6 xl:gap-20">
             <div className="flex font-semibold mb-[1rem] laptop-sm:mb-0 ">
               <img
-                src="/img/finnie-koii-logo-white.svg"
+                src={`${baseUrl}/img/finnie-koii-logo-white.svg`}
                 alt="Koii logo"
                 width={50}
                 height={50}

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./tooltip.css";
 import tooltips from "./tooltips.json";
 
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 type tooltipType = {
   text: string;
 };
@@ -10,9 +13,11 @@ function Tooltip({ text }: tooltipType) {
   const [isHovered, setIsHovered] = useState(false);
   const tooltipText = tooltips[text.toLowerCase()][0] || "Default tooltip";
   const tooltipLink = tooltips[text.toLowerCase()][1] || "Default tooltip";
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
 
   const handleClick = () => {
-    window.open(tooltipLink, "_blank");
+    window.open(`${baseUrl}${tooltipLink}`, "_blank");
   };
 
   return (

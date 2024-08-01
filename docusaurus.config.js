@@ -4,17 +4,22 @@
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Koii Docs",
-  tagline: "Koii is Web3, for everyone.",
-  favicon: "/img/favicon.png",
+  title: "A Better Internet For Everyone",
+  tagline: "Koii is built to make the internet better for everyone. How will you push the web forward?",
+  favicon: "/favicon.png",
+  trailingSlash: false,
 
   // Set the production url of your site here
-  url: "https://docs.koii.network/",
+  url: "https://www.koii.network/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: process.env.BASE_URL || '/',
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -209,6 +214,7 @@ const config = {
               "/concepts/gradual-consensus",
               "/develop/microservices-and-tasks/what-are-tasks/gradual-consensus",
               "/concepts/gradual-consensus/runtime-flow",
+              "/concepts/gradual-consensus/task-lifecycle",
             ],
           },
           {
@@ -563,6 +569,7 @@ const config = {
           {
             to: "/develop/task-development/write-a-task",
             from: [
+              "/develop/build-on-koii",
               "/develop/write-a-koii-task/task-development-guide/introduction",
               "/develop/write-a-koii-task/task-development-guide",
               "/develop/write-a-koii-task/task-development-guide/task-structure",
@@ -572,8 +579,11 @@ const config = {
               "/develop/write-a-koii-task/task-development-guide/template-structure/distribute-rewards",
               "/develop/write-a-koii-task/task-development-guide/template-structure/setup",
               "/develop/write-a-koii-task/task-development-guide/template-structure/upnp-structure",
-              "/microservices-and-tasks/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
+              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
               "/develop/write-a-koii-task/task-development-kit-tdk",
+              "/microservices-and-tasks/task-development-guide",
               "/quickstart/hello-world/introduction",
               "/quickstart/hello-world/understand-the-template",
               "/quickstart/hello-world/task",
@@ -588,23 +598,9 @@ const config = {
               "/quickstart/migrate-apps/web-crawler",
               "/quickstart/crawler/introduction",
               "/quickstart/hello-world/intro",
-              "/develop/build-on-koii",
               "/quickstart/hello-world/task-tutorial",
               "/quickstart/hello-world/task-description",
               "/quickstart/hello-world/deploy",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
-              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/execute-task",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/audit-submissions",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/distribute-rewards",
-              "/develop/write-a-koii-task/task-development-guide/task-structure/setup",
-              "/develop/write-a-koii-task/task-development-guide/task-development-guide",
-              "/develop/write-a-koii-task/task-development-guide",
-              "/microservices-and-tasks/task-development-guide",
-              "/develop/write-a-koii-task/task-development-kit-tdk",
             ],
           },
           {
@@ -964,6 +960,9 @@ const config = {
       // },
       //
     }),
+    customFields: {
+      baseUrl: process.env.BASE_URL || "",
+    },
 };
 
 module.exports = config;

@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Run a Node
 ---
 
-![banner](img/Compute%20Sharing%20Marketplace.svg)
+![banner](/img/koii/ways-to-get-koii/compute-sharing-marketplace.svg)
 
 You can join the Koii ecosystem by running a Koii node and start earning passive income. To earn $KOII by [running a node, checkout our Run a Node section.](/run-a-node/introduction/types-of-nodes)
 

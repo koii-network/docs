@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Write a Task
 ---
 
-Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the [ORCA container manager](https://docs.koii.network/concepts/containerized-tasks/orca).
+Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the [ORCA container manager](/concepts/containerized-tasks/orca).
 
 ## Quick Start
 

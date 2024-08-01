@@ -2,17 +2,23 @@ import React from 'react';
 import styles from './card.module.css';
 import { cardImages } from './cardImages';
 
+
+
 type CardItem = {
   title?: string;
-  description?: string; 
-  link?: string; 
-  linkText?: string; 
-  svgName?: string; 
+  description?: string;
+  link?: string;
+  linkText?: string;
+  svgName?: string;
   cardPerRow?: string;
 };
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export function CardSpecial({ title, description, link, linkText, svgName, cardPerRow = "3" }) {
-  const SvgImage = cardImages[svgName]; 
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
+  const SvgImage = cardImages[svgName];
   console.log(cardImages[svgName]);
   const target = link && link.includes('https') ? '_blank' : '';
 
@@ -20,13 +26,13 @@ export function CardSpecial({ title, description, link, linkText, svgName, cardP
     <a href={link} className={styles.card} style={{ width: `calc((100% / ${cardPerRow}) - 20px)` }} target={target} rel="noopener noreferrer">
       {
         SvgImage && (
-          <SvgImage className={styles.cardSvg} alt={title} /> 
+          <SvgImage className={styles.cardSvg} alt={title} />
         )
       }
       <div className={styles.textContainer}>
         <div dangerouslySetInnerHTML={{ __html: title || '' }} />
         <div dangerouslySetInnerHTML={{ __html: description || '' }} />
-        <a href={link}>{linkText}</a>
+        <a href={`${link.includes('https') ? '' : baseUrl}${link}`}>{linkText}</a>
       </div>
     </a>
   );
@@ -45,7 +51,7 @@ return (
       <div className={styles.textContainer}>
           <div  dangerouslySetInnerHTML={{__html: title}}/>
          <div dangerouslySetInnerHTML={{__html: description}}/>
-          <a href={link}>{linkText}</a>
+          <a href={`${link.includes('https') ? '' : baseUrl}${link}`}>{linkText}</a>
       </div>
   </a>
 );
@@ -63,4 +69,3 @@ export function CardsSpecial({children}): JSX.Element {
     </section>
   );
 }
-

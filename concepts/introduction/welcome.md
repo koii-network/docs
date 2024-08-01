@@ -49,7 +49,7 @@ Depending on the size of the community, volunteer task operators may be sufficie
 <CardSpecial
     title="<p>🛠️ <strong>Tools</strong></p>"
     description=" <p>Building something great is a waste of time if no one can use it. That's why we've built industry-leading tools to secure your assets, trade your personal computing power, and onboard your community.</p>"
-    link="tools"
+    link="/concepts/introduction/tools"
     linkText="Try out the Koii Tools"
     svgName="tools"
     cardPerRow="2"
@@ -57,7 +57,7 @@ Depending on the size of the community, volunteer task operators may be sufficie
 <CardSpecial
     title="<p>💡 <strong>Philosophy of Decentralization</strong></p>"
     description=" <p>For too long, power has been concentrated on just a small part of the world's population. The internet has the power to fix this, but not the way it's been built so far.</p>"
-    link="philosophy"
+    link="/concepts/introduction/philosophy"
     linkText="Learn more about why Koii was built"
     svgName="philosophy"
     cardPerRow="2"

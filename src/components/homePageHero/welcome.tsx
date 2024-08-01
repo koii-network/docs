@@ -3,13 +3,13 @@ import React from "react";
 const WelcomeComponent = () => {
   return (
     <div className="mt-16 mb-10 mx-auto xl:max-w-[1300px] lg:max-w-[1024px] w-100 px-[2rem]">
-      <p className="text-koii-purple-2 font-semibold text-[40px] leading-[48px]">
+      <h1 className="text-koii-purple-2 font-semibold text-[40px] leading-[48px]">
         Welcome to Koii Docs
-      </p>
-      <p className="text-graphite text-lg leading-[34px]">
+      </h1>
+      <h2 className="text-graphite text-lg leading-[34px] font-normal">
         We built Koii to make the internet better for everyone. How will you
         push the web forward?
-      </p>
+      </h2>
       {/* <p className="text-graphite laptop-sm:text-[14px] mb-[10px] lg:text-[16px] text-[16px]">
         Our mission at Koii is to provide the infrastructure to produce better
         decentralized applications and make it easier for developers and

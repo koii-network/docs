@@ -17,7 +17,7 @@ While tasks run on task nodes, the data behind them is deliberately spread acros
 
 The core of the task architecture is the reward structure, which is contained in the [settlement layer](/concepts/settlement-layer/k2-tick-tock-fast-blocks). The settlement layer is a blockchain, and all nodes must have consensus, and they must have access to all of the information to add new blocks. This means information stored here is more expensive and causes network bloat significantly more than other layers.
 
-When a task executes, each task node [submits a proof once per round](/concepts/gradual-consensus/runtime-flow), which usually references an IPFS CID with more information to support the node's work.
+When a task executes, each task node [submits a proof once per round](/concepts/what-are-tasks/what-are-tasks/gradual-consensus), which usually references an IPFS CID with more information to support the node's work.
 
 ### Supporting Information (via Decentralized Storage)
 

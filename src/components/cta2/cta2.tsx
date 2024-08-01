@@ -1,7 +1,12 @@
 import React, { ReactNode } from "react";
 import styles from "./cta2.module.css";
 
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 export const Cta2 = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
   const handleClick = () => {
     window.gtag("event", "click_run_node");
   };
@@ -14,33 +19,33 @@ export const Cta2 = () => {
             " " +
             styles.card1
           }
-          href="/koii/the-koii-token/network-economics"
+          href={`${baseUrl}/run-a-node/task-nodes/how-to-run-a-koii-node`}
           style={{
             textDecoration: "none",
           }}
           onClick={handleClick}
         >
           <div className={"md:pl-5 pl-3" + " " + styles.img}>
-            <img src={"/img/Group%206.svg"} alt={"window browser with checkmark"} className={"w-full"}/>
+            <img src={`${baseUrl}/img/Group%206.svg`} alt={"window browser with checkmark"} className={"w-full"}/>
           </div>
           <div className="pr-3 md:pr-5">
             <h2
               className={
-                "no-underline hover:no-underline text-[#171753] m-0" +
+                "no-underline hover:no-underline text-[#171753] m-0 pl-10" +
                 " " +
                 styles.ctaText1
               }
             >
-            How to get token
+            How to get tokens
             </h2>
             <p
               className={
-                "no-underline hover:no-underline w-full flex items-start font-semibold m-0" +
+                "no-underline hover:no-underline w-full flex items-start font-semibold m-0 px-10" +
                 " " +
                 styles.ctaText2
               }
             >
-              Learn how to get token with desktop node
+              Learn how to get tokens with the desktop node
             </p>
           </div>
         </a>
@@ -50,7 +55,7 @@ export const Cta2 = () => {
             " " +
             styles.card2
           }
-          href="/concepts/introduction/welcome"
+          href={`${baseUrl}/concepts/introduction/welcome`}
           style={{
             textDecoration: "none",
           }}
@@ -77,7 +82,7 @@ export const Cta2 = () => {
             </p>
           </div>
           <div className={"md:pr-5 pr-3" + " " + styles.img}>
-            <img src={"/img/Group%2032.svg"} alt={"browser window"} className={"w-full"} />
+            <img src={`${baseUrl}/img/Group%2032.svg`} alt={"browser window"} className={"w-full"} />
           </div>
         </a>
       </div>

@@ -21,11 +21,11 @@ A task is a piece of code that you want to run on someone else's computer. You d
 
 ## How Does a Task Run?
 
-To understand the details of how a task runs, please see [runtime flow](https://docs.koii.network/concepts/what-are-tasks/what-are-tasks/gradual-consensus).
+To understand the details of how a task runs, please see [runtime flow](/concepts/what-are-tasks/what-are-tasks/gradual-consensus).
 
 ## Where are my Tasks Stored and Run?
 
-For more information on the storage and running of tasks, pleas see [runtime environment](https://docs.koii.network/concepts/what-are-tasks/what-are-tasks/runtime-environment).
+For more information on the storage and running of tasks, pleas see [runtime environment](/concepts/what-are-tasks/what-are-tasks/runtime-environment).
 
 ## How is a Task Structured?
 

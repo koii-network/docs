@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 const DesktopNodeButton = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields;
 
   return (
     <a
@@ -10,7 +15,7 @@ const DesktopNodeButton = () => {
       className="cursor-pointer"
     >
       <em><img
-        src={isHovered ? "/img/download-node-hover.svg" : "/img/download-node.svg"}
+        src={isHovered ? `${baseUrl}/img/download-node-hover.svg` : `${baseUrl}/img/download-node.svg`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="hoverAnimation"

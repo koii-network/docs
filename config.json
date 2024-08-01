@@ -1,7 +1,7 @@
 {
   "index_name": "dev_koii",
-  "start_urls": ["https://docs.koii.network/"],
-  "sitemap_urls": ["https://docs.koii.network/sitemap.xml"],
+  "start_urls": ["https://www.koii.network/docs/"],
+  "sitemap_urls": ["https://www.koii.network/docs/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
