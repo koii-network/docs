@@ -19,7 +19,7 @@ Discover more about Koii with Koii Comics. In this series, we explore the most c
 
 ## #3
 
-![comic3](./comicImages/comic3_new.png)
+![comic3](./comicImages/comic3.png)
 
 ## #4
 
