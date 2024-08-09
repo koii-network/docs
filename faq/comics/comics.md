@@ -28,3 +28,15 @@ Discover more about Koii with Koii Comics. In this series, we explore the most c
 ## #5
 
 ![comic5](./comicImages/comic5.png)
+
+## #6
+
+![comic6](./comicImages/comic6.png)
+
+## #7
+
+![comic7](./comicImages/comic7.png)
+
+## #8
+
+![comic8](./comicImages/comic8.png)
