@@ -95,6 +95,7 @@ const config = {
 				id: "faq",
 				path: "faq",
 				routeBasePath: "faq/",
+				sidebarPath: require.resolve("./sidebars/faqSidebar.js"),
 				// editUrl: "https://github.com/koii-network/docs/tree/main",
 				showLastUpdateAuthor: true,
 				showLastUpdateTime: true,
@@ -131,14 +132,14 @@ const config = {
 				include: ["**/*.md", "**/*.mdx"],
 			},
 		],
-		[
-			"@grnet/docusaurus-terminology",
-			{
-				termsDir: "./docs/terms",
-				docsDir: "./docs/",
-				glossaryFilepath: "./docs/glossary.md",
-			},
-		],
+		// [
+		// 	"@grnet/docusaurus-terminology",
+		// 	{
+		// 		termsDir: "./faq/glossary/terms",
+		// 		docsDir: "./",
+		// 		glossaryFilepath: "./faq/glossary/glossary.md",
+		// 	},
+		// ],
 		[
 			"@docusaurus/plugin-client-redirects",
 			{
@@ -957,7 +958,7 @@ const config = {
 					},
 					{
 						label: "❓ FAQ",
-						to: "/faq/questions/",
+						to: "/faq/",
 						activeBasePath: "faq",
 						position: "left",
 						className: "header-text",
