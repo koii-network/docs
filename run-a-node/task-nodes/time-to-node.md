@@ -41,7 +41,7 @@ Now it’s time to fund your account with a few tokens so you can participate in
 
 If you want to back up your account now, you can (and we recommend it). But you can always do this later. Account backups use a 12-word secret phrase, just like an Ethereum wallet or a Koii key on Finnie.
 
-:::caution
+:::danger Protect your Secret Phrase
 **Remember**, secret phrases should always be written using a pen on paper and stored in a safe place. They should **never** be stored on an internet-connected device like in a notes app, email, or photo. Anyone with access to this secret phrase has full control of your assets.
 :::
 
