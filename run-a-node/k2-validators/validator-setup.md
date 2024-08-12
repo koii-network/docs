@@ -5,13 +5,9 @@ image: img/thumbnail.png
 sidebar_label: Validator Setup
 ---
 
-import Description from "@site/src/components/description";
-import Tooltip from "@site/src/components/tooltip";
+## 1. Systemd service setup
 
-## Validator Setup
-### 1. Systemd service setup
-
-**Copy the following file to `/home/koii/validator.sh` and make it executable**
+- Copy the following code to `/home/koii/validator.sh` and make it executable
 
 ```sh
 #!/bin/sh
@@ -40,10 +36,9 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --only-known-rpc \
     --wal-recovery-mode skip_any_corrupted_record
     --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF
-
 ```
 
-**Create a systemd unit file at `/etc/systemd/system/koii-validator.service`**
+- Create a systemd unit file at `/etc/systemd/system/koii-validator.service`
 
 ```sh
 [Unit]
@@ -66,20 +61,25 @@ WantedBy=multi-user.target
 
 ### 2. Create a vote account
 
-:::info
-You will need your validator keypair account to be funded with KOII tokens before continuing
-:::
+- You will need your validator keypair account to be funded with KOII tokens before continuing. You can check the balance of a wallet by running
 
-:::info
-Please make sure your Koii CLI is configured for `testnet.koii.network` and using your validator identity before continuing:
+```sh
+koii balance <path_to_wallet>
+```
+
+- Please make sure your Koii CLI is configured for `testnet.koii.network` and using your validator identity before continuing:
 
 ```sh
 koii config set --url [https://testnet.koii.network](https://testnet.koii.network/) --keypair ~/validator-keypair.json
 ```
 
-:::
+- You can confirm your configuration with:
 
-Run the following command to create a vote-account on the network:
+```sh
+koii config get
+```
+
+- Run the following command to create a vote-account on the network:
 
 ```sh
 koii create-vote-account ~/vote-account-keypair.json ~/validator-keypair.json ~/authorized-withdrawer-keypair.json
@@ -93,16 +93,15 @@ sudo systemctl start koii-validator.service
 sudo systemctl status koii-validator.service
 ```
 
----
-
 ## Staking KOII in the validator
 
-> Commands in this section are to be run on the computer which has the stake account key pair (**NOT ON VALIDATOR**)
->
+:::info
+Commands in this section are to be run on the computer which has the stake account key pair (**NOT ON VALIDATOR**)
+:::
 
 ### 1. Create a stake account
 
-Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>`.
+Run the following command, replacing `<AMOUNT_TO_STAKE>` with your stake amount.
 
 ```sh
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/authorized-withdrawer-keypair.json
