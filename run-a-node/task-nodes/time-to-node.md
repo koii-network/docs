@@ -5,9 +5,15 @@ image: img/thumbnail.png
 sidebar_label: Time to Node!
 ---
 
-import Tooltip from "@site/src/components/tooltip";
-import DesktopNodeButton from "@site/src/components/buttons/koii-node-button";
-import { DownloadLinks } from "@site/src/lib/DesktopNodeDownload";
+:::info Ubuntu 24.04 or greater
+
+If you are experiencing errors running the node on Ubuntu 24.04 or greater, run the following command:
+
+```sh
+echo "kernel.apparmor_restrict_unprivileged_userns=0" | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+:::
 
 A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
