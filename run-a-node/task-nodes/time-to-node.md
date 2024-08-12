@@ -15,11 +15,11 @@ echo "kernel.apparmor_restrict_unprivileged_userns=0" | sudo tee -a /etc/sysctl.
 
 :::
 
+## PIN & Secret Phrase
+
 A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
 ![Time to Node](/img/run-a-node/task-node/welcome.png)
-
-## PIN & Secret Phrase
 
 If you forget this PIN, you can access your node again by importing the key via its secret phrase.
 
