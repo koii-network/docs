@@ -5,15 +5,21 @@ image: img/thumbnail.png
 sidebar_label: Time to Node!
 ---
 
-import Tooltip from "@site/src/components/tooltip";
-import DesktopNodeButton from "@site/src/components/buttons/koii-node-button";
-import { DownloadLinks } from "@site/src/lib/DesktopNodeDownload";
+:::info Ubuntu 24.04 or greater
+
+If you are experiencing errors running the node on Ubuntu 24.04 or greater, run the following command:
+
+```sh
+echo "kernel.apparmor_restrict_unprivileged_userns=0" | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+:::
+
+## PIN & Secret Phrase
 
 A new window will open with a loading screen. After the node loads for the first time, it will look like this. To secure your node, you need to create a **6-digit PIN**.
 
 ![Time to Node](/img/run-a-node/task-node/welcome.png)
-
-## PIN & Secret Phrase
 
 If you forget this PIN, you can access your node again by importing the key via its secret phrase.
 
@@ -35,7 +41,7 @@ Now it’s time to fund your account with a few tokens so you can participate in
 
 If you want to back up your account now, you can (and we recommend it). But you can always do this later. Account backups use a 12-word secret phrase, just like an Ethereum wallet or a Koii key on Finnie.
 
-:::caution
+:::danger Protect your Secret Phrase
 **Remember**, secret phrases should always be written using a pen on paper and stored in a safe place. They should **never** be stored on an internet-connected device like in a notes app, email, or photo. Anyone with access to this secret phrase has full control of your assets.
 :::
 
