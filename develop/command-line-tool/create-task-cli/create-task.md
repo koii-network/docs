@@ -44,58 +44,70 @@ The `config-task.yml` should look like this:
 
 ```yaml
 # Name and metadata of your task
-task_name: "Your-task-name"
-author: "koii"
-description: "This will be description of your task"
-repositoryUrl: "https://github.com/koii-network/task-examples"
-imageUrl: "imageUrl"
+task_name: 'task name'
+author: 'Koii'
+description: 'description'
+repositoryUrl: 'https://github.com/koii-network/task-template' # Replace with your own repo URL
+imageUrl: 'imageUrl'
+infoUrl: 'infoUrl'
 
-# network value can be DEVELOPMENT , ARWEAVE or IPFS, Recommended IPFS as the cli automatically takes care of uploading the executable with the help of web3.js key
-task_executable_network: "DEVELOPMENT"
+# Task executable network: DEVELOPMENT, ARWEAVE, or IPFS
+# IPFS is the default value, as the CLI automatically manages the upload process via the Koii Storage SDK.
+task_executable_network: 'IPFS'
 
-# Path to your executable webpack if the selected network is IPFS and in case of DEVELOPMENT  name it as main
-task_audit_program: "main"
+# Task audit program: Path to your executable webpack if the selected network is IPFS. In the case of DEVELOPMENT, name it as main.
+task_audit_program: 'dist/main.js'
 
-# Total round time of your task : it must be given in slots and each slot is roughly equal to 408ms
-round_time: 650
+# Round time: The total duration of your task, measured in slots (with each slot approximately equal to 408ms).
+round_time: 1500
 
-audit_window: 250
-submission_window: 250
+# Audit window: The audit window should be greater than 1/3 of the round time.
+audit_window: 350
 
-# Amounts in KOII
+# Submission window: The submission window should be greater than 1/3 of the round time.
+submission_window: 350
 
-minimum_stake_amount: 2
+# Minimum stake amount: The minimum amount of KOII that a user must stake in order to participate in the task.
+minimum_stake_amount: 1.9
 
-# total_bounty_amount cannot be grater than bounty_amount_per_round
-# total bounty is not accepted in case of update task
+# Task Bounty Type: KOII, KPL
+task_type: 'KOII'
+
+# OPTIONAL (ONLY IF Task Type = KPL) : Token Mint Address, Fire Token as an example here. 
+token_type: "FJG2aEPtertCXoedgteCCMmgngSZo1Zd715oNBzR7xpR"
+
+# Total bounty amount: The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
 total_bounty_amount: 10
-
 bounty_amount_per_round: 0.1
 
-#Number of times allowed to re-submit the distribution  list in case the distribution list is audited
+# Allowed failed distributions: Number of times re-submission is allowed for the distribution list in case of an audit.
+# It is also the number of rounds submission will be kept.
 allowed_failed_distributions: 3
 
-#Space in MBs for the account size, that holds the task data
-space: 1
+# Space: Space in MBs for the account size, that holds the task data.
+# For testing tasks this can be set to 0.1, but for production it should be set to at least 1.
+space: 0.1
 
 # Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
-# To add more task variables, please refer the type, value, description format shown below
+# To add more global variables and task variables, please refer to the type, value, description format shown below.
 
 requirementsTags:
   - type: CPU
-    value: "4-core"
+    value: '4-core'
   - type: RAM
-    value: "5 GB"
+    value: '5 GB'
   - type: STORAGE
-    value: "5 GB"
+    value: '5 GB'
 
-# OPTIONAL variables variables for creating task / REQUIRED variables for update task
+# OPTIONAL variables for creating task / REQUIRED variables for updating task
 
-# OPTIONAL Only provide the taskId if you are updating the task otherwise leave blank
-task_id: ""
+# ONLY provide the task_id and migrationDescription if you are updating the task, otherwise leave blank.
+# Task_id: Previous task ID.
+task_id: ''
 
-# Provide the description for changes made in new version of task
-migrationDescription: ""
+# Migration description: Provide the description for changes made in the new version of the task.
+migrationDescription: ''
+
 ```
 
 - Follow the instructions on the file and fill in your task's information.
