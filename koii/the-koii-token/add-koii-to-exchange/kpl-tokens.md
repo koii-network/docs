@@ -5,6 +5,10 @@ image: img/thumbnail.png
 sidebar_label: KPL Tokens
 ---
 
+:::warning FOR EXCHANGES ONLY
+These instructions are for exchanges interested in adding Koii, they are not intended for task developers or others looking to launch a token of their own. If you would like to launch a token on Koii, see the [EZ Sandbox tutorial](https://github.com/koii-network/ezsandbox/blob/main/Lesson%206/PartI.md).
+:::
+
 The K2 blockchain uses the KPL token standard for creating and exchanging synthetic tokens. There are some difference between the workflow for KOII tokens and KPL tokens.
 
 ## Token Mints
@@ -112,7 +116,6 @@ If you need to create an account with a specific keypair:
 ## Token Transfers
 
 When transferring tokens, the source account must be the actual token account containing the amount to be transferred, but the recipient account can be a normal wallet account. If the wallet doesn't yet have an associated token account, it can be created automatically by the transfer by passing the `fund-recipient` flag.
-
 
 ### Command Line
 
