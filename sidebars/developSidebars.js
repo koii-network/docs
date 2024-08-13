@@ -22,7 +22,6 @@ const sidebars = {
     },
     "onboarding/welcome-to-koii",
 
-
     {
       type: "html",
       value: "Task Development",
@@ -32,13 +31,12 @@ const sidebars = {
     "task-development/key-concepts",
     "task-development/task-development-flow",
     "task-development/whitelist-task",
-        {
+    {
       type: "category",
       label: "Testing",
       link: {
         type: "generated-index",
-        description:
-          "Learn how to test your task.",
+        description: "Learn how to test your task.",
       },
       collapsed: true,
       items: [
@@ -47,7 +45,7 @@ const sidebars = {
         "task-development/testing/using-unittest",
         "task-development/testing/easy-testing",
         "task-development/testing/simulating-a-round",
-        "task-development/testing/docker-test"
+        "task-development/testing/docker-test",
       ],
     },
     {
@@ -95,24 +93,78 @@ const sidebars = {
     // "command-line-tool/create-task-cli",
     "command-line-tool/cli-usage-reference",
 
-
     {
       type: "html",
       value: "Getting Advanced",
       className: "sidebar-title top-margin",
     },
-
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/koii-storage",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
-    "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
-
+      {
+        type: "category",
+        label: "NamespaceWrapper API",
+        link: {
+          type: "doc",
+          id: "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+        },
+        collapsed: true,
+        items: [
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
+          "write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
+        ],
+      },
+      {
+        type: "category",
+        label: "Koii IPFS Storage",
+        link: {
+          type: "doc",
+          id:           "write-a-koii-task/koii-ipfs-storage/koii-storage",
+        },
+        collapsed: true,
+        items: [
+          "write-a-koii-task/koii-ipfs-storage/koii-storage",
+        ],
+      },
+      {
+        type: "category",
+        label: "KPL(Koii Program Library) ",
+        link: {
+          type: "doc",
+          id:           "write-a-koii-task/kpl/intro",
+        },
+        collapsed: true,
+        items: [
+          "write-a-koii-task/kpl/intro",
+        ],
+      },
+      {
+        type: "category",
+        label: "Orca",
+        link: {
+          type: "doc",
+          id:           "write-a-koii-task/orca/intro",
+        },
+        collapsed: true,
+        items: [
+          "write-a-koii-task/orca/intro",
+        ],
+      },
+      {
+        type: "category",
+        label: "Middleman Server Template",
+        link: {
+          type: "doc",
+          id:           "write-a-koii-task/middleman/intro",
+        },
+        collapsed: true,
+        items: [
+          "write-a-koii-task/middleman/intro",
+        ],
+      },
 
     {
       type: "html",
@@ -210,32 +262,32 @@ const sidebars = {
         "rpcapi/http/getlatestblockhash",
         "rpcapi/http/getleaderschedule",
         "rpcapi/http/getmaxretransmitslot",
-    "rpcapi/http/getmaxshredinsertslot",
-    "rpcapi/http/getminimumbalanceforrentexemption",
-    "rpcapi/http/getmultipleaccounts",
-    "rpcapi/http/getprogramaccounts",
-    "rpcapi/http/getrecentperformancesamples",
-    "rpcapi/http/getrecentprioritizationfees",
-    "rpcapi/http/getsignaturestatuses",
-    "rpcapi/http/getsignaturesforaddress",
-    "rpcapi/http/getslot",
-    "rpcapi/http/getslotleader",
-    "rpcapi/http/getstakeactivation",
-    "rpcapi/http/getstakeminimumdelegation",
-    "rpcapi/http/getsupply",
-    "rpcapi/http/gettokenaccountbalance",
-    "rpcapi/http/gettokenaccountsbydelegate",
-    "rpcapi/http/gettokenaccountsbyowner",
-    "rpcapi/http/gettokenlargestaccounts",
-    "rpcapi/http/gettokensupply",
-    "rpcapi/http/gettransaction",
-    "rpcapi/http/gettransactioncount",
-    "rpcapi/http/getversion",
-    "rpcapi/http/getvoteaccounts",
-    "rpcapi/http/isblockhashvalid",
-    "rpcapi/http/minimumledgerslot",
-    "rpcapi/http/requestairdrop",
-    "rpcapi/http/sendtransaction",
+        "rpcapi/http/getmaxshredinsertslot",
+        "rpcapi/http/getminimumbalanceforrentexemption",
+        "rpcapi/http/getmultipleaccounts",
+        "rpcapi/http/getprogramaccounts",
+        "rpcapi/http/getrecentperformancesamples",
+        "rpcapi/http/getrecentprioritizationfees",
+        "rpcapi/http/getsignaturestatuses",
+        "rpcapi/http/getsignaturesforaddress",
+        "rpcapi/http/getslot",
+        "rpcapi/http/getslotleader",
+        "rpcapi/http/getstakeactivation",
+        "rpcapi/http/getstakeminimumdelegation",
+        "rpcapi/http/getsupply",
+        "rpcapi/http/gettokenaccountbalance",
+        "rpcapi/http/gettokenaccountsbydelegate",
+        "rpcapi/http/gettokenaccountsbyowner",
+        "rpcapi/http/gettokenlargestaccounts",
+        "rpcapi/http/gettokensupply",
+        "rpcapi/http/gettransaction",
+        "rpcapi/http/gettransactioncount",
+        "rpcapi/http/getversion",
+        "rpcapi/http/getvoteaccounts",
+        "rpcapi/http/isblockhashvalid",
+        "rpcapi/http/minimumledgerslot",
+        "rpcapi/http/requestairdrop",
+        "rpcapi/http/sendtransaction",
         "rpcapi/http/simulatetransaction",
       ],
     },
@@ -247,10 +299,27 @@ const sidebars = {
         id: "rpcapi/websocket/websocket",
       },
       collapsed: true,
-      items:
-        ['rpcapi/websocket/accountsubscribe', 'rpcapi/websocket/accountunsubscribe', 'rpcapi/websocket/blocksubscribe', 'rpcapi/websocket/blockunsubscribe', 'rpcapi/websocket/logssubscribe', 'rpcapi/websocket/logsunsubscribe', 'rpcapi/websocket/programsubscribe', 'rpcapi/websocket/programunsubscribe', 'rpcapi/websocket/rootsubscribe', 'rpcapi/websocket/rootunsubscribe', 'rpcapi/websocket/signaturesubscribe', 'rpcapi/websocket/signatureunsubscribe', 'rpcapi/websocket/slotsubscribe', 'rpcapi/websocket/slotunsubscribe', 'rpcapi/websocket/slotsupdatessubscribe', 'rpcapi/websocket/slotsupdatesunsubscribe', 'rpcapi/websocket/votesubscribe', 'rpcapi/websocket/voteunsubscribe']
-      ,
-    }
+      items: [
+        "rpcapi/websocket/accountsubscribe",
+        "rpcapi/websocket/accountunsubscribe",
+        "rpcapi/websocket/blocksubscribe",
+        "rpcapi/websocket/blockunsubscribe",
+        "rpcapi/websocket/logssubscribe",
+        "rpcapi/websocket/logsunsubscribe",
+        "rpcapi/websocket/programsubscribe",
+        "rpcapi/websocket/programunsubscribe",
+        "rpcapi/websocket/rootsubscribe",
+        "rpcapi/websocket/rootunsubscribe",
+        "rpcapi/websocket/signaturesubscribe",
+        "rpcapi/websocket/signatureunsubscribe",
+        "rpcapi/websocket/slotsubscribe",
+        "rpcapi/websocket/slotunsubscribe",
+        "rpcapi/websocket/slotsupdatessubscribe",
+        "rpcapi/websocket/slotsupdatesunsubscribe",
+        "rpcapi/websocket/votesubscribe",
+        "rpcapi/websocket/voteunsubscribe",
+      ],
+    },
   ],
 };
 
