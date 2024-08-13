@@ -1,5 +1,5 @@
 import React from "react";
-import { getInvolvedLinks } from "@s";
+import { getInvolvedLinks } from "@site/src/config/links-config";
 import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 import { Policy } from "./policy";
