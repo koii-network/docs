@@ -14,7 +14,7 @@ Navigate to the `task/submission.js` file, and update the dependency imports as 
 
 ```js title="/task/submission.js"
 require('dotenv').config();
-const { namespaceWrapper } = require('../_koiiNode/koiiNode');
+const { namespaceWrapper } = require('@_koii/namespace-wrapper');
 //const { Web3Storage, File } = require('web3.storage');
 // const storageClient = new Web3Storage({
 //   token: process.env.SECRET_WEB3_STORAGE_KEY,

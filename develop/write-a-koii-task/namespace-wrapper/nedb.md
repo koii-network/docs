@@ -44,7 +44,7 @@ The `getDB` method is used to obtain the instance of your database object. This 
 Usage example:
 
 ```js
-const { namespaceWrapper } = require("./_koiiNode/koiiNode");
+const { namespaceWrapper } = require('@_koii/namespace-wrapper');
 
 const db = await namespaceWrapper.getDB();
 ```
@@ -120,7 +120,7 @@ async function execute() {
 You can add more functions to your task by adding them to the `namespaceWrapper` class or create your `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
 
 ```js
-const { namespaceWrapper } = require("./_koiiNode/koiiNode");
+const { namespaceWrapper } = require('@_koii/namespace-wrapper');
 
 const db = await namespaceWrapper.getDB();
   // return items by name

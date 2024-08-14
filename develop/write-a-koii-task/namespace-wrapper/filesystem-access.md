@@ -35,7 +35,7 @@ async fs(method, path, ...args) {
 Example usage of the `fs` function is demonstrated below, showcasing the creation of a new directory, copying a file, and creating a new file:
 
 ```js
-const { namespaceWrapper } = require("../_koiiNode/koiiNode");
+const { namespaceWrapper } = require('@_koii/namespace-wrapper');
 
 // CREATE NEW DIRECTORY
 await namespaceWrapper.fs("mkdir", `uploads`, {
