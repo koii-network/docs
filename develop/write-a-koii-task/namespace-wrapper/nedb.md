@@ -32,11 +32,7 @@ This code is setting up a wrapper class for a NeDB database using the nedb-promi
   }
 ```
 
-It will connect to the database in the `_koiiNode` folder if the task is administered by a task node, otherwise it will connect to a local database.
-
-## Built-in methods
-
-The `_koiiNode` directory contains the `namespaceWrapper` object, which offers built-in methods to support NeDB operations in your tasks. Below are the explanations and usage examples of the provided methods:
+It will connect to the database using `namespaceWrapper` function if the task is administered by a task node, otherwise it will connect to a local database.
 
 ### getDB
 
