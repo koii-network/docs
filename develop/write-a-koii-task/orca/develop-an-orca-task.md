@@ -1,13 +1,9 @@
 ---
-title: How to develop an OrcaPod
+title: How to develop an Orca Task
 description: The purpose of this guide is to show how to integrate ORCA with Koii. Basically we will be focusing and simplifying so that developer can come to this guide, they can start developing and running KOII-ORCA task.
 image: img/thumbnail.png
-sidebar_label: Develop an OrcaPod
+sidebar_label: Develop an Orca Task
 ---
-
-import Description from "@site/src/components/description";
-
-# How to develop an OrcaPod
 
 ## Objective
 
@@ -167,47 +163,51 @@ npm i orca-pulse
 Import orca-pulse in the `index.js`
 
 ```js
-const { OrcaPulse } = require('orca-pulse')
+const { OrcaPulse } = require("orca-pulse");
 ```
 
 Create an instance of orca-pulse in the `index.js` inside setup function.
 
 ```js
-const orcaPulse = new OrcaPulse()
+const orcaPulse = new OrcaPulse();
 await orcaPulse.initialize(
-    'userContainerImageUrl',
-    'taskId',
-    'OrcaUrl',
-    'certificate' //Optinal, Need to pass when ORCA is running with SSL Mode.
-    )
+	"userContainerImageUrl",
+	"taskId",
+	"OrcaUrl",
+	"certificate" //Optinal, Need to pass when ORCA is running with SSL Mode.
+);
 ```
 
 ### Create simple-task.js
 
 ```js
 class SimpleTask {
-    constructor(orcaPulse) {
-        this.start(orcaPulse)
-    }
-    async start(orcaPulse) {
-        orcaPulse.podCall('collect', {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: {
-                'datatype': 'blocks',
-                'start_block': '100000',
-                'end_block': '100005',
-                'rpc_url': "https://internal.ethereum.n.chaindeck.io/278e1b2ab91f2ca96f7b8761bf65b9b2"
-            },
-        }).then(collect => {
-            console.log("etl data", collect)
-        }).catch(err => {
-            console.log("error is in collect podcall", err)
-        })
-    }
+	constructor(orcaPulse) {
+		this.start(orcaPulse);
+	}
+	async start(orcaPulse) {
+		orcaPulse
+			.podCall("collect", {
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: {
+					datatype: "blocks",
+					start_block: "100000",
+					end_block: "100005",
+					rpc_url:
+						"https://internal.ethereum.n.chaindeck.io/278e1b2ab91f2ca96f7b8761bf65b9b2",
+				},
+			})
+			.then((collect) => {
+				console.log("etl data", collect);
+			})
+			.catch((err) => {
+				console.log("error is in collect podcall", err);
+			});
+	}
 }
-module.exports = SimpleTask
+module.exports = SimpleTask;
 ```
 
 ### Make change in CoreLogic.js
@@ -215,13 +215,13 @@ module.exports = SimpleTask
 Import the simple-task
 
 ```js
-const SimpleTask = require('./simple-task');
+const SimpleTask = require("./simple-task");
 ```
 
 Create instance of the simple task class
 
 ```js
- const result = await new SimpleTask(orcaPulse)
+const result = await new SimpleTask(orcaPulse);
 ```
 
 ## Edit .env.local file
@@ -291,7 +291,7 @@ yarn webpack
 - You should see a new directory `/dist`. Your compiled executable is located in `/dist/main.js`
 
 That’s it! You’ve successfully compiled your task into a single executable file.
-  ​
+​
 
 ## Run the task
 

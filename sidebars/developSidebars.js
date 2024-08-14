@@ -145,7 +145,10 @@ const sidebars = {
 				id: "write-a-koii-task/orca/intro",
 			},
 			collapsed: true,
-			items: ["write-a-koii-task/orca/intro"],
+			items: [
+				"write-a-koii-task/orca/intro",
+				"write-a-koii-task/orca/develop-an-orca-task",
+			],
 		},
 		{
 			type: "category",
