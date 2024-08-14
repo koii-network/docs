@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./content.module.css";
 import { contentImages } from "./contentImages";
-
-const baseUrl = process.env.BASE_URL || "";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type ContentLink = {
 	title?: string;
@@ -26,6 +25,8 @@ function ContentLinks({
 		Svg = contentImages[iconType];
 	}
 	const target = link?.startsWith("http") ? "_blank" : "";
+	const { siteConfig } = useDocusaurusContext();
+	const { baseUrl } = siteConfig.customFields as { baseUrl: string };
 	return (
 		<>
 			<a
