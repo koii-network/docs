@@ -263,10 +263,6 @@ const config = {
 						],
 					},
 					{
-						to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
-						from: "/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
-					},
-					{
 						to: "/koii/ways-to-get-koii/grants-program",
 						from: [
 							"/earning-koii/grants-program",
@@ -437,8 +433,50 @@ const config = {
 						],
 					},
 					{
-						to: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
-						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace",
+						to: "/develop/write-a-koii-task/namespace-wrapper/customizing-the-namespace",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/filesystem-access",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/keys-and-secrets",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/nedb",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/rest-apis",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/rest-apis",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/task-state",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/timestamp-round-and-slot",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/wallet-signatures",
+						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/wallet-signatures",
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/nedb",
+						from: [
+							"/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
+							"/develop/microservices-and-tasks/task-development-kit-tdk/using-the-task-namespace/leveldb",
+						],
+					},
+					{
+						to: "/develop/write-a-koii-task/namespace-wrapper/the-namespace-object",
+						from: [
+							"/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/the-namespace-object",
+							"/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace",
+						],
 					},
 					{
 						to: "/concepts/category/k2-integration-hooks",
