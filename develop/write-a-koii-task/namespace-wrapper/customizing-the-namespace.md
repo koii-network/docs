@@ -15,7 +15,7 @@ npm install @_koii/namespace-wrapper
 
 
 ```js
-import { Connection } from "@_koi/web3.js";
+import { Connection } from "@_koii/web3.js";
 
 class NamespaceWrapper {
 	// Custom functions and variables

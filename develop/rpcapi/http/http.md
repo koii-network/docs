@@ -6,7 +6,7 @@ sidebar_label: HTTP Methods
 Koii nodes accept HTTP requests using the [JSON-RPC 2.0](https://www.jsonrpc.org/specification) specification.
 
 :::info
-For JavaScript applications, use the [@_koi/web3.js](https://github.com/koii-network/k2-web3.js) library as a convenient interface for the RPC methods to interact with a Koii node.
+For JavaScript applications, use the [@_koii/web3.js](https://github.com/koii-network/k2-web3.js) library as a convenient interface for the RPC methods to interact with a Koii node.
 :::
 RPC HTTP Endpoint
 -----------------------------------------

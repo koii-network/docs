@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PublicKey, Connection } from '@_koi/web3.js';
+import { PublicKey, Connection } from '@_koii/web3.js';
 
 
 interface TaskData {

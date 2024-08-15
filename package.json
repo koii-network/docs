@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@_koi/web3.js": "^0.0.7",
+    "@_koii/web3.js": "^0.1.11",
     "@docusaurus/core": "^3.4.0",
     "@docusaurus/plugin-content-docs": "^3.4.0",
     "@docusaurus/plugin-google-gtag": "^3.4.0",
