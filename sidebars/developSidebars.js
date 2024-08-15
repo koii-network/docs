@@ -159,7 +159,10 @@ const sidebars = {
 				id: "write-a-koii-task/middleman/intro",
 			},
 			collapsed: true,
-			items: ["write-a-koii-task/middleman/intro"],
+			items: ["write-a-koii-task/middleman/intro",
+        "write-a-koii-task/middleman/middleman-main",
+        
+      ],
 		},
 
 		{
