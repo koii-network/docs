@@ -433,11 +433,11 @@ const config = {
 						],
 					},
 					{
-						to: "/develop/write-a-koii-task/namespace-wrapper/customizing-the-namespace",
+						to: "write-a-koii-task/namespace-wrapper/installing-namespace-wrapper",
 						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/customizing-the-namespace",
 					},
 					{
-						to: "/develop/write-a-koii-task/namespace-wrapper/filesystem-access",
+						to: "/develop/write-a-koii-task/namespace-wrapper/installing-namespace-wrapper",
 						from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
 					},
 					{
