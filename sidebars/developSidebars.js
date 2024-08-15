@@ -161,7 +161,7 @@ const sidebars = {
 			collapsed: true,
 			items: ["write-a-koii-task/middleman/intro",
         "write-a-koii-task/middleman/middleman-main",
-        
+        "write-a-koii-task/middleman/middleman-helpers"
       ],
 		},
 
