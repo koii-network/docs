@@ -115,7 +115,6 @@ const sidebars = {
 				"write-a-koii-task/namespace-wrapper/keys-and-secrets",
 				"write-a-koii-task/namespace-wrapper/timestamp-round-and-slot",
 				"write-a-koii-task/namespace-wrapper/task-state",
-				"write-a-koii-task/namespace-wrapper/customizing-the-namespace",
 			],
 		},
 		{
