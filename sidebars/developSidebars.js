@@ -107,6 +107,7 @@ const sidebars = {
 			},
 			collapsed: true,
 			items: [
+				"write-a-koii-task/namespace-wrapper/installing-namespace-wrapper",
 				"write-a-koii-task/namespace-wrapper/rest-apis",
 				"write-a-koii-task/namespace-wrapper/filesystem-access",
 				"write-a-koii-task/namespace-wrapper/nedb",
