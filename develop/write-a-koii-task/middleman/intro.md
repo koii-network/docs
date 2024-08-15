@@ -32,8 +32,7 @@ npm install
 cp .env.example .env
 ```
 
-and update the `.env` file with your configurations.
-
+Edit `TASK_ID` to the task ID you want to process. You can also configure the MongoDB connection string.
 
 4. Start the server:
 
