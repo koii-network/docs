@@ -15,7 +15,7 @@ Navigate to the `task/distribution.js` file, and update the dependency imports a
 
 ```js title="/task/distribution.js"
 require("dotenv").config();
-const { namespaceWrapper } = require("../_koiiNode/koiiNode");
+const { namespaceWrapper } = require('@_koii/namespace-wrapper');
 const { Web3 } = require("web3");
 const tokenContractABI = require("../abi/KToken.json");
 const { retrieveFromCid } = require("../helper");

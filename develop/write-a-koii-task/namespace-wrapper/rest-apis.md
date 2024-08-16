@@ -52,7 +52,7 @@ Express endpoints can be defined in the `index.js` file of your task-template
 
 ```js
 // import app from koiiNode.js file
-const { app, namespaceWrapper } = require("../_koiiNode/koiiNode");
+const { app, namespaceWrapper } = require('@_koii/namespace-wrapper');
 
 async function setup() {
   console.log("IN SETUP");

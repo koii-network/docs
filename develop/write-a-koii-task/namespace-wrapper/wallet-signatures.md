@@ -38,7 +38,7 @@ Example of signing a transfer transaction:
 
 ```js
 import { namespaceWrapper } from "./namespaceWrapper";
-import { Keypair, Transaction, SystemProgram, PublicKey } from "@_koi/web3.js";
+import { Keypair, Transaction, SystemProgram, PublicKey } from "@_koii/web3.js";
 
 const fromKeypair = Keypair.generate();
 const toKeypair = Keypair.generate();

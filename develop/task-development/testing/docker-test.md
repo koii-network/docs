@@ -170,13 +170,13 @@ Answer: Please switch to the address that recommended for your current system.
 ```sh
 task_node  | Transaction simulation failed: Attempt to debit an account but found no record of a prior credit.
 task_node  |
-task_node  | /app/node_modules/@_koi/web3.js/lib/index.cjs.js:6914
+task_node  | /app/node_modules/@_koii/web3.js/lib/index.cjs.js:6914
 task_node  |       throw new SendTransactionError('failed to send transaction: ' + res.error.message, logs);
 task_node  |             ^
 task_node  |
 lib/index.cjs.js:6873:20)
-task_node  |     at async Connection.sendTransaction (/app/node_modules/@_koi/web3.js/lib/index.cjs.js:6863:12)
-task_node  |     at async sendAndConfirmTransaction (/app/node_modules/@_koi/web3.js/lib/index.cjs.js:4052:21) {
+task_node  |     at async Connection.sendTransaction (/app/node_modules/@_koii/web3.js/lib/index.cjs.js:6863:12)
+task_node  |     at async sendAndConfirmTransaction (/app/node_modules/@_koii/web3.js/lib/index.cjs.js:4052:21) {
 task_node  |   logs: []
 task_node  | }
 task_node  |
