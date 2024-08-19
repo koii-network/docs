@@ -14,10 +14,10 @@ export { FundTask, establishConnection, checkProgram, createTask, updateTask, Se
 ```
 export { KPLFundTask, KPLEstablishPayer, KPLEstablishConnection, KPLCheckProgram, KPLCreateTask, KPLClaimReward, KPLSetActive, KPLWithdraw, KPLUpdateTask }; 
 ```
-# Environment Set up
-## Env Variables
+## Environment Set up
+### Env Variables
 Through CI/CD, you will need to use your wallet keypair as your environment variables. It is essential for you to ensure that your Keypair is safe. 
-## Initialize Create-Task-CLI
+### Initialize Create-Task-CLI
 If you want to make Koii Task Related operations, you need to use 
 ```
 await establishConnection(connection);
@@ -29,8 +29,8 @@ await KPLEstablishConnection(connection);
 await KPLCheckProgram();
 ```
 
-# Operation Inputs
-## Koii Task Functions
+## Operation Inputs
+### Koii Task Functions
 | Function Name                    | Input Parameters                                                                                                              |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | **establishConnection**          | None                                                                                                                           |
@@ -43,12 +43,12 @@ await KPLCheckProgram();
 | **FundTask**                     | `payerWallet: Keypair`, `taskStateInfoAddress: PublicKey`, `stakePotAccount: PublicKey`, `amount: number`                      |
 | **FundTaskFromMiddleAccount**    | `payerWallet: Keypair`, `taskStateInfoAddress: PublicKey`, `stakePotAccount: PublicKey`, `amount: number`, `funderKeypair: Keypair` |
 | **Withdraw**                     | `payerWallet: Keypair`, `taskStateInfoAddress: PublicKey`, `submitterKeypair: Keypair`                                         |
-## KPL Task Functions
+### KPL Task Functions
 Coming Soon...
 
-# ChatOps
+## ChatOps
 
-With ChatOps, you can make calls to task operations within other communication software. 
+With ChatOps, you can make calls to task operations within other communication software. Here we use Slack as an example. 
 
 Below is an example main.js file for ChatOps Funding. 
 
