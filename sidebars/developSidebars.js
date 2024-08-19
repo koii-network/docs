@@ -87,6 +87,7 @@ const sidebars = {
 				"command-line-tool/create-task-cli/update-task",
 				"command-line-tool/create-task-cli/activate-task",
 				"command-line-tool/create-task-cli/fund-task",
+				"command-line-tool/create-task-cli/ci-cd",
 			],
 		},
 
