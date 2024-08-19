@@ -3,12 +3,17 @@ title: Continuous Integration and Continuous Delivery
 image: img/thumbnail.png
 sidebar_label: CI/CD
 ---
-This section provides guidelines for integrating create-task-cli into your CI/CD pipeline, ensuring seamless task creation, funding, and management. 
-# Exported Functions
+
+# Continuous Integration and Continuous Delivery
+This section provides guidelines for integrating create-task-cli into your CI/CD pipeline, ensuring seamless task creation, funding, and management.
 - Koii Operations
+```
 export { FundTask, establishConnection, checkProgram, createTask, updateTask, SetActive, FundTaskFromMiddleAccount, Withdraw, ClaimReward, establishPayer }; 
+```
 - KPL Operations
+```
 export { KPLFundTask, KPLEstablishPayer, KPLEstablishConnection, KPLCheckProgram, KPLCreateTask, KPLClaimReward, KPLSetActive, KPLWithdraw, KPLUpdateTask }; 
+```
 # Environment Set up
 ## Env Variables
 Through CI/CD, you will need to use your wallet keypair as your environment variables. It is essential for you to ensure that your Keypair is safe. 
@@ -47,7 +52,7 @@ With ChatOps, you can make calls to task operations within other communication s
 
 Below is an example main.js file for ChatOps Funding. 
 
-```
+```js
 const { FundTask } = require('@_koii/create-task-cli');
 const { establishConnection, checkProgram } = require('@_koii/create-task-cli');
 const { PublicKey, Connection, Keypair } = require('@_koii/web3.js');
@@ -118,7 +123,7 @@ main();
 
 ```
 And prepare a gitlab CI/CD file here. 
-```
+```yml
 stages:
   - fund
 
@@ -140,7 +145,7 @@ build:
     when: always
 ```
 Then you can use the following command in Slack to trigger the funding. 
-```
+```sh
 /gitlab <group name/repo name>  run build <Task ID> <Amount>
 ```
 
