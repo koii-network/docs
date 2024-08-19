@@ -4,8 +4,8 @@ image: img/thumbnail.png
 sidebar_label: CI/CD
 ---
 
-This section provides guidelines for integrating create-task-cli into your CI/CD pipeline, ensuring seamless task creation, funding, and management. 
-# Exported Functions
+# Continuous Integration and Continuous Delivery
+This section provides guidelines for integrating create-task-cli into your CI/CD pipeline, ensuring seamless task creation, funding, and management.
 - Koii Operations
 ```
 export { FundTask, establishConnection, checkProgram, createTask, updateTask, SetActive, FundTaskFromMiddleAccount, Withdraw, ClaimReward, establishPayer }; 
