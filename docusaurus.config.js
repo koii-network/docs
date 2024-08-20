@@ -836,6 +836,10 @@ const config = {
 						to: "/run-a-node/task-nodes/concepts/what-is-an-rpc-node",
 						from: "/concepts/what-are-koii-nodes/what-is-an-rpc-node",
 					},
+					{
+						to: "/develop/command-line-tool/koii-cli/cli-usage-reference",
+						from: "/develop/command-line-tool/cli-usage-reference",
+					}
 				],
 				createRedirects(existingPath) {
 					if (existingPath.includes("/concepts/introduction")) {
