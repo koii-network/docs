@@ -594,7 +594,7 @@ const config = {
 						from: "/quickstart/command-line-tool/koii-cli/connect-cluster",
 					},
 					{
-						to: "/develop/command-line-tool/cli-usage-reference",
+						to: "/develop/command-line-tool/koii-cli/cli-usage-reference",
 						from: "/quickstart/command-line-tool/cli-usage-reference",
 					},
 					{
