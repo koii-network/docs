@@ -67,6 +67,7 @@ const sidebars = {
 			collapsed: true,
 			items: [
 				"command-line-tool/koii-cli/install-cli",
+				"command-line-tool/koii-cli/cli-usage-reference",
 				"command-line-tool/koii-cli/create-wallet",
 				"command-line-tool/koii-cli/send-and-receive-tokens",
 				"command-line-tool/koii-cli/connect-cluster",
@@ -91,8 +92,6 @@ const sidebars = {
 			],
 		},
 
-		// "command-line-tool/create-task-cli",
-		"command-line-tool/cli-usage-reference",
 
 		{
 			type: "html",
