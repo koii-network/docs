@@ -636,6 +636,11 @@ const config = {
 							"/quickstart/hello-world/task-tutorial",
 							"/quickstart/hello-world/task-description",
 							"/quickstart/hello-world/deploy",
+							"/develop/task-development/task-development-flow",
+							"/develop/write-a-koii-task/task-development-guide/task-development-flow/",
+							"/develop/write-a-koii-task/task-development-guide/task-development-flow/compile-task",
+							"/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
+							"/develop/write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
 						],
 					},
 					{
@@ -646,15 +651,6 @@ const config = {
 							"/develop/write-a-koii-task/k2-task-template/audit-function",
 							"/develop/write-a-koii-task/k2-task-template/task-function",
 							"/develop/write-a-koii-task/task-development-guide/k2-task-template/",
-						],
-					},
-					{
-						to: "/develop/task-development/task-development-flow",
-						from: [
-							"/develop/write-a-koii-task/task-development-guide/task-development-flow/",
-							"/develop/write-a-koii-task/task-development-guide/task-development-flow/compile-task",
-							"/develop/write-a-koii-task/task-development-guide/task-development-flow/create-task",
-							"/develop/write-a-koii-task/task-development-guide/task-development-flow/create-staking-wallet",
 						],
 					},
 					{
