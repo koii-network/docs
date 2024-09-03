@@ -27,10 +27,10 @@ const sidebars = {
 			value: "Task Development",
 			className: "sidebar-title top-margin",
 		},
+		"task-development/key-concepts",
 		"task-development/write-a-task",
 		"task-development/deploy-task",
 		"task-development/kpl-tokens",
-		"task-development/key-concepts",
 		"task-development/whitelist-task",
 
 		{

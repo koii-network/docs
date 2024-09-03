@@ -1,8 +1,8 @@
 ---
-title: Whitelist Task
+title: Whitelist a Koii Task
 description: Contact the development team on the Koii Discord
 image: img/thumbnail.png
-sidebar_label: Whitelist Task
+sidebar_label: Whitelist your Task
 ---
 
 
