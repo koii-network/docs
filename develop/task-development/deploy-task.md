@@ -1,11 +1,12 @@
 ---
-title: Task Development Flow
+title: Deploying a Koii Task
 description: Here are articles in this section.
 image: img/thumbnail.png
-sidebar_label: Task Development Flow
+sidebar_label: Task Deployment
 ---
 
-import ContentLink from "@site/src/components/contentLink";
+To deploy a task, see our documentation on [create-task-cli](/develop/command-line-tool/create-task-cli/intro) or our [EZSandbox tutorial on deploying a task](https://github.com/koii-network/ezsandbox/blob/main/Lesson%201/PartIV.md). If you'd like to create a task with a KPL token, check out the next section, [KPL Tokens](/develop/task-development/kpl-tokens.md).
+
 
 # Task Development Flow
 
