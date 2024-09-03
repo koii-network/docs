@@ -28,9 +28,11 @@ const sidebars = {
 			className: "sidebar-title top-margin",
 		},
 		"task-development/write-a-task",
+		"task-development/deploy-task",
+		"task-development/kpl-tokens",
 		"task-development/key-concepts",
-		"task-development/task-development-flow",
 		"task-development/whitelist-task",
+
 		{
 			type: "category",
 			label: "Testing",
@@ -126,16 +128,6 @@ const sidebars = {
 			},
 			collapsed: true,
 			items: ["write-a-koii-task/koii-ipfs-storage/koii-storage"],
-		},
-		{
-			type: "category",
-			label: "KPL (Koii Program Library)",
-			link: {
-				type: "doc",
-				id: "write-a-koii-task/kpl/intro",
-			},
-			collapsed: true,
-			items: ["write-a-koii-task/kpl/intro"],
 		},
 		{
 			type: "category",
