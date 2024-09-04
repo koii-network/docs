@@ -835,7 +835,11 @@ const config = {
 					{
 						to: "/develop/command-line-tool/koii-cli/cli-usage-reference",
 						from: "/develop/command-line-tool/cli-usage-reference",
-					}
+					},
+					{
+						to: "/develop/task-development/kpl-tokens",
+						from: "/develop/write-a-koii-task/kpl/intro",
+					},
 				],
 				createRedirects(existingPath) {
 					if (existingPath.includes("/concepts/introduction")) {
