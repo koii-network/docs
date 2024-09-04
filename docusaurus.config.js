@@ -838,7 +838,7 @@ const config = {
 					},
 					{
 						to: "/develop/task-development/kpl-tokens",
-						from: "/develop/write-a-koii-task/kpl/intro",
+						from: ["/develop/write-a-koii-task/kpl/intro", "/kpl"]
 					},
 				],
 				createRedirects(existingPath) {
