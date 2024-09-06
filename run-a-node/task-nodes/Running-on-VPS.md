@@ -8,15 +8,15 @@ import ReactPlayer from "react-player";
 
 ## Before You Begin
 
-Setting up and maintaining a Koii Node requires a basic level of technical knowledge, basic experience with Linux is advisable. From there we will guide you through the entire process step-by-step, if you encounter obstacles please reach out to **#node-vps channel** in our [Discord](https://discord.gg/koii-network).
+Setting up and maintaining a Koii Node requires a basic level of technical knowledge; basic experience with Linux is advisable. From there we will guide you through the entire process step-by-step. If you encounter obstacles please reach out to **#node-vps channel** in our [Discord](https://discord.gg/koii-network).
 
 Make sure your hardware and internet speeds meet the minimum requirements for a Koii Node which are very minimal (similar to the Desktop version) but at least 2GB RAM and >1GHz processor and stable internet.
 
-If you decide running a node on VPS isn't for you there are other options available, like the Desktop version. Go to our website where you will be able to download the [Desktop Node](https://www.koii.network/nodes)
+If you decide running a node on VPS isn't for you there are other options available, like the Desktop version. Go to our website where you will be able to download the [Desktop Node](https://www.koii.network/nodes).
 
 ## Operating System
 
-Using **Ubuntu Server 24.04.xx LTS** is highly recommended for running Koii Nodes due to its stability and compatibility. The acronym LTS stands for "Long Term Support" which signifies that Ubuntu will provide updates and patches for this operating system "Long Term."
+Using **Ubuntu Server 24.04.xx LTS** is highly recommended for running Koii Nodes due to its stability and compatibility. The acronym LTS stands for "Long Term Support" which signifies that Ubuntu will provide updates and patches for this operating system "Long Term" (in the case of 24.04, April 2029).
 
 ## Rented VPS Node or Rented Dedicated Server
 
@@ -30,11 +30,16 @@ Due to the variations in the ordering process and customer dashboard for each se
 
 If you are unsure about this step check with your provider for information.
 
-## Setting Up the Environment on VPS
-Our employee has written a helpful script that will partially automate the process for you. See the readme for up to date directions.
+### Setting Up the Environment on VPS
 
-[Koii VPS Repo](https://github.com/crystal-koii/koii-vps)
+Our employee has written a helpful script that will partially automate the process for you. See the readme in the repository for up to date directions.
+
+**[Koii VPS Repo](https://github.com/crystal-koii/koii-vps)**
+
+## Troubleshooting
 
 If you encounter obstacles please reach out to **#node-vps channel** in our [Discord](https://discord.gg/koii-network).
 
-> ![INFO] If you have suggestions for improvements, either to the script or the readme make a pull request to the repo! 
+:::info
+If you have suggestions for improvements, either to the script or the readme, make a pull request to the repo!
+:::
