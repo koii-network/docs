@@ -47,3 +47,9 @@ See the [EZ Sandbox instructions on deploying a KOII task](https://github.com/ko
 ## Run Your Task
 
 That's it! Add your task ID to the desktop node to run your task.
+
+:::success Join Koii Ocean
+Got a great idea and looking for funding? Check out Koii Ocean! It's a community-funded launchpad that’s all about supporting projects directly through Koii. No need for venture capitalists or middlemen - just a straightforward way to get your project off the ground!
+
+[Join Koii Ocean today](https://www.koii.network/ocean)
+:::
