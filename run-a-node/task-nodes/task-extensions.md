@@ -8,11 +8,13 @@ sidebar_label: Task Extensions
 While there are some tasks you can run immediately, many of them will require you to add task extensions. These are pieces of information that will be used by the task when doing its work.
 
 :::success Whitelisted Tasks are Safe
-
 We take your privacy seriously, which is why your task extensions are saved locally and never transmitted to us.
 
-For example, if you enter your Twitter username and password as task extensions, Twitter-related tasks will use that information to log into Twitter and read tweets - but the task runs on your computer only, so we never see your credentials. Additionally, the tasks do not post to your account.
+For example, if you enter your Twitter username and password as task extensions, Twitter-related tasks will use that information to log into Twitter and read tweets - but the task runs on your computer only, so we never see your credentials.
+:::
 
+:::warning Some Tasks Post Content
+Note that some tasks involve posting content using your account - please be sure to read the task description before starting it if you do not want to allow this use of your account. Additionally, we always recommend using a volunteer account and not a main account. While we do our best to protect our users, tasks that involve posting content always have some risk that your account will be suspended or banned.
 :::
 
 :::danger Non-Whitelisted Tasks May Not be Safe
