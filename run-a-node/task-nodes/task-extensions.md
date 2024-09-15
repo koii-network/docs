@@ -14,7 +14,7 @@ For example, if you enter your Twitter username and password as task extensions,
 :::
 
 :::warning Some Tasks Post Content
-Note that some tasks involve posting content using your account - please be sure to read the task description before starting it if you do not want to allow this use of your account. Additionally, we always recommend using a volunteer account and not your main Twitter account.
+Note that some tasks involve posting content using your account - please be sure to read the task description before starting it if you do not want to allow this use of your account. Additionally, we always recommend using a volunteer account and not a main account. Posting tasks always run the risk that your account may be suspended or banned.
 :::
 
 :::danger Non-Whitelisted Tasks May Not be Safe
