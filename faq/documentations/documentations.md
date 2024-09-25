@@ -8,7 +8,3 @@ sidebar_label: Documentations
 import TasksComponent from '@site/src/components/taskcomponents';
 
 <TasksComponent />
-
-:::warning
-Please be patient if you see a loading sentence.
-:::
