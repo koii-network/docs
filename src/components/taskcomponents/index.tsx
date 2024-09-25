@@ -15,7 +15,7 @@ const TasksComponent = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    axios.get<{tasks: Task[]}>('https://desktop-node.api.devnet.koii.network/get-whitelisted-tasks').then((response) => {
+    axios.get<{tasks: Task[]}>('https://desktop-node.api.koii.network/get-whitelisted-tasks').then((response) => {
       setTasks(response.data.tasks);
     }).finally(() =>
     setIsLoading(false)
