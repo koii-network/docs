@@ -802,8 +802,8 @@ const config = {
 						from: "/faq/pagefour",
 					},
 					{
-						to: "/faq/documentations",
-						from: "/faq/pagethree",
+						to: "/faq/whitelisted-tasks",
+						from: ["/faq/pagethree", "/faq/documentations"],
 					},
 					{
 						to: "/run-a-node/introduction/types-of-nodes",
@@ -838,7 +838,7 @@ const config = {
 					},
 					{
 						to: "/develop/task-development/kpl-tokens",
-						from: ["/develop/write-a-koii-task/kpl/intro", "/kpl"]
+						from: ["/develop/write-a-koii-task/kpl/intro", "/kpl"],
 					},
 				],
 				createRedirects(existingPath) {
