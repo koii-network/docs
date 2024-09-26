@@ -29,68 +29,64 @@ sidebar_label: Deploy a New Task
 ❯   using CLI
     using config YML
 ```
-
-:::tip
-For deploying a task, it's recommended to use the `using config YML` option, which offers a more structured approach and contains comprehensive information about your task.
-:::
-
-To deploy a task, we recommend using the `config-task.yml` file, which can be easily edited in your task folder and contains more information about your task.
-
-### Using config YML
+## Using config YML [Recommended]
 
 The `config-task.yml` is the configuration file that contains the information needed to create a task. You can find a sample `config-task.yml` in the root directory of your task folder.
 
 The `config-task.yml` should look like this:
 
 ```yaml
-# Name and metadata of your task
+# Task Name: (Required) 
 task_name: 'task name'
+# Task Author: (Required) 
 author: 'Koii'
+# Task Description: (Required) 
 description: 'description'
-repositoryUrl: 'https://github.com/koii-network/task-template' # Replace with your own repo URL
+# Repository URL: (Required)
+repositoryUrl: 'https://github.com/koii-network/task-template' 
+# Image URL: (Required) Will be displayed in desktop node
 imageUrl: 'imageUrl'
+# Info URL: (Required) Will be displayed in desktop node
 infoUrl: 'infoUrl'
 
-# Task executable network: DEVELOPMENT, ARWEAVE, or IPFS
-# IPFS is the default value, as the CLI automatically manages the upload process via the Koii Storage SDK.
+# Task executable network: (Required | DEVELOPMENT, ARWEAVE, or IPFS) : IPFS is the default and common value
 task_executable_network: 'IPFS'
 
-# Task audit program: Path to your executable webpack if the selected network is IPFS. In the case of DEVELOPMENT, name it as main.
+# Task audit program: (Required) IPFS: Path to your executable | DEVELOPMENT: Leave it as 'main'
 task_audit_program: 'dist/main.js'
 
-# Round time: The total duration of your task, measured in slots (with each slot approximately equal to 408ms).
+# Round time: (Required) Duration of task, measured in slots (with each slot approximately equal to 408ms).
 round_time: 1500
 
-# Audit window: The audit window should be greater than 1/3 of the round time.
+# Audit window: (Required) The audit window should be greater than 1/3 of the round time.
 audit_window: 350
 
-# Submission window: The submission window should be greater than 1/3 of the round time.
+# Submission window: (Required) The submission window should be greater than 1/3 of the round time.
 submission_window: 350
 
-# Minimum stake amount: The minimum amount of KOII that a user must stake in order to participate in the task.
+# Minimum stake amount: (Required) The minimum amount of KOII that a user must stake in order to participate in the task.
 minimum_stake_amount: 1.9
 
-# Task Bounty Type: KOII, KPL
-task_type: 'KOII'
+# Task Bounty Type: (Required | KOII or KPL) 
+task_type: 'KPL'
 
-# OPTIONAL (ONLY IF Task Type = KPL) : Token Mint Address, Fire Token as an example here. 
-token_type: "FJG2aEPtertCXoedgteCCMmgngSZo1Zd715oNBzR7xpR"
+# Token Mint Address: (ONLY task_type == KPL) Fire Token as an example here. 
+token_type: "BAmB86Mt6FDaqTjLzKimBjHtwV93PGQitjW5zKNnBVEU"
 
-# Total bounty amount: The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
+# Total bounty amount:  (Required) The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
 total_bounty_amount: 10
+
+# Bounty amount per round: (Required) Every round's maximum distribution, you can decide the logics in your task. 
 bounty_amount_per_round: 0.1
 
-# Allowed failed distributions: Number of times re-submission is allowed for the distribution list in case of an audit.
-# It is also the number of rounds submission will be kept.
+# Allowed failed distributions: (Required) Number of times re-submission is allowed for the distribution list in case of an audit, it is also the rounds of submission it will keep. 
 allowed_failed_distributions: 3
 
-# Space: Space in MBs for the account size, that holds the task data.
-# For testing tasks this can be set to 0.1, but for production it should be set to at least 1.
+# Space: (Required) Expected Task Data Size in MBs for the account size. 
+# Minimum: 1 for production, 0.1 for testing; Calculation Details: https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#space
 space: 0.1
 
-# Note that the value field in RequirementTag is optional, so it is up to you to include it or not based on your use case.
-# To add more global variables and task variables, please refer to the type, value, description format shown below.
-
+# Requirement Tags: (Optional): To add more global variables and task variables, please refer to the type, value, description format shown below.
 requirementsTags:
   - type: CPU
     value: '4-core'
@@ -98,48 +94,42 @@ requirementsTags:
     value: '5 GB'
   - type: STORAGE
     value: '5 GB'
+  - type: TASK_VARIABLE
+    value: 'TWITTER_PASSWORD'
+    description: 'The password of your volunteer Twitter account.'
 
-# OPTIONAL variables for creating task / REQUIRED variables for updating task
+# Tags: You can select the tags here via https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags
+tags: ["AI", "ML"] 
+# Environment: (Required | TEST or PRODUCTION) Production mode will expose your task to all the task runners. 
+environment: "TEST"
 
-# ONLY provide the task_id and migrationDescription if you are updating the task, otherwise leave blank.
-# Task_id: Previous task ID.
+#################################### BELOW IS FOR UPDATE TASK ONLY ####################################
+# Old Task ID: (ONLY for task update) 
 task_id: ''
 
-# Migration description: Provide the description for changes made in the new version of the task.
+# Migration Description: (ONLY for task update)
 migrationDescription: ''
 
 ```
-
-- Follow the instructions on the file and fill in your task's information.
-
-:::caution
-Please make sure all of your environment variables are included in the `requirementsTags` section. Otherwise, the task will not be able to run.
-
-For example:
-If you have something like:
-
+### Requirement Tags
+Please make sure all of your environment variables are included in the `requirementsTags` section.
+If you want to use Twitter username in your JavaScript file, 
 ```js
 const username = process.env.TWITTER_USER_NAME;
 ```
 
-Then your `yml` file should have:
+you need to include
 
 ```yaml
 - type: TASK_VARIABLE
   value: "TWITTER_USER_NAME"
   description: "used to connect twitter"
 ```
-
-Make sure to set your environment variable `type` as `TASK_VARIABLE`.
+in your config-task.yaml. 
 
 The `value` name should be the same as your environment variable name. The vital thing to remember is that the value is the actual JavaScript valid property identifier, so it needs to follow the naming <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#accessing_properties" target="_blank"> rules</a>.
 
-User will setup their key of the `value` in the Koii Node's `Settings -> Task Settings`
-
-![Code Sample](/img/develop/setting-env-key.png)
-
-So, if you have more than one environment variable, your `requirementsTags` section should look like this:
-
+You can add multiple task variables in the following format. 
 ```yaml
 requirementsTags:
   - type: TASK_VARIABLE
@@ -147,9 +137,21 @@ requirementsTags:
     description: "used to connect twitter"
 ```
 
-With each environment variable having their `type` set as `TASK_VARIABLE`, a unique `value` and a short `description`.
+### Tags 
+We currently offer the following tags: AI: AI, ML: Machine Learning... (To Be Updated)
+### Space
+To understand how much storage you need to use, let's think about how much data we need to store in each task state. 
+Each task would require around 5KB storage for the task state. 
+Each round supposing there are 1 user submit a task CID, the storage would cost 32 bytes public key size and 32 bytes of the CID size, which is 64 bytes in total... As the user receive the rewards, each user will cost 32 bytes of their public key size in the task state, plus their rewards number...
+Each user who run your task would increase 32 bytes of their public key and plus their stake amount...
 
-:::
+Examples of spaces: 
+- A normal whitelisted task would take 2-3 MB of storage. 
+
+Therefore, we have set the following standard. 
+For your own testing, 0.1 MB would be a safe value to input as space. 
+For our displayed tasks, we need to keep it at least 1 MB. 
+For our whitelisted tasks, we need to keep it at least 2 MB. 
 
 - After updating the config file, run:
 
@@ -170,7 +172,7 @@ Your account will be deducted 16.96090088 KOII for creating the task, which incl
 - Confirm by entering `y` to deduct the necessary KOII amount for task creation.
 - You will receive details of your task, including the "Task Id" and "Stake Pot Account Pubkey."
 
-### Using the CLI
+## Using the CLI
 
 When opting for this method to deploy a new task, you will be prompted to enter all the essential information needed for task deployment.
 
