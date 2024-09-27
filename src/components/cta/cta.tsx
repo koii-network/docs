@@ -26,7 +26,7 @@ export const Cta = () => {
 					onClick={handleClick}
 				>
 					<img
-						src={`${baseUrl}/img/COLOR-%20Run%20a%20Task%20Node.svg`}
+						src={`${baseUrl}/img/write-task.svg`}
 						className="w-full rounded-t-[10px]"
 					/>
 					<button className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline cursor-pointer">
@@ -48,7 +48,7 @@ export const Cta = () => {
 					}}
 				>
 					<img
-						src={`${baseUrl}/img/COLOR-%20Built%20the%20impossible.svg`}
+						src={`${baseUrl}/img/mint-tokens.svg`}
 						alt="Built the impossible: computer and laptop with a crane and windmill"
 						className="w-full rounded-t-[10px]"
 					/>
