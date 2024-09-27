@@ -81,7 +81,7 @@ export const Cta2 = () => {
 								styles.ctaText2
 							}
 						>
-							Welcome to the New Internet.
+							Welcome to the New Internet
 						</p>
 					</div>
 					<div className={"md:pr-5 pr-3" + " " + styles.img}>
