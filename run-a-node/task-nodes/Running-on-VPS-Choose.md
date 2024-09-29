@@ -8,7 +8,7 @@ sidebar_label: Choose Your Tasks
 
 Update the `TASKS` field with the task IDs you want to run, **separated by commas, no space between!** A full list of Tasks and their details (i.e. min stakes) is found here.
 
-**A full list of Tasks can be found [HERE](/faq/documentations/)**
+**A full list of Tasks can be found [HERE](/faq/whitelisted-tasks)**
 
 Update `TASK_STAKES` field **with the minimum or greater stake amounts** corresponding to each task in TASKS, separated by commas.
 
