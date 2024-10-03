@@ -138,7 +138,18 @@ requirementsTags:
 ```
 
 ### Tags 
-We currently offer the following tags: AI: AI, ML: Machine Learning... (To Be Updated)
+We currently offer the following tags: 
+- Data Gathering
+- Hosting
+- Storage
+- Bandwidth
+- Social Posting
+- Witness
+- Web Crawling
+- Database
+- AI
+- DeFi
+
 ### Space
 To understand how much storage you need to use, let's think about how much data we need to store in each task state. 
 Each task would require around 5KB storage for the task state. 
