@@ -26,7 +26,7 @@ export const Cta2 = () => {
 				>
 					<div className={"md:pl-5 pl-3" + " " + styles.img}>
 						<img
-							src={`${baseUrl}/img/Group%206.svg`}
+							src={`${baseUrl}/img/get-tokens.svg`}
 							alt={"window browser with checkmark"}
 							className={"w-full"}
 						/>
@@ -86,8 +86,8 @@ export const Cta2 = () => {
 					</div>
 					<div className={"md:pr-5 pr-3" + " " + styles.img}>
 						<img
-							src={`${baseUrl}/img/Group%2032.svg`}
-							alt={"browser window"}
+							src={`${baseUrl}/img/intro-koii.svg`}
+							alt={"browser window with chat bubble"}
 							className={"w-full"}
 						/>
 					</div>
