@@ -10,33 +10,4 @@ export enum HubspotFormLinks {
   NEWSLETTER = "https://share.hsforms.com/1oqz977zNToCWmA-hbyTjXwc20dg",
 }
 
-export const getInvolvedLinks = [
-  {
-    label: "Run a Node",
-    url: "docs/run-a-node/task-nodes/how-to-run-a-koii-node",
-  },
-  {
-    label: "Get Finnie",
-    url: "https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj",
-    target: "_blank",
-  },
-  { label: "Founders Program", url: "docs/koii/ways-to-get-koii/grants-program" },
-  {
-    label: "Download Koii Node",
-    url: "https://www.koii.network/nodes",
-    target: "_blank",
-  },
-  {
-    label: "Apply for a Grant",
-    url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg",
-  },
-  {
-    label: "Whitepaper",
-    url: "https://www.koii.network/whitepaper.pdf",
-    target: "_blank",
-  },
-  // {
-  //   label: "Get Founder Support",
-  //   url: "https://blog.koii.network/Content-Collective",
-  // },
-];
+
