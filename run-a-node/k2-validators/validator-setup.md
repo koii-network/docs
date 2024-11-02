@@ -70,7 +70,7 @@ koii balance <path_to_wallet>
 - Please make sure your Koii CLI is configured for `testnet.koii.network` and using your validator identity before continuing:
 
 ```sh
-koii config set --url [https://testnet.koii.network](https://testnet.koii.network/) --keypair ~/validator-keypair.json
+koii config set --url https://testnet.koii.network/ --keypair ~/validator-keypair.json
 ```
 
 - You can confirm your configuration with:
