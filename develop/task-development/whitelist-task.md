@@ -27,12 +27,16 @@ To have your task appear on the whitelisted tasks list, take the following actio
 
 - Make your repository **public**.
 - Make sure your task metadata is complete:
+
   - A task name (maximum 24 characters)
   - An informative description in text (enter directly in the config-task.yml) or markdown (preferred, edit TaskDescription.md).
   - Author name (can be a person or organization)
   - Link to your public Github repository
   - Link to your Koii Ocean page (infoURL)
-  - A task image of size 230x86 with your logo/icon in a circle on the left. Example: ![KPL Miner Task Image](/img/develop/write-task/kpl_miner_task.png).
+  - A task image of size 230x86 with your logo/icon in a circle on the left. Example:
+
+    ![KPL Miner Task Image](/img/develop/write-task/kpl_miner_task.png)
+
 - Set the `space` in config-task.yml to at least 2mb (about 140 KOII rent exemption needed).
 - If you are deploying a KPL task, make sure the token has a square token image of at least 200x200 size in SVG format. The image will be cropped to a circle so take this into account when designing the image. Additionally, it is recommended to avoid highly detailed images as the icon will be displayed at small resolutions (minimum 15x15 pixels).
 - Open a **support ticket on [Discord](https://discord.com/invite/koii-network)** to initiate the whitelisting process. Please also provide the link to your public repository as well as your Task ID.
