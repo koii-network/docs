@@ -21,7 +21,7 @@ To find the minimum rent-exempt amount you need for your deposit accounts, query
 
 ```sh
 koii rent 0
-````
+```
 
 ### Request
 
@@ -37,16 +37,14 @@ koii rent 0
 ### Response
 
 ```json
-    { "jsonrpc": "2.0", "result": 890880, "id": 1 }
+{ "jsonrpc": "2.0", "result": 890880, "id": 1 }
 ```
 
-<!-- TODO: WE REALLY SHOULD HAVE SOMETHING ON OFFLINE ACCOUNTS  -->
-<!-- ## Offline Accounts
+## Offline Accounts
 
-You may wish to keep the keys for one or more collection accounts offline for greater security. If so, you will need to move KOII to hot accounts using our [offline methods](https://docs.solanalabs.com/cli/examples/offline-signing). -->
+If you are keeping keys offline for greater security, you can move KOII to hot accounts with [offline signing](/koii/the-koii-token/add-koii-to-exchange/offline-signing).
 
-
-<!-- NOTE: This is the unwritten content on versioned transactions from Solana. At the time of writing, we aren't supporting versioned transactions, so I'm leaving this here for future reference. -->
+<!-- NOTE: This is the unrevised content on versioned transactions from Solana. At the time of writing, we aren't supporting versioned transactions, so I'm leaving this here for future reference. -->
 <!-- ## Versioned Transaction Migration
 
 When the Mainnet Beta network starts processing versioned transactions, exchanges **MUST** make changes. If no changes are made, deposit detection will no longer work properly because fetching a versioned transaction or a block containing versioned transactions will return an error.
@@ -75,13 +73,13 @@ In order to track deposit accounts, you should poll for each confirmed block and
 ### Response
 
 ```json
-    {
-      "jsonrpc": "2.0",
-      "result": [
-        160017005, 160017006, 160017007, 160017012, 160017013, 160017014, 160017015
-      ],
-      "id": 1
-    }
+{
+	"jsonrpc": "2.0",
+	"result": [
+		160017005, 160017006, 160017007, 160017012, 160017013, 160017014, 160017015
+	],
+	"id": 1
+}
 ```
 
 :::info
@@ -217,36 +215,36 @@ To query an address:
 ### Response
 
 ```json
-    {
-      "jsonrpc": "2.0",
-      "result": [
-        {
-          "blockTime": 1662064640,
-          "confirmationStatus": "finalized",
-          "err": null,
-          "memo": null,
-          "signature": "3EDRvnD5TbbMS2mCusop6oyHLD8CgnjncaYQd5RXpgnjYUXRCYwiNPmXb6ZG5KdTK4zAaygEhfdLoP7TDzwKBVQp",
-          "slot": 148697216
-        },
-        {
-          "blockTime": 1662064434,
-          "confirmationStatus": "finalized",
-          "err": null,
-          "memo": null,
-          "signature": "4rPQ5wthgSP1kLdLqcRgQnkYkPAZqjv5vm59LijrQDSKuL2HLmZHoHjdSLDXXWFwWdaKXUuryRBGwEvSxn3TQckY",
-          "slot": 148696843
-        },
-        {
-          "blockTime": 1662064341,
-          "confirmationStatus": "finalized",
-          "err": null,
-          "memo": null,
-          "signature": "36Q383JMiqiobuPV9qBqy41xjMsVnQBm9rdZSdpbrLTGhSQDTGZJnocM4TQTVfUGfV2vEX9ZB3sex6wUBUWzjEvs",
-          "slot": 148696677
-        }
-      ],
-      "id": 1
-    }
+{
+	"jsonrpc": "2.0",
+	"result": [
+		{
+			"blockTime": 1662064640,
+			"confirmationStatus": "finalized",
+			"err": null,
+			"memo": null,
+			"signature": "3EDRvnD5TbbMS2mCusop6oyHLD8CgnjncaYQd5RXpgnjYUXRCYwiNPmXb6ZG5KdTK4zAaygEhfdLoP7TDzwKBVQp",
+			"slot": 148697216
+		},
+		{
+			"blockTime": 1662064434,
+			"confirmationStatus": "finalized",
+			"err": null,
+			"memo": null,
+			"signature": "4rPQ5wthgSP1kLdLqcRgQnkYkPAZqjv5vm59LijrQDSKuL2HLmZHoHjdSLDXXWFwWdaKXUuryRBGwEvSxn3TQckY",
+			"slot": 148696843
+		},
+		{
+			"blockTime": 1662064341,
+			"confirmationStatus": "finalized",
+			"err": null,
+			"memo": null,
+			"signature": "36Q383JMiqiobuPV9qBqy41xjMsVnQBm9rdZSdpbrLTGhSQDTGZJnocM4TQTVfUGfV2vEX9ZB3sex6wUBUWzjEvs",
+			"slot": 148696677
+		}
+	],
+	"id": 1
+}
 ```
 
 2. For each signature returned, get the transaction details by sending a [`getTransaction`](/develop/rpcapi/http/gettransaction) request.
@@ -271,81 +269,81 @@ To query an address:
 ### Response
 
 ```json
-    {
-      "jsonrpc": "2.0",
-      "result": {
-        "blockTime": 1665070281,
-        "meta": {
-          "err": null,
-          "fee": 5000,
-          "innerInstructions": [],
-          "logMessages": [
-            "Program 11111111111111111111111111111111 invoke [1]",
-            "Program 11111111111111111111111111111111 success"
-          ],
-          "postBalances": [1110663066, 1, 1040000000],
-          "postTokenBalances": [],
-          "preBalances": [1120668066, 1, 1030000000],
-          "preTokenBalances": [],
-          "rewards": [],
-          "status": {
-            "Ok": null
-          }
-        },
-        "slot": 166974442,
-        "transaction": {
-          "message": {
-            "accountKeys": [
-              {
-                "pubkey": "9aE476sH92Vz7DMPyq5WLPkrKWivxeuTKEFKd2sZZcde",
-                "signer": true,
-                "source": "transaction",
-                "writable": true
-              },
-              {
-                "pubkey": "11111111111111111111111111111111",
-                "signer": false,
-                "source": "transaction",
-                "writable": false
-              },
-              {
-                "pubkey": "G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o",
-                "signer": false,
-                "source": "lookupTable",
-                "writable": true
-              }
-            ],
-            "addressTableLookups": [
-              {
-                "accountKey": "4syr5pBaboZy4cZyF6sys82uGD7jEvoAP2ZMaoich4fZ",
-                "readonlyIndexes": [],
-                "writableIndexes": [3]
-              }
-            ],
-            "instructions": [
-              {
-                "parsed": {
-                  "info": {
-                    "destination": "G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o",
-                    "lamports": 10000000,
-                    "source": "9aE476sH92Vz7DMPyq5WLPkrKWivxeuTKEFKd2sZZcde"
-                  },
-                  "type": "transfer"
-                },
-                "program": "system",
-                "programId": "11111111111111111111111111111111"
-              }
-            ],
-            "recentBlockhash": "BhhivDNgoy4L5tLtHb1s3TP19uUXqKiy4FfUR34d93eT"
-          },
-          "signatures": [
-            "2CxNRsyRT7y88GBwvAB3hRg8wijMSZh3VNYXAdUesGSyvbRJbRR2q9G1KSEpQENmXHmmMLHiXumw4dp8CvzQMjrM"
-          ]
-        },
-        "version": 0
-      },
-      "id": 1
-    }
+{
+	"jsonrpc": "2.0",
+	"result": {
+		"blockTime": 1665070281,
+		"meta": {
+			"err": null,
+			"fee": 5000,
+			"innerInstructions": [],
+			"logMessages": [
+				"Program 11111111111111111111111111111111 invoke [1]",
+				"Program 11111111111111111111111111111111 success"
+			],
+			"postBalances": [1110663066, 1, 1040000000],
+			"postTokenBalances": [],
+			"preBalances": [1120668066, 1, 1030000000],
+			"preTokenBalances": [],
+			"rewards": [],
+			"status": {
+				"Ok": null
+			}
+		},
+		"slot": 166974442,
+		"transaction": {
+			"message": {
+				"accountKeys": [
+					{
+						"pubkey": "9aE476sH92Vz7DMPyq5WLPkrKWivxeuTKEFKd2sZZcde",
+						"signer": true,
+						"source": "transaction",
+						"writable": true
+					},
+					{
+						"pubkey": "11111111111111111111111111111111",
+						"signer": false,
+						"source": "transaction",
+						"writable": false
+					},
+					{
+						"pubkey": "G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o",
+						"signer": false,
+						"source": "lookupTable",
+						"writable": true
+					}
+				],
+				"addressTableLookups": [
+					{
+						"accountKey": "4syr5pBaboZy4cZyF6sys82uGD7jEvoAP2ZMaoich4fZ",
+						"readonlyIndexes": [],
+						"writableIndexes": [3]
+					}
+				],
+				"instructions": [
+					{
+						"parsed": {
+							"info": {
+								"destination": "G1wZ113tiUHdSpQEBcid8n1x8BAvcWZoZgxPKxgE5B7o",
+								"lamports": 10000000,
+								"source": "9aE476sH92Vz7DMPyq5WLPkrKWivxeuTKEFKd2sZZcde"
+							},
+							"type": "transfer"
+						},
+						"program": "system",
+						"programId": "11111111111111111111111111111111"
+					}
+				],
+				"recentBlockhash": "BhhivDNgoy4L5tLtHb1s3TP19uUXqKiy4FfUR34d93eT"
+			},
+			"signatures": [
+				"2CxNRsyRT7y88GBwvAB3hRg8wijMSZh3VNYXAdUesGSyvbRJbRR2q9G1KSEpQENmXHmmMLHiXumw4dp8CvzQMjrM"
+			]
+		},
+		"version": 0
+	},
+	"id": 1
+}
 ```
 
 ## Handling Withdrawals
@@ -370,7 +368,7 @@ You can also accomplish this with the [Koii Javascript SDK](https://github.com/k
 If you wish to submit withdrawals asynchronously, it is your responsibility to ensure the transactions succeeded and was finalized.
 :::
 
-To ensure you do not double spend, it is *vital* that you do not retry a withdrawal until the transaction's recent blockhash has expired, even if it does not appear to be confirmed or finalized. Blockhash expiration is explained in more detail [below](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#checking-blockhash-expiration).
+To ensure you do not double spend, it is _vital_ that you do not retry a withdrawal until the transaction's recent blockhash has expired, even if it does not appear to be confirmed or finalized. Blockhash expiration is explained in more detail [below](/koii/the-koii-token/add-koii-to-exchange/managing-transactions#checking-blockhash-expiration).
 
 To get the recent blockhash, send a request to [`getFees`](/develop/rpcapi/http/getfees).
 
@@ -409,33 +407,33 @@ You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatus
 ### Result
 
 ```json
-    {
-      "jsonrpc": "2.0",
-      "result": {
-        "context": {
-          "slot": 82
-        },
-        "value": [
-          {
-            "slot": 72,
-            "confirmations": 10,
-            "err": null,
-            "status": {
-              "Ok": null
-            }
-          },
-          {
-            "slot": 48,
-            "confirmations": null,
-            "err": null,
-            "status": {
-              "Ok": null
-            }
-          }
-        ]
-      },
-      "id": 1
-    }
+{
+	"jsonrpc": "2.0",
+	"result": {
+		"context": {
+			"slot": 82
+		},
+		"value": [
+			{
+				"slot": 72,
+				"confirmations": 10,
+				"err": null,
+				"status": {
+					"Ok": null
+				}
+			},
+			{
+				"slot": 48,
+				"confirmations": null,
+				"err": null,
+				"status": {
+					"Ok": null
+				}
+			}
+		]
+	},
+	"id": 1
+}
 ```
 
 ### Checking Blockhash Expiration
@@ -539,5 +537,5 @@ Similarly, every deposit account must contain at least this balance.
 ### Response
 
 ```json
-    { "jsonrpc": "2.0", "result": 890880, "id": 1 }
+{ "jsonrpc": "2.0", "result": 890880, "id": 1 }
 ```
