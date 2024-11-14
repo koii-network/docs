@@ -43,7 +43,7 @@ Create a `setComputeUnitPrice` instruction to add a Prioritization Fee above the
 <!--     // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
-    ComputeBudgetProgram.setComputeUnitPrice({ microRoes: number });
+ComputeBudgetProgram.setComputeUnitPrice({ microRoes: number });
 ```
 
 To get the prioritization fee, the Compute Unit (CU) budget will be multiplied by the supplied value in micro-Roe. For example, a CU budget of 5M with `microRoes` set to 1000 would set the prioritization fee to 5000 Roe. Added to the base transaction fee of 500,000 Roe, the total fee would be 505,000 Roe.
@@ -54,7 +54,7 @@ To set the CU budget, you can use `setComputeUnitLimit`. The `units` value will 
 <!-- // import { ComputeBudgetProgram } from "@solana/web3.js" -->
 
 ```js
-    ComputeBudgetProgram.setComputeUnitLimit({ units: number });
+ComputeBudgetProgram.setComputeUnitLimit({ units: number });
 ```
 
 :::info
@@ -65,24 +65,24 @@ In order to minimize prioritization fees, you should set the lowest CU required 
 <!-- // import { ... } from "@solana/web3.js" -->
 
 ```js
-    const modifyComputeUnits = ComputeBudgetProgram.setComputeUnitLimit({
-      // set this to the lowest CU needed
-      units: 150,
-    });
+const modifyComputeUnits = ComputeBudgetProgram.setComputeUnitLimit({
+  // set this to the lowest CU needed
+  units: 150,
+});
 
-    const addPriorityFee = ComputeBudgetProgram.setComputeUnitPrice({
-      // set this to the priority fee you want to charge
-      microRoes: 10,
-    });
+const addPriorityFee = ComputeBudgetProgram.setComputeUnitPrice({
+  // set this to the priority fee you want to charge
+  microRoes: 10,
+});
 
-    const transaction = new Transaction()
-      .add(modifyComputeUnits)
-      .add(addPriorityFee)
-      .add(
-        SystemProgram.transfer({
-            // details of transfer
-          }),
-      );
+const transaction = new Transaction()
+  .add(modifyComputeUnits)
+  .add(addPriorityFee)
+  .add(
+    SystemProgram.transfer({
+      // details of transfer
+    }),
+  );
 ```
 
 ## Prioritization Fees And Durable Nonces
@@ -91,4 +91,4 @@ In order to minimize prioritization fees, you should set the lowest CU required 
 If prioritization fees are not correctly configured in combination with durable nonce transactions, transactions will not be recognized as durable nonce.
 :::
 
-When using durable nonce transaction with prioritization fees, the first instruction **must** be the `AdvanceNonceAccount` instruction, ahead of any compute budget instructions.
+When using [durable nonce transactions](/koii/the-koii-token/add-koii-to-exchange/durable-tranasction-nonces) with prioritization fees, the first instruction **must** be the `AdvanceNonceAccount` instruction, ahead of any compute budget instructions.
