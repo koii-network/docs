@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: System Setup
 ---
 
-::: warning
+:::warning
 All of the following steps must be run on the **validator server**, unless otherwise specified.
 :::
 
