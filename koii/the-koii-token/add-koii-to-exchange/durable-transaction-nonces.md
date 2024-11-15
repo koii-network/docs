@@ -26,7 +26,8 @@ A nonce account is created by first generating a new keypair, then create the ac
 
 #### Command
 
-    solana-keygen new -o nonce-keypair.jsonsolana create-nonce-account nonce-keypair.json 1
+    solana-keygen new -o nonce-keypair.json
+    solana create-nonce-account nonce-keypair.json 1
 
 #### Output
 
@@ -151,7 +152,8 @@ Alice retries the transaction, this time specifying her nonce account and the bl
 
 > Remember, `alice.json` is the [nonce authority](#nonce-authority) in this example
 
-    $ solana nonce-account nonce.jsonbalance: 0.1 SOLminimum balance required: 0.00136416 SOLnonce: F7vmkY3DTaxfagttWjQweib42b6ZHADSx94Tw8gHx3W7
+    $ solana nonce-account nonce.json
+    balance: 0.1 SOLminimum balance required: 0.00136416 SOLnonce: F7vmkY3DTaxfagttWjQweib42b6ZHADSx94Tw8gHx3W7
 
     $ solana transfer -k alice.json --blockhash F7vmkY3DTaxfagttWjQweib42b6ZHADSx94Tw8gHx3W7 --nonce nonce.json bob.json 0.01HR1368UKHVZyenmH7yVz5sBAijV6XAPeWbEiXEGVYQorRMcoijeNAbzZqEZiH8cDB8tk65ckqeegFjK8dHwNFgQ
 
@@ -161,4 +163,5 @@ The transaction succeeds! Bob receives 0.01 SOL from Alice and Alice's stored no
 
     $ solana balance -k bob.json0.01 SOL
 
-    $ solana nonce-account nonce.jsonbalance: 0.1 SOLminimum balance required: 0.00136416 SOLnonce: 6bjroqDcZgTv6Vavhqf81oBHTv3aMnX19UTB51YhAZnN -->
+    $ solana nonce-account nonce.json
+    balance: 0.1 SOLminimum balance required: 0.00136416 SOLnonce: 6bjroqDcZgTv6Vavhqf81oBHTv3aMnX19UTB51YhAZnN -->
