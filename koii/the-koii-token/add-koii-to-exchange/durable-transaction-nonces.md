@@ -5,116 +5,122 @@ image: img/thumbnail.png
 sidebar_label: Durable Transaction Nonces
 ---
 
-Durable transaction nonces are a mechanism for getting around the typical short lifetime of a transaction's [`recent_blockhash`](https://solana.com/docs/core/transactions#recent-blockhash). They are implemented as a Solana Program, the mechanics of which can be read about in the [proposal](/implemented-proposals/durable-tx-nonces).
+A typical Koii transaction must be signed and accepted quickly due to the short lifespan of the `recent_blockhash`. Durable transaction nonces are a solution to this issue.
 
-## Usage Examples
+## Creating a Nonce Account
 
-### Nonce Authority
+Creating durable transactions nonces requires an account to store the next nonce value. Accounts must be rent-exempt.
 
-Authority over a nonce account can optionally be assigned to another account. In doing so the new authority inherits full control over the nonce account from the previous authority, including the account creator. This feature enables the creation of more complex account ownership arrangements and derived account addresses not associated with a keypair. The `--nonce-authority <AUTHORITY_KEYPAIR>` argument is used to specify this account and is supported by the following commands
+The durable transaction nonce feature uses an account to store the next nonce value. Durable nonce accounts must be [rent-exempt](/implemented-proposals/rent#two-tiered-rent-regime), so need to carry the minimum balance to achieve this.
+
+### Create None Account Command
+
+```sh
+koii-keygen new -o nonce-keypair.json
+koii create-nonce-account nonce-keypair.json 1
+```
+
+### Create Nonce Account Output
+
+```sh
+A9nr12dXHm3TYW1vTLk1w3LX4UXPRkQk9F2LK68Fb1X9vR84UzFEtVmHbL6jVNCb1h5RLWUVhW8XzFzkCvXZCZZYkpXH
+```
+
+<!-- > To keep the keypair entirely offline, use the [Paper Wallet](/cli/wallets/paper) keypair generation [instructions](/cli/wallets/paper#seed-phrase-generation) instead
+
+> [Full usage documentation](/cli/usage#solana-create-nonce-account) -->
+
+## Delegate Nonce Authority
+
+If you need a more complex ownership arrangement or derived account addresses not associated with a keypair, you have the option to assign authority of a nonce account to another account. The new authority will gain full control over the account, including the account creator. Set the `--nonce-authority <AUTHORITY_KEYPAIR>` argument to specify the new owner. The following commands support this argument:
 
 - `create-nonce-account`
 - `new-nonce`
 - `withdraw-from-nonce-account`
 - `authorize-nonce-account`
 
-### Nonce Account Creation
+Alternatively, you can use `koii authorize-nonce-account`.
 
-The durable transaction nonce feature uses an account to store the next nonce value. Durable nonce accounts must be [rent-exempt](/implemented-proposals/rent#two-tiered-rent-regime), so need to carry the minimum balance to achieve this.
+### Delegate Authority Command
 
-A nonce account is created by first generating a new keypair, then create the account on chain
+```sh
+koii authorize-nonce-account nonce-keypair.json nonce-authority.json
+```
 
-#### Command
+### Delegate Authority Output
 
-    solana-keygen new -o nonce-keypair.json
-    solana create-nonce-account nonce-keypair.json 1
+```sh
+B1pXTqZ8XmVRkNL2Y6YFzVmLZ2VrWzRf8kFkLVZyG68c7N4F6TkVb9Zm6NRXXfFzLfLz9XLTNvMFPz8TkJLWP8LFRkx
+```
 
-#### Output
+## Getting and Using a Stored Nonce Value
 
-    2SymGjGV4ksPdpbaqWFiDoBz8okvtiik4KE9cnMQgRHrRLySSdZ6jrEcpPifW4xUpp4z66XM9d9wM48sA7peG2XL
+When you want to create a transaction with a durable nonce, you simply pass the `--blockhash <STORED_NONCE>` argument during signing and submission. You can retrieve the current nonce value with the `koii nonce` command.
 
-> To keep the keypair entirely offline, use the [Paper Wallet](/cli/wallets/paper) keypair generation [instructions](/cli/wallets/paper#seed-phrase-generation) instead
+### Retrieving Stored Nonce Command
 
-> [Full usage documentation](/cli/usage#solana-create-nonce-account)
+```sh
+koii nonce nonce-keypair.json
+```
 
-### Querying the Stored Nonce Value
+### Retrieving Stored Nonce Output
 
-Creating a durable nonce transaction requires passing the stored nonce value as the value to the `--blockhash` argument upon signing and submission. Obtain the presently stored nonce value with
+```sh
+8GRipryfxcsxN8mAGjy8zbFo9ezaUsh47TsPzmZbuytU
+```
 
-#### Command
+:::tip Generating a New Stored Nonce Value
 
-    solana nonce nonce-keypair.json
+You will not typically need to do so, but you can generate a new nonce using:
 
-#### Output
+```sh
+koii new-nonce nonce-keypair.json
+```
 
-    8GRipryfxcsxN8mAGjy8zbFo9ezaUsh47TsPzmZbuytU
+:::
 
-### Advancing the Stored Nonce Value
+## Viewing a Nonce Account
 
-While not typically needed outside a more useful transaction, the stored nonce value can be advanced by
+If you want a summary of your nonce account, you can use `koii nonce-account`.
 
-#### Command
+### Viewing Account Command
 
-    solana new-nonce nonce-keypair.json
+```sh
+koii nonce-account nonce-keypair.json
+```
 
-#### Output
+### Viewing Account Output
 
-    44jYe1yPKrjuYDmoFTdgPjg8LFpYyh1PFKJqm5SC1PiSyAL8iw1bhadcAX1SL7KDmREEkmHpYvreKoNv6fZgfvUK
+```sh
+balance: 1.75 KOII
+minimum balance required: 0.0089088 KOII
+nonce: 8GRipryfxcsxN8mAGjy8zbFo9ezaUsh47TsPzmZbuytU
+```
 
-> [Full usage documentation](/cli/usage#solana-new-nonce)
+## Withdraw Funds from a Nonce Account
 
-### Display Nonce Account
+If you need to withdraw funds from your nonce account, use `koii withdraw-from-nonce-account`.
 
-Inspect a nonce account in a more human friendly format with
+:::tip Closing a Nonce Account
 
-#### Command
+You can close a nonce account by simply withdrawing the whole balance.
+:::
 
-    solana nonce-account nonce-keypair.json
+### Withdrawal Command
 
-#### Output
+```sh
+koii withdraw-from-nonce-account nonce-keypair.json ~/.config/solana/id.json 1
+```
 
-    balance: 0.5 SOLminimum balance required: 0.00136416 SOLnonce: DZar6t2EaCFQTbUP4DHKwZ1wT8gCPW2aRfkVWhydkBvS
+### Withdrawal Output
 
-> [Full usage documentation](/cli/usage#solana-nonce-account)
+```sh
+C8kWL5V8dP2ZTQLM4Y9WVY8MRLV4ZYFZ6FVRFT8JLXLkJRFZ9FTkWLP3FNVRL9FTWLXT5XVzTLZWLkR8kLMVR8kZF8XM
+```
 
-### Withdraw Funds from a Nonce Account
+## Other Subcommands
 
-Withdraw funds from a nonce account with
-
-#### Command
-
-    solana withdraw-from-nonce-account nonce-keypair.json ~/.config/solana/id.json 0.5
-
-#### Output
-
-    3foNy1SBqwXSsfSfTdmYKDuhnVheRnKXpoPySiUDBVeDEs6iMVokgqm7AqfTjbk7QBE8mqomvMUMNQhtdMvFLide
-
-> Close a nonce account by withdrawing the full balance
-
-### Assign a New Authority to a Nonce Account
-
-Reassign the authority of a nonce account after creation with
-
-#### Command
-
-    solana authorize-nonce-account nonce-keypair.json nonce-authority.json
-
-#### Output
-
-    3F9cg4zN9wHxLGx4c3cUKmqpej4oa67QbALmChsJbfxTgTffRiL3iUehVhR9wQmWgPua66jPuAYeL1K2pYYjbNoT
-
-## Other Commands Supporting Durable Nonces
-
-To make use of durable nonces with other CLI subcommands, two arguments must be supported.
-
-- `--nonce`, specifies the account storing the nonce value
-- `--nonce-authority`, specifies an optional [nonce authority](#nonce-authority)
-
-The following subcommands have received this treatment so far
-
-- [`pay`](/cli/usage#solana-pay)
-- [`delegate-stake`](/cli/usage#solana-delegate-stake)
-- [`deactivate-stake`](/cli/usage#solana-deactivate-stake)
+The commands `pay`, `delegate-stake`, and `deactivate-stake` all support durable nonces using the `--nonce` and `--nonce-authority` arguments.
 
 <!-- ### Example Pay Using Durable Nonce
 
