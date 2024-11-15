@@ -109,7 +109,7 @@ You can close a nonce account by simply withdrawing the whole balance.
 ### Withdrawal Command
 
 ```sh
-koii withdraw-from-nonce-account nonce-keypair.json ~/.config/solana/id.json 1
+koii withdraw-from-nonce-account nonce-keypair.json ~/.config/koii/id.json 1
 ```
 
 ### Withdrawal Output
