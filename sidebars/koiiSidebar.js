@@ -66,6 +66,8 @@ const sidebars = {
     "the-koii-token/add-koii-to-exchange/managing-transactions",
     "the-koii-token/add-koii-to-exchange/prioritization-fees",
     "the-koii-token/add-koii-to-exchange/kpl-tokens",
+    "the-koii-token/add-koii-to-exchange/offline-signing",
+    // "the-koii-token/add-koii-to-exchange/durable-transaction-nonces",
     "the-koii-token/add-koii-to-exchange/testing",
   ],
 };
