@@ -318,3 +318,6 @@ A nonce that can be used over multiple blocks. This helps with offline signing a
 ## Offline signing
 
 Signing a transaction with a private key, using an offline method like a hardware wallet to protect private keys from theft. The transaction is prepared online, transferred offline and signed, then transferred back online.
+
+
+<!-- test to make sure github's working -->
