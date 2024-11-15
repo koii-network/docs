@@ -126,6 +126,6 @@ koii transfer H1zfq3PuH5yQ9G5FtR6FgksYbAbdGfB2Tr9kDcV4p99x 20 \
 B1pXTqZ8XmVRkNL2Y6YFzVmLZ2VrWzRf8kFkLVZyG68c7N4F6TkVb9Zm6NRXXfFzLfLz9XLTNvMFPz8TkJLWP8LFRkx
 ```
 
-<!-- ## Increasing Signing Time
+## Increasing Signing Time
 
-Signing time is limited to within a number of slots from the `recent_blockhash`. If you need more time, you can use a [Durable Transaction Nonce](/koii/the-koii-token/add-koii-to-exchange/durable-nonces). -->
+Signing time is limited to within a number of slots from the `recent_blockhash`. If you need more time, you can use a [Durable Transaction Nonce](/koii/the-koii-token/add-koii-to-exchange/durable-nonces).
