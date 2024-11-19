@@ -59,7 +59,11 @@ const sidebars = {
     "ways-to-get-koii/grants-program",
     {
       type: "html",
-      value: "Add $KOII to an Exchange",
+      value: `
+        <a href="/koii/the-koii-token/add-koii-to-exchange/introduction" style="text-decoration: none; color: inherit; padding-left: 0; margin-left: 0; font-weight: 600">
+          Add $KOII to an Exchange
+        </a>
+      `,
       className: "sidebar-title top-margin",
     },
     "the-koii-token/add-koii-to-exchange/node-setup",
