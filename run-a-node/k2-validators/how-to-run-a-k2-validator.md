@@ -12,9 +12,9 @@ import Tooltip from "@site/src/components/tooltip";
 
 :::info
 
-This guide is only for version 1.14.19 of our validators which are running on our test net: testnet.koii.network
+This guide is only for version 1.16.4 of our validators which are running on our test net: testnet.koii.network
 
-At this time we only support Ubuntu 20.04 LTS.
+At this time we support Ubuntu 20, 22, and 24.
 
 :::
 
