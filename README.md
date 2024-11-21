@@ -1,4 +1,4 @@
-# Desktop UI for Node
+# Koii Docs
 
 ## Description
 
