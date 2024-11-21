@@ -52,7 +52,10 @@ window.k2.signAndSendTransaction(transaction: Transaction, signers: Keypair[]): 
 
 ```js
 const transaction = new Transaction();
-const signer = Keypair.generate();
+const signer = []
+const connection = new Connection("https://testnet.koii.network");
+transaction.recentBlockhash = (await connection.getRecentBlockhash()).blockhash;
+transaction.feePayer = connectedPublickey;
 try {
   const signature = await window.k2.signAndSendTransaction(transaction, [
     signer,
