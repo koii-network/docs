@@ -36,6 +36,8 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --only-known-rpc \
     --wal-recovery-mode skip_any_corrupted_record
     --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF
+    --expected-bank-hash 2Yvcz1QWRemddmoFhumBESUzeZiepXA8DZu3g2Z9Kh2J
+	--expected-shred-version 9890
 ```
 
 - Create a systemd unit file at `/etc/systemd/system/koii-validator.service`
@@ -61,6 +63,8 @@ WantedBy=multi-user.target
 
 ### 2. Create a vote account
 
+:::warning
+
 - You will need your validator keypair account to be funded with KOII tokens before continuing. You can check the balance of a wallet by running
 
 ```sh
@@ -78,6 +82,8 @@ koii config set --url https://testnet.koii.network/ --keypair ~/validator-keypai
 ```sh
 koii config get
 ```
+
+:::
 
 - Run the following command to create a vote-account on the network:
 
@@ -101,7 +107,7 @@ Commands in this section are to be run on the computer which has the stake accou
 
 ### 1. Create a stake account
 
-Run the following command, replacing `<AMOUNT_TO_STAKE>` with your stake amount.
+Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>` with your stake amount.
 
 ```sh
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/authorized-withdrawer-keypair.json
