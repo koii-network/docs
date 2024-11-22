@@ -71,6 +71,60 @@ const sidebars = {
     "k2-validators/validator-setup",
     "k2-validators/rewards",
     "k2-validators/k2-staking-support",
+    "k2-validators/validator-best-practices",
+    {
+      type: "html",
+      value: "K2 Validator Infrastructure",
+      className: "sidebar-title",
+    },
+    "architecture/architecture",
+    {
+      type: "category",
+      label: "Clusters",
+      items: [
+        "architecture/clusters/index",
+        "architecture/clusters/available",
+        "architecture/clusters/benchmark",
+        "architecture/clusters/metrics",
+      ]
+    },
+    {
+      type: "category",
+      label: "Consensus",
+      items: [
+        "architecture/consensus/commitments",
+        "architecture/consensus/fork-generation",
+        "architecture/consensus/leader-rotation",
+        "architecture/consensus/managing-forks",
+        "architecture/consensus/stake-delegation-and-rewards",
+        "architecture/consensus/synchronization",
+        "architecture/consensus/turbine-block-propagation",
+        "architecture/consensus/vote-signing",
+      ]
+    },
+    {
+      type: "category",
+      label: "Runtime",
+      items: [
+        "architecture/runtime/programs",
+        "architecture/runtime/sysvars",
+        "architecture/runtime/zk-token-proof",
+      ]
+    },
+    {
+      type: "category",
+      label: "Validator",
+      items: [
+        "architecture/validator/anatomy",
+        "architecture/validator/tpu",
+        "architecture/validator/blockstore",
+        "architecture/validator/tvu",
+        "architecture/validator/gossip",
+        "architecture/validator/runtime",
+        "architecture/validator/geyser",
+      ]
+    },
+
   ],
 };
 
