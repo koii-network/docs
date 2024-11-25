@@ -7,7 +7,7 @@ pagination_label: Available Koii Clusters
 Koii maintains several different clusters with different purposes.
 
 Before you begin make sure you have first
-[installed the Koii command line tools](https://www.koii.network/docs/develop/command-line-tool/koii-cli/install-cli)
+[installed the Koii command line tools](https://koii.network/docs/develop/command-line-tool/koii-cli/install-cli)
 
 Explorer:
 
@@ -79,7 +79,7 @@ are operated by Koii Labs
 - Testnet is where the Koii core contributors stress test recent release features on a live
   cluster, particularly focused on network performance, stability and validator
   behavior.
-- Testnet tokens at time of snapshot will be converted to mainnet tokens, see <TODO: Info link> for further details.
+- Testnet tokens at time of snapshot will be converted to mainnet tokens, see <!-- TODO Info link --> for further details.
 - Testnet tokens after snapshot are **not real**
 - Testnet may be subject to ledger resets.
 - Testnet includes a token faucet for airdrops for application testing

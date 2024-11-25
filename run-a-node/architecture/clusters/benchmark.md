@@ -1,21 +1,22 @@
 ---
 title: Benchmark a Cluster
 ---
+<!-- TODO : Pretty sure some of this doesn't apply on Koii... Syed? -->
 
-The Solana git repository contains all the scripts you might need to spin up your own local testnet. Depending on what you're looking to achieve, you may want to run a different variation, as the full-fledged, performance-enhanced multinode testnet is considerably more complex to set up than a Rust-only, singlenode testnode. If you are looking to develop high-level features, such as experimenting with smart contracts, save yourself some setup headaches and stick to the Rust-only singlenode demo. If you're doing performance optimization of the transaction pipeline, consider the enhanced singlenode demo. If you're doing consensus work, you'll need at least a Rust-only multinode demo. If you want to reproduce our TPS metrics, run the enhanced multinode demo.
+The Koii git repository contains all the scripts you might need to spin up your own local testnet. Depending on what you're looking to achieve, you may want to run a different variation, as the full-fledged, performance-enhanced multinode testnet is considerably more complex to set up than a Rust-only, singlenode testnode. If you are looking to develop high-level features, such as experimenting with smart contracts, save yourself some setup headaches and stick to the Rust-only singlenode demo. If you're doing performance optimization of the transaction pipeline, consider the enhanced singlenode demo. If you're doing consensus work, you'll need at least a Rust-only multinode demo. If you want to reproduce our TPS metrics, run the enhanced multinode demo.
 
-For all four variations, you'd need the latest Rust toolchain and the Solana source code:
+For all four variations, you'd need the latest Rust toolchain and the Koii source code:
 
-First, setup Rust, Cargo and system packages as described in the Solana [README](https://github.com/solana-labs/solana#1-install-rustc-cargo-and-rustfmt)
+First, setup Rust, Cargo and system packages
 
 Now checkout the code from github:
 
 ```bash
-git clone https://github.com/solana-labs/solana.git
-cd solana
+git clone https://github.com/koii-network/k2-release.git
+cd k2-release
 ```
 
-The demo code is sometimes broken between releases as we add new low-level features, so if this is your first time running the demo, you'll improve your odds of success if you check out the [latest release](https://github.com/solana-labs/solana/releases) before proceeding:
+The demo code is sometimes broken between releases as we add new low-level features, so if this is your first time running the demo, you'll improve your odds of success if you check out the [latest release](https://github.com/koii-network/k2-release/releases/) before proceeding:
 
 ```bash
 TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
@@ -127,7 +128,7 @@ In this example the client connects to our public testnet. To run validators on 
 NDEBUG=1 ./multinode-demo/bench-tps.sh --entrypoint entrypoint.devnet.solana.com:8001 --faucet api.devnet.solana.com:9900 --duration 60 --tx_count 50
 ```
 
-You can observe the effects of your client's transactions on our [metrics dashboard](https://metrics.solana.com:3000/d/monitor/cluster-telemetry?var-testnet=devnet)
+You can observe the effects of your client's transactions on our [metrics dashboard](https://metrics.koii.netwrok:3000/d/monitor/cluster-telemetry?var-testnet=devnet)
 
 
 <sub>This documentation incorporates substantial portions of the Solana documentation, adapted for Koii (K2). Solana’s architecture and underlying principles form the foundation of K2’s implementation. Content adapted under the terms of the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [Solana Documentation](https://docs.solana.com/) for more details.</sub>

@@ -1,10 +1,10 @@
 ---
-title: Solana Commitment Status
+title: Koii Commitment Status
 sidebar_label: Commitment Status
 pagination_label: Consensus Commitment Status
 description:
   "Processed, confirmed, and finalized. Learn the differences between the
-  different commitment statuses on the Solana blockchain."
+  different commitment statuses on the Koii blockchain."
 keywords:
   - processed
   - confirmed

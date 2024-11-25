@@ -5,12 +5,12 @@ description:
   Using a consensus algorithm validators vote on which will be finalized."
 ---
 
-The Solana protocol doesn’t wait for all validators to agree on a newly produced
+The Koii protocol doesn’t wait for all validators to agree on a newly produced
 block before the next block is produced. Because of that, it’s quite common for
 two different blocks to be chained to the same parent block. In those
 situations, we call each conflicting chain a [“fork.”](./fork-generation.md)
 
-Solana validators need to vote on one of these forks and reach agreement on
+Koii validators need to vote on one of these forks and reach agreement on
 which one to use through a consensus algorithm (that is beyond the scope of this
 article). The main point you need to remember is that when there are competing
 forks, only one fork will be finalized by the cluster and the abandoned blocks
@@ -92,7 +92,7 @@ Validators can ignore forks at other points \(e.g. from the wrong leader\), or
 slash the leader responsible for the fork.
 
 Validators vote based on a greedy choice to maximize their reward described in
-[Tower BFT](../implemented-proposals/tower-bft.md).
+[Tower BFT](https://docs.anza.xyz/implemented-proposals/tower-bft).
 
 ### Validator's View
 
@@ -103,7 +103,7 @@ forks over time. L1, L2, etc. are leader slots, and `E`s represent entries from
 that leader during that leader's slot. The `x`s represent ticks only, and time
 flows downwards in the diagram.
 
-<!-- ![Fork generation](/img/fork-generation.svg) -->
+<!-- ![Fork generation](/img/architecture/fork-generation.svg) -->
 
 Note that an `E` appearing on 2 forks at the same slot is a slashable condition,
 so a validator observing `E3` and `E3'` can slash L3 and safely choose `x` for
