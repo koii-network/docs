@@ -124,7 +124,6 @@ const sidebars = {
         "architecture/validator/geyser",
       ]
     },
-
   ],
 };
 
