@@ -109,13 +109,17 @@ Commands in this section are to be run on the computer which has the stake accou
 Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>` with your stake amount.
 
 ```sh
-koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/validator-keypair.json --withdraw-authority ~/authorized-withdrawer-keypair.json
+koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/stake-authority-keypair.json --withdraw-authority ~/stake-authority-keypair.json
 ```
+
+:::info
+ If you don't have ```stake-account-keypair.json``` and ```stake-authority-keypair.json``` just create them using: ```koii-keygen new --outfile ~/stake-account-keypair.json```  and ```koii-keygen new --outfile ~/stake-authority-keypair.json```
+:::
 
 ### 2. Delegate the stake to your validator
 
 ```sh
-koii delegate-stake ~/stake-account-keypair.json ~/vote-account-keypair.json --stake-authority ~/validator-keypair.json --force
+koii delegate-stake ~/stake-account-keypair.json <VALIDATOR VOTE ACCOUNT FOR TOKEN DELEGATION> --stake-authority ~/validator-keypair.json --force
 ```
 
 ### 3. Check your delegated stake’s status
