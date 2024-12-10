@@ -20,7 +20,7 @@ Here are the minimum hardware requirements for running a K2 validator or RPC nod
 
 ### For consensus validators
 
-- **Memory:** 256 GB
+- **Memory:** 256 GB of RAM
 - **Compute:** 12 cores / 24 threads @ minimum of 2.8GHz
 - **Storage:**
   - PCIe Gen3 x4 NVME SSD
@@ -34,7 +34,7 @@ Accounts and the ledger *can* be stored on the same disk, however due to high 
 
 ### For RPC nodes
 
-- **Memory:** 512 GB
+- **Memory:** 512 GB of RAM
 - **Compute:** 16 cores / 32 threads
 - **Storage:**
   - PCIe Gen3 x4 NVME SSD
