@@ -1,5 +1,5 @@
 ---
-title: Solana Validator Geyser Plugins
+title: Koii Validator Geyser Plugins
 sidebar_label: Geyser Plugins
 pagination_label: Validator Geyser Plugins
 ---

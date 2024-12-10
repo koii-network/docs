@@ -26,11 +26,6 @@ Explorer:
   - Devnet typically runs the same software release branch version as Mainnet,
     but may run a newer minor release version than Mainnet.
 - Gossip entrypoint for Devnet: `entrypoint.devnet.koii.network:8001`
-- Metrics environment variable for Devnet:
-
-```bash
-export KOII_METRICS_CONFIG="host=https://metrics.koii.network:8086,db=devnet,u=scratch_writer,p=topsecret"
-```
 
 - RPC URL for Devnet: `https://devnet.koii.network`
 
@@ -79,17 +74,12 @@ are operated by Koii Labs
 - Testnet is where the Koii core contributors stress test recent release features on a live
   cluster, particularly focused on network performance, stability and validator
   behavior.
-- Testnet tokens at time of snapshot will be converted to mainnet tokens, see <!-- TODO Info link --> for further details.
+- Testnet tokens at time of snapshot will be converted to mainnet tokens at a 1:1 ratio.
 - Testnet tokens after snapshot are **not real**
 - Testnet may be subject to ledger resets.
 - Testnet includes a token faucet for airdrops for application testing
 - Testnet typically runs a newer software release branch than Devnet
 - Gossip entrypoint for Testnet: `entrypoint.testnet.koii.network:8001`
-- Metrics environment variable for Testnet:
-
-```bash
-export Koii_METRICS_CONFIG="host=https://metrics.koii.network:8086,db=tds,u=testnet_write,p=c4fa841aa918bf8274e3e2a44d77568d9861b3ea"
-```
 
 - RPC URL for Testnet: `https://testnet.koii.network`
 
@@ -104,6 +94,7 @@ Koii config set --url https://testnet.koii.network
 ```bash
 $ Koii-validator \
 --identity /home/koii/validator-keypair.json  \
+    --identity /home/koii/validator-keypair.json  \
     --vote-account /home/koii/vote-account-keypair.json \
     --ledger /home/koii/ledger/ledgerdb \
     --accounts /home/koii/accounts/accountdb \
@@ -125,15 +116,15 @@ $ Koii-validator \
     --maximum-incremental-snapshots-to-retain 20 \
     --limit-ledger-size 200000000 \
     --only-known-rpc \
-    --wal-recovery-mode skip_any_corrupted_record
-    --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF
+    --wal-recovery-mode skip_any_corrupted_record \
+    --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF \
     --expected-bank-hash 2Yvcz1QWRemddmoFhumBESUzeZiepXA8DZu3g2Z9Kh2J
 ```
 
 The identities of the
 [`--known-validator`s](../../k2-validators/validator-setup.md#known-validators) are:
 
-- `5D1fNXzvv5NjV1ysLjirC4WY92RNsVH18vjmcszZd8on` - Koii Labs
+- `Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6` - Koii Labs
 -
 -
 -

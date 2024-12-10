@@ -84,8 +84,6 @@ const sidebars = {
       items: [
         "architecture/clusters/index",
         "architecture/clusters/available",
-        "architecture/clusters/benchmark",
-        "architecture/clusters/metrics",
       ]
     },
     {

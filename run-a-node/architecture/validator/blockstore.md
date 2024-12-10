@@ -1,5 +1,5 @@
 ---
-title: Blockstore in a Solana Validator
+title: Blockstore in a Koii Validator
 sidebar_position: 3
 sidebar_label: Blockstore
 pagination_label: Validator Blockstore
@@ -9,7 +9,7 @@ After a block reaches finality, all blocks from that one on down to the genesis 
 
 The blockstore allows a validator to record every shred it observes on the network, in any order, as long as the shred is signed by the expected leader for a given slot.
 
-Shreds are moved to a fork-able key space the tuple of `leader slot` + `shred index` \(within the slot\). This permits the skip-list structure of the Solana protocol to be stored in its entirety, without a-priori choosing which fork to follow, which Entries to persist or when to persist them.
+Shreds are moved to a fork-able key space the tuple of `leader slot` + `shred index` \(within the slot\). This permits the skip-list structure of the Koii protocol to be stored in its entirety, without a-priori choosing which fork to follow, which Entries to persist or when to persist them.
 
 Repair requests for recent shreds are served out of RAM or recent files and out of deeper storage for less recent shreds, as implemented by the store backing Blockstore.
 

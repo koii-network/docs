@@ -1,5 +1,5 @@
 ---
-title: Gossip Service in a Solana Validator
+title: Gossip Service in a Koii Validator
 sidebar_position: 5
 sidebar_label: Gossip Service
 pagination_label: Validator Gossip Service
