@@ -31,8 +31,6 @@ const sidebars = {
     },
     "the-koii-token/network-economics",
     "the-koii-token/tokenomics/token-generation",
-    "the-koii-token/tokenomics/supply-reduction",
-    "the-koii-token/tokenomics/reputation-hardening",
     "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
 
     {
