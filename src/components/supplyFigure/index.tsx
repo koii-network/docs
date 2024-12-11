@@ -16,7 +16,7 @@ const SupplyPieChart = () => {
         const supply = await connection.getSupply();
         setSupplyData({
           total: supply.value.total,
-          circulating: supply.value.circulating,
+          circulating: supply.value.circulating-9708437592382925000,
         });
       } catch (error) {
         console.error("Failed to fetch supply data:", error);
