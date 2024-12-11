@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, ChartOptions } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { Connection, clusterApiUrl } from "@_koii/web3.js";
+import { Connection } from "@_koii/web3.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -47,27 +47,35 @@ const SupplyPieChart = () => {
     ],
   };
 
-  const options = {
+  const options: ChartOptions<"pie"> = {
 	responsive: true,
+	maintainAspectRatio: false,
 	plugins: {
 	  legend: {
-		position: "top" as "top", // Explicitly type it as one of the valid options
+		position: "top", // Ensure this is a valid string literal for position
 	  },
 	  tooltip: {
 		callbacks: {
-		  label: (context: any) => {
-			const value = context.raw;
+		  label: (context) => {
+			const value = context.raw as number; // Ensure TypeScript understands the type
 			return `${context.label}: ${(value / 1e9).toLocaleString()} KOII`;
 		  },
 		},
 	  },
 	},
   };
-  
+
   return (
-    <div>
-      <h1 className="text-center font-bold text-lg mb-4">Supply Distribution</h1>
-      <Pie data={data} options={options} />
+    <div className="flex items-center justify-between p-4">
+      <div className="w-2/3">
+        <Pie data={data} options={options} />
+      </div>
+      <div className="w-1/3 space-y-2">
+        <h2 className="text-xl font-semibold">Supply Details</h2>
+        <p>Total Supply: {(supplyData.total / 1e9).toLocaleString()} KOII</p>
+        <p>Circulating: {(supplyData.circulating / 1e9).toLocaleString()} KOII</p>
+        <p>Non-Circulating: {((supplyData.total - supplyData.circulating) / 1e9).toLocaleString()} KOII</p>
+      </div>
     </div>
   );
 };
