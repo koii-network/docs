@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Token Generation
 ---
 
-import SupplyPieChart from '@site/src/components/SupplyFigure';
+import SupplyPieChart from '@site/src/components/supplyFigure';
 
 The Koii network introduces a robust tokenomics framework starting with an initial total supply of 10 billion KOII tokens. This ensures scarcity and supports the long-term value of the tokens. Inflation kicks off at 5% initially and decreases by 15% annually, settling at a terminal inflation rate of 1.5%. This diminishing inflation rate is designed to bolster early network growth while promoting stability as the ecosystem evolves.
 
