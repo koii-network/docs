@@ -391,12 +391,12 @@ const config = {
 						],
 					},
 					{
-						to: "/koii/the-koii-token/tokenomics/supply-reduction",
-						from: "/concepts/the-koii-token/tokenomics/supply-reduction",
+						to: "/koii/the-koii-token/network-economics",
+						from: ["/concepts/the-koii-token/tokenomics/supply-reduction" , "/koii/the-koii-token/tokenomics/supply-reduction"],
 					},
 					{
-						to: "/koii/the-koii-token/tokenomics/reputation-hardening",
-						from: "/concepts/the-koii-token/tokenomics/reputation-hardening",
+						to: "/koii/the-koii-token/network-economics",
+						from: ["/concepts/the-koii-token/tokenomics/reputation-hardening","/koii/the-koii-token/tokenomics/reputation-hardening" ]
 					},
 					{
 						to: "/koii/the-koii-token/tokenomics/how-the-network-creates-value",

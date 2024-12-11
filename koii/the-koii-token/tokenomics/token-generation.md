@@ -5,16 +5,13 @@ image: img/thumbnail.png
 sidebar_label: Token Generation
 ---
 
-import Tooltip from "@site/src/components/tooltip";
+import SupplyPieChart from '@site/src/components/supplyFigure';
 
-At <Tooltip text='Mainnet launch'/>, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of **3.65%** will be issued annually.
+The Koii network introduces a robust tokenomics framework starting with an initial total supply of 10 billion KOII tokens. This ensures scarcity and supports the long-term value of the tokens. Inflation kicks off at 5% initially and decreases by 15% annually, settling at a terminal inflation rate of 1.5%. This diminishing inflation rate is designed to bolster early network growth while promoting stability as the ecosystem evolves.
 
-:::info In Practice
-Every 12 hours, 500,000 new tokens (0.005% of the total supply) are minted for the community.
-:::
+The token supply is divided into circulating and non-circulating portions. The circulating supply represents the tokens actively used within the ecosystem, while the non-circulating supply encompasses reserves allocated for network incentives, development, and foundational operations.
 
-The newly generated tokens are split between <Tooltip text='Attention Mining'/>, <Tooltip text='K2 Validators'/> and <Tooltip text='Task Nodes'/> that run the attention game.
+<SupplyPieChart />
+In addition to the standard inflationary measures, Koii introduces a unique account rent mechanism. Every account that stores data on the chain must either pay rent or hold enough KOII tokens to achieve rent-exempt status, ensuring efficient utilization of storage resources and encouraging active ecosystem participation.
 
-![Token Generation](/img/koii/tokenomics/token-generation.svg)
-
-Attention mining receives **50%** of new tokens, K2 settlement layer nodes receive **50%**. This ensures that content creators who use Koii are rewarded fairly.
+Further enhancing the tokenomics, Koii implements a mechanism where 50% of gas fees are burned. This policy not only mitigates the effect of inflation as transaction volume increases but also introduces a deflationary aspect to the economy over time, promoting long-term sustainability and health of the network.
