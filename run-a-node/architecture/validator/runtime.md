@@ -1,5 +1,5 @@
 ---
-title: Solana Runtime on a Solana Validator
+title: Koii Runtime on a Koii Validator
 sidebar_position: 6
 sidebar_label: Runtime
 pagination_label: Validator Runtime

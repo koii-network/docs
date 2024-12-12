@@ -1,5 +1,5 @@
 ---
-title: Transaction Processing Unit in a Solana Validator
+title: Transaction Processing Unit in a Koii Validator
 sidebar_position: 2
 sidebar_label: TPU
 pagination_label: Validator's Transaction Processing Unit (TPU)

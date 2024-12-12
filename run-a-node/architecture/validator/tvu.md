@@ -1,5 +1,5 @@
 ---
-title: Transaction Validation Unit in a Solana Validator
+title: Transaction Validation Unit in a Koii Validator
 sidebar_position: 3
 sidebar_label: TVU
 pagination_label: Validator's Transaction Validation Unit (TVU)

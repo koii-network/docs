@@ -59,7 +59,7 @@ the network. VoteState contains the following state information:
   count as stakes.
 - `authorized_voter` - Only this identity is authorized to submit votes. This
   field can only modified by this identity.
-- `node_pubkey` - The Solana node that votes in this account.
+- `node_pubkey` - The Koii node that votes in this account.
 - `authorized_withdrawer` - the identity of the entity in charge of the lamports
   of this account, separate from the account's address and the authorized vote
   signer.

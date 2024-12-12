@@ -2,7 +2,7 @@
 title: Turbine Block Propagation
 ---
 
-A Solana cluster uses a multi-layer block propagation mechanism called _Turbine_
+A Koii cluster uses a multi-layer block propagation mechanism called _Turbine_
 to broadcast ledger entries to all nodes. The cluster divides itself into layers
 of nodes, and each node in a given layer is responsible for propagating any data
 it receives on to a small set of nodes in the next downstream layer. This way

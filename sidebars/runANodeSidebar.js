@@ -106,7 +106,6 @@ const sidebars = {
       items: [
         "architecture/runtime/programs",
         "architecture/runtime/sysvars",
-        "architecture/runtime/zk-token-proof",
       ]
     },
     {
