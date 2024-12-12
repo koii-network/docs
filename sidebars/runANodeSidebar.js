@@ -71,7 +71,15 @@ const sidebars = {
     "k2-validators/validator-setup",
     "k2-validators/rewards",
     "k2-validators/k2-staking-support",
-    "k2-validators/validator-best-practices",
+    {
+      type: "category",
+      label: "Best Practices",
+      items: [
+        "k2-validators/BestPractices/General-Operations",
+        "k2-validators/BestPractices/Monitoring",
+        "k2-validators/BestPractices/Security",
+      ]
+    },
     {
       type: "html",
       value: "K2 Validator Infrastructure",

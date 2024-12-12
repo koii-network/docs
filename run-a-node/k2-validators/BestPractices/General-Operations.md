@@ -1,3 +1,8 @@
+---
+title: Koii Validator Operations Best Practices
+sidebar_label: General Operations
+pagination_label: "Best Practices: Validator Operations"
+---
 
 # Koii Validator Operations Best Practices  
 
