@@ -9,9 +9,7 @@ stakers can delegate their stakes. The rest of the cluster uses those
 stake-weighted votes to select a block when forks arise. Both the validator and
 staker need some economic incentive to play their part. The validator needs to
 be compensated for its hardware and the staker needs to be compensated for the
-risk of getting its stake slashed. The economics are covered in
-[staking rewards](../implemented-proposals/staking-rewards.md). This section, on
-the other hand, describes the underlying mechanics of its implementation.
+risk of getting its stake slashed. This section describes the underlying mechanics of its implementation.
 
 ## Basic Design
 
@@ -226,7 +224,7 @@ stake can be withdrawn. The transaction must be signed by the stake's
 The specific mechanics and rules of the validator rewards regime is outlined
 here. Rewards are earned by delegating stake to a validator that is voting
 correctly. Voting incorrectly exposes that validator's stakes to
-[slashing](../proposals/slashing.md).
+slashing.
 
 ### Basics
 

@@ -11,7 +11,7 @@ Before you begin make sure you have first
 
 Explorer:
 
-- [http://explorer.koii.live/](https://explorer.koii.live).
+- [https://explorer.koii.live/](https://explorer.koii.live).
 
 ## Devnet
 

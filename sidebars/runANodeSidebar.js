@@ -118,7 +118,6 @@ const sidebars = {
         "architecture/validator/tvu",
         "architecture/validator/gossip",
         "architecture/validator/runtime",
-        "architecture/validator/geyser",
       ]
     },
   ],
