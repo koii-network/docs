@@ -143,3 +143,25 @@ Withdraw Authority: <pubkey>
 ```
 
 If you see a value in “Activating Stake” then you should be successfully voting within 24 hours
+
+
+## Known validators
+
+If you know and respect other validator operators, you can specify this on the command line with the `--known-validator <PUBKEY>`
+argument to `koii-validator`. You can specify multiple ones by repeating the argument `--known-validator <PUBKEY1> --known-validator <PUBKEY2>`.
+This has two effects, one is when the validator is booting with `--only-known-rpc`, it will only ask that set of
+known nodes for downloading genesis and snapshot data. Another is that in combination with the `--halt-on-known-validators-accounts-hash-mismatch` option,
+it will monitor the merkle root hash of the entire accounts state of other known nodes on gossip and if the hashes produce any mismatch,
+the validator will halt the node to prevent the validator from voting or processing potentially incorrect state values. At the moment, the slot that
+the validator publishes the hash on is tied to the snapshot interval. For the feature to be effective, all validators in the known
+set should be set to the same snapshot interval value or multiples of the same.
+
+It is highly recommended you use these options to prevent malicious snapshot state download or
+account state divergence.
+
+
+---
+
+<sub>This documentation incorporates substantial portions of the Solana documentation, adapted for Koii (K2). Solana’s architecture and underlying principles form the foundation of K2’s implementation. Content adapted under the terms of the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [Solana Documentation](https://docs.solana.com/) for more details.</sub>
+
+
