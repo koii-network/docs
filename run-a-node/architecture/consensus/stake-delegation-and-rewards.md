@@ -219,7 +219,7 @@ stake can be withdrawn. The transaction must be signed by the stake's
 
 ## Example Callflow
 
-<!-- ![Passive Staking Callflow](/img/passive-staking-callflow.png) -->
+![Passive Staking Callflow](/img/architecture/passive-staking-callflow.png)
 
 ## Staking Rewards
 

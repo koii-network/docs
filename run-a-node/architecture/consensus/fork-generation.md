@@ -103,7 +103,7 @@ forks over time. L1, L2, etc. are leader slots, and `E`s represent entries from
 that leader during that leader's slot. The `x`s represent ticks only, and time
 flows downwards in the diagram.
 
-<!-- ![Fork generation](/img/architecture/fork-generation.svg) -->
+![Fork generation](/img/architecture/fork-generation.png)
 
 Note that an `E` appearing on 2 forks at the same slot is a slashable condition,
 so a validator observing `E3` and `E3'` can slash L3 and safely choose `x` for
