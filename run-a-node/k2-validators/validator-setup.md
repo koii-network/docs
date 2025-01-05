@@ -142,7 +142,7 @@ koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake
 ### 2. Delegate the stake to your validator
 
 ```sh
-koii delegate-stake ~/stake-account-keypair.json <VALIDATOR VOTE ACCOUNT FOR TOKEN DELEGATION> --stake-authority ~/validator-keypair.json --force
+koii delegate-stake ~/stake-account-keypair.json <VALIDATOR VOTE ACCOUNT FOR TOKEN DELEGATION> --stake-authority ~/stake-authority-keypair.json --force
 ```
 
 ### 3. Check your delegated stake’s status
