@@ -107,7 +107,7 @@ The commission rate determines the percentage of staking rewards allocated to th
 To update the commission rate for your validator's vote account, use the following command:
 
 ```bash
-koii vote-update-commission <VOTE_ACCOUNT_ADDRESS> <NEW_COMMISSION> --authorized-voter <PATH_TO_AUTHORIZED_VOTER_KEYPAIR>
+koii vote-update-commission <VOTE_ACCOUNT_ADDRESS> <NEW_COMMISSION> <PATH_TO_AUTHORIZED_VOTER_KEYPAIR>
 ```
 ### 5. Update Your Validator Information
 
