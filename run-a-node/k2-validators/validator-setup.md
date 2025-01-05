@@ -30,7 +30,6 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --entrypoint entrypoint-2.mainnet.koii.network:10001 \
     --entrypoint entrypoint.mainnet.haji.ro:10001 \
     --entrypoint entrypoint-koii-mainnet.stakecraft.com:10001 \
-    --rpc-faucet-address rpc-faucet.mainnet.koii.network:9900 \
     --init-complete-file /home/koii/init-completed \
     --no-wait-for-vote-to-start-leader \
     --maximum-full-snapshots-to-retain 20 \
