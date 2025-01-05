@@ -33,7 +33,6 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --rpc-faucet-address rpc-faucet.mainnet.koii.network:9900 \
     --init-complete-file /home/koii/init-completed \
     --no-wait-for-vote-to-start-leader \
-    --enable-extended-tx-metadata-storage \
     --maximum-full-snapshots-to-retain 20 \
     --maximum-incremental-snapshots-to-retain 20 \
     --limit-ledger-size 200000000 \
