@@ -22,11 +22,15 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --gossip-port 10001 \
     --dynamic-port-range 10002-10500 \
     --enable-rpc-transaction-history \
-    --enable-cpi-and-log-storage \
-    --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \
-    --entrypoint entrypoint-1.testnet.koii.network:10001 \
-    --entrypoint entrypoint-2.testnet.koii.network:10001 \
-    --rpc-faucet-address rpc-faucet.testnet.koii.network:9900 \
+    --known-validator BPRAynHogErzYmEtAaeJFugRozXuU6EEqNa4rEKtF4mS \
+    --known-validator GqmBXoaetkMXzrMhCijJDsL5J4KDvDFzZuMEpoXYUowc \
+    --known-validator Hajii3WYcyRWDzENPJwaY2WGtNpYQ7vrCqpgaUi8fsUo \
+    --known-validator Fme35immspxuG6fboueneNDque5xLu62Ca2BHRuLgTSV \
+    --entrypoint entrypoint-1.mainnet.koii.network:10001 \
+    --entrypoint entrypoint-2.mainnet.koii.network:10001 \
+    --entrypoint entrypoint.mainnet.haji.ro:10001 \
+    --entrypoint entrypoint-koii-mainnet.stakecraft.com:10001 \
+    --rpc-faucet-address rpc-faucet.mainnet.koii.network:9900 \
     --init-complete-file /home/koii/init-completed \
     --no-wait-for-vote-to-start-leader \
     --enable-extended-tx-metadata-storage \
@@ -35,8 +39,8 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --limit-ledger-size 200000000 \
     --only-known-rpc \
     --wal-recovery-mode skip_any_corrupted_record \
-    --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF \
-    --expected-bank-hash 2Yvcz1QWRemddmoFhumBESUzeZiepXA8DZu3g2Z9Kh2J
+    --expected-genesis-hash 7rVVciNgm2m5JquMbKNxEYPryvzVtDktWhHLM4xFpfjq
+
 ```
 
 - Create a systemd unit file at `/etc/systemd/system/koii-validator.service`
@@ -70,10 +74,10 @@ WantedBy=multi-user.target
 koii balance <path_to_wallet>
 ```
 
-- Please make sure your Koii CLI is configured for `testnet.koii.network` and using your validator identity before continuing:
+- Please make sure your Koii CLI is configured for `mainnet.koii.network` and using your validator identity before continuing:
 
 ```sh
-koii config set --url https://testnet.koii.network/ --keypair ~/validator-keypair.json
+koii config set --url https://mainnet.koii.network/ --keypair ~/validator-keypair.json
 ```
 
 - You can confirm your configuration with:
@@ -98,6 +102,23 @@ sudo systemctl start koii-validator.service
 sudo systemctl status koii-validator.service
 ```
 
+### 4. Configure the Commission Rate for Your Validator
+
+The commission rate determines the percentage of staking rewards allocated to the validator as a fee for their services, with the remainder distributed to the stakers. The commission rate must be a valid percentage between 0 and 100.
+
+To update the commission rate for your validator's vote account, use the following command:
+
+```bash
+koii vote-update-commission <VOTE_ACCOUNT_ADDRESS> <NEW_COMMISSION> --authorized-voter <PATH_TO_AUTHORIZED_VOTER_KEYPAIR>
+```
+### 5. Update Your Validator Information
+
+To update or publish your validator's information on the Koii network, use the following command:
+
+```bash
+koii validator-info publish "<VALIDATOR_NAME>" -w "<WEBSITE_URL>"
+```
+
 ## Staking KOII in the validator
 
 :::info
@@ -106,7 +127,11 @@ Commands in this section are to be run on the computer which has the stake accou
 
 ### 1. Create a stake account
 
-Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>` with your stake amount.
+:::warning
+
+- When starting a validator for the first time, avoid staking more than 1000 KOII. It typically takes about 2 epochs (approximately 24 hours) for the validator to become fully operational. To ensure your validator is running correctly, monitor its status using the `koii validators` command. There should be no exclamation mark next to your validator, indicating it is fully active and functioning.
+  
+Run the following command, AFTER replacing `<AMOUNT_TO_STAKE>` with your stake amount. 
 
 ```sh
 koii create-stake-account ~/stake-account-keypair.json <AMOUNT_TO_STAKE> --stake-authority ~/stake-authority-keypair.json --withdraw-authority ~/stake-authority-keypair.json
@@ -142,7 +167,7 @@ Stake Authority: <pubkey>
 Withdraw Authority: <pubkey>
 ```
 
-If you see a value in “Activating Stake” then you should be successfully voting within 24 hours
+If you see a value in “Activating Stake” then you should be successfully voting within 24 hours.
 
 
 ## Known validators
@@ -150,11 +175,7 @@ If you see a value in “Activating Stake” then you should be successfully vot
 If you know and respect other validator operators, you can specify this on the command line with the `--known-validator <PUBKEY>`
 argument to `koii-validator`. You can specify multiple ones by repeating the argument `--known-validator <PUBKEY1> --known-validator <PUBKEY2>`.
 This has two effects, one is when the validator is booting with `--only-known-rpc`, it will only ask that set of
-known nodes for downloading genesis and snapshot data. Another is that in combination with the `--halt-on-known-validators-accounts-hash-mismatch` option,
-it will monitor the merkle root hash of the entire accounts state of other known nodes on gossip and if the hashes produce any mismatch,
-the validator will halt the node to prevent the validator from voting or processing potentially incorrect state values. At the moment, the slot that
-the validator publishes the hash on is tied to the snapshot interval. For the feature to be effective, all validators in the known
-set should be set to the same snapshot interval value or multiples of the same.
+known nodes for downloading genesis and snapshot data.
 
 It is highly recommended you use these options to prevent malicious snapshot state download or
 account state divergence.

@@ -36,12 +36,12 @@ Please ensure that all the following steps are performed within the home directo
 - Required both on your secure computer (for keypair generation) and on the validator
 
 ```sh
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.4.sh)"
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.6.sh)"
 # You may need to update PATH variable for the cli to be available
 echo 'export PATH="/home/koii/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
-# Set the koii config to point to the testnet
-koii config set --url https://testnet.koii.network
+# Set the koii config to point to the mainnet
+koii config set --url https://mainnet.koii.network
 ```
 
 ## 4. Key pair creation
