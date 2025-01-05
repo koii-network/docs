@@ -68,7 +68,7 @@ WantedBy=multi-user.target
 
 :::warning
 
-- You will need your validator keypair account to be funded with KOII tokens before continuing. You can check the balance of a wallet by running
+- You will need your validator keypair account to be funded with KOII tokens before continuing. Each epoch requires approximately 5 KOII in gas fees for vote transactions. Be sure to account for this amount when managing your validator. Once your validator is fully operational, you will begin earning rewards from the next epoch, which should cover the cost of your vote transaction fees. You can check the balance of a wallet by running
 
 ```sh
 koii balance <path_to_wallet>
