@@ -22,7 +22,7 @@ Configuration object containing the following fields:
 ### Code sample
 
 ```sh
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
 {
   "id":1,
   "jsonrpc":"2.0",

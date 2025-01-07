@@ -83,7 +83,7 @@ async function main() {
     const taskStateInfoAddress = new PublicKey(TASK_ID);
 
     // Establish connection to the Solana network (Koii testnet in this case)
-    const connection = new Connection("https://testnet.koii.network", 'confirmed');
+    const connection = new Connection("https://mainnet.koii.network", 'confirmed');
 
     // Retrieve account information for the task
     const accountInfo = await connection.getAccountInfo(

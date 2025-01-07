@@ -25,7 +25,7 @@ The minimum slot that the request can be evaluated at
 ### Code sample
 
 ```sh
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "id":45,
     "jsonrpc":"2.0",

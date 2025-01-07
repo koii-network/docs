@@ -37,7 +37,7 @@ This asynchronous function retrieves the latest task data from the Koii network.
 1. **Establish Connection**:
 
    ```javascript
-   const connection = new Connection("https://testnet.koii.network");
+   const connection = new Connection("https://mainnet.koii.network");
    ```
 
    - A connection to the Koii testnet is established using the `Connection` class.

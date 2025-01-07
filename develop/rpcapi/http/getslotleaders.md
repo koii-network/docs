@@ -22,7 +22,7 @@ Limit, as u64 integer (between 1 and 5,000)
 If the current slot is `#99` - query the next `10` leaders with the following request:
 
 ```
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc":"2.0", "id": 1,
     "method": "getSlotLeaders",

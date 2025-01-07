@@ -34,7 +34,7 @@ Error: RPC request error: cluster version query failed: error sending request fo
 **Solution:** please type in this:
 
 ```sh
-koii config set -- url https://testnet.koii.network
+koii config set -- url https://mainnet.koii.network
 ```
 
 ## Q: What should I do if I meet this Javascript error?

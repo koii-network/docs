@@ -26,7 +26,7 @@ koii rent 0
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
+    curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getMinimumBalanceForRentExemption",
@@ -62,7 +62,7 @@ In order to track deposit accounts, you should poll for each confirmed block and
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
+    curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getBlocks",
@@ -91,7 +91,7 @@ Once you have the blocks to be processed, you can request each block's contents 
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
+    curl https://mainnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getBlock",
@@ -199,7 +199,7 @@ To query an address:
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
+    curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getSignaturesForAddress",
@@ -252,7 +252,7 @@ To query an address:
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
+    curl https://mainnet.koii.network -X POST -H 'Content-Type: application/json' -d '{
       "jsonrpc":"2.0",
       "id":1,
       "method":"getTransaction",
@@ -391,7 +391,7 @@ You can use the [`getSignatureStatuses`](/develop/rpcapi/http/getsignaturestatus
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
+    curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc":"2.0",
       "id":1,
       "method":"getSignatureStatuses",
@@ -526,7 +526,7 @@ Similarly, every deposit account must contain at least this balance.
 ### Request
 
 ```sh
-    curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '{
+    curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '{
       "jsonrpc": "2.0",
       "id": 1,
       "method": "getMinimumBalanceForRentExemption",
