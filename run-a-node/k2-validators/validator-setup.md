@@ -7,7 +7,7 @@ sidebar_label: Validator Setup
 
 ## 1. Systemd service setup
 
-- Copy the following code to `/home/koii/validator.sh` and make it executable
+- Copy the following code to `/home/koii/validator.sh`
 
 ```sh
 #!/bin/sh
@@ -40,7 +40,7 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --expected-genesis-hash 7rVVciNgm2m5JquMbKNxEYPryvzVtDktWhHLM4xFpfjq
 
 ```
-
+- Give the validator.sh file executable permissions. `chmod +x ./validator.sh`
 - Create a systemd unit file at `/etc/systemd/system/koii-validator.service`
 
 ```sh
