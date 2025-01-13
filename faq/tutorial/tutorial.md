@@ -103,3 +103,57 @@ Always ensure the security of your secret phrase and double-check all details be
 
 3. Click block "X"
 ![block](./imageFaq/Xemail.png)
+
+## Tutorial: Step-by-Step Guide to migrate a node account to a new address and initialize it
+
+This tutorial will include steps:
+- Create a new Node Account/Wallet
+- set it up properly
+- migrate all your tokens on the new account with a new seedphrase.
+- keeping a backup of this actual account.
+
+## STEP 0 - Stop, unstake and archive
+First stop all your tasks.
+Wait until you are able to Unstake and Archive from 3 vertical dots (on each task).
+
+## STEP 1 – Backup your wallet
+Go to "Settings" press "Get Node Logs" and you'll end up in the folders.
+Once in the folder please go up 1 level in the folder hierarchy.
+You'll notice a folder named "Wallets"
+![wallets](./imageFaq/wallets.png)
+Inside the “Wallets” folder you’ll find a file similar to mine here:
+![system-wallets](./imageFaq/system-wallet.png)
+Backup this file, is the only way to access this "old" account from now on.
+Make a copy on cloud storage or USB Device if you like
+Now we can just wait for the last task to cool down, here is the procedure to follow after:
+## Step 2 – Create a new Wallet/Account on your Node
+Create a new wallet address.
+Make sure you securely store the 12-word passphrase.
+(Paper-screenshots).
+Step by Step:
+Claim all rewards.
+Create a New Account
+(Koii Node Settings -> Wallet -> Add New Account)
+(located at the bottom of the page)
+Click "Get a New Key".
+Follow the procedure to get a new one.
+
+![new-key](./imageFaq/get-new-key.png)
+![new-account](./imageFaq/create-new-account.png)
+After you have done, first send 30 $ Koii, 5 $OFire and 5 $OBird from your **OLD** System Key 
+to the **NEW** System Key.
+## Step 3 – Set Up your New Account
+Activate your new account using the "star" icon on the right of your new account's name.
+![account-star](./imageFaq/account-star.png)
+After the **NEW** account is active please go to "Add Task"
+Add in order:
+Inflation Monitoring and wait for confirmation.
+Free Fire Token and wait for confirmation.
+After your tasks are running in My Node, go to Wallet.
+Send 10 $Koii from your **NEW System Key** to the **NEW Staking Key**.
+Make Sure that your new **KPL Staking key** has been set with about 0.079 $Koii.
+Send 3 $Koii from your **New System Key** to your **New KPL Staking Key**
+Add as many tasks as you want and migrate all the other tokens from the old account to the new 
+one.
+### To migrate your tokens don't forget to leave at least 2 $Koii on your **OLD SYSTEM KEY** 
+to pay for the blockchain's fees of your tokens' transactions.
