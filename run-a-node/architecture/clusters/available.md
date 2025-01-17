@@ -81,12 +81,12 @@ are operated by Koii Labs
 - Testnet typically runs a newer software release branch than Devnet
 - Gossip entrypoint for Testnet: `entrypoint.testnet.koii.network:8001`
 
-- RPC URL for Testnet: `https://testnet.koii.network`
+- RPC URL for Testnet: `https://mainnet.koii.network`
 
 ##### Example `Koii` command-line configuration
 
 ```bash
-Koii config set --url https://testnet.koii.network
+Koii config set --url https://mainnet.koii.network
 ```
 
 ##### Example `Koii-validator` command-line

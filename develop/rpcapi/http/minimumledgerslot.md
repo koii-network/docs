@@ -21,7 +21,7 @@ This value may increase over time if the node is configured to purge older ledge
 ### Code sample
 
 ```sh
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {"jsonrpc":"2.0","id":1, "method":"minimumLedgerSlot"}
 '
 ```

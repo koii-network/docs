@@ -12,7 +12,7 @@ const SupplyPieChart = () => {
   useEffect(() => {
     const fetchSupply = async () => {
       try {
-        const connection = new Connection("https://testnet.koii.network", "confirmed");
+        const connection = new Connection("https://mainnet.koii.network", "confirmed");
         const supply = await connection.getSupply();
         setSupplyData({
           total: supply.value.total,

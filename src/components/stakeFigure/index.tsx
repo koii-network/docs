@@ -12,7 +12,7 @@ const StakePieChart = () => {
   useEffect(() => {
     const fetchStake = async () => {
       try {
-        const connection = new Connection("https://testnet.koii.network", "confirmed");
+        const connection = new Connection("https://mainnet.koii.network", "confirmed");
         // Simulating a fetch operation, replace with actual API call to fetch stake details
         const supply = await connection.getSupply(); // This would be a different function in a real scenario
         setStakeData({

@@ -29,7 +29,7 @@ To make a JSON-RPC request, send an HTTP POST request with a `Content-Type: appl
 Example using curl:
 
 ```
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
     "id": 1,
@@ -55,7 +55,7 @@ Requests can be sent in batches by sending an array of JSON-RPC request objects 
 The commitment parameter should be included as the last element in the `params` array:
 
 ```
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
     "id": 1,

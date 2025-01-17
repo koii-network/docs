@@ -35,7 +35,7 @@ An array of `RpcResponse<object>` consisting of either:
 ### Code sample
 
 ```sh
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
     "id": 1,

@@ -35,7 +35,7 @@ The result field will be a JSON object of `current` and `delinquent` accounts, e
 Restrict results to a single validator vote account:
 
 ```
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
     "id": 1,

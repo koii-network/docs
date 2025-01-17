@@ -37,7 +37,7 @@ An array of `<object>`, ordered from **newest** to **oldest** transaction, conta
 ### Code sample
 
 ```sh
-curl https://testnet.koii.network -X POST -H "Content-Type: application/json" -d '
+curl https://mainnet.koii.network -X POST -H "Content-Type: application/json" -d '
   {
     "jsonrpc": "2.0",
     "id": 1,
