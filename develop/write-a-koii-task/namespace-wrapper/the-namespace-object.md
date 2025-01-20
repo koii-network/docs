@@ -6,44 +6,272 @@ sidebar_label: The Namespace Object
 ---
 
 import Tooltip from "@site/src/components/tooltip";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 # The Namespace Object
 
-Namespacing is a programming concept that involves encapsulating a group of entities, variables, functions, or objects under a single umbrella term. In the context of Koii, the Koii namespace object `namespace` serves as a global wrapper for all APIs required in Koii tasks.
+The **Koii Namespace Wrapper** is a utility that helps Koii tasks interact with the network effortlessly. It handles task data, blockchain interactions, file operations, and node communication, so developers can focus on their core logic.
 
-This JavaScript object is injected into a Koii task by the task node running the task, and the Koii task has access to all wrapped utilities.
+## Core Features
 
-Here's an example demonstrating how you can store a key-value pair in the local NeDB database using the `namespace` object:
+### 1. State Management
 
-```js
-const { namespaceWrapper } = require('@_koii/namespace-wrapper');
+Store and retrieve task data reliably:
 
-async function task() {
-  try {
-    const value = "Hello, World!";
+```typescript
+// Store data
+await namespaceWrapper.storeSet("key", "value");
 
-    if (value) {
-      // store value on NeDB
-      await namespaceWrapper.storeSet("key", value);
+// Retrieve data
+const value = await namespaceWrapper.storeGet("key");
+```
+
+### 2. Blockchain Integration
+
+Securely interact with the Koii Network:
+
+```typescript
+// Send a transaction
+const tx = await namespaceWrapper.sendTransaction(
+  senderAccount,
+  receiverAccount,
+  amount,
+);
+
+// Get network status
+const nodes = await namespaceWrapper.getNodes();
+```
+
+### 3. File System Operations
+
+Handle files consistently across environments:
+
+```typescript
+// Create a directory
+await namespaceWrapper.fs("mkdir", "data");
+
+// Write a file
+await namespaceWrapper.fs("writeFile", "data/config.json", "{}");
+
+// Read a file
+const content = await namespaceWrapper.fs("readFile", "data/config.json");
+```
+
+### 4. Task Management
+
+Manage task state and rounds:
+
+```typescript
+// Get current round
+const round = await namespaceWrapper.getRound();
+
+// Submit task results
+await namespaceWrapper.checkSubmissionAndUpdateRound(submission, round);
+```
+
+## Benefits of Using the Namespace Wrapper
+
+1. **Simplified Development**
+
+   - No need to handle low-level infrastructure
+   - Consistent APIs across different operations
+   - Built-in error handling and security
+
+2. **Better Code Organization**
+
+   - Clear separation of concerns
+   - Standardized interfaces
+   - Modular architecture
+
+3. **Enhanced Security**
+
+   - Secure blockchain interactions
+   - Protected file system access
+   - Safe state management
+
+4. **Improved Reliability**
+   - Automatic error handling
+   - Built-in retries for network operations
+   - Data persistence
+
+## Common Use Cases
+
+### 1. Data Storage
+
+<Tabs>
+  <TabItem value="typescript" label="Typescript">
+    ```typescript
+    async function saveUserData(userId: string, data: object) {
+      try {
+        // Store user data
+        await namespaceWrapper.storeSet(`user_${userId}`, JSON.stringify(data));
+        // Verify storage
+        const stored = await namespaceWrapper.storeGet(`user_${userId}`);
+        return JSON.parse(stored);
+      } catch (error) {
+        console.error("Failed to save user data:", error);
+        throw error;
+      }
     }
-    return value;
-  } catch (err) {
-    console.log("ERROR IN EXECUTING TASK", err);
-  }
+    ```
+
+  </TabItem>  
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function saveUserData(userId, data) { 
+      try { 
+        // Store user data 
+        await namespaceWrapper.storeSet(`user_${userId}`, JSON.stringify(data));
+        // Verify storage  
+        const stored = await namespaceWrapper.storeGet(`user_${userId}`);  
+        return JSON.parse(stored);  
+      } catch (error) {  
+        console.error("Failed to save user data:", error);  
+        throw error;  
+      }  
+    }  
+    ```
+
+  </TabItem>
+</Tabs>
+
+### 2. Task Submissions
+
+<Tabs>
+  <TabItem value="typescript" label="Typescript">
+    ```typescript
+    async function submitTaskResult(submission: string) {
+      try {
+        const round = await namespaceWrapper.getRound();
+        await namespaceWrapper.checkSubmissionAndUpdateRound(submission, round);
+        console.log("Task result submitted for round:", round);
+      } catch (error) {
+        console.error("Submission failed:", error);
+        throw error;
+      }
+    }
+    ```
+
+  </TabItem>  
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function submitTaskResult(submission) { 
+      try { 
+        const round = await namespaceWrapper.getRound(); 
+        await namespaceWrapper.checkSubmissionAndUpdateRound(submission, round);
+        console.log("Task result submitted for round:", round);  
+      } catch (error) {  
+        console.error("Submission failed:", error);  
+        throw error;  
+      }  
+    }  
+    ```
+
+  </TabItem>
+</Tabs>
+
+### 3. File Management
+
+<Tabs>
+  <TabItem value="typescript" label="Typescript">
+    ```typescript
+    async function processDataFile(filename: string) {
+      try {
+        // Read input file
+        const data = await namespaceWrapper.fs("readFile", filename, "utf8");
+
+        // Process data
+        const processed = await processData(data);
+
+        // Save results
+        await namespaceWrapper.fs("writeFile", `processed_${filename}`, processed);
+      } catch (error) {
+        console.error("File processing failed:", error);
+        throw error;
+      }
+    }
+    ```
+
+  </TabItem>  
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function processDataFile(filename: string) {
+       try { 
+        // Read input file 
+        const data = await namespaceWrapper.fs("readFile", filename, "utf8");
+        // Process data  
+        const processed = await processData(data);
+
+        // Save results
+        await namespaceWrapper.fs("writeFile", `processed_${filename}`, processed);
+      } catch (error) {
+        console.error("File processing failed:", error);
+        throw error;
+      }
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Best Practices
+
+1. **Always Use Error Handling**
+
+```typescript
+try {
+  await namespaceWrapper.storeSet("key", "value");
+} catch (error) {
+  console.error("Operation failed:", error);
+  // Implement appropriate error recovery
 }
 ```
 
-This line of code utilizes the `storeSet()` method from the namespace object to store the key-value pair "key" and "value" in the local NeDB database. The task can then retrieve and use this stored data as needed. The namespace object provides a convenient and unified way to interact with various utilities within a Koii task.
+2. **Validate Input Data**
 
-## Why is The Namespace Object Important?
+<Tabs>
+  <TabItem value="typescript" label="Typescript">
+    ```typescript
+    function validateData(data: any) {
+      if (!data || typeof data !== "object") {
+        throw new Error("Invalid data format");
+      }
+      // Add more validation as needed
+    }
+    ```
+  </TabItem>  
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    function validateData(data) {
+      if (!data || typeof data !== "object") {
+        throw new Error("Invalid data format");
+      }
+      // Add more validation as needed
+    }
+    ```
+  </TabItem>
+</Tabs>
 
-The Namespace object is important for several reasons, some of which are:
+3. **Log Important Operations**
 
-- It **protects** and **isolates the code** from other applications.
-- It prevents **memory leakage**.
-- It ensures code is **organized,** **easy to read, and refactored** according to requirements.
-- It is **easy to recognize** the **variables and functions** from where they are defined.
+```typescript
+await namespaceWrapper.logger(
+  "log",
+  "Task completed successfully",
+  "TaskCompletion",
+);
+```
 
-## Custom Namespace Utilities
+## Next Steps
 
-The Namespace object can be expanded by including unique utilities when a Koii task is created. More information on this is discussed in this [section](./customizing-the-namespace).
+To learn more about specific features, check out these guides:
+
+- [Installation Guide](./installing-namespace-wrapper.md) - Get started with the wrapper
+- [Namespace Wrapper Methods](./methodName.md) - For interacting with tasks and the blockchain
+- [REST APIs](./rest-apis.md) - Build HTTP endpoints
+- [Database Operations](./nedb.md) - Learn about data storage
+- [File System](./filesystem-access.md) - Handle files and directories
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with Blockchain Operations and Transaction Operations
+- [Task Management](./task-state.md) - Manage task state
+- [Network Operations](./network-operations.md) -
