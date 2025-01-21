@@ -190,3 +190,25 @@ try {
   console.log(error);
 }
 ```
+
+## getAverageSlotTime()
+
+Gets average slot time for the network
+
+- **Outputs**: Promise resolving to slot time in milliseconds
+- **Example Usage and Output**:
+
+```typescript
+try {
+  const averageSlotTime = await myService.getAverageSlotTime();
+  console.log(averageSlotTime); // Expected output: 150
+} catch (error) {
+  console.log(error);
+}
+```
+
+## Next Steps
+
+To learn more about specific features, check out these guides:
+
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

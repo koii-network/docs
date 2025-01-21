@@ -58,10 +58,14 @@ For more details on available methods and their usage, refer to the [Namespace W
 
 ## Next Steps
 
-For more detailed information about specific features, refer to:
+To learn more about specific features, check out these guides:
 
-- [REST APIs](./rest-apis.md)
-- [Filesystem Access](./filesystem-access.md)
-- [NeDB Storage](./nedb.md)
-- [Wallet Signatures](./wallet-signatures.md)
-- [Task State Management](./task-state.md)
+- [Namespace Wrapper Methods](./methodName.md) - Interact with tasks and the blockchain.
+- [Environment Variables](./environment-variables.md) - Import and use Environment Variables.
+- [REST APIs](./rest-apis.md) - Build HTTP endpoints.
+- [Database Operations](./nedb.md) - Learn about data storage.
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

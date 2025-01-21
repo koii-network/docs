@@ -272,8 +272,10 @@ if (duration > 100) {
 
 ## Next Steps
 
-For more information, refer to:
+To learn more about specific features, check out these guides:
 
-- [Task State Management](./task-state.md)
-- [Filesystem Access](./filesystem-access.md)
-- [REST APIs](./rest-apis.md)
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

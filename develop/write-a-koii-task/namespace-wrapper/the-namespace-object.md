@@ -274,3 +274,4 @@ To learn more about specific features, check out these guides:
 - [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
 - [Task Status](./task-state.md) - Get task state information with namespace methods.
 - [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

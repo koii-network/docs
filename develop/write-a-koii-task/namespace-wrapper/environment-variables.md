@@ -48,3 +48,15 @@ console.log("TASK_NODE_PORT:", TASK_NODE_PORT);
 #### No Additional Setup Required
 
 Since these environment variables are pre-configured by the `@_koii/namespace-wrapper` package, there is no need for manual configuration. Simply import them as shown above, and they will be ready for use in your tasks.
+
+## Next Steps
+
+To learn more about specific features, check out these guides:
+
+- [REST APIs](./rest-apis.md) - Build HTTP endpoints.
+- [Database Operations](./nedb.md) - Learn about data storage.
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

@@ -452,3 +452,11 @@ try {
   console.error('Error staking on-chain:', error);
 }
 ```
+
+## Next Steps
+
+To learn more about specific features, check out these guides:
+
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

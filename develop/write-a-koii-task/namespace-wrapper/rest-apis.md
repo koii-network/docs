@@ -300,8 +300,11 @@ describe("API Endpoints", () => {
 
 ## Next Steps
 
-For more information about related features, refer to:
+To learn more about specific features, check out these guides:
 
-- [Task State Management](./task-state.md)
-- [NeDB Storage](./nedb.md)
-- [Wallet Signatures](./wallet-signatures.md)
+- [Database Operations](./nedb.md) - Learn about data storage.
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.
