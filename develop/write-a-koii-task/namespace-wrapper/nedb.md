@@ -129,9 +129,19 @@ await db.remove({ status: "completed" }, { multi: true });
 ## Indexing
 
 ```typescript
-const db: any = await namespaceWrapper.getDB();
-await db.ensureIndex({ fieldName: "taskId", unique: true });
-await db.ensureIndex({ fieldName: "status" });
+try {
+  const db = await namespaceWrapper.getDB();
+
+  // Ensure 'taskId' is indexed and unique
+  await db.ensureIndex({ fieldName: "taskId", unique: true });
+
+  // Ensure 'status' is indexed (not unique)
+  await db.ensureIndex({ fieldName: "status" });
+
+  console.log("Indexes successfully created!");
+} catch (error) {
+  console.error("Error creating indexes:", error);
+}
 ```
 
 ## Best Practices
@@ -148,21 +158,44 @@ try {
 
 ### Data Validation
 
-```typescript
-function validateData(data: { taskId: string }) {
-  if (!data.taskId || typeof data.taskId !== "string") {
-    throw new Error("Invalid taskId");
-  }
-}
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      function validateData(data: { taskId: string }) {
+        if (!data.taskId || typeof data.taskId !== "string") {
+          throw new Error("Invalid taskId");
+        }
+      }
 
-try {
-  const data = { taskId: "123" };
-  validateData(data);
-  await db.insert(data);
-} catch (error) {
-  console.error("Validation failed:", error);
-}
-```
+      try {
+        const data = { taskId: "123" };
+        validateData(data);
+        await db.insert(data);
+      } catch (error) {
+        console.error("Validation failed:", error);
+      }
+      ```
+    </TabItem>
+
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    function validateData(data) {
+      if (!data.taskId || typeof data.taskId !== "string") {
+        throw new Error("Invalid taskId");
+      }
+    }
+
+    try {
+      const data = { taskId: "123" };
+      validateData(data);
+      await db.insert(data); // Assuming `db.insert` supports async/await
+    } catch (error) {
+      console.error("Validation failed:", error);
+    }
+    ```
+
+  </TabItem>
+</Tabs>
 
 ### Atomic Operations
 
@@ -181,31 +214,68 @@ await db.ensureIndex({ fieldName: "taskId", status: 1 });
 
 ### Caching Results
 
-```typescript
-let cachedData: any[] | null = null;
-let cacheTimestamp: number = 0;
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    ```typescript
+    let cachedData: any[] | null = null;
+    let cacheTimestamp: number = 0;
 
-async function getCachedData(): Promise<any[]> {
-  const now = Date.now();
-  if (!cachedData || now - cacheTimestamp > 60000) {
-    cachedData = await db.find({ status: "active" });
-    cacheTimestamp = now;
-  }
-  return cachedData;
-}
-```
+    async function getCachedData(): Promise<any[]> {
+      const now = Date.now();
+      if (!cachedData || now - cacheTimestamp > 60000) {
+        cachedData = await db.find({ status: "active" });
+        cacheTimestamp = now;
+      }
+      return cachedData;
+    }
+    ```
+    </TabItem>
+
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    let cachedData = null;
+    let cacheTimestamp = 0;
+
+    async function getCachedData() {
+      const now = Date.now();
+      if (!cachedData || now - cacheTimestamp > 60000) {
+        cachedData = await db.find({ status: "active" });
+        cacheTimestamp = now;
+      }
+      return cachedData;
+    }
+    ```
+
+  </TabItem>
+</Tabs>
 
 ### Batch Operations
 
-```typescript
-async function batchInsert(records: any[]): Promise<void> {
-  const batchSize = 100;
-  for (let i = 0; i < records.length; i += batchSize) {
-    const batch = records.slice(i, i + batchSize);
-    await db.insert(batch);
-  }
-}
-```
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      async function batchInsert(records: any[]): Promise<void> {
+        const batchSize = 100;
+        for (let i = 0; i < records.length; i += batchSize) {
+          const batch = records.slice(i, i + batchSize);
+          await db.insert(batch);
+        }
+      }
+      ```
+    </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function batchInsert(records) {
+      const batchSize = 100;
+      for (let i = 0; i < records.length; i += batchSize) {
+        const batch = records.slice(i, i + batchSize);
+        await db.insert(batch);
+      }
+    }
+    ```
+
+  </TabItem>
+</Tabs>
 
 ### Data Migration
 
