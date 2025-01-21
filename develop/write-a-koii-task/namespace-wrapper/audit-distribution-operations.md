@@ -20,7 +20,7 @@ Audits a submission for a specific round
   - isValid: boolean
   - voterKeypair: Keypair
   - round: number
-- **Outputs**: Promise resolving to audit result
+- **Outputs**: Audit result
 - **Example Usage and Output**:
 
 ```typescript
@@ -86,7 +86,7 @@ Audits a distribution list submission
   - isValid: boolean (whether the distribution is valid)
   - voterKeypair: Keypair
   - round: number (the round number)
-- **Outputs**: Promise resolving to audit result
+- **Outputs**: Audit result
 - **Example Usage and Output**:
 
 ```typescript
@@ -133,7 +133,7 @@ Gets the distribution list for a specific round
 - **Inputs**:
   - publicKey: string
   - round: Round number
-- **Outputs**: Promise resolving to distribution list
+- **Outputs**: Distribution list
 - **Example Usage and Output**:
 
 ```typescript
@@ -159,7 +159,7 @@ Selects nodes for distribution
 - **Inputs**:
   - round: Round number
   - isPreviousFailed: Whether previous attempt failed
-- **Outputs**: Promise resolving to selected node public key
+- **Outputs**: Selected node public key
 - **Example Usage**:
 
 ```typescript
@@ -225,7 +225,7 @@ Validates and votes on node submissions
 - **Inputs**:
   - validate: Validation function
   - round: Current round number
-- **Outputs**: Promise resolving to validation result
+- **Outputs**: Void if no issue, otherwise a string indicating validation status
 - **Example Usage**:
 
 ```typescript
@@ -241,7 +241,7 @@ await namespaceWrapper.validateAndVoteOnNodes(
 Verifies submissions and updates the current round
 
 - **Input**: Add the submission and the roundNumber
-- **Outputs**: Promise resolving when complete
+- **Outputs**: Void once complete
 - **Example Usage**:
 
 ```typescript

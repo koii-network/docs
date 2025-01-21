@@ -13,7 +13,7 @@ Retrieves information about network nodes
 
 - **Inputs**:
   - url: API endpoint URL
-- **Outputs**: An array of objects representing the node information, directly returned by the function.
+- **Outputs**: Array of node information objects
 - **Example Usage and Output**:
 
 ```typescript
@@ -38,7 +38,7 @@ console.log(nodes);
 
 Gets the current RPC URL for the Koii network
 
-- **Outputs**: Promise resolving to the RPC URL
+- **Outputs**: String containing the RPC URL or void
 - **Example Usage and Output**:
 
 ```typescript
@@ -52,11 +52,11 @@ console.log(rpcUrl);
 
 Gets the path to the task's NeDB database
 
-- **Outputs**: Promise resolving to database path
+- **Outputs**: String containing the database path
 - **Example Usage**:
 
 ```typescript
-const dbPath = await namespaceWrapper.getTaskLevelDBPath();
+const dbPath = await namespaceWrapper.getTaskDBPath();
 
 console.log(dbPath);
 // Output:
@@ -67,7 +67,7 @@ console.log(dbPath);
 
 Gets the base path to the task folder for performing file operations
 
-- **Outputs**: Promise resolving to base path
+- **Outputs**: String containing the base path
 - **Example Usage**:
 
 ```typescript
@@ -80,9 +80,9 @@ console.log(basePath);
 
 ## getRound
 
-Gets the current round number
+Gets the current round number. [What is a round?](/develop/task-development/key-concepts#what-is-a-round)
 
-- **Outputs**: Promise resolving to current round number
+- **Outputs**: Current round number
 - **Example Usage**:
 
 ```typescript
@@ -97,7 +97,7 @@ console.log(currentRound);
 
 Gets the submitter's account Keypair
 
-- **Outputs**: Promise resolving to submitter's Keypair
+- **Outputs**: Submitter's Keypair
 - **Example Usage**:
 
 ```typescript
@@ -111,7 +111,7 @@ const submitterKey = await namespaceWrapper.getSubmitterAccount();
 
 Gets the main account's public key
 
-- **Outputs**: Promise resolving to main account public key
+- **Outputs**: Main account public key
 - **Example Usage**:
 
 ```typescript
@@ -171,7 +171,7 @@ try {
 
 ## getSlot
 
-Get the current slot number
+Get the current slot number. [What is a Slot?](/develop/task-development/key-concepts#what-is-a-timestamp-and-slot)
 
 - **Output**: returns a number
 - **Example Usage**:
@@ -195,7 +195,7 @@ try {
 
 Gets average slot time for the network
 
-- **Outputs**: Promise resolving to slot time in milliseconds
+- **Outputs**: Slot time in milliseconds
 - **Example Usage and Output**:
 
 ```typescript

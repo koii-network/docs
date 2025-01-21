@@ -27,7 +27,7 @@ Retrieves the state of the task
   };
   ```
 
-- **Outputs**: Promise resolving to task state object
+- **Outputs**: Task state object or `null`
 
 ### **Example Usage of getTaskState**
 
@@ -156,7 +156,7 @@ Task state sample:
 
 Gets the task node version
 
-- **Outputs**: Promise resolving to version string
+- **Outputs**: Version string
 - **Example Usage**:
 
 ```typescript
@@ -170,7 +170,7 @@ console.log(version); // Output: "1.11.19";
 Retrieves submission information for the task
 
 - **Inputs**: round: number (current round number)
-- **Outputs**: Promise resolving to submission state
+- **Outputs**: Submission state
 - **Example Usage and Output**:
 
 ```typescript
@@ -206,7 +206,7 @@ try {
 Gets distribution information for the task
 
 - **Input**: round number (current round number)
-- **Outputs**: Promise resolving to distribution info
+- **Outputs**: Distribution info
 - **Example Usage**:
 
 ```typescript
