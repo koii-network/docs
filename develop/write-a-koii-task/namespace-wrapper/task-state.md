@@ -1,8 +1,8 @@
 ---
-title: Task Management
+title: Task Status
 description: Task State
 image: img/thumbnail.png
-sidebar_label: Task Management
+sidebar_label: Task Status
 ---
 
 import Tabs from "@theme/Tabs";
@@ -15,17 +15,21 @@ A task's state can be retrieved using the namespace methods.
 Retrieves the state of the task
 
 - **Inputs**:
+
   - options: Configuration options for state retrieval
+
   ```
   const option = {
-    is_submission_required?: boolean, // Whether to include submission data
-    is_distribution_required?: boolean, // Whether to include distribution data
-    is_available_balances_required?: boolean, // Whether to include balance data
-    is_stake_list_required?: boolean // Whether to include stake list
-  }
+    is_submission_required?: boolean,
+    is_distribution_required?: boolean,
+    is_available_balances_required?: boolean,
+    is_stake_list_required?: boolean
+  };
   ```
+
 - **Outputs**: Promise resolving to task state object
-- **Example Usage of getTaskState**
+
+### **Example Usage of getTaskState**
 
 ```typescript
 // Data will be included if true, otherwise not shown even if fields are present.
@@ -39,7 +43,7 @@ const state = await namespaceWrapper.getTaskState({
 console.log(state); // check the The task state object below
 ```
 
-- **Example Usage of getTaskStateById**
+### **Example Usage of getTaskStateById**
 
 <Tabs>
   <TabItem value="typescript" label="TypeScript">

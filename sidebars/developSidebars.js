@@ -111,14 +111,14 @@ const sidebars = {
       items: [
         "write-a-koii-task/namespace-wrapper/installing-namespace-wrapper",
         "write-a-koii-task/namespace-wrapper/methodName",
+        "write-a-koii-task/namespace-wrapper/environment-variables",
         "write-a-koii-task/namespace-wrapper/rest-apis",
         "write-a-koii-task/namespace-wrapper/nedb",
         "write-a-koii-task/namespace-wrapper/filesystem-access",
         "write-a-koii-task/namespace-wrapper/wallet-signatures",
         "write-a-koii-task/namespace-wrapper/task-state",
-
-        "write-a-koii-task/namespace-wrapper/keys-and-secrets",
-        "write-a-koii-task/namespace-wrapper/timestamp-round-and-slot",
+        "write-a-koii-task/namespace-wrapper/network-task-handling",
+        "write-a-koii-task/namespace-wrapper/audit-distribution-operations",
       ],
     },
     {

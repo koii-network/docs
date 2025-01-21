@@ -29,7 +29,11 @@ There are two methods provided by the `namespaceWrapper` for signing transaction
 
 ### 1. sendAndConfirmTransactionWrapper()
 
-Transactions are groups of instructions that are accompanied by signatures. To interact with programs on the K2 network, it is necessary to create, **sign**, and Sends and confirms a transaction on the Koii network.
+Transactions are groups of instructions that are accompanied by signatures. To interact with programs on the K2 network, it is necessary to **create** and **sign** transactions before sending and confirming them on the Koii network.
+
+:::note
+The main feature of the wrapper is that it manages the connection process seamlessly, eliminating the need for manual connection handling.
+:::
 
 <Tabs>
   <TabItem value="typescript" label="Typescript">

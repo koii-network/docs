@@ -5,44 +5,59 @@ image: img/thumbnail.png
 sidebar_label: REST APIs
 ---
 
-
 # REST APIs in Koii Tasks
 
 The Namespace Wrapper provides built-in support for REST APIs through Express.js, enabling tasks to handle HTTP requests and serve responses. This functionality is essential for tasks that need to communicate with external services or provide API endpoints.
 
-## Overview
+## Key Features
 
-Express.js is integrated into the Koii task environment, providing:
-- HTTP request handling with various verbs (GET, POST, PUT, DELETE)
-- Middleware support for request processing
-- Route management
-- Response handling
+- **Handle HTTP requests** (GET, POST, PUT, DELETE)
+- **Use middleware** for data processing
+- **Define custom routes** for specific API endpoints
 
-## Basic Setup
+## Setup Overview
 
-The Express app is automatically initialized in the task environment. You can access it through the task's main file:
+The Express app is automatically initialized in Koii. You simply need to define your routes to handle different API requests.
 
-```javascript
-const { namespaceWrapper } = require('@_koii/namespace-wrapper');
+### Basic Route Setup
 
-// The app object is available in your task
-if (app) {
-  // Define your routes and middleware here
+Here's an example of how to define a simple API endpoint:
+
+```typescript
+import { namespaceWrapper, app } from "@_koii/namespace-wrapper";
+/**
+ *
+ * Define all your custom routes here
+ *
+ */
+
+// Define routes
+export async function routes() {
+  app.get("/value", async (_req, res) => {
+    const value = await namespaceWrapper.storeGet("value");
+    console.log("value", value);
+    res.status(200).json({ value: value });
+  });
 }
 ```
 
-## Route Handling
+## Common Routes and Operations
 
 ### Basic Routes
 
+- **GET**: Retrieves data
+- **POST**: Submits data
+
+Example of a GET and POST route:
+
 ```javascript
 // GET endpoint
-app.get('/status', (req, res) => {
-  res.json({ status: 'active' });
+app.get("/status", (req, res) => {
+  res.json({ status: "active" });
 });
 
 // POST endpoint
-app.post('/submit-data', async (req, res) => {
+app.post("/submit-data", async (req, res) => {
   try {
     const data = req.body;
     await processData(data);
@@ -55,68 +70,73 @@ app.post('/submit-data', async (req, res) => {
 
 ### Route Parameters
 
+Routes can include both **URL** and **query** parameters.
+
 ```javascript
 // Route with URL parameters
-app.get('/task/:taskId', (req, res) => {
+app.get("/task/:taskId", (req, res) => {
   const taskId = req.params.taskId;
   res.json({ taskId });
 });
 
 // Route with query parameters
-app.get('/search', (req, res) => {
+app.get("/search", (req, res) => {
   const { query, limit } = req.query;
   res.json({ query, limit });
 });
 ```
 
-## Middleware
+## Middleware: Processing Requests
 
-### Request Processing
+Middleware functions allow you to process incoming requests before they reach your routes. Here's how to add logging and authentication:
 
 ```javascript
-// Logging middleware
+// Example: Logging middleware
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.path}`);
   next();
 });
 
-// Authentication middleware
+// Example: Authentication middleware
 const authMiddleware = (req, res, next) => {
   const token = req.headers.authorization;
   if (!token) {
-    return res.status(401).json({ error: 'Unauthorized' });
+    return res.status(401).json({ error: "Unauthorized" });
   }
   next();
 };
 
-// Apply middleware to specific routes
-app.get('/protected', authMiddleware, (req, res) => {
-  res.json({ data: 'protected data' });
+// Protect a route with authentication
+app.get("/protected", authMiddleware, (req, res) => {
+  res.json({ data: "protected data" });
 });
 ```
 
 ### Error Handling
 
+You can manage errors globally with a simple error-handling middleware:
+
 ```javascript
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({
-    error: 'Internal Server Error',
-    message: err.message
-  });
+  res
+    .status(500)
+    .json({ error: "Internal Server Error", message: err.message });
 });
 ```
 
-## Request Handling Examples
+## Special Operations
 
 ### File Upload
 
-```javascript
-const multer = require('multer');
-const upload = multer({ dest: 'uploads/' });
+Handle file uploads with **multer**:
 
-app.post('/upload', upload.single('file'), async (req, res) => {
+```javascript
+const multer = require("multer");
+const upload = multer({ dest: "uploads/" });
+
+app.post("/upload", upload.single("file"), async (req, res) => {
   try {
     const file = req.file;
     const filePath = await processUploadedFile(file);
@@ -129,8 +149,10 @@ app.post('/upload', upload.single('file'), async (req, res) => {
 
 ### JSON Data Processing
 
+You can process JSON data in POST requests like this:
+
 ```javascript
-app.post('/process-json', express.json(), async (req, res) => {
+app.post("/process-json", express.json(), async (req, res) => {
   try {
     const data = req.body;
     const result = await processJsonData(data);
@@ -141,24 +163,26 @@ app.post('/process-json', express.json(), async (req, res) => {
 });
 ```
 
-### Streaming Response
+### Streaming Responses
+
+For streaming data to clients:
 
 ```javascript
-app.get('/stream-data', (req, res) => {
+app.get("/stream-data", (req, res) => {
   const stream = createDataStream();
   stream.pipe(res);
 });
 ```
 
-## Integration with Task State
+## Integrating with Task State
 
-### State-Aware Endpoints
+You can interact with the task state to fetch or update task data:
 
 ```javascript
-app.get('/task-state', async (req, res) => {
+app.get("/task-state", async (req, res) => {
   try {
     const state = await namespaceWrapper.getTaskState({
-      is_submission_required: true
+      is_submission_required: true,
     });
     res.json(state);
   } catch (error) {
@@ -167,52 +191,38 @@ app.get('/task-state', async (req, res) => {
 });
 ```
 
-### Round Management
-
-```javascript
-app.post('/submit-round', async (req, res) => {
-  try {
-    const { submission } = req.body;
-    const round = await namespaceWrapper.getRound();
-    await namespaceWrapper.checkSubmissionAndUpdateRound(submission, round);
-    res.json({ success: true, round });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-```
-
-## Security Best Practices
+## Best Practices for Security
 
 ### Input Validation
 
+Ensure that user input is validated before being processed:
+
 ```javascript
-const { body, validationResult } = require('express-validator');
+const { body, validationResult } = require("express-validator");
 
 app.post(
-  '/validate-input',
-  [
-    body('email').isEmail(),
-    body('password').isLength({ min: 6 })
-  ],
+  "/validate-input",
+  [body("email").isEmail(), body("password").isLength({ min: 6 })],
   (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
     res.json({ success: true });
-  }
+  },
 );
 ```
 
 ### Rate Limiting
 
+Limit the number of requests a user can make:
+
 ```javascript
-const rateLimit = require('express-rate-limit');
+const rateLimit = require("express-rate-limit");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // limit each IP to 100 requests per windowMs
+  max: 100, // limit each IP to 100 requests
 });
 
 app.use(limiter);
@@ -220,97 +230,44 @@ app.use(limiter);
 
 ### CORS Configuration
 
-```javascript
-const cors = require('cors');
-
-// Basic CORS setup
-app.use(cors());
-
-// Custom CORS configuration
-app.use(cors({
-  origin: ['https://allowed-domain.com'],
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
-```
-
-## Error Handling Patterns
-
-### Async Route Handler
+Control which domains can access your API:
 
 ```javascript
-const asyncHandler = fn => (req, res, next) => {
-  return Promise
-    .resolve(fn(req, res, next))
-    .catch(next);
-};
+const cors = require("cors");
 
-app.get('/async-route', asyncHandler(async (req, res) => {
-  const data = await fetchData();
-  res.json(data);
-}));
-```
+app.use(cors()); // Allow all domains by default
 
-### Custom Error Classes
-
-```javascript
-class ValidationError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = 'ValidationError';
-    this.status = 400;
-  }
-}
-
-app.use((err, req, res, next) => {
-  if (err instanceof ValidationError) {
-    return res.status(err.status).json({
-      error: err.name,
-      message: err.message
-    });
-  }
-  next(err);
-});
-```
-
-## Testing Endpoints
-
-### Basic Test Setup
-
-```javascript
-const request = require('supertest');
-
-describe('API Endpoints', () => {
-  it('GET /status should return status', async () => {
-    const response = await request(app)
-      .get('/status')
-      .expect(200);
-    
-    expect(response.body).toHaveProperty('status');
-  });
-});
+// Or configure it specifically
+app.use(
+  cors({
+    origin: ["https://allowed-domain.com"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }),
+);
 ```
 
 ## Monitoring and Logging
 
 ### Request Logging
 
+Log every request for debugging or auditing:
+
 ```javascript
-const morgan = require('morgan');
+const morgan = require("morgan");
 
-// Log all requests
-app.use(morgan('combined'));
-
-// Custom logging format
-app.use(morgan(':method :url :status :response-time ms'));
+app.use(morgan("combined"));
+app.use(morgan(":method :url :status :response-time ms"));
 ```
 
 ### Performance Monitoring
 
+Track the time each request takes to process:
+
 ```javascript
 app.use((req, res, next) => {
   const start = Date.now();
-  res.on('finish', () => {
+  res.on("finish", () => {
     const duration = Date.now() - start;
     console.log(`${req.method} ${req.url} took ${duration}ms`);
   });
@@ -318,17 +275,33 @@ app.use((req, res, next) => {
 });
 ```
 
+## Testing API Endpoints
+
+Test your API endpoints to ensure they work as expected:
+
+```javascript
+const request = require("supertest");
+
+describe("API Endpoints", () => {
+  it("GET /status should return status", async () => {
+    const response = await request(app).get("/status").expect(200);
+    expect(response.body).toHaveProperty("status");
+  });
+});
+```
+
 ## Best Practices
 
-1. **Error Handling**: Always implement proper error handling for all routes
-2. **Validation**: Validate all input data before processing
-3. **Security**: Implement appropriate security measures (authentication, rate limiting)
-4. **Logging**: Use proper logging for debugging and monitoring
-5. **Testing**: Write tests for all endpoints
+1. **Error Handling**: Ensure all routes have proper error handling.
+2. **Validation**: Validate input data before processing.
+3. **Security**: Implement security measures (authentication, rate limiting).
+4. **Logging**: Use logging for debugging and monitoring.
+5. **Testing**: Write tests for all endpoints.
 
 ## Next Steps
 
 For more information about related features, refer to:
+
 - [Task State Management](./task-state.md)
 - [NeDB Storage](./nedb.md)
 - [Wallet Signatures](./wallet-signatures.md)

@@ -23,6 +23,10 @@ For a list of available `fsPromises` methods, refer to: [fsPromises Methods Name
 
 File system method to execute.
 
+:::note
+FS ensures that operations are performed within the task-specific folder
+:::
+
 #### Parameters:
 
 - `method`: The `fsPromise` method to invoke.
@@ -68,6 +72,10 @@ File system method to execute.
 ### `fsStaking` Method
 
 A decentralized staking platform enabling secure token locking for rewards.
+
+:::note
+It retrieves information directly from the staking wallet's directory, ensuring all data and operations are specific to its structure and contents.
+:::
 
 #### Parameters:
 

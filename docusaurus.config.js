@@ -447,10 +447,6 @@ const config = {
             from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/filesystem-access",
           },
           {
-            to: "/develop/write-a-koii-task/namespace-wrapper/keys-and-secrets",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/keys-and-secrets",
-          },
-          {
             to: "/develop/write-a-koii-task/namespace-wrapper/nedb",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/nedb",
           },
@@ -461,10 +457,6 @@ const config = {
           {
             to: "/develop/write-a-koii-task/namespace-wrapper/task-state",
             from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/task-state",
-          },
-          {
-            to: "/develop/write-a-koii-task/namespace-wrapper/timestamp-round-and-slot",
-            from: "/develop/write-a-koii-task/task-development-kit-tdk/using-the-task-namespace/timestamp-round-and-slot",
           },
           {
             to: "/develop/write-a-koii-task/namespace-wrapper/wallet-signatures",

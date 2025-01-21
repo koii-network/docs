@@ -7,6 +7,10 @@ sidebar_label: Namespace Wrapper Methods
 
 import Tooltip from "@site/src/components/tooltip";
 
+### Environment Variables
+
+Environment variables are already pre-configured by the `@_koii/namespace-wrapper` package. You can directly import and use them in your tasks without additional setup. For detailed examples, refer to the [**Environment Variables Usage**](environment-variables) documentation.
+
 ### Database Operations
 
 | Method                                                                     | Description                                   |
@@ -36,7 +40,7 @@ import Tooltip from "@site/src/components/tooltip";
 | [`claimReward(stakePotAccount: PublicKey, beneficiaryAccount: PublicKey, claimerKeypair: Keypair): Promise<void>`](wallet-signatures#claimreward)                                         | Claims rewards for a specific round                                             |
 | [`stakeOnChain(taskStateInfoPublicKey: PublicKey, stakingAccKeypair: Keypair, stakePotAccount: PublicKey, stakeAmount: number): Promise<string \| void>`](wallet-signatures#stakeonchain) | Stakes tokens for a task.                                                       |
 
-### Task Management and Task Information
+### Task Status
 
 | Method                                                                                                                                                        | Description                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -46,19 +50,20 @@ import Tooltip from "@site/src/components/tooltip";
 | [`getTaskSubmissionInfo(round: number): Promise<TaskSubmissionState \| null>`](task-state#gettasksubmissioninfo)                                              | Retrieves submission information for the task                 |
 | [`getTaskDistributionInfo(round: number): Promise<TaskDistributionInfo \| null>`](task-state#gettaskdistributioninfo)                                         | Gets distribution information for the task                    |
 
-### Network and Extra Task Management Methods
+### Network and Task Handling Methods
 
-| Method                                                                                  | Description                                                          |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| [`getNodes(url: string): Promise<any>`](#getnodes)                                      | Retrieves information about network nodes                            |
-| [`getRpcUrl(): Promise<string \| void>`](#getrpcurl)                                    | Gets the current RPC URL for the Koii network                        |
-| [`getTaskDBPath(): Promise<string>`](#gettaskdbpath)                                    | Gets the path to the task's NeDB database                            |
-| [`getBasePath(): Promise<string>`](#getbasepath)                                        | Gets the base path to the task folder for performing file operations |
-| [`getRound(): Promise<number>`](#getround)                                              | Gets the current round number                                        |
-| [`getSubmitterAccount(): Promise<Keypair \| null>`](#getsubmitteraccount)               | Gets the submitter's account Keypair                                 |
-| [`getMainAccountPubkey(): Promise<string \| null>`](#getmainaccountpubkey)              | Gets the main account's public key                                   |
-| [`logger(level: LogLevel, message: string, action: string): Promise<boolean>`](#logger) | Logs messages based on specified log level (log, warn, error).       |
-| [`getSlot(): Promise<number>`](#getslot)                                                | Gets the current slot number                                         |
+| Method                                                                                                       | Description                                                          |
+| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| [`getNodes(url: string)`](network-task-handling#getnodes)                                                    | Retrieves information about network nodes                            |
+| [`getRpcUrl(): Promise<string \| void>`](network-task-handling#getrpcurl)                                    | Gets the current RPC URL for the Koii network                        |
+| [`getTaskDBPath(): Promise<string>`](network-task-handling#gettaskdbpath)                                    | Gets the path to the task's NeDB database                            |
+| [`getBasePath(): Promise<string>`](network-task-handling#getbasepath)                                        | Gets the base path to the task folder for performing file operations |
+| [`getRound(): Promise<number>`](network-task-handling#getround)                                              | Gets the current round number                                        |
+| [`getSubmitterAccount(): Promise<Keypair \| null>`](network-task-handling#getsubmitteraccount)               | Gets the submitter's account Keypair                                 |
+| [`getMainAccountPubkey(): Promise<string \| null>`](network-task-handling#getmainaccountpubkey)              | Gets the main account's public key                                   |
+| [`logger(level: LogLevel, message: string, action: string): Promise<boolean>`](network-task-handling#logger) | Logs messages based on specified log level (log, warn, error).       |
+| [`getSlot(): Promise<number>`](network-task-handling#getslot)                                                | Gets the current slot number                                         |
+| [`getAverageSlotTime(): Promise<number>`](#getaverageslottime)                                               | Gets average slot time for the network                               |
 
 ### Audit and Distribution Operations
 
@@ -71,7 +76,6 @@ import Tooltip from "@site/src/components/tooltip";
 | [`validateAndVoteOnDistributionList(validateDistribution: (submissionValue: string, round: number, nodePublicKey: string) => Promise<boolean>, round: number): Promise<string \| void>`](#validateandvoteondistributionlist) | Validates and votes on distribution lists          |
 | [`getDistributionList(publicKey: string, round: number): Promise<any \| null>`](#getdistributionlist)                                                                                                                        | Gets the distribution list for a specific round    |
 | [`nodeSelectionDistributionList(round: number, isPreviousFailed: boolean): Promise<string \| void>`](#nodeselectiondistributionlist)                                                                                         | Selects nodes for distribution                     |
-| [`getAverageSlotTime(): Promise<number>`](#getaverageslottime)                                                                                                                                                               | Gets average slot time for the network             |
 | [`payoutTrigger(round: number): Promise<void>`](#payouttrigger)                                                                                                                                                              | Triggers payout for a specific round               |
 | [`selectAndGenerateDistributionList(submitDistributionList: (round: number) => Promise<void>, round: number, isPreviousRoundFailed: boolean): Promise<void>`](#selectandgeneratedistributionlist)                            | Generates and selects distribution list            |
 | [`validateAndVoteOnNodes(validate: Function, round: number): Promise<void \| string>`](#validateandvoteonnodes)                                                                                                              | Validates and votes on node submissions            |

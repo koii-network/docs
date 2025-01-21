@@ -9,8 +9,6 @@ import Tooltip from "@site/src/components/tooltip";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# The Namespace Object
-
 The **Koii Namespace Wrapper** is a utility that helps Koii tasks interact with the network effortlessly. It handles task data, blockchain interactions, file operations, and node communication, so developers can focus on their core logic.
 
 ## Core Features
@@ -267,11 +265,12 @@ await namespaceWrapper.logger(
 
 To learn more about specific features, check out these guides:
 
-- [Installation Guide](./installing-namespace-wrapper.md) - Get started with the wrapper
-- [Namespace Wrapper Methods](./methodName.md) - For interacting with tasks and the blockchain
-- [REST APIs](./rest-apis.md) - Build HTTP endpoints
-- [Database Operations](./nedb.md) - Learn about data storage
-- [File System](./filesystem-access.md) - Handle files and directories
-- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with Blockchain Operations and Transaction Operations
-- [Task Management](./task-state.md) - Manage task state
-- [Network Operations](./network-operations.md) -
+- [Installation Guide](./installing-namespace-wrapper.md) - Get started with the wrapper.
+- [Namespace Wrapper Methods](./methodName.md) - Interact with tasks and the blockchain.
+- [Environment Variables](./environment-variables.md) - Import and use Environment Variables.
+- [REST APIs](./rest-apis.md) - Build HTTP endpoints.
+- [Database Operations](./nedb.md) - Learn about data storage.
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
