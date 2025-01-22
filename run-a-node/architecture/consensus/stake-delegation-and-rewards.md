@@ -161,7 +161,7 @@ be signed by the stake's `authorized_staker`.
 - `account[1]` - R - The VoteState instance.
 - `account[2]` - R - sysvar::clock account, carries information about current
   Bank epoch.
-- `account[3]` - R - sysvar::stakehistory account, carries information about
+- `account[3]` - R - sysvar::stake history account, carries information about
   stake history.
 - `account[4]` - R - stake::Config account, carries warmup, cooldown, and
   slashing configuration.
@@ -217,7 +217,7 @@ stake can be withdrawn. The transaction must be signed by the stake's
 
 ## Example Callflow
 
-![Passive Staking Callflow](/img/architecture/passive-staking-callflow.png)
+![Passive Staking Call flow](/img/architecture/passive-staking-callflow.png)
 
 ## Staking Rewards
 
@@ -335,6 +335,5 @@ transaction is also signed by a specified custodian. This information is
 gathered when the stake account is created, and stored in the Lockup field of
 the stake account's state. Changing the authorized staker or withdrawer is also
 subject to lock-up, as such an operation is effectively a transfer.
-
 
 <sub>This documentation incorporates substantial portions of the Solana documentation, adapted for Koii (K2). Solana’s architecture and underlying principles form the foundation of K2’s implementation. Content adapted under the terms of the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [Solana Documentation](https://docs.solana.com/) for more details.</sub>

@@ -1,100 +1,296 @@
 ---
 title: Filesystem Access
-description: The File System Access API allows read, write and file management capabilities.
+description: The File System Access API enables reading, writing, and managing files.
 image: img/thumbnail.png
-sidebar_label: Filesystem Access
+sidebar_label: File System Access
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 import Description from "@site/src/components/description";
 
 # Filesystem Access
 
-<Description
-  text="The File System Access API allows read, write and file management
-  capabilities."
-/>
+<Description text="The File System Access API enables reading, writing, and managing files." />
 
-This API allows interaction with files on a user's local device or user-accessible network file system. The core functionality of this API includes reading files, writing or saving files, and accessing the directory structure.
+The API allows interaction with local or network-based files. It provides methods for reading, writing, and managing directory structures using `fsPromises` within the `namespaceWrapper` class.
 
-Most interaction with files and directories is accomplished with `fsPromises` methods from the namespace wrapper class. The available `fsPromises` methods on the namespace wrapper class include `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream`.
+For a list of available `fsPromises` methods, refer to: [fsPromises Methods Names](https://docs.deno.com/api/node/fs/promises/).
 
-### fs Method
+## Available Methods
 
-The `fs` method is a useful utility that accepts three arguments:
+### `fs` Method
 
-- `method`: This refers to the `fsPromise` method that you want to call.
-- `path`: The path for the express call is relevant to the specific `fsPromise` method call.
-- `...args`: Any additional parameters that may be required for the `fsPromise` call.
+File system method to execute.
 
-```typescript
-async fs(method, path, ...args) {
-  // return Promise<any>
-}
-```
+:::note
+FS ensures that operations are performed within the task-specific folder
+:::
 
-Example usage of the `fs` function is demonstrated below, showcasing the creation of a new directory, copying a file, and creating a new file:
+#### Parameters:
 
-```js
-const { namespaceWrapper } = require('@_koii/namespace-wrapper');
+- `method`: The `fsPromise` method to invoke.
+- `path`: Target file or directory path.
+- `...args`: Additional method-specific parameters.
 
-// CREATE NEW DIRECTORY
-await namespaceWrapper.fs("mkdir", `uploads`, {
-  recursive: true,
-});
+#### Example:
 
-// COPY FILE
-await namespaceWrapper.fs("copyFile", `uploads/handler.js`, `utils/handler.js`);
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    
+    ```typescript
+    import { namespaceWrapper } from "@_koii/namespace-wrapper";
+    
+    // Create a directory
+    await namespaceWrapper.fs("mkdir", "uploads", { recursive: true });
+    
+    // Copy a file
+    await namespaceWrapper.fs("copyFile", "uploads/handler.js", "utils/handler.js");
+    
+    // Create a file
+    await namespaceWrapper.fs("writeFile", "uploads/handler.js");
+    ```
+    
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    
+    ```javascript
+    const { namespaceWrapper } = require("@_koii/namespace-wrapper");
+    
+    // Create a directory
+    await namespaceWrapper.fs("mkdir", "uploads", { recursive: true });
+    
+    // Copy a file
+    await namespaceWrapper.fs("copyFile", "uploads/handler.js", "utils/handler.js");
+    
+    // Create a file
+    await namespaceWrapper.fs("writeFile", "uploads/handler.js");
+    ```
+  </TabItem>
+</Tabs>
 
-// CREATE NEW FILE
-await namespaceWrapper.fs("writeFile", `uploads/handler.js`);
-```
+### `fsStaking` Method
 
-### fsStaking Method
+A decentralized staking platform enabling secure token locking for rewards.
 
-The `fsStaking` method takes in three arguments:
+:::note
+It retrieves information directly from the staking wallet's directory, ensuring all data and operations are specific to its structure and contents.
+:::
 
-- `method`: The `fsPromise` method to call
-- `path`: The path for the express call
-- `...args`: Any remaining parameters for the FS call
+#### Parameters:
 
-```js
-async fsStaking(method, path, ...args) {
-  // return Promise<any>
-}
-```
+- `method`: The `fsPromise` method to call.
+- `path`: Target file or directory path.
+- `...args`: Additional parameters.
 
-### fsWriteStream Method
+#### Example:
 
-The `fsWriteStream` method accepts one argument:
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    
+    ```typescript
+    import { namespaceWrapper } from "@_koii/namespace-wrapper";
+    
+    const data = await namespaceWrapper.fsStaking(
+      'readFile',
+      'stake_info.txt',
+      'utf8',
+    )
+    console.log(data)
+    ```
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    
+    ```javascript
+    const { namespaceWrapper } = require("@_koii/namespace-wrapper");
 
-- `imagepath`: A `string` representing the image path.
+    const data = await namespaceWrapper.fsStaking(
+      'readFile',
+      'stake_info.txt',
+      'utf8',
+    )
+    console.log(data)
+    ```
 
-```js
-  async fsWriteStream(imagepath: string) {
-    const basePath = 'namespace/' + this.taskTxId;
-    await fsPromises.mkdir(basePath, { recursive: true }).catch(console.error);
-    const image = basePath + '/' + imagepath;
-    const writer = fs.createWriteStream(image);
-    return writer;
-  }
-```
+  </TabItem>
+</Tabs>
 
-### fsReadStream Method
+### `fsWriteStream` Method
 
-The `fsReadStream` method accepts one argument:
+Creates a write stream for file operations
 
-- `imagepath`: A `string` to the image path
+#### Parameters:
 
-```js
-  async fsReadStream(imagepath: string) {
-    const basePath = 'namespace/' + this.taskTxId;
-    await fsPromises.mkdir(basePath, { recursive: true }).catch(console.error);
-    const image = basePath + imagepath;
-    const file = fs.readFileSync(image);
-    return file;
-  }
-```
+- `imagepath`: Target image file path.
 
-In the provided examples, the `fs` method is employed to call various `fsPromise` methods such as `mkdir`, `copyFile`, and `writeFile`. Each method receives parameters that specify the relevant paths and options needed for the corresponding operations. This abstraction streamlines and consolidates file system interactions within the Koii task, enhancing the convenience and simplicity of managing file-related tasks.
+#### Example:
 
-Additionally, the `fsStaking` method, `fsWriteStream` method, and `fsReadStream` method are implemented to facilitate file system interactions within the Koii task. These methods enable operations like staking tokens, creating write streams, and reading streams from the file system. This approach ensures efficient management of file-related tasks, catering to the specific requirements of each operation. As a result, developers benefit from a cohesive and coherent approach to handling file system tasks while developing Koii tasks, promoting effective and streamlined development processes.
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    ```typescript
+    const getBasePath: string = await namespaceWrapper.getBasePath();
+    const imgPath: string = `${getBasePath}/img/output.jpg`;
+
+    try{
+      // Successful write stream creation and usage
+      const writeStream = await namespaceWrapper.fsWriteStream(imgPath);
+      if (writeStream) {
+        // Write image data
+        writeStream.write(imageBuffer);
+        writeStream.end();
+
+        writeStream.on('finish', () => {
+          console.log('Write completed');
+          // Output: Write completed
+        });
+      }
+    }
+    catch (error){
+      console.error("Error writing image:", error);
+    }
+
+    // Error case (invalid path)
+    try {
+      const invalidStream = await namespaceWrapper.fsWriteStream('/invalid/path/image.jpg');
+    } catch (error) {
+      console.error(error);
+    }
+
+    // Error case (permission denied)
+    try {
+      const restrictedStream = await namespaceWrapper.fsWriteStream('/root/restricted.jpg');
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    
+    ```javascript
+    const getBasePath = await namespaceWrapper.getBasePath();
+    const imgPath = `${getBasePath}/img/output.jpg`;
+
+    try{
+      // Successful write stream creation and usage
+      const writeStream = await namespaceWrapper.fsWriteStream(imgPath);
+      if (writeStream) {
+        // Write image data
+        writeStream.write(imageBuffer);
+        writeStream.end();
+
+        writeStream.on('finish', () => {
+          console.log('Write completed');
+          // Output: Write completed
+        });
+      }
+    }
+    catch (error) {
+      console.error("Error writing image:", error);
+    }
+
+    // Error case (invalid path)
+    try {
+      const invalidStream = await namespaceWrapper.fsWriteStream('/invalid/path/image.jpg');
+    } catch (error) {
+      console.error(error);
+    }
+
+    // Error case (permission denied)
+    try {
+      const restrictedStream = await namespaceWrapper.fsWriteStream('/root/restricted.jpg');
+    } catch (error) {
+      console.error(error);
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+### `fsReadStream` Method
+
+Creates a read stream for file operations
+
+#### Parameters:
+
+- `imagepath`: Target image file path.
+
+#### Example:
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    
+    ```typescript
+    const getBasePath: string = await namespaceWrapper.getBasePath();
+    const imgPath: string = `${getBasePath}/img/output.jpg`;
+
+    try {
+      // Successful read
+      const imageBuffer: Buffer = await namespaceWrapper.fsReadStream(imgPath);
+      console.log(imageBuffer);
+      // Output: <Buffer ...>
+    } catch (error) {
+      console.error("Error reading image:", error);
+    }
+
+    // Error case (file not found)
+    try {
+      const buffer: Buffer = await namespaceWrapper.fsReadStream('nonexistent.jpg');
+    } catch (error) {
+      console.error("File not found:", error);
+    }
+
+    // Error case (corrupted file)
+    try {
+      const buffer: Buffer = await namespaceWrapper.fsReadStream('corrupted.jpg');
+    } catch (error) {
+      console.error("Corrupted file:", error);
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    
+    ```javascript
+    const getBasePath = await namespaceWrapper.getBasePath();
+    const imgPath = `${getBasePath}/img/output.jpg`;
+
+    try {
+      // Successful read
+      const imageBuffer = await namespaceWrapper.fsReadStream(imgPath);
+      console.log(imageBuffer);
+      // Output: <Buffer ff d8 ff e0 00 10 4a 46 49 46 ...>
+    } catch (error) {
+      console.error("Error reading image:", error);
+    }
+
+    // Error case (file not found)
+    try {
+      const buffer = await namespaceWrapper.fsReadStream('nonexistent.jpg');
+    } catch (error) {
+      console.error("File not found:", error);
+    }
+
+    // Error case (corrupted file)
+    try {
+      const buffer = await namespaceWrapper.fsReadStream('corrupted.jpg');
+    } catch (error) {
+      console.error("Corrupted file:", error);
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Summary
+
+The File System Access API simplifies interaction with files and directories. Methods like `fs`, `fsStaking`, `fsWriteStream`, and `fsReadStream` provide a structured approach to managing file operations efficiently within Koii tasks.
+
+## Next Steps
+
+To learn more about specific features, check out these guides:
+
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.
