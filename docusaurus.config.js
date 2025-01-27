@@ -8,7 +8,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').Conf123123ig} */
 const config = {
   title: "A Better Internet For Everyone",
   tagline:
