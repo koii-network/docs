@@ -3,12 +3,12 @@
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
-
+12333333333333333333
 const dotenv = require("dotenv");
 
 dotenv.config();
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').Conf123123ig} */
 const config = {
   title: "A Better Internet For Everyone",
   tagline:
