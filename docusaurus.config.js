@@ -853,20 +853,16 @@ const config = {
             from: ["/develop/write-a-koii-task/kpl/intro", "/kpl"],
           },
           {
-            to: "/contractDev/smart-contract/helloworld",
+            to: "/contractDev/Contract/helloworld",
             from: "/develop/smart-contract/helloworld",
           },
-          // {
-          //   to: "/contractDev/rpcapi/*",
-          //   from: "/develop/rpcapi/*",
-          // },
-          {
-            to: "/contractDev/rpcapi/json-structures",
-            from: "/develop/rpcapi/json-structures",
-          },
-
         ],
         createRedirects(existingPath) {
+          if (existingPath.startsWith("/develop/rpcapi/")) {
+            return [
+              existingPath.replace("/develop/rpcapi/", "/contractDev/RPCAPI/")
+            ];
+          }
           if (existingPath.includes("/concepts/introduction")) {
             return [
               existingPath.replace(
