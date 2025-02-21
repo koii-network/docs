@@ -88,6 +88,20 @@ const config = {
         include: ["**/*.md", "**/*.mdx"],
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "contractDev",
+        path: "contractDev",
+        routeBasePath: "contractDev/",
+        sidebarPath: require.resolve("./sidebars/contractDevSidebars.js"),
+        editUrl: "https://github.com/koii-network/docs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+        include: ["**/*.md", "**/*.mdx"],
+      },
+    ],
 
     [
       "@docusaurus/plugin-content-docs",
@@ -838,8 +852,17 @@ const config = {
             to: "/develop/task-development/kpl-tokens",
             from: ["/develop/write-a-koii-task/kpl/intro", "/kpl"],
           },
+          {
+            to: "/contractDev/Contract/helloworld",
+            from: "/develop/smart-contract/helloworld",
+          },
         ],
         createRedirects(existingPath) {
+          if (existingPath.startsWith("/develop/rpcapi/")) {
+            return [
+              existingPath.replace("/develop/rpcapi/", "/contractDev/RPCAPI/")
+            ];
+          }
           if (existingPath.includes("/concepts/introduction")) {
             return [
               existingPath.replace(
@@ -983,9 +1006,16 @@ const config = {
             className: "header-text",
           },
           {
-            label: "</> Developers",
+            label: "</> Task Dev",
             to: "/develop/onboarding/welcome-to-koii",
             activeBasePath: "develop",
+            position: "left",
+            className: "header-text",
+          },
+          {
+            label: "</> Contract Dev",
+            to: "/contractDev/rpcapi/intro",
+            activeBasePath: "contractDev",
             position: "left",
             className: "header-text",
           },
