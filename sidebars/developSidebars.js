@@ -207,11 +207,11 @@ const sidebars = {
         "erc20-reward/distribution",
       ],
     },
-    {
-      type: "html",
-      value: "Smart Contract",
-      className: "sidebar-title top-margin",
-    },
+    // {
+    //   type: "html",
+    //   value: "Smart Contract",
+    //   className: "sidebar-title top-margin",
+    // },
     // "smart-contract/helloworld",
     // {
     //   type: "html",
