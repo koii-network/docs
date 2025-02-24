@@ -2,7 +2,7 @@
 
 Koii’s K2 chain is an enhanced fork of Solana, which means it retains the advantages of having an refined features to support our innovative Koii Task Program while also allowing for the migration and deployment of Solana-native programs in a more cost-effective manner. 
 
-So, why not bring your favorite Solana contracts to Koii now?
+So, why not bring your favorite Solana programs to Koii now?
 
 **Note:** Due to the numerous features added on top of Solana, maintaining synchronization with the original Solana chain has become increasingly challenging. As a result, Koii has stopped updating at Solana's **V1.14.19 mainnet beta version**:
 

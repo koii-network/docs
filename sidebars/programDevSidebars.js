@@ -17,11 +17,11 @@ const sidebars = {
     content: [
       {
         type: "html",
-        value: "K2 Solana Contract",
+        value: "K2 Solana Program",
         className: "sidebar-title top-margin",
       },
-      "Contract/Contract",
-      "Contract/helloworld",
+      "Program/MigrateProgram",
+      "Program/helloworld",
         {
             type: "html",
             value: "RPC",
