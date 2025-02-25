@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: Create a Koii Program in Rust
 ---
 
-Koii is a fork of Solana, so we are still keeping smart contracts in our chain. This quickstart guide will demonstrate how to quickly setup, build, and deploy your first Rust based Koii program to the blockchain.
+Koii is a fork of Solana, so we are still keeping solana programs in our chain. This quickstart guide will demonstrate how to quickly setup, build, and deploy your first Rust based Koii program to the blockchain.
 
 Do you have the Koii CLI installed?
 

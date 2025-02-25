@@ -1013,7 +1013,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "</> Contract Dev",
+            label: "</> Program Dev",
             to: "/programDev/rpcapi/intro",
             activeBasePath: "programDev",
             position: "left",
