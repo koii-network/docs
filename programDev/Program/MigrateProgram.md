@@ -4,7 +4,7 @@ Koii’s K2 chain is an enhanced fork of Solana, which means it retains the adva
 
 So, why not bring your favorite Solana programs to Koii now?
 
-**Note:** Due to the numerous features added on top of Solana, maintaining synchronization with the original Solana chain has become increasingly challenging. As a result, Koii has stopped updating at Solana's **V1.14.19 mainnet beta version**:
+**Note:** Due to the numerous features added on top of Solana, to ensure KOII remains highly stable, we are currently aligned with Solana's stable version, **V1.14.19 mainnet beta.**
 
 You can refer to [Solana V1.14.19 Release](https://github.com/solana-labs/solana/releases/tag/v1.14.19). 
 
@@ -66,11 +66,10 @@ error: package anchor-attribute-state v0.26.0 cannot be built because it require
 
 - Ensure that the SDK used in the program is compatible with Koii’s network requirements.
 - Update Solana endpoints in the JavaScript SDK to Koii endpoints:
-    - **Devnet:** [https://devnet.koii.network](https://devnet.koii.network/)
     - **Testnet:** [https://testnet.koii.network](https://testnet.koii.network/)
     - **Mainnet:** [https://mainnet.koii.network](https://mainnet.koii.network/)
 
-By following these structured steps, developers can efficiently migrate their Solana-native programs to Koii while ensuring compatibility and optimal performance.
+By following these structured steps, developers can efficiently migrate their Solana programs to Koii while ensuring compatibility and optimal performance.
 
 ## SPL Token Support
 Koii provides full support for SPL Token programs, ensuring compatibility with the SPL Token standard. You can create a new SPL Token using one of the following methods:
@@ -81,3 +80,4 @@ Koii provides full support for SPL Token programs, ensuring compatibility with t
 ### NFT Support (Coming Soon)
 We are actively working on migrating the Metaplex program to enable NFT functionality. Stay tuned for updates!
 
+### Please contact us through Telegram or Discord for any questions or support.
