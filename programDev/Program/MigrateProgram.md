@@ -72,7 +72,12 @@ error: package anchor-attribute-state v0.26.0 cannot be built because it require
 
 By following these structured steps, developers can efficiently migrate their Solana-native programs to Koii while ensuring compatibility and optimal performance.
 
-
 ## SPL Token Support
+Koii provides full support for SPL Token programs, ensuring compatibility with the SPL Token standard. You can create a new SPL Token using one of the following methods:
 
-Koii supports SPL Token programs, which are compatible with the SPL Token standard. You can either create a new SPL Token through the CLI or use our KPL Token Creator (https://kpl.koii.network/) to create a new token.
+- Command-Line Interface (CLI): Follow the steps outlined in our SPL Token Creation Guide.
+- KPL Token Creator: Use our intuitive KPL Token Creator to generate and manage SPL Tokens effortlessly.
+
+### NFT Support (Coming Soon)
+We are actively working on migrating the Metaplex program to enable NFT functionality. Stay tuned for updates!
+
