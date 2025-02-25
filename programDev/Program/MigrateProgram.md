@@ -75,8 +75,8 @@ By following these structured steps, developers can efficiently migrate their So
 ## SPL Token Support
 Koii provides full support for SPL Token programs, ensuring compatibility with the SPL Token standard. You can create a new SPL Token using one of the following methods:
 
-- Command-Line Interface (CLI): Follow the steps outlined in our SPL Token Creation Guide.
-- KPL Token Creator: Use our intuitive KPL Token Creator to generate and manage SPL Tokens effortlessly.
+- [Command-Line Interface (CLI)](https://www.koii.network/docs/koii/the-koii-token/add-koii-to-exchange/kpl-tokens): Follow the steps outlined in our SPL Token Creation Guide.
+- [KPL Token Creator](https://kpl.koii.network/): Use our intuitive KPL Token Creator to generate and manage SPL Tokens effortlessly.
 
 ### NFT Support (Coming Soon)
 We are actively working on migrating the Metaplex program to enable NFT functionality. Stay tuned for updates!
