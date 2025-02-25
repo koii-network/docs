@@ -1006,7 +1006,7 @@ const config = {
             className: "header-text",
           },
           {
-            label: "</> Developers",
+            label: "</> Task Dev",
             to: "/develop/onboarding/welcome-to-koii",
             activeBasePath: "develop",
             position: "left",

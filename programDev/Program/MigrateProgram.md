@@ -71,3 +71,8 @@ error: package anchor-attribute-state v0.26.0 cannot be built because it require
     - **Mainnet:** [https://mainnet.koii.network](https://mainnet.koii.network/)
 
 By following these structured steps, developers can efficiently migrate their Solana-native programs to Koii while ensuring compatibility and optimal performance.
+
+
+## SPL Token Support
+
+Koii supports SPL Token programs, which are compatible with the SPL Token standard. You can either create a new SPL Token through the CLI or use our KPL Token Creator (https://kpl.koii.network/) to create a new token.
