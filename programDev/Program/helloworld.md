@@ -2,7 +2,7 @@
 title: Create a Koii Program in Rust
 description: Setup, build, and deploy a Koii program locally in Rust
 image: img/thumbnail.png
-sidebar_label: Create a Koii Program in Rust
+sidebar_label: Building on Koii
 ---
 
 Koii is a fork of Solana, so we are still keeping solana programs in our chain. This quickstart guide will demonstrate how to quickly setup, build, and deploy your first Rust based Koii program to the blockchain.
