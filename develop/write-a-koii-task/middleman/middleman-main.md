@@ -9,78 +9,91 @@ sidebar_label: Middleman Main
 ## Imports
 ```javascript
 const getTaskData = require("./helpers/getTaskData");
-const { queueCID } = require("./queue");
+const storeData = require("./helpers/storeData");
+const dataFromCid = require("./helpers/dataFromCid");
+const { Connection } = require("@_koii/web3.js");
 require("dotenv").config();
 ```
 
-- **getTaskData**: A helper function that retrieves task data based on the provided `taskId` and `round`.
-- **queueCID**: A function responsible for handling submissions by queuing them for further processing. Include read data from IPFS and write data to MongoDB.
-- **dotenv**: Used to load environment variables from a `.env` file.
+- **getTaskData**: A helper function that retrieves task data from the K2
+- **storeData**: Handles storing processed data
+- **dataFromCid**: Retrieves data from IPFS using Content Identifiers (CIDs)
+- **Connection**: K2 connection handler
+- **dotenv**: Loads environment variables from a `.env` file
 
-## Variables
+## Configuration
 ```javascript
 let round = 0;
 const taskId = process.env.TASK_ID;
+const fileName = process.env.FILE_NAME;
+const INTERVAL = 15 * 60 * 1000; // 15 minutes in milliseconds
 ```
 
-- **round**: Tracks the current round of task data being processed, initialized to `0`.
-- **taskId**: The ID of the task, loaded from environment variables.
+- **round**: Tracks the current processing round
+- **taskId**: Task identifier from environment variables
+- **fileName**: Name of the file to process from environment variables
+- **INTERVAL**: Polling interval set to 15 minutes
 
 ## Main Function
 
 ```javascript
 async function main() {
-    const getTaskDataWrapper = async (taskId, round) => {
-        let wrappedTaskData = await getTaskData(taskId, round);
-        if (wrappedTaskData === false) {
-            console.log("No new round found. Retrying in 60 seconds...");
-            await new Promise((resolve) => setTimeout(resolve, 60000));
-            return await getTaskDataWrapper(taskId, round);
-        } else {
-            return wrappedTaskData;
-        }
-    };
-    
-    const taskData = await getTaskDataWrapper(taskId, round);
+    const connection = new Connection("https://mainnet.koii.network");
 
-    if (round < taskData.maxRound) {
-        round = taskData.maxRound;
-        console.log("Current round is", round, "...");
-        const submissionList = taskData.submissions;
-        const tweetList = await queueCID(submissionList);
-        
-        console.log("Operation complete, calling the function again.");
-        main();
-    } else {
-        const roundTimeInMS = taskData.roundTime * 408;
-        console.log(
-            "No new round... Checking again in",
-            (roundTimeInMS / 60000).toFixed(2),
-            "Minutes"
-        );
-        setTimeout(main, roundTimeInMS);
+    while (true) {
+        try {
+            // ... processing logic ...
+        } catch (error) {
+            console.error("Error in main loop:", error);
+        }
+
+        // Wait for the next interval
+        await new Promise((resolve) => setTimeout(resolve, INTERVAL));
     }
 }
-
-main();
 ```
 
 ### Description
-This script continuously fetches task data from the Koii network, processes submissions, and handles rounds.
+This script continuously monitors and processes task data from the Koii network with the following features:
 
-1. **getTaskDataWrapper**: A recursive function that keeps trying to fetch task data until a new round is detected.
-   - If no new round is found, it waits for 60 seconds before retrying.
-   - Once new data is found, it returns the task data.
+1. **Continuous Monitoring**: 
+   - Runs in an infinite loop with a 15-minute interval between checks
+   - Maintains a persistent connection to the Koii mainnet
 
-2. **main()**:
-   - Calls `getTaskDataWrapper` to get the latest task data.
-   - If the current round is less than the maximum round (`taskData.maxRound`), it updates the `round` variable and processes the submissions by queuing them with `queueCID`.
-   - If the round hasn't updated, it calculates the next check time based on `taskData.roundTime` and retries after that interval.
-   - The process repeats indefinitely by recursively calling `main()`.
+2. **Data Processing**:
+   - Fetches task data for the specified task ID
+   - Validates if submissions are CID-based
+   - Processes CIDs in batches, retrieving data from IPFS
+   - Stores processed data using the storeData helper
+
+3. **Error Handling**:
+   - Implements try-catch blocks for robust error handling
+   - Continues operation even if individual cycles fail
+   - Includes graceful shutdown handlers for SIGINT and SIGTERM signals
+
+4. **Rate Limiting**:
+   - Implements a 1-second delay between CID processing
+   - Uses a 15-minute interval between main processing cycles
 
 ### Execution
-The script is initiated by calling `main()`, which enters a loop of fetching, processing, and waiting for new task data.
+The script starts by calling `main()` and runs indefinitely until manually stopped. It includes graceful shutdown handlers for clean termination:
+
+```javascript
+process.on("SIGINT", () => {
+    console.log("Gracefully shutting down...");
+    process.exit(0);
+});
+
+process.on("SIGTERM", () => {
+    console.log("Gracefully shutting down...");
+    process.exit(0);
+});
+
+main().catch(console.error);
+```
 
 ### Notes
-- The script is designed to handle long-running processes and automatically retries until new task data is available.
-- Each round time unit is approximately 408 milliseconds, which is used to calculate waiting times between rounds.
+- The script is designed for production environments with proper error handling
+- Implements rate limiting to prevent overwhelming IPFS or network resources
+- Processes submissions in batches for improved efficiency
+- Supports both CID and non-CID based submissions

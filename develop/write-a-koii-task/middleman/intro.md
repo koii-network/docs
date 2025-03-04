@@ -20,10 +20,14 @@ To get started with the template, follow these steps:
 git clone https://github.com/koii-network/task-middle-server-template.git
 ```
 
-2. Install the dependencies:
+2. Install the dependencies using npm or yarn:
 
 ```bash
+# Using npm
 npm install
+
+# Using yarn
+yarn install
 ```
 
 3. Set up the environment variables:
@@ -32,12 +36,22 @@ npm install
 cp .env.example .env
 ```
 
-Edit `TASK_ID` to the task ID you want to process. You can also configure the MongoDB connection string.
+Configure the following variables in your `.env` file:
+
+- `TASK_ID`: The ID of the Koii task you want to process
+- `MONGO_URI`: Your MongoDB connection string (e.g., "mongodb://localhost:27017")
+- `DB_NAME`: Name of the database to use
+- `COLLECTION_NAME`: Name of the collection to store task data
+- `FILE_NAME`: Name of the file to process (if your task submission is a CID)
 
 4. Start the server:
 
 ```bash
+# Using npm
 npm start
+
+# Using yarn
+yarn start
 ```
 
 To learn more about the template and its features, check next sections.
