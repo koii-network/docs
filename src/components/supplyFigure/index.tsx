@@ -16,7 +16,7 @@ const SupplyPieChart = () => {
         const supply = await connection.getSupply();
         setSupplyData({
           total: supply.value.total,
-          circulating: supply.value.circulating-9708437592382925000,
+          circulating: supply.value.circulating,
         });
       } catch (error) {
         console.error("Failed to fetch supply data:", error);
@@ -72,9 +72,9 @@ const SupplyPieChart = () => {
       </div>
       <div className="w-1/3 space-y-2">
         <h2 className="text-xl font-semibold">Supply Details</h2>
-        <p>Total Supply: {(supplyData.total / 1e9).toLocaleString()} KOII</p>
-        <p>Circulating: {(supplyData.circulating / 1e9).toLocaleString()} KOII</p>
-        <p>Non-Circulating: {((supplyData.total - supplyData.circulating) / 1e9).toLocaleString()} KOII</p>
+        <p>Total Supply: {(supplyData.total / 1e9 / 1e9).toLocaleString()} B KOII</p>
+        <p>Circulating: {(supplyData.circulating / 1e9 / 1e9).toLocaleString()} B KOII</p>
+        <p>Non-Circulating: {((supplyData.total - supplyData.circulating) / 1e9 / 1e9).toLocaleString()} B KOII</p>
       </div>
     </div>
   );
