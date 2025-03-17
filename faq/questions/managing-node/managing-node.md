@@ -27,7 +27,7 @@ After running the task, you will earn your first reward after **10 - 30 minutes*
 
 <ReactPlayer width="100%" controls url="https://youtu.be/dgUuOoSZ2Ds" />
 
-## Q: I accidentally clicked on the devnet. how can I open again my Koii app/node?
+## Q: I accidentally clicked on the testnet. how can I open again my Koii app/node?
 
 **For Mac**: Delete this file and start the node ~/Library/Application Support/desktop-node/config.json
 

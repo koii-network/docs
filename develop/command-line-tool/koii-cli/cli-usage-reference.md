@@ -93,7 +93,7 @@ OPTIONS:
     -C, --config <FILEPATH>                Configuration file to use [default:
                                            /Users/giftea/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -203,7 +203,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
     -o, --output-file <FILEPATH>           Write the account data to this file
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
@@ -242,7 +242,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -271,7 +271,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -309,7 +309,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -353,7 +353,7 @@ OPTIONS:
             Configuration file to use [default: ~/.config/koii/cli/config.yml]
 
     -u, --url <URL_OR_MONIKER>
-            URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta, testnet, devnet, localhost]
+            URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta, testnet, localhost]
 
     -k, --keypair <KEYPAIR>                               Filepath or URL to a keypair
         --with-memo <MEMO>                                Specify a memo string to include in the transaction.
@@ -403,7 +403,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -440,7 +440,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -472,7 +472,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -502,7 +502,7 @@ OPTIONS:
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
         --epoch <epoch>                    Epoch to show block production for [default: current epoch]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -533,7 +533,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -567,7 +567,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --our-localhost <PORT>             Guess Identity pubkey and validator rpc node assuming local (possibly
                                            private) validator [default: 10899]
@@ -618,7 +618,7 @@ OPTIONS:
             or the pubkey of an offline signer, provided an appropriate --signer argument
             is also passed. Defaults to the client keypair.
     -u, --url <URL_OR_MONIKER>
-            URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta, testnet, devnet, localhost]
+            URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta, testnet, localhost]
 
     -k, --keypair <KEYPAIR>                               Filepath or URL to a keypair
         --with-memo <MEMO>                                Specify a memo string to include in the transaction.
@@ -664,7 +664,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -693,7 +693,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -722,7 +722,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]
@@ -758,7 +758,7 @@ OPTIONS:
                                            processed, confirmed, finalized]
     -C, --config <FILEPATH>                Configuration file to use [default: ~/.config/koii/cli/config.yml]
     -u, --url <URL_OR_MONIKER>             URL for Koii's JSON RPC or moniker (or their first letter): [mainnet-beta,
-                                           testnet, devnet, localhost]
+                                           testnet, localhost]
     -k, --keypair <KEYPAIR>                Filepath or URL to a keypair
         --output <FORMAT>                  Return information in specified output format [possible values: json, json-
                                            compact]

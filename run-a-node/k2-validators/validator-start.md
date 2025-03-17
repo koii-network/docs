@@ -13,7 +13,7 @@ The Koii cli includes `get` and `set` configuration commands to automatically se
 koii config set --url https://mainnet.koii.network
 ```
 
-While this section demonstrates how to connect to the Devnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
+While this section demonstrates how to connect to the Testnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
 
 ## Confirm the Cluster is Reachable
 
@@ -150,7 +150,7 @@ Airdrop yourself some KOII to get started:
 koii airdrop 1
 ```
 
-Note that airdrops are only available on Devnet and Testnet. Both are limited to 1 KOII per request.
+Note that airdrops are only available on Testnet. Both are limited to 1 KOII per request.
 
 To view your current balance:
 

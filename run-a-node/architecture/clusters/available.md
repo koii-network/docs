@@ -13,26 +13,26 @@ Explorer:
 
 - [https://explorer.koii.live/](https://explorer.koii.live)
 
-## Devnet
+## Testnet
 
-- Devnet serves as a playground for anyone who wants to take Koii for a
+- Testnet serves as a playground for anyone who wants to take Koii for a
   test drive, as a user, token holder, app developer, or validator.
-- Application developers should target Devnet.
-- Potential validators should first target Devnet.
-- Key differences between Devnet and Mainnet:
-  - Devnet tokens are **not real**
-  - Devnet includes a token faucet for airdrops for application testing
-  - Devnet may be subject to ledger resets
-  - Devnet typically runs the same software release branch version as Mainnet,
+- Application developers should target Testnet.
+- Potential validators should first target Testnet.
+- Key differences between Testnet and Mainnet:
+  - Testnet tokens are **not real**
+  - Testnet includes a token faucet for airdrops for application testing
+  - Testnet may be subject to ledger resets
+  - Testnet typically runs the same software release branch version as Mainnet,
     but may run a newer minor release version than Mainnet.
-- Gossip entrypoint for Devnet: `entrypoint.devnet.koii.network:8001`
+- Gossip entrypoint for Testnet: `entrypoint.testnet.koii.network:8001`
 
-- RPC URL for Devnet: `https://devnet.koii.network`
+- RPC URL for Testnet: `https://testnet.koii.network`
 
 ##### Example `koii` command-line configuration
 
 ```bash
-koii config set --url https://devnet.koii.network
+koii config set --url https://testnet.koii.network
 ```
 
 ##### Example `Koii-validator` command-line
@@ -51,9 +51,9 @@ $ koii-validator \
     --enable-rpc-transaction-history \
     --enable-cpi-and-log-storage \
     --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \
-    --entrypoint entrypoint-1.devnet.koii.network:10001 \
-    --entrypoint entrypoint-2.devnet.koii.network:10001 \
-    --rpc-faucet-address rpc-faucet.devnet.koii.network:9900 \
+    --entrypoint entrypoint-1.testnet.koii.network:10001 \
+    --entrypoint entrypoint-2.testnet.koii.network:10001 \
+    --rpc-faucet-address rpc-faucet.testnet.koii.network:9900 \
     --init-complete-file /home/koii/init-completed \
     --no-wait-for-vote-to-start-leader \
     --enable-extended-tx-metadata-storage \
@@ -78,7 +78,7 @@ are operated by Koii Labs
 - Testnet tokens after snapshot are **not real**
 - Testnet may be subject to ledger resets.
 - Testnet includes a token faucet for airdrops for application testing
-- Testnet typically runs a newer software release branch than Devnet
+- Testnet typically runs a newer software release branch than Mainnet
 - Gossip entrypoint for Testnet: `entrypoint.testnet.koii.network:8001`
 
 - RPC URL for Testnet: `https://mainnet.koii.network`
