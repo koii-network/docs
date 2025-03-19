@@ -1006,14 +1006,14 @@ const config = {
             className: "header-text",
           },
           {
-            label: "</> Task Dev",
+            label: "Build dApps",
             to: "/develop/onboarding/welcome-to-koii",
             activeBasePath: "develop",
             position: "left",
             className: "header-text",
           },
           {
-            label: "</> Program Dev",
+            label: "DeFi Rails",
             to: "/programDev/Program/MigrateProgram",
             activeBasePath: "programDev",
             position: "left",
