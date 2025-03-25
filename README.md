@@ -1,47 +1,96 @@
-# Koii Docs
+# Koii Network Documentation
 
-## Description
+![Koii Network Welcome Banner](static/img/concepts/welcome-to-koii.svg)
 
-This repo contains the koii documentations for the [Koii docs](https://www.koii.network/docs)
+## 🌐 Project Overview
 
-# Website
+Koii Network is a decentralized infrastructure designed to democratize the internet and return power to the people. The project aims to create a community-owned and operated alternative to traditional centralized networks, focusing on building a more fair, open, and efficient web.
 
-This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
+### 🚀 Key Features
 
-### Installation
+- **Decentralized Computing**: Leverage existing consumer hardware to create a community cloud
+- **Gradual Consensus**: An innovative open standard for secure and scalable decentralized systems
+- **Task-Based Architecture**: Flexible framework for building distributed applications
+- **Low-Cost Infrastructure**: Utilize edge computing to reduce environmental and financial costs
+- **Community Governance**: Empower users to participate in network operations
 
-```sh
-yarn
-```
+## 📂 Repository Structure
 
-### Local Development
+### Main Directories
 
-```sh
-yarn start
-```
+1. **`/concepts`**: In-depth explanations of Koii Network's core concepts
+   - Introduction to philosophy and tools
+   - Detailed explanations of web3, consensus, and network architecture
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+2. **`/develop`**: Developer resources and guides
+   - Task development tutorials
+   - Command-line tools
+   - JavaScript SDK documentation
+   - Extractor and task creation guides
 
-### Build
+3. **`/run-a-node`**: Node operation and validator information
+   - K2 validator setup
+   - Task node running instructions
+   - Architecture and consensus details
 
-```sh
-yarn build
-```
+4. **`/koii`**: Token and network economics
+   - Tokenomics
+   - Ways to earn KOII tokens
+   - Network economic models
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+5. **`/faq`**: Frequently Asked Questions
+   - Community contributions
+   - Troubleshooting guides
+   - Tutorial resources
 
-### Deployment
+6. **`/programDev`**: Advanced program development
+   - RPC API documentation
+   - Program development guides
 
-Using SSH:
+7. **`/static`**: Static assets
+   - Images
+   - Logos
+   - Documentation graphics
 
-```sh
-USE_SSH=true yarn deploy
-```
+## 🧰 Technical Details
 
-Not using SSH:
+### Technologies Used
 
-```sh
-GIT_USER=<Your GitHub username> yarn deploy
-```
+- **Core Technologies**:
+  - TypeScript
+  - Node.js
+  - Blockchain infrastructure
+  - Distributed computing
+  - Web3 technologies
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### Architecture Overview
+
+- **K2 Settlement Layer**: High-speed, low-cost blockchain
+- **Gradual Consensus**: Innovative consensus mechanism
+- **Task Nodes**: Distributed computational units
+- **Community Cloud**: Decentralized infrastructure
+
+## 🔍 Key File Highlights
+
+- `concepts/introduction/welcome.md`: Project vision and mission
+- `develop/task-development/write-a-task.md`: Guide for creating tasks
+- `run-a-node/introduction/types-of-nodes.md`: Node type explanations
+- `koii/the-koii-token/network-economics.md`: Token economics details
+
+## 🤝 Community and Contribution
+
+Koii Network is an open-source project that thrives on community participation. Developers, researchers, and enthusiasts are welcome to contribute, build tasks, run nodes, and help create a more decentralized internet.
+
+### Quick Links
+
+- [Join Discord](https://discord.gg/koii)
+- [GitHub Repository](https://github.com/koii-network/docs)
+- [Get Started with Koii](https://docs.koii.network)
+
+## 📄 License
+
+[Insert License Information]
+
+## 🌟 Acknowledgements
+
+Thanks to all contributors and community members who make the Koii Network possible.
