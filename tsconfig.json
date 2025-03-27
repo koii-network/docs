@@ -6,6 +6,7 @@
     "jsx": "react"
   },
   "include": [
-    "src/components/cta/gtag.d.ts",
+    "src/**/*",
+    "src/components/cta/gtag.d.ts"
   ]
 }
