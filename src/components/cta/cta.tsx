@@ -32,27 +32,19 @@ export const Cta = () => {
           image={`${baseUrl}/img/write-task.svg`}
           imageHeight=""
         >
-          <div className="flex gap-x-2 justify-between items-center p-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-between items-center p-4">
             <div className="flex gap-x-2">
               <SocialLinks />
             </div>
 
-            <div className="flex gap-x-2">
+            <div className="flex flex-wrap gap-4 justify-center">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a
-                  href="https://www.koii.network/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
-                  className="hover:no-underline"
-                >
+                <a href="https://www.koii.network/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus" className="hover:no-underline">
                   How it Works
                 </a>
               </button>
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.koii.network/whitepaper.pdf"
-                  className="hover:no-underline"
-                >
+                <a target="_blank" rel="noopener noreferrer" href="https://www.koii.network/whitepaper.pdf" className="hover:no-underline">
                   Whitepaper
                 </a>
               </button>
@@ -61,7 +53,7 @@ export const Cta = () => {
         </Card>
 
         {/* Second row */}
-        <section className="flex gap-x-6">
+        <section className="flex flex-col md:flex-row gap-6">
           {/* First card */}
           <Card
             title="EZWay"
@@ -71,10 +63,7 @@ export const Cta = () => {
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a
-                  href="https://www.koii.network/docs/develop/task-development/write-a-task"
-                  className="hover:no-underline"
-                >
+                <a href="https://www.koii.network/docs/develop/task-development/write-a-task" className="hover:no-underline">
                   More
                 </a>
               </button>
@@ -84,7 +73,7 @@ export const Cta = () => {
           {/* Second card */}
           <Card
             title="Orca Containers"
-            description="Docker images on Koii’s network of edge devices provide a stable foundation for any kind of application. Deploy your machine learning workload, host an existing app, or augment existing systems with edge compute for caching, storage, and more."
+            description="Docker images on Koii's network of edge devices provide a stable foundation for any kind of application. Deploy your machine learning workload, host an existing app, or augment existing systems with edge compute for caching, storage, and more."
             image={`${baseUrl}/img/new-home/orca.png`}
             imageHeight="h-[233.8px]"
           >
@@ -102,7 +91,7 @@ export const Cta = () => {
         </section>
 
         {/* Third row */}
-        <section className="flex gap-x-6">
+        <section className="flex flex-col md:flex-row gap-6">
           {/* First card */}
           <Card
             title="Anthropic"
@@ -127,7 +116,7 @@ export const Cta = () => {
           {/* Second card */}
           <Card
             title="OpenAI"
-            description="Get direct access to the world’s most powerful reasoning AI, great for planning, designing, and research."
+            description="Get direct access to the world's most powerful reasoning AI, great for planning, designing, and research."
             image={`${baseUrl}/img/new-home/openai.png`}
             imageHeight="h-[233.8px]"
           >
@@ -164,8 +153,8 @@ export const Cta = () => {
           </Card>
         </section>
 
-        {/* Third row */}
-        <section className="flex gap-x-6">
+        {/* Fourth row */}
+        <section className="flex flex-col md:flex-row gap-6">
           {/* First card */}
           <Card
             title="$KOII"
@@ -199,7 +188,7 @@ export const Cta = () => {
           {/* Second card */}
           <Card
             title="K2"
-            description="Koii’s native blockchain uses a copy of the Solana Virtual Machine, built with capacity for over 10 billion compute devices."
+            description="Koii's native blockchain uses a copy of the Solana Virtual Machine, built with capacity for over 10 billion compute devices."
             image={`${baseUrl}/img/new-home/K2.png`}
             imageHeight="h-[233.8px]"
             descriptionHeight="h-[4.5rem]"
@@ -217,45 +206,41 @@ export const Cta = () => {
           </Card>
         </section>
 
+        {/* Join the Fun section */}
         <section className="flex gap-x-12">
-      <Card
-        title=""
-        description=""
-        image= ''
-      >
-        <div className="flex gap-x-6 px-4 pb-6">
-          <div className="flex flex-col w-1/2 pt-6">
-            <h2 className="text-2xl font-bold mb-4">Join the Fun</h2>
-            <p className="mb-6">
-              Install Koii on any computer in under 5 minutes, and start growing your share of the new web.
-              <br /><br />
-              Support projects, earn tokens, and help change the world.
-            </p>
-            <div className="flex gap-x-2 justify-start items-center">
-              <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a
-                  href="https://www.koii.network/nodes"
-                  className="hover:no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Install Koii
-                </a>
-              </button>
+          <Card
+            title=""
+            description=""
+            image=""
+          >
+            <div className="flex flex-col md:flex-row gap-6 px-4 pb-6">
+              <div className="flex flex-col w-full md:w-1/2 pt-6">
+                <h2 className="text-2xl font-bold mb-4">Join the Fun</h2>
+                <p className="mb-6">
+                  Install Koii on any computer in under 5 minutes, and start growing your share of the new web.
+                  <br /><br />
+                  Support projects, earn tokens, and help change the world.
+                </p>
+                <div className="flex gap-x-2 justify-start items-center">
+                  <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
+                    <a href="https://www.koii.network/nodes" className="hover:no-underline" target="_blank" rel="noopener noreferrer">
+                      Install Koii
+                    </a>
+                  </button>
+                </div>
+              </div>
+              
+              <div className="player-wrapper aspect-video w-full md:w-1/2">
+                <ReactPlayer
+                  className="react-player"
+                  url="https://www.youtube.com/watch?v=p4m4qThshfg&ab_channel=KoiiNetwork"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
             </div>
-          </div>
-          
-          <div className="player-wrapper aspect-video w-1/2">
-            <ReactPlayer
-              className="react-player"
-              url="https://www.youtube.com/watch?v=p4m4qThshfg&ab_channel=KoiiNetwork"
-              width="100%"
-              height="100%"
-            />
-          </div>
-        </div>
-      </Card>
-    </section>
+          </Card>
+        </section>
       </section>
     </section>
   );
