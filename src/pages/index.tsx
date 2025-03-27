@@ -30,7 +30,7 @@ export default function Home() {
 
 
       {/* <Cta2 /> */}
-      <JoinTheFun />
+      {/* <JoinTheFun /> */}
       {/* <GrantArea /> */}
       {/*       <ExploreTopics />  */}
       {/* <Discord /> */}
