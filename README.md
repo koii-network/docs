@@ -1,115 +1,111 @@
 # Koii Network Documentation
 
-## 🌐 Project Overview
+## 🌐 Overview
 
-Koii Network is a groundbreaking decentralized infrastructure project aimed at democratizing the internet by creating a community-owned and operated network that provides scalable, secure, and cost-effective computing resources.
+Koii Network is an innovative decentralized infrastructure platform that empowers developers to build scalable, privacy-preserving web3 applications. This documentation repository serves as a comprehensive guide to understanding, developing, and participating in the Koii ecosystem.
 
-### Mission
-To empower individuals by creating a decentralized computing ecosystem that returns control and value to its participants through innovative blockchain technology and community-driven infrastructure.
+### Key Technologies and Concepts
+- Decentralized Computing
+- Web3 Infrastructure
+- Attention Mining
+- Task Nodes
+- Gradual Consensus
+- Blockchain Technology
 
-### Key Features
-- **Decentralized Cloud Computing**: Harness consumer hardware to build a global, community-powered network
-- **Gradual Consensus**: An innovative open standard for secure, distributed computing
-- **Task-Based Architecture**: Flexible framework for building decentralized applications
-- **Cost-Effective Solutions**: Reduce infrastructure costs by leveraging community-owned resources
-- **Privacy and Security**: Built-in mechanisms to protect user data and ensure network integrity
+## 🚀 Getting Started
 
-## 📂 Repository Structure
+### Prerequisites
+- Basic understanding of blockchain and web development
+- JavaScript/TypeScript knowledge recommended
+- Node.js (version 16+ recommended)
+- Git
+- A modern web browser
 
-This documentation repository is organized into comprehensive sections to provide clear guidance for different user groups:
+### Installation Steps
+1. Clone the documentation repository
+```bash
+git clone https://github.com/koii-network/docs.git
+cd docs
+```
 
-### Main Directories
+2. Install dependencies
+```bash
+yarn install
+```
 
-| Directory | Description | Target Audience |
-|-----------|-------------|-----------------|
-| `concepts/` | In-depth explanations of Koii Network's core concepts | All Users |
-| `develop/` | Developer resources and guides for building on Koii | Developers |
-| `run-a-node/` | Comprehensive guides for running Koii nodes | Node Operators |
-| `faq/` | Frequently asked questions and tutorials | New Users |
-| `koii/` | Token economics and network information | Investors, Community Members |
-| `programDev/` | Program development and RPC API documentation | Advanced Developers |
+3. Start the local development server
+```bash
+yarn start
+```
 
-#### Detailed Directory Breakdown
+## 🗂️ Tutorial Structure
 
-1. **Concepts**
-   - Explore the philosophical and technical foundations of Koii Network
-   - Key subdirectories:
-     - `introduction/`: Project philosophy and core principles
-     - `web3/`: Web3 technology and decentralization concepts
-     - `what-are-koii-nodes/`: Details about node types and operations
-     - `what-are-tasks/`: Explanation of task design and implementation
+Our documentation is organized into several key sections:
 
-2. **Develop**
-   - Comprehensive resources for developers building on Koii
-   - Key focus areas:
-     - `command-line-tool/`: CLI tools for task and node management
-     - `koii-software-toolkit-sdk/`: Software development kit documentation
-     - `task-development/`: Guides for creating and deploying tasks
+### 1. Compute & Concepts
+- Introduction to decentralized computing
+- Web3 philosophies and technologies
+- Network architecture explanations
 
-3. **Run a Node**
-   - Technical guidance for setting up and managing nodes
-   - Key sections:
-     - `architecture/`: Technical details of network architecture
-     - `k2-validators/`: Validator node setup and management
-     - `task-nodes/`: Task node operation guides
+### 2. Development
+- Task development tutorials
+- SDK and API references
+- Command-line tools
+- Smart contract interactions
 
-## 🔧 Technical Details
+### 3. Running a Node
+- Validator and task node setup
+- Network participation guidelines
+- Rewards and staking mechanisms
 
-### Technologies and Architecture
+### 4. Koii Ecosystem
+- Token economics
+- Grants and community programs
+- Ways to earn KOII tokens
 
-| Component | Description | Technical Specifics |
-|-----------|-------------|---------------------|
-| **Blockchain** | Custom K2 settlement layer | High-performance, low-latency blockchain |
-| **Consensus Mechanism** | Gradual Consensus | Innovative distributed validation process |
-| **Primary Languages** | JavaScript, TypeScript | Node.js and web-friendly development |
-| **Core Components** | - Distributed computing<br>- Attention mining<br>- Task-based network architecture<br>- Decentralized storage | Modular, scalable infrastructure |
+## 🎓 Learning Outcomes
 
-### Architecture Highlights
-- Community-powered computing infrastructure
-- Scalable and efficient task distribution
-- Transparent and secure reward mechanisms
-- Flexible task creation and execution environment
+By exploring this documentation, you will:
+- Understand decentralized computing principles
+- Learn how to develop and deploy web3 tasks
+- Discover methods to earn rewards in the Koii Network
+- Gain insights into blockchain scalability solutions
+- Explore privacy-preserving technologies
 
-## 📖 Key Documentation Pathways
+## 💻 Code Examples and Exercises
 
-### Getting Started Roadmap
+Throughout the documentation, you'll find:
+- Interactive code snippets
+- Step-by-step tutorials
+- Task development walkthroughs
+- Configuration and deployment guides
 
-1. **Understand the Concept**
-   - `concepts/introduction/welcome.md`: Project mission and vision
-   - `concepts/introduction/philosophy.md`: Decentralization philosophy
-   - `concepts/introduction/tools.md`: Overview of Koii tools
+## 📂 Project Structure
 
-2. **Developer Resources**
-   - `develop/task-development/write-a-task.md`: Guide to creating tasks
-   - `develop/koii-software-toolkit-sdk/koii-javascript-api.md`: JavaScript API documentation
-   - `develop/command-line-tool/create-task-cli/intro.md`: Task CLI introduction
+```
+docs/
+├── concepts/         # Theoretical explanations
+├── develop/          # Developer guides
+├── run-a-node/       # Node operation tutorials
+├── src/              # Website source code
+└── static/           # Static assets and images
+```
 
-3. **Node Operation**
-   - `run-a-node/task-nodes/how-to-run-a-koii-node.md`: Node setup guide
-   - `run-a-node/k2-validators/validator-setup.md`: Validator node configuration
+## 🌟 Next Steps and Further Reading
 
-## 🚀 Quick Start
-
-1. Explore the comprehensive documentation
-2. Set up a Koii node
-3. Learn about task development
-4. Join the vibrant Koii community
-
-## 🤝 Community and Contributions
-
-- **Discord**: [Join our Community](https://discord.gg/koii)
-- **Grants Program**: [Explore Opportunities](https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg)
-- **GitHub**: [Koii Network Repositories](https://github.com/koii-network)
-- **Contribution Guidelines**: Refer to `CONTRIBUTING.md` (if available)
-
-## 💡 Connect With Us
-
-- **Website**: [koii.network](https://koii.network)
-- **Twitter**: [@koii_network](https://twitter.com/koii_network)
-- **Email**: [contact@koii.network](mailto:contact@koii.network)
+- [Koii Network Official Website](https://www.koii.network)
+- [Developer Discord](https://discord.gg/koii)
+- [GitHub Repository](https://github.com/koii-network)
+- [Task Node Setup Guide](/run-a-node/task-nodes/how-to-run-a-koii-node.md)
 
 ## 📄 License
 
-Open Source - See the LICENSE file for details.
+This documentation is open-source and available under the MIT License. See the LICENSE file for more details.
 
-**Note**: This documentation is continuously evolving. Contributions and feedback are welcome!
+## 🤝 Community and Support
+
+- Join our [Discord Community](https://discord.gg/koii)
+- Follow us on [Twitter](https://twitter.com/koii_network)
+- Star the repository if you find it helpful!
+
+**Happy Building! 🚀**
