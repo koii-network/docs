@@ -11,6 +11,16 @@ export const Cta = () => {
 			window.gtag("event", "click_run_node");
 		}
 	};
+  const scrollToPlayerWrapper = (e: React.MouseEvent) => {
+		e.preventDefault();
+		const element = document.querySelector('.player-wrapper');
+		if (element) {
+			element.scrollIntoView({ 
+				behavior: 'smooth',
+				block: 'center'
+			});
+		}
+	};
 	return (
     <section className="w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8">
       <section className="w-full flex flex-col gap-6">
@@ -159,7 +169,7 @@ export const Cta = () => {
           <Card
             title="$KOII"
             description="Our native token is used to pay transaction fees within the compute network, and can be staked on K2 nodes to provide stable returns and exposure to the Koii ecosystem."
-            image={`${baseUrl}/img/new-home/anthropic.png`}
+            image={`${baseUrl}/img/new-home/KOII.png`}
             imageHeight="h-[233.8px]"
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
@@ -174,7 +184,11 @@ export const Cta = () => {
                 </a>
               </button>
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a href="#join-the-fun" className="hover:no-underline">
+              <a 
+                  href="#" 
+                  className="hover:no-underline"
+                  onClick={scrollToPlayerWrapper}
+                >
                   Earn Koii
                 </a>
               </button>
@@ -185,7 +199,7 @@ export const Cta = () => {
           <Card
             title="K2"
             description="Koii’s native blockchain uses a copy of the Solana Virtual Machine, built with capacity for over 10 billion compute devices."
-            image={`${baseUrl}/img/new-home/openai.png`}
+            image={`${baseUrl}/img/new-home/K2.png`}
             imageHeight="h-[233.8px]"
             descriptionHeight="h-[4.5rem]"
           >
