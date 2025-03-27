@@ -123,7 +123,7 @@ export const Cta = () => {
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
                 <a
-                  href="https://prometheusswarm.ai/create-bounty"
+                  href="https://prometheusswarm.ai"
                   className="hover:no-underline"
                 >
                   Pay in Any Token
