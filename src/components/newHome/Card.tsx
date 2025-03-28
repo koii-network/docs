@@ -1,6 +1,28 @@
 import React from "react";
 
-const Card = ({title, description, children, image, imageHeight, descriptionHeight}: {title: string, description: string, children: React.ReactNode, image: string, imageHeight?: string, descriptionHeight?: string}) => {
+interface Badge {
+  text: string;
+  color: string;
+  textColor: string;
+}
+
+const Card = ({
+  title,
+  description,
+  children,
+  image,
+  imageHeight,
+  descriptionHeight,
+  badges,
+}: {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+  image: string;
+  imageHeight?: string;
+  descriptionHeight?: string;
+  badges?: Badge[];
+}) => {
   return (
     <div
       className={
@@ -8,6 +30,22 @@ const Card = ({title, description, children, image, imageHeight, descriptionHeig
       }
     >
       <img src={image} className={`w-full rounded-t-[10px] ${imageHeight} object-contain`} />
+      {badges && badges.length > 0 && (
+        <div className="flex gap-2 px-4 pt-4">
+          {badges.map((badge, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 rounded text-sm font-medium"
+              style={{
+                backgroundColor: badge.color,
+                color: badge.textColor,
+              }}
+            >
+              {badge.text}
+            </span>
+          ))}
+        </div>
+      )}
       <div className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline">
         <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 ">
           {title}

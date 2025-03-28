@@ -60,6 +60,10 @@ export const Cta = () => {
             description="Get started the fast way with open templates. Built for beginners and fast-lane experts, the EZSandbox provides a standard foundation for a simple future."
             image={`${baseUrl}/img/mint-tokens.svg`}
             descriptionHeight="h-[7.5rem]"
+            badges={[
+              { text: 'JavaScript', color: '#F7DF1E', textColor: '#000000' },
+              { text: 'TypeScript', color: '#3178C6', textColor: '#FFFFFF' },
+            ]}
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
@@ -76,6 +80,13 @@ export const Cta = () => {
             description="Docker images on Koii's network of edge devices provide a stable foundation for any kind of application. Deploy your machine learning workload, host an existing app, or augment existing systems with edge compute for caching, storage, and more."
             image={`${baseUrl}/img/new-home/orca.png`}
             imageHeight="h-[233.8px]"
+            badges={[
+              { text: 'Docker', color: '#2496ED', textColor: '#FFFFFF' },
+              { text: 'Python', color: '#3776AB', textColor: '#FFFFFF' },
+              { text: 'Rust', color: '#000000', textColor: '#FFFFFF' },
+              { text: 'Java', color: '#007396', textColor: '#FFFFFF' },
+              { text: 'Solidity', color: '#363636', textColor: '#FFFFFF' }
+            ]}
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
