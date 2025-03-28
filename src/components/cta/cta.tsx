@@ -8,30 +8,42 @@ export const Cta = () => {
 	const { siteConfig } = useDocusaurusContext();
 	const { baseUrl } = siteConfig.customFields as { baseUrl: string };
 	const [latestVersion, setLatestVersion] = useState<string | null>(null);
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		// Fetch latest release version when component mounts
+		// Check if device is mobile
+		const checkMobile = () => {
+			const userAgent = navigator.userAgent.toLowerCase();
+			setIsMobile(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent));
+		};
+
+		checkMobile();
+		window.addEventListener('resize', checkMobile);
+		
+		// Fetch latest release version
 		fetch('https://api.github.com/repos/koii-network/koii-node/releases/latest')
 			.then(response => response.json())
 			.then(data => {
-				// Extract version number from tag_name (removes 'v' prefix)
 				const version = data.tag_name.replace('v', '');
 				setLatestVersion(version);
 			})
 			.catch(() => {
-				// Fallback to hardcoded version if API call fails
 				setLatestVersion('1.1.4');
 			});
+
+		return () => window.removeEventListener('resize', checkMobile);
 	}, []);
 
 	const getLatestReleaseDownloadUrl = () => {
+		if (isMobile) {
+			return 'https://www.koii.network/nodes';
+		}
+
 		if (!latestVersion) {
 			return 'https://github.com/koii-network/koii-node/releases/latest';
 		}
 
 		const baseUrl = `https://github.com/koii-network/koii-node/releases/download/v${latestVersion}`;
-		
-		// Detect OS
 		const platform = window.navigator.platform.toLowerCase();
 		
 		if (platform.includes('win')) {
@@ -42,7 +54,6 @@ export const Cta = () => {
 			return `${baseUrl}/koii-node-${latestVersion}-linux-amd64.deb`;
 		}
 		
-		// Fallback to the releases page if OS detection fails
 		return 'https://github.com/koii-network/koii-node/releases/latest';
 	};
 
@@ -279,16 +290,43 @@ export const Cta = () => {
                   <br /><br />
                   Support projects, earn tokens, and help change the world.
                 </p>
-                <div className="flex gap-x-2 justify-start items-center">
-                  <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                    <a 
-                      href="#" 
-                      className="hover:no-underline" 
-                      onClick={handleDownload}
-                    >
-                      Install Koii
-                    </a>
-                  </button>
+                <div className="flex flex-col gap-4">
+                  <div className="flex gap-x-2 justify-start items-center">
+                    <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
+                      <a 
+                        href="#" 
+                        className="hover:no-underline" 
+                        onClick={handleDownload}
+                      >
+                        Install Koii
+                      </a>
+                    </button>
+                  </div>
+                  
+                  {/* OS Icons */}
+                  <div className="flex gap-3 items-center text-koii-purple-2 text-sm">
+                    <span className="flex items-center gap-1">
+                      <img 
+                        src={`${baseUrl}/img/os/windows.svg`} 
+                        alt="Windows" 
+                        className="w-4 h-4" 
+                      />
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <img 
+                        src={`${baseUrl}/img/os/apple.svg`} 
+                        alt="macOS" 
+                        className="w-4 h-4" 
+                      />
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <img 
+                        src={`${baseUrl}/img/os/linux.svg`} 
+                        alt="Linux" 
+                        className="w-4 h-4" 
+                      />
+                    </span>
+                  </div>
                 </div>
               </div>
               
