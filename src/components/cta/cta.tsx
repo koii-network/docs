@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Card from "../newHome/Card";
@@ -7,6 +7,53 @@ import SocialLinks from "../newHome/SocialLinks";
 export const Cta = () => {
 	const { siteConfig } = useDocusaurusContext();
 	const { baseUrl } = siteConfig.customFields as { baseUrl: string };
+	const [latestVersion, setLatestVersion] = useState<string | null>(null);
+
+	useEffect(() => {
+		// Fetch latest release version when component mounts
+		fetch('https://api.github.com/repos/koii-network/koii-node/releases/latest')
+			.then(response => response.json())
+			.then(data => {
+				// Extract version number from tag_name (removes 'v' prefix)
+				const version = data.tag_name.replace('v', '');
+				setLatestVersion(version);
+			})
+			.catch(() => {
+				// Fallback to hardcoded version if API call fails
+				setLatestVersion('1.1.4');
+			});
+	}, []);
+
+	const getLatestReleaseDownloadUrl = () => {
+		if (!latestVersion) {
+			return 'https://github.com/koii-network/koii-node/releases/latest';
+		}
+
+		const baseUrl = `https://github.com/koii-network/koii-node/releases/download/v${latestVersion}`;
+		
+		// Detect OS
+		const platform = window.navigator.platform.toLowerCase();
+		
+		if (platform.includes('win')) {
+			return `${baseUrl}/koii-node-${latestVersion}-win-x64.exe`;
+		} else if (platform.includes('mac')) {
+			return `${baseUrl}/koii-node-${latestVersion}-mac-universal.dmg`;
+		} else if (platform.includes('linux')) {
+			return `${baseUrl}/koii-node-${latestVersion}-linux-amd64.deb`;
+		}
+		
+		// Fallback to the releases page if OS detection fails
+		return 'https://github.com/koii-network/koii-node/releases/latest';
+	};
+
+	const handleDownload = (e: React.MouseEvent) => {
+		e.preventDefault();
+		if (typeof window !== 'undefined') {
+			const downloadUrl = getLatestReleaseDownloadUrl();
+			window.location.href = downloadUrl;
+		}
+	};
+
 	const handleClick = () => {
 		if (typeof window !== 'undefined' && window.gtag) {
 			window.gtag("event", "click_run_node");
@@ -234,7 +281,11 @@ export const Cta = () => {
                 </p>
                 <div className="flex gap-x-2 justify-start items-center">
                   <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                    <a href="https://www.koii.network/nodes" className="hover:no-underline" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="#" 
+                      className="hover:no-underline" 
+                      onClick={handleDownload}
+                    >
                       Install Koii
                     </a>
                   </button>
