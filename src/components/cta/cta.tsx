@@ -5,82 +5,86 @@ import Card from "../newHome/Card";
 import SocialLinks from "../newHome/SocialLinks";
 
 export const Cta = () => {
-	const { siteConfig } = useDocusaurusContext();
-	const { baseUrl } = siteConfig.customFields as { baseUrl: string };
-	const [latestVersion, setLatestVersion] = useState<string | null>(null);
-	const [isMobile, setIsMobile] = useState(false);
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields as { baseUrl: string };
+  const [latestVersion, setLatestVersion] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-	useEffect(() => {
-		// Check if device is mobile
-		const checkMobile = () => {
-			const userAgent = navigator.userAgent.toLowerCase();
-			setIsMobile(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent));
-		};
+  useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      setIsMobile(
+        /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+          userAgent,
+        ),
+      );
+    };
 
-		checkMobile();
-		window.addEventListener('resize', checkMobile);
-		
-		// Fetch latest release version
-		fetch('https://api.github.com/repos/koii-network/koii-node/releases/latest')
-			.then(response => response.json())
-			.then(data => {
-				const version = data.tag_name.replace('v', '');
-				setLatestVersion(version);
-			})
-			.catch(() => {
-				setLatestVersion('1.1.4');
-			});
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
 
-		return () => window.removeEventListener('resize', checkMobile);
-	}, []);
+    // Fetch latest release version
+    fetch("https://api.github.com/repos/koii-network/koii-node/releases/latest")
+      .then((response) => response.json())
+      .then((data) => {
+        const version = data.tag_name.replace("v", "");
+        setLatestVersion(version);
+      })
+      .catch(() => {
+        setLatestVersion("1.1.4");
+      });
 
-	const getLatestReleaseDownloadUrl = () => {
-		if (isMobile) {
-			return 'https://www.koii.network/nodes';
-		}
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
-		if (!latestVersion) {
-			return 'https://github.com/koii-network/koii-node/releases/latest';
-		}
+  const getLatestReleaseDownloadUrl = () => {
+    if (isMobile) {
+      return "https://www.koii.network/nodes";
+    }
 
-		const baseUrl = `https://github.com/koii-network/koii-node/releases/download/v${latestVersion}`;
-		const platform = window.navigator.platform.toLowerCase();
-		
-		if (platform.includes('win')) {
-			return `${baseUrl}/koii-node-${latestVersion}-win-x64.exe`;
-		} else if (platform.includes('mac')) {
-			return `${baseUrl}/koii-node-${latestVersion}-mac-universal.dmg`;
-		} else if (platform.includes('linux')) {
-			return `${baseUrl}/koii-node-${latestVersion}-linux-amd64.deb`;
-		}
-		
-		return 'https://github.com/koii-network/koii-node/releases/latest';
-	};
+    if (!latestVersion) {
+      return "https://github.com/koii-network/koii-node/releases/latest";
+    }
 
-	const handleDownload = (e: React.MouseEvent) => {
-		e.preventDefault();
-		if (typeof window !== 'undefined') {
-			const downloadUrl = getLatestReleaseDownloadUrl();
-			window.location.href = downloadUrl;
-		}
-	};
+    const baseUrl = `https://github.com/koii-network/koii-node/releases/download/v${latestVersion}`;
+    const platform = window.navigator.platform.toLowerCase();
 
-	const handleClick = () => {
-		if (typeof window !== 'undefined' && window.gtag) {
-			window.gtag("event", "click_run_node");
-		}
-	};
+    if (platform.includes("win")) {
+      return `${baseUrl}/koii-node-${latestVersion}-win-x64.exe`;
+    } else if (platform.includes("mac")) {
+      return `${baseUrl}/koii-node-${latestVersion}-mac-universal.dmg`;
+    } else if (platform.includes("linux")) {
+      return `${baseUrl}/koii-node-${latestVersion}-linux-amd64.deb`;
+    }
+
+    return "https://github.com/koii-network/koii-node/releases/latest";
+  };
+
+  const handleDownload = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (typeof window !== "undefined") {
+      const downloadUrl = getLatestReleaseDownloadUrl();
+      window.location.href = downloadUrl;
+    }
+  };
+
+  const handleClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "click_run_node");
+    }
+  };
   const scrollToPlayerWrapper = (e: React.MouseEvent) => {
-		e.preventDefault();
-		const element = document.querySelector('.player-wrapper');
-		if (element) {
-			element.scrollIntoView({ 
-				behavior: 'smooth',
-				block: 'center'
-			});
-		}
-	};
-	return (
+    e.preventDefault();
+    const element = document.querySelector(".player-wrapper");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  };
+  return (
     <section className="w-full px-4 md:px-8 max-w-[1300px] mx-auto flex flex-col gap-5 lg:gap-10 items-center mb-8">
       <section className="w-full flex flex-col gap-6">
         {/* First row */}
@@ -97,12 +101,20 @@ export const Cta = () => {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a href="https://www.koii.network/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus" className="hover:no-underline">
+                <a
+                  href="https://www.koii.network/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus"
+                  className="hover:no-underline"
+                >
                   How it Works
                 </a>
               </button>
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.koii.network/whitepaper.pdf" className="hover:no-underline">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.koii.network/whitepaper.pdf"
+                  className="hover:no-underline"
+                >
                   Whitepaper
                 </a>
               </button>
@@ -116,16 +128,20 @@ export const Cta = () => {
           <Card
             title="EZWay"
             description="Get started the fast way with open templates. Built for beginners and fast-lane experts, the EZSandbox provides a standard foundation for a simple future."
-            image={`${baseUrl}/img/mint-tokens.svg`}
+            image={`${baseUrl}/img/new-home/Tools.png`}
+            imageHeight="h-[233.8px]"
             descriptionHeight="h-[7.5rem]"
             badges={[
-              { text: 'JavaScript', color: '#F7DF1E', textColor: '#000000' },
-              { text: 'TypeScript', color: '#3178C6', textColor: '#FFFFFF' },
+              { text: "JavaScript", color: "#F7DF1E", textColor: "#000000" },
+              { text: "TypeScript", color: "#3178C6", textColor: "#FFFFFF" },
             ]}
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                <a href="https://www.koii.network/docs/develop/task-development/write-a-task" className="hover:no-underline">
+                <a
+                  href="https://www.koii.network/docs/develop/task-development/write-a-task"
+                  className="hover:no-underline"
+                >
                   More
                 </a>
               </button>
@@ -139,11 +155,11 @@ export const Cta = () => {
             image={`${baseUrl}/img/new-home/orca.png`}
             imageHeight="h-[233.8px]"
             badges={[
-              { text: 'Docker', color: '#2496ED', textColor: '#FFFFFF' },
-              { text: 'Python', color: '#3776AB', textColor: '#FFFFFF' },
-              { text: 'Rust', color: '#000000', textColor: '#FFFFFF' },
-              { text: 'Java', color: '#007396', textColor: '#FFFFFF' },
-              { text: 'Solidity', color: '#363636', textColor: '#FFFFFF' }
+              { text: "Docker", color: "#2496ED", textColor: "#FFFFFF" },
+              { text: "Python", color: "#3776AB", textColor: "#FFFFFF" },
+              { text: "Rust", color: "#000000", textColor: "#FFFFFF" },
+              { text: "Java", color: "#007396", textColor: "#FFFFFF" },
+              { text: "Solidity", color: "#363636", textColor: "#FFFFFF" },
             ]}
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
@@ -243,8 +259,8 @@ export const Cta = () => {
                 </a>
               </button>
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-              <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="hover:no-underline"
                   onClick={scrollToPlayerWrapper}
                 >
@@ -277,59 +293,57 @@ export const Cta = () => {
 
         {/* Join the Fun section */}
         <section className="flex gap-x-12">
-          <Card
-            title=""
-            description=""
-            image=""
-          >
-            <div className="flex flex-col md:flex-row gap-6 px-4 pb-6">
-              <div className="flex flex-col w-full md:w-1/2 pt-6">
+          <Card image="">
+            <div className="flex flex-col md:flex-row gap-6 px-4 py-6">
+              <div className="flex flex-col w-full md:w-1/2">
                 <h2 className="text-2xl font-bold mb-4">Join the Fun</h2>
                 <p className="mb-6">
-                  Install Koii on any computer in under 5 minutes, and start growing your share of the new web.
-                  <br /><br />
+                  Install Koii on any computer in under 5 minutes, and start
+                  growing your share of the new web.
+                  <br />
+                  <br />
                   Support projects, earn tokens, and help change the world.
                 </p>
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-x-2 justify-start items-center">
                     <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
-                      <a 
-                        href="#" 
-                        className="hover:no-underline" 
+                      <a
+                        href="#"
+                        className="hover:no-underline"
                         onClick={handleDownload}
                       >
                         Install Koii
                       </a>
                     </button>
                   </div>
-                  
+
                   {/* OS Icons */}
                   <div className="flex gap-3 items-center text-koii-purple-2 text-sm">
                     <span className="flex items-center gap-1">
-                      <img 
-                        src={`${baseUrl}/img/os/windows.svg`} 
-                        alt="Windows" 
-                        className="w-4 h-4" 
+                      <img
+                        src={`${baseUrl}/img/os/windows.svg`}
+                        alt="Windows"
+                        className="w-4 h-4"
                       />
                     </span>
                     <span className="flex items-center gap-1">
-                      <img 
-                        src={`${baseUrl}/img/os/apple.svg`} 
-                        alt="macOS" 
-                        className="w-4 h-4" 
+                      <img
+                        src={`${baseUrl}/img/os/apple.svg`}
+                        alt="macOS"
+                        className="w-4 h-4"
                       />
                     </span>
                     <span className="flex items-center gap-1">
-                      <img 
-                        src={`${baseUrl}/img/os/linux.svg`} 
-                        alt="Linux" 
-                        className="w-4 h-4" 
+                      <img
+                        src={`${baseUrl}/img/os/linux.svg`}
+                        alt="Linux"
+                        className="w-4 h-4"
                       />
                     </span>
                   </div>
                 </div>
               </div>
-              
+
               <div className="player-wrapper aspect-video w-full md:w-1/2">
                 <ReactPlayer
                   className="react-player"

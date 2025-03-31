@@ -15,8 +15,8 @@ const Card = ({
   descriptionHeight,
   badges,
 }: {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   children: React.ReactNode;
   image: string;
   imageHeight?: string;
@@ -29,13 +29,13 @@ const Card = ({
         `w-full bg-white border-x-[1px] border-b-[1px] border-t border-solid rounded-b-[10px] border-[#4d3d8d26] rounded-[10px]`
       }
     >
-      <img src={image} className={`w-full rounded-t-[10px] ${imageHeight} object-contain`} />
+      {image && <img src={image} className={`w-full rounded-t-[10px] ${imageHeight} object-contain`} />}
       {badges && badges.length > 0 && (
-        <div className="flex gap-2 px-4 pt-4">
+        <div className="flex flex-wrap gap-2 px-4 pt-4">
           {badges.map((badge, index) => (
             <span
               key={index}
-              className="px-2 py-1 rounded text-sm font-medium"
+              className="px-2 py-1 text-xs sm:text-sm rounded-full text-center whitespace-nowrap"
               style={{
                 backgroundColor: badge.color,
                 color: badge.textColor,
@@ -46,14 +46,21 @@ const Card = ({
           ))}
         </div>
       )}
-      <div className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline">
-        <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0 ">
-          {title}
-        </p>
-        <p className={`m-0 text-base ${descriptionHeight}`}>{description}</p>
-      </div>
-        {children}
+      {(title || description) && (
+        <div className="p-4 bg-transparent w-full flex-col text-koii-purple-2 items-start text-start tracking-wider justify-start hover:no-underline border-none no-underline">
+          {title && (
+            <p className="no-underline hover:no-underline w-full flex items-start font-semibold text-2xl m-0">
+              {title}
+            </p>
+          )}
+          {description && (
+            <p className={`m-0 text-base ${descriptionHeight}`}>{description}</p>
+          )}
+        </div>
+      )}
+      {children}
     </div>
   );
 }
-export default Card
+
+export default Card;
