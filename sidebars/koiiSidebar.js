@@ -48,13 +48,13 @@ const sidebars = {
     "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/attention-mining",
 
-    {
-      type: "html",
-      value: "Become an Early Adopter",
-      className: "sidebar-title top-margin",
-    },
-    "early-adopters/ambassador-program",
-    "ways-to-get-koii/grants-program",
+    // {
+    //   type: "html",
+    //   value: "Become an Early Adopter",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "early-adopters/ambassador-program",
+    // "ways-to-get-koii/grants-program",
     {
       type: "html",
       value: `

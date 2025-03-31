@@ -106,7 +106,9 @@
     "wallclock",
     "sigverify",
     "unbiasable",
-    "bitvector"
+    "bitvector",
+    "Rustc",
+    "Metaplex"
   ],
   "caseSensitive": false,
   "flagWords": ["hte"],
