@@ -5,18 +5,17 @@ image: img/thumbnail.png
 sidebar_label: Write a Task
 ---
 
-Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the [ORCA container manager](/develop/write-a-koii-task/orca/intro).
+:::tip Tutorial
 
-## Quick Start
-
-If you'd like to jump right in to developing a Koii task, check out our [quick start guide](https://github.com/koii-network/ezsandbox/tree/main/Get%20Started%20-%20Quick%20Intro) to run a task in 2 minutes.
-
-## Tutorial
-
-If you want a more comprehensive tutorial, we created [EZSandbox](https://github.com/koii-network/ezsandbox) with eight step-by-step lessons walking you through the development of several Koii tasks.
+We recommend **[EZSandbox](https://github.com/koii-network/ezsandbox)** as your first step if you've never written a task before. It will walk you through the basic concepts of a task, the most common functions you'll use, creating your own KPL token, and deploying a task with your new token.
+:::
 
 ## Task Template
 
 Are you an experienced task developer? Grab the [task template](https://github.com/koii-network/task-template) and start hacking!
 
-![banner](/img/develop/write-task/building-on-koii.svg)
+## Other Languages
+
+Koii Tasks are written mostly in JavaScript, but once you understand the basics, you can use any language that compiles to WebAssembly, or deploy tasks using the [ORCA container manager](/develop/write-a-koii-task/orca/intro).
+
+![building on Koii](/img/develop/write-task/building-on-koii.svg)

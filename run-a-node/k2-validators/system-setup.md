@@ -5,7 +5,7 @@ image: img/thumbnail.png
 sidebar_label: System Setup
 ---
 
-::: warning
+:::warning
 All of the following steps must be run on the **validator server**, unless otherwise specified.
 :::
 
@@ -36,15 +36,12 @@ Please ensure that all the following steps are performed within the home directo
 - Required both on your secure computer (for keypair generation) and on the validator
 
 ```sh
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
-
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init_v1.16.6.sh)"
 # You may need to update PATH variable for the cli to be available
 echo 'export PATH="/home/koii/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
-# Set the koii config to point to the testnet
-koii config set --url https://testnet.koii.network
-# confirm config
-koii config get
+# Set the koii config to point to the mainnet
+koii config set --url https://mainnet.koii.network
 ```
 
 ## 4. Key pair creation
@@ -75,8 +72,11 @@ koii-keygen new --outfile ~/authorized-withdrawer-keypair.json
 - **authorized-withdrawer-keypair.json** : Authorized withdrawer keypair, allowed to withdraw funds from your validator vote account. Store in a secure location **not on the validator** since this controls your vote account
 
 :::danger
-The **authorized withdrawer keypair** is the ultimate authority over your validator. This keypair will be able to withdraw from your vote account and will have additional permission to change all other aspects of your vote account.
-_Anyone in possession of it can permanently take control of your vote account and make any changes as they please._
+The **authorized withdrawer keypair** and the **stake account keypair** can be used to withdraw funds from your validator vote account.
+
+The authorized withdrawer keypair also has additional permission to change all other aspects of your vote account. _Anyone in possession of it can permanently take control of your vote account and make any changes as they please._
+
+**stake-account-keypair.json** and **authorized-withdrawer-keypair.json** must be stored in a secure location **NOT** on the validator.
 :::
 
 ## 5. Network configuration

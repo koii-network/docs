@@ -50,7 +50,7 @@ Ctrl/Command +X = Exit
 Don't forget to run this after installing CLI
 
 ```sh
-koii config set --url https://testnet.koii.network
+koii config set --url https://mainnet.koii.network
 ```
 
 :::

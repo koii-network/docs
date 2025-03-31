@@ -1,136 +1,351 @@
 ---
-title: NeDB
+title: Database Operations
 description: NeDB is a key-value storage library that provides an ordered mapping from string keys to string values.
 image: img/thumbnail.png
-sidebar_label: NeDB
+sidebar_label: Database Operations
 ---
 
-# NeDb
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
-[NeDB](https://www.npmjs.com/package/nedb) is a key-value storage library that provides an ordered mapping from string keys to string values. Embedded persistent or in-memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency.
+# NeDB Storage
 
-The `namespaceWrapper` class provides some methods that use NeDB's `insert(key,value)` and `findOne(key)` basic operations for storing and retrieving data respectively.
+[NeDB](https://www.npmjs.com/package/nedb) is a key-value storage library that provides an ordered mapping from string keys to string values. It is an embedded persistent or in-memory database for Node.js, nw.js, Electron, and browsers. Written in 100% JavaScript with no binary dependencies.
 
-## Setup explained
+## Overview
 
-This code is setting up a wrapper class for a NeDB database using the nedb-promises library. The nedb-promises library is a version of NeDB with Promises support, which makes it easier to work with asynchronous operations.
+The **Namespace Wrapper** provides a standardized interface to NeDB, ensuring consistent data handling.
 
-```js
-  db;
+## Core Database Operations
 
-  constructor() {
-    if(taskNodeAdministered){
-      this.getTaskLevelDBPath().then((path)=>{
-        this.db = Datastore.create(path);
-      }).catch((err)=>{
-        console.error(err)
-        this.db = Datastore.create(`../namespace/${TASK_ID}/KOIILevelDB.db`);
-      })
-    }else{
-      this.db = Datastore.create('./localKOIIDB.db');
-    }
-  }
+### Getting Database Instance
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    ```typescript
+    import { namespaceWrapper } from "@_koii/namespace-wrapper";
+
+    // Getting Database Instance
+    const db: any = await namespaceWrapper.getDB(); // Type it based on the actual database interface
+    ```
+
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    const { namespaceWrapper } = require("@_koii/namespace-wrapper");
+
+    // Getting Database Instance
+    const db = await namespaceWrapper.getDB();  // Type it based on the actual database interface
+    ```
+
+  </TabItem>
+</Tabs>
+
+### Storing Data
+
+```typescript title="TypeScript"
+await namespaceWrapper.storeSet("userCount", "42");
+await namespaceWrapper.storeSet(
+  "config",
+  JSON.stringify({
+    taskName: "ImageProcessing",
+    version: "1.0.0",
+    settings: { maxRetries: 3, timeout: 5000 },
+  }),
+);
 ```
 
-It will connect to the database using `namespaceWrapper` function if the task is administered by a task node, otherwise it will connect to a local database.
+### Retrieving Data
 
-### getDB
+<Tabs>
+<TabItem value="typescript" label="TypeScript">
+    ```typescript
+    const count: string | null = await namespaceWrapper.storeGet("userCount");
+    console.log("User count:", count);
 
-The `getDB` method is used to obtain the instance of your database object. This instance can be utilized for more customized database operations tailored to your specific needs.
-Usage example:
+    const configStr: string | null = await namespaceWrapper.storeGet("config");
+    const config = JSON.parse(configStr!);
+    console.log("Task name:", config.taskName);
+    ```
 
-```js
-const { namespaceWrapper } = require('@_koii/namespace-wrapper');
+  </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    const count = await namespaceWrapper.storeGet("userCount");
+    console.log("User count:", count);
+    ```
+  </TabItem>
+</Tabs>
 
-const db = await namespaceWrapper.getDB();
+## Advanced Database Operations
+
+### Querying Data
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      const db: any = await namespaceWrapper.getDB();
+      const allDocs = await db.find({});
+      const activeTasks = await db.find({ status: "active" });
+      const task = await db.findOne({ taskId: "123" });
+      ```
+    </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    const db = await namespaceWrapper.getDB();
+    const allDocs = await db.find({});
+    ```
+  </TabItem>
+</Tabs>
+
+### Inserting Data
+
+```typescript
+await db.insert({ taskId: "123", status: "active", timestamp: Date.now() });
+await db.insert([
+  { taskId: "124", status: "pending" },
+  { taskId: "125", status: "completed" },
+]);
 ```
 
-### storeSet
+### Updating Data
 
-This is the namespace wrapper call for NeDB `insert` method
-
-```js
-async storeGet(key) {
- try {
-      console.log({ [key]: value, key });
-      await this.db.insert({ [key]: value, key });
-    } catch (e) {
-      console.error(e);
-      return undefined;
-    }
-  }
+```typescript
+await db.update({ taskId: "123" }, { $set: { status: "completed" } });
+await db.update(
+  { status: "pending" },
+  { $set: { status: "active" } },
+  { multi: true },
+);
 ```
 
-Usage example:
+### Removing Data
 
-```js
-await namespaceWrapper.storeSet("round", "-1"); // store data
-const round_task = await namespaceWrapper.storeGet("round"); // retrieve data with key
-console.log("ROUND OF TASK SET TO", round_task);
+```typescript
+await db.remove({ taskId: "123" });
+await db.remove({ status: "completed" }, { multi: true });
 ```
 
-:::info
-You can prevent duplicate entries in NeDB by creating a unique index on the field(s) that should be unique. Here's a simple example:
+## Indexing
 
-```js
-const db = await namespaceWrapper.getDB();
+```typescript
+try {
+  const db = await namespaceWrapper.getDB();
 
-// Ensure index
-db.ensureIndex({ fieldName: "uniqueField", unique: true }, function (err) {
-  if (err) console.log(err); // If there are duplicate values when you apply the unique index, you'll get an error.
-});
-```
+  // Ensure 'taskId' is indexed and unique
+  await db.ensureIndex({ fieldName: "taskId", unique: true });
 
-:::
+  // Ensure 'status' is indexed (not unique)
+  await db.ensureIndex({ fieldName: "status" });
 
-### storeGet
-
-This is the namespace wrapper call for levelDB `findOne` method
-
-```js
-async storeGet(key): Promise<string> {
-   try {
-      const resp = await this.db.findOne({ key: key });
-      if (resp) {
-        return resp[key];
-      } else {
-        return null;
-      }
-    } catch (e) {
-      console.error(e);
-      return null;
-    }
-  }
-```
-
-Usage example:
-
-```js
-async function execute() {
-  console.log("ROUND", await namespaceWrapper.storeGet("round"));
+  console.log("Indexes successfully created!");
+} catch (error) {
+  console.error("Error creating indexes:", error);
 }
 ```
 
-## Setup more functions in your task
+## Best Practices
 
-You can add more functions to your task by adding them to the `namespaceWrapper` class or create your `db-model` file, just make sure it's calling the db model from `namespaceWrapper`. For example, if you want to get a list of objects, you can add a function like this:
+### Error Handling
 
-```js
-const { namespaceWrapper } = require('@_koii/namespace-wrapper');
-
-const db = await namespaceWrapper.getDB();
-  // return items by name
-  async getList() {
-  const itemList = await db.find({});
-  return itemList.map(value => value.item);
-  }
+```typescript
+try {
+  await namespaceWrapper.storeSet("key", "value");
+} catch (error) {
+  console.error("Database operation failed:", error);
+}
 ```
 
-Example:
+### Data Validation
 
-```js
-const datadb = require("./db-model");
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      function validateData(data: { taskId: string }) {
+        if (!data.taskId || typeof data.taskId !== "string") {
+          throw new Error("Invalid taskId");
+        }
+      }
 
-let testlist = await datadb.getList();
-console.log("test list is ", testlist);
+      try {
+        const data = { taskId: "123" };
+        validateData(data);
+        await db.insert(data);
+      } catch (error) {
+        console.error("Validation failed:", error);
+      }
+      ```
+    </TabItem>
+
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    function validateData(data) {
+      if (!data.taskId || typeof data.taskId !== "string") {
+        throw new Error("Invalid taskId");
+      }
+    }
+
+    try {
+      const data = { taskId: "123" };
+      validateData(data);
+      await db.insert(data); // Assuming `db.insert` supports async/await
+    } catch (error) {
+      console.error("Validation failed:", error);
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+### Atomic Operations
+
+```typescript
+await db.update({ counter: { $lt: 10 } }, { $inc: { counter: 1 } });
 ```
+
+### Indexing Strategy
+
+```typescript
+await db.ensureIndex({ fieldName: "timestamp" });
+await db.ensureIndex({ fieldName: "taskId", status: 1 });
+```
+
+## Common Patterns
+
+### Caching Results
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    ```typescript
+    let cachedData: any[] | null = null;
+    let cacheTimestamp: number = 0;
+
+    async function getCachedData(): Promise<any[]> {
+      const now = Date.now();
+      if (!cachedData || now - cacheTimestamp > 60000) {
+        cachedData = await db.find({ status: "active" });
+        cacheTimestamp = now;
+      }
+      return cachedData;
+    }
+    ```
+    </TabItem>
+
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    let cachedData = null;
+    let cacheTimestamp = 0;
+
+    async function getCachedData() {
+      const now = Date.now();
+      if (!cachedData || now - cacheTimestamp > 60000) {
+        cachedData = await db.find({ status: "active" });
+        cacheTimestamp = now;
+      }
+      return cachedData;
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+### Batch Operations
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      async function batchInsert(records: any[]): Promise<void> {
+        const batchSize = 100;
+        for (let i = 0; i < records.length; i += batchSize) {
+          const batch = records.slice(i, i + batchSize);
+          await db.insert(batch);
+        }
+      }
+      ```
+    </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function batchInsert(records) {
+      const batchSize = 100;
+      for (let i = 0; i < records.length; i += batchSize) {
+        const batch = records.slice(i, i + batchSize);
+        await db.insert(batch);
+      }
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+### Data Migration
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+    ```typescript
+    async function migrateData(): Promise<void> {
+      const oldRecords = await db.find({ version: "1.0" });
+      for (const record of oldRecords) {
+        const newRecord = transformRecord(record);
+        await db.update({ _id: record._id }, { $set: newRecord });
+      }
+    }
+    ```
+  </TabItem>    
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function migrateData() {
+      const oldRecords = await db.find({ version: "1.0" });
+      for (const record of oldRecords) {
+        const newRecord = transformRecord(record);
+        await db.update({ _id: record._id }, { $set: newRecord });
+      }
+    }
+    ```
+  </TabItem>
+</Tabs>
+
+## Troubleshooting
+
+### Database Corruption
+
+<Tabs>
+  <TabItem value="typescript" label="TypeScript">
+      ```typescript
+      async function repairDatabase(): Promise<void> {
+        const db: any = await namespaceWrapper.getDB();
+        await db.loadDatabase();
+        console.log("Database reloaded");
+      }
+      ```
+    </TabItem>
+  <TabItem value="javascript" label="JavaScript">
+    ```javascript
+    async function repairDatabase() {
+      const db = await namespaceWrapper.getDB();
+      await db.loadDatabase();
+      console.log("Database reloaded");
+    }
+    ```
+  </TabItem>
+</Tabs>
+
+### Performance Issues
+
+```typescript
+const startTime = Date.now();
+const results = await db.find({});
+const duration = Date.now() - startTime;
+if (duration > 100) {
+  console.warn(`Slow query detected: ${duration}ms`);
+}
+```
+
+## Next Steps
+
+To learn more about specific features, check out these guides:
+
+- [File System](./filesystem-access.md) - Handle files and directories.
+- [Blockchain/Transaction Operations](./wallet-signatures.md) - Work with blockchain and transaction operations.
+- [Task Status](./task-state.md) - Get task state information with namespace methods.
+- [Network/Task Handling](./network-task-handling.md) - Manage network data and tasks.
+- [Audit and Distribution](./audit-distribution-operations.md) - Manage network data and tasks.

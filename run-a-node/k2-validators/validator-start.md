@@ -10,10 +10,10 @@ sidebar_label: Starting a Validator
 The Koii cli includes `get` and `set` configuration commands to automatically set the `--url` argument for cli commands. For example:
 
 ```sh
-koii config set --url https://testnet.koii.network
+koii config set --url https://mainnet.koii.network
 ```
 
-While this section demonstrates how to connect to the Devnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
+While this section demonstrates how to connect to the Testnet cluster, the steps are similar for the other [Koii Clusters](/develop/command-line-tool/koii-cli/connect-cluster).
 
 ## Confirm the Cluster is Reachable
 
@@ -136,8 +136,8 @@ You should see the following output:
 
 ```sh
 Config File: /home/koii/.config/koii/cli/config.yml
-RPC URL: https://testnet.koii.network
-WebSocket URL: wss://testnet.koii.network/ (computed)
+RPC URL: https://mainnet.koii.network
+WebSocket URL: wss://mainnet.koii.network/ (computed)
 Keypair Path: /home/koii/validator-keypair.json
 Commitment: confirmed
 ```
@@ -150,7 +150,7 @@ Airdrop yourself some KOII to get started:
 koii airdrop 1
 ```
 
-Note that airdrops are only available on Devnet and Testnet. Both are limited to 1 KOII per request.
+Note that airdrops are only available on Testnet. Both are limited to 1 KOII per request.
 
 To view your current balance:
 
@@ -216,7 +216,7 @@ exec koii-validator \
   --log /home/koii/koii-validator.log \
   --limit-ledger-size \
   --only-known-rpc \
-  --entrypoint testnet-validator-1.koii.network:10001 \
+  --entrypoint mainnet-validator-1.koii.network:10001 \
   --known-validator Bs3LDTq3rApDqjU4vCfDrQFjixHk1cW8rYoyc47bCog6 \
   --expected-genesis-hash 3J1UybSMw4hCdTnQoVqVC3TSeZ4cd9SkrDQp3Q9j49VF \
   --wal-recovery-mode skip_any_corrupted_record

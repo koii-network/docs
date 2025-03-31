@@ -5,16 +5,15 @@ image: img/thumbnail.png
 sidebar_label: Token Generation
 ---
 
-import Tooltip from "@site/src/components/tooltip";
+import SupplyPieChart from '@site/src/components/supplyFigure';
+import StakePieChart from '@site/src/components/stakeFigure';
 
-At <Tooltip text='Mainnet launch'/>, the network will have a supply of 10,000,000,000 KOII, after which an inflation rate of **3.65%** will be issued annually.
+The Koii tokenomics universe is anchored by a **initial total supply of 10 billion KOII tokens**, ensuring scarcity and long-term value stability. **Inflation** begins at an **initial rate of 5%**, gradually **tapering by 15%** annually until it stabilizes at a **terminal rate of 1.5%**. This controlled inflation mechanism supports early network growth while ensuring stability as the network matures.
 
-:::info In Practice
-Every 12 hours, 500,000 new tokens (0.005% of the total supply) are minted for the community.
-:::
+The token supply is divided into circulating and non-circulating portions. The circulating supply represents the tokens actively used within the ecosystem, while the non-circulating supply encompasses reserves allocated for network incentives, development, and foundational operations.
 
-The newly generated tokens are split between <Tooltip text='Attention Mining'/>, <Tooltip text='K2 Validators'/> and <Tooltip text='Task Nodes'/> that run the attention game.
+<SupplyPieChart />
+<StakePieChart />
+In addition to the standard inflationary measures, Koii introduces a unique account rent mechanism. Every account that stores data on the chain must either pay rent or hold enough KOII tokens to achieve rent-exempt status, ensuring efficient utilization of storage resources and encouraging active ecosystem participation.
 
-![Token Generation](/img/koii/tokenomics/token-generation.svg)
-
-Attention mining receives **50%** of new tokens, K2 settlement layer nodes receive **50%**. This ensures that content creators who use Koii are rewarded fairly.
+Further enhancing the tokenomics, Koii implements a mechanism where 50% of gas fees are burned. This policy not only mitigates the effect of inflation as transaction volume increases but also introduces a deflationary aspect to the economy over time, promoting long-term sustainability and health of the network.

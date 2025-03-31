@@ -21,7 +21,6 @@ You can install the API using one of the following methods:
 npm install --save @_koii/web3.js
 ```
 
-
 #### Browser bundle
 
 ```html
@@ -70,8 +69,8 @@ performance measurements described in this project are done with the KOII Networ
 It is up to the reader to check and validate their accuracy and truthfulness.
 Furthermore, nothing in this project constitutes a solicitation for investment.
 
-Any content produced by SF or developer resources that SF provides are for educational and
-inspiration purposes only. SF does not encourage, induce or sanction the deployment,
+Any content produced by Koii Foundation (KF) or developer resources that KF provides are for educational and
+inspiration purposes only. KF does not encourage, induce or sanction the deployment,
 integration or use of any such applications (including the code comprising the KOII blockchain protocol)
 in violation of applicable laws or regulations and hereby prohibits any such deployment, integration or use.
 This includes the use of any such applications by the reader

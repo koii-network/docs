@@ -243,13 +243,13 @@ The output of the command should be similar to the following.
 create-task
 ✔ Enter the path to your wallet … /Users/<YOUR_HOME>/.config/koii/id.json
 CONFIG {
-  json_rpc_url: 'https://testnet.koii.network',
+  json_rpc_url: 'https://mainnet.koii.network',
   websocket_url: '',
   keypair_path: '~/validator-keypair.json',
   address_labels: { '11111111111111111111111111111111': 'System Program' },
   commitment: 'confirmed'
 }
-Connection to cluster established: https://testnet.koii.network { 'feature-set': 167192737, 'solana-core': '1.10.0' }
+Connection to cluster established: https://mainnet.koii.network { 'feature-set': 167192737, 'solana-core': '1.10.0' }
 Using account 2kG7HBGGVHZEhdbHQzvQGQUjLNGGiQvxshLu47UvnpBs containing 201.98930624 SOL to pay for fees
 Using program Koiitask22222222222222222222222222222222222
 ✔ Select operation › using CLI

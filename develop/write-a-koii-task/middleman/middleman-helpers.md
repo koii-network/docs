@@ -8,192 +8,120 @@ sidebar_label: Helpers
 
 ## Overview
 
-The Koii Middleman Server template provides a set of helper functions to streamline the processing of tasks. These functions are designed to simplify common operations such as fetching task data, queuing submissions, and handling task rounds efficiently. By leveraging these helper functions, developers can focus on building the core functionality of their middleman servers without worrying about the underlying details.
+The Koii Middleman Server template provides a set of helper functions to streamline the processing of tasks. These functions handle task data retrieval, data storage, and IPFS content fetching.
 
 ## Helper Functions
 
 ### getTaskData
 
-Here’s a detailed explanation of the provided `getTaskData` function in markdown format:
-
 ```javascript
-const { Connection, PublicKey } = require("@_koii/web3.js");
+const { getTaskStateInfo } = require("@_koii/create-task-cli");
 ```
 
-- **Connection**: Establishes a connection to the Koii network.
-- **PublicKey**: Represents the public key of the task account.
-
 #### Description
-
-This asynchronous function retrieves the latest task data from the Koii network. It checks for new rounds of submissions and returns relevant data if a new round is found.
+Retrieves task data from K2 network, including submissions and round information.
 
 #### Parameters
+- **connection**: K2 network connection instance
+- **taskID**: The task identifier
+- **round**: Current round number being tracked
 
-- **taskID**: The unique identifier for the task, typically loaded from environment variables.
-- **round**: The current round number that the server is tracking.
-
-#### Function Workflow
-
-1. **Establish Connection**:
-
-   ```javascript
-   const connection = new Connection("https://testnet.koii.network");
-   ```
-
-   - A connection to the Koii testnet is established using the `Connection` class.
-
-2. **Retrieve Latest Task Data**:
-
-   ```javascript
-   async function getLatestTaskData() {
-     const accountInfo = await connection.getAccountInfo(new PublicKey(taskID));
-     taskState = JSON.parse(accountInfo.data);
-     submissionList = [];
-     maxRound = Math.max(...Object.keys(taskState.submissions).map(Number));
-   }
-   ```
-
-   - The `getLatestTaskData` function fetches the latest account information for the given `taskID`.
-   - The data is parsed, and the `maxRound` is determined by finding the highest round number in the submissions.
-
-   :::tip Need other data?
-   taskState contains all the data associated with the task account, including the round time, submissions, and other relevant information.
-
-   For example, to access the stakingList:
-
-   ```javascript
-   let stakingList = taskState.stake_list;
-   return stakingList;
-   ```
-
-   :::
-
-3. **Check for New Round**:
-
+#### Returns
 ```javascript
-if (round < maxRound) {
-  console.log(`A new round, ${maxRound} has been detected.`);
-  console.log("Waiting 2 Minutes for the potential submission period.");
-  await new Promise((resolve) => setTimeout(resolve, 600));
-  console.log("2 Minutes has passed, re-starting the operation.");
-  await getLatestTaskData();
-} else {
-  return false;
+{
+    submissionFullList: Object,  // Complete submission data for the round
+    submissions: Array,          // List of submission values
+    submitters: Array,          // List of submitter addresses
+    maxRound: Number,           // Current round number
+    roundTime: Number           // Round duration
 }
 ```
 
-- If a new round (`maxRound`) is detected, the function waits for 2 minutes before re-fetching the data.
-- If no new round is found, the function returns `false`.
+#### Key Features
+- Validates task ID existence
+- Fetches latest task state using `getTaskStateInfo`
+- Processes submissions for the latest round
+- Includes error handling and round validation
 
-4. **Return Task Data**:
-   ```javascript
-   return {
-     submissions: submissionList,
-     maxRound: maxRound,
-     roundTime: taskState.round_time,
-   };
-   ```
-   - The function returns an object containing:
-     - `submissions`: A list of all submission values in the latest round.
-     - `maxRound`: The highest round number detected.
-     - `roundTime`: The time associated with each round.
-
-#### Exports
+### storeData
 
 ```javascript
-module.exports = getTaskData;
+const { MongoClient } = require("mongodb");
 ```
 
-- The `getTaskData` function is exported for use in other parts of the application.
+#### Description
+Stores task data in MongoDB database.
+
+#### Parameters
+- **taskId**: Task identifier
+- **round**: Round number
+- **data**: Data to be stored
+
+#### Configuration
+```javascript
+const client = new MongoClient(process.env.MONGO_URI);
+const dbName = process.env.DB_NAME;
+const collectionName = process.env.COLLECTION_NAME;
+```
+
+Required environment variables:
+- `MONGO_URI`: MongoDB connection string
+- `DB_NAME`: Database name
+- `COLLECTION_NAME`: Collection name
+
+#### Workflow
+1. Connects to MongoDB
+2. Inserts data with task ID and round information
+3. Closes connection after operation
 
 ### dataFromCid
 
-Here’s a detailed explanation of the provided functions in markdown format:
-
-#### Imports
 ```javascript
-const axios = require("axios");
 const { KoiiStorageClient } = require("@_koii/storage-task-sdk");
-const storageClient = new KoiiStorageClient(undefined, undefined, false);
 ```
 
-- **axios**: A promise-based HTTP client used to make requests to the IPFS gateway.
-- **KoiiStorageClient**: A client from the Koii IPFS SDK.
+#### Description
+Retrieves data from IPFS using Content Identifiers (CIDs).
 
-#### Function: `fetchCidFromGetFile(cid, fileName)`
-This asynchronous function fetches a file from IPFS using the Koii Storage Client and returns the parsed JSON data.
-- **cid**: The Content Identifier (CID) of the file stored on IPFS.
-- **fileName**: The name of the file to fetch from IPFS.
-
-#### Workflow
-1. **Fetch File**:
-   ```javascript
-   const blob = await storageClient.getFile(cid, fileName);
-   ```
-   - Uses the `KoiiStorageClient` to fetch the file as a Blob object.
-
-2. **Convert and Parse**:
-   ```javascript
-   const text = await blob.text();
-   const data = JSON.parse(text);
-   ```
-   - Converts the Blob to text and parses it into JSON format.
-
-3. **Error Handling**:
-   ```javascript
-   } catch (error) {
-     console.log(`Failed for CID ${cid}: ${error.message}`);
-     return null;
-   }
-   ```
-   - Logs an error message and returns `null` if the fetch fails.
-
-#### Function: `directFetchCid(cid, fileName)`
-This function directly fetches data from an IPFS gateway using Axios and returns the data if successful.
-- **cid**: The Content Identifier (CID) of the file on IPFS.
-- **fileName**: The name of the file to fetch from IPFS.
-
-#### Workflow
-1. **HTTP Request**:
-   ```javascript
-   const response = await axios.get(
-     `https://ipfs-gateway.koii.live/ipfs/${cid}/${fileName}`,
-     {
-       timeout: 530000,
-     }
-   );
-   ```
-   - Sends an HTTP GET request to the IPFS gateway to fetch the file.
-
-2. **Response Handling**:
-   ```javascript
-   if (response.status === 200 || response.status === 304) {
-     return response.data.map((item) => item.data);
-   }
-   ```
-   - If the response status is 200 (OK) or 304 (Not Modified), the function returns the parsed data.
-
-3. **Error Handling**:
-   ```javascript
-   } catch (error) {
-     console.log(`Failed for CID ${cid}: ${error.message}`);
-   }
-   return null;
-   ```
-   - Logs an error message and returns `null` if the request fails.
-
-#### Combined Export Function
-
+#### Primary Function: `fetchCidFromGetFile`
 ```javascript
-module.exports = async (cid, fileName, maxRetries = 2, retryDelay = 3000) => {
-  const data = await fetchCidFromGetFile(cid, fileName);
-  if (data) {
-    return data;
-  }
+async function fetchCidFromGetFile(cid, fileName) {
+    const blob = await storageClient.getFile(cid, fileName);
+    const text = await blob.text();
+    return JSON.parse(text);
+}
+```
 
-  const dataDirect = await directFetchCid(cid, fileName);
-  if (dataDirect) {
-    return dataDirect;
-  }
-};
+#### Parameters
+- **cid**: IPFS Content Identifier
+- **fileName**: Name of the file to retrieve
+- **maxRetries** (optional): Maximum retry attempts (default: 2)
+- **retryDelay** (optional): Delay between retries in ms (default: 3000)
+
+#### Features
+- Uses Koii Storage SDK for reliable IPFS access
+- Includes error handling and retry logic
+- Converts IPFS content to JSON format
+
+#### Backup Method: `directFetchCid`
+```javascript
+async function directFetchCid(cid, fileName) {
+    const response = await axios.get(
+        `https://ipfs-gateway.koii.live/ipfs/${cid}/${fileName}`,
+        { timeout: 530000 }
+    );
+    return response.data.map((item) => item.data);
+}
+```
+
+:::note
+Direct IPFS gateway fetching is available but not recommended for production use.
+:::
+
+#### Usage Example
+```javascript
+const data = await dataFromCid("bafybei...", "data.json");
+if (data) {
+    // Process the retrieved data
+}
 ```

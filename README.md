@@ -1,8 +1,8 @@
-# Desktop UI for Node
+# Koii Docs
 
 ## Description
 
-This repo contains the koii documentations for the [koii docs](https://gitlab.com/koii-network/koii-docs)
+This repo contains the koii documentations for the [Koii docs](https://www.koii.network/docs)
 
 # Website
 

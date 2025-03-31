@@ -138,7 +138,7 @@ Set the **testnet rpc endpoint** correctly
 Run this command:
 
 ```sh
-koii config set --url https://testnet.koii.network
+koii config set --url https://mainnet.koii.network
 ```
 
 Feel free to [reach out](https://discord.com/invite/koii-network) if you have any further questions or need assistance.

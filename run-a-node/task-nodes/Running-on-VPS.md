@@ -32,9 +32,9 @@ If you are unsure about this step check with your provider for information.
 
 ### Setting Up the Environment on VPS
 
-Our employee has written a helpful script that will partially automate the process for you. See the readme in the repository for up to date directions.
+Follow the link for a helpful script that will partially automate the process for you. See the readme in the repository for up to date directions.
 
-**[Koii VPS Repo](https://github.com/crystal-koii/koii-vps)**
+**[Koii VPS Node Setup Repo](https://github.com/koii-network/vps-node-setup)**
 
 ## Troubleshooting
 
