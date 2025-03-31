@@ -53,3 +53,7 @@ Got a great idea and looking for funding? Check out Koii Ocean! It's a community
 
 [Join Koii Ocean today](https://www.koii.network/ocean)
 :::
+
+## Hugging Face
+
+The [Hugging Face](https://huggingface.co/) model hub is a great place to find pre-trained models for your task. You can search for models by task, language, and framework. The Hugging Face library also provides a simple API for loading and using these models in your code.
