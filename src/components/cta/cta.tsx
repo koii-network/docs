@@ -228,7 +228,7 @@ export const Cta = () => {
             <div className="flex gap-x-2 justify-end items-center p-4">
               <button className="border cursor-pointer border-koii-purple-2 rounded-full px-4 py-2 bg-transparent text-koii-purple-2">
                 <a
-                  href="/develop/write-a-koii-task/orca/develop-an-orca-task#hugging-face"
+                  href="/docs/develop/write-a-koii-task/orca/develop-an-orca-task#hugging-face"
                   className="hover:no-underline"
                 >
                   Integrate Any Model
