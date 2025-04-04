@@ -89,9 +89,9 @@ export const Cta = () => {
       <section className="w-full flex flex-col gap-6">
         {/* First row */}
         <Card
-          title="What is KOii?"
+          title="What is Koii?"
           description="We're building the common infrastructure for better information. The Knowledgeable Open and Infinite Internet has the power to connect everyone, everywhere. We are providing the AI revolution for the people, by the people."
-          image={`${baseUrl}/img/write-task.svg`}
+          image={`${baseUrl}/img/new-home/Welcome to Koii Docs.png`}
           imageHeight=""
         >
           <div className="flex flex-col sm:flex-row gap-4 justify-between items-center p-4">
@@ -128,7 +128,7 @@ export const Cta = () => {
           <Card
             title="EZWay"
             description="Get started the fast way with open templates. Built for beginners and fast-lane experts, the EZSandbox provides a standard foundation for a simple future."
-            image={`${baseUrl}/img/new-home/Tools.png`}
+            image={`${baseUrl}/img/new-home/EZWay.png`}
             imageHeight="h-[233.8px]"
             descriptionHeight="h-[7.5rem]"
             badges={[
@@ -152,7 +152,7 @@ export const Cta = () => {
           <Card
             title="Orca Containers"
             description="Docker images on Koii's network of edge devices provide a stable foundation for any kind of application. Deploy your machine learning workload, host an existing app, or augment existing systems with edge compute for caching, storage, and more."
-            image={`${baseUrl}/img/new-home/orca.png`}
+            image={`${baseUrl}/img/new-home/Orca.png`}
             imageHeight="h-[233.8px]"
             badges={[
               { text: "Docker", color: "#2496ED", textColor: "#FFFFFF" },
@@ -181,7 +181,7 @@ export const Cta = () => {
           <Card
             title="Anthropic"
             description="Deploy agents with Claude to write code, build products, and optimize existing systems."
-            image={`${baseUrl}/img/new-home/anthropic.png`}
+            image={`${baseUrl}/img/new-home/Anthropic AI.png`}
             imageHeight="h-[233.8px]"
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
@@ -202,7 +202,7 @@ export const Cta = () => {
           <Card
             title="OpenAI"
             description="Get direct access to the world's most powerful reasoning AI, great for planning, designing, and research."
-            image={`${baseUrl}/img/new-home/openai.png`}
+            image={`${baseUrl}/img/new-home/OpenAI.png`}
             imageHeight="h-[233.8px]"
           >
             <div className="flex gap-x-2 justify-end items-center p-4">
@@ -223,7 +223,7 @@ export const Cta = () => {
           <Card
             title="HuggingFace"
             description="Our favorite open tech stack- choose a model and deploy to Koii nodes."
-            image={`${baseUrl}/img/new-home/huggingface.svg`}
+            image={`${baseUrl}/img/new-home/Hugging face.png`}
             imageHeight="h-[233.8px]"
             descriptionHeight="h-[4.5rem]"
           >
