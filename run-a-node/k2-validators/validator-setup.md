@@ -24,7 +24,7 @@ exec /home/koii/.local/share/koii/install/active_release/bin/koii-validator \
     --enable-rpc-transaction-history \
     --known-validator BPRAynHogErzYmEtAaeJFugRozXuU6EEqNa4rEKtF4mS \
     --known-validator GqmBXoaetkMXzrMhCijJDsL5J4KDvDFzZuMEpoXYUowc \
-    --known-validator Hajii3WYcyRWDzENPJwaY2WGtNpYQ7vrCqpgaUi8fsUo \
+    --known-validator Hajii1YRsMxHjw64VxfZSt5SYs4V8WhkVVm5HxsPKCmQ \
     --known-validator Fme35immspxuG6fboueneNDque5xLu62Ca2BHRuLgTSV \
     --entrypoint entrypoint-1.mainnet.koii.network:10001 \
     --entrypoint entrypoint-2.mainnet.koii.network:10001 \
