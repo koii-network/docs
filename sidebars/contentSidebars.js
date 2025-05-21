@@ -21,6 +21,7 @@ const sidebars = {
 			className: "sidebar-title",
 		},
 		"introduction/welcome",
+		"introduction/thesis",
 		"introduction/tools",
 		"introduction/philosophy",
 		// {
