@@ -37,6 +37,11 @@ export const KoiiFooter = () => {
       url: "https://www.koii.network/whitepaper.pdf",
       target: "_blank",
     },
+    {
+      label: "Litepaper",
+      url: `${baseUrl}/files/Koii Litepaper.pdf`,
+      target: "_blank",
+    },
   ];
 
   return (
