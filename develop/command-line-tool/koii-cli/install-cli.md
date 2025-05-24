@@ -59,7 +59,9 @@ You should see the version information similar to this:
 koii-cli 1.16.2
 ```
 
-Then, you'll want to make sure you have the correct RPC url set:
+By default, RPC will be configured to the testnet. 
+
+To begin using mainnet, use:
 ```
 koii config set --url https://mainnet.koii.network/
 ```
