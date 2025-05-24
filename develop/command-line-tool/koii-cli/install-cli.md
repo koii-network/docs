@@ -21,6 +21,49 @@ By using the Koii CLI, you can seamlessly interact with the K2 network within yo
 
 The KOII CLI can be installed in various ways based on your operating system:
 
+# MacOS & Linux
+
+1. Open your terminal and execute the following command:
+
+```sh
+sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
+```
+
+This command will download and install the necessary Koii tools.
+
+2. Depending on your operating system, you may receive the following prompt:
+
+```sh
+Please update your PATH environment variable to include the koii programs:
+```
+
+If you encounter this message, proceed to the next step. Otherwise, move on to step 4.
+
+3. Copy and run the command provided below the prompt. This command will update your `PATH` environment variable to include the Koii programs.
+
+4. To confirm that your `PATH` environment variable has been successfully updated, run the following command:
+
+```sh
+echo $PATH
+```
+
+5. To confirm that the Koii CLI was successfully installed, run the following command:
+
+```sh
+koii --version
+```
+
+You should see the version information similar to this:
+
+```sh
+koii-cli 1.16.2
+```
+
+Then, you'll want to make sure you have the correct RPC url set:
+```
+koii config set --url https://mainnet.koii.network/
+```
+
 # Windows
 
 1. Open a Command Prompt (cmd.exe) as an Administrator:
@@ -70,44 +113,6 @@ The KOII CLI can be installed in various ways based on your operating system:
      ```sh
      koii-cli 1.16.2
      ```
-
-# MacOS & Linux
-
-1. Open your terminal and execute the following command:
-
-```sh
-sh -c "$(curl -sSfL https://raw.githubusercontent.com/koii-network/k2-release/master/k2-install-init.sh)"
-```
-
-This command will download and install the necessary Koii tools.
-
-2. Depending on your operating system, you may receive the following prompt:
-
-```sh
-Please update your PATH environment variable to include the koii programs:
-```
-
-If you encounter this message, proceed to the next step. Otherwise, move on to step 4.
-
-3. Copy and run the command provided below the prompt. This command will update your `PATH` environment variable to include the Koii programs.
-
-4. To confirm that your `PATH` environment variable has been successfully updated, run the following command:
-
-```sh
-echo $PATH
-```
-
-5. To confirm that the Koii CLI was successfully installed, run the following command:
-
-```sh
-koii --version
-```
-
-You should see the version information similar to this:
-
-```sh
-koii-cli 1.16.2
-```
 
 ### **Additional Steps for Mac Users**
 
