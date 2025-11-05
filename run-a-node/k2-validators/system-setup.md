@@ -108,8 +108,18 @@ WantedBy=multi-user.target
 ```
 
 - Start and Enable the service to automatically start
+    
+```sh
+sudo systemctl daemon-reload
+
+sudo systemctl enable systuner
+sudo systemctl start systuner
+```
+
+- Check logs
 
 ```sh
-sudo systemctl start systuner
-sudo systemctl enable systuner
+sudo journalctl -u systuner.service -f
 ```
+    
+---
